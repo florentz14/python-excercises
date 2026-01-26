@@ -1,0 +1,27 @@
+# Exercise 6: Formatting Float Numbers with Precision
+# Format floating-point numbers to 2 decimal places using
+# the :.2f format specifier in f-strings.
+
+print("Exercise 6: Formatting Float Numbers with Precision")
+print("-" * 40)
+
+# Variables for products with imprecise floating-point values
+item1 = "Milk"
+price1 = 2.45678  # Has many decimal places
+item2 = "Bread"
+price2 = 1.2  # Missing decimal places
+item3 = "Cheese"
+price3 = 4.789  # Has 3 decimal places
+
+# Print table with price formatted to 2 decimal places
+print(f"{'Item':<10}{'Price':<10}")
+print("-" * 20)
+print(f"{item1:<10}{price1:.2f}")
+print(f"{item2:<10}{price2:.2f}")
+print(f"{item3:<10}{price3:.2f}")
+
+print("\nExplanation:")
+print("- :.2f means: format as a float with 2 decimal places")
+print("- 2.45678 becomes 2.46 (rounded)")
+print("- 1.2 becomes 1.20 (padded with zero)")
+print("- 4.789 becomes 4.79 (rounded)")
