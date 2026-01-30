@@ -5,7 +5,8 @@ Demonstrates matching a tuple pattern to compute area of a rectangle.
 Requires Python 3.10+ for `match`/`case`.
 """
 
-def rectangle_area(shape: tuple) -> None:
+
+def rectangle_area(shape: tuple[str, int | float, int | float]) -> None:
     match shape:
         case ("rectangle", w, h):
             print("Area:", w * h)
