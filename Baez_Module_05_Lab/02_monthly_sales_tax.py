@@ -8,11 +8,6 @@
 # Description: Monthly sales tax calculator (county + state).
 # -------------------------------------------------
 
-"""Baez Module 05 Lab - Exercise 2
-Monthly Sales Tax
-"""
-
-
 def calculate_county_sales_tax(total_sales: float, county_rate: float = 0.025) -> float:
     return total_sales * county_rate
 

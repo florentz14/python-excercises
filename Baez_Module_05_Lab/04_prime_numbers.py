@@ -8,11 +8,6 @@
 # Description: Determine whether a number is prime.
 # -------------------------------------------------
 
-"""Baez Module 05 Lab - Exercise 4
-Prime Numbers
-"""
-
-
 def is_prime(number: int) -> bool:
     if number < 2:
         return False

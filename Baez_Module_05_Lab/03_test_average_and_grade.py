@@ -8,11 +8,6 @@
 # Description: Calculate test average and determine letter grades.
 # -------------------------------------------------
 
-"""Baez Module 05 Lab - Exercise 3
-Test Average and Grade
-"""
-
-
 def calc_average(score1: float, score2: float, score3: float, score4: float, score5: float) -> float:
     return (score1 + score2 + score3 + score4 + score5) / 5
 

@@ -8,11 +8,6 @@
 # Description: Calculate calories from fat and carbohydrates.
 # -------------------------------------------------
 
-"""Baez Module 05 Lab - Exercise 1
-Calories from Fat and Carbohydrates
-"""
-
-
 def calculate_calories_from_fat(fat_grams: float) -> float:
     """Return calories from fat (fat_grams * 9)."""
     return fat_grams * 9
