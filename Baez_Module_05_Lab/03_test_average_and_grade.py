@@ -30,35 +30,30 @@ def determine_grade(score: float) -> str:
         return "F"
 
 
-if __name__ == "__main__":
-    print("=" * 60)
-    print("EXERCISE 3: Test Average and Grade")
-    print("=" * 60)
-    try:
-        score1 = float(input("Enter test score 1: "))
-        score2 = float(input("Enter test score 2: "))
-        score3 = float(input("Enter test score 3: "))
-        score4 = float(input("Enter test score 4: "))
-        score5 = float(input("Enter test score 5: "))
-        scores = [score1, score2, score3, score4, score5]
-        if any(score < 0 or score > 100 for score in scores):
-            print("Error: Test scores must be between 0 and 100.")
-        else:
-            average = calc_average(score1, score2, score3, score4, score5)
-            print(f"\nTest Score\t\tLetter Grade")
-            print("-" * 40)
-            print(f"Score 1: {score1:.2f}\t\t{determine_grade(score1)}")
-            print(f"Score 2: {score2:.2f}\t\t{determine_grade(score2)}")
-            print(f"Score 3: {score3:.2f}\t\t{determine_grade(score3)}")
-            print(f"Score 4: {score4:.2f}\t\t{determine_grade(score4)}")
-            print(f"Score 5: {score5:.2f}\t\t{determine_grade(score5)}")
-            print("-" * 40)
-            print(
-                f"Average Score: {average:.2f}\t\t{determine_grade(average)}")
-    except ValueError:
-        print("Error: Please enter valid numbers.")
-    except Exception as e:
-        print(f"Error: {e}")
+print("=" * 60)
+print("EXERCISE 3: Test Average and Grade")
+print("=" * 60)
+
+score1 = float(input("Enter test score 1: "))
+score2 = float(input("Enter test score 2: "))
+score3 = float(input("Enter test score 3: "))
+score4 = float(input("Enter test score 4: "))
+score5 = float(input("Enter test score 5: "))
+
+scores = [score1, score2, score3, score4, score5]
+if any(score < 0 or score > 100 for score in scores):
+    print("Error: Test scores must be between 0 and 100.")
+else:
+    average = calc_average(score1, score2, score3, score4, score5)
+    print(f"\nTest Score\t\tLetter Grade")
+    print("-" * 40)
+    print(f"Score 1: {score1:.2f}\t\t{determine_grade(score1)}")
+    print(f"Score 2: {score2:.2f}\t\t{determine_grade(score2)}")
+    print(f"Score 3: {score3:.2f}\t\t{determine_grade(score3)}")
+    print(f"Score 4: {score4:.2f}\t\t{determine_grade(score4)}")
+    print(f"Score 5: {score5:.2f}\t\t{determine_grade(score5)}")
+    print("-" * 40)
+    print(f"Average Score: {average:.2f}\t\t{determine_grade(average)}")
 
 print()
 

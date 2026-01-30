@@ -22,20 +22,15 @@ def is_prime(number: int) -> bool:
     return True
 
 
-if __name__ == "__main__":
-    print("=" * 60)
-    print("EXERCISE 4: Prime Numbers")
-    print("=" * 60)
-    try:
-        number = int(input("Enter a number to check if it is prime: "))
-        if is_prime(number):
-            print(f"\n{number} is a prime number.")
-        else:
-            print(f"\n{number} is not a prime number.")
-    except ValueError:
-        print("Error: Please enter a valid integer.")
-    except Exception as e:
-        print(f"Error: {e}")
+print("=" * 60)
+print("EXERCISE 4: Prime Numbers")
+print("=" * 60)
+
+number = int(input("Enter a number to check if it is prime: "))
+if is_prime(number):
+    print(f"\n{number} is a prime number.")
+else:
+    print(f"\n{number} is not a prime number.")
 
 print()
 
