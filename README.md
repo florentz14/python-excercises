@@ -4,21 +4,27 @@ Un repositorio completo de ejercicios de Python para aprender programación desd
 
 ## 📚 Contenido
 
-### 📁 Baez_Module_03_Lab
+El proyecto está organizado en 6 categorías principales de aprendizaje:
 
-Ejercicios del módulo 3 que incluyen:
+### 📁 01_Variables_y_Tipos_Datos
+Introducción a variables y tipos de datos:
+- **variables.py** - Declaración y uso de variables
+- **complex.py** - Números complejos
+- **tuple.py** - Tuplas y operaciones
+- **list.py** - Listas y métodos
+- **dictionary.py** - Diccionarios y sus usos
+- **set.py** - Conjuntos (sets)
 
-- **exercise_bmi.py** - Cálculo del Índice de Masa Corporal
-- **exercise_leap_year.py** - Verificación de años bisiestos
-- **exercise_magic_dates.py** - Fechas mágicas
-- **exercise_roman_numeral.py** - Conversión a números romanos
+### 📁 02_Condicionales
+Estructuras de control con if/else:
+- **if.py** - Condicionales básicos
+- **exercise_zodiac_simple.py** - Zodiaco simple
+- **exercise_chinese_zodiac.py** - Zodiaco chino
 
-### 📁 Ciclos
-
-56 ejercicios de loops y ciclos organizados progresivamente:
+### 📁 03_Ciclos
+**56 ejercicios de loops y ciclos organizados progresivamente:**
 
 #### Ciclos Básicos (01-22)
-
 - While loops simples
 - For loops con range
 - Condiciones dentro de loops
@@ -26,7 +32,6 @@ Ejercicios del módulo 3 que incluyen:
 - Manejo de errores
 
 #### Ciclos Comunes (23-39)
-
 - Iteración sobre listas y strings
 - Break y continue
 - Búsqueda y conteo
@@ -34,7 +39,6 @@ Ejercicios del módulo 3 que incluyen:
 - Patrones simples
 
 #### Ciclos Anidados (40-54)
-
 - Tablas de multiplicación
 - Patrones triangulares
 - Matrices 2D
@@ -42,58 +46,88 @@ Ejercicios del módulo 3 que incluyen:
 - Clasificación de datos
 
 #### Ejercicios Interactivos (55-56)
-
 - Tabla de multiplicación interactiva (del 1 al 12)
 - Triángulo de Pascal interactivo
 
+### 📁 04_Funciones
+Introducción a funciones y programación orientada a objetos:
+- **clase_animales.py** - Clase para modelos de animales
+- **clase_dispositivos_moviles.py** - Clase para dispositivos móviles
+- **clase_personas.py** - Clase para personas
+- **clase_transporte.py** - Clase para transporte
+- **clase_usuarios.py** - Sistema de usuarios básico
+- **clase_usuarios_avanzada.py** - Sistema avanzado de usuarios
+
+### 📁 05_Estructuras_de_Datos
+Operaciones avanzadas con estructuras de datos:
+- **matrix.py** - Operaciones con matrices
+- **matrix_operations.py** - Operaciones complejas de matrices
+- **count.py** - Conteo y frecuencias
+
+### 📁 06_Ejercicios_Integradores
+Ejercicios que combinan múltiples conceptos:
+- **app.py** - Aplicación principal
+- **exercise1.py a exercise7.py** - Ejercicios generales
+- **exercise_bmi.py** - Cálculo del Índice de Masa Corporal
+- **exercise_leap_year.py** - Verificación de años bisiestos
+- **exercise_magic_dates.py** - Fechas mágicas
+- **exercise_roman_numeral_converter.py** - Conversión a números romanos
+- **exercise_areas.py** - Cálculo de áreas
+- **exercise_birth_info.py** - Información de nacimiento
+- **ex-online-01.py** - Ejercicio en línea
+- Y más...
+
+### 📁 Baez_Module_03_Lab
+Ejercicios del módulo 3 (Baez):
+- **exercise_bmi.py** - Cálculo del Índice de Masa Corporal
+- **exercise_leap_year.py** - Verificación de años bisiestos
+- **exercise_magic_dates.py** - Fechas mágicas
+- **exercise_roman_numeral.py** - Conversión a números romanos
+
 ### 📁 Baez_Module_04_Lab, 05_Lab, 06_Lab, 07_Lab
-
-Carpetas disponibles para futuros ejercicios
-
-### 📄 Otros Archivos
-
-Ejercicios variados sobre:
-
-- Variables y tipos de datos
-- Condicionales (if/else)
-- Listas, tuplas, diccionarios y sets
-- Operaciones con matrices
-- Ejercicios de matemática (BMI, zodiaco, año bisiesto, etc.)
+Carpetas disponibles para futuros ejercicios de los módulos 4, 5, 6 y 7
 
 ## 🚀 Cómo usar
 
 1. **Clonar el repositorio:**
-
    ```bash
    git clone https://github.com/florentz14/python-excercises.git
    ```
 
 2. **Navegar a la carpeta del proyecto:**
-
    ```bash
    cd python-excercises
    ```
 
 3. **Ejecutar un archivo Python:**
    ```bash
-   python nombre_del_archivo.py
+   python 01_Variables_y_Tipos_Datos/variables.py
+   ```
+   
+   O navegar a la carpeta primero:
+   ```bash
+   cd 03_Ciclos
+   python 01_programming_is_fun_while.py
    ```
 
-## 💡 Estructura de Aprendizaje
+## 💡 Estructura de Aprendizaje Recomendada
 
-Los ejercicios están organizados para seguir una progresión lógica:
+Se recomienda seguir este orden para aprender progresivamente:
+1. **01_Variables_y_Tipos_Datos** - Conceptos básicos
+2. **02_Condicionales** - Toma de decisiones
+3. **03_Ciclos** - Repetición de código
+4. **04_Funciones** - Modularidad y POO
+5. **05_Estructuras_de_Datos** - Manipulación avanzada
+6. **06_Ejercicios_Integradores** - Aplicación de conceptos
 
-1. **Conceptos Básicos** - Variables, tipos de datos, condicionales
-2. **Ciclos** - While, for, anidados
-3. **Estructuras de Datos** - Listas, diccionarios, sets, tuplas
-4. **Programas Interactivos** - Entrada de usuario, validación, control de flujo
+## 📝 Características
 
-## 📝 Notas
-
-- Todos los archivos incluyen comentarios detallados
-- Cada ejercicio demuestra un concepto específico
-- Los ejercicios interactivos incluyen manejo de errores
-- Se recomienda ejecutar cada archivo para ver su funcionamiento
+- ✅ Todos los archivos incluyen comentarios detallados
+- ✅ Cada ejercicio demuestra un concepto específico
+- ✅ Los ejercicios interactivos incluyen manejo de errores
+- ✅ Organización clara por categorías
+- ✅ Ejemplos de while y for para comparación
+- ✅ Ejercicios de dificultad progresiva
 
 ## 👨‍💻 Autor
 
