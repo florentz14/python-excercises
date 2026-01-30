@@ -5,6 +5,7 @@ Demonstrates using `match`/`case` with guard expressions to map scores
 to letter grades.
 """
 
+
 def letter_grade(score: int) -> str:
     match score:
         case s if s >= 90:

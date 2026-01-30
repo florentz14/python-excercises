@@ -5,6 +5,7 @@ Demonstrates simple pattern matching for directional commands.
 Takes cardinal direction input (n/s/e/w) and returns the movement message.
 """
 
+
 def move(cmd: str) -> str:
     match cmd:
         case "n":

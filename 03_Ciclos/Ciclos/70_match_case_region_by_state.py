@@ -5,6 +5,7 @@ Demonstrates pattern matching with alternation (|) operator.
 Takes state abbreviation input and returns the corresponding region.
 """
 
+
 def get_region(abbr: str) -> str:
     match abbr:
         case "CA" | "OR" | "WA":
