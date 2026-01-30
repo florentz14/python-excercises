@@ -8,14 +8,17 @@
 # Description: Monthly sales tax calculator (county + state).
 # -------------------------------------------------
 
+# Calculate county sales tax
 def calculate_county_sales_tax(total_sales: float, county_rate: float = 0.025) -> float:
     return total_sales * county_rate
 
 
+# Calculate state sales tax
 def calculate_state_sales_tax(total_sales: float, state_rate: float = 0.05) -> float:
     return total_sales * state_rate
 
 
+# Calculate total sales tax (county + state)
 def calculate_total_sales_tax(total_sales: float, county_rate: float = 0.025, state_rate: float = 0.05) -> float:
     county_tax = calculate_county_sales_tax(total_sales, county_rate)
     state_tax = calculate_state_sales_tax(total_sales, state_rate)

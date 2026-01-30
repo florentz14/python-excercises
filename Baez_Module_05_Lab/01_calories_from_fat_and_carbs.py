@@ -8,13 +8,13 @@
 # Description: Calculate calories from fat and carbohydrates.
 # -------------------------------------------------
 
+# Calculate calories from fat (9 cal/gram)
 def calculate_calories_from_fat(fat_grams: float) -> float:
-    """Return calories from fat (fat_grams * 9)."""
     return fat_grams * 9
 
 
+# Calculate calories from carbohydrates (4 cal/gram)
 def calculate_calories_from_carbs(carb_grams: float) -> float:
-    """Return calories from carbohydrates (carb_grams * 4)."""
     return carb_grams * 4
 
 

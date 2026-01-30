@@ -8,6 +8,7 @@
 # Description: Determine whether a number is prime.
 # -------------------------------------------------
 
+# Check if a number is prime
 def is_prime(number: int) -> bool:
     if number < 2:
         return False

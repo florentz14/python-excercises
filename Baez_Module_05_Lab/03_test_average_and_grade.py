@@ -8,10 +8,12 @@
 # Description: Calculate test average and determine letter grades.
 # -------------------------------------------------
 
+# Calculate average of five test scores
 def calc_average(score1: float, score2: float, score3: float, score4: float, score5: float) -> float:
     return (score1 + score2 + score3 + score4 + score5) / 5
 
 
+# Determine letter grade based on score
 def determine_grade(score: float) -> str:
     if score >= 90:
         return "A"
