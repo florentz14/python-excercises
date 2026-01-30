@@ -1,7 +1,17 @@
 #!/usr/bin/env python3
+# -------------------------------------------------
+# File Name: 03_test_average_and_grade.py
+# Author: Florentino Báez
+# Course: ITSE-1002: Python Programming
+# Professor: Mauricio Quiroga
+# Date: Module 05 Lab
+# Description: Calculate test average and determine letter grades.
+# -------------------------------------------------
+
 """Baez Module 05 Lab - Exercise 3
 Test Average and Grade
 """
+
 
 def calc_average(score1: float, score2: float, score3: float, score4: float, score5: float) -> float:
     return (score1 + score2 + score3 + score4 + score5) / 5
@@ -43,8 +53,18 @@ if __name__ == "__main__":
             print(f"Score 4: {score4:.2f}\t\t{determine_grade(score4)}")
             print(f"Score 5: {score5:.2f}\t\t{determine_grade(score5)}")
             print("-" * 40)
-            print(f"Average Score: {average:.2f}\t\t{determine_grade(average)}")
+            print(
+                f"Average Score: {average:.2f}\t\t{determine_grade(average)}")
     except ValueError:
         print("Error: Please enter valid numbers.")
     except Exception as e:
         print(f"Error: {e}")
+
+print()
+
+print("\n" + "=" * 60)
+print("CITATION")
+print("=" * 60)
+print("1. Grade Calculation:")
+print("   - Standard letter grade scale (A-F)")
+print("   Source: Common grading scale used in educational institutions")

@@ -1,7 +1,17 @@
 #!/usr/bin/env python3
+# -------------------------------------------------
+# File Name: 04_prime_numbers.py
+# Author: Florentino Báez
+# Course: ITSE-1002: Python Programming
+# Professor: Mauricio Quiroga
+# Date: Module 05 Lab
+# Description: Determine whether a number is prime.
+# -------------------------------------------------
+
 """Baez Module 05 Lab - Exercise 4
 Prime Numbers
 """
+
 
 def is_prime(number: int) -> bool:
     if number < 2:
@@ -26,3 +36,13 @@ if __name__ == "__main__":
         print("Error: Please enter a valid integer.")
     except Exception as e:
         print(f"Error: {e}")
+
+print()
+
+print("\n" + "=" * 60)
+print("CITATION")
+print("=" * 60)
+print("1. Prime Number Algorithm:")
+print("   - Trial division method: Check divisibility from 2 to √n")
+print("   Source: Prime Number - Wikipedia")
+print("   https://en.wikipedia.org/wiki/Prime_number")
