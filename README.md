@@ -1,109 +1,133 @@
 # Python Exercises
 
-Un repositorio completo de ejercicios de Python para aprender programación desde lo básico hasta conceptos más avanzados.
+Un repositorio completo de ejercicios de Python para aprender programación desde lo básico hasta conceptos más avanzados (NumPy, Pandas, Matplotlib).
+
+## 🚀 Instalación y dependencias
+
+**Instalar las librerías recomendadas** (camino recomendado: NumPy, Pandas, Matplotlib):
+
+```bash
+pip install -r requirements.txt
+```
+
+Incluye: `numpy`, `pandas`, `matplotlib`. Ver [CAMINO_RECOMENDADO.md](CAMINO_RECOMENDADO.md) para la ruta completa y opciones (PyTorch/TensorFlow).
+
+---
 
 ## 📚 Contenido
 
-El proyecto está organizado en 6 categorías principales de aprendizaje:
-
 ### 📁 01_Variables_y_Tipos_Datos
 
-Introducción a variables y tipos de datos:
+Variables y tipos de datos (archivos separados por tema):
 
-- **variables.py** - Declaración y uso de variables
-- **complex.py** - Números complejos
-- **tuple.py** - Tuplas y operaciones
-- **list.py** - Listas y métodos
-- **dictionary.py** - Diccionarios y sus usos
-- **set.py** - Conjuntos (sets)
+- **variables.py**, **complex.py** – Variables básicas y números complejos
+- **list_01** … **list_10** – Listas (crear, índice, añadir, slice, comprensión, etc.)
+- **tuple_01** … **tuple_14** – Tuplas (índices, slice, desempaquetado, inmutabilidad, etc.)
+- **dictionary_01** … **dictionary_16** – Diccionarios (claves, get, update, anidados, etc.)
+- **set_01** … **set_18** – Conjuntos (unión, intersección, diferencia, comprensión, etc.)
 
 ### 📁 02_Condicionales
 
-Estructuras de control con if/else:
+Condicionales y switch-case:
 
-- **if.py** - Condicionales básicos
-- **exercise_zodiac_simple.py** - Zodiaco simple
-- **exercise_chinese_zodiac.py** - Zodiaco chino
+- **if_01** … **if_05** – Ejemplos de if/elif/else (número, votar, nota, par/impar, login)
+- **condicional_01** … **condicional_06** – if simple, else, elif, anidado, and/or, ternario
+- **switch_01** … **switch_04** – Emular switch (if/elif, diccionario, match/case)
+- **exercise_zodiac_simple.py**, **exercise_chinese_zodiac.py** – Zodiaco
 
 ### 📁 03_Ciclos
 
-**56 ejercicios de loops y ciclos organizados progresivamente:**
-
-#### Ciclos Básicos (01-22)
-
-- While loops simples
-- For loops con range
-- Condiciones dentro de loops
-- Juegos interactivos (adivinanza, matemáticas)
-- Manejo de errores
-
-#### Ciclos Comunes (23-39)
-
-- Iteración sobre listas y strings
-- Break y continue
-- Búsqueda y conteo
-- Cálculos (suma, promedio, máximo, mínimo)
-- Patrones simples
-
-#### Ciclos Anidados (40-54)
-
-- Tablas de multiplicación
-- Patrones triangulares
-- Matrices 2D
-- Búsqueda en matrices
-- Clasificación de datos
-
-#### Ejercicios Interactivos (55-56)
-
-- Tabla de multiplicación interactiva (del 1 al 12)
-- Triángulo de Pascal interactivo
+Ejercicios de loops (while, for, anidados, interactivos). Ver carpeta para numeración completa.
 
 ### 📁 04_Funciones
 
-Introducción a funciones y programación orientada a objetos:
-
-- **clase_animales.py** - Clase para modelos de animales
-- **clase_dispositivos_moviles.py** - Clase para dispositivos móviles
-- **clase_personas.py** - Clase para personas
-- **clase_transporte.py** - Clase para transporte
-- **clase_usuarios.py** - Sistema de usuarios básico
-- **clase_usuarios_avanzada.py** - Sistema avanzado de usuarios
+Funciones con parámetros y bucles: **exercise_01_greet.py** … **exercise_15_countdown.py** (saludos, números, áreas, tablas, listas, etc.).
 
 ### 📁 05_Estructuras_de_Datos
 
-Operaciones avanzadas con estructuras de datos:
-
-- **matrix.py** - Operaciones con matrices
-- **matrix_operations.py** - Operaciones complejas de matrices
-- **count.py** - Conteo y frecuencias
+**matrix.py**, **matrix_operations.py**, **count.py** – Matrices y conteo.
 
 ### 📁 06_Ejercicios_Integradores
 
-Ejercicios que combinan múltiples conceptos:
+Ejercicios que combinan varios conceptos: **app.py**, **exercise_bmi.py**, **exercise_leap_year.py**, **exercise_magic_dates.py**, **exercise_roman_numeral_converter.py**, **exercise_areas.py**, etc.
 
-- **app.py** - Aplicación principal
-- **exercise1.py a exercise7.py** - Ejercicios generales
-- **exercise_bmi.py** - Cálculo del Índice de Masa Corporal
-- **exercise_leap_year.py** - Verificación de años bisiestos
-- **exercise_magic_dates.py** - Fechas mágicas
-- **exercise_roman_numeral_converter.py** - Conversión a números romanos
-- **exercise_areas.py** - Cálculo de áreas
-- **exercise_birth_info.py** - Información de nacimiento
-- **ex-online-01.py** - Ejercicio en línea
-- Y más...
+### 📁 07_Lists_and_Tuples
 
-### 📁 Baez_Module_03_Lab
+Ejercicios adicionales de listas y tuplas (part1, part2, extra).
 
-Ejercicios del módulo 3 (Baez):
+### 📁 08_Matrices
 
-- **exercise_bmi.py** - Cálculo del Índice de Masa Corporal
-- **exercise_leap_year.py** - Verificación de años bisiestos
-- **exercise_magic_dates.py** - Fechas mágicas
-- **exercise_roman_numeral.py** - Conversión a números romanos
+Vectores y matrices: **Python básico** (listas) → **NumPy paso a paso**.
 
-### 📁 Baez_Module_04_Lab, 05_Lab, 06_Lab, 07_Lab
+- Vectores: `vector_01` … `vector_06`
+- Matrices: `matrix_01` … `matrix_06`
+- NumPy: `numpy_01` … `numpy_08` (arrays, dot, norm, inverse, broadcasting)
 
-Carpetas disponibles para futuros ejercicios de los módulos 4, 5, 6 y 7
+Requiere: `numpy` (incluido en `requirements.txt`).
+
+### 📁 09_Pandas
+
+Tablas tipo Excel: DataFrames, leer CSV, filtrar, columnas.  
+Archivos: `pandas_01_crear_dataframe.py` … `pandas_04_columnas.py`.  
+Requiere: `pandas`.
+
+### 📁 10_Matplotlib
+
+Gráficas: línea, barras, dispersión.  
+Archivos: `matplotlib_01_linea.py`, `matplotlib_02_barras.py`, `matplotlib_03_scatter.py`.  
+Requiere: `matplotlib`.
+
+### 📁 11_POO (Programación Orientada a Objetos)
+
+Clases en Python (herencia, polimorfismo):
+
+- **clase_animales.py** – Animal, Perro, Gato, Pájaro, Pez, León
+- **clase_dispositivos_moviles.py** – Smartphone, Tablet, Smartwatch, EReader, etc.
+- **clase_personas.py** – Persona, Estudiante, Profesor, Ingeniero, Médico, Deportista
+- **clase_transporte.py** – Transporte, Automovil, Motocicleta, Bicicleta, Avión
+- **clase_usuarios.py** – Usuario, Cliente, Empleado, Vendedor, Gerente, Administrador, SoporteTecnico
+- **clase_usuarios_avanzada.py** – Sistema avanzado (hasheo, sesiones, roles, auditoría)
+- Clases sencillas: **clase_vector.py**, **clase_matrix_numpy.py**, **clase_point2d.py**, **clase_dataset.py**, **clase_sparse_matrix.py**, etc.
+
+### 📁 12_Pilas
+
+Pila (LIFO): **pila_01_lista.py**, **pila_02_clase.py**, **pila_03_parentesis.py** (balanceo de paréntesis).
+
+### 📁 13_Colas
+
+Cola (FIFO): **cola_01_lista.py**, **cola_02_deque.py**, **cola_03_clase.py** (con `collections.deque`).
+
+### 📁 14_Arboles
+
+Árbol binario: **arbol_01_nodo.py**, **arbol_02_recorrido.py** (inorden, preorden, postorden), **arbol_03_altura.py**.
+
+### 📁 15_Grafos
+
+Grafos (lista de adyacencia): **grafo_01_lista_adyacencia.py**, **grafo_02_clase.py**, **grafo_03_bfs.py**, **grafo_04_dfs.py**.
+
+### 📁 Baez_Module_02_Lab … 07_Lab
+
+Módulos de laboratorio (distancias, propinas, gráficos, BMI, años bisiestos, fechas mágicas, romanos, análisis de números, nóminas, notas, barajas, cumpleaños, etc.).
+
+---
+
+## 💡 Estructura de aprendizaje recomendada
+
+1. **01_Variables_y_Tipos_Datos** – Conceptos básicos  
+2. **02_Condicionales** – Toma de decisiones  
+3. **03_Ciclos** – Repetición de código  
+4. **04_Funciones** – Funciones y modularidad  
+5. **05_Estructuras_de_Datos** – Manipulación avanzada  
+6. **06_Ejercicios_Integradores** – Aplicación de conceptos  
+7. **07_Lists_and_Tuples** – Más práctica con listas/tuplas  
+8. **08_Matrices** – Vectores, matrices, NumPy  
+9. **09_Pandas** – Tablas y datos  
+10. **10_Matplotlib** – Gráficas  
+11. **11_POO** – Clases, herencia y polimorfismo  
+
+Para el **camino recomendado** (NumPy → Pandas → Matplotlib → AI/tensores), ver **[CAMINO_RECOMENDADO.md](CAMINO_RECOMENDADO.md)**.
+
+---
 
 ## 🚀 Cómo usar
 
@@ -111,46 +135,32 @@ Carpetas disponibles para futuros ejercicios de los módulos 4, 5, 6 y 7
 
    ```bash
    git clone https://github.com/florentz14/python-excercises.git
-   ```
-
-2. **Navegar a la carpeta del proyecto:**
-
-   ```bash
    cd python-excercises
    ```
 
-3. **Ejecutar un archivo Python:**
+2. **Instalar dependencias (recomendado para 08, 09, 10):**
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+3. **Ejecutar un archivo:**
 
    ```bash
    python 01_Variables_y_Tipos_Datos/variables.py
+   python 08_Matrices/numpy_01_instalar_importar.py
+   python 09_Pandas/pandas_01_crear_dataframe.py
+   python 10_Matplotlib/matplotlib_01_linea.py
    ```
 
-   O navegar a la carpeta primero:
-
-   ```bash
-   cd 03_Ciclos
-   python 01_programming_is_fun_while.py
-   ```
-
-## 💡 Estructura de Aprendizaje Recomendada
-
-Se recomienda seguir este orden para aprender progresivamente:
-
-1. **01_Variables_y_Tipos_Datos** - Conceptos básicos
-2. **02_Condicionales** - Toma de decisiones
-3. **03_Ciclos** - Repetición de código
-4. **04_Funciones** - Modularidad y POO
-5. **05_Estructuras_de_Datos** - Manipulación avanzada
-6. **06_Ejercicios_Integradores** - Aplicación de conceptos
+---
 
 ## 📝 Características
 
-- ✅ Todos los archivos incluyen comentarios detallados
-- ✅ Cada ejercicio demuestra un concepto específico
-- ✅ Los ejercicios interactivos incluyen manejo de errores
-- ✅ Organización clara por categorías
-- ✅ Ejemplos de while y for para comparación
-- ✅ Ejercicios de dificultad progresiva
+- ✅ Comentarios y docstrings en los ejercicios  
+- ✅ Organización por categorías y progresión  
+- ✅ Python básico + NumPy, Pandas, Matplotlib  
+- ✅ Condicionales, switch (match/case), ciclos, funciones, POO, pilas, colas, árboles, grafos  
 
 ## 👨‍💻 Autor
 
