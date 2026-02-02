@@ -1,3 +1,10 @@
+"""
+Variables y tipos de datos básicos
+===================================
+Tema: Variables (01_Variables_y_Tipos_Datos)
+Descripción: Variables enteras, operaciones, floats (precio e impuesto),
+formateo de strings y f-strings para mostrar resultados.
+"""
 # Initialize integer variables
 x = 3
 y = 5

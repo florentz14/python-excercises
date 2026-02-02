@@ -1,3 +1,10 @@
+"""
+Números complejos en Python
+===========================
+Tema: Tipos numéricos - complex (01_Variables_y_Tipos_Datos)
+Descripción: Crear números complejos (1+2j), partes real e imaginaria,
+operaciones aritméticas, conjugate(), abs(), phase() y el módulo cmath.
+"""
 import cmath
 # Examples of different numeric types in Python
 
