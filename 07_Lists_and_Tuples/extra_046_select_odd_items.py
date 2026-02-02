@@ -1,0 +1,7 @@
+# 46. Select Odd Items (index 1, 3, 5, ...)
+
+def odd_index_items(lst: list) -> list:
+    return lst[1::2]
+
+
+print(odd_index_items([0, 1, 2, 3, 4, 5]))  # [1, 3, 5]
