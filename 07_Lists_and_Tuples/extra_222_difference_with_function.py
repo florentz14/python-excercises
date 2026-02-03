@@ -1,7 +1,13 @@
+# ---------------------------------------------------------------------------
 # 222. Difference Between Lists After Applying Function to Each Element
+# ---------------------------------------------------------------------------
+# Descripción: Difference Between Lists After Applying Function to Each Element
+# Entrada/Salida: Según el ejercicio.
+# ---------------------------------------------------------------------------
 
 def difference_by_func(a: list, b: list, func) -> list:
     set_b = {func(x) for x in b}
+    # Lista por comprensión: se incluyen solo los elementos que cumplen la condición.
     return [x for x in a if func(x) not in set_b]
 
 

@@ -1,4 +1,9 @@
+# ---------------------------------------------------------------------------
 # 103. Extract N Elements That Follow Each Other Continuously (same value repeated n times)
+# ---------------------------------------------------------------------------
+# Descripción: Extract N Elements That Follow Each Other Continuously (same value ...
+# Entrada/Salida: Según el ejercicio.
+# ---------------------------------------------------------------------------
 
 def extract_continuous(lst: list, n: int) -> list:
     """Find values that appear n times in a row."""

@@ -1,8 +1,14 @@
+# ---------------------------------------------------------------------------
 # 277. Largest and Smallest Gap Between Sorted Elements
+# ---------------------------------------------------------------------------
+# Descripción: Largest and Smallest Gap Between Sorted Elements
+# Entrada/Salida: Según el ejercicio.
+# ---------------------------------------------------------------------------
 
 def largest_smallest_gap(lst: list[int]) -> tuple[int, int]:
     sorted_lst = sorted(lst)
     gaps = [sorted_lst[i + 1] - sorted_lst[i] for i in range(len(sorted_lst) - 1)]
+    # Se devuelve un valor u otro según la condición.
     return max(gaps), min(gaps) if gaps else (0, 0)
 
 

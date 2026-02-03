@@ -1,4 +1,9 @@
+# ---------------------------------------------------------------------------
 # 64. Iterate Over Two Lists Simultaneously
+# ---------------------------------------------------------------------------
+# Descripción: Iterate Over Two Lists Simultaneously
+# Entrada/Salida: Según el ejercicio.
+# ---------------------------------------------------------------------------
 
 def iterate_together(a: list, b: list):
     for x, y in zip(a, b):

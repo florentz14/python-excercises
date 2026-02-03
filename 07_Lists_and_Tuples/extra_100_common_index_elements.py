@@ -1,6 +1,12 @@
+# ---------------------------------------------------------------------------
 # 100. Extract Common Index Elements (same value at same index across lists)
+# ---------------------------------------------------------------------------
+# Descripción: Extract Common Index Elements (same value at same index across lists)
+# Entrada/Salida: Según el ejercicio.
+# ---------------------------------------------------------------------------
 
 def common_index_elements(*lists: list) -> list:
+    # Lista por comprensión: se construye la lista a partir del iterable.
     return [lists[0][i] for i in range(min(len(L) for L in lists))
             if all(L[i] == lists[0][i] for L in lists)]
 

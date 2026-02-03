@@ -53,7 +53,7 @@ Ejercicios que combinan varios conceptos: **app.py**, **exercise_bmi.py**, **exe
 
 ### 📁 07_Lists_and_Tuples
 
-Ejercicios adicionales de listas y tuplas (part1, part2, extra).
+Ejercicios de listas y tuplas en secuencia: **Part 1** (10 listas), **Part 2** (10 tuplas), **Extras** (280). Ver [07_Lists_and_Tuples/README.md](07_Lists_and_Tuples/README.md) para el orden recomendado y la tabla de contenidos.
 
 ### 📁 08_Matrices
 

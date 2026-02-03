@@ -1,7 +1,13 @@
+# ---------------------------------------------------------------------------
 # 144. Extract Every First (or n-th) Element from 2D List
+# ---------------------------------------------------------------------------
+# Descripción: Extract Every First (or n-th) Element from 2D List
+# Entrada/Salida: Según el ejercicio.
+# ---------------------------------------------------------------------------
 
 def extract_nth_column(matrix: list[list], n: int = 0) -> list:
     """n=0: first, n=2: third column."""
+    # Lista por comprensión: se incluyen solo los elementos que cumplen la condición.
     return [row[n] for row in matrix if len(row) > n]
 
 

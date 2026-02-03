@@ -12,6 +12,7 @@ def flatten_shallow(lst: list) -> list:
     for item in lst:
         # Si el elemento es una lista, añadimos sus elementos (no la lista entera)
         if isinstance(item, list):
+            # Si es lista se aplana recursivamente; si no, se añade el elemento.
             result.extend(item)
         else:
             # Si no es lista, lo añadimos tal cual

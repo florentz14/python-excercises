@@ -1,6 +1,12 @@
+# ---------------------------------------------------------------------------
 # 251. Fill List with Specified Value
+# ---------------------------------------------------------------------------
+# Descripción: Fill List with Specified Value
+# Entrada/Salida: Según el ejercicio.
+# ---------------------------------------------------------------------------
 
 def fill_list(value, length: int) -> list:
+    # Se repite el valor length veces en una lista.
     return [value] * length
 
 

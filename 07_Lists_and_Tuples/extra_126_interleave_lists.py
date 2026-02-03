@@ -1,6 +1,12 @@
+# ---------------------------------------------------------------------------
 # 126. Interleave Multiple Lists (same length): [1,2,3], [10,20,30], [100,200,300] -> [1,10,100,2,20,200,...]
+# ---------------------------------------------------------------------------
+# Descripción: Interleave Multiple Lists (same length): [1,2,3], [10,20,30], [100,...
+# Entrada/Salida: Según el ejercicio.
+# ---------------------------------------------------------------------------
 
 def interleave(*lists: list) -> list:
+    # Lista por comprensión: se construye la lista a partir del iterable.
     return [x for t in zip(*lists) for x in t]
 
 

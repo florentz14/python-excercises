@@ -1,9 +1,15 @@
+# ---------------------------------------------------------------------------
 # 255. Deep Flatten List (any nesting level)
+# ---------------------------------------------------------------------------
+# Descripción: Deep Flatten List (any nesting level)
+# Entrada/Salida: Según el ejercicio.
+# ---------------------------------------------------------------------------
 
 def deep_flatten(lst: list) -> list:
     result = []
     for x in lst:
         if isinstance(x, list):
+            # Si es lista se aplana recursivamente; si no, se añade el elemento.
             result.extend(deep_flatten(x))
         else:
             result.append(x)

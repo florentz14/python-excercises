@@ -1,4 +1,9 @@
+# ---------------------------------------------------------------------------
 # 134. Difference Between Two Lists Including Duplicates (multiset difference)
+# ---------------------------------------------------------------------------
+# Descripción: Difference Between Two Lists Including Duplicates (multiset differe...
+# Entrada/Salida: Según el ejercicio.
+# ---------------------------------------------------------------------------
 
 from collections import Counter
 
@@ -6,6 +11,7 @@ def difference_with_duplicates(a: list, b: list) -> list:
     ca, cb = Counter(a), Counter(b)
     result = []
     for x, count in ca.items():
+        # Si es lista se aplana recursivamente; si no, se añade el elemento.
         result.extend([x] * (count - cb.get(x, 0)))
     return result
 

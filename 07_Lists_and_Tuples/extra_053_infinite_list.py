@@ -1,4 +1,9 @@
+# ---------------------------------------------------------------------------
 # 53. Create List with Infinite Elements (using generator)
+# ---------------------------------------------------------------------------
+# Descripción: Create List with Infinite Elements (using generator)
+# Entrada/Salida: Según el ejercicio.
+# ---------------------------------------------------------------------------
 
 def infinite_list(start=0, step=1):
     """Generator yielding infinite elements."""

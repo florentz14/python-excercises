@@ -1,6 +1,12 @@
+# ---------------------------------------------------------------------------
 # 118. Difference (n+1)th - nth for Each Position
+# ---------------------------------------------------------------------------
+# Descripción: Difference (n+1)th - nth for Each Position
+# Entrada/Salida: Según el ejercicio.
+# ---------------------------------------------------------------------------
 
 def diff_consecutive(lst: list[float]) -> list[float]:
+    # Lista por comprensión: se construye la lista a partir del iterable.
     return [lst[i + 1] - lst[i] for i in range(len(lst) - 1)]
 
 

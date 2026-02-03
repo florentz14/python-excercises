@@ -1,6 +1,12 @@
+# ---------------------------------------------------------------------------
 # 224. List with Unique Values Filtered Out (keep only duplicates)
+# ---------------------------------------------------------------------------
+# Descripción: List with Unique Values Filtered Out (keep only duplicates)
+# Entrada/Salida: Según el ejercicio.
+# ---------------------------------------------------------------------------
 
 def only_duplicates(lst: list) -> list:
+    # Lista por comprensión: se incluyen solo los elementos que cumplen la condición.
     return [x for x in set(lst) if lst.count(x) > 1]
 
 

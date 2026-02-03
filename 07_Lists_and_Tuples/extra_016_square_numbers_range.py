@@ -1,4 +1,9 @@
+# ---------------------------------------------------------------------------
 # 16. First and last 5 square numbers between 1 and 30
+# ---------------------------------------------------------------------------
+# Descripción: First and last 5 square numbers between 1 and 30
+# Entrada/Salida: Según el ejercicio.
+# ---------------------------------------------------------------------------
 
 squares = [x * x for x in range(1, 31) if 1 <= x * x <= 30]
 # Actually: squares between 1 and 30 (both included) -> 1,4,9,16,25

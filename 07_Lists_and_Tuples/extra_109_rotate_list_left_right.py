@@ -1,4 +1,9 @@
+# ---------------------------------------------------------------------------
 # 109. Rotate List Left or Right by N Items
+# ---------------------------------------------------------------------------
+# Descripción: Rotate List Left or Right by N Items
+# Entrada/Salida: Según el ejercicio.
+# ---------------------------------------------------------------------------
 
 def rotate_left(lst: list, n: int) -> list:
     n = n % len(lst)

@@ -1,4 +1,9 @@
+# ---------------------------------------------------------------------------
 # 228. Union of Two Lists (unique) After Applying Function
+# ---------------------------------------------------------------------------
+# Descripción: Union of Two Lists (unique) After Applying Function
+# Entrada/Salida: Según el ejercicio.
+# ---------------------------------------------------------------------------
 
 def union_by_func(a: list, b: list, func) -> list:
     seen = set()

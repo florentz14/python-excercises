@@ -1,4 +1,9 @@
+# ---------------------------------------------------------------------------
 # 131. Frequency of Consecutive Duplicate Elements (unique values + their run counts)
+# ---------------------------------------------------------------------------
+# Descripción: Frequency of Consecutive Duplicate Elements (unique values + their ...
+# Entrada/Salida: Según el ejercicio.
+# ---------------------------------------------------------------------------
 
 def consecutive_frequency(lst: list) -> tuple[list, list]:
     if not lst:

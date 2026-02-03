@@ -1,6 +1,12 @@
+# ---------------------------------------------------------------------------
 # 130. Count Same Pair in Three Lists (same index, same value in all three)
+# ---------------------------------------------------------------------------
+# Descripción: Count Same Pair in Three Lists (same index, same value in all three)
+# Entrada/Salida: Según el ejercicio.
+# ---------------------------------------------------------------------------
 
 def count_same_pair_three(a: list, b: list, c: list) -> int:
+    # Se devuelve la suma de todos los elementos.
     return sum(1 for i in range(min(len(a), len(b), len(c))) if a[i] == b[i] == c[i])
 
 

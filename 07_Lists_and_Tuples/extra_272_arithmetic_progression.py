@@ -1,4 +1,9 @@
+# ---------------------------------------------------------------------------
 # 272. Generate Arithmetic Progression (start, step, limit)
+# ---------------------------------------------------------------------------
+# Descripción: Generate Arithmetic Progression (start, step, limit)
+# Entrada/Salida: Según el ejercicio.
+# ---------------------------------------------------------------------------
 
 def arithmetic_progression(start: int, step: int, limit: int) -> list[int]:
     result = []

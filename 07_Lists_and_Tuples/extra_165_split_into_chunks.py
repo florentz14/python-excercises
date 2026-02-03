@@ -1,6 +1,12 @@
+# ---------------------------------------------------------------------------
 # 165. Split List into Specified-Sized Chunks
+# ---------------------------------------------------------------------------
+# Descripción: Split List into Specified-Sized Chunks
+# Entrada/Salida: Según el ejercicio.
+# ---------------------------------------------------------------------------
 
 def chunk_list(lst: list, size: int) -> list[list]:
+    # Lista por comprensión: se construye la lista a partir del iterable.
     return [lst[i:i + size] for i in range(0, len(lst), size)]
 
 

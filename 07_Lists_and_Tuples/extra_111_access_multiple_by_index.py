@@ -1,6 +1,12 @@
+# ---------------------------------------------------------------------------
 # 111. Access Multiple Elements at Specified Indices
+# ---------------------------------------------------------------------------
+# Descripción: Access Multiple Elements at Specified Indices
+# Entrada/Salida: Según el ejercicio.
+# ---------------------------------------------------------------------------
 
 def elements_at_indices(lst: list, indices: list[int]) -> list:
+    # Lista por comprensión: se incluyen solo los elementos que cumplen la condición.
     return [lst[i] for i in indices if 0 <= i < len(lst)]
 
 

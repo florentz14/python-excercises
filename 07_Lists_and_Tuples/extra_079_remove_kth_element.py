@@ -1,6 +1,12 @@
+# ---------------------------------------------------------------------------
 # 79. Remove K-th Element from List (1-based index in sample: remove 3rd -> index 2)
+# ---------------------------------------------------------------------------
+# Descripción: Remove K-th Element from List (1-based index in sample: remove 3rd ...
+# Entrada/Salida: Según el ejercicio.
+# ---------------------------------------------------------------------------
 
 def remove_kth(lst: list, k: int) -> list:
+    # Lista por comprensión: se incluyen solo los elementos que cumplen la condición.
     return [x for i, x in enumerate(lst) if i != k]
 
 

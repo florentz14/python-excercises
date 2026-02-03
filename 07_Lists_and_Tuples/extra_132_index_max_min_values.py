@@ -1,4 +1,9 @@
+# ---------------------------------------------------------------------------
 # 132. All Index Positions of Max and Min in List
+# ---------------------------------------------------------------------------
+# Descripción: All Index Positions of Max and Min in List
+# Entrada/Salida: Según el ejercicio.
+# ---------------------------------------------------------------------------
 
 def index_max_min(lst: list) -> tuple[list[int], list[int]]:
     if not lst:

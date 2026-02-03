@@ -1,4 +1,9 @@
+# ---------------------------------------------------------------------------
 # 216. Group Elements by Function and Return Count per Group
+# ---------------------------------------------------------------------------
+# Descripción: Group Elements by Function and Return Count per Group
+# Entrada/Salida: Según el ejercicio.
+# ---------------------------------------------------------------------------
 
 from collections import defaultdict
 
@@ -6,6 +11,7 @@ def group_by_count(lst: list, key_func) -> dict:
     groups = defaultdict(int)
     for x in lst:
         groups[key_func(x)] += 1
+    # Se construye list/set/dict a partir del iterable (elimina duplicados en set/dict).
     return dict(groups)
 
 

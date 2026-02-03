@@ -1,4 +1,9 @@
+# ---------------------------------------------------------------------------
 # 245. Longest Iterable Among Arguments
+# ---------------------------------------------------------------------------
+# Descripción: Longest Iterable Among Arguments
+# Entrada/Salida: Según el ejercicio.
+# ---------------------------------------------------------------------------
 
 def longest(*args) -> list | str:
     return max(args, key=len)

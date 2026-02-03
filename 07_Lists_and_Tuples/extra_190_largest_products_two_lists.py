@@ -1,4 +1,9 @@
+# ---------------------------------------------------------------------------
 # 190. N Largest Products from Two Lists (one from each list)
+# ---------------------------------------------------------------------------
+# Descripción: N Largest Products from Two Lists (one from each list)
+# Entrada/Salida: Según el ejercicio.
+# ---------------------------------------------------------------------------
 
 def n_largest_products(a: list[int], b: list[int], n: int) -> list[int]:
     products = [x * y for x in a for y in b]

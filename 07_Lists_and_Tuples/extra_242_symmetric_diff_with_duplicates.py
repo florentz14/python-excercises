@@ -1,4 +1,9 @@
+# ---------------------------------------------------------------------------
 # 242. Symmetric Difference Without Filtering Duplicates
+# ---------------------------------------------------------------------------
+# Descripción: Symmetric Difference Without Filtering Duplicates
+# Entrada/Salida: Según el ejercicio.
+# ---------------------------------------------------------------------------
 
 def symmetric_diff_keep_dupes(a: list, b: list) -> list:
     result = [x for x in a if x not in b]
@@ -13,6 +18,7 @@ def symmetric_diff_multiset(a: list, b: list) -> list:
     result = []
     for x in (set(a) | set(b)):
         diff = ca[x] - cb[x]
+        # Si es lista se aplana recursivamente; si no, se añade el elemento.
         result.extend([x] * abs(diff))
     return result
 

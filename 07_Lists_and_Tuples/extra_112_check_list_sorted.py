@@ -1,4 +1,9 @@
+# ---------------------------------------------------------------------------
 # 112. Check If List Is Sorted
+# ---------------------------------------------------------------------------
+# Descripción: Check If List Is Sorted
+# Entrada/Salida: Según el ejercicio.
+# ---------------------------------------------------------------------------
 
 def is_sorted(lst: list, ascending: bool = True) -> bool:
     if ascending:

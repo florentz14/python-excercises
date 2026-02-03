@@ -1,4 +1,9 @@
+# ---------------------------------------------------------------------------
 # 229. First Index Where Element Satisfies Function
+# ---------------------------------------------------------------------------
+# Descripción: First Index Where Element Satisfies Function
+# Entrada/Salida: Según el ejercicio.
+# ---------------------------------------------------------------------------
 
 def first_index_where(lst: list, predicate) -> int:
     for i, x in enumerate(lst):

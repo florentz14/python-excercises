@@ -1,4 +1,9 @@
+# ---------------------------------------------------------------------------
 # 247. Difference Between Iterables Without Filtering Duplicates
+# ---------------------------------------------------------------------------
+# Descripción: Difference Between Iterables Without Filtering Duplicates
+# Entrada/Salida: Según el ejercicio.
+# ---------------------------------------------------------------------------
 
 def difference_keep_dupes(a: list, b: list) -> list:
     result = a.copy()

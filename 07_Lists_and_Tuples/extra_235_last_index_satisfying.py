@@ -1,4 +1,9 @@
+# ---------------------------------------------------------------------------
 # 235. Last Index Where Element Satisfies Function
+# ---------------------------------------------------------------------------
+# Descripción: Last Index Where Element Satisfies Function
+# Entrada/Salida: Según el ejercicio.
+# ---------------------------------------------------------------------------
 
 def last_index_where(lst: list, predicate) -> int:
     for i in range(len(lst) - 1, -1, -1):

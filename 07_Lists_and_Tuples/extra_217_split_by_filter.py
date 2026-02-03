@@ -1,4 +1,9 @@
+# ---------------------------------------------------------------------------
 # 217. Split Values into Two Groups by Filtering Function
+# ---------------------------------------------------------------------------
+# Descripción: Split Values into Two Groups by Filtering Function
+# Entrada/Salida: Según el ejercicio.
+# ---------------------------------------------------------------------------
 
 def split_by_filter(lst: list, predicate) -> tuple[list, list]:
     yes = [x for x in lst if predicate(x)]

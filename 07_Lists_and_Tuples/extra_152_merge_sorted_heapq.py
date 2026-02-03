@@ -1,8 +1,14 @@
+# ---------------------------------------------------------------------------
 # 152. Merge Two Sorted Lists Using heapq
+# ---------------------------------------------------------------------------
+# Descripción: Merge Two Sorted Lists Using heapq
+# Entrada/Salida: Según el ejercicio.
+# ---------------------------------------------------------------------------
 
 import heapq
 
 def merge_sorted(a: list[int], b: list[int]) -> list[int]:
+    # Se construye list/set/dict a partir del iterable (elimina duplicados en set/dict).
     return list(heapq.merge(a, b))
 
 

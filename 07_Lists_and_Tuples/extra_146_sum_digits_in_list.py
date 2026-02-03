@@ -1,10 +1,17 @@
+# ---------------------------------------------------------------------------
 # 146. Sum of Digits of Each Number in List (ignore non-numeric)
+# ---------------------------------------------------------------------------
+# Descripción: Sum of Digits of Each Number in List (ignore non-numeric)
+# Entrada/Salida: Según el ejercicio.
+# ---------------------------------------------------------------------------
 
 def sum_digits(n: int) -> int:
+    # Se devuelve la suma de todos los elementos.
     return sum(int(d) for d in str(abs(n)) if d.isdigit())
 
 
 def sum_digits_list(lst: list) -> int:
+    # Se devuelve la suma de todos los elementos.
     return sum(sum_digits(x) for x in lst if isinstance(x, (int, float)) and not isinstance(x, bool))
 
 

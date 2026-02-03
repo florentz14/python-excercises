@@ -1,4 +1,9 @@
+# ---------------------------------------------------------------------------
 # 81. Extract N Randomly Selected Elements from List
+# ---------------------------------------------------------------------------
+# Descripción: Extract N Randomly Selected Elements from List
+# Entrada/Salida: Según el ejercicio.
+# ---------------------------------------------------------------------------
 
 import random
 

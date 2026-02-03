@@ -1,8 +1,14 @@
+# ---------------------------------------------------------------------------
 # 110. Find Item with Most Occurrences in List
+# ---------------------------------------------------------------------------
+# Descripción: Find Item with Most Occurrences in List
+# Entrada/Salida: Según el ejercicio.
+# ---------------------------------------------------------------------------
 
 from collections import Counter
 
 def most_frequent(lst: list):
+    # Se devuelve un valor u otro según la condición.
     return Counter(lst).most_common(1)[0][0] if lst else None
 
 

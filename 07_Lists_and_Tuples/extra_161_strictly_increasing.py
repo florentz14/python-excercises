@@ -1,4 +1,9 @@
+# ---------------------------------------------------------------------------
 # 161. Check If List Is Strictly Increasing (or can be by removing one element)
+# ---------------------------------------------------------------------------
+# Descripción: Check If List Is Strictly Increasing (or can be by removing one ele...
+# Entrada/Salida: Según el ejercicio.
+# ---------------------------------------------------------------------------
 
 def is_strictly_increasing(lst: list[int]) -> bool:
     return all(lst[i] < lst[i + 1] for i in range(len(lst) - 1))

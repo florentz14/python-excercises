@@ -1,7 +1,13 @@
+# ---------------------------------------------------------------------------
 # 105. Average of Two Lists (average of all elements from both)
+# ---------------------------------------------------------------------------
+# Descripción: Average of Two Lists (average of all elements from both)
+# Entrada/Salida: Según el ejercicio.
+# ---------------------------------------------------------------------------
 
 def average_two_lists(a: list[float], b: list[float]) -> float:
     combined = a + b
+    # Se devuelve un valor u otro según la condición.
     return sum(combined) / len(combined) if combined else 0
 
 

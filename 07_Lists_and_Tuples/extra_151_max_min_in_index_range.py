@@ -1,7 +1,13 @@
+# ---------------------------------------------------------------------------
 # 151. Max and Min in List Within Index Range
+# ---------------------------------------------------------------------------
+# Descripción: Max and Min in List Within Index Range
+# Entrada/Salida: Según el ejercicio.
+# ---------------------------------------------------------------------------
 
 def max_min_in_range(lst: list[int | float], start: int, end: int) -> tuple:
     sub = lst[start:end + 1]
+    # Se devuelve un valor u otro según la condición.
     return (max(sub), min(sub)) if sub else (None, None)
 
 

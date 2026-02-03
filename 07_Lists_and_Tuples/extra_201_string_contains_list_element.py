@@ -1,4 +1,9 @@
+# ---------------------------------------------------------------------------
 # 201. Check If String Contains Any Element from List
+# ---------------------------------------------------------------------------
+# Descripción: Check If String Contains Any Element from List
+# Entrada/Salida: Según el ejercicio.
+# ---------------------------------------------------------------------------
 
 def string_contains_any(s: str, lst: list[str]) -> bool:
     return any(elem in s for elem in lst)

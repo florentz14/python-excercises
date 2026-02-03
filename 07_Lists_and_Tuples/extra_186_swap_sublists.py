@@ -1,4 +1,9 @@
+# ---------------------------------------------------------------------------
 # 186. Swap Two Sublists in List (by start indices and lengths)
+# ---------------------------------------------------------------------------
+# Descripción: Swap Two Sublists in List (by start indices and lengths)
+# Entrada/Salida: Según el ejercicio.
+# ---------------------------------------------------------------------------
 
 def swap_sublists(lst: list, i1: int, len1: int, i2: int, len2: int) -> list:
     result = lst.copy()

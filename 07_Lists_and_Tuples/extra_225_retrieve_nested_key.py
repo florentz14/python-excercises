@@ -1,4 +1,9 @@
+# ---------------------------------------------------------------------------
 # 225. Retrieve Nested Key Value from Dict/List by Selector List
+# ---------------------------------------------------------------------------
+# Descripción: Retrieve Nested Key Value from Dict/List by Selector List
+# Entrada/Salida: Según el ejercicio.
+# ---------------------------------------------------------------------------
 
 def get_nested(obj, selector: list):
     for key in selector:

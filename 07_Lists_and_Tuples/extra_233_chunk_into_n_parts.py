@@ -1,4 +1,9 @@
+# ---------------------------------------------------------------------------
 # 233. Chunk List into n Smaller Lists (as equal as possible)
+# ---------------------------------------------------------------------------
+# Descripción: Chunk List into n Smaller Lists (as equal as possible)
+# Entrada/Salida: Según el ejercicio.
+# ---------------------------------------------------------------------------
 
 def chunk_into_n(lst: list, n: int) -> list[list]:
     size = len(lst)
@@ -6,6 +11,7 @@ def chunk_into_n(lst: list, n: int) -> list[list]:
     result = []
     start = 0
     for i in range(n):
+        # Asignación condicional: un valor u otro según la condición.
         length = base + (1 if i < extra else 0)
         result.append(lst[start:start + length])
         start += length

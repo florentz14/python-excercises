@@ -1,4 +1,9 @@
+# ---------------------------------------------------------------------------
 # 194. Sum Two or More Lists (Different Lengths) - element-wise, pad with 0
+# ---------------------------------------------------------------------------
+# Descripción: Sum Two or More Lists (Different Lengths) - element-wise, pad with 0
+# Entrada/Salida: Según el ejercicio.
+# ---------------------------------------------------------------------------
 
 def sum_lists(*lists: list[int]) -> list[int]:
     max_len = max(len(L) for L in lists)

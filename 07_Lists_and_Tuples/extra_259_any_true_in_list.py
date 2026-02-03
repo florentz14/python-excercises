@@ -1,4 +1,9 @@
+# ---------------------------------------------------------------------------
 # 259. Check If Any Element Satisfies Function
+# ---------------------------------------------------------------------------
+# Descripción: Check If Any Element Satisfies Function
+# Entrada/Salida: Según el ejercicio.
+# ---------------------------------------------------------------------------
 
 def any_satisfy(lst: list, predicate) -> bool:
     return any(predicate(x) for x in lst)

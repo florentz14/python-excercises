@@ -1,6 +1,12 @@
+# ---------------------------------------------------------------------------
 # 223. List with Non-Unique Values Filtered Out (keep only unique)
+# ---------------------------------------------------------------------------
+# Descripción: List with Non-Unique Values Filtered Out (keep only unique)
+# Entrada/Salida: Según el ejercicio.
+# ---------------------------------------------------------------------------
 
 def only_unique(lst: list) -> list:
+    # Lista por comprensión: se incluyen solo los elementos que cumplen la condición.
     return [x for x in lst if lst.count(x) == 1]
 
 

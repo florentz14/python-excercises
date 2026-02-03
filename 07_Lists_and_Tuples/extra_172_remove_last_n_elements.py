@@ -1,6 +1,12 @@
+# ---------------------------------------------------------------------------
 # 172. Remove Last N Elements from List
+# ---------------------------------------------------------------------------
+# Descripción: Remove Last N Elements from List
+# Entrada/Salida: Según el ejercicio.
+# ---------------------------------------------------------------------------
 
 def remove_last_n(lst: list, n: int) -> list:
+    # Se devuelve un valor u otro según la condición.
     return lst[:-n] if n > 0 else lst[:]
 
 

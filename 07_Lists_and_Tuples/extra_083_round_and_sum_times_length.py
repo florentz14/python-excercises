@@ -1,7 +1,13 @@
+# ---------------------------------------------------------------------------
 # 83. Round Every Number, Print Total Sum * Length
+# ---------------------------------------------------------------------------
+# Descripción: Round Every Number, Print Total Sum * Length
+# Entrada/Salida: Según el ejercicio.
+# ---------------------------------------------------------------------------
 
 def round_sum_times_length(lst: list[float]) -> int | float:
     rounded = [round(x) for x in lst]
+    # Se devuelve la suma de todos los elementos.
     return sum(rounded) * len(rounded)
 
 

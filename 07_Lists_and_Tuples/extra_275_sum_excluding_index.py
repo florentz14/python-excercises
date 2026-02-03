@@ -1,7 +1,13 @@
+# ---------------------------------------------------------------------------
 # 275. Sum of List Excluding Each Index (return list of sums)
+# ---------------------------------------------------------------------------
+# Descripción: Sum of List Excluding Each Index (return list of sums)
+# Entrada/Salida: Según el ejercicio.
+# ---------------------------------------------------------------------------
 
 def sum_excluding_each(lst: list[int]) -> list[int]:
     total = sum(lst)
+    # Lista por comprensión: se construye la lista a partir del iterable.
     return [total - lst[i] for i in range(len(lst))]
 
 

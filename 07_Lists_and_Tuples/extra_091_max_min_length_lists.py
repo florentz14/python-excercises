@@ -1,7 +1,14 @@
+# ---------------------------------------------------------------------------
 # 91. Find List with Max and Min Lengths
+# ---------------------------------------------------------------------------
+# Descripción: Find List with Max and Min Lengths
+# Entrada/Salida: Según el ejercicio.
+# ---------------------------------------------------------------------------
 
 def max_min_length_lists(lists: list[list]) -> tuple[tuple[int, list], tuple[int, list]]:
+    # Lista de pares (longitud, lista) para poder comparar por longitud.
     with_len = [(len(L), L) for L in lists]
+    # max/min por clave: se compara por el primer elemento de cada tupla (longitud).
     return max(with_len, key=lambda x: x[0]), min(with_len, key=lambda x: x[0])
 
 

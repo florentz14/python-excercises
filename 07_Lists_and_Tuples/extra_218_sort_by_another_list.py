@@ -1,6 +1,12 @@
+# ---------------------------------------------------------------------------
 # 218. Sort One List by Another (order list by indexes list)
+# ---------------------------------------------------------------------------
+# Descripción: Sort One List by Another (order list by indexes list)
+# Entrada/Salida: Según el ejercicio.
+# ---------------------------------------------------------------------------
 
 def sort_by_indexes(lst: list, indexes: list[int]) -> list:
+    # Lista por comprensión: se construye la lista a partir del iterable.
     return [lst[i] for i in indexes]
 
 

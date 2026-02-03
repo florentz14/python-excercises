@@ -1,6 +1,12 @@
+# ---------------------------------------------------------------------------
 # 96. Sort List of Lists by Length and Value
+# ---------------------------------------------------------------------------
+# Descripción: Sort List of Lists by Length and Value
+# Entrada/Salida: Según el ejercicio.
+# ---------------------------------------------------------------------------
 
 def sort_by_length_and_value(lists: list[list]) -> list[list]:
+    # Lista de pares (longitud, lista) para poder comparar por longitud.
     return sorted(lists, key=lambda L: (len(L), L))
 
 

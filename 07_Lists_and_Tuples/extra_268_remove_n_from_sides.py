@@ -1,7 +1,13 @@
+# ---------------------------------------------------------------------------
 # 268. Remove n Elements from Left and Right
+# ---------------------------------------------------------------------------
+# Descripción: Remove n Elements from Left and Right
+# Entrada/Salida: Según el ejercicio.
+# ---------------------------------------------------------------------------
 
 def remove_from_sides(lst: list, n: int) -> tuple[list, list]:
     left_removed = lst[n:]
+    # Asignación condicional: un valor u otro según la condición.
     right_removed = lst[:-n] if n > 0 else lst[:]
     return left_removed, right_removed
 

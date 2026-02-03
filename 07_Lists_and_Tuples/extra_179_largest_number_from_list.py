@@ -1,4 +1,9 @@
+# ---------------------------------------------------------------------------
 # 179. Create Largest Number from List of Positive Integers (concatenate sorted)
+# ---------------------------------------------------------------------------
+# Descripción: Create Largest Number from List of Positive Integers (concatenate s...
+# Entrada/Salida: Según el ejercicio.
+# ---------------------------------------------------------------------------
 
 def largest_number(lst: list[int]) -> str:
     """Sort so concatenation is largest: a before b if a+b >= b+a."""

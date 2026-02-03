@@ -1,10 +1,16 @@
+# ---------------------------------------------------------------------------
 # 278. Sum of Missing Numbers (in range min to max not in list)
+# ---------------------------------------------------------------------------
+# Descripción: Sum of Missing Numbers (in range min to max not in list)
+# Entrada/Salida: Según el ejercicio.
+# ---------------------------------------------------------------------------
 
 def sum_missing(lst: list[int]) -> int:
     if not lst:
         return 0
     mn, mx = min(lst), max(lst)
     present = set(lst)
+    # Se devuelve la suma de todos los elementos.
     return sum(x for x in range(mn, mx + 1) if x not in present)
 
 

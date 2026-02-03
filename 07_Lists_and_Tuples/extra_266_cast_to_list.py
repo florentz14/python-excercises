@@ -1,8 +1,14 @@
+# ---------------------------------------------------------------------------
 # 266. Cast Value to List If Not Already
+# ---------------------------------------------------------------------------
+# Descripción: Cast Value to List If Not Already
+# Entrada/Salida: Según el ejercicio.
+# ---------------------------------------------------------------------------
 
 def ensure_list(x) -> list:
     if isinstance(x, list):
         return x
+    # Se devuelve un valor u otro según la condición.
     return list(x) if hasattr(x, '__iter__') and not isinstance(x, str) else [x]
 
 

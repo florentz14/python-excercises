@@ -1,4 +1,9 @@
+# ---------------------------------------------------------------------------
 # 153. Check If Element Occurs at Least n Times in List
+# ---------------------------------------------------------------------------
+# Descripción: Check If Element Occurs at Least n Times in List
+# Entrada/Salida: Según el ejercicio.
+# ---------------------------------------------------------------------------
 
 def occurs_at_least_n(lst: list, elem, n: int) -> bool:
     return lst.count(elem) >= n

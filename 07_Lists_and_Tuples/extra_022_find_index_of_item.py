@@ -1,6 +1,12 @@
+# ---------------------------------------------------------------------------
 # 22. Find Index of an Item in a List
+# ---------------------------------------------------------------------------
+# Descripción: Find Index of an Item in a List
+# Entrada/Salida: Según el ejercicio.
+# ---------------------------------------------------------------------------
 
 def find_index(lst: list, item) -> int:
+    # Se devuelve un valor u otro según la condición.
     return lst.index(item) if item in lst else -1
 
 

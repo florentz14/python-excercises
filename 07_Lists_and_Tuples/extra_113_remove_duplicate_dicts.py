@@ -1,4 +1,9 @@
+# ---------------------------------------------------------------------------
 # 113. Remove Duplicate Dictionaries from List (by content)
+# ---------------------------------------------------------------------------
+# Descripción: Remove Duplicate Dictionaries from List (by content)
+# Entrada/Salida: Según el ejercicio.
+# ---------------------------------------------------------------------------
 
 def unique_dicts(lst: list[dict]) -> list[dict]:
     seen = []

@@ -1,4 +1,9 @@
+# ---------------------------------------------------------------------------
 # 47. Insert Element Before Each List Item
+# ---------------------------------------------------------------------------
+# Descripción: Insert Element Before Each List Item
+# Entrada/Salida: Según el ejercicio.
+# ---------------------------------------------------------------------------
 
 def insert_before(lst: list, elem) -> list:
     result = []

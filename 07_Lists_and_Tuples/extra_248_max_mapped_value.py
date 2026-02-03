@@ -1,4 +1,9 @@
+# ---------------------------------------------------------------------------
 # 248. Max Value After Mapping
+# ---------------------------------------------------------------------------
+# Descripción: Max Value After Mapping
+# Entrada/Salida: Según el ejercicio.
+# ---------------------------------------------------------------------------
 
 def max_after_map(lst: list, func) -> int | float:
     return max(func(x) for x in lst)

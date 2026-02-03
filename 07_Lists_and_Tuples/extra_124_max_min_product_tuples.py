@@ -1,4 +1,9 @@
+# ---------------------------------------------------------------------------
 # 124. Max and Min Product of Tuple Pairs (a*b for each (a,b))
+# ---------------------------------------------------------------------------
+# Descripción: Max and Min Product of Tuple Pairs (a*b for each (a,b))
+# Entrada/Salida: Según el ejercicio.
+# ---------------------------------------------------------------------------
 
 def max_min_product(tuples: list[tuple[int, int]]) -> tuple[int, int]:
     products = [a * b for a, b in tuples]

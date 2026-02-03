@@ -1,6 +1,12 @@
+# ---------------------------------------------------------------------------
 # 166. Remove None from List
+# ---------------------------------------------------------------------------
+# Descripción: Remove None from List
+# Entrada/Salida: Según el ejercicio.
+# ---------------------------------------------------------------------------
 
 def remove_none(lst: list) -> list:
+    # Lista por comprensión: se incluyen solo los elementos que cumplen la condición.
     return [x for x in lst if x is not None]
 
 

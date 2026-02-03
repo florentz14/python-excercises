@@ -1,6 +1,12 @@
+# ---------------------------------------------------------------------------
 # 264. Convert List of Lists to 2D (transpose to tuples of columns)
+# ---------------------------------------------------------------------------
+# Descripción: Convert List of Lists to 2D (transpose to tuples of columns)
+# Entrada/Salida: Según el ejercicio.
+# ---------------------------------------------------------------------------
 
 def rows_to_columns(matrix: list[list]) -> list[tuple]:
+    # Se construye list/set/dict a partir del iterable (elimina duplicados en set/dict).
     return list(zip(*matrix))
 
 

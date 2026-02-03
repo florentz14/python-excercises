@@ -1,7 +1,13 @@
+# ---------------------------------------------------------------------------
 # 56. Convert String to List (characters or by delimiter)
+# ---------------------------------------------------------------------------
+# Descripción: Convert String to List (characters or by delimiter)
+# Entrada/Salida: Según el ejercicio.
+# ---------------------------------------------------------------------------
 
 def string_to_list(s: str, split_by: str | None = None) -> list:
     if split_by is None:
+        # Se construye list/set/dict a partir del iterable (elimina duplicados en set/dict).
         return list(s)  # list of chars
     return s.split(split_by)
 

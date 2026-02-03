@@ -1,4 +1,9 @@
+# ---------------------------------------------------------------------------
 # 65. Move All Zeros to End of List
+# ---------------------------------------------------------------------------
+# Descripción: Move All Zeros to End of List
+# Entrada/Salida: Según el ejercicio.
+# ---------------------------------------------------------------------------
 
 def move_zeros_end(lst: list[int]) -> list[int]:
     non_zero = [x for x in lst if x != 0]

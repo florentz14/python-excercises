@@ -1,4 +1,9 @@
+# ---------------------------------------------------------------------------
 # 164. Get Items from List with Specific Conditions (e.g. even and > 45)
+# ---------------------------------------------------------------------------
+# Descripción: Get Items from List with Specific Conditions (e.g. even and > 45)
+# Entrada/Salida: Según el ejercicio.
+# ---------------------------------------------------------------------------
 
 def filter_by_conditions(lst: list[int], *conditions) -> list[int]:
     result = lst

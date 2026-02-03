@@ -1,6 +1,12 @@
+# ---------------------------------------------------------------------------
 # 208. Pairwise Average: (a[i]+a[i+1])/2 for each i
+# ---------------------------------------------------------------------------
+# Descripción: Pairwise Average: (a[i]+a[i+1])/2 for each i
+# Entrada/Salida: Según el ejercicio.
+# ---------------------------------------------------------------------------
 
 def pairwise_average(lst: list[float]) -> list[float]:
+    # Lista por comprensión: se construye la lista a partir del iterable.
     return [(lst[i] + lst[i + 1]) / 2 for i in range(len(lst) - 1)]
 
 

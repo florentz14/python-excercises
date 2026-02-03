@@ -1,6 +1,12 @@
+# ---------------------------------------------------------------------------
 # 44. Generate Groups of Five Consecutive Numbers
+# ---------------------------------------------------------------------------
+# Descripción: Generate Groups of Five Consecutive Numbers
+# Entrada/Salida: Según el ejercicio.
+# ---------------------------------------------------------------------------
 
 def groups_of_five(n: int) -> list[list[int]]:
+    # Lista por comprensión: se construye la lista a partir del iterable.
     return [list(range(i, i + 5)) for i in range(1, n - 4 + 1)]
 
 

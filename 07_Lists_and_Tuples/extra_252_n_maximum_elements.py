@@ -1,4 +1,9 @@
+# ---------------------------------------------------------------------------
 # 252. Get n Maximum Elements from List
+# ---------------------------------------------------------------------------
+# Descripción: Get n Maximum Elements from List
+# Entrada/Salida: Según el ejercicio.
+# ---------------------------------------------------------------------------
 
 def n_maximum(lst: list[int | float], n: int = 1) -> list:
     return sorted(lst, reverse=True)[:n]

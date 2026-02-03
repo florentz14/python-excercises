@@ -1,10 +1,16 @@
+# ---------------------------------------------------------------------------
 # 87. Read Matrix from Console, Print Sum for Each Column
+# ---------------------------------------------------------------------------
+# Descripción: Read Matrix from Console, Print Sum for Each Column
+# Entrada/Salida: Según el ejercicio.
+# ---------------------------------------------------------------------------
 
 def read_matrix_and_sum_columns(rows: int, cols: int) -> list[int]:
     matrix = []
     for _ in range(rows):
         row = list(map(int, input().split()))
         matrix.append(row)
+    # Lista por comprensión: se construye la lista a partir del iterable.
     return [sum(matrix[r][c] for r in range(rows)) for c in range(cols)]
 
 

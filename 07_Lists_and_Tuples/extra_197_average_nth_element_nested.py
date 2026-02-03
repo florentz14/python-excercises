@@ -1,8 +1,14 @@
+# ---------------------------------------------------------------------------
 # 197. Average of n-th Element Across Nested Lists (Different Lengths)
+# ---------------------------------------------------------------------------
+# Descripción: Average of n-th Element Across Nested Lists (Different Lengths)
+# Entrada/Salida: Según el ejercicio.
+# ---------------------------------------------------------------------------
 
 def average_nth_element(lists: list[list[float]], n: int) -> float:
     """n is 0-based index. Only include lists that have that index."""
     values = [L[n] for L in lists if len(L) > n]
+    # Se devuelve un valor u otro según la condición.
     return sum(values) / len(values) if values else 0
 
 

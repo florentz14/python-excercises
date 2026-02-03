@@ -1,4 +1,9 @@
+# ---------------------------------------------------------------------------
 # 120. Create List with Alternate Elements (even indices: 0, 2, 4, ...)
+# ---------------------------------------------------------------------------
+# Descripción: Create List with Alternate Elements (even indices: 0, 2, 4, ...)
+# Entrada/Salida: Según el ejercicio.
+# ---------------------------------------------------------------------------
 
 def alternate_elements(lst: list) -> list:
     return lst[::2]

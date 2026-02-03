@@ -1,4 +1,9 @@
+# ---------------------------------------------------------------------------
 # 253. Get n Minimum Elements from List
+# ---------------------------------------------------------------------------
+# Descripción: Get n Minimum Elements from List
+# Entrada/Salida: Según el ejercicio.
+# ---------------------------------------------------------------------------
 
 def n_minimum(lst: list[int | float], n: int = 1) -> list:
     return sorted(lst)[:n]

@@ -1,4 +1,9 @@
+# ---------------------------------------------------------------------------
 # 170. Insert Element After Every nth Position
+# ---------------------------------------------------------------------------
+# Descripción: Insert Element After Every nth Position
+# Entrada/Salida: Según el ejercicio.
+# ---------------------------------------------------------------------------
 
 def insert_after_nth(lst: list, n: int, elem) -> list:
     result = []

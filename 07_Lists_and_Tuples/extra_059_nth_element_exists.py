@@ -1,4 +1,9 @@
+# ---------------------------------------------------------------------------
 # 59. Check if n-th Element Exists in List
+# ---------------------------------------------------------------------------
+# Descripción: Check if n-th Element Exists in List
+# Entrada/Salida: Según el ejercicio.
+# ---------------------------------------------------------------------------
 
 def nth_exists(lst: list, n: int) -> bool:
     return 0 <= n < len(lst)

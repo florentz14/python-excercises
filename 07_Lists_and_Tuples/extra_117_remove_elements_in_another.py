@@ -1,7 +1,13 @@
+# ---------------------------------------------------------------------------
 # 117. Remove All Elements Present in Another List
+# ---------------------------------------------------------------------------
+# Descripción: Remove All Elements Present in Another List
+# Entrada/Salida: Según el ejercicio.
+# ---------------------------------------------------------------------------
 
 def remove_if_in(list1: list, list2: list) -> list:
     set2 = set(list2)
+    # Lista por comprensión: se incluyen solo los elementos que cumplen la condición.
     return [x for x in list1 if x not in set2]
 
 

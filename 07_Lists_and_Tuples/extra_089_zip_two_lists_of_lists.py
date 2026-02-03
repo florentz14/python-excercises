@@ -1,6 +1,12 @@
+# ---------------------------------------------------------------------------
 # 89. Zip Two Lists of Lists (concatenate corresponding inner lists)
+# ---------------------------------------------------------------------------
+# Descripción: Zip Two Lists of Lists (concatenate corresponding inner lists)
+# Entrada/Salida: Según el ejercicio.
+# ---------------------------------------------------------------------------
 
 def zip_lists_of_lists(a: list[list], b: list[list]) -> list[list]:
+    # Lista por comprensión: se construye la lista a partir del iterable.
     return [x + y for x, y in zip(a, b)]
 
 

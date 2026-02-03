@@ -1,6 +1,12 @@
+# ---------------------------------------------------------------------------
 # 203. Join Adjacent Members of List (pairs)
+# ---------------------------------------------------------------------------
+# Descripción: Join Adjacent Members of List (pairs)
+# Entrada/Salida: Según el ejercicio.
+# ---------------------------------------------------------------------------
 
 def join_adjacent(lst: list[str]) -> list[str]:
+    # Lista por comprensión: se construye la lista a partir del iterable.
     return [lst[i] + lst[i + 1] for i in range(0, len(lst) - 1, 2)]
 
 

@@ -1,4 +1,9 @@
+# ---------------------------------------------------------------------------
 # 138. Sort Mixed List (Numbers Before Strings, each group sorted)
+# ---------------------------------------------------------------------------
+# Descripción: Sort Mixed List (Numbers Before Strings, each group sorted)
+# Entrada/Salida: Según el ejercicio.
+# ---------------------------------------------------------------------------
 
 def sort_mixed(lst: list) -> list:
     numbers = sorted([x for x in lst if isinstance(x, (int, float))])

@@ -1,4 +1,9 @@
+# ---------------------------------------------------------------------------
 # 42. Find Missing and Additional Values in Two Lists
+# ---------------------------------------------------------------------------
+# Descripción: Find Missing and Additional Values in Two Lists
+# Entrada/Salida: Según el ejercicio.
+# ---------------------------------------------------------------------------
 
 def missing_and_additional(a: list, b: list) -> tuple[list, list]:
     set_a, set_b = set(a), set(b)

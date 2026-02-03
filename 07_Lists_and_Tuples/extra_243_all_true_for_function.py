@@ -1,4 +1,9 @@
+# ---------------------------------------------------------------------------
 # 243. Check If Function Returns True for Every Element
+# ---------------------------------------------------------------------------
+# Descripción: Check If Function Returns True for Every Element
+# Entrada/Salida: Según el ejercicio.
+# ---------------------------------------------------------------------------
 
 def all_match(lst: list, predicate) -> bool:
     return all(predicate(x) for x in lst)

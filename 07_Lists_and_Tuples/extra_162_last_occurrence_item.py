@@ -1,4 +1,9 @@
+# ---------------------------------------------------------------------------
 # 162. Find Last Occurrence Index of Item in List
+# ---------------------------------------------------------------------------
+# Descripción: Find Last Occurrence Index of Item in List
+# Entrada/Salida: Según el ejercicio.
+# ---------------------------------------------------------------------------
 
 def last_index_of(lst: list, item) -> int:
     for i in range(len(lst) - 1, -1, -1):

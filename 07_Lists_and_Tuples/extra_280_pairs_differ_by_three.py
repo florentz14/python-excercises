@@ -1,4 +1,9 @@
+# ---------------------------------------------------------------------------
 # 280. Find All Pairs of Integers That Differ by 3
+# ---------------------------------------------------------------------------
+# Descripción: Find All Pairs of Integers That Differ by 3
+# Entrada/Salida: Según el ejercicio.
+# ---------------------------------------------------------------------------
 
 def pairs_differ_by_k(lst: list[int], k: int = 3) -> list[list[int]]:
     result = []

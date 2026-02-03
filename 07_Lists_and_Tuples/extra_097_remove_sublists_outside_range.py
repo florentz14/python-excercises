@@ -1,6 +1,12 @@
+# ---------------------------------------------------------------------------
 # 97. Remove Sublists That Contain Element Outside Given Range
+# ---------------------------------------------------------------------------
+# Descripción: Remove Sublists That Contain Element Outside Given Range
+# Entrada/Salida: Según el ejercicio.
+# ---------------------------------------------------------------------------
 
 def remove_sublists_outside_range(lists: list[list[int]], low: int, high: int) -> list[list[int]]:
+    # Lista por comprensión: se incluyen solo los elementos que cumplen la condición.
     return [L for L in lists if all(low <= x <= high for x in L)]
 
 

@@ -1,4 +1,9 @@
+# ---------------------------------------------------------------------------
 # 180. Create Smallest Number from List of Positive Integers
+# ---------------------------------------------------------------------------
+# Descripción: Create Smallest Number from List of Positive Integers
+# Entrada/Salida: Según el ejercicio.
+# ---------------------------------------------------------------------------
 
 def smallest_number(lst: list[int]) -> str:
     strs = [str(x) for x in lst]

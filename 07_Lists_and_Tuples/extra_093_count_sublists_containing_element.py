@@ -1,6 +1,12 @@
+# ---------------------------------------------------------------------------
 # 93. Count Sublists Containing a Particular Element
+# ---------------------------------------------------------------------------
+# Descripción: Count Sublists Containing a Particular Element
+# Entrada/Salida: Según el ejercicio.
+# ---------------------------------------------------------------------------
 
 def count_sublists_containing(lists: list[list], elem) -> int:
+    # Se devuelve la suma de todos los elementos.
     return sum(1 for L in lists if elem in L)
 
 

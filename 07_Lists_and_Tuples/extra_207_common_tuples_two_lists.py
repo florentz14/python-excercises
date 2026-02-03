@@ -1,7 +1,13 @@
+# ---------------------------------------------------------------------------
 # 207. Common Tuples Between Two Lists
+# ---------------------------------------------------------------------------
+# Descripción: Common Tuples Between Two Lists
+# Entrada/Salida: Según el ejercicio.
+# ---------------------------------------------------------------------------
 
 def common_tuples(a: list[tuple], b: list[tuple]) -> list[tuple]:
     set_b = set(b)
+    # Lista por comprensión: se incluyen solo los elementos que cumplen la condición.
     return [t for t in a if t in set_b]
 
 

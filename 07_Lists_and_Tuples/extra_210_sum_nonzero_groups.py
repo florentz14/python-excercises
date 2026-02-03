@@ -1,4 +1,9 @@
+# ---------------------------------------------------------------------------
 # 210. Sum of Each Non-Zero Group (separated by zeros)
+# ---------------------------------------------------------------------------
+# Descripción: Sum of Each Non-Zero Group (separated by zeros)
+# Entrada/Salida: Según el ejercicio.
+# ---------------------------------------------------------------------------
 
 def sum_nonzero_groups(lst: list[int]) -> list[int]:
     result = []

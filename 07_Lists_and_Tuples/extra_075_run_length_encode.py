@@ -1,4 +1,9 @@
+# ---------------------------------------------------------------------------
 # 75. Run-Length Encoding - [[count, value], ...]
+# ---------------------------------------------------------------------------
+# Descripción: Run-Length Encoding - [[count, value], ...]
+# Entrada/Salida: Según el ejercicio.
+# ---------------------------------------------------------------------------
 
 def run_length_encode(lst: list) -> list[list]:
     if not lst:

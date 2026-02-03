@@ -1,8 +1,14 @@
+# ---------------------------------------------------------------------------
 # 261. Most Frequent Element in List
+# ---------------------------------------------------------------------------
+# Descripción: Most Frequent Element in List
+# Entrada/Salida: Según el ejercicio.
+# ---------------------------------------------------------------------------
 
 from collections import Counter
 
 def most_frequent_elem(lst: list):
+    # Se devuelve un valor u otro según la condición.
     return Counter(lst).most_common(1)[0][0] if lst else None
 
 

@@ -1,7 +1,13 @@
+# ---------------------------------------------------------------------------
 # 226. Common Elements After Applying Function to Both Lists
+# ---------------------------------------------------------------------------
+# Descripción: Common Elements After Applying Function to Both Lists
+# Entrada/Salida: Según el ejercicio.
+# ---------------------------------------------------------------------------
 
 def common_by_func(a: list, b: list, func) -> list:
     set_b = {func(x) for x in b}
+    # Lista por comprensión: se incluyen solo los elementos que cumplen la condición.
     return [x for x in a if func(x) in set_b]
 
 

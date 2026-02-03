@@ -1,4 +1,9 @@
+# ---------------------------------------------------------------------------
 # 211. Remove Element from List by Index
+# ---------------------------------------------------------------------------
+# Descripción: Remove Element from List by Index
+# Entrada/Salida: Según el ejercicio.
+# ---------------------------------------------------------------------------
 
 def remove_at(lst: list, index: int) -> list:
     return lst[:index] + lst[index + 1:]

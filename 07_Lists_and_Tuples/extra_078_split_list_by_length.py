@@ -1,4 +1,9 @@
+# ---------------------------------------------------------------------------
 # 78. Split List into Two Parts by Length (first part has given length)
+# ---------------------------------------------------------------------------
+# Descripción: Split List into Two Parts by Length (first part has given length)
+# Entrada/Salida: Según el ejercicio.
+# ---------------------------------------------------------------------------
 
 def split_by_length(lst: list, n: int) -> tuple[list, list]:
     return lst[:n], lst[n:]

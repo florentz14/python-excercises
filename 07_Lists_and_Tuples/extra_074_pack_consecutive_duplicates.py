@@ -1,4 +1,9 @@
+# ---------------------------------------------------------------------------
 # 74. Pack Consecutive Duplicates into Sublists
+# ---------------------------------------------------------------------------
+# Descripción: Pack Consecutive Duplicates into Sublists
+# Entrada/Salida: Según el ejercicio.
+# ---------------------------------------------------------------------------
 
 def pack_consecutive(lst: list) -> list[list]:
     if not lst:

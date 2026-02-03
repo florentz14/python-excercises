@@ -1,4 +1,9 @@
+# ---------------------------------------------------------------------------
 # 52. Difference Between Two Lists (Color1-Color2 and Color2-Color1)
+# ---------------------------------------------------------------------------
+# Descripción: Difference Between Two Lists (Color1-Color2 and Color2-Color1)
+# Entrada/Salida: Según el ejercicio.
+# ---------------------------------------------------------------------------
 
 def list_differences(a: list, b: list) -> tuple[list, list]:
     set_a, set_b = set(a), set(b)

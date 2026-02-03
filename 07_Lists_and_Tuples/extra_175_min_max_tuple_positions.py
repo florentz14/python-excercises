@@ -1,4 +1,9 @@
+# ---------------------------------------------------------------------------
 # 175. Min and Max for Each Tuple Position in List of Tuples
+# ---------------------------------------------------------------------------
+# Descripción: Min and Max for Each Tuple Position in List of Tuples
+# Entrada/Salida: Según el ejercicio.
+# ---------------------------------------------------------------------------
 
 def min_max_by_position(tuples: list[tuple]) -> tuple[list, list]:
     if not tuples:

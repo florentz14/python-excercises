@@ -1,6 +1,12 @@
+# ---------------------------------------------------------------------------
 # 205. Indices of Elements Greater Than Specified Value
+# ---------------------------------------------------------------------------
+# Descripción: Indices of Elements Greater Than Specified Value
+# Entrada/Salida: Según el ejercicio.
+# ---------------------------------------------------------------------------
 
 def indices_greater_than(lst: list[int | float], value: int | float) -> list[int]:
+    # Lista por comprensión: se incluyen solo los elementos que cumplen la condición.
     return [i for i, x in enumerate(lst) if x > value]
 
 

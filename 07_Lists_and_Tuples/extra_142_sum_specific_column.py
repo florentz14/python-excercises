@@ -1,6 +1,12 @@
+# ---------------------------------------------------------------------------
 # 142. Sum Specific Column in List of Lists (1-based column)
+# ---------------------------------------------------------------------------
+# Descripción: Sum Specific Column in List of Lists (1-based column)
+# Entrada/Salida: Según el ejercicio.
+# ---------------------------------------------------------------------------
 
 def sum_column(matrix: list[list], col: int) -> int | float:
+    # Se devuelve la suma de todos los elementos.
     return sum(row[col - 1] for row in matrix if len(row) >= col)
 
 

@@ -1,4 +1,9 @@
+# ---------------------------------------------------------------------------
 # 279. Extract First n Vowels from String
+# ---------------------------------------------------------------------------
+# Descripción: Extract First n Vowels from String
+# Entrada/Salida: Según el ejercicio.
+# ---------------------------------------------------------------------------
 
 def extract_n_vowels(s: str, n: int) -> str:
     vowels = 'aeiouAEIOU'
