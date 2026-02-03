@@ -1,0 +1,28 @@
+# Archivo: 34_08_resumen.py
+# Descripción: Resumen del análisis del rango de matrices
+
+if __name__ == "__main__":
+    print("=== Resumen de Análisis ===\n")
+    print("Código original:")
+    print("  + Funciona correctamente")
+    print("  + Usa np.linalg.matrix_rank() (método recomendado)")
+    print("  + Código simple y claro")
+    print("  - No muestra información adicional")
+    print("  - No analiza el tipo de matriz")
+    print("  - No compara con otros métodos")
+    print()
+    print("Mejoras implementadas:")
+    print("  1. [OK] Análisis completo del rango")
+    print("  2. [OK] Identificación de matriz de rango completo vs reducido")
+    print("  3. [OK] Comparación de métodos (matrix_rank, SVD, QR)")
+    print("  4. [OK] Ejemplos de diferentes tipos de matrices")
+    print("  5. [OK] Propiedades matemáticas del rango")
+    print("  6. [OK] Función interactiva")
+    print("  7. [OK] Información sobre espacios fundamentales")
+    print("  8. [OK] Documentación completa")
+    print()
+    print("Conceptos importantes:")
+    print("  - Rango completo: rank(A) = min(m, n)")
+    print("  - Rango reducido: rank(A) < min(m, n)")
+    print("  - El rango indica el número de filas/columnas independientes")
+    print("  - Para matrices cuadradas: rango completo <-> determinante != 0")
