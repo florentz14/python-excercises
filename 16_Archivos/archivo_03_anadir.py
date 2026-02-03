@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 # -------------------------------------------------
 # 16_Archivos - Ejercicio 03: Añadir contenido al final (append)
 # open() con modo "a" abre para añadir; no borra lo que ya hay.

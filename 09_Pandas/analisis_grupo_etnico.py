@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 """
 Análisis de Rendimiento por Grupo Étnico
 Examina las diferencias de rendimiento entre diferentes grupos étnicos

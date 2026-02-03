@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 # -------------------------------------------------
 # File Name: 03_test_average_and_grade.py
 # Author: Florentino Báez
@@ -31,17 +30,22 @@ print("=" * 60)
 print("EXERCISE 3: Test Average and Grade")
 print("=" * 60)
 
+# Get user input
 score1 = float(input("Enter test score 1: "))
 score2 = float(input("Enter test score 2: "))
 score3 = float(input("Enter test score 3: "))
 score4 = float(input("Enter test score 4: "))
 score5 = float(input("Enter test score 5: "))
 
+# Validate scores
 scores = [score1, score2, score3, score4, score5]
 if any(score < 0 or score > 100 for score in scores):
     print("Error: Test scores must be between 0 and 100.")
 else:
+    # Calculate average
     average = calc_average(score1, score2, score3, score4, score5)
+    
+    # Display results
     print(f"\nTest Score\t\tLetter Grade")
     print("-" * 40)
     print(f"Score 1: {score1:.2f}\t\t{determine_grade(score1)}")

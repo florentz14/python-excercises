@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 """
 Análisis del Impacto de la Preparación para Exámenes
 Evalúa cómo el curso de preparación afecta el rendimiento estudiantil

@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 """
 Análisis de Rendimiento por Género
 Compara el desempeño académico entre estudiantes masculinos y femeninos

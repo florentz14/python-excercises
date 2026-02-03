@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 # -------------------------------------------------
 # 16_Archivos - Ejercicio 05: Verificar si un archivo o carpeta existe
 # Path.exists(), Path.is_file(), Path.is_dir()

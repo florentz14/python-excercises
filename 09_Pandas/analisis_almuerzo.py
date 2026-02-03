@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 """
 Análisis por Tipo de Almuerzo (Indicador Socioeconómico)
 Examina cómo el tipo de almuerzo (estándar vs gratuito/reducido) afecta el rendimiento

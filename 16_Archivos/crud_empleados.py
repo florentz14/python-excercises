@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 # -------------------------------------------------
 # 16_Archivos - CRUD de empleados con archivos (JSON)
 # Crear, listar, editar, eliminar registros y eliminar archivo.

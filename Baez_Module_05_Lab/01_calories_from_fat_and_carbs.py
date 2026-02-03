@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 # -------------------------------------------------
 # File Name: 01_calories_from_fat_and_carbs.py
 # Author: Florentino Báez
@@ -18,12 +17,12 @@ def calculate_calories_from_carbs(carb_grams: float) -> float:
     return carb_grams * 4
 
 
-# Ejecutar sin try/except y sin guardia __main__ (según solicitud)
+# Function: Main function to run the program
 print("=" * 60)
 print("EXERCISE 1: Calories from Fat and Carbohydrates")
 print("=" * 60)
 
-# Solicitar entradas (si el usuario introduce datos inválidos, se levantará excepción)
+# Function: Get user input
 fat_grams = float(input("Enter the number of fat grams consumed: "))
 carb_grams = float(input("Enter the number of carbohydrate grams consumed: "))
 

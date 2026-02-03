@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 """
 Análisis General de Rendimiento Estudiantil
 Este programa proporciona estadísticas descriptivas generales del dataset

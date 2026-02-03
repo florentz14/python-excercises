@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 """Match-case example: Letter Grade with Guards (Python 3.10+)
 
 Demonstrates using `match`/`case` with guard expressions to map scores

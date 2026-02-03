@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 # -------------------------------------------------
 # 16_Archivos - Ejercicio 02: Leer un archivo
 # open() con modo "r" (por defecto) abre para lectura.

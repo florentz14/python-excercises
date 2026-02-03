@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 # -------------------------------------------------
 # 16_Archivos - Ejercicio 07: Copiar y mover archivos
 # shutil.copy() / copy2() para copiar; shutil.move() para mover/renombrar.

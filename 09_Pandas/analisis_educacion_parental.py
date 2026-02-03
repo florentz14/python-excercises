@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 """
 Análisis de Rendimiento según Nivel Educativo de los Padres
 Examina cómo el nivel educativo de los padres afecta el rendimiento estudiantil

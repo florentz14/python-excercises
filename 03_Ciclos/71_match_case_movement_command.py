@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 """Match-case example: Movement Command (Python 3.10+)
 
 Demonstrates simple pattern matching for directional commands.

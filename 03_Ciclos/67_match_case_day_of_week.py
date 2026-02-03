@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 """Match-case example: Day of Week (Python 3.10+)
 
 Demonstrates a simple match/case switch-like structure.

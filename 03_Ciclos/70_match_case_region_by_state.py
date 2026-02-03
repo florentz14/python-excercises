@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 """Match-case example: Region by State (Python 3.10+)
 
 Demonstrates pattern matching with alternation (|) operator.

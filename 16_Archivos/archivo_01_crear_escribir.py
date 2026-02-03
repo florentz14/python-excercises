@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 # -------------------------------------------------
 # 16_Archivos - Ejercicio 01: Crear y escribir en un archivo
 # open() con modo "w" crea el archivo (o lo sobrescribe) y escribe.

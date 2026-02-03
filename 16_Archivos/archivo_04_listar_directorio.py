@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 # -------------------------------------------------
 # 16_Archivos - Ejercicio 04: Listar archivos y carpetas de un directorio
 # os.listdir() o pathlib.Path.iterdir() listan el contenido.

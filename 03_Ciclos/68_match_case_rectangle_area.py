@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 """Match-case example: Rectangle Area (tuple pattern)
 
 Demonstrates matching a tuple pattern to compute area of a rectangle.

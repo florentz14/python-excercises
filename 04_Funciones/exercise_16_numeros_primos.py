@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 # -------------------------------------------------
 # Verifica si un número es primo e imprime la lista
 # de números primos hasta el número capturado.

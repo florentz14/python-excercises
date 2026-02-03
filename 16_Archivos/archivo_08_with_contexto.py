@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 # -------------------------------------------------
 # 16_Archivos - Ejercicio 08: Usar "with" (gestor de contexto)
 # with open(...) cierra el archivo automáticamente al salir del bloque,

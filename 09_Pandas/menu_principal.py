@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 """
 Programa Maestro de Análisis de Rendimiento Estudiantil
 Ejecuta todos los análisis disponibles con un menú interactivo

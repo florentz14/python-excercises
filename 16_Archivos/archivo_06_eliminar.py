@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 # -------------------------------------------------
 # 16_Archivos - Ejercicio 06: Eliminar un archivo
 # Path.unlink() o os.remove() eliminan el archivo (no carpetas).
