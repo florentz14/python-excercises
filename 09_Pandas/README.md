@@ -2,6 +2,8 @@
 
 Tablas tipo Excel con **Pandas**: DataFrames, leer CSV, filtrar, columnas.
 
+**Datos de ejemplo:** en la raíz del proyecto está `data.csv` (ventas por fecha, producto, categoría, región). Cargar desde la raíz: `pd.read_csv("data.csv")` o con ruta absoluta usando `Path(__file__).parent.parent / "data.csv"`.
+
 | Archivo | Contenido |
 |---------|-----------|
 | `pandas_01_crear_dataframe.py` | Crear DataFrame desde diccionario |

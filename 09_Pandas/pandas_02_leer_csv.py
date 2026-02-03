@@ -2,21 +2,18 @@
 Pandas - Ejemplo 2: Leer un CSV (archivo tipo Excel)
 ====================================================
 Tema: Pandas (09_Pandas)
-Descripción: pd.read_csv() para cargar un archivo .csv en un DataFrame.
+Descripción: pd.read_csv() para cargar data.csv en un DataFrame.
 """
 
 import pandas as pd
+from pathlib import Path
 
-# Crear un CSV de ejemplo en memoria (en la práctica sería un archivo)
-from io import StringIO
+# Ruta a data.csv en la raíz del proyecto (una carpeta arriba de 09_Pandas)
+ruta_csv = Path(__file__).parent.parent / "data.csv"
 
-csv_ejemplo = """nombre,edad,ciudad
-Ana,25,Madrid
-Luis,30,Barcelona
-María,28,Valencia"""
-
-df = pd.read_csv(StringIO(csv_ejemplo))
+df = pd.read_csv(ruta_csv, encoding="utf-8")
 print(df)
-
-# Con archivo real: df = pd.read_csv("ruta/al_archivo.csv")
-# Opciones útiles: sep=";", encoding="utf-8", header=0
+print("\nColumnas:", df.columns.tolist())
+print("Dimensiones:", df.shape)
+print("\nPrimeras 5 filas:")
+print(df.head())

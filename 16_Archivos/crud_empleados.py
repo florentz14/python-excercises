@@ -234,5 +234,8 @@ def menu() -> None:
             print("Opción no válida.")
 
 
+# Si este archivo se ejecuta directamente (python crud_empleados.py), __name__ es "__main__"
+# y se llama a menu(). Si se importa desde otro módulo (import crud_empleados), __name__ es
+# el nombre del módulo y este bloque NO se ejecuta, así no se lanza el menú al importar.
 if __name__ == "__main__":
     menu()

@@ -52,5 +52,8 @@ def main() -> None:
     print(lista_primos)
 
 
+# Si ejecutas este archivo (python exercise_16_numeros_primos.py), __name__ == "__main__"
+# y se ejecuta main(). Si lo importas (from exercise_16_numeros_primos import es_primo),
+# __name__ es el nombre del módulo y main() no se ejecuta; solo tendrás las funciones.
 if __name__ == "__main__":
     main()

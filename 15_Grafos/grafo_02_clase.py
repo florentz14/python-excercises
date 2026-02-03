@@ -28,6 +28,9 @@ class Grafo:
 
 
 # --- Demo ---
+# if __name__ == "__main__": solo ejecuta este bloque cuando el archivo se corre directamente
+# (python grafo_02_clase.py). Si otro módulo hace "from grafo_02_clase import Grafo", este
+# bloque no se ejecuta y no se crea el grafo de prueba.
 if __name__ == "__main__":
     g = Grafo()
     g.add_arista(0, 1)
