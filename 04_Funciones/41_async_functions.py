@@ -1,5 +1,8 @@
-# 41_async_functions.py
-# Async functions accessing JSONPlaceholder API
+# -------------------------------------------------
+# File: 41_async_functions.py
+# Description: Async functions with aiohttp.
+#              Concurrent API requests (async/await).
+# -------------------------------------------------
 
 import asyncio
 import aiohttp  # pip install aiohttp

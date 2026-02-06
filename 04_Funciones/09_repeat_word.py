@@ -1,4 +1,8 @@
-# Functions with Parameters - Exercise 4: Repeat word
+# -------------------------------------------------
+# File: 09_repeat_word.py
+# Description: Repeat a word multiple times.
+#              Function with string and int parameters.
+# -------------------------------------------------
 
 def repeat_word(word: str, times: int) -> None:
     print(word * times)

@@ -1,5 +1,8 @@
-# 42_full_name.py
-# Function to combine first and last name into full name
+# -------------------------------------------------
+# File: 42_full_name.py
+# Description: Combine first and last name.
+#              String formatting and name parsing.
+# -------------------------------------------------
 
 def full_name(first_name, last_name):
     """

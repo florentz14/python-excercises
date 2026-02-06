@@ -1,5 +1,8 @@
-# 27_chr_unicode.py
-# Demonstrates the chr() function - converts Unicode code to character
+# -------------------------------------------------
+# File: 27_chr_unicode.py
+# Description: chr() function and Unicode characters.
+#              Convert Unicode codes to characters.
+# -------------------------------------------------
 
 def code_to_char(code):
     """Converts a Unicode code point to its corresponding character."""

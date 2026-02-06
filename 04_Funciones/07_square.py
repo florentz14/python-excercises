@@ -1,4 +1,8 @@
-# Functions with Parameters - Exercise 2: Square a number
+# -------------------------------------------------
+# File: 07_square.py
+# Description: Calculate the square of a number.
+#              Function with numeric parameter.
+# -------------------------------------------------
 
 def square(number: int | float) -> None:
     print(number * number)

@@ -1,5 +1,8 @@
-# 25_local_global_variables.py
-# Demonstrates the use of local and global variables
+# -------------------------------------------------
+# File: 25_local_global_variables.py
+# Description: Local and global variables demo.
+#              Using 'global' keyword to modify variables.
+# -------------------------------------------------
 
 # Global variable - accessible from anywhere in the file
 counter = 0

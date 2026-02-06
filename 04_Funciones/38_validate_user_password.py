@@ -1,5 +1,8 @@
-# 38_validate_user_password.py
-# Functions to validate username and password
+# -------------------------------------------------
+# File: 38_validate_user_password.py
+# Description: Username and password validation.
+#              Security rules and strength checking.
+# -------------------------------------------------
 
 def validate_username(username):
     """

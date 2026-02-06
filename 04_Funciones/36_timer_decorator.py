@@ -1,5 +1,8 @@
-# 36_timer_decorator.py
-# Decorator function to measure execution time
+# -------------------------------------------------
+# File: 36_timer_decorator.py
+# Description: Timer decorator for execution time.
+#              Measure function performance.
+# -------------------------------------------------
 
 import time
 

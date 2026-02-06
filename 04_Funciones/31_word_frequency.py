@@ -1,5 +1,8 @@
-# 31_word_frequency.py
-# Function to count word frequency in a text
+# -------------------------------------------------
+# File: 31_word_frequency.py
+# Description: Count word frequency in a text.
+#              Dictionary operations and text processing.
+# -------------------------------------------------
 
 def word_frequency(text):
     """

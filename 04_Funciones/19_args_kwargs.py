@@ -1,4 +1,8 @@
-# 12_02_args_kwargs.py - Argumentos variables (*args) y keyword arguments (**kwargs)
+# -------------------------------------------------
+# File: 19_args_kwargs.py
+# Description: Variable arguments (*args, **kwargs).
+#              Flexible function parameters.
+# -------------------------------------------------
 
 print("=== *args y **kwargs ===\n")
 

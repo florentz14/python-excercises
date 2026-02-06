@@ -1,5 +1,8 @@
-# 34_merge_dicts.py
-# Function to merge and sort two dictionaries
+# -------------------------------------------------
+# File: 34_merge_dicts.py
+# Description: Merge and sort dictionaries.
+#              Dictionary unpacking and sorting.
+# -------------------------------------------------
 
 def merge_dicts(dict1, dict2):
     """

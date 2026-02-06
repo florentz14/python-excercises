@@ -1,4 +1,8 @@
-# 12_01_basica_parametros.py - Funciones básicas, con parámetros y por defecto
+# -------------------------------------------------
+# File: 18_basica_parametros.py
+# Description: Basic functions, parameters, defaults.
+#              Covers function fundamentals.
+# -------------------------------------------------
 
 print("=== Funciones: Básica, Parámetros y Por Defecto ===\n")
 

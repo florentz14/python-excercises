@@ -1,4 +1,8 @@
-# Functions with Parameters - Exercise 3: Add numbers
+# -------------------------------------------------
+# File: 08_add_numbers.py
+# Description: Add two numbers together.
+#              Function with two numeric parameters.
+# -------------------------------------------------
 
 def add_numbers(a: int | float, b: int | float) -> None:
     print(a + b)

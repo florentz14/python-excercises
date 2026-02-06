@@ -1,4 +1,8 @@
-# 12_07_scope_funcion_parametro.py - Scope de variables y función como parámetro
+# -------------------------------------------------
+# File: 24_scope_funcion_parametro.py
+# Description: Variable scope and higher-order functions.
+#              Local/global scope and functions as parameters.
+# -------------------------------------------------
 
 print("=== Scope y Función como Parámetro ===\n")
 

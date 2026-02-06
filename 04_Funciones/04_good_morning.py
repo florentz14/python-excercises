@@ -1,4 +1,8 @@
-# Exercise 4: Good morning function
+# -------------------------------------------------
+# File: 04_good_morning.py
+# Description: Good morning greeting function.
+#              Basic function without parameters.
+# -------------------------------------------------
 
 def good_morning() -> None:
     print("Good morning!")

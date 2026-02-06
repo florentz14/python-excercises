@@ -1,5 +1,8 @@
-# 30_filter_even.py
-# Function to filter even numbers from a list
+# -------------------------------------------------
+# File: 30_filter_even.py
+# Description: Filter even/odd numbers from a list.
+#              List comprehension with conditions.
+# -------------------------------------------------
 
 def filter_even(numbers):
     """

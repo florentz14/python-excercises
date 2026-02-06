@@ -1,4 +1,8 @@
-# Functions with Loops - Exercise 5: Countdown
+# -------------------------------------------------
+# File: 15_countdown.py
+# Description: Countdown from n to 1, then "Go!".
+#              Function with reverse loop.
+# -------------------------------------------------
 
 def countdown(n: int) -> None:
     for i in range(n, 0, -1):

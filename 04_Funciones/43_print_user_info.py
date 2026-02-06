@@ -1,5 +1,8 @@
-# 43_print_user_info.py
-# Simple function that receives first name and email and prints them
+# -------------------------------------------------
+# File: 43_print_user_info.py
+# Description: Print user information (name, email).
+#              Simple function with two parameters.
+# -------------------------------------------------
 
 def print_user_info(first_name, email):
     """

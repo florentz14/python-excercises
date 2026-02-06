@@ -1,5 +1,8 @@
-# 28_factorial.py
-# Function to calculate the factorial of a number using recursion
+# -------------------------------------------------
+# File: 28_factorial.py
+# Description: Factorial calculation using recursion.
+#              Recursive function example (n!).
+# -------------------------------------------------
 
 def factorial(n):
     """

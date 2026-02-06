@@ -1,4 +1,8 @@
-# 12_06_type_hints_generadores.py - Type hints y funciones generadoras
+# -------------------------------------------------
+# File: 23_type_hints_generadores.py
+# Description: Type hints and generator functions.
+#              Type annotations and yield keyword.
+# -------------------------------------------------
 
 print("=== Type Hints y Generadores ===\n")
 

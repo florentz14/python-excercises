@@ -1,4 +1,8 @@
-# Functions with Loops - Exercise 4: Sum list
+# -------------------------------------------------
+# File: 14_sum_list.py
+# Description: Sum all elements in a list.
+#              Function with list parameter and loop.
+# -------------------------------------------------
 
 def sum_list(numbers: list[int | float]) -> None:
     total = 0

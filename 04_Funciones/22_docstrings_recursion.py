@@ -1,4 +1,8 @@
-# 12_05_docstrings_recursion.py - Docstrings y funciones recursivas
+# -------------------------------------------------
+# File: 22_docstrings_recursion.py
+# Description: Docstrings and recursive functions.
+#              Documentation and self-calling functions.
+# -------------------------------------------------
 
 print("=== Docstrings y Recursión ===\n")
 

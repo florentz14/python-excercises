@@ -1,5 +1,8 @@
-# 40_memoize_decorator.py
-# Function with memoization (caching results)
+# -------------------------------------------------
+# File: 40_memoize_decorator.py
+# Description: Memoization decorator (caching).
+#              Optimize recursive functions.
+# -------------------------------------------------
 
 def memoize(func):
     """

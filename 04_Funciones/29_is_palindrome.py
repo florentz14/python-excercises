@@ -1,5 +1,8 @@
-# 29_is_palindrome.py
-# Function to check if a word is a palindrome
+# -------------------------------------------------
+# File: 29_is_palindrome.py
+# Description: Palindrome checker function.
+#              Check if a word reads same forwards/backwards.
+# -------------------------------------------------
 
 def is_palindrome(word):
     """
