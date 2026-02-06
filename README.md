@@ -1,135 +1,181 @@
 # Python Exercises
 
-Un repositorio completo de ejercicios de Python para aprender programación desde lo básico hasta conceptos más avanzados (NumPy, Pandas, Matplotlib).
+Un repositorio completo de ejercicios de Python para aprender programación desde lo básico hasta conceptos avanzados (NumPy, Pandas, Matplotlib, Estructuras de Datos, MySQL).
 
-## 🚀 Instalación y dependencias
+## Instalacion y Dependencias
 
-**Instalar las librerías recomendadas** (camino recomendado: NumPy, Pandas, Matplotlib):
+**Crear entorno virtual e instalar dependencias:**
 
 ```bash
+python -m venv venv
+.\venv\Scripts\activate  # Windows
 pip install -r requirements.txt
 ```
 
-Incluye: `numpy`, `pandas`, `matplotlib`. Ver [CAMINO_RECOMENDADO.md](CAMINO_RECOMENDADO.md) para la ruta completa y opciones (PyTorch/TensorFlow).
+Incluye: `numpy`, `pandas`, `matplotlib`, `mysql-connector-python`, `bcrypt`, y mas.
 
 ---
 
-## 📚 Contenido
+## Contenido
 
-### 📁 01_Variables_y_Tipos_Datos
+### 01_Variables
 
-Variables y tipos de datos (archivos separados por tema):
+Variables y tipos de datos:
+- Variables basicas, numeros complejos
+- Listas, Tuplas, Diccionarios, Conjuntos
 
-- **variables.py**, **complex.py** – Variables básicas y números complejos
-- **list_01** … **list_10** – Listas (crear, índice, añadir, slice, comprensión, etc.)
-- **tuple_01** … **tuple_14** – Tuplas (índices, slice, desempaquetado, inmutabilidad, etc.)
-- **dictionary_01** … **dictionary_16** – Diccionarios (claves, get, update, anidados, etc.)
-- **set_01** … **set_18** – Conjuntos (unión, intersección, diferencia, comprensión, etc.)
-
-### 📁 02_Condicionales
+### 02_Condicionales
 
 Condicionales y switch-case:
+- if/elif/else, operadores logicos
+- match/case (Python 3.10+)
 
-- **if_01** … **if_05** – Ejemplos de if/elif/else (número, votar, nota, par/impar, login)
-- **condicional_01** … **condicional_06** – if simple, else, elif, anidado, and/or, ternario
-- **switch_01** … **switch_04** – Emular switch (if/elif, diccionario, match/case)
-- **exercise_zodiac_simple.py**, **exercise_chinese_zodiac.py** – Zodiaco
+### 03_Ciclos
 
-### 📁 03_Ciclos
+Ejercicios de loops:
+- while, for, anidados
+- break, continue, else en loops
 
-Ejercicios de loops (while, for, anidados, interactivos). Ver carpeta para numeración completa.
+### 04_Funciones
 
-### 📁 04_Funciones
+Funciones en Python:
+- Parametros, valores por defecto
+- *args, **kwargs
+- Lambda, decoradores, generadores
 
-Funciones con parámetros y bucles: **exercise_01_greet.py** … **exercise_15_countdown.py** (saludos, números, áreas, tablas, listas, etc.).
+### 05_Estructuras_de_Datos
 
-### 📁 05_Estructuras_de_Datos
+Algoritmos y estructuras:
+- Algoritmos Greedy (mochila, Kruskal, Huffman)
+- Algoritmos de Strings (Rabin-Karp, KMP, Z-algorithm)
+- Algoritmos Matematicos (Pascal, Euclides, Eratostenes)
+- Backtracking (N-reinas, Sudoku, laberinto)
+- Estructuras avanzadas (Trie, Segment Tree, Union-Find)
+- Busqueda (lineal, binaria, KMP)
+- Ordenamiento (Bubble, Selection, Insertion, Merge, Quick, Heap, Counting, Radix)
 
-**matrix.py**, **matrix_operations.py**, **count.py** – Matrices y conteo.
+### 06_Ejercicios_Integradores
 
-### 📁 06_Ejercicios_Integradores
+Ejercicios que combinan varios conceptos:
+- BMI, años bisiestos, fechas magicas
+- Conversor de numeros romanos
+- Calculadora de areas
 
-Ejercicios que combinan varios conceptos: **app.py**, **exercise_bmi.py**, **exercise_leap_year.py**, **exercise_magic_dates.py**, **exercise_roman_numeral_converter.py**, **exercise_areas.py**, etc.
+### 07_Lists_and_Tuples
 
-### 📁 07_Lists_and_Tuples
+Ejercicios extensos de listas y tuplas (300+ archivos).
 
-Ejercicios de listas y tuplas en secuencia: **Part 1** (10 listas), **Part 2** (10 tuplas), **Extras** (280). Ver [07_Lists_and_Tuples/README.md](07_Lists_and_Tuples/README.md) para el orden recomendado y la tabla de contenidos.
+### 08_Matrices
 
-### 📁 08_Matrices
+Vectores y matrices:
+- Python basico (listas)
+- NumPy (arrays, operaciones, broadcasting)
 
-Vectores y matrices: **Python básico** (listas) → **NumPy paso a paso**.
+### 09_Pandas
 
-- Vectores: `vector_01` … `vector_06`
-- Matrices: `matrix_01` … `matrix_06`
-- NumPy: `numpy_01` … `numpy_08` (arrays, dot, norm, inverse, broadcasting)
+Analisis de datos:
+- DataFrames, leer CSV
+- Filtrar, columnas, estadisticas
 
-Requiere: `numpy` (incluido en `requirements.txt`).
+### 10_Matplotlib
 
-### 📁 09_Pandas
+Visualizacion:
+- Graficos de linea, barras, dispersion
 
-Tablas tipo Excel: DataFrames, leer CSV, filtrar, columnas.  
-Archivos: `pandas_01_crear_dataframe.py` … `pandas_04_columnas.py`.  
-Requiere: `pandas`.
+### 11_POO
 
-### 📁 10_Matplotlib
+Programacion Orientada a Objetos:
+- Clases, herencia, polimorfismo
+- Ejemplos: Animales, Dispositivos, Personas, Transporte, Usuarios
 
-Gráficas: línea, barras, dispersión.  
-Archivos: `matplotlib_01_linea.py`, `matplotlib_02_barras.py`, `matplotlib_03_scatter.py`.  
-Requiere: `matplotlib`.
+### 12_Pilas
 
-### 📁 11_POO (Programación Orientada a Objetos)
+Estructura de datos Pila (LIFO):
+- Implementacion con lista y clase
+- Parentesis balanceados, Infix a Postfix
+- Undo/Redo, historial de navegador
 
-Clases en Python (herencia, polimorfismo):
+### 13_Colas
 
-- **clase_animales.py** – Animal, Perro, Gato, Pájaro, Pez, León
-- **clase_dispositivos_moviles.py** – Smartphone, Tablet, Smartwatch, EReader, etc.
-- **clase_personas.py** – Persona, Estudiante, Profesor, Ingeniero, Médico, Deportista
-- **clase_transporte.py** – Transporte, Automovil, Motocicleta, Bicicleta, Avión
-- **clase_usuarios.py** – Usuario, Cliente, Empleado, Vendedor, Gerente, Administrador, SoporteTecnico
-- **clase_usuarios_avanzada.py** – Sistema avanzado (hasheo, sesiones, roles, auditoría)
-- Clases sencillas: **clase_vector.py**, **clase_matrix_numpy.py**, **clase_point2d.py**, **clase_dataset.py**, **clase_sparse_matrix.py**, etc.
+Estructura de datos Cola (FIFO):
+- Implementacion con deque
+- Cola de impresion, servicio al cliente
+- Round-Robin, BFS en grafos
 
-### 📁 12_Pilas
+### 14_Arboles
 
-Pila (LIFO): **pila_01_lista.py**, **pila_02_clase.py**, **pila_03_parentesis.py** (balanceo de paréntesis).
+Arboles binarios:
+- Nodos, recorridos (inorden, preorden, postorden)
+- Altura, busqueda, insercion
 
-### 📁 13_Colas
+### 15_Grafos
 
-Cola (FIFO): **cola_01_lista.py**, **cola_02_deque.py**, **cola_03_clase.py** (con `collections.deque`).
+Grafos:
+- Lista y matriz de adyacencia
+- BFS, DFS, Dijkstra
+- Deteccion de ciclos, ordenamiento topologico
 
-### 📁 14_Arboles
+### 16_Archivos
 
-Árbol binario: **arbol_01_nodo.py**, **arbol_02_recorrido.py** (inorden, preorden, postorden), **arbol_03_altura.py**.
+Manejo de archivos:
+- Lectura y escritura de archivos
+- JSON, CSV
 
-### 📁 15_Grafos
+### 17_Ecuaciones
 
-Grafos (lista de adyacencia): **grafo_01_lista_adyacencia.py**, **grafo_02_clase.py**, **grafo_03_bfs.py**, **grafo_04_dfs.py**.
+Ecuaciones matematicas:
+- Algebra, calculo
+- SymPy para matematica simbolica
 
-### 📁 Baez_Module_02_Lab … 07_Lab
+### 18_Listas_Enlazadas
 
-Módulos de laboratorio (distancias, propinas, gráficos, BMI, años bisiestos, fechas mágicas, romanos, análisis de números, nóminas, notas, barajas, cumpleaños, etc.).
+Listas enlazadas:
+- Simple, doble, circular
+- Operaciones: reversar, fusionar, detectar ciclos
+
+### 19_Tablas_Hash
+
+Tablas hash:
+- Chaining, Open Addressing
+- Funciones hash, aplicaciones
+
+### 20_MySQL
+
+Base de datos MySQL/MariaDB:
+- Conexion con Python
+- Sistema ATM completo con base de datos
+- CRUD, procedimientos almacenados
+
+### Baez_Module_01_Lab ... 07_Lab
+
+Modulos de laboratorio con ejercicios practicos.
 
 ---
 
-## 💡 Estructura de aprendizaje recomendada
+## Estructura de Aprendizaje Recomendada
 
-1. **01_Variables_y_Tipos_Datos** – Conceptos básicos  
-2. **02_Condicionales** – Toma de decisiones  
-3. **03_Ciclos** – Repetición de código  
-4. **04_Funciones** – Funciones y modularidad  
-5. **05_Estructuras_de_Datos** – Manipulación avanzada  
-6. **06_Ejercicios_Integradores** – Aplicación de conceptos  
-7. **07_Lists_and_Tuples** – Más práctica con listas/tuplas  
-8. **08_Matrices** – Vectores, matrices, NumPy  
-9. **09_Pandas** – Tablas y datos  
-10. **10_Matplotlib** – Gráficas  
-11. **11_POO** – Clases, herencia y polimorfismo  
-
-Para el **camino recomendado** (NumPy → Pandas → Matplotlib → AI/tensores), ver **[CAMINO_RECOMENDADO.md](CAMINO_RECOMENDADO.md)**.
+1. **01_Variables** - Conceptos basicos
+2. **02_Condicionales** - Toma de decisiones
+3. **03_Ciclos** - Repeticion de codigo
+4. **04_Funciones** - Modularidad
+5. **05_Estructuras_de_Datos** - Algoritmos
+6. **06_Ejercicios_Integradores** - Aplicacion
+7. **07_Lists_and_Tuples** - Practica
+8. **08_Matrices** - NumPy
+9. **09_Pandas** - Analisis de datos
+10. **10_Matplotlib** - Visualizacion
+11. **11_POO** - Clases y objetos
+12. **12_Pilas** - Estructura LIFO
+13. **13_Colas** - Estructura FIFO
+14. **14_Arboles** - Arboles binarios
+15. **15_Grafos** - Teoria de grafos
+16. **18_Listas_Enlazadas** - Estructuras dinamicas
+17. **19_Tablas_Hash** - Acceso O(1)
+18. **20_MySQL** - Bases de datos
 
 ---
 
-## 🚀 Cómo usar
+## Como Usar
 
 1. **Clonar el repositorio:**
 
@@ -138,34 +184,53 @@ Para el **camino recomendado** (NumPy → Pandas → Matplotlib → AI/tensores)
    cd python-excercises
    ```
 
-2. **Instalar dependencias (recomendado para 08, 09, 10):**
+2. **Crear entorno virtual:**
+
+   ```bash
+   python -m venv venv
+   .\venv\Scripts\activate  # Windows
+   source venv/bin/activate  # Linux/Mac
+   ```
+
+3. **Instalar dependencias:**
 
    ```bash
    pip install -r requirements.txt
    ```
 
-3. **Ejecutar un archivo:**
+4. **Configurar base de datos (opcional):**
+
+   Crear archivo `.env` en la raiz:
+   ```env
+   MYSQL_HOST=localhost
+   MYSQL_USER=root
+   MYSQL_PASSWORD=tu_password
+   MYSQL_DATABASE=ATM_Database_Schema
+   MYSQL_PORT=3306
+   ```
+
+5. **Ejecutar un archivo:**
 
    ```bash
-   python 01_Variables_y_Tipos_Datos/variables.py
-   python 08_Matrices/numpy_01_instalar_importar.py
-   python 09_Pandas/pandas_01_crear_dataframe.py
-   python 10_Matplotlib/matplotlib_01_linea.py
+   python 01_Variables/01_variables.py
+   python 20_MySQL/01_connection_test.py
    ```
 
 ---
 
-## 📝 Características
+## Caracteristicas
 
-- ✅ Comentarios y docstrings en los ejercicios  
-- ✅ Organización por categorías y progresión  
-- ✅ Python básico + NumPy, Pandas, Matplotlib  
-- ✅ Condicionales, switch (match/case), ciclos, funciones, POO, pilas, colas, árboles, grafos  
+- Comentarios y docstrings en los ejercicios
+- Organizacion por categorias y progresion
+- Python basico + NumPy, Pandas, Matplotlib
+- Estructuras de datos: Pilas, Colas, Arboles, Grafos, Hash Tables
+- Algoritmos de ordenamiento y busqueda
+- Integracion con MySQL/MariaDB
 
-## 👨‍💻 Autor
+## Autor
 
-Florentino Báez
+Florentino Baez
 
-## 📄 Licencia
+## Licencia
 
-Este proyecto es de código abierto y está disponible para uso educativo.
+Este proyecto es de codigo abierto y esta disponible para uso educativo.
