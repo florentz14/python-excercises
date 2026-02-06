@@ -4,8 +4,36 @@
 Lista ya ordenada, inversa, iguales, un elemento, vacía.
 """
 
-from ordenamiento_00_utilidades import esta_ordenada
-from ordenamiento_04_merge import merge_sort
+
+def esta_ordenada(lista):
+    """Verifica si una lista está ordenada de forma ascendente."""
+    return all(lista[i] <= lista[i + 1] for i in range(len(lista) - 1))
+
+
+def merge(izquierda, derecha):
+    """Combina dos listas ordenadas en una ordenada."""
+    resultado = []
+    i = j = 0
+    while i < len(izquierda) and j < len(derecha):
+        if izquierda[i] <= derecha[j]:
+            resultado.append(izquierda[i])
+            i += 1
+        else:
+            resultado.append(derecha[j])
+            j += 1
+    resultado.extend(izquierda[i:])
+    resultado.extend(derecha[j:])
+    return resultado
+
+
+def merge_sort(lista):
+    """Divide y vencerás: dividir, ordenar mitades, combinar."""
+    if len(lista) <= 1:
+        return lista.copy()
+    medio = len(lista) // 2
+    izquierda = merge_sort(lista[:medio])
+    derecha = merge_sort(lista[medio:])
+    return merge(izquierda, derecha)
 
 
 def probar_casos_especiales():

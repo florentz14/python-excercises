@@ -2,7 +2,7 @@
 
 Algoritmos de ordenamiento, búsqueda, greedy, strings, matemáticos, backtracking y estructuras avanzadas.
 
-## Algoritmos Greedy (01-07)
+## Algoritmos Greedy (01-06)
 
 | Archivo | Contenido |
 |---------|-----------|
@@ -12,9 +12,8 @@ Algoritmos de ordenamiento, búsqueda, greedy, strings, matemáticos, backtracki
 | `04_huffman.py` | Codificación de Huffman (heap, O(n log n)) |
 | `05_cambio_monedas.py` | Cambio de monedas greedy (solo sistemas canónicos) |
 | `06_interval_scheduling.py` | Interval scheduling con pesos (versión simplificada) |
-| `07_resumen.py` | Resumen de algoritmos greedy |
 
-## Algoritmos de Strings (08-14)
+## Algoritmos de Strings (08-13)
 
 | Archivo | Contenido |
 |---------|-----------|
@@ -24,9 +23,8 @@ Algoritmos de ordenamiento, búsqueda, greedy, strings, matemáticos, backtracki
 | `11_edit_distance.py` | Distancia de Levenshtein (insertar/eliminar/sustituir, O(m*n)) |
 | `12_longest_palindromic_substring.py` | Subcadena palindrómica más larga (expansión centro, O(n²)) |
 | `13_anagramas_permutaciones.py` | Anagramas, agrupación, permutaciones |
-| `14_resumen.py` | Resumen de algoritmos de strings |
 
-## Algoritmos Matemáticos (15-22)
+## Algoritmos Matemáticos (15-21)
 
 | Archivo | Contenido |
 |---------|-----------|
@@ -37,9 +35,8 @@ Algoritmos de ordenamiento, búsqueda, greedy, strings, matemáticos, backtracki
 | `19_fibonacci_matematico.py` | Fibonacci: Binet y exponenciación de matrices |
 | `20_factorizacion.py` | Factorización en primos, factores únicos, contar divisores |
 | `21_conversion_bases.py` | Conversión entre bases (decimal, binario, octal, hex) |
-| `22_resumen.py` | Resumen de algoritmos matemáticos |
 
-## Backtracking (23-29)
+## Backtracking (23-28)
 
 | Archivo | Contenido |
 |---------|-----------|
@@ -49,9 +46,8 @@ Algoritmos de ordenamiento, búsqueda, greedy, strings, matemáticos, backtracki
 | `26_permutaciones_backtracking.py` | Generación de permutaciones |
 | `27_combinaciones_backtracking.py` | Generación de combinaciones de k en n |
 | `28_subset_sum.py` | Subset Sum (subconjuntos que sumen objetivo) |
-| `29_resumen.py` | Resumen de backtracking |
 
-## Estructuras de Datos Avanzadas (30-34)
+## Estructuras de Datos Avanzadas (30-33)
 
 | Archivo | Contenido |
 |---------|-----------|
@@ -59,9 +55,8 @@ Algoritmos de ordenamiento, búsqueda, greedy, strings, matemáticos, backtracki
 | `31_segment_tree.py` | Segment Tree: consulta/actualización de rango (suma, mín, máx) |
 | `32_fenwick_tree.py` | Fenwick Tree (BIT): sumas de prefijos y rango |
 | `33_union_find_mejorado.py` | Union-Find con path compression y union by rank |
-| `34_resumen.py` | Resumen y complejidades |
 
-## Algoritmos de Búsqueda (35-41)
+## Algoritmos de Búsqueda (35-40)
 
 | Archivo | Contenido |
 |---------|-----------|
@@ -71,9 +66,8 @@ Algoritmos de ordenamiento, búsqueda, greedy, strings, matemáticos, backtracki
 | `38_kmp.py` | Algoritmo KMP (Knuth-Morris-Pratt) |
 | `39_comparacion.py` | Compara lineal vs binaria y bruta vs KMP |
 | `40_utilidades.py` | Posición de inserción, conteo de ocurrencias en lista ordenada |
-| `41_resumen.py` | Resumen y recomendaciones |
 
-**Dependencias:** 39 importa de 35, 36, 37, 38; 40 importa de 36.
+**Nota:** 39 y 40 son auto-contenidos.
 
 ## Otros (42)
 
@@ -81,7 +75,7 @@ Algoritmos de ordenamiento, búsqueda, greedy, strings, matemáticos, backtracki
 |---------|-----------|
 | `42_dataclass_inventory.py` | Ejemplo de dataclass para inventario |
 
-## Métodos de Ordenamiento (43-53)
+## Métodos de Ordenamiento (43-54)
 
 | Archivo | Contenido |
 |---------|-----------|
@@ -96,8 +90,9 @@ Algoritmos de ordenamiento, búsqueda, greedy, strings, matemáticos, backtracki
 | `51_comparacion.py` | Compara tiempos de todos los métodos |
 | `52_complejidad.py` | Tabla de complejidad (mejor/promedio/peor) |
 | `53_casos_especiales.py` | Casos: ordenada, inversa, iguales, vacía |
+| `54_radix_sort.py` | Radix Sort (ordenamiento por dígitos) |
 
-**Dependencias:** 51 importa de 43–50; 53 importa de 43 y 47.
+**Nota:** 51 y 53 incluyen todas las funciones necesarias (auto-contenidos).
 
 ## Resumen de Ordenamiento
 
@@ -110,6 +105,7 @@ Algoritmos de ordenamiento, búsqueda, greedy, strings, matemáticos, backtracki
 | Quick Sort | O(n log n) promedio | In-place, no estable |
 | Heap Sort | O(n log n) | In-place, no estable |
 | Counting Sort | O(n + k) | Rango pequeño conocido |
+| Radix Sort | O(d * (n + k)) | d = dígitos, estable, no comparativo |
 | Python `sorted()` | O(n log n) | Timsort (híbrido) |
 
 ### Recomendaciones de uso
@@ -118,5 +114,6 @@ Algoritmos de ordenamiento, búsqueda, greedy, strings, matemáticos, backtracki
 2. **Listas medianas (50-1000):** Quick Sort o Merge Sort
 3. **Listas grandes (> 1000):** Quick Sort, Merge Sort, Heap Sort o `sorted()`
 4. **Rango de valores pequeño conocido:** Counting Sort
-5. **Necesitas estabilidad:** Merge, Insertion, Bubble, Counting (evitar Quick, Heap)
-6. **Poco espacio (in-place):** Quick Sort, Heap Sort, Insertion Sort (evitar Merge)
+5. **Enteros con pocos dígitos:** Radix Sort (mejor que O(n log n) cuando d < log n)
+6. **Necesitas estabilidad:** Merge, Insertion, Bubble, Counting, Radix (evitar Quick, Heap)
+7. **Poco espacio (in-place):** Quick Sort, Heap Sort, Insertion Sort (evitar Merge)

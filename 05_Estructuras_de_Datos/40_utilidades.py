@@ -4,10 +4,37 @@
 Posición de inserción (bisect_left), conteo de ocurrencias.
 """
 
-from busqueda_01_binaria import (
-    busqueda_binaria_primera_ocurrencia,
-    busqueda_binaria_ultima_ocurrencia,
-)
+
+def busqueda_binaria_primera_ocurrencia(lista, objetivo):
+    """Índice de la primera ocurrencia (lista con duplicados)."""
+    izquierda, derecha = 0, len(lista) - 1
+    resultado = -1
+    while izquierda <= derecha:
+        medio = (izquierda + derecha) // 2
+        if lista[medio] == objetivo:
+            resultado = medio
+            derecha = medio - 1
+        elif lista[medio] < objetivo:
+            izquierda = medio + 1
+        else:
+            derecha = medio - 1
+    return resultado
+
+
+def busqueda_binaria_ultima_ocurrencia(lista, objetivo):
+    """Índice de la última ocurrencia (lista con duplicados)."""
+    izquierda, derecha = 0, len(lista) - 1
+    resultado = -1
+    while izquierda <= derecha:
+        medio = (izquierda + derecha) // 2
+        if lista[medio] == objetivo:
+            resultado = medio
+            izquierda = medio + 1
+        elif lista[medio] < objetivo:
+            izquierda = medio + 1
+        else:
+            derecha = medio - 1
+    return resultado
 
 
 def encontrar_posicion_insercion(lista, objetivo):
