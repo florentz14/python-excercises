@@ -42,6 +42,16 @@ sympy>=1.12.0
 tabulate>=0.9.0
 
 # -----------------------------------------------------------------------------
+# HTTP y APIs web
+# -----------------------------------------------------------------------------
+# Cliente HTTP asíncrono para APIs REST
+aiohttp>=3.9.0
+# Framework web moderno para crear APIs REST
+fastapi>=0.110.0
+# Servidor ASGI para ejecutar FastAPI
+uvicorn>=0.27.0
+
+# -----------------------------------------------------------------------------
 # Deep learning / redes neuronales
 # PyTorch: equivalente a TensorFlow, compatible con Python 3.14 (redes, GPU, etc.)
 # TensorFlow: solo Python 3.9–3.12; descomenta si usas esa versión
