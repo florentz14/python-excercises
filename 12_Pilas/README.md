@@ -1,15 +1,16 @@
-# 12_Pilas (Stacks)
+# 12_Pilas
 
-Estructura **LIFO** (Last In, First Out): último en entrar, primero en salir.
+Estructura de datos Pila (Stack - LIFO).
+
+## Archivos
 
 | Archivo | Contenido |
 |---------|-----------|
-| `pila_01_lista.py` | Pila con lista: append = push, pop = pop |
-| `pila_02_clase.py` | Clase Pila: push(), pop(), peek(), empty() |
-| `pila_03_parentesis.py` | Balanceo de paréntesis ( ) [ ] { } con pila |
-
-```bash
-python 12_Pilas/pila_01_lista.py
-python 12_Pilas/pila_02_clase.py
-python 12_Pilas/pila_03_parentesis.py
-```
+| `01_lista.py` | Pila usando lista |
+| `02_clase.py` | Pila como clase |
+| `03_parentesis.py` | Validar paréntesis con pila |
+| `04_balanced_parentheses.py` | Verificar paréntesis, corchetes y llaves balanceados |
+| `05_reverse_string.py` | Invertir cadenas usando pila |
+| `06_infix_to_postfix.py` | Convertir notación infija a postfija (RPN) |
+| `07_text_editor_undo_redo.py` | Editor de texto con deshacer/rehacer |
+| `08_browser_history.py` | Historial de navegador con back/forward |

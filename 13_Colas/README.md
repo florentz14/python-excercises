@@ -1,15 +1,16 @@
-# 13_Colas (Queues)
+# 13_Colas
 
-Estructura **FIFO** (First In, First Out): primero en entrar, primero en salir.
+Estructura de datos Cola (Queue - FIFO).
+
+## Archivos
 
 | Archivo | Contenido |
 |---------|-----------|
-| `cola_01_lista.py` | Cola con lista (pop(0); mejor usar deque) |
-| `cola_02_deque.py` | Cola con collections.deque (append, popleft) |
-| `cola_03_clase.py` | Clase Cola: enqueue(), dequeue(), front(), empty() |
-
-```bash
-python 13_Colas/cola_01_lista.py
-python 13_Colas/cola_02_deque.py
-python 13_Colas/cola_03_clase.py
-```
+| `01_lista.py` | Cola usando lista |
+| `02_deque.py` | Cola usando deque |
+| `03_cola_clase_deque.py` | Cola como clase usando deque |
+| `04_printer_queue.py` | Simulador de cola de impresión |
+| `05_customer_service_priority.py` | Cola de servicio al cliente con prioridad VIP |
+| `06_circular_queue_round_robin.py` | Cola circular para planificación Round-Robin |
+| `07_bfs_graph.py` | Búsqueda en anchura (BFS) usando cola |
+| `08_call_center.py` | Cola de call center con tiempo de espera |

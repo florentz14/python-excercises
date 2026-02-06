@@ -1,16 +1,16 @@
 # 10_Matplotlib
 
-**Gráficas** con Matplotlib: línea, barras, dispersión y **gráficos estadísticos**.
+Visualización de datos con Matplotlib.
+
+## Archivos
 
 | Archivo | Contenido |
 |---------|-----------|
-| `matplotlib_01_linea.py` | Gráfica de línea con `plt.plot()` |
-| `matplotlib_02_barras.py` | Gráfica de barras con `plt.bar()` |
-| `matplotlib_03_scatter.py` | Gráfica de dispersión con `plt.scatter()` |
-| `matplotlib_04_histograma.py` | **Estadístico:** histograma con `plt.hist()` (distribución de frecuencias) |
-| `matplotlib_05_boxplot.py` | **Estadístico:** diagrama de caja con `plt.boxplot()` (cuartiles, outliers) |
-| `matplotlib_06_pastel.py` | **Estadístico:** gráfico de pastel con `plt.pie()` (proporciones %) |
-| `matplotlib_07_estadistico_multi.py` | **Estadístico:** subplots con histograma y boxplot |
-| `matplotlib_08_pandas_seaborn.py` | **Pandas + Matplotlib + Seaborn:** DataFrame, sns.lineplot/barplot/boxplot/histplot, figura con plt.subplots |
-
-**Requisitos:** `pip install matplotlib pandas seaborn` (o `pip install -r requirements.txt` desde la raíz).
+| `01_linea.py` | Gráfico de línea |
+| `02_barras.py` | Gráfico de barras |
+| `03_scatter.py` | Gráfico de dispersión |
+| `04_histograma.py` | Histograma |
+| `05_boxplot.py` | Diagrama de caja |
+| `06_pastel.py` | Gráfico de pastel |
+| `07_estadistico_multi.py` | Gráficos estadísticos múltiples |
+| `08_pandas_seaborn.py` | Integración con Pandas y Seaborn |
