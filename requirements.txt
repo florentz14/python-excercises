@@ -46,6 +46,9 @@ mysql-connector-python>=8.0.0
 # Variables de entorno desde archivos .env
 python-dotenv>=1.0.0
 
+# Hash seguro de contraseñas
+bcrypt>=4.0.0
+
 # -----------------------------------------------------------------------------
 # Utilidades
 # -----------------------------------------------------------------------------
