@@ -1,3 +1,12 @@
+# -------------------------------------------------
+# File Name: 02_plotting.py
+# Author: Florentino Báez
+# Date: Matplotlib
+# Description: Plotting Data Points.
+#              Plotting single and multiple datasets, format
+#              string shortcuts (color/marker/line), keyword
+#              arguments, and plotting from dictionaries.
+# -------------------------------------------------
 """
 Matplotlib - 02: Plotting
 =========================
@@ -6,7 +15,7 @@ Description: Plotting data points using plt.plot(). Covers plotting
              formatting shortcuts, and plotting from different data types.
 """
 
-import matplotlib.pyplot as plt
+import matplotlib.pyplot as plt  # pyplot provides a MATLAB-like plotting interface
 
 # =========================================================================
 # Basic plotting with two points
@@ -14,7 +23,7 @@ import matplotlib.pyplot as plt
 
 # plot() draws a line from point to point
 # Point 1: (1, 3), Point 2: (8, 10)
-plt.figure(figsize=(6, 4))
+plt.figure(figsize=(6, 4))  # Create figure canvas; figsize sets width x height in inches
 plt.plot([1, 8], [3, 10])
 plt.title("Line Between Two Points")
 plt.xlabel("X")
@@ -29,7 +38,7 @@ x = [1, 2, 3, 4, 5, 6, 7, 8]
 y = [5, 2, 7, 4, 9, 1, 6, 3]
 
 plt.figure(figsize=(6, 4))
-plt.plot(x, y, "o")  # "o" = circle markers, no line
+plt.plot(x, y, "o")  # Format string "o" = circle markers only, no connecting line
 plt.title("Points Only (No Line)")
 plt.show()
 
@@ -73,6 +82,7 @@ x = [1, 2, 3, 4, 5]
 y = [2, 3, 5, 7, 11]
 
 plt.figure(figsize=(6, 4))
+# Using keyword arguments gives finer control over appearance
 plt.plot(x, y,
          color="purple",
          linewidth=2.5,
@@ -84,7 +94,7 @@ plt.plot(x, y,
          label="Prime numbers")
 plt.title("Plot with Keyword Arguments")
 plt.legend()
-plt.grid(True, alpha=0.3)
+plt.grid(True, alpha=0.3)  # alpha controls transparency (0=invisible, 1=opaque)
 plt.show()
 
 # =========================================================================
@@ -95,7 +105,7 @@ data = {"day": [1, 2, 3, 4, 5, 6, 7],
         "temperature": [72, 75, 71, 78, 82, 79, 85]}
 
 plt.figure(figsize=(6, 4))
-plt.plot("day", "temperature", data=data, marker="o", color="tomato")
+plt.plot("day", "temperature", data=data, marker="o", color="tomato")  # When data= is given, strings refer to dict keys
 plt.title("Weekly Temperature")
 plt.xlabel("Day")
 plt.ylabel("Temperature (F)")

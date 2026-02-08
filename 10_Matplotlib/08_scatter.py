@@ -1,3 +1,13 @@
+# -------------------------------------------------
+# File Name: 08_scatter.py
+# Author: Florentino Báez
+# Date: Matplotlib
+# Description: Scatter Plots.
+#              Show relationships between variables using
+#              plt.scatter(). Custom colors, sizes, colormaps,
+#              alpha transparency, and trend lines.
+# -------------------------------------------------
+
 """
 Matplotlib - 08: Scatter Plots
 ===============================
@@ -17,7 +27,7 @@ x = [5, 7, 8, 7, 2, 17, 2, 9, 4, 11, 12, 9, 6]
 y = [99, 86, 87, 88, 111, 86, 103, 87, 94, 78, 77, 85, 86]
 
 plt.figure(figsize=(6, 4))
-plt.scatter(x, y)
+plt.scatter(x, y)  # scatter() plots individual points without connecting lines
 plt.title("Basic Scatter Plot")
 plt.xlabel("Age")
 plt.ylabel("Speed")
@@ -36,7 +46,7 @@ x2 = [2, 4, 6, 8, 10, 12, 14, 16, 18, 20]
 y2 = [105, 95, 90, 85, 80, 75, 70, 65, 60, 55]
 
 plt.figure(figsize=(7, 5))
-plt.scatter(x1, y1, color="red", label="Morning", marker="o", s=80)
+plt.scatter(x1, y1, color="red", label="Morning", marker="o", s=80)  # s=80 sets the marker area in points^2; marker="o" uses circles
 plt.scatter(x2, y2, color="blue", label="Afternoon", marker="s", s=80)
 plt.title("Two Datasets Comparison")
 plt.xlabel("Age")
@@ -49,16 +59,17 @@ plt.show()
 # Custom colors for each point
 # =========================================================================
 
-np.random.seed(42)
+np.random.seed(42)  # Fix random seed for reproducible results
 x = np.random.rand(50)
 y = np.random.rand(50)
-colors = np.random.rand(50)   # Values 0-1 mapped to colormap
-sizes = np.random.rand(50) * 500  # Random sizes
+colors = np.random.rand(50)   # Random values 0-1; mapped to a colormap gradient
+sizes = np.random.rand(50) * 500  # Random sizes (area in points^2); larger value = bigger dot
 
 plt.figure(figsize=(7, 5))
+# c= maps values to colors via cmap; s= sets individual dot sizes
 scatter = plt.scatter(x, y, c=colors, s=sizes, alpha=0.6,
                       cmap="viridis", edgecolors="black", linewidth=0.5)
-plt.colorbar(scatter, label="Color Value")
+plt.colorbar(scatter, label="Color Value")  # Add a color scale bar showing how values map to colors
 plt.title("Scatter with Colormap and Varying Sizes")
 plt.xlabel("X")
 plt.ylabel("Y")
@@ -84,7 +95,7 @@ plt.show()
 # Scatter with transparency (alpha)
 # =========================================================================
 
-x_large = np.random.randn(500)
+x_large = np.random.randn(500)  # randn() draws from a standard normal distribution (mean=0, std=1)
 y_large = np.random.randn(500)
 
 plt.figure(figsize=(7, 5))
@@ -104,11 +115,11 @@ exam_score = [30, 45, 50, 55, 60, 65, 70, 72, 80, 85, 88, 92, 95]
 
 plt.figure(figsize=(7, 5))
 plt.scatter(hours_studied, exam_score, color="coral", s=100,
-            edgecolors="black", linewidth=0.8, zorder=5)
+            edgecolors="black", linewidth=0.8, zorder=5)  # zorder controls drawing order; higher values are drawn on top
 
 # Add trend line
-z = np.polyfit(hours_studied, exam_score, 1)
-p = np.poly1d(z)
+z = np.polyfit(hours_studied, exam_score, 1)  # polyfit degree=1 fits a straight line (linear regression)
+p = np.poly1d(z)  # poly1d creates a callable polynomial from the fitted coefficients
 x_line = np.linspace(0, 11, 100)
 plt.plot(x_line, p(x_line), "b--", alpha=0.7, label="Trend line")
 

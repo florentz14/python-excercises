@@ -1,3 +1,12 @@
+# -------------------------------------------------
+# File Name: 06_grid.py
+# Author: Florentino Báez
+# Date: Matplotlib
+# Description: Grid Lines.
+#              Add and customize grids: axis selection, line
+#              style/color/width, major and minor grids, and
+#              colored background with white grid.
+# -------------------------------------------------
 """
 Matplotlib - 06: Grid
 =====================
@@ -18,7 +27,7 @@ y = [5, 2, 7, 4, 9, 1, 6, 3]
 plt.figure(figsize=(6, 4))
 plt.plot(x, y, "b-o")
 plt.title("Basic Grid")
-plt.grid(True)  # or plt.grid()
+plt.grid(True)  # Enable grid on both axes; plt.grid() also works
 plt.show()
 
 # =========================================================================
@@ -29,7 +38,7 @@ fig, axes = plt.subplots(1, 3, figsize=(14, 4))
 
 # Both axes (default)
 axes[0].plot(x, y, "b-o")
-axes[0].grid(True, axis="both")
+axes[0].grid(True, axis="both")  # axis="both" draws grid lines for X and Y (this is the default)
 axes[0].set_title("axis='both' (default)")
 
 # X-axis only
@@ -93,9 +102,10 @@ t = np.linspace(0, 2 * np.pi, 100)
 ax.plot(t, np.sin(t), "b-", linewidth=2)
 
 # Enable minor ticks
-ax.minorticks_on()
+ax.minorticks_on()  # Enable minor tick marks between the major ticks
 
 # Major grid (thicker, darker)
+# "which" selects major, minor, or both grid levels
 ax.grid(which="major", color="gray", linestyle="-", linewidth=0.8, alpha=0.7)
 
 # Minor grid (thinner, lighter)
@@ -113,8 +123,8 @@ plt.show()
 fig, ax = plt.subplots(figsize=(7, 5))
 ax.plot(x, y, "r-o", markersize=8, linewidth=2)
 
-ax.set_facecolor("#f0f0f0")  # Light gray background
-ax.grid(True, color="white", linewidth=1.5)  # White grid on gray
+ax.set_facecolor("#f0f0f0")  # Set axes background to light gray; white grid lines stand out on it
+ax.grid(True, color="white", linewidth=1.5)  # White grid lines on gray background (clean dashboard look)
 
 ax.set_title("Grid with Background Color")
 plt.show()

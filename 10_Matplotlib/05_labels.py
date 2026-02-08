@@ -1,3 +1,12 @@
+# -------------------------------------------------
+# File Name: 05_labels.py
+# Author: Florentino Báez
+# Date: Matplotlib
+# Description: Labels, Titles, and Annotations.
+#              Add titles, axis labels, custom fonts, legend
+#              positioning, text annotations with arrows, and
+#              custom tick labels.
+# -------------------------------------------------
 """
 Matplotlib - 05: Labels and Titles
 ====================================
@@ -15,7 +24,7 @@ y = [2, 4, 5, 4, 6, 8]
 # Basic labels and title
 # =========================================================================
 
-plt.figure(figsize=(7, 5))
+plt.figure(figsize=(7, 5))  # Create a 7x5 inch figure for the basic labels demo
 plt.plot(x, y, "b-o")
 
 plt.title("Monthly Sales Report")     # Title
@@ -54,10 +63,10 @@ plt.show()
 # Title position (loc parameter)
 # =========================================================================
 
-fig, axes = plt.subplots(1, 3, figsize=(12, 4))
+fig, axes = plt.subplots(1, 3, figsize=(12, 4))  # Three subplots to compare title alignment positions
 
 axes[0].plot(x, y)
-axes[0].set_title("Left Title", loc="left")
+axes[0].set_title("Left Title", loc="left")  # loc="left" aligns the title to the left edge of the axes
 
 axes[1].plot(x, y)
 axes[1].set_title("Center Title (default)", loc="center")
@@ -82,6 +91,7 @@ plt.xlabel("Month")
 plt.ylabel("Sales")
 
 # Legend with location control
+# legend() creates a box showing which line is which
 plt.legend(loc="upper left",           # Position
            fontsize=11,                 # Font size
            framealpha=0.9,              # Background transparency
@@ -103,18 +113,19 @@ plt.figure(figsize=(7, 5))
 plt.plot(x, y, "b-o", markersize=8)
 
 # Add text at a specific data point
+# annotate() adds text with an optional arrow pointing to a data point
 plt.annotate("Peak!",
              xy=(5, 6),                # Point to annotate
              xytext=(3.5, 7),          # Text position
              fontsize=12,
              fontweight="bold",
              color="red",
-             arrowprops=dict(arrowstyle="->", color="red", lw=2))
+             arrowprops=dict(arrowstyle="->", color="red", lw=2))  # arrowprops dict controls the arrow style, color, and width
 
 # Add plain text (no arrow)
 plt.text(1.5, 7.5, "Monthly Report 2025",
          fontsize=14, fontweight="bold",
-         bbox=dict(boxstyle="round", facecolor="lightyellow", alpha=0.8))
+         bbox=dict(boxstyle="round", facecolor="lightyellow", alpha=0.8))  # bbox draws a rounded box behind the text for readability
 
 plt.title("Annotations and Text")
 plt.xlabel("Month")
@@ -131,7 +142,7 @@ plt.plot(x, y, "b-o")
 
 # Custom tick labels
 months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun"]
-plt.xticks(x, months, fontsize=11, rotation=45)
+plt.xticks(x, months, fontsize=11, rotation=45)  # xticks() replaces numeric tick positions with custom labels
 plt.yticks(fontsize=11)
 
 plt.title("Custom Tick Labels")

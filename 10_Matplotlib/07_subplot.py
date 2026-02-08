@@ -1,3 +1,12 @@
+# -------------------------------------------------
+# File Name: 07_subplot.py
+# Author: Florentino Báez
+# Date: Matplotlib
+# Description: Subplots.
+#              Display multiple plots in one figure using
+#              subplot(), subplots(), GridSpec, shared axes,
+#              and mixed layouts.
+# -------------------------------------------------
 """
 Matplotlib - 07: Subplots
 =========================
@@ -8,7 +17,7 @@ Description: Display multiple plots in one figure using subplots.
 import matplotlib.pyplot as plt
 import numpy as np
 
-x = np.linspace(0, 2 * np.pi, 100)
+x = np.linspace(0, 2 * np.pi, 100)  # 100 points from 0 to 2*pi for smooth trigonometric curves
 
 # =========================================================================
 # Basic: Two subplots side by side (1 row, 2 columns)
@@ -16,7 +25,7 @@ x = np.linspace(0, 2 * np.pi, 100)
 
 plt.figure(figsize=(10, 4))
 
-# subplot(rows, cols, index)
+# subplot(rows, cols, index) — index counts left-to-right, top-to-bottom
 plt.subplot(1, 2, 1)
 plt.plot(x, np.sin(x), "b-")
 plt.title("sin(x)")
@@ -27,6 +36,7 @@ plt.plot(x, np.cos(x), "r-")
 plt.title("cos(x)")
 plt.grid(True, alpha=0.3)
 
+# suptitle() sets a title for the entire figure, not just one subplot
 plt.suptitle("Two Subplots (1 row, 2 cols)", fontsize=14)
 plt.tight_layout()
 plt.show()
@@ -55,7 +65,7 @@ plt.show()
 # Grid of subplots (2 rows, 3 columns)
 # =========================================================================
 
-fig, axes = plt.subplots(2, 3, figsize=(14, 8))
+fig, axes = plt.subplots(2, 3, figsize=(14, 8))  # Returns a Figure and a 2x3 array of Axes objects
 fig.suptitle("2x3 Grid of Subplots", fontsize=16)
 
 functions = [
@@ -70,7 +80,7 @@ functions = [
 for ax, (func, title, color) in zip(axes.flat, functions):
     y = func(x)
     if title == "tan(x)":
-        y = np.clip(y, -5, 5)  # Clip tan to avoid extreme values
+        y = np.clip(y, -5, 5)  # Clip extreme values of tan(x) to keep the plot readable
     ax.plot(x, y, color=color, linewidth=2)
     ax.set_title(title)
     ax.grid(True, alpha=0.3)
@@ -82,10 +92,10 @@ plt.show()
 # Subplots with different sizes using GridSpec
 # =========================================================================
 
-fig = plt.figure(figsize=(10, 6))
+fig = plt.figure(figsize=(10, 6))  # Start with an empty figure; we'll manually add subplots
 
 # Big plot on the left
-ax1 = fig.add_subplot(1, 2, 1)
+ax1 = fig.add_subplot(1, 2, 1)  # add_subplot() lets us place a subplot on part of the grid
 ax1.plot(x, np.sin(x), "b-", linewidth=2)
 ax1.set_title("Main Plot (Large)")
 ax1.grid(True, alpha=0.3)
@@ -109,7 +119,7 @@ plt.show()
 # Sharing axes between subplots
 # =========================================================================
 
-fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(10, 4), sharey=True)
+fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(10, 4), sharey=True)  # sharey=True links the Y-axis scale so both subplots use the same range
 
 ax1.plot(x, np.sin(x), "b-")
 ax1.set_title("sin(x)")

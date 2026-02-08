@@ -118,4 +118,4 @@ Relational dataset based on the classic HR schema (employees, departments, jobs)
 | `countries.csv` | 55 | Countries grouped by region |
 | `regions.csv` | 5 | Geographic regions (Europe, Americas, Asia, Middle East & Africa, Oceania) |
 | `locations.csv` | 30 | Office locations worldwide |
-| `jugadores.csv` | 25 | Player stats: team, position, age, score, goals |
+| `players.csv` | 40 | Player stats: team, position, age, score, goals, attempts, qualified |

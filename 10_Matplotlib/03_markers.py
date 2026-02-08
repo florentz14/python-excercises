@@ -1,3 +1,12 @@
+# -------------------------------------------------
+# File Name: 03_markers.py
+# Author: Florentino Báez
+# Date: Matplotlib
+# Description: Markers.
+#              Customize marker type, size, face/edge color,
+#              hollow markers, format strings, and markevery
+#              for showing every Nth marker.
+# -------------------------------------------------
 """
 Matplotlib - 03: Markers
 ========================
@@ -23,7 +32,7 @@ plt.show()
 # Different marker types
 # =========================================================================
 
-fig, axes = plt.subplots(2, 3, figsize=(12, 8))
+fig, axes = plt.subplots(2, 3, figsize=(12, 8))  # Create a 2x3 grid of subplots; axes is a 2D numpy array
 fig.suptitle("Common Marker Types", fontsize=14)
 
 markers = [
@@ -35,7 +44,7 @@ markers = [
     ("+", "Plus")
 ]
 
-for ax, (marker, name) in zip(axes.flat, markers):
+for ax, (marker, name) in zip(axes.flat, markers):  # axes.flat flattens the 2D array so we can iterate linearly
     ax.plot(x, y, marker=marker, markersize=10, linewidth=1.5)
     ax.set_title(f"marker='{marker}' ({name})")
     ax.grid(True, alpha=0.3)
@@ -57,6 +66,7 @@ print("  '|' -> Vline        '_' -> Hline")
 # Marker size (markersize / ms)
 # =========================================================================
 
+# Demonstrate how markersize affects the visual weight of points
 plt.figure(figsize=(8, 4))
 sizes = [5, 10, 15, 20]
 for i, size in enumerate(sizes):
@@ -82,13 +92,13 @@ plt.subplot(1, 3, 2)
 plt.plot(x, y, "o-", markersize=12,
          markerfacecolor="yellow",
          markeredgecolor="red",
-         markeredgewidth=2)
+         markeredgewidth=2)  # Controls the thickness of the marker border
 plt.title("mfc=yellow, mec=red")
 
 # Hollow markers (face = none)
 plt.subplot(1, 3, 3)
 plt.plot(x, y, "o-", markersize=12,
-         markerfacecolor="none",
+         markerfacecolor="none",  # Setting face to "none" creates hollow/unfilled markers
          markeredgecolor="blue",
          markeredgewidth=2)
 plt.title("Hollow (mfc=none)")
@@ -113,12 +123,12 @@ plt.show()
 # Every Nth marker (markevery)
 # =========================================================================
 
-import numpy as np
+import numpy as np  # numpy is needed for np.linspace to generate evenly spaced points
 x_dense = np.linspace(0, 10, 100)
 y_dense = np.sin(x_dense)
 
 plt.figure(figsize=(6, 4))
-plt.plot(x_dense, y_dense, "b-o", markersize=6, markevery=10,
+plt.plot(x_dense, y_dense, "b-o", markersize=6, markevery=10,  # markevery=N shows a marker on every Nth data point only
          label="markevery=10")
 plt.title("Show Marker Every 10th Point")
 plt.legend()
