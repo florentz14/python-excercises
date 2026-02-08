@@ -1,5 +1,5 @@
 # -------------------------------------------------
-# File Name: 32_visualization_online_retail.py
+# File Name: 32_retail_viz.py
 # Author: Florentino Báez
 # Date: Pandas
 # Description: Visualize Online Retail Data. Create sales trend lines, product

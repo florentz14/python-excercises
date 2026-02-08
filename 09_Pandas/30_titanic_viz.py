@@ -1,5 +1,5 @@
 # -------------------------------------------------
-# File Name: 30_visualization_titanic.py
+# File Name: 30_titanic_viz.py
 # Author: Florentino Báez
 # Date: Pandas
 # Description: Visualize Titanic Passenger Data. Create survival rate charts,

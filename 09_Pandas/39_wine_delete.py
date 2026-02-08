@@ -1,5 +1,5 @@
 # -------------------------------------------------
-# File Name: 39_deleting_wine.py
+# File Name: 39_wine_delete.py
 # Author: Florentino Báez
 # Date: Pandas
 # Description: Delete Rows and Columns from Wine Quality Data. Practice advanced

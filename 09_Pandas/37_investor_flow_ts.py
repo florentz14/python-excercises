@@ -1,5 +1,5 @@
 # -------------------------------------------------
-# File Name: 37_time_series_investor_flow.py
+# File Name: 37_investor_flow_ts.py
 # Author: Florentino Báez
 # Date: Pandas
 # Description: Analyze US Investor Fund Flow Time Series. Practice period-based

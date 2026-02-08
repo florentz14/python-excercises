@@ -1,5 +1,5 @@
 # -------------------------------------------------
-# File Name: 29_visualization_chipotle.py
+# File Name: 29_chipotle_viz.py
 # Author: Florentino Báez
 # Date: Pandas
 # Description: Visualize Chipotle Order Data. Create bar charts of most popular

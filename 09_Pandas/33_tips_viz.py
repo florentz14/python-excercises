@@ -1,5 +1,5 @@
 # -------------------------------------------------
-# File Name: 33_visualization_tips.py
+# File Name: 33_tips_viz.py
 # Author: Florentino Báez
 # Date: Pandas
 # Description: Visualize Restaurant Tips Data. Create scatter plots, box plots,

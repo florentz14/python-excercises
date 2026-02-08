@@ -1,5 +1,5 @@
 # -------------------------------------------------
-# File Name: 36_time_series_financial_data.py
+# File Name: 36_financial_ts.py
 # Author: Florentino Báez
 # Date: Pandas
 # Description: Generate and Analyze Financial Time Series Data. Practice creating

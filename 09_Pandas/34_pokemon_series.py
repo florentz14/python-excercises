@@ -1,5 +1,5 @@
 # -------------------------------------------------
-# File Name: 34_creating_series_pokemon.py
+# File Name: 34_pokemon_series.py
 # Author: Florentino Báez
 # Date: Pandas
 # Description: Create Series and DataFrames from Pokemon Data. Practice pd.Series(),

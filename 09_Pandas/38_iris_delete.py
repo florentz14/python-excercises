@@ -1,5 +1,5 @@
 # -------------------------------------------------
-# File Name: 38_deleting_iris.py
+# File Name: 38_iris_delete.py
 # Author: Florentino Báez
 # Date: Pandas
 # Description: Delete Rows and Columns from the Iris Dataset. Practice drop(),

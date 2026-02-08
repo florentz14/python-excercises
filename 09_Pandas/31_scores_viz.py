@@ -1,5 +1,5 @@
 # -------------------------------------------------
-# File Name: 31_visualization_scores.py
+# File Name: 31_scores_viz.py
 # Author: Florentino Báez
 # Date: Pandas
 # Description: Visualize Student Scores Data. Create scatter plots, box plots,

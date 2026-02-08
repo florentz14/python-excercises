@@ -1,5 +1,5 @@
 # -------------------------------------------------
-# File Name: 35_time_series_apple_stock.py
+# File Name: 35_apple_stock_ts.py
 # Author: Florentino Báez
 # Date: Pandas
 # Description: Time Series Analysis of Apple Stock Data. Practice DatetimeIndex,

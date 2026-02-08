@@ -1,5 +1,5 @@
 # -------------------------------------------------
-# File Name: 13_getting_knowing_chipotle.py
+# File Name: 13_chipotle_explore.py
 # Author: Florentino Báez
 # Date: Pandas
 # Description: Explore the Chipotle Orders Dataset. Load order data,

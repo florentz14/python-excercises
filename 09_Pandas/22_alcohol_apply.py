@@ -1,5 +1,5 @@
 # -------------------------------------------------
-# File Name: 22_apply_students_alcohol.py
+# File Name: 22_alcohol_apply.py
 # Author: Florentino Báez
 # Date: Pandas
 # Description: Apply Functions to Student Alcohol Consumption Data. Use apply(),

@@ -1,5 +1,5 @@
 # -------------------------------------------------
-# File Name: 23_apply_us_crime_rates.py
+# File Name: 23_crime_rates_apply.py
 # Author: Florentino Báez
 # Date: Pandas
 # Description: Apply Functions to US Crime Rate Data. Use apply() to compute

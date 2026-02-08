@@ -1,5 +1,5 @@
 # -------------------------------------------------
-# File Name: 25_merge_fictitious_names.py
+# File Name: 25_names_merge.py
 # Author: Florentino Báez
 # Date: Pandas
 # Description: Merge Fictitious Name Datasets. Practice merging on multiple keys,

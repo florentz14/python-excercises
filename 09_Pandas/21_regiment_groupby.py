@@ -1,5 +1,5 @@
 # -------------------------------------------------
-# File Name: 21_grouping_regiment.py
+# File Name: 21_regiment_groupby.py
 # Author: Florentino Báez
 # Date: Pandas
 # Description: Group and Aggregate Regiment Data. Practice groupby on military

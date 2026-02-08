@@ -1,5 +1,5 @@
 # -------------------------------------------------
-# File Name: 26_merge_house_market.py
+# File Name: 26_house_merge.py
 # Author: Florentino Báez
 # Date: Pandas
 # Description: Merge House Market Datasets. Practice merging property listings

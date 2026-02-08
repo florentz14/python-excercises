@@ -1,5 +1,5 @@
 # -------------------------------------------------
-# File Name: 24_merge_auto_mpg.py
+# File Name: 24_auto_mpg_merge.py
 # Author: Florentino Báez
 # Date: Pandas
 # Description: Merge Auto MPG Datasets. Practice pd.merge() with different join

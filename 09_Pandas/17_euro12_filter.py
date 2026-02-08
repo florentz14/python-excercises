@@ -1,5 +1,5 @@
 # -------------------------------------------------
-# File Name: 17_filtering_sorting_euro12.py
+# File Name: 17_euro12_filter.py
 # Author: Florentino Báez
 # Date: Pandas
 # Description: Filter and Sort Euro 2012 Football Data. Practice selecting

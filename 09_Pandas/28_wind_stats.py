@@ -1,5 +1,5 @@
 # -------------------------------------------------
-# File Name: 28_stats_wind_stats.py
+# File Name: 28_wind_stats.py
 # Author: Florentino Báez
 # Date: Pandas
 # Description: Statistical Analysis of Wind Data. Compute daily, monthly, and

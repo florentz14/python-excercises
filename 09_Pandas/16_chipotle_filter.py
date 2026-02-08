@@ -1,5 +1,5 @@
 # -------------------------------------------------
-# File Name: 16_filtering_sorting_chipotle.py
+# File Name: 16_chipotle_filter.py
 # Author: Florentino Báez
 # Date: Pandas
 # Description: Filter and Sort Chipotle Orders. Practice boolean indexing,

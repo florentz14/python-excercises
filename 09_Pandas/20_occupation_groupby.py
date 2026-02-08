@@ -1,5 +1,5 @@
 # -------------------------------------------------
-# File Name: 20_grouping_occupation.py
+# File Name: 20_occupation_groupby.py
 # Author: Florentino Báez
 # Date: Pandas
 # Description: Group and Aggregate Occupation Data. Practice groupby on user
