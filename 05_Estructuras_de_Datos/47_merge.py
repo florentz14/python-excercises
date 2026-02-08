@@ -1,24 +1,31 @@
-"""
-05_Estructuras_de_Datos - Merge Sort (ordenamiento por mezcla)
-==============================================================
-Complejidad: O(n log n). Estable. No in-place (O(n) extra).
-"""
+# -------------------------------------------------
+# File Name: 47_merge.py
+# Author: Florentino Báez
+# Date: Data Structures - Sorting Algorithms
+# Description: Merge Sort.
+#              Recursively divides the list in half until
+#              sublists of one element, then merges them
+#              in order. Divide and conquer paradigm.
+#              Guarantees O(n log n) in all cases.
+#              Complexity: O(n log n). Stable. Space O(n).
+# -------------------------------------------------
 
 
 def merge_sort(lista):
-    """Divide y vencerás: dividir, ordenar mitades, combinar."""
+    """Divide and conquer: divide, sort halves, merge."""
     if len(lista) <= 1:
-        return lista.copy()
+        return lista.copy()  # Base case: list of 0-1 elements
     medio = len(lista) // 2
-    izquierda = merge_sort(lista[:medio])
-    derecha = merge_sort(lista[medio:])
-    return merge(izquierda, derecha)
+    izquierda = merge_sort(lista[:medio])   # Sort left half
+    derecha = merge_sort(lista[medio:])     # Sort right half
+    return merge(izquierda, derecha)        # Merge both halves
 
 
 def merge(izquierda, derecha):
-    """Combina dos listas ordenadas en una ordenada."""
+    """Merges two sorted lists into one sorted list."""
     resultado = []
     i = j = 0
+    # Compare and take the smaller from each list
     while i < len(izquierda) and j < len(derecha):
         if izquierda[i] <= derecha[j]:
             resultado.append(izquierda[i])
@@ -26,6 +33,7 @@ def merge(izquierda, derecha):
         else:
             resultado.append(derecha[j])
             j += 1
+    # Append remaining elements
     resultado.extend(izquierda[i:])
     resultado.extend(derecha[j:])
     return resultado

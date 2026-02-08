@@ -1,3 +1,14 @@
+# -------------------------------------------------
+# File Name: 21_word_frequency.py
+# Author: Florentino Báez
+# Date: Variables - Dictionaries
+# Description: Word Frequency Counter.
+#              Builds a practical application that counts word
+#              occurrences using a manual dict approach and
+#              collections.Counter. Includes statistics, filtering,
+#              character analysis, and product review analysis.
+# -------------------------------------------------
+
 """
 Exercise 5: Word Frequency Counter
 This exercise builds a practical application that counts word occurrences in text.
@@ -21,12 +32,13 @@ def count_words_manual(text):
     # Convert to lowercase and split into words
     words = text.lower().split()
     
-    # Create frequency dictionary
+    # Create frequency dictionary to store word counts
     word_count = {}
     for word in words:
-        # Remove punctuation
+        # Remove punctuation using regex (keep only word characters and whitespace)
         word = re.sub(r'[^\w\s]', '', word)
-        if word:  # Skip empty strings
+        if word:  # Skip empty strings after punctuation removal
+            # Increment count for this word, defaulting to 0 if not seen before
             word_count[word] = word_count.get(word, 0) + 1
     
     return word_count
@@ -42,8 +54,9 @@ def count_words_counter(text):
     Returns:
         Counter object with word counts
     """
-    # Clean and split text
+    # Clean and split text: find all word characters (alphanumeric + underscore)
     words = re.findall(r'\w+', text.lower())
+    # Counter automatically counts occurrences of each word
     return Counter(words)
 
 
@@ -68,11 +81,12 @@ def main():
     print("-" * 60)
     manual_count = count_words_manual(text)
     
-    # Sort by frequency (descending)
+    # Sort by frequency (descending): key=lambda x: x[1] sorts by count value
     sorted_words = sorted(manual_count.items(), key=lambda x: x[1], reverse=True)
     
     print("Word frequencies:")
-    for word, count in sorted_words[:10]:  # Top 10 words
+    # Display top 10 most frequent words
+    for word, count in sorted_words[:10]:
         print(f"  {word:15} : {count:2} times")
     print()
     
@@ -86,41 +100,44 @@ def main():
         print(f"  {word:15} : {count:2} times")
     print()
     
-    # Statistics
+    # Calculate and display text statistics
     print("Statistics:")
     print("-" * 60)
-    total_words = sum(manual_count.values())
-    unique_words = len(manual_count)
+    total_words = sum(manual_count.values())  # Sum all word counts
+    unique_words = len(manual_count)  # Count distinct words
     print(f"Total words: {total_words}")
     print(f"Unique words: {unique_words}")
     print(f"Average frequency: {total_words/unique_words:.2f}")
     print()
     
-    # Find words that appear only once
+    # Find words that appear only once (hapax legomena)
     print("Words appearing only once:")
     print("-" * 60)
+    # List comprehension filters words with count == 1
     single_occurrence = [word for word, count in manual_count.items() if count == 1]
     print(f"Count: {len(single_occurrence)}")
     print(f"Words: {sorted(single_occurrence)}")
     print()
     
-    # Filter by frequency
+    # Filter dictionary to show only words meeting frequency threshold
     print("Filtering by Frequency:")
     print("-" * 60)
+    # Dictionary comprehension: keep only words with count >= 3
     frequent_words = {word: count for word, count in manual_count.items() if count >= 3}
     print(f"Words appearing 3+ times: {frequent_words}")
     print()
     
-    # Character frequency (bonus)
+    # Character frequency analysis (bonus feature)
     print("Bonus: Character Frequency Analysis")
     print("-" * 60)
-    # Remove spaces and count characters
+    # Remove all whitespace characters and convert to lowercase
     chars = re.sub(r'\s', '', text.lower())
-    char_count = Counter(chars)
+    char_count = Counter(chars)  # Count each character occurrence
     
     print("Top 5 most common characters:")
+    # most_common(5) returns the 5 characters with highest counts
     for char, count in char_count.most_common(5):
-        if char.isalpha():
+        if char.isalpha():  # Only display alphabetic characters
             print(f"  '{char}' : {count} times")
     print()
     
@@ -135,13 +152,14 @@ def main():
         "Product quality is amazing!"
     ]
     
-    # Combine all reviews
+    # Combine all reviews into a single text string
     all_reviews = " ".join(reviews)
     review_words = count_words_counter(all_reviews)
     
     print("Most mentioned words in reviews:")
+    # Display top 8 words, filtering out short words (likely articles/prepositions)
     for word, count in review_words.most_common(8):
-        if len(word) > 3:  # Skip short words
+        if len(word) > 3:  # Skip short words like "the", "is", "was"
             print(f"  {word:12} : {count} times")
     
     print("\n" + "=" * 60)

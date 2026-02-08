@@ -1,17 +1,22 @@
-"""
-05_Estructuras_de_Datos - Casos especiales de ordenamiento
-==========================================================
-Lista ya ordenada, inversa, iguales, un elemento, vacía.
-"""
+# -------------------------------------------------
+# File Name: 53_casos_especiales.py
+# Author: Florentino Báez
+# Date: Data Structures - Sorting Algorithms
+# Description: Special Cases of Sorting.
+#              Tests Merge Sort with edge cases: already
+#              sorted list, reverse sorted, all equal elements,
+#              single element and empty list. Verifies that the
+#              algorithm works correctly in all cases.
+# -------------------------------------------------
 
 
 def esta_ordenada(lista):
-    """Verifica si una lista está ordenada de forma ascendente."""
+    """Checks if a list is sorted in ascending order."""
     return all(lista[i] <= lista[i + 1] for i in range(len(lista) - 1))
 
 
 def merge(izquierda, derecha):
-    """Combina dos listas ordenadas en una ordenada."""
+    """Merges two sorted lists into one sorted list."""
     resultado = []
     i = j = 0
     while i < len(izquierda) and j < len(derecha):
@@ -27,7 +32,7 @@ def merge(izquierda, derecha):
 
 
 def merge_sort(lista):
-    """Divide y vencerás: dividir, ordenar mitades, combinar."""
+    """Divide and conquer: divide, sort halves, merge."""
     if len(lista) <= 1:
         return lista.copy()
     medio = len(lista) // 2
@@ -37,7 +42,7 @@ def merge_sort(lista):
 
 
 def probar_casos_especiales():
-    """Prueba Merge Sort con distintos casos límite."""
+    """Tests Merge Sort with different edge cases."""
     casos = {
         "Lista ya ordenada": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
         "Lista inversamente ordenada": [10, 9, 8, 7, 6, 5, 4, 3, 2, 1],

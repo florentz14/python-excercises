@@ -1,32 +1,38 @@
-"""
-05_Estructuras_de_Datos - Algoritmo KMP (Knuth-Morris-Pratt)
-=============================================================
-Búsqueda de patrón en texto. Complejidad: O(n + m).
-"""
+# -------------------------------------------------
+# File Name: 38_kmp.py
+# Author: Florentino Báez
+# Date: Data Structures - Search Algorithms
+# Description: KMP Algorithm (Knuth-Morris-Pratt).
+#              Pattern search in text that avoids re-comparing
+#              characters already verified. Pre-processes the pattern
+#              by building the LPS table (Longest Proper Prefix
+#              which is also Suffix) to skip positions.
+#              Complexity: O(n + m) in time, O(m) in space.
+# -------------------------------------------------
 
 
 def construir_tabla_lps(patron):
-    """Tabla LPS: Longest Proper Prefix which is also Suffix."""
+    """LPS table: Longest Proper Prefix which is also Suffix."""
     m = len(patron)
-    lps = [0] * m
-    longitud = 0
+    lps = [0] * m  # lps[i] = length of longest proper prefix that is also suffix
+    longitud = 0   # Length of previous prefix
     i = 1
     while i < m:
         if patron[i] == patron[longitud]:
             longitud += 1
-            lps[i] = longitud
+            lps[i] = longitud  # Match → extend prefix
             i += 1
         else:
             if longitud != 0:
-                longitud = lps[longitud - 1]
+                longitud = lps[longitud - 1]  # Back up in LPS table
             else:
-                lps[i] = 0
+                lps[i] = 0  # No matching prefix
                 i += 1
     return lps
 
 
 def kmp_busqueda(texto, patron):
-    """Primera ocurrencia del patrón con KMP. -1 si no existe."""
+    """First occurrence of the pattern with KMP. -1 if not found."""
     n, m = len(texto), len(patron)
     if m == 0:
         return 0
@@ -49,7 +55,7 @@ def kmp_busqueda(texto, patron):
 
 
 def kmp_busqueda_todas(texto, patron):
-    """Todas las ocurrencias del patrón con KMP."""
+    """All occurrences of the pattern with KMP."""
     n, m = len(texto), len(patron)
     ocurrencias = []
     if m == 0:

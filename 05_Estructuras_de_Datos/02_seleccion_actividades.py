@@ -1,26 +1,37 @@
-# Archivo: 42_02_seleccion_actividades.py
-# Descripción: Problema de selección de actividades (greedy)
+# -------------------------------------------------
+# File Name: 02_seleccion_actividades.py
+# Author: Florentino Báez
+# Date: Data Structures - Greedy Algorithms
+# Description: Activity Selection Problem (Greedy).
+#              Finds the maximum number of non-overlapping
+#              activities. The greedy strategy is to always
+#              select the activity that finishes earliest.
+#              Complexity: O(n log n) due to sorting.
+# -------------------------------------------------
 
 print("=== 2. Problema de Selección de Actividades ===\n")
 
 
 def seleccion_actividades(inicios, fines):
     """
-    Encuentra el máximo número de actividades que no se solapan.
-    Estrategia: Seleccionar actividades que terminan primero.
-    Complejidad: O(n log n)
+    Finds the maximum number of non-overlapping activities.
+    Strategy: Select activities that finish earliest.
+    Complexity: O(n log n)
     """
     n = len(inicios)
+    # Combine start, end and index into a single list
     actividades = list(zip(inicios, fines, range(n)))
+    # Sort by finish time (greedy key: earliest finish first)
     actividades.sort(key=lambda x: x[1])
 
-    seleccionadas = []
-    ultimo_fin = 0
+    seleccionadas = []  # Indices of selected activities
+    ultimo_fin = 0      # End time of the last selected activity
 
     for inicio, fin, indice in actividades:
         if inicio >= ultimo_fin:
+            # Activity does not overlap with the previously selected one
             seleccionadas.append(indice)
-            ultimo_fin = fin
+            ultimo_fin = fin  # Update the most recent finish time
 
     return seleccionadas
 

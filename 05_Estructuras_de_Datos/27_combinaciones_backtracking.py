@@ -1,22 +1,33 @@
-# Archivo: 47_05_combinaciones_backtracking.py
-# Descripción: Generación de combinaciones con backtracking
+# -------------------------------------------------
+# File Name: 27_combinaciones_backtracking.py
+# Author: Florentino Báez
+# Date: Data Structures - Backtracking
+# Description: Combination Generation with Backtracking.
+#              Generates all ways to choose k elements from
+#              a list regardless of order. Uses a start index
+#              to avoid duplicates and builds subsets
+#              incrementally, backtracking when completing each.
+#              Complexity: O(C(n,k) * k).
+# -------------------------------------------------
 
 print("=== 5. Generación de Combinaciones (Backtracking) ===\n")
 
 
 def combinaciones_backtracking(elements, k):
-    """Genera todas las combinaciones de k elementos usando backtracking."""
+    """Generate all combinations of k elements using backtracking."""
     resultado = []
     n = len(elements)
 
     def backtrack(combinacion_actual, inicio):
         if len(combinacion_actual) == k:
+            # Complete combination → save copy
             resultado.append(combinacion_actual[:])
             return
+        # Only consider elements from 'inicio' to avoid duplicates
         for i in range(inicio, n):
-            combinacion_actual.append(elements[i])
-            backtrack(combinacion_actual, i + 1)
-            combinacion_actual.pop()
+            combinacion_actual.append(elements[i])     # Include element
+            backtrack(combinacion_actual, i + 1)        # Next from i+1
+            combinacion_actual.pop()                    # Backtrack: exclude
 
     backtrack([], 0)
     return resultado

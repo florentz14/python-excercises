@@ -1,20 +1,30 @@
-# Archivo: 44_06_anagramas_permutaciones.py
-# Descripción: Anagramas y permutaciones de strings
+# -------------------------------------------------
+# File Name: 13_anagramas_permutaciones.py
+# Author: Florentino Báez
+# Date: Data Structures - String Algorithms
+# Description: Anagrams and String Permutations.
+#              Checks if two words are anagrams (same letters
+#              in different order), groups anagrams from a list,
+#              and generates all permutations of a string
+#              using recursion. Permutation complexity: O(n!).
+# -------------------------------------------------
 
 print("=== 6. Anagramas y Permutaciones ===\n")
 
 
 def son_anagramas(str1, str2):
-    """Verifica si dos strings son anagramas."""
+    """Checks if two strings are anagrams."""
     if len(str1) != len(str2):
-        return False
+        return False  # Different length → cannot be anagrams
+    # If sorting both yields the same letters, they are anagrams
     return sorted(str1) == sorted(str2)
 
 
 def contar_anagramas(lista_palabras):
-    """Agrupa palabras que son anagramas."""
+    """Groups words that are anagrams."""
     grupos = {}
     for palabra in lista_palabras:
+        # Key: sorted letters (anagrams share the same key)
         clave = ''.join(sorted(palabra))
         if clave not in grupos:
             grupos[clave] = []
@@ -23,13 +33,14 @@ def contar_anagramas(lista_palabras):
 
 
 def encontrar_permutaciones(s):
-    """Encuentra todas las permutaciones de un string."""
+    """Finds all permutations of a string using recursion."""
     if len(s) <= 1:
-        return [s]
+        return [s]  # Base case: single character has only one permutation
 
     permutaciones = []
     for i, char in enumerate(s):
-        resto = s[:i] + s[i + 1:]
+        resto = s[:i] + s[i + 1:]  # Remove the current character
+        # Recursion: generate permutations of the rest and prepend char
         for perm in encontrar_permutaciones(resto):
             permutaciones.append(char + perm)
 

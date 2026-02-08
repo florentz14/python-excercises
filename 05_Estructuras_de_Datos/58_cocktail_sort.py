@@ -1,34 +1,28 @@
-"""
-05_Estructuras_de_Datos - Cocktail Sort (ordenamiento de coctelera)
-====================================================================
-También conocido como Cocktail Shaker Sort, Bidirectional Bubble Sort
-o Ripple Sort. Es una variación del Bubble Sort que recorre la lista
-en ambas direcciones (ida y vuelta).
-
-Complejidad:
-  - Peor caso:  O(n²)
-  - Promedio:   O(n²)
-  - Mejor caso: O(n) si ya está ordenada
-  - Espacio:    O(1) - In-place
-  - Estabilidad: SÍ es estable
-
-Ventaja sobre Bubble Sort: evita el problema de los "conejos y tortugas"
-(elementos pequeños al final tardan mucho en moverse con Bubble Sort
-pero Cocktail Sort los mueve rápido en la pasada de vuelta).
-"""
+# -------------------------------------------------
+# File Name: 58_cocktail_sort.py
+# Author: Florentino Báez
+# Date: Data Structures - Sorting Algorithms
+# Description: Cocktail Sort (Bidirectional Bubble Sort).
+#              Variation of Bubble Sort that traverses the list in
+#              both directions (forward and backward). Solves the
+#              "turtles" problem of Bubble Sort by moving small
+#              elements quickly in the reverse pass. Includes
+#              visualization and swap count.
+#              Complexity: O(n²). Stable. In-place.
+# -------------------------------------------------
 
 import random
 import time
 
 
 # ============================================================
-# 1. Cocktail Sort básico
+# 1. Basic Cocktail Sort
 # ============================================================
 def cocktail_sort(lista):
     """
-    Cocktail Sort: Bubble Sort bidireccional.
-    Recorre de izquierda a derecha y luego de derecha a izquierda.
-    No modifica la lista original.
+    Cocktail Sort: bidirectional Bubble Sort.
+    Traverses left to right then right to left.
+    Does not modify the original list.
     """
     lista = lista.copy()
     n = len(lista)
@@ -39,7 +33,7 @@ def cocktail_sort(lista):
     while intercambiado:
         intercambiado = False
 
-        # Pasada de izquierda a derecha (burbujea el mayor al final)
+        # Pass left to right (bubble largest to end)
         for i in range(inicio, fin):
             if lista[i] > lista[i + 1]:
                 lista[i], lista[i + 1] = lista[i + 1], lista[i]
@@ -51,7 +45,7 @@ def cocktail_sort(lista):
 
         intercambiado = False
 
-        # Pasada de derecha a izquierda (burbujea el menor al inicio)
+        # Pass right to left (bubble smallest to start)
         for i in range(fin, inicio, -1):
             if lista[i] < lista[i - 1]:
                 lista[i], lista[i - 1] = lista[i - 1], lista[i]
@@ -62,10 +56,10 @@ def cocktail_sort(lista):
 
 
 # ============================================================
-# 2. Cocktail Sort con visualización
+# 2. Cocktail Sort with visualization
 # ============================================================
 def cocktail_sort_visual(lista):
-    """Cocktail Sort con visualización paso a paso."""
+    """Cocktail Sort with step-by-step visualization."""
     lista = lista.copy()
     n = len(lista)
     inicio = 0
@@ -80,7 +74,7 @@ def cocktail_sort_visual(lista):
         intercambiado = False
         paso += 1
 
-        # Izquierda -> Derecha
+        # Left -> Right
         for i in range(inicio, fin):
             if lista[i] > lista[i + 1]:
                 lista[i], lista[i + 1] = lista[i + 1], lista[i]
@@ -93,7 +87,7 @@ def cocktail_sort_visual(lista):
 
         intercambiado = False
 
-        # Derecha -> Izquierda
+        # Right -> Left
         for i in range(fin, inicio, -1):
             if lista[i] < lista[i - 1]:
                 lista[i], lista[i - 1] = lista[i - 1], lista[i]
@@ -107,10 +101,10 @@ def cocktail_sort_visual(lista):
 
 
 # ============================================================
-# 3. Comparación: Cocktail Sort vs Bubble Sort
+# 3. Comparison: Cocktail Sort vs Bubble Sort
 # ============================================================
 def bubble_sort(lista):
-    """Bubble Sort para comparación."""
+    """Bubble Sort for comparison."""
     lista = lista.copy()
     n = len(lista)
     for i in range(n):
@@ -125,14 +119,14 @@ def bubble_sort(lista):
 
 
 def comparar_con_bubble(n=2000):
-    """Compara Cocktail Sort vs Bubble Sort en diferentes escenarios."""
+    """Compares Cocktail Sort vs Bubble Sort in different scenarios."""
     escenarios = {
         "Aleatorio":      [random.randint(1, 10000) for _ in range(n)],
         "Casi ordenado":  list(range(n)),
         "Inverso":        list(range(n, 0, -1)),
     }
 
-    # Desordenar un poco el "casi ordenado"
+    # Slightly shuffle "almost sorted"
     casi = escenarios["Casi ordenado"]
     for _ in range(n // 20):
         i, j = random.randint(0, n-1), random.randint(0, n-1)
@@ -158,10 +152,10 @@ def comparar_con_bubble(n=2000):
 
 
 # ============================================================
-# 4. Contar intercambios y pasadas
+# 4. Count swaps and passes
 # ============================================================
 def cocktail_sort_stats(lista):
-    """Cocktail Sort que cuenta intercambios y pasadas."""
+    """Cocktail Sort that counts swaps and passes."""
     lista = lista.copy()
     n = len(lista)
     inicio = 0
@@ -203,11 +197,11 @@ def cocktail_sort_stats(lista):
 if __name__ == "__main__":
     print("=== Cocktail Sort (Bidirectional Bubble Sort) ===\n")
 
-    # Demo visual
+    # Visual demo
     lista_demo = [5, 1, 4, 2, 8, 0, 2, 7, 3, 6]
     cocktail_sort_visual(lista_demo)
 
-    # Estadísticas
+    # Statistics
     print("\n--- Estadísticas de intercambios ---")
     casos_stats = {
         "Aleatorio":  [random.randint(1, 50) for _ in range(15)],
@@ -220,7 +214,7 @@ if __name__ == "__main__":
         print(f"  {nombre:12s}: {pasadas:3d} pasadas, {swaps:3d} intercambios"
               f" -> {resultado[:8]}{'...' if len(resultado) > 8 else ''}")
 
-    # Pruebas de funcionamiento
+    # Functionality tests
     print("\n--- Pruebas ---")
     casos = {
         "Aleatoria":     [random.randint(1, 50) for _ in range(15)],
@@ -239,5 +233,5 @@ if __name__ == "__main__":
               f" -> {resultado[:8]}{'...' if len(resultado) > 8 else ''}"
               f" {'OK' if ok else 'FAIL'}")
 
-    # Comparación
+    # Comparison
     comparar_con_bubble(1500)

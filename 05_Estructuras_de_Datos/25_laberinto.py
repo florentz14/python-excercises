@@ -1,5 +1,13 @@
-# Archivo: 47_03_laberinto.py
-# Descripción: Resolución de laberintos (backtracking)
+# -------------------------------------------------
+# File Name: 25_laberinto.py
+# Author: Florentino Báez
+# Date: Estructuras de Datos - Backtracking
+# Description: Resolución de Laberintos (Backtracking).
+#              Encuentra un camino desde el inicio hasta el destino
+#              en una matriz donde 0 = camino libre y 1 = pared.
+#              Explora las 4 direcciones (derecha, abajo, izquierda,
+#              arriba) y retrocede si llega a un callejón sin salida.
+# -------------------------------------------------
 
 print("=== 3. Resolución de Laberintos ===\n")
 

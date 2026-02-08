@@ -1,22 +1,34 @@
-# Archivo: 47_06_subset_sum.py
-# Descripción: Problema de suma de subconjuntos (Subset Sum, backtracking)
+# -------------------------------------------------
+# File Name: 28_subset_sum.py
+# Author: Florentino Báez
+# Date: Data Structures - Backtracking
+# Description: Subset Sum Problem.
+#              Finds all subsets of a list of numbers
+#              whose sum equals exactly the target.
+#              For each element decides to include or exclude it,
+#              pruning branches where the sum already exceeds target.
+#              Complexity: O(2^n) in the worst case.
+# -------------------------------------------------
 
 print("=== 6. Problema de Suma de Subconjuntos (Subset Sum) ===\n")
 
 
 def subset_sum_backtracking(numeros, objetivo):
-    """Encuentra subconjuntos que sumen exactamente el objetivo."""
+    """Find subsets that sum exactly to the target."""
     resultado = []
     n = len(numeros)
 
     def backtrack(subconjunto_actual, indice, suma_actual):
         if suma_actual == objetivo:
+            # Target sum reached → save subset
             resultado.append(subconjunto_actual[:])
             return
         if suma_actual > objetivo or indice >= n:
-            return
+            return  # Prune: sum exceeded or no elements left
+        # Option 1: Include current element
         subconjunto_actual.append(numeros[indice])
         backtrack(subconjunto_actual, indice + 1, suma_actual + numeros[indice])
+        # Option 2: Exclude current element (backtrack)
         subconjunto_actual.pop()
         backtrack(subconjunto_actual, indice + 1, suma_actual)
 

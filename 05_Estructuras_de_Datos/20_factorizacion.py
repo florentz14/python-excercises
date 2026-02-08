@@ -1,5 +1,14 @@
-# Archivo: 45_06_factorizacion.py
-# Descripción: Factorización en primos y conteo de divisores
+# -------------------------------------------------
+# File Name: 20_factorizacion.py
+# Author: Florentino Báez
+# Date: Estructuras de Datos - Algoritmos Matemáticos
+# Description: Factorización en Primos y Conteo de Divisores.
+#              Descompone un número en sus factores primos
+#              dividiendo sucesivamente por el menor divisor
+#              posible hasta √n. Incluye funciones para obtener
+#              factores únicos y contar divisores totales.
+#              Complejidad: O(√n).
+# -------------------------------------------------
 
 print("=== 6. Factorización de Números ===\n")
 
@@ -10,16 +19,16 @@ def factorizar(n):
     Complejidad: O(√n)
     """
     factores = []
-    divisor = 2
+    divisor = 2  # Empezar con el primo más pequeño
 
-    while divisor * divisor <= n:
+    while divisor * divisor <= n:  # Solo probar hasta √n
         while n % divisor == 0:
-            factores.append(divisor)
-            n //= divisor
+            factores.append(divisor)  # Agregar el factor primo
+            n //= divisor             # Dividir n por ese factor
         divisor += 1
 
     if n > 1:
-        factores.append(n)
+        factores.append(n)  # Si queda n > 1, es un factor primo
     return factores
 
 

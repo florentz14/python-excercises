@@ -1,3 +1,14 @@
+# -------------------------------------------------
+# File Name: 18_dictionary_methods.py
+# Author: Florentino Báez
+# Date: Variables - Dictionaries
+# Description: Dictionary Methods.
+#              Explores built-in dict methods: keys(), values(),
+#              items(), update(), setdefault(), clear(), copy(),
+#              and fromkeys(). Includes practical examples with
+#              an inventory use case.
+# -------------------------------------------------
+
 """
 Exercise 2: Dictionary Methods
 This exercise explores the most useful built-in dictionary methods.
@@ -21,6 +32,8 @@ def main():
     print()
     
     # 1. keys() - Get all keys
+    # keys() returns a dict_keys view object (not a list)
+    # Convert to list if you need list operations
     print("1. keys() - Getting All Keys:")
     print("-" * 60)
     keys = inventory.keys()
@@ -28,6 +41,8 @@ def main():
     print()
     
     # 2. values() - Get all values
+    # values() returns a dict_values view object
+    # Can be used directly with functions like sum(), max(), etc.
     print("2. values() - Getting All Values:")
     print("-" * 60)
     values = inventory.values()
@@ -36,6 +51,8 @@ def main():
     print()
     
     # 3. items() - Get key-value pairs
+    # items() returns (key, value) tuples - perfect for iteration
+    # Unpacking with 'for key, value in dict.items()' is common pattern
     print("3. items() - Getting Key-Value Pairs:")
     print("-" * 60)
     for product, quantity in inventory.items():
@@ -43,6 +60,8 @@ def main():
     print()
     
     # 4. update() - Merge dictionaries
+    # update() modifies the original dictionary in-place
+    # If keys exist, their values are overwritten; new keys are added
     print("4. update() - Merging Dictionaries:")
     print("-" * 60)
     new_items = {"mangoes": 15, "pineapples": 10}
@@ -52,10 +71,14 @@ def main():
     print()
     
     # 5. setdefault() - Get value or set default
+    # setdefault() returns the value if key exists, otherwise sets default and returns it
+    # Useful for initializing dictionary entries safely
     print("5. setdefault() - Get or Set Default:")
     print("-" * 60)
+    # Key doesn't exist - creates it with default value 20
     watermelon_qty = inventory.setdefault("watermelons", 20)
     print(f"Watermelons quantity (new): {watermelon_qty}")
+    # Key exists - returns existing value, doesn't change it
     apple_qty = inventory.setdefault("apples", 100)
     print(f"Apples quantity (existing): {apple_qty}")
     print(f"Inventory: {inventory}")
@@ -71,6 +94,8 @@ def main():
     print()
     
     # 7. copy() - Create a shallow copy
+    # copy() creates a new dictionary with the same key-value pairs
+    # Shallow copy: nested objects are not copied, only referenced
     print("7. copy() - Creating a Copy:")
     print("-" * 60)
     inventory_backup = inventory.copy()
@@ -78,6 +103,8 @@ def main():
     print()
     
     # 8. fromkeys() - Create dictionary with same value
+    # fromkeys() creates a new dictionary from an iterable of keys
+    # All keys get the same default value (or None if not specified)
     print("8. fromkeys() - Create Dictionary from Keys:")
     print("-" * 60)
     products = ["eggs", "milk", "bread"]

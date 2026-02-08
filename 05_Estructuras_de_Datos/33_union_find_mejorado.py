@@ -1,13 +1,22 @@
-# Archivo: 48_04_union_find_mejorado.py
-# Descripción: Union-Find con path compression y union by rank
+# -------------------------------------------------
+# File Name: 33_union_find_mejorado.py
+# Author: Florentino Báez
+# Date: Data Structures - Advanced Structures
+# Description: Improved Union-Find (Disjoint Set Union).
+#              Maintains disjoint sets with operations
+#              find (with path compression) and union (with
+#              union by rank). Amortized complexity: O(α(n))
+#              ≈ constant. Useful for detecting cycles in graphs
+#              and connected components.
+# -------------------------------------------------
 
 print("=== 4. Union-Find Mejorado ===\n")
 
 
 class UnionFind:
     """
-    Union-Find con path compression y union by rank.
-    Complejidad: O(α(n)) ≈ constante en la práctica.
+    Union-Find with path compression and union by rank.
+    Complexity: O(α(n)) ≈ constant in practice.
     """
 
     def __init__(self, n):

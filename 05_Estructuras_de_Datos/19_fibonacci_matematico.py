@@ -1,5 +1,14 @@
-# Archivo: 45_05_fibonacci_matematico.py
-# Descripción: Fibonacci con fórmula de Binet y exponenciación de matrices
+# -------------------------------------------------
+# File Name: 19_fibonacci_matematico.py
+# Author: Florentino Báez
+# Date: Data Structures - Mathematical Algorithms
+# Description: Fibonacci with Mathematical Methods.
+#              Computes the n-th Fibonacci using two approaches:
+#              1) Binet's formula (phi^n): O(1) but loses
+#              precision for large n.
+#              2) Matrix exponentiation [[1,1],[1,0]]^n: O(log n)
+#              exact using matrix multiplication.
+# -------------------------------------------------
 
 import math
 
@@ -8,8 +17,8 @@ print("=== 5. Números de Fibonacci (Métodos Matemáticos) ===\n")
 
 def fibonacci_binet(n):
     """
-    n-ésimo Fibonacci con fórmula de Binet.
-    O(1) pero con errores de precisión para n grandes.
+    n-th Fibonacci with Binet's formula.
+    O(1) but with precision errors for large n.
     """
     phi = (1 + math.sqrt(5)) / 2
     psi = (1 - math.sqrt(5)) / 2
@@ -18,8 +27,8 @@ def fibonacci_binet(n):
 
 def fibonacci_matriz(n):
     """
-    n-ésimo Fibonacci con exponenciación de matrices.
-    Complejidad: O(log n)
+    n-th Fibonacci with matrix exponentiation.
+    Complexity: O(log n)
     """
     def multiplicar_matrices(A, B):
         return [

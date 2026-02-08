@@ -1,3 +1,14 @@
+# -------------------------------------------------
+# File Name: 19_nested_dictionaries.py
+# Author: Florentino Báez
+# Date: Variables - Dictionaries
+# Description: Nested Dictionaries.
+#              Shows how to work with dictionaries inside
+#              dictionaries. Includes accessing nested values,
+#              iterating, modifying, and a complex school
+#              database example with grade calculations.
+# -------------------------------------------------
+
 """
 Exercise 3: Nested Dictionaries
 This exercise demonstrates how to work with dictionaries inside dictionaries.
@@ -36,26 +47,32 @@ def main():
     
     print("1. Accessing Nested Dictionary Values:")
     print("-" * 60)
-    # Access engineering manager's name
+    # Access nested values using chained bracket notation
+    # Each level of nesting requires another set of brackets
     eng_manager = company["engineering"]["manager"]["name"]
     print(f"Engineering Manager: {eng_manager}")
     
-    # Access first developer
+    # Access nested list within dictionary, then dictionary within list
+    # First index [0] gets first developer dict, then ["name"] gets the name
     first_dev = company["engineering"]["developers"][0]["name"]
     print(f"First Developer: {first_dev}")
     print()
     
     print("2. Iterating Through Nested Dictionaries:")
     print("-" * 60)
+    # Iterate through top-level keys (departments) and their nested values
+    # dept_data contains the nested dictionary for each department
     for department, dept_data in company.items():
         print(f"\n{department.upper()} Department:")
+        # Access nested values through the dept_data dictionary
         print(f"  Manager: {dept_data['manager']['name']}")
         print(f"  Manager Salary: ${dept_data['manager']['salary']:,}")
     print()
     
     print("3. Modifying Nested Values:")
     print("-" * 60)
-    # Give engineering manager a raise
+    # Modify nested values using the same chained bracket notation
+    # Store old value before modification for comparison
     old_salary = company["engineering"]["manager"]["salary"]
     company["engineering"]["manager"]["salary"] = 100000
     new_salary = company["engineering"]["manager"]["salary"]
@@ -66,12 +83,14 @@ def main():
     
     print("4. Adding to Nested Structures:")
     print("-" * 60)
-    # Add new developer
+    # Add new items to nested lists within dictionaries
+    # Create a new dictionary and append it to the nested list
     new_developer = {
         "name": "Charlie Parker",
         "salary": 78000,
         "language": "JavaScript"
     }
+    # Access the nested list and use list.append() method
     company["engineering"]["developers"].append(new_developer)
     print(f"Added new developer: {new_developer['name']}")
     print(f"Total developers: {len(company['engineering']['developers'])}")
@@ -79,8 +98,11 @@ def main():
     
     print("5. Creating a Summary Report:")
     print("-" * 60)
+    # Calculate totals by checking which nested keys exist
+    # Different departments may have different nested structures
     for dept_name, dept_info in company.items():
-        total_employees = 1  # manager
+        total_employees = 1  # Start with manager (always present)
+        # Check for different employee types based on department structure
         if "developers" in dept_info:
             total_employees += len(dept_info["developers"])
         elif "representatives" in dept_info:
@@ -90,6 +112,7 @@ def main():
     print()
     
     # Creating a more complex nested structure - school database
+    # This demonstrates 4 levels of nesting: grade -> class -> students -> student info
     print("6. Complex Nested Example - School Database:")
     print("-" * 60)
     school = {
@@ -111,12 +134,15 @@ def main():
         }
     }
     
-    # Access deeply nested value
+    # Access deeply nested value using multiple bracket levels
+    # Path: school -> grade_10 -> class_A -> students -> student_001 -> grade
     emma_grade = school["grade_10"]["class_A"]["students"]["student_001"]["grade"]
     print(f"Emma's grade: {emma_grade}")
     
     # Calculate average for a class
+    # First, get the students dictionary for class A
     class_a_students = school["grade_10"]["class_A"]["students"]
+    # Extract all grade values from student dictionaries using list comprehension
     grades = [student["grade"] for student in class_a_students.values()]
     avg_grade = sum(grades) / len(grades)
     print(f"Class A average: {avg_grade:.1f}")

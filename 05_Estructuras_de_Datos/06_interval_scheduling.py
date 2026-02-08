@@ -1,27 +1,39 @@
-# Archivo: 42_06_interval_scheduling.py
-# Descripción: Programación de intervalos con pesos (versión simplificada)
+# -------------------------------------------------
+# File Name: 06_interval_scheduling.py
+# Author: Florentino Báez
+# Date: Data Structures - Greedy Algorithms
+# Description: Weighted Interval Scheduling.
+#              Selects non-overlapping intervals maximizing the
+#              sum of weights. Combines greedy sorting with
+#              dynamic programming. Simplified version of the
+#              full algorithm.
+# -------------------------------------------------
 
 print("=== 6. Programación de Intervalos con Pesos ===\n")
 
 
 def interval_scheduling_pesos(intervals):
     """
-    Interval Scheduling con pesos (Weighted Interval Scheduling).
-    Versión simplificada; la versión completa usa programación dinámica.
+    Weighted Interval Scheduling.
+    Simplified version; the full version uses dynamic programming.
     """
+    # Sort intervals by finish time
     intervals.sort(key=lambda x: x[1])
     n = len(intervals)
-    pesos_acumulados = [0] * n
+    pesos_acumulados = [0] * n  # Best possible weight up to each interval
 
     for i, (inicio, fin, peso) in enumerate(intervals):
-        mejor_peso = peso
+        mejor_peso = peso  # At least the interval's own weight
+        # Find the last compatible interval (non-overlapping)
         for j in range(i - 1, -1, -1):
             if intervals[j][1] <= inicio:
+                # Add accumulated weight from the compatible interval
                 if pesos_acumulados[j] + peso > mejor_peso:
                     mejor_peso = pesos_acumulados[j] + peso
                 break
         pesos_acumulados[i] = mejor_peso
 
+    # Reconstruct the solution (backtracking from the end)
     seleccionados = []
     i = n - 1
     while i >= 0:
@@ -29,12 +41,13 @@ def interval_scheduling_pesos(intervals):
             seleccionados.append(i)
             fin_actual = intervals[i][0]
             i -= 1
+            # Skip overlapping intervals
             while i >= 0 and intervals[i][1] > fin_actual:
                 i -= 1
         else:
             i -= 1
 
-    seleccionados.reverse()
+    seleccionados.reverse()  # Reverse for chronological order
     peso_total = pesos_acumulados[-1] if pesos_acumulados else 0
     return seleccionados, peso_total
 

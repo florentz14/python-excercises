@@ -1,44 +1,31 @@
-"""
-05_Estructuras_de_Datos - Tim Sort
-====================================
-Inventado por Tim Peters (2002) para Python. Es el algoritmo detrás de
-sorted() y list.sort() en Python (y también en Java desde JDK 7).
-
-Es un híbrido de Merge Sort e Insertion Sort que aprovecha las
-"corridas" (runs) naturales en los datos del mundo real.
-
-Complejidad:
-  - Peor caso:  O(n log n)
-  - Promedio:   O(n log n)
-  - Mejor caso: O(n) cuando los datos ya están parcialmente ordenados
-  - Espacio:    O(n)
-  - Estabilidad: SÍ es estable
-
-Conceptos clave:
-  - RUN: Secuencia consecutiva ya ordenada (ascendente o descendente)
-  - minrun: Tamaño mínimo de un run (típicamente 32-64)
-  - Si un run es < minrun, se extiende con Insertion Sort
-  - Los runs se combinan con un Merge optimizado
-
-Tim Sort es EXCELENTE con datos parcialmente ordenados,
-que es muy común en la vida real.
-"""
+# -------------------------------------------------
+# File Name: 57_tim_sort.py
+# Author: Florentino Báez
+# Date: Data Structures - Sorting Algorithms
+# Description: Tim Sort (Tim Peters, 2002).
+#              Hybrid of Merge Sort + Insertion Sort. It is the
+#              algorithm behind sorted() and list.sort() in
+#              Python. Divides the list into "runs" of minimum size
+#              (minrun), sorts them with Insertion Sort and merges
+#              them. Excellent with partially sorted data.
+#              O(n) best case, O(n log n) worst case.
+# -------------------------------------------------
 
 import random
 import time
 
 
 # ============================================================
-# 1. Calcular el minrun óptimo
+# 1. Compute optimal minrun
 # ============================================================
 MIN_MERGE = 32
 
 
 def calc_min_run(n):
     """
-    Calcula el tamaño mínimo de un run.
-    Retorna un valor entre 32 y 64 tal que n/minrun es cercano
-    a una potencia de 2 (para merges eficientes).
+    Computes the minimum run size.
+    Returns a value between 32 and 64 such that n/minrun is close
+    to a power of 2 (for efficient merges).
     """
     r = 0
     while n >= MIN_MERGE:
@@ -48,10 +35,10 @@ def calc_min_run(n):
 
 
 # ============================================================
-# 2. Insertion Sort para runs pequeños
+# 2. Insertion Sort for small runs
 # ============================================================
 def insertion_sort_range(arr, left, right):
-    """Insertion Sort in-place en el rango [left, right]."""
+    """Insertion Sort in-place on range [left, right]."""
     for i in range(left + 1, right + 1):
         clave = arr[i]
         j = i - 1
@@ -62,17 +49,17 @@ def insertion_sort_range(arr, left, right):
 
 
 # ============================================================
-# 3. Merge de dos runs adyacentes
+# 3. Merge of two adjacent runs
 # ============================================================
 def merge_runs(arr, left, mid, right):
     """
-    Combina dos runs ordenados: arr[left..mid] y arr[mid+1..right].
-    Optimizado: solo copia el lado más pequeño al buffer temporal.
+    Merges two sorted runs: arr[left..mid] and arr[mid+1..right].
+    Optimized: only copies the smaller side to temporary buffer.
     """
     len_left = mid - left + 1
     len_right = right - mid
 
-    # Copiar a arrays temporales
+    # Copy to temporary arrays
     left_arr = arr[left:mid + 1]
     right_arr = arr[mid + 1:right + 1]
 
@@ -80,7 +67,7 @@ def merge_runs(arr, left, mid, right):
     k = left
 
     while i < len_left and j < len_right:
-        if left_arr[i] <= right_arr[j]:  # <= para estabilidad
+        if left_arr[i] <= right_arr[j]:  # <= for stability
             arr[k] = left_arr[i]
             i += 1
         else:
@@ -100,12 +87,12 @@ def merge_runs(arr, left, mid, right):
 
 
 # ============================================================
-# 4. Tim Sort - Implementación
+# 4. Tim Sort - Implementation
 # ============================================================
 def tim_sort(lista):
     """
-    Tim Sort: híbrido de Merge Sort + Insertion Sort.
-    No modifica la lista original.
+    Tim Sort: hybrid of Merge Sort + Insertion Sort.
+    Does not modify the original list.
     """
     arr = lista.copy()
     n = len(arr)
@@ -115,12 +102,12 @@ def tim_sort(lista):
 
     min_run = calc_min_run(n)
 
-    # Paso 1: Crear runs de tamaño min_run usando Insertion Sort
+    # Step 1: Create runs of size min_run using Insertion Sort
     for start in range(0, n, min_run):
         end = min(start + min_run - 1, n - 1)
         insertion_sort_range(arr, start, end)
 
-    # Paso 2: Mergear runs, duplicando el tamaño en cada iteración
+    # Step 2: Merge runs, doubling size each iteration
     size = min_run
     while size < n:
         for left in range(0, n, 2 * size):
@@ -136,27 +123,27 @@ def tim_sort(lista):
 
 
 # ============================================================
-# 5. Demostración: Tim Sort vs datos parcialmente ordenados
+# 5. Demo: Tim Sort vs partially sorted data
 # ============================================================
 def demostrar_ventaja():
-    """Muestra la ventaja de Tim Sort con datos parcialmente ordenados."""
+    """Shows the advantage of Tim Sort with partially sorted data."""
     n = 5000
 
     tipos_datos = {
         "Aleatorio":           [random.randint(1, 10000) for _ in range(n)],
-        "Casi ordenado":       list(range(n)),  # Se desordena abajo
-        "Bloques ordenados":   [],              # Se construye abajo
+        "Casi ordenado":       list(range(n)),  # Slightly shuffled below
+        "Bloques ordenados":   [],              # Built below
         "Pocos únicos":        [random.choice(range(10)) for _ in range(n)],
         "Inversamente ord.":   list(range(n, 0, -1)),
     }
 
-    # Casi ordenado: intercambiar 5% de elementos
+    # Almost sorted: swap 5% of elements
     casi = tipos_datos["Casi ordenado"]
     for _ in range(n // 20):
         i, j = random.randint(0, n-1), random.randint(0, n-1)
         casi[i], casi[j] = casi[j], casi[i]
 
-    # Bloques ordenados: 10 bloques ya ordenados, concatenados desordenados
+    # Sorted blocks: 10 already sorted blocks, concatenated out of order
     bloques = []
     for _ in range(10):
         bloque = sorted([random.randint(1, 10000) for _ in range(n // 10)])
@@ -185,10 +172,10 @@ def demostrar_ventaja():
 
 
 # ============================================================
-# 6. Explicación visual del proceso
+# 6. Visual explanation of the process
 # ============================================================
 def tim_sort_visual(lista):
-    """Muestra el proceso de Tim Sort paso a paso."""
+    """Shows the Tim Sort process step by step."""
     arr = lista.copy()
     n = len(arr)
     min_run = calc_min_run(n)
@@ -198,7 +185,7 @@ def tim_sort_visual(lista):
     print(f"n = {n}, min_run = {min_run}")
     print(f"{'='*60}")
 
-    # Paso 1: Crear runs
+    # Step 1: Create runs
     print(f"\nPaso 1 - Crear runs (Insertion Sort en bloques de {min_run}):")
     for start in range(0, n, min_run):
         end = min(start + min_run - 1, n - 1)
@@ -207,7 +194,7 @@ def tim_sort_visual(lista):
         after = arr[start:end + 1]
         print(f"  [{start}:{end+1}] {before} -> {after}")
 
-    # Paso 2: Merge
+    # Step 2: Merge
     print(f"\nPaso 2 - Merge de runs:")
     size = min_run
     paso = 0
@@ -233,11 +220,11 @@ def tim_sort_visual(lista):
 if __name__ == "__main__":
     print("=== Tim Sort ===\n")
 
-    # Demo visual
+    # Visual demo
     lista_demo = [5, 21, 7, 23, 19, 10, 42, 3, 15, 8, 31, 1, 27, 12]
     tim_sort_visual(lista_demo)
 
-    # Pruebas de funcionamiento
+    # Functionality tests
     print("\n--- Pruebas ---")
     casos = {
         "Aleatoria":     [random.randint(1, 50) for _ in range(15)],
@@ -256,7 +243,7 @@ if __name__ == "__main__":
               f" -> {resultado[:8]}{'...' if len(resultado) > 8 else ''}"
               f" {'OK' if ok else 'FAIL'}")
 
-    # Ventaja con datos parcialmente ordenados
+    # Advantage with partially sorted data
     demostrar_ventaja()
 
     print("\nNota: sorted() y list.sort() de Python usan Tim Sort internamente.")

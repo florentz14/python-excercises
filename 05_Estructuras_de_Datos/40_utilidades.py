@@ -1,8 +1,13 @@
-"""
-05_Estructuras_de_Datos - Funciones útiles para listas ordenadas
-=================================================================
-Posición de inserción (bisect_left), conteo de ocurrencias.
-"""
+# -------------------------------------------------
+# File Name: 40_utilidades.py
+# Author: Florentino Báez
+# Date: Estructuras de Datos - Algoritmos de Búsqueda
+# Description: Funciones Útiles para Listas Ordenadas.
+#              Posición de inserción (equivalente a bisect_left),
+#              primera y última ocurrencia con búsqueda binaria,
+#              y conteo de ocurrencias en O(log n). Herramientas
+#              prácticas basadas en búsqueda binaria.
+# -------------------------------------------------
 
 
 def busqueda_binaria_primera_ocurrencia(lista, objetivo):

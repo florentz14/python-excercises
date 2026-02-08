@@ -1,12 +1,17 @@
-"""
-05_Estructuras_de_Datos - Búsqueda de patrón en texto (fuerza bruta)
-=====================================================================
-Complejidad: O(n*m). n=len(texto), m=len(patron).
-"""
+# -------------------------------------------------
+# File Name: 37_strings.py
+# Author: Florentino Báez
+# Date: Data Structures - Search Algorithms
+# Description: Pattern Search in Text (Brute Force).
+#              Compares the pattern against each possible position
+#              of the text, character by character. Includes version
+#              for first occurrence and for all occurrences.
+#              Complexity: O(n * m) where n = text, m = pattern.
+# -------------------------------------------------
 
 
 def busqueda_bruta_texto(texto, patron):
-    """Primera ocurrencia del patrón en el texto. -1 si no existe."""
+    """First occurrence of the pattern in the text. -1 if not found."""
     n, m = len(texto), len(patron)
     if m == 0:
         return 0
@@ -22,7 +27,7 @@ def busqueda_bruta_texto(texto, patron):
 
 
 def busqueda_bruta_todas(texto, patron):
-    """Lista de índices de todas las ocurrencias del patrón."""
+    """List of indices of all occurrences of the pattern."""
     n, m = len(texto), len(patron)
     ocurrencias = []
     if m == 0:

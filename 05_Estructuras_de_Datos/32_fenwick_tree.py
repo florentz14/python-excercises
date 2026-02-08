@@ -1,13 +1,22 @@
-# Archivo: 48_03_fenwick_tree.py
-# Descripción: Fenwick Tree (Binary Indexed Tree)
+# -------------------------------------------------
+# File Name: 32_fenwick_tree.py
+# Author: Florentino Báez
+# Date: Data Structures - Advanced Structures
+# Description: Fenwick Tree (Binary Indexed Tree / BIT).
+#              Compact structure for prefix sums and
+#              point updates in O(log n). Uses bit
+#              manipulation (LSB) to navigate the implicit
+#              tree. Simpler than Segment Tree but
+#              limited to invertible operations (sum, XOR).
+# -------------------------------------------------
 
 print("=== 3. Fenwick Tree (Binary Indexed Tree) ===\n")
 
 
 class FenwickTree:
     """
-    Fenwick Tree para sumas de prefijos.
-    Complejidad: O(log n) consulta y actualización.
+    Fenwick Tree for prefix sums.
+    Complexity: O(log n) query and update.
     """
 
     def __init__(self, arr):
@@ -34,7 +43,7 @@ class FenwickTree:
         return suma
 
     def consultar_rango(self, l, r):
-        """Suma del rango [l, r] (inclusive)."""
+        """Sum of range [l, r] (inclusive)."""
         if l == 0:
             return self.consultar_prefijo(r)
         return self.consultar_prefijo(r) - self.consultar_prefijo(l - 1)

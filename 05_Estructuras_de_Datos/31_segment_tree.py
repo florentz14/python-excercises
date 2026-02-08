@@ -1,13 +1,21 @@
-# Archivo: 48_02_segment_tree.py
-# Descripción: Segment Tree para consultas de rango
+# -------------------------------------------------
+# File Name: 31_segment_tree.py
+# Author: Florentino Báez
+# Date: Data Structures - Advanced Structures
+# Description: Segment Tree for Range Queries.
+#              Binary tree that stores aggregated information
+#              (sum, min, max) of array segments. Allows
+#              queries and updates in O(log n). Built bottom-up
+#              and queried by splitting the range into tree segments.
+# -------------------------------------------------
 
 print("=== 2. Segment Tree ===\n")
 
 
 class SegmentTree:
     """
-    Segment Tree para consultas de rango.
-    Complejidad: O(log n) consulta y actualización.
+    Segment Tree for range queries.
+    Complexity: O(log n) query and update.
     """
 
     def __init__(self, arr, funcion=sum):
@@ -41,7 +49,7 @@ class SegmentTree:
         return self.funcion([a, b])
 
     def consultar_rango(self, l, r):
-        """Consulta el rango [l, r) (l incluido, r excluido)."""
+        """Query range [l, r) (l included, r excluded)."""
         l += self.size
         r += self.size
         resultado = 0 if self.funcion == sum else None

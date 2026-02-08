@@ -1,3 +1,14 @@
+# -------------------------------------------------
+# File Name: 20_dict_comprehension.py
+# Author: Florentino Báez
+# Date: Variables - Dictionaries
+# Description: Dictionary Comprehension.
+#              Demonstrates creating dictionaries using
+#              comprehension syntax {key: value for item in iterable}.
+#              Covers filtering, transforming, swapping keys/values,
+#              nested comprehensions, and practical examples.
+# -------------------------------------------------
+
 """
 Exercise 4: Dictionary Comprehension
 This exercise demonstrates how to create dictionaries using comprehension syntax.
@@ -9,60 +20,68 @@ def main():
     print("=" * 60)
     
     # 1. Basic dictionary comprehension
+    # Syntax: {key_expression: value_expression for item in iterable}
     print("1. Basic Dictionary Comprehension:")
     print("-" * 60)
-    # Create a dictionary of squares
+    # Create a dictionary mapping numbers to their squares
     squares = {x: x**2 for x in range(1, 6)}
     print(f"Squares: {squares}")
     print("Comprehension: {x: x**2 for x in range(1, 6)}")
     print()
     
     # 2. Dictionary comprehension with condition
+    # Add 'if condition' after the iterable to filter items
     print("2. With Conditional Filter:")
     print("-" * 60)
-    # Only even numbers
+    # Only include even numbers in the comprehension
     even_squares = {x: x**2 for x in range(1, 11) if x % 2 == 0}
     print(f"Even squares: {even_squares}")
     print("Comprehension: {x: x**2 for x in range(1, 11) if x % 2 == 0}")
     print()
     
     # 3. Creating dictionary from two lists
+    # Use zip() to pair elements from two iterables
     print("3. Creating Dictionary from Two Lists:")
     print("-" * 60)
     names = ["Alice", "Bob", "Charlie", "Diana"]
     scores = [85, 92, 78, 95]
+    # zip() creates pairs: (name, score), which are unpacked in the comprehension
     student_scores = {name: score for name, score in zip(names, scores)}
     print(f"Student scores: {student_scores}")
     print()
     
     # 4. String manipulation with comprehension
+    # Apply string methods in key or value expressions
     print("4. String Manipulation:")
     print("-" * 60)
     words = ["hello", "world", "python", "dictionary"]
+    # Use len() function in value expression
     word_lengths = {word: len(word) for word in words}
     print(f"Word lengths: {word_lengths}")
     
-    # Uppercase keys
+    # Transform keys using string methods (e.g., .upper())
     uppercase_dict = {word.upper(): len(word) for word in words}
     print(f"Uppercase keys: {uppercase_dict}")
     print()
     
     # 5. Transforming existing dictionary
+    # Use .items() to iterate over existing dictionary and transform it
     print("5. Transforming Existing Dictionary:")
     print("-" * 60)
     prices = {"apple": 1.5, "banana": 0.8, "orange": 2.0, "grape": 3.5}
     print(f"Original prices: {prices}")
     
-    # Apply 10% discount
+    # Apply 10% discount - transform values while keeping same keys
     discounted = {item: price * 0.9 for item, price in prices.items()}
     print(f"10% discount: {discounted}")
     
-    # Filter expensive items (> $2)
+    # Filter expensive items (> $2) - keep only items matching condition
     expensive = {item: price for item, price in prices.items() if price > 2}
     print(f"Expensive items (>$2): {expensive}")
     print()
     
     # 6. Swapping keys and values
+    # Reverse the key-value pairs by swapping in the comprehension
     print("6. Swapping Keys and Values:")
     print("-" * 60)
     country_capital = {
@@ -73,14 +92,17 @@ def main():
     }
     print(f"Country → Capital: {country_capital}")
     
+    # Swap: use capital as key, country as value
+    # Note: This only works if all values are unique (no duplicate capitals)
     capital_country = {capital: country for country, capital in country_capital.items()}
     print(f"Capital → Country: {capital_country}")
     print()
     
     # 7. Nested comprehension
+    # Outer comprehension creates keys, inner comprehension creates nested dictionaries
     print("7. Nested Dictionary Comprehension:")
     print("-" * 60)
-    # Create multiplication table
+    # Create multiplication table: each key maps to a dictionary of its multiples
     mult_table = {
         i: {j: i * j for j in range(1, 4)}
         for i in range(1, 4)
@@ -91,10 +113,12 @@ def main():
     print()
     
     # 8. Conditional values
+    # Use ternary operator (if-else) in value expression for conditional values
     print("8. Conditional Values in Comprehension:")
     print("-" * 60)
     numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-    # Classify as "even" or "odd"
+    # Classify each number as "even" or "odd" based on modulo operation
+    # Ternary syntax: value_if_true if condition else value_if_false
     number_types = {
         num: "even" if num % 2 == 0 else "odd"
         for num in numbers
@@ -103,14 +127,17 @@ def main():
     print()
     
     # 9. From enumerate
+    # enumerate() provides (index, item) pairs - useful for creating index mappings
     print("9. Using enumerate() in Comprehension:")
     print("-" * 60)
     fruits = ["apple", "banana", "cherry", "date"]
+    # Swap order: use fruit as key, index as value (enumerate returns index first)
     fruit_index = {fruit: index for index, fruit in enumerate(fruits)}
     print(f"Fruit indices: {fruit_index}")
     print()
     
     # 10. Complex example - grade statistics
+    # Use comprehension with calculations in value expression
     print("10. Complex Example - Grade Statistics:")
     print("-" * 60)
     students = [
@@ -121,6 +148,7 @@ def main():
     ]
     
     # Calculate average for each student
+    # Unpack tuple (name, grades), then compute average using sum() and len()
     averages = {
         name: sum(grades) / len(grades)
         for name, grades in students

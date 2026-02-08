@@ -1,3 +1,14 @@
+# -------------------------------------------------
+# File Name: 23_json_dictionaries.py
+# Author: Florentino Báez
+# Date: Variables - Dictionaries
+# Description: Working with JSON and Dictionaries.
+#              Shows how Python dicts map to JSON and vice versa.
+#              Covers json.dumps/loads, file I/O with json.dump/load,
+#              simulated API responses, error handling, custom
+#              encoding, and pretty printing.
+# -------------------------------------------------
+
 """
 Exercise 7: Working with JSON and Dictionaries
 This exercise demonstrates how dictionaries work with JSON data.
@@ -16,20 +27,21 @@ def main():
     print("1. Converting Dictionary to JSON:")
     print("-" * 60)
     
+    # Create a nested dictionary with various data types
     person = {
         "name": "Alice Johnson",
         "age": 28,
         "email": "alice@example.com",
         "is_active": True,
-        "skills": ["Python", "JavaScript", "SQL"],
-        "address": {
+        "skills": ["Python", "JavaScript", "SQL"],  # List becomes JSON array
+        "address": {  # Nested dictionary becomes JSON object
             "street": "123 Main St",
             "city": "San Francisco",
             "zipcode": "94102"
         }
     }
     
-    # Convert to JSON string
+    # Convert dictionary to JSON string with indentation for readability
     json_string = json.dumps(person, indent=2)
     print("Python Dictionary:")
     print(person)
@@ -41,6 +53,7 @@ def main():
     print("2. Converting JSON to Dictionary:")
     print("-" * 60)
     
+    # JSON string with nested objects and arrays
     json_data = '''
     {
         "product": "Laptop",
@@ -58,10 +71,11 @@ def main():
     }
     '''
     
-    # Parse JSON string
+    # Parse JSON string into Python dictionary
     product_dict = json.loads(json_data)
     print("Parsed Dictionary:")
     print(product_dict)
+    # Access nested dictionary values
     print(f"\nProduct name: {product_dict['product']}")
     print(f"Price: ${product_dict['price']}")
     print(f"RAM: {product_dict['specs']['ram']}")
@@ -71,6 +85,7 @@ def main():
     print("3. Writing Dictionary to JSON File:")
     print("-" * 60)
     
+    # Complex nested dictionary structure
     inventory = {
         "electronics": {
             "laptops": {"count": 15, "brands": ["Dell", "HP", "Lenovo"]},
@@ -83,9 +98,9 @@ def main():
         "last_updated": datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     }
     
-    # Write to file
+    # Write dictionary to JSON file (json.dump writes to file, json.dumps returns string)
     with open('/home/claude/dictionary_exercises/inventory.json', 'w') as f:
-        json.dump(inventory, f, indent=2)
+        json.dump(inventory, f, indent=2)  # indent=2 for readable formatting
     
     print("✓ Inventory saved to inventory.json")
     print()
@@ -94,11 +109,12 @@ def main():
     print("4. Reading Dictionary from JSON File:")
     print("-" * 60)
     
-    # Read from file
+    # Read JSON file and parse into dictionary (json.load reads from file, json.loads from string)
     with open('/home/claude/dictionary_exercises/inventory.json', 'r') as f:
         loaded_inventory = json.load(f)
     
     print("✓ Loaded inventory from file")
+    # Access dictionary keys and nested values
     print(f"Categories: {list(loaded_inventory.keys())}")
     print(f"Total laptop brands: {len(loaded_inventory['electronics']['laptops']['brands'])}")
     print()
@@ -107,20 +123,21 @@ def main():
     print("5. Simulating API Response:")
     print("-" * 60)
     
+    # Simulate a typical REST API response structure with nested data
     api_response = {
         "status": "success",
         "code": 200,
         "data": {
-            "users": [
+            "users": [  # List of user objects
                 {
                     "id": 1,
                     "username": "alice123",
-                    "profile": {
+                    "profile": {  # Nested object
                         "full_name": "Alice Johnson",
                         "followers": 1250,
                         "following": 380
                     },
-                    "posts": [
+                    "posts": [  # List of post objects
                         {"id": 101, "title": "My first post", "likes": 45},
                         {"id": 102, "title": "Python tips", "likes": 128}
                     ]
@@ -143,13 +160,15 @@ def main():
         "timestamp": datetime.now().isoformat()
     }
     
-    # Process the "API response"
+    # Process the "API response" by accessing nested dictionary values
     print("Processing API response...")
     print(f"Status: {api_response['status']}")
     print(f"Total users: {api_response['data']['total_users']}")
     
+    # Iterate through users and calculate statistics
     print("\nUser summaries:")
     for user in api_response['data']['users']:
+        # Sum all likes from user's posts using list comprehension
         total_likes = sum(post['likes'] for post in user['posts'])
         print(f"  @{user['username']}:")
         print(f"    Posts: {len(user['posts'])}")
@@ -161,8 +180,10 @@ def main():
     print("6. Error Handling with JSON:")
     print("-" * 60)
     
-    invalid_json = '{"name": "Alice", "age": 28,}'  # Extra comma - invalid JSON
+    # Invalid JSON: trailing comma after last item (not allowed in JSON)
+    invalid_json = '{"name": "Alice", "age": 28,}'
     
+    # Always wrap json.loads() in try-except to handle malformed JSON
     try:
         parsed = json.loads(invalid_json)
     except json.JSONDecodeError as e:
@@ -174,20 +195,24 @@ def main():
     print("7. Custom JSON Encoding:")
     print("-" * 60)
     
+    # Custom encoder to handle types not natively JSON-serializable (like datetime)
     class CustomEncoder(json.JSONEncoder):
         """Custom JSON encoder for special types."""
         def default(self, obj):
+            # Convert datetime objects to ISO format string
             if isinstance(obj, datetime):
                 return obj.isoformat()
+            # For other types, use default JSON encoding
             return super().default(obj)
     
+    # Dictionary containing datetime object (not directly JSON-serializable)
     data_with_datetime = {
         "event": "Product Launch",
         "date": datetime.now(),
         "attendees": 150
     }
     
-    # Using custom encoder
+    # Use custom encoder via cls parameter
     json_with_custom = json.dumps(data_with_datetime, cls=CustomEncoder, indent=2)
     print("JSON with datetime (custom encoder):")
     print(json_with_custom)
@@ -197,16 +222,20 @@ def main():
     print("8. Pretty Printing JSON:")
     print("-" * 60)
     
+    # Configuration dictionary example
     config = {
         "database": {"host": "localhost", "port": 5432, "name": "mydb"},
         "cache": {"enabled": True, "ttl": 3600},
         "logging": {"level": "INFO", "format": "json"}
     }
     
+    # Compact JSON (no indentation, single line)
     print("Compact JSON:")
     print(json.dumps(config))
+    # Pretty JSON with 4-space indentation
     print("\nPretty JSON (indent=4):")
     print(json.dumps(config, indent=4))
+    # Pretty JSON with sorted keys for consistent output
     print("\nPretty JSON (sorted keys):")
     print(json.dumps(config, indent=2, sort_keys=True))
     

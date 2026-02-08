@@ -1,50 +1,42 @@
-"""
-05_Estructuras_de_Datos - Comb Sort (ordenamiento de peine)
-=============================================================
-Mejora del Bubble Sort que utiliza un gap (peine) que se reduce
-progresivamente. Similar en concepto al Shell Sort pero aplicado
-a la mecánica de Bubble Sort.
-
-Complejidad:
-  - Peor caso:  O(n²)
-  - Promedio:   O(n² / 2^p) donde p = número de incrementos
-  - Mejor caso: O(n log n)
-  - Espacio:    O(1) - In-place
-  - Estabilidad: NO es estable
-
-Factor de reducción: 1.3 (valor óptimo encontrado empíricamente).
-Cuando el gap llega a 1, se convierte en un Bubble Sort estándar.
-
-Ventaja: Elimina las "tortugas" (valores pequeños al final) que
-hacen lento al Bubble Sort, similar a cómo Shell Sort mejora
-el Insertion Sort.
-"""
+# -------------------------------------------------
+# File Name: 59_comb_sort.py
+# Author: Florentino Báez
+# Date: Data Structures - Sorting Algorithms
+# Description: Comb Sort.
+#              Improvement of Bubble Sort that compares elements at
+#              distance 'gap' which is reduced by factor 1.3 in each
+#              pass. When gap = 1, it is Bubble Sort. Eliminates
+#              "turtles" like Shell Sort does with Insertion Sort.
+#              Includes "Comb Sort 11" variant and comparison of
+#              shrink factors.
+#              Complexity: O(n log n) best, O(n²) worst case.
+# -------------------------------------------------
 
 import random
 import time
 
 
 # ============================================================
-# 1. Comb Sort básico
+# 1. Basic Comb Sort
 # ============================================================
 def comb_sort(lista):
     """
-    Comb Sort: Bubble Sort con gaps decrecientes.
-    Factor de reducción: 1.3 (óptimo).
-    No modifica la lista original.
+    Comb Sort: Bubble Sort with decreasing gaps.
+    Shrink factor: 1.3 (optimal).
+    Does not modify the original list.
     """
     lista = lista.copy()
     n = len(lista)
     gap = n
-    factor = 1.3  # Factor de reducción (shrink factor)
+    factor = 1.3  # Shrink factor
     intercambiado = True
 
     while gap > 1 or intercambiado:
-        # Calcular el nuevo gap
+        # Compute new gap
         gap = max(1, int(gap / factor))
         intercambiado = False
 
-        # Comparar e intercambiar elementos a distancia 'gap'
+        # Compare and swap elements at distance 'gap'
         for i in range(n - gap):
             if lista[i] > lista[i + gap]:
                 lista[i], lista[i + gap] = lista[i + gap], lista[i]
@@ -54,13 +46,13 @@ def comb_sort(lista):
 
 
 # ============================================================
-# 2. Comb Sort con "regla del 11"
+# 2. Comb Sort with "rule of 11"
 # ============================================================
 def comb_sort_11(lista):
     """
-    Comb Sort con la optimización "Comb Sort 11":
-    Si el gap es 9 o 10, se fuerza a 11. Esto mejora el rendimiento
-    porque evita ciertos patrones que causan mal desempeño.
+    Comb Sort with the "Comb Sort 11" optimization:
+    If gap is 9 or 10, force it to 11. This improves performance
+    by avoiding certain patterns that cause poor performance.
     """
     lista = lista.copy()
     n = len(lista)
@@ -71,7 +63,7 @@ def comb_sort_11(lista):
     while gap > 1 or intercambiado:
         gap = max(1, int(gap / factor))
 
-        # Optimización: si gap es 9 o 10, usar 11
+        # Optimization: if gap is 9 or 10, use 11
         if gap == 9 or gap == 10:
             gap = 11
 
@@ -86,10 +78,10 @@ def comb_sort_11(lista):
 
 
 # ============================================================
-# 3. Comb Sort con visualización
+# 3. Comb Sort with visualization
 # ============================================================
 def comb_sort_visual(lista):
-    """Comb Sort con visualización del proceso."""
+    """Comb Sort with process visualization."""
     lista = lista.copy()
     n = len(lista)
     gap = n
@@ -120,10 +112,10 @@ def comb_sort_visual(lista):
 
 
 # ============================================================
-# 4. Comparación de factores de reducción
+# 4. Shrink factor comparison
 # ============================================================
 def comparar_factores(n=5000):
-    """Compara diferentes factores de reducción."""
+    """Compares different shrink factors."""
     lista = [random.randint(1, 10000) for _ in range(n)]
 
     print(f"\nComparación de factores de reducción ({n} elementos):")
@@ -156,10 +148,10 @@ def comparar_factores(n=5000):
 
 
 # ============================================================
-# 5. Comparación con Bubble Sort y Shell Sort
+# 5. Comparison with Bubble Sort and Shell Sort
 # ============================================================
 def bubble_sort(lista):
-    """Bubble Sort optimizado para comparación."""
+    """Optimized Bubble Sort for comparison."""
     lista = lista.copy()
     n = len(lista)
     for i in range(n):
@@ -174,7 +166,7 @@ def bubble_sort(lista):
 
 
 def shell_sort(lista):
-    """Shell Sort para comparación."""
+    """Shell Sort for comparison."""
     lista = lista.copy()
     n = len(lista)
     gap = n // 2
@@ -191,7 +183,7 @@ def shell_sort(lista):
 
 
 def comparar(n=3000):
-    """Compara Comb Sort con Bubble Sort y Shell Sort."""
+    """Compares Comb Sort with Bubble Sort and Shell Sort."""
     lista = [random.randint(1, 10000) for _ in range(n)]
 
     metodos = {
@@ -223,11 +215,11 @@ def comparar(n=3000):
 if __name__ == "__main__":
     print("=== Comb Sort ===\n")
 
-    # Demo visual
+    # Visual demo
     lista_demo = [8, 4, 1, 56, 3, 78, 45, 23, 12, 64]
     comb_sort_visual(lista_demo)
 
-    # Pruebas de funcionamiento
+    # Functionality tests
     print("\n--- Pruebas ---")
     casos = {
         "Aleatoria":     [random.randint(1, 50) for _ in range(15)],
@@ -246,6 +238,6 @@ if __name__ == "__main__":
               f" -> {resultado[:8]}{'...' if len(resultado) > 8 else ''}"
               f" {'OK' if ok else 'FAIL'}")
 
-    # Comparaciones
+    # Comparisons
     comparar_factores(3000)
     comparar(2000)

@@ -1,12 +1,21 @@
-# Archivo: 48_01_trie.py
-# Descripción: Trie (árbol de prefijos)
+# -------------------------------------------------
+# File Name: 30_trie.py
+# Author: Florentino Báez
+# Date: Data Structures - Advanced Structures
+# Description: Trie (Prefix Tree).
+#              Tree structure where each node represents a
+#              character. Allows inserting, searching and
+#              autocompleting words efficiently. Each path from
+#              root to a node marked as end represents a word.
+#              Complexity: O(m) per operation, m = word length.
+# -------------------------------------------------
 
 print("=== Estructuras de Datos Avanzadas ===\n")
 print("=== 1. Trie (Árbol de Prefijos) ===\n")
 
 
 class NodoTrie:
-    """Nodo para el árbol Trie."""
+    """Node for the Trie tree."""
 
     def __init__(self):
         self.hijos = {}
@@ -16,8 +25,8 @@ class NodoTrie:
 
 class Trie:
     """
-    Trie para almacenar y buscar strings.
-    Complejidad: O(m) por operación, m = longitud de la palabra.
+    Trie for storing and searching strings.
+    Complexity: O(m) per operation, m = word length.
     """
 
     def __init__(self):

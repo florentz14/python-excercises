@@ -1,3 +1,14 @@
+# -------------------------------------------------
+# File Name: 25_advanced_dict_types.py
+# Author: Florentino Báez
+# Date: Variables - Dictionaries
+# Description: Advanced Dictionary Types.
+#              Explores defaultdict (int, list, set, nested) and
+#              OrderedDict from the collections module. Includes
+#              practical examples: LRU cache simulation, word
+#              frequency counter, graph adjacency list, and event log.
+# -------------------------------------------------
+
 """
 Exercise 9: Advanced Dictionary Types
 This exercise explores specialized dictionary types from the collections module.
@@ -16,31 +27,36 @@ def main():
     print("\nPART 1: defaultdict")
     print("=" * 60)
     
-    # Problem with regular dict
+    # Demonstrate problem with regular dictionary
     print("1. Problem with Regular Dictionary:")
     print("-" * 60)
     regular_dict = {}
     try:
+        # This will raise KeyError because key doesn't exist
         regular_dict['missing_key'] += 1
     except KeyError as e:
         print(f"⚠ KeyError: {e}")
         print("  Regular dict raises error for missing keys")
     print()
     
-    # Solution with defaultdict
+    # Solution using defaultdict
     print("2. Solution with defaultdict(int):")
     print("-" * 60)
-    count_dict = defaultdict(int)  # Default value is 0
+    # Default value is 0 for int type
+    count_dict = defaultdict(int)
+    # No error - missing key automatically initialized to 0
     count_dict['missing_key'] += 1
     print(f"No error! Value: {count_dict['missing_key']}")
     print(f"Full dict: {dict(count_dict)}")
     print()
     
-    # defaultdict with list
+    # defaultdict with list for grouping data
     print("3. defaultdict(list) - Grouping Data:")
     print("-" * 60)
+    # Default value is empty list for list type
     students_by_grade = defaultdict(list)
     
+    # Sample student data: (name, grade) tuples
     students = [
         ("Alice", "A"),
         ("Bob", "B"),
@@ -50,7 +66,7 @@ def main():
         ("Frank", "A")
     ]
     
-    # Group students by grade
+    # Group students by grade - missing grades auto-create empty list
     for name, grade in students:
         students_by_grade[grade].append(name)
     
@@ -59,21 +75,24 @@ def main():
         print(f"  Grade {grade}: {names}")
     print()
     
-    # defaultdict with set
+    # defaultdict with set for unique item collection
     print("4. defaultdict(set) - Unique Items:")
     print("-" * 60)
+    # Default value is empty set for set type
     tags_by_post = defaultdict(set)
     
+    # Sample post-tag data: (post_id, tag) tuples
     post_tags = [
         ("post1", "python"),
         ("post1", "coding"),
         ("post2", "python"),
-        ("post1", "python"),  # Duplicate
+        ("post1", "python"),  # Duplicate tag - will be ignored by set
         ("post2", "tutorial"),
         ("post3", "python"),
         ("post3", "advanced")
     ]
     
+    # Add tags to sets - duplicates automatically removed
     for post, tag in post_tags:
         tags_by_post[post].add(tag)
     
@@ -82,12 +101,14 @@ def main():
         print(f"  {post}: {sorted(tags)}")
     print()
     
-    # Nested defaultdict
+    # Nested defaultdict for multi-level grouping
     print("5. Nested defaultdict:")
     print("-" * 60)
-    # Track sales by category and month
+    # Track sales by category and month - nested structure
+    # Outer dict defaults to defaultdict(int), inner dict defaults to 0
     sales = defaultdict(lambda: defaultdict(int))
     
+    # Sample transaction data: (category, month, amount) tuples
     transactions = [
         ("Electronics", "January", 1000),
         ("Electronics", "January", 1500),
@@ -96,6 +117,7 @@ def main():
         ("Clothing", "February", 1200),
     ]
     
+    # Accumulate sales amounts - auto-creates nested structure as needed
     for category, month, amount in transactions:
         sales[category][month] += amount
     
@@ -115,24 +137,28 @@ def main():
     
     print("1. Basic OrderedDict Usage:")
     print("-" * 60)
+    # Create OrderedDict to maintain insertion order
     ordered = OrderedDict()
     ordered['first'] = 1
     ordered['second'] = 2
     ordered['third'] = 3
     
+    # Display items in insertion order
     print("Insertion order maintained:")
     for key, value in ordered.items():
         print(f"  {key}: {value}")
     print()
     
-    # move_to_end method
+    # Demonstrate move_to_end method
     print("2. move_to_end() Method:")
     print("-" * 60)
-    ordered.move_to_end('first')  # Move to end
+    # Move 'first' to the end of the dictionary
+    ordered.move_to_end('first')
     print("After moving 'first' to end:")
     print(f"  Keys: {list(ordered.keys())}")
     
-    ordered.move_to_end('third', last=False)  # Move to beginning
+    # Move 'third' to the beginning (last=False)
+    ordered.move_to_end('third', last=False)
     print("After moving 'third' to beginning:")
     print(f"  Keys: {list(ordered.keys())}")
     print()
@@ -145,30 +171,35 @@ def main():
         """Simple LRU (Least Recently Used) cache."""
         
         def __init__(self, capacity):
+            # Use OrderedDict to track access order
             self.cache = OrderedDict()
             self.capacity = capacity
         
         def get(self, key):
+            # Return None if key doesn't exist
             if key not in self.cache:
                 return None
-            # Move to end (most recently used)
+            # Move accessed key to end (most recently used)
             self.cache.move_to_end(key)
             return self.cache[key]
         
         def put(self, key, value):
+            # If key exists, update and move to end
             if key in self.cache:
-                # Update and move to end
                 self.cache.move_to_end(key)
+            # Add/update the key-value pair
             self.cache[key] = value
-            # Remove oldest if over capacity
+            # Remove oldest entry (first item) if over capacity
             if len(self.cache) > self.capacity:
                 oldest = next(iter(self.cache))
                 print(f"    Evicting: {oldest}")
                 del self.cache[oldest]
         
         def show(self):
+            # Return list of keys in order (oldest to newest)
             return list(self.cache.keys())
     
+    # Create LRU cache with capacity of 3
     cache = LRUCache(3)
     print("LRU Cache (capacity=3):")
     cache.put("a", 1)
@@ -176,10 +207,12 @@ def main():
     cache.put("c", 3)
     print(f"  After adding a,b,c: {cache.show()}")
     
-    cache.get("a")  # Access 'a'
+    # Access 'a' - moves it to most recently used position
+    cache.get("a")
     print(f"  After accessing 'a': {cache.show()}")
     
-    cache.put("d", 4)  # This will evict 'b'
+    # Adding 'd' will evict 'b' (least recently used)
+    cache.put("d", 4)
     print(f"  After adding 'd': {cache.show()}")
     print()
     
@@ -187,12 +220,14 @@ def main():
     print("\nPART 3: Practical Examples")
     print("=" * 60)
     
-    # Word frequency with defaultdict
+    # Word frequency counter using defaultdict
     print("1. Word Frequency Counter:")
     print("-" * 60)
     text = "python is great python is fun python is powerful"
+    # Default value is 0 for counting
     word_freq = defaultdict(int)
     
+    # Count occurrences of each word
     for word in text.split():
         word_freq[word] += 1
     
@@ -201,12 +236,13 @@ def main():
         print(f"  {word}: {count}")
     print()
     
-    # Graph representation
+    # Graph representation using adjacency list
     print("2. Graph with defaultdict(list):")
     print("-" * 60)
+    # Default value is empty list for storing neighbors
     graph = defaultdict(list)
     
-    # Add edges
+    # Define graph edges: (start_node, end_node) tuples
     edges = [
         ("A", "B"),
         ("A", "C"),
@@ -215,6 +251,7 @@ def main():
         ("D", "E")
     ]
     
+    # Build adjacency list - each node maps to list of neighbors
     for start, end in edges:
         graph[start].append(end)
     
@@ -223,11 +260,13 @@ def main():
         print(f"  {node} -> {neighbors}")
     print()
     
-    # Event log with OrderedDict
+    # Event log maintaining chronological order
     print("3. Event Log with OrderedDict:")
     print("-" * 60)
+    # OrderedDict preserves insertion order for chronological events
     event_log = OrderedDict()
     
+    # Sample events: (timestamp, event_description) tuples
     events = [
         ("09:00", "System started"),
         ("09:15", "User logged in"),
@@ -236,6 +275,7 @@ def main():
         ("12:00", "User logged out")
     ]
     
+    # Store events in chronological order
     for time, event in events:
         event_log[time] = event
     

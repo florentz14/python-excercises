@@ -1,32 +1,38 @@
-"""
-05_Estructuras_de_Datos - Búsqueda binaria (Binary Search)
-===========================================================
-Complejidad: O(log n). Requiere lista ordenada.
-"""
+# -------------------------------------------------
+# File Name: 36_binaria.py
+# Author: Florentino Báez
+# Date: Data Structures - Search Algorithms
+# Description: Binary Search.
+#              Divides the sorted list in half at each step,
+#              discarding the half where the target cannot be.
+#              Includes iterative, recursive, first and
+#              last occurrence versions for lists with duplicates.
+#              Complexity: O(log n). Requires sorted list.
+# -------------------------------------------------
 
 
 def busqueda_binaria(lista, objetivo):
-    """Búsqueda binaria iterativa. Devuelve índice o -1."""
+    """Iterative binary search. Returns index or -1."""
     if not lista:
         return -1
     izquierda, derecha = 0, len(lista) - 1
     while izquierda <= derecha:
-        medio = (izquierda + derecha) // 2
+        medio = (izquierda + derecha) // 2  # Midpoint of range
         if lista[medio] == objetivo:
-            return medio
+            return medio                     # Found
         if lista[medio] < objetivo:
-            izquierda = medio + 1
+            izquierda = medio + 1            # Search right half
         else:
-            derecha = medio - 1
-    return -1
+            derecha = medio - 1              # Search left half
+    return -1  # Not found
 
 
 def busqueda_binaria_recursiva(lista, objetivo, izquierda=0, derecha=None):
-    """Búsqueda binaria recursiva."""
+    """Recursive binary search."""
     if derecha is None:
         derecha = len(lista) - 1
     if izquierda > derecha:
-        return -1
+        return -1  # Base case: empty range
     medio = (izquierda + derecha) // 2
     if lista[medio] == objetivo:
         return medio
@@ -36,7 +42,7 @@ def busqueda_binaria_recursiva(lista, objetivo, izquierda=0, derecha=None):
 
 
 def busqueda_binaria_primera_ocurrencia(lista, objetivo):
-    """Índice de la primera ocurrencia (lista con duplicados)."""
+    """Index of the first occurrence (list with duplicates)."""
     izquierda, derecha = 0, len(lista) - 1
     resultado = -1
     while izquierda <= derecha:
@@ -52,7 +58,7 @@ def busqueda_binaria_primera_ocurrencia(lista, objetivo):
 
 
 def busqueda_binaria_ultima_ocurrencia(lista, objetivo):
-    """Índice de la última ocurrencia (lista con duplicados)."""
+    """Index of the last occurrence (list with duplicates)."""
     izquierda, derecha = 0, len(lista) - 1
     resultado = -1
     while izquierda <= derecha:

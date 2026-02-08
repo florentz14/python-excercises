@@ -1,5 +1,14 @@
-# Archivo: 42_04_huffman.py
-# Descripción: Codificación de Huffman (greedy)
+# -------------------------------------------------
+# File Name: 04_huffman.py
+# Author: Florentino Báez
+# Date: Data Structures - Greedy Algorithms
+# Description: Huffman Coding (Greedy).
+#              Compresses text by assigning shorter binary codes
+#              to more frequent characters. Builds a binary tree
+#              by combining the two nodes with lowest frequency
+#              at each step (greedy strategy).
+#              Complexity: O(n log n) using a min-heap.
+# -------------------------------------------------
 
 import heapq
 
@@ -7,7 +16,7 @@ print("=== 4. Codificación de Huffman ===\n")
 
 
 class NodoHuffman:
-    """Nodo para el árbol de Huffman."""
+    """Node for the Huffman tree."""
 
     def __init__(self, caracter=None, frecuencia=0, izquierda=None, derecha=None):
         self.caracter = caracter
@@ -24,9 +33,9 @@ class NodoHuffman:
 
 def construir_arbol_huffman(frecuencias):
     """
-    Construye el árbol de Huffman (greedy).
-    Estrategia: Combinar siempre los dos nodos con menor frecuencia.
-    Complejidad: O(n log n)
+    Builds the Huffman tree (greedy).
+    Strategy: Always combine the two nodes with lowest frequency.
+    Complexity: O(n log n)
     """
     cola = []
     for caracter, frecuencia in frecuencias.items():
@@ -46,7 +55,7 @@ def construir_arbol_huffman(frecuencias):
 
 
 def generar_codigos_huffman(nodo, codigo="", codigos=None):
-    """Genera los códigos binarios recorriendo el árbol."""
+    """Generates binary codes by traversing the tree."""
     if codigos is None:
         codigos = {}
     if nodo is None:
@@ -60,7 +69,7 @@ def generar_codigos_huffman(nodo, codigo="", codigos=None):
 
 
 def codificar_huffman(texto):
-    """Codifica un texto usando Huffman."""
+    """Encodes a text using Huffman coding."""
     frecuencias = {}
     for caracter in texto:
         frecuencias[caracter] = frecuencias.get(caracter, 0) + 1

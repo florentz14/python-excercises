@@ -1,7 +1,13 @@
-"""
-05_Estructuras_de_Datos - Comparación de eficiencia (lineal vs binaria, bruta vs KMP)
-======================================================================================
-"""
+# -------------------------------------------------
+# File Name: 39_comparacion.py
+# Author: Florentino Báez
+# Date: Estructuras de Datos - Algoritmos de Búsqueda
+# Description: Comparación de Eficiencia entre Algoritmos de
+#              Búsqueda. Mide tiempos de búsqueda lineal vs
+#              binaria en listas, y fuerza bruta vs KMP para
+#              búsqueda de patrones en texto. Demuestra cómo
+#              la complejidad algorítmica impacta el rendimiento.
+# -------------------------------------------------
 
 import time
 

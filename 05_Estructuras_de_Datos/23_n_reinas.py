@@ -1,41 +1,54 @@
-# Archivo: 47_01_n_reinas.py
-# Descripción: Problema de las N-Reinas (backtracking)
+# -------------------------------------------------
+# File Name: 23_n_reinas.py
+# Author: Florentino Báez
+# Date: Data Structures - Backtracking
+# Description: N-Queens Problem (Backtracking).
+#              Place N queens on an NxN board so that
+#              none attack each other (not in row, column,
+#              or diagonal). Tries positions column by column
+#              and backtracks when there is no valid position.
+#              Complexity: O(N!) in the worst case.
+# -------------------------------------------------
 
 print("=== Algoritmos de Backtracking ===\n")
 print("=== 1. Problema de las N-Reinas ===\n")
 
 
 def es_seguro(tablero, fila, col, n):
-    """Verifica si es seguro colocar una reina en (fila, col)."""
+    """Check whether it is safe to place a queen at (fila, col)."""
+    # Check row to the left
     for i in range(col):
         if tablero[fila][i] == 1:
             return False
+    # Check upper left diagonal
     for i, j in zip(range(fila, -1, -1), range(col, -1, -1)):
         if tablero[i][j] == 1:
             return False
+    # Check lower left diagonal
     for i, j in zip(range(fila, n, 1), range(col, -1, -1)):
         if tablero[i][j] == 1:
             return False
-    return True
+    return True  # No conflicts → safe position
 
 
 def n_reinas_backtracking(tablero, col, n, soluciones):
-    """Resuelve el problema de las N-Reinas usando backtracking."""
+    """Solve the N-Queens problem using backtracking."""
     if col >= n:
+        # All columns have a queen → solution found
         soluciones.append([fila[:] for fila in tablero])
         return True
 
     res = False
     for fila in range(n):
         if es_seguro(tablero, fila, col, n):
-            tablero[fila][col] = 1
+            tablero[fila][col] = 1  # Place queen
             res = n_reinas_backtracking(tablero, col + 1, n, soluciones) or res
-            tablero[fila][col] = 0
+            tablero[fila][col] = 0  # Backtrack: remove queen and try next row
     return res
 
 
 def resolver_n_reinas(n, encontrar_todas=True):
-    """Resuelve el problema de las N-Reinas."""
+    """Solve the N-Queens problem."""
     tablero = [[0] * n for _ in range(n)]
     soluciones = []
     n_reinas_backtracking(tablero, 0, n, soluciones)
@@ -43,7 +56,7 @@ def resolver_n_reinas(n, encontrar_todas=True):
 
 
 def imprimir_tablero(tablero):
-    """Imprime el tablero de forma visual."""
+    """Print the board visually."""
     n = len(tablero)
     print("  " + " ".join(str(i) for i in range(n)))
     for i, fila in enumerate(tablero):
