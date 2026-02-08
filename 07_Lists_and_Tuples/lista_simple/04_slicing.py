@@ -10,7 +10,7 @@
 # ---------------------------------------------------------------------------
 
 fruits = ["apple", "banana", "cherry", "pineapple", "grape", "blueberry", "mango", "strawberry"]
-#          index:  0        1         2         3           4        5           6        7
+#       index:  0        1         2         3           4        5           6        7
 
 # Slice desde indice 2 (incluido) hasta indice 5 (excluido)
 print("fruits[2:5]:", fruits[2:5])

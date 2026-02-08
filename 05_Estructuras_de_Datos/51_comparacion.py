@@ -2,10 +2,13 @@
 05_Estructuras_de_Datos - Comparación de métodos de ordenamiento
 =================================================================
 Mide tiempos de cada algoritmo sobre la misma lista.
+Incluye todos los algoritmos: Bubble, Selection, Insertion, Merge,
+Quick, Heap, Counting, Radix, Shell, Bucket, Tim, Cocktail, Comb.
 """
 
 import time
 import random
+import math
 
 
 # === Utilidades ===
@@ -143,6 +146,8 @@ def heap_sort(lista):
 # === Counting Sort ===
 def counting_sort(lista, maximo=None):
     """Ordena contando ocurrencias de cada valor (enteros no negativos)."""
+    if not lista:
+        return []
     if maximo is None:
         maximo = max(lista) if lista else 0
     count = [0] * (maximo + 1)
@@ -154,35 +159,242 @@ def counting_sort(lista, maximo=None):
     return resultado
 
 
+# === Radix Sort ===
+def counting_sort_by_digit(arr, exp):
+    """Counting sort por dígito en la posición exp."""
+    n = len(arr)
+    output = [0] * n
+    count = [0] * 10
+    for num in arr:
+        idx = (num // exp) % 10
+        count[idx] += 1
+    for i in range(1, 10):
+        count[i] += count[i - 1]
+    for i in range(n - 1, -1, -1):
+        idx = (arr[i] // exp) % 10
+        output[count[idx] - 1] = arr[i]
+        count[idx] -= 1
+    return output
+
+
+def radix_sort(lista):
+    """Radix Sort (LSD): ordena dígito por dígito desde el menos significativo."""
+    if not lista:
+        return []
+    lista = lista.copy()
+    max_val = max(lista)
+    exp = 1
+    while max_val // exp > 0:
+        lista = counting_sort_by_digit(lista, exp)
+        exp *= 10
+    return lista
+
+
+# === Shell Sort ===
+def shell_sort(lista):
+    """Shell Sort con secuencia de gaps de Knuth."""
+    lista = lista.copy()
+    n = len(lista)
+    gap = 1
+    while gap < n // 3:
+        gap = gap * 3 + 1
+    while gap > 0:
+        for i in range(gap, n):
+            temp = lista[i]
+            j = i
+            while j >= gap and lista[j - gap] > temp:
+                lista[j] = lista[j - gap]
+                j -= gap
+            lista[j] = temp
+        gap //= 3
+    return lista
+
+
+# === Bucket Sort ===
+def bucket_sort(lista):
+    """Bucket Sort para enteros con rango arbitrario."""
+    if len(lista) <= 1:
+        return lista.copy()
+    lista = lista.copy()
+    min_val = min(lista)
+    max_val = max(lista)
+    if min_val == max_val:
+        return lista
+    n = len(lista)
+    num_buckets = max(1, int(math.sqrt(n)))
+    rango = max_val - min_val + 1
+    buckets = [[] for _ in range(num_buckets)]
+    for num in lista:
+        idx = int((num - min_val) / rango * num_buckets)
+        if idx == num_buckets:
+            idx = num_buckets - 1
+        buckets[idx].append(num)
+    for bucket in buckets:
+        bucket.sort()
+    resultado = []
+    for bucket in buckets:
+        resultado.extend(bucket)
+    return resultado
+
+
+# === Tim Sort (simplificado) ===
+MIN_MERGE = 32
+
+
+def _calc_min_run(n):
+    r = 0
+    while n >= MIN_MERGE:
+        r |= n & 1
+        n >>= 1
+    return n + r
+
+
+def _insertion_sort_range(arr, left, right):
+    for i in range(left + 1, right + 1):
+        clave = arr[i]
+        j = i - 1
+        while j >= left and arr[j] > clave:
+            arr[j + 1] = arr[j]
+            j -= 1
+        arr[j + 1] = clave
+
+
+def _merge_runs(arr, left, mid, right):
+    left_arr = arr[left:mid + 1]
+    right_arr = arr[mid + 1:right + 1]
+    i = j = 0
+    k = left
+    while i < len(left_arr) and j < len(right_arr):
+        if left_arr[i] <= right_arr[j]:
+            arr[k] = left_arr[i]
+            i += 1
+        else:
+            arr[k] = right_arr[j]
+            j += 1
+        k += 1
+    while i < len(left_arr):
+        arr[k] = left_arr[i]
+        i += 1
+        k += 1
+    while j < len(right_arr):
+        arr[k] = right_arr[j]
+        j += 1
+        k += 1
+
+
+def tim_sort(lista):
+    """Tim Sort: híbrido de Merge Sort + Insertion Sort."""
+    arr = lista.copy()
+    n = len(arr)
+    if n <= 1:
+        return arr
+    min_run = _calc_min_run(n)
+    for start in range(0, n, min_run):
+        end = min(start + min_run - 1, n - 1)
+        _insertion_sort_range(arr, start, end)
+    size = min_run
+    while size < n:
+        for left in range(0, n, 2 * size):
+            mid = min(left + size - 1, n - 1)
+            right = min(left + 2 * size - 1, n - 1)
+            if mid < right:
+                _merge_runs(arr, left, mid, right)
+        size *= 2
+    return arr
+
+
+# === Cocktail Sort ===
+def cocktail_sort(lista):
+    """Cocktail Sort: Bubble Sort bidireccional."""
+    lista = lista.copy()
+    n = len(lista)
+    inicio = 0
+    fin = n - 1
+    intercambiado = True
+    while intercambiado:
+        intercambiado = False
+        for i in range(inicio, fin):
+            if lista[i] > lista[i + 1]:
+                lista[i], lista[i + 1] = lista[i + 1], lista[i]
+                intercambiado = True
+        fin -= 1
+        if not intercambiado:
+            break
+        intercambiado = False
+        for i in range(fin, inicio, -1):
+            if lista[i] < lista[i - 1]:
+                lista[i], lista[i - 1] = lista[i - 1], lista[i]
+                intercambiado = True
+        inicio += 1
+    return lista
+
+
+# === Comb Sort ===
+def comb_sort(lista):
+    """Comb Sort: Bubble Sort con gaps decrecientes (factor 1.3)."""
+    lista = lista.copy()
+    n = len(lista)
+    gap = n
+    factor = 1.3
+    intercambiado = True
+    while gap > 1 or intercambiado:
+        gap = max(1, int(gap / factor))
+        intercambiado = False
+        for i in range(n - gap):
+            if lista[i] > lista[i + gap]:
+                lista[i], lista[i + gap] = lista[i + gap], lista[i]
+                intercambiado = True
+    return lista
+
+
 # === Comparación ===
-def comparar_metodos_ordenamiento(lista, mostrar_resultados=True):
+def comparar_metodos_ordenamiento(lista, incluir_lentos=True, mostrar_resultados=True):
     """Compara tiempos de todos los métodos. No modifica la lista original."""
-    metodos = {
-        "Bubble Sort": bubble_sort,
-        "Bubble Sort Optimizado": bubble_sort_optimizado,
-        "Selection Sort": selection_sort,
-        "Insertion Sort": insertion_sort,
-        "Merge Sort": merge_sort,
-        "Quick Sort": quick_sort,
-        "Heap Sort": heap_sort,
-        "Python sorted()": sorted,
+    metodos_rapidos = {
+        "Merge Sort":       merge_sort,
+        "Quick Sort":       quick_sort,
+        "Heap Sort":        heap_sort,
+        "Shell Sort":       shell_sort,
+        "Tim Sort":         tim_sort,
+        "Counting Sort":    counting_sort,
+        "Radix Sort":       radix_sort,
+        "Bucket Sort":      bucket_sort,
+        "Python sorted()":  sorted,
     }
+
+    metodos_lentos = {
+        "Bubble Sort":         bubble_sort,
+        "Bubble Sort Optim.":  bubble_sort_optimizado,
+        "Selection Sort":      selection_sort,
+        "Insertion Sort":      insertion_sort,
+        "Cocktail Sort":       cocktail_sort,
+        "Comb Sort":           comb_sort,
+    }
+
+    metodos = {}
+    metodos.update(metodos_rapidos)
+    if incluir_lentos:
+        metodos.update(metodos_lentos)
+
     tiempos = {}
-    print(f"\nComparando métodos para lista de {len(lista)} elementos:")
+    n = len(lista)
+    print(f"\nComparando métodos para lista de {n} elementos:")
     print("=" * 70)
+
     for nombre, metodo in metodos.items():
         lista_copia = lista.copy()
         inicio = time.time()
         try:
             resultado = metodo(lista_copia)
             tiempo = time.time() - inicio
-            ordenada = esta_ordenada(resultado)
+            ordenada = esta_ordenada(resultado) if len(resultado) > 1 else True
             tiempos[nombre] = tiempo
             estado = "OK" if ordenada else "FAIL"
-            print(f"{estado} {nombre:25s} {tiempo*1000:8.4f} ms")
+            print(f"{estado} {nombre:25s} {tiempo*1000:10.4f} ms")
         except Exception as e:
             print(f"ERR {nombre:25s} Error: {e}")
             tiempos[nombre] = float("inf")
+
     print("=" * 70)
     tiempos_validos = {k: v for k, v in tiempos.items() if v != float("inf")}
     if tiempos_validos:
@@ -192,11 +404,17 @@ def comparar_metodos_ordenamiento(lista, mostrar_resultados=True):
 
 
 if __name__ == "__main__":
-    print("=== Comparación de métodos ===\n")
-    print("Lista pequeña (10 elementos):")
-    lista_peq = generar_lista_aleatoria(10, 1, 50)
+    print("=== Comparación de TODOS los métodos de ordenamiento ===\n")
+
+    print("--- Lista pequeña (20 elementos) ---")
+    lista_peq = generar_lista_aleatoria(20, 1, 50)
     print(f"Lista: {lista_peq}")
     comparar_metodos_ordenamiento(lista_peq)
-    print("\nLista mediana (100 elementos):")
-    lista_med = generar_lista_aleatoria(100, 1, 100)
+
+    print("\n--- Lista mediana (500 elementos) ---")
+    lista_med = generar_lista_aleatoria(500, 1, 1000)
     comparar_metodos_ordenamiento(lista_med)
+
+    print("\n--- Lista grande (5000 elementos, solo algoritmos rápidos) ---")
+    lista_grande = generar_lista_aleatoria(5000, 1, 10000)
+    comparar_metodos_ordenamiento(lista_grande, incluir_lentos=False)

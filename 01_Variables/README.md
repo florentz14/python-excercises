@@ -1,103 +1,136 @@
-# 01_Variables
+# 01 - Variables y Tipos de Datos
 
-Tipos de datos en Python: números complejos, diccionarios, listas, conjuntos, tuplas y variables básicas.
+Tipos de datos en Python organizados en subcarpetas: variables basicas, diccionarios,
+listas, conjuntos (sets) y tuplas.
 
-## Números complejos (01)
+## Estructura
 
-| Archivo | Contenido |
-|---------|-----------|
-| `01_complex.py` | Números complejos |
+```
+01_Variables/
+|-- variables/      (2 archivos)   Variables basicas y numeros complejos
+|-- dictionaries/   (16 archivos)  Diccionarios
+|-- lists/          (20 archivos)  Listas
+|-- sets/           (18 archivos)  Conjuntos (Sets)
+|-- tuples/         (14 archivos)  Tuplas
+```
 
-## Diccionarios (02-17)
+## Subcarpetas
 
-| Archivo | Contenido |
-|---------|-----------|
-| `02_dictionary_create_and_display.py` | Crear y mostrar |
-| `03_dictionary_access_by_key.py` | Acceso por clave |
-| `04_dictionary_get_method.py` | Método get() |
-| `05_dictionary_add_modify.py` | Agregar y modificar |
-| `06_dictionary_remove_items.py` | Eliminar elementos |
-| `07_dictionary_loop.py` | Iterar diccionarios |
-| `08_dictionary_loop_items.py` | Iterar con items() |
-| `09_dictionary_keys_values.py` | keys() y values() |
-| `10_dictionary_check_key_exists.py` | Verificar si existe clave |
-| `11_dictionary_update.py` | Método update() |
-| `12_dictionary_copy.py` | Copiar diccionario |
-| `13_dictionary_clear.py` | Limpiar diccionario |
-| `14_dictionary_nested.py` | Diccionarios anidados |
-| `15_dictionary_comprehension.py` | Dict comprehension |
-| `16_dictionary_list_tuples_to_dict.py` | Convertir lista de tuplas |
-| `17_dictionary_setdefault.py` | Método setdefault() |
+### `variables/` - Variables Basicas (2 archivos)
 
-## Listas (18-37)
+| # | Archivo | Contenido |
+|---|---------|-----------|
+| 01 | `01_complex.py` | Numeros complejos |
+| 02 | `02_variables.py` | int, float, str, bool |
 
-| Archivo | Contenido |
-|---------|-----------|
-| `18_list_create_and_display.py` | Crear y mostrar |
-| `19_list_access_by_index.py` | Acceso por índice |
-| `20_list_add_elements.py` | append, insert, extend |
-| `21_list_remove_elements.py` | remove, pop, del |
-| `22_list_slice.py` | Slicing básico |
-| `23_list_loop.py` | Iterar con for |
-| `24_list_comprehension.py` | List comprehension |
-| `25_list_sort_reverse.py` | sort, reverse |
-| `26_list_find_and_membership.py` | in, index |
-| `27_list_operations.py` | Concatenar, repetir |
-| `28_list_comprehension_avanzado.py` | Comprehension avanzado |
-| `29_list_ordenar_enumerar_zip.py` | sorted, enumerate, zip |
-| `30_list_map.py` | map() |
-| `31_list_filter.py` | filter() |
-| `32_list_reduce.py` | reduce() |
-| `33_list_slice_avanzado.py` | Slicing avanzado |
-| `34_list_pila.py` | Pila (Stack - LIFO) |
-| `35_list_cola.py` | Cola (Queue - FIFO) |
-| `36_list_anidadas_copiar.py` | Listas anidadas y copias |
-| `37_list_any_all_unicos.py` | any, all, únicos |
+### `dictionaries/` - Diccionarios (16 archivos)
 
-## Conjuntos (38-55)
+| # | Archivo | Contenido |
+|---|---------|-----------|
+| 01 | `01_create_and_display.py` | Crear y mostrar |
+| 02 | `02_access_by_key.py` | Acceso por clave |
+| 03 | `03_get_method.py` | Metodo get() |
+| 04 | `04_add_modify.py` | Agregar y modificar |
+| 05 | `05_remove_items.py` | Eliminar elementos |
+| 06 | `06_loop.py` | Iterar diccionarios |
+| 07 | `07_loop_items.py` | Iterar con items() |
+| 08 | `08_keys_values.py` | keys() y values() |
+| 09 | `09_check_key_exists.py` | Verificar si existe clave |
+| 10 | `10_update.py` | Metodo update() |
+| 11 | `11_copy.py` | Copiar diccionario |
+| 12 | `12_clear.py` | Limpiar diccionario |
+| 13 | `13_nested.py` | Diccionarios anidados |
+| 14 | `14_comprehension.py` | Dict comprehension |
+| 15 | `15_list_tuples_to_dict.py` | Convertir lista de tuplas |
+| 16 | `16_setdefault.py` | Metodo setdefault() |
 
-| Archivo | Contenido |
-|---------|-----------|
-| `38_set_create_and_display.py` | Crear y mostrar |
-| `39_set_empty_set.py` | Set vacío vs dict |
-| `40_set_from_list.py` | Crear desde lista |
-| `41_set_add_remove.py` | add, remove, discard |
-| `42_set_membership.py` | in, not in |
-| `43_set_loop.py` | Iterar set |
-| `44_set_union.py` | Unión (\|) |
-| `45_set_intersection.py` | Intersección (&) |
-| `46_set_difference.py` | Diferencia (-) |
-| `47_set_symmetric_difference.py` | Diferencia simétrica (^) |
-| `48_set_subset_superset.py` | issubset, issuperset |
-| `49_set_clear.py` | clear() |
-| `50_set_copy.py` | copy() |
-| `51_set_update.py` | update() |
-| `52_set_min_max_pop.py` | min, max, pop |
-| `53_set_comprehension.py` | Set comprehension |
-| `54_set_unique_elements.py` | Elementos únicos |
-| `55_set_common_hobbies.py` | Ejemplo práctico |
+### `lists/` - Listas (20 archivos)
 
-## Tuplas (56-69)
+| # | Archivo | Contenido |
+|---|---------|-----------|
+| 01 | `01_create_and_display.py` | Crear y mostrar |
+| 02 | `02_access_by_index.py` | Acceso por indice |
+| 03 | `03_add_elements.py` | append, insert, extend |
+| 04 | `04_remove_elements.py` | remove, pop, del |
+| 05 | `05_slice.py` | Slicing basico |
+| 06 | `06_loop.py` | Iterar con for |
+| 07 | `07_comprehension.py` | List comprehension |
+| 08 | `08_sort_reverse.py` | sort, reverse |
+| 09 | `09_find_and_membership.py` | in, index |
+| 10 | `10_operations.py` | Concatenar, repetir |
+| 11 | `11_comprehension_avanzado.py` | Comprehension avanzado |
+| 12 | `12_ordenar_enumerar_zip.py` | sorted, enumerate, zip |
+| 13 | `13_map.py` | map() |
+| 14 | `14_filter.py` | filter() |
+| 15 | `15_reduce.py` | reduce() |
+| 16 | `16_slice_avanzado.py` | Slicing avanzado |
+| 17 | `17_pila.py` | Pila (Stack - LIFO) |
+| 18 | `18_cola.py` | Cola (Queue - FIFO) |
+| 19 | `19_anidadas_copiar.py` | Listas anidadas y copias |
+| 20 | `20_any_all_unicos.py` | any, all, unicos |
 
-| Archivo | Contenido |
-|---------|-----------|
-| `56_tuple_create_and_display.py` | Crear y mostrar |
-| `57_tuple_access_by_index.py` | Acceso por índice |
-| `58_tuple_negative_indexing.py` | Índices negativos |
-| `59_tuple_slice.py` | Slicing |
-| `60_tuple_loop.py` | Iterar tuplas |
-| `61_tuple_find_and_membership.py` | in, index |
-| `62_tuple_count.py` | count() |
-| `63_tuple_concatenation_repetition.py` | Concatenar, repetir |
-| `64_tuple_unpacking.py` | Desempaquetado |
-| `65_tuple_single_element.py` | Tupla de un elemento |
-| `66_tuple_immutability.py` | Inmutabilidad |
-| `67_tuple_mixed_types.py` | Tipos mixtos |
-| `68_tuple_nested.py` | Tuplas anidadas |
-| `69_tuple_convert_list_tuple.py` | Conversión lista-tupla |
+### `sets/` - Conjuntos (18 archivos)
 
-## Variables básicas (70)
+| # | Archivo | Contenido |
+|---|---------|-----------|
+| 01 | `01_create_and_display.py` | Crear y mostrar |
+| 02 | `02_empty_set.py` | Set vacio vs dict |
+| 03 | `03_from_list.py` | Crear desde lista |
+| 04 | `04_add_remove.py` | add, remove, discard |
+| 05 | `05_membership.py` | in, not in |
+| 06 | `06_loop.py` | Iterar set |
+| 07 | `07_union.py` | Union (\|) |
+| 08 | `08_intersection.py` | Interseccion (&) |
+| 09 | `09_difference.py` | Diferencia (-) |
+| 10 | `10_symmetric_difference.py` | Diferencia simetrica (^) |
+| 11 | `11_subset_superset.py` | issubset, issuperset |
+| 12 | `12_clear.py` | clear() |
+| 13 | `13_copy.py` | copy() |
+| 14 | `14_update.py` | update() |
+| 15 | `15_min_max_pop.py` | min, max, pop |
+| 16 | `16_comprehension.py` | Set comprehension |
+| 17 | `17_unique_elements.py` | Elementos unicos |
+| 18 | `18_common_hobbies.py` | Ejemplo practico |
 
-| Archivo | Contenido |
-|---------|-----------|
-| `70_variables.py` | int, float, str, bool |
+### `tuples/` - Tuplas (14 archivos)
+
+| # | Archivo | Contenido |
+|---|---------|-----------|
+| 01 | `01_create_and_display.py` | Crear y mostrar |
+| 02 | `02_access_by_index.py` | Acceso por indice |
+| 03 | `03_negative_indexing.py` | Indices negativos |
+| 04 | `04_slice.py` | Slicing |
+| 05 | `05_loop.py` | Iterar tuplas |
+| 06 | `06_find_and_membership.py` | in, index |
+| 07 | `07_count.py` | count() |
+| 08 | `08_concatenation_repetition.py` | Concatenar, repetir |
+| 09 | `09_unpacking.py` | Desempaquetado |
+| 10 | `10_single_element.py` | Tupla de un elemento |
+| 11 | `11_immutability.py` | Inmutabilidad |
+| 12 | `12_mixed_types.py` | Tipos mixtos |
+| 13 | `13_nested.py` | Tuplas anidadas |
+| 14 | `14_convert_list_tuple.py` | Conversion lista-tupla |
+
+## Resumen
+
+| Subcarpeta | Archivos | Tema |
+|------------|----------|------|
+| `variables/` | 2 | Variables basicas y complejos |
+| `dictionaries/` | 16 | Diccionarios |
+| `lists/` | 20 | Listas |
+| `sets/` | 18 | Conjuntos (Sets) |
+| `tuples/` | 14 | Tuplas |
+| **Total** | **70** | |
+
+## Como ejecutar
+
+```bash
+cd 01_Variables
+python dictionaries/01_create_and_display.py
+python sets/07_union.py
+```
+
+## Requisitos
+
+- Python 3.x
+- No requiere librerias externas

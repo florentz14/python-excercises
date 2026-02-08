@@ -1,66 +1,99 @@
-# 07 – Listas y Tuplas
+# 07 - Listas y Tuplas
 
-Ejercicios de listas y tuplas en Python.
+Ejercicios de listas y tuplas en Python, organizados en subcarpetas por tema.
 
-## Contenido
+## Estructura
 
-Esta carpeta contiene **301 ejercicios** organizados por tema:
+```
+07_Lists_and_Tuples/
+|-- lista_simple/          (25 archivos)  Metodos basicos de listas
+|-- tuplas/                (18 archivos)  Ejercicios de tuplas
+|-- listas_anidadas/       (40 archivos)  Listas anidadas y matrices
+|-- busqueda_y_filtrado/   (64 archivos)  Busqueda, filtrado y conteo
+|-- ordenamiento/          (10 archivos)  Ordenamiento y organizacion
+|-- matematicas/           (25 archivos)  Operaciones matematicas
+|-- funcional_y_avanzado/  (11 archivos)  Programacion funcional y avanzada
+|-- ejercicios_generales/  (133 archivos) Manipulacion y ejercicios variados
+```
 
-### Listas básicas (10 ejercicios)
+## Subcarpetas
 
-| # | Archivo | Tema |
-|---|---------|------|
-| 1 | `001_fruits.py` | Crear lista y mostrar |
-| 2 | `002_access_element.py` | Acceder por índice |
-| 3 | `003_change_last.py` | Cambiar último elemento |
-| 4 | `004_append.py` | Añadir con append |
-| 5 | `005_remove.py` | Eliminar elemento |
-| 6 | `006_slice.py` | Rebanadas (slice) |
-| 7 | `007_sort.py` | Ordenar lista |
-| 8 | `008_count.py` | Contar elementos |
-| 9 | `009_combine.py` | Combinar listas |
-| 10 | `010_sum_input.py` | Sumar números leídos |
+### `lista_simple/` - Metodos Basicos (25 archivos)
 
-### Tuplas básicas (10 ejercicios)
+Archivos individuales que demuestran cada metodo y operacion de las listas:
+`append()`, `insert()`, `remove()`, `pop()`, `sort()`, `reverse()`, `copy()`,
+`extend()`, `count()`, `index()`, `clear()`, slicing, loops, list comprehension,
+`del`, `len()`, `in`, `min/max/sum`, concatenacion y mas.
 
-| # | Archivo | Tema |
-|---|---------|------|
-| 1 | `001_colors.py` | Crear tupla, inmutabilidad |
-| 2 | `002_last_element.py` | Último elemento (índice -1) |
-| 3 | `003_immutable.py` | Tuplas no se modifican |
-| 4 | `004_tuple_to_list.py` | Convertir tupla → lista |
-| 5 | `005_length.py` | Longitud len() |
-| 6 | `006_in_tuple.py` | Operador in |
-| 7 | `007_concatenate.py` | Concatenar tuplas |
-| 8 | `008_repeat.py` | Repetir tupla |
-| 9 | `009_name_age.py` | Tuplas con nombre/edad |
-| 10 | `010_unpacking.py` | Desempaquetar tupla |
+### `tuplas/` - Ejercicios de Tuplas (18 archivos)
 
-### Ejercicios avanzados (280+ ejercicios)
+Operaciones con tuplas: creacion, inmutabilidad, acceso, conversion a lista,
+operador `in`, concatenacion, repeticion, unpacking, ordenamiento por elemento,
+extraccion de elementos, productos min/max, y conversion a strings.
 
-Archivos `001_*.py` … `280_*.py` que cubren:
+### `listas_anidadas/` - Listas Anidadas y Matrices (40 archivos)
 
-- **Operaciones básicas**: sumas, máximos/mínimos, duplicados, ordenar
-- **Manipulación**: flatten, permutaciones, combinaciones, matrices
-- **Listas anidadas**: columnas, rotar, frecuencia, filtros
-- **Avanzados**: chunk, índices, mapeo, flatten profundo, progresiones
+Ejercicios con listas de listas, matrices 2D/3D: aplanar (flatten), sublistas,
+columnas, diagonales, matrices de ceros, grids, frecuencias en anidadas,
+ordenar por suma de filas, extraer columnas, y deep flatten.
 
-### Archivo adicional
+### `busqueda_y_filtrado/` - Busqueda y Filtrado (64 archivos)
 
-| Archivo | Descripción |
-|---------|-------------|
-| `011_listas_avanzadas.py` | Conceptos avanzados de listas |
+Buscar elementos, filtrar por condiciones, contar ocurrencias, encontrar
+indices, elementos comunes entre listas, duplicados, frecuencias, valores
+unicos, verificar primos, y operaciones con funciones de filtrado.
+
+### `ordenamiento/` - Ordenamiento (10 archivos)
+
+Ordenar listas por diferentes criterios: alfabetico, numerico, por longitud,
+por otro lista, mezclar (shuffle), verificar si esta ordenada, y ordenar
+listas mixtas.
+
+### `matematicas/` - Operaciones Matematicas (25 archivos)
+
+Sumas, productos, promedios, maximos/minimos, segundo mas grande/pequeno,
+criba de Eratostenes, rangos, promedios ponderados, y operaciones con
+funciones de mapeo.
+
+### `funcional_y_avanzado/` - Programacion Funcional (11 archivos)
+
+Permutaciones, combinaciones, powerset, agrupacion por funcion, diferencia/
+union/interseccion con funciones personalizadas, y verificaciones con
+predicados (`all`, `any`).
+
+### `ejercicios_generales/` - Ejercicios Generales (133 archivos)
+
+Manipulacion general de listas: modificar, insertar, eliminar, rotar,
+intercalar, codificacion run-length, operaciones con diccionarios en listas,
+conversion de tipos, iteracion ciclica, bigrams, fibonacci, y muchos mas
+ejercicios variados.
 
 ## Resumen
 
-| Categoría | Cantidad |
-|-----------|----------|
-| Listas básicas | 10 |
-| Tuplas básicas | 10 |
-| Ejercicios avanzados | 280 |
-| Otros | 1 |
-| **Total** | **301** |
+| Subcarpeta | Archivos | Tema |
+|------------|----------|------|
+| `lista_simple/` | 25 | Metodos basicos de listas |
+| `tuplas/` | 18 | Ejercicios de tuplas |
+| `listas_anidadas/` | 40 | Listas anidadas y matrices |
+| `busqueda_y_filtrado/` | 64 | Busqueda, filtrado y conteo |
+| `ordenamiento/` | 10 | Ordenamiento y organizacion |
+| `matematicas/` | 25 | Operaciones matematicas |
+| `funcional_y_avanzado/` | 11 | Programacion funcional |
+| `ejercicios_generales/` | 133 | Manipulacion y ejercicios variados |
+| **Total** | **326** | |
 
-## Nota
+## Como ejecutar
 
-Los archivos comparten numeración porque provienen de diferentes fuentes originales (listas, tuplas, extras). Para filtrar por tema específico, usa el nombre descriptivo del archivo.
+Cada archivo se puede ejecutar de forma independiente:
+
+```bash
+cd 07_Lists_and_Tuples
+python lista_simple/01_crear_lista.py
+python tuplas/001_colors.py
+python matematicas/034_sieve_eratosthenes.py
+```
+
+## Requisitos
+
+- Python 3.x
+- No requiere librerias externas
