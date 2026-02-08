@@ -1,20 +1,31 @@
+# -------------------------------------------------
+# File Name: 07_analisis_students_performance.py
+# Author: Florentino Báez
+# Date: Pandas
+# Description: Students Performance CSV Analysis.
+#              Loads StudentsPerformance.csv, shows descriptive
+#              statistics, computes averages by gender, lunch
+#              type, test preparation, and parental education.
+#              Calculates a global average score column.
+# -------------------------------------------------
+
 """
-Análisis del archivo StudentsPerformance.csv
-============================================
-Carga el CSV, resume estadísticas y analiza notas por género, almuerzo,
-preparación para el examen y nivel educativo de los padres.
+StudentsPerformance.csv Analysis
+================================
+Loads the CSV, summarizes statistics and analyzes scores by gender, lunch,
+test preparation, and parental education level.
 """
 
 import pandas as pd
 from pathlib import Path
 
-# Ruta al CSV en la raíz del proyecto
+# Path to CSV in project root
 RUTA_CSV = Path(__file__).parent.parent / "StudentsPerformance.csv"
 
 def cargar_datos() -> pd.DataFrame:
-    """Carga el CSV y convierte columnas de puntuación a numéricas."""
+    """Loads the CSV and converts score columns to numeric."""
     df = pd.read_csv(RUTA_CSV, encoding="utf-8")
-    # Asegurar que las puntuaciones son numéricas
+    # Ensure scores are numeric
     for col in ["math score", "reading score", "writing score"]:
         if col in df.columns:
             df[col] = pd.to_numeric(df[col], errors="coerce")
@@ -22,7 +33,7 @@ def cargar_datos() -> pd.DataFrame:
 
 
 def resumen_general(df: pd.DataFrame) -> None:
-    """Muestra dimensiones, columnas, tipos y estadísticas descriptivas."""
+    """Shows dimensions, columns, types and descriptive statistics."""
     print("=" * 60)
     print("RESUMEN GENERAL")
     print("=" * 60)
@@ -38,7 +49,7 @@ def resumen_general(df: pd.DataFrame) -> None:
 
 
 def promedios_por_categoria(df: pd.DataFrame) -> None:
-    """Promedio de notas por género, almuerzo, preparación y educación de padres."""
+    """Average scores by gender, lunch, preparation and parental education."""
     columnas_notas = [c for c in df.columns if "score" in c]
     if not columnas_notas:
         return
@@ -47,23 +58,23 @@ def promedios_por_categoria(df: pd.DataFrame) -> None:
     print("PROMEDIOS POR CATEGORÍA")
     print("=" * 60)
 
-    # Por género
+    # By gender
     if "gender" in df.columns:
         print("\n--- Por género ---")
         print(df.groupby("gender")[columnas_notas].mean().round(2).to_string())
 
-    # Por tipo de almuerzo
+    # By lunch type
     if "lunch" in df.columns:
         print("\n--- Por tipo de almuerzo ---")
         print(df.groupby("lunch")[columnas_notas].mean().round(2).to_string())
 
-    # Por preparación para el examen
+    # By test preparation
     col_prep = "test preparation course"
     if col_prep in df.columns:
         print("\n--- Por preparación para el examen ---")
         print(df.groupby(col_prep)[columnas_notas].mean().round(2).to_string())
 
-    # Por nivel educativo de los padres
+    # By parental education level
     col_edu = "parental level of education"
     if col_edu in df.columns:
         print("\n--- Por nivel educativo de los padres ---")
@@ -71,7 +82,7 @@ def promedios_por_categoria(df: pd.DataFrame) -> None:
 
 
 def nota_promedio_global(df: pd.DataFrame) -> None:
-    """Crea columna 'average score' y muestra resumen."""
+    """Creates 'average score' column and shows summary."""
     columnas_notas = [c for c in df.columns if "score" in c]
     if not columnas_notas:
         return

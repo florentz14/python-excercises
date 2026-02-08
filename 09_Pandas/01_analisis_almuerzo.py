@@ -1,13 +1,24 @@
+# -------------------------------------------------
+# File Name: 01_analisis_almuerzo.py
+# Author: Florentino Báez
+# Date: Pandas
+# Description: Lunch Type Analysis (Socioeconomic Indicator).
+#              Examines how lunch type (standard vs free/reduced)
+#              affects student performance. Includes score gaps,
+#              grade distribution, gender interaction, and
+#              test preparation cross-analysis.
+# -------------------------------------------------
+
 """
-Análisis por Tipo de Almuerzo (Indicador Socioeconómico)
-Examina cómo el tipo de almuerzo (estándar vs gratuito/reducido) afecta el rendimiento
+Lunch Type Analysis (Socioeconomic Indicator)
+Examines how lunch type (standard vs free/reduced) affects performance
 """
 
 import pandas as pd
 import numpy as np
 
 def analisis_por_almuerzo(archivo_csv):
-    """Analiza el impacto del tipo de almuerzo en el rendimiento estudiantil"""
+    """Analyzes the impact of lunch type on student performance"""
     
     df = pd.read_csv(archivo_csv)
     df['average_score'] = df[['math score', 'reading score', 'writing score']].mean(axis=1)
@@ -16,7 +27,7 @@ def analisis_por_almuerzo(archivo_csv):
     print("ANÁLISIS POR TIPO DE ALMUERZO (INDICADOR SOCIOECONÓMICO)")
     print("=" * 80)
     
-    # Distribución
+    # Distribution
     print("\n🍽️  DISTRIBUCIÓN DE ESTUDIANTES")
     print("-" * 80)
     distribucion = df['lunch'].value_counts()
@@ -24,7 +35,7 @@ def analisis_por_almuerzo(archivo_csv):
         porcentaje = (count / len(df)) * 100
         print(f"{tipo.capitalize():15}: {count:3d} estudiantes ({porcentaje:.2f}%)")
     
-    # Promedios comparativos
+    # Comparative averages
     print("\n\n📊 COMPARACIÓN DE CALIFICACIONES POR TIPO DE ALMUERZO")
     print("-" * 80)
     print(f"{'Tipo de Almuerzo':15} {'Matemáticas':>12} {'Lectura':>12} {'Escritura':>12} {'Promedio':>12}")
@@ -48,7 +59,7 @@ def analisis_por_almuerzo(archivo_csv):
         
         print(f"{tipo.capitalize():15} {math_avg:12.2f} {reading_avg:12.2f} {writing_avg:12.2f} {total_avg:12.2f}")
     
-    # Brecha de rendimiento
+    # Performance gap
     print("\n\n📉 BRECHA DE RENDIMIENTO")
     print("-" * 80)
     
@@ -64,11 +75,11 @@ def analisis_por_almuerzo(archivo_csv):
         print(f"  Escritura:   {brecha_writing:+.2f} puntos")
         print(f"  Promedio:    {brecha_total:+.2f} puntos")
         
-        # Porcentaje de la brecha
+        # Gap percentage
         pct_brecha = (brecha_total / resultados['free/reduced']['total']) * 100
         print(f"\n  → Brecha porcentual: {pct_brecha:.2f}%")
     
-    # Distribución de calificaciones
+    # Grade distribution
     print("\n\n📊 DISTRIBUCIÓN POR RANGOS DE CALIFICACIÓN")
     print("-" * 80)
     
@@ -83,7 +94,7 @@ def analisis_por_almuerzo(archivo_csv):
             porcentaje = (count / len(df_tipo)) * 100
             print(f"  {categoria:12} ({min_val:2d}-{max_val:2d}): {count:3d} estudiantes ({porcentaje:5.2f}%)")
     
-    # Análisis por género y tipo de almuerzo
+    # Analysis by gender and lunch type
     print("\n\n👥 ANÁLISIS POR GÉNERO Y TIPO DE ALMUERZO")
     print("-" * 80)
     
@@ -98,7 +109,7 @@ def analisis_por_almuerzo(archivo_csv):
                 count = len(df_combined)
                 print(f"  {tipo.capitalize():15}: {avg_score:6.2f} puntos ({count:3d} estudiantes)")
     
-    # Estudiantes destacados
+    # Outstanding students
     print("\n\n🏆 ESTUDIANTES CON PROMEDIO ≥85")
     print("-" * 80)
     
@@ -108,7 +119,7 @@ def analisis_por_almuerzo(archivo_csv):
         porcentaje = (count_high / len(df_tipo)) * 100
         print(f"{tipo.capitalize():15}: {count_high:3d} estudiantes ({porcentaje:5.2f}%)")
     
-    # Preparación para exámenes y almuerzo
+    # Test preparation and lunch type
     print("\n\n📚 INTERACCIÓN: PREPARACIÓN Y TIPO DE ALMUERZO")
     print("-" * 80)
     
@@ -123,7 +134,7 @@ def analisis_por_almuerzo(archivo_csv):
                 count = len(df_combined)
                 print(f"  Preparación {prep:10}: {avg_score:6.2f} puntos ({count:3d} estudiantes)")
     
-    # Variabilidad
+    # Variability
     print("\n\n📈 VARIABILIDAD (Desviación Estándar)")
     print("-" * 80)
     

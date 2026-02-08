@@ -1,9 +1,13 @@
-"""
-Pandas - Ejemplo 3: Filtrar filas (condiciones)
-===============================================
-Tema: Pandas (09_Pandas)
-Descripción: df[condición] para quedarse con filas que cumplen la condición.
-"""
+# -------------------------------------------------
+# File Name: 11_filtrar.py
+# Author: Florentino Báez
+# Date: Pandas
+# Description: Filter DataFrame Rows by Condition.
+#              Use df[condition] to select rows that meet
+#              a boolean condition. Combine conditions with
+#              & (AND) and | (OR). Each condition must be
+#              wrapped in parentheses.
+# -------------------------------------------------
 
 import pandas as pd
 
@@ -13,14 +17,14 @@ df = pd.DataFrame({
     "ciudad": ["Madrid", "Barcelona", "Valencia", "Madrid"],
 })
 
-# Filtrar: edad >= 28
+# Filter: age >= 28
 mayores = df[df["edad"] >= 28]
 print("Edad >= 28:\n", mayores)
 
-# Filtrar: ciudad == "Madrid"
+# Filter: city == "Madrid"
 madrid = df[df["ciudad"] == "Madrid"]
 print("\nCiudad Madrid:\n", madrid)
 
-# Combinar: (edad >= 28) y (ciudad == "Madrid")
+# Combined filter: (age >= 28) AND (city == "Madrid")
 filtro = df[(df["edad"] >= 28) & (df["ciudad"] == "Madrid")]
 print("\nEdad >= 28 y Madrid:\n", filtro)

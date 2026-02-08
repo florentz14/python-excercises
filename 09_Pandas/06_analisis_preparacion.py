@@ -1,13 +1,24 @@
+# -------------------------------------------------
+# File Name: 06_analisis_preparacion.py
+# Author: Florentino Báez
+# Date: Pandas
+# Description: Test Preparation Impact Analysis.
+#              Evaluates how the test preparation course affects
+#              student scores. Measures improvement per subject,
+#              percentage gain, gender interaction, and
+#              identifies struggling students.
+# -------------------------------------------------
+
 """
-Análisis del Impacto de la Preparación para Exámenes
-Evalúa cómo el curso de preparación afecta el rendimiento estudiantil
+Test Preparation Impact Analysis
+Evaluates how the test preparation course affects student performance
 """
 
 import pandas as pd
 import numpy as np
 
 def analisis_preparacion_examenes(archivo_csv):
-    """Analiza el impacto del curso de preparación para exámenes"""
+    """Analyzes the impact of the test preparation course"""
     
     df = pd.read_csv(archivo_csv)
     df['average_score'] = df[['math score', 'reading score', 'writing score']].mean(axis=1)
@@ -16,7 +27,7 @@ def analisis_preparacion_examenes(archivo_csv):
     print("ANÁLISIS DEL IMPACTO DE LA PREPARACIÓN PARA EXÁMENES")
     print("=" * 80)
     
-    # Distribución de estudiantes
+    # Student distribution
     print("\n📚 DISTRIBUCIÓN DE ESTUDIANTES")
     print("-" * 80)
     distribucion = df['test preparation course'].value_counts()
@@ -24,7 +35,7 @@ def analisis_preparacion_examenes(archivo_csv):
         porcentaje = (count / len(df)) * 100
         print(f"{status.capitalize():15}: {count:3d} estudiantes ({porcentaje:.2f}%)")
     
-    # Promedios comparativos
+    # Comparative averages
     print("\n\n📊 COMPARACIÓN DE CALIFICACIONES")
     print("-" * 80)
     print(f"{'Preparación':15} {'Matemáticas':>12} {'Lectura':>12} {'Escritura':>12} {'Promedio':>12}")
@@ -47,7 +58,7 @@ def analisis_preparacion_examenes(archivo_csv):
         
         print(f"{status.capitalize():15} {math_avg:12.2f} {reading_avg:12.2f} {writing_avg:12.2f} {total_avg:12.2f}")
     
-    # Impacto de la preparación
+    # Impact of preparation
     print("\n\n📈 IMPACTO DE LA PREPARACIÓN")
     print("-" * 80)
     
@@ -63,11 +74,11 @@ def analisis_preparacion_examenes(archivo_csv):
         print(f"  Escritura:   {mejora_writing:+.2f} puntos")
         print(f"  Promedio:    {mejora_total:+.2f} puntos")
         
-        # Calcular porcentaje de mejora
+        # Calculate percentage improvement
         pct_mejora = (mejora_total / resultados['none']['total']) * 100
         print(f"\n  → Mejora porcentual: {pct_mejora:+.2f}%")
     
-    # Distribución de calificaciones altas
+    # High score distribution
     print("\n\n🏆 ESTUDIANTES CON CALIFICACIONES EXCELENTES (≥85)")
     print("-" * 80)
     
@@ -80,7 +91,7 @@ def analisis_preparacion_examenes(archivo_csv):
             porcentaje = (count_high / len(df_status)) * 100
             print(f"  {materia.replace(' score', '').capitalize():12}: {count_high:3d} estudiantes ({porcentaje:5.2f}%)")
     
-    # Análisis por género y preparación
+    # Analysis by gender and preparation
     print("\n\n👥 IMPACTO DE LA PREPARACIÓN POR GÉNERO")
     print("-" * 80)
     
@@ -95,7 +106,7 @@ def analisis_preparacion_examenes(archivo_csv):
                 count = len(df_combined)
                 print(f"  {status.capitalize():15}: {avg_score:6.2f} puntos ({count:3d} estudiantes)")
     
-    # Estudiantes con bajo rendimiento
+    # Students with low performance
     print("\n\n⚠️  ESTUDIANTES CON DIFICULTADES (Promedio <60)")
     print("-" * 80)
     
@@ -105,7 +116,7 @@ def analisis_preparacion_examenes(archivo_csv):
         porcentaje = (count_low / len(df_status)) * 100
         print(f"{status.capitalize():15}: {count_low:3d} estudiantes ({porcentaje:5.2f}%)")
     
-    # Recomendación
+    # Recommendation
     print("\n\n💡 CONCLUSIÓN")
     print("-" * 80)
     if 'completed' in resultados and 'none' in resultados:

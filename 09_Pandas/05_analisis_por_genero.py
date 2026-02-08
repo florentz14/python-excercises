@@ -1,13 +1,24 @@
+# -------------------------------------------------
+# File Name: 05_analisis_por_genero.py
+# Author: Florentino Báez
+# Date: Pandas
+# Description: Gender Performance Analysis.
+#              Compares academic performance between male and
+#              female students. Calculates per-subject gaps,
+#              high-score distribution, and standard deviation
+#              by gender.
+# -------------------------------------------------
+
 """
-Análisis de Rendimiento por Género
-Compara el desempeño académico entre estudiantes masculinos y femeninos
+Gender Performance Analysis
+Compares academic performance between male and female students
 """
 
 import pandas as pd
 import numpy as np
 
 def analisis_por_genero(archivo_csv):
-    """Analiza el rendimiento académico comparando géneros"""
+    """Analyzes academic performance comparing genders"""
     
     df = pd.read_csv(archivo_csv)
     df['average_score'] = df[['math score', 'reading score', 'writing score']].mean(axis=1)
@@ -16,7 +27,7 @@ def analisis_por_genero(archivo_csv):
     print("ANÁLISIS DE RENDIMIENTO POR GÉNERO")
     print("=" * 80)
     
-    # Distribución de género
+    # Gender distribution
     print("\n👥 DISTRIBUCIÓN DE ESTUDIANTES")
     print("-" * 80)
     distribucion = df['gender'].value_counts()
@@ -24,7 +35,7 @@ def analisis_por_genero(archivo_csv):
         porcentaje = (count / len(df)) * 100
         print(f"{genero.capitalize():8}: {count:3d} estudiantes ({porcentaje:.2f}%)")
     
-    # Promedios por género
+    # Averages by gender
     print("\n\n📊 PROMEDIO DE CALIFICACIONES POR GÉNERO")
     print("-" * 80)
     print(f"{'':15} {'Matemáticas':>12} {'Lectura':>12} {'Escritura':>12} {'Promedio':>12}")
@@ -39,7 +50,7 @@ def analisis_por_genero(archivo_csv):
         
         print(f"{genero.capitalize():15} {math_avg:12.2f} {reading_avg:12.2f} {writing_avg:12.2f} {total_avg:12.2f}")
     
-    # Diferencias entre géneros
+    # Differences between genders
     print("\n\n📈 DIFERENCIAS ENTRE GÉNEROS")
     print("-" * 80)
     male_avg = df[df['gender'] == 'male']['math score'].mean()
@@ -58,7 +69,7 @@ def analisis_por_genero(archivo_csv):
     print(f"Lectura:     {'Hombres' if diff_reading > 0 else 'Mujeres'} superan por {abs(diff_reading):.2f} puntos")
     print(f"Escritura:   {'Hombres' if diff_writing > 0 else 'Mujeres'} superan por {abs(diff_writing):.2f} puntos")
     
-    # Distribución de calificaciones altas
+    # High score distribution
     print("\n\n🏆 ESTUDIANTES CON CALIFICACIONES EXCELENTES (≥85)")
     print("-" * 80)
     
@@ -70,7 +81,7 @@ def analisis_por_genero(archivo_csv):
             porcentaje = (count_high / len(df_genero)) * 100
             print(f"  {genero.capitalize():8}: {count_high:3d} estudiantes ({porcentaje:5.2f}%)")
     
-    # Desviación estándar por género
+    # Standard deviation by gender
     print("\n\n📉 VARIABILIDAD (Desviación Estándar)")
     print("-" * 80)
     print(f"{'':15} {'Matemáticas':>12} {'Lectura':>12} {'Escritura':>12}")

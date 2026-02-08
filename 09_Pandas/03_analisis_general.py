@@ -1,22 +1,32 @@
+# -------------------------------------------------
+# File Name: 03_analisis_general.py
+# Author: Florentino Báez
+# Date: Pandas
+# Description: General Student Performance Analysis.
+#              Provides overall descriptive statistics: averages
+#              per subject, grade distribution, best/worst
+#              students, and inter-subject correlation matrix.
+# -------------------------------------------------
+
 """
-Análisis General de Rendimiento Estudiantil
-Este programa proporciona estadísticas descriptivas generales del dataset
+General Student Performance Analysis
+This program provides general descriptive statistics of the dataset
 """
 
 import pandas as pd
 import numpy as np
 
 def analisis_general(archivo_csv):
-    """Realiza un análisis estadístico general del dataset"""
+    """Performs a general statistical analysis of the dataset"""
     
-    # Cargar datos
+    # Load data
     df = pd.read_csv(archivo_csv)
     
     print("=" * 80)
     print("ANÁLISIS GENERAL DE RENDIMIENTO ESTUDIANTIL")
     print("=" * 80)
     
-    # Información básica del dataset
+    # Basic dataset information
     print("\n📊 INFORMACIÓN DEL DATASET")
     print("-" * 80)
     print(f"Total de estudiantes: {len(df)}")
@@ -25,7 +35,7 @@ def analisis_general(archivo_csv):
     for col in df.columns:
         print(f"  - {col}")
     
-    # Estadísticas descriptivas de las calificaciones
+    # Descriptive statistics of scores
     print("\n\n📈 ESTADÍSTICAS DESCRIPTIVAS DE CALIFICACIONES")
     print("-" * 80)
     scores = df[['math score', 'reading score', 'writing score']]
@@ -38,11 +48,11 @@ def analisis_general(archivo_csv):
     print(f"Lectura:     {df['reading score'].mean():.2f}")
     print(f"Escritura:   {df['writing score'].mean():.2f}")
     
-    # Calcular promedio total
+    # Calculate total average
     df['average_score'] = df[['math score', 'reading score', 'writing score']].mean(axis=1)
     print(f"\nPromedio Total: {df['average_score'].mean():.2f}")
     
-    # Distribución de calificaciones
+    # Grade distribution
     print("\n\n📊 DISTRIBUCIÓN DE CALIFICACIONES")
     print("-" * 80)
     rangos = [(0, 50, 'Bajo'), (50, 70, 'Medio'), (70, 85, 'Alto'), (85, 100, 'Excelente')]
@@ -72,7 +82,7 @@ def analisis_general(archivo_csv):
     print(f"  Lectura: {df.loc[peor_idx, 'reading score']}")
     print(f"  Escritura: {df.loc[peor_idx, 'writing score']}")
     
-    # Correlación entre materias
+    # Correlation between subjects
     print("\n\n🔗 CORRELACIÓN ENTRE MATERIAS")
     print("-" * 80)
     correlation = scores.corr()

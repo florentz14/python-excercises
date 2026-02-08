@@ -1,13 +1,24 @@
+# -------------------------------------------------
+# File Name: 04_analisis_grupo_etnico.py
+# Author: Florentino Báez
+# Date: Pandas
+# Description: Ethnic Group Performance Analysis.
+#              Compares academic performance across ethnic groups.
+#              Includes rankings, performance gaps, grade
+#              distribution, parental education interaction,
+#              and gender breakdown per group.
+# -------------------------------------------------
+
 """
-Análisis de Rendimiento por Grupo Étnico
-Examina las diferencias de rendimiento entre diferentes grupos étnicos
+Ethnic Group Performance Analysis
+Examines performance differences between different ethnic groups
 """
 
 import pandas as pd
 import numpy as np
 
 def analisis_por_grupo_etnico(archivo_csv):
-    """Analiza el rendimiento académico por grupo étnico"""
+    """Analyzes academic performance by ethnic group"""
     
     df = pd.read_csv(archivo_csv)
     df['average_score'] = df[['math score', 'reading score', 'writing score']].mean(axis=1)
@@ -16,7 +27,7 @@ def analisis_por_grupo_etnico(archivo_csv):
     print("ANÁLISIS DE RENDIMIENTO POR GRUPO ÉTNICO")
     print("=" * 90)
     
-    # Distribución de grupos
+    # Group distribution
     print("\n🌍 DISTRIBUCIÓN DE GRUPOS ÉTNICOS")
     print("-" * 90)
     distribucion = df['race/ethnicity'].value_counts().sort_index()
@@ -24,7 +35,7 @@ def analisis_por_grupo_etnico(archivo_csv):
         porcentaje = (count / len(df)) * 100
         print(f"{grupo:15}: {count:3d} estudiantes ({porcentaje:.2f}%)")
     
-    # Promedios por grupo
+    # Averages by group
     print("\n\n📊 PROMEDIO DE CALIFICACIONES POR GRUPO ÉTNICO")
     print("-" * 90)
     print(f"{'Grupo':15} {'Matemáticas':>12} {'Lectura':>12} {'Escritura':>12} {'Promedio':>12} {'N':>8}")
@@ -50,7 +61,7 @@ def analisis_por_grupo_etnico(archivo_csv):
         
         print(f"{grupo:15} {math_avg:12.2f} {reading_avg:12.2f} {writing_avg:12.2f} {total_avg:12.2f} {count:8d}")
     
-    # Ranking de grupos
+    # Group ranking
     print("\n\n🏆 RANKING POR RENDIMIENTO PROMEDIO")
     print("-" * 90)
     
@@ -58,7 +69,7 @@ def analisis_por_grupo_etnico(archivo_csv):
     for i, resultado in enumerate(resultados_ordenados, 1):
         print(f"{i}. {resultado['grupo']:15} - {resultado['total']:.2f} puntos")
     
-    # Análisis de brechas
+    # Gap analysis
     print("\n\n📉 BRECHAS DE RENDIMIENTO")
     print("-" * 90)
     
@@ -78,7 +89,7 @@ def analisis_por_grupo_etnico(archivo_csv):
     print(f"  Lectura:     {brecha_reading:.2f} puntos")
     print(f"  Escritura:   {brecha_writing:.2f} puntos")
     
-    # Estudiantes destacados por grupo
+    # Outstanding students by group
     print("\n\n🌟 ESTUDIANTES CON PROMEDIO ≥85 POR GRUPO")
     print("-" * 90)
     
@@ -88,7 +99,7 @@ def analisis_por_grupo_etnico(archivo_csv):
         porcentaje = (count_high / len(df_grupo)) * 100
         print(f"{grupo:15}: {count_high:3d} estudiantes ({porcentaje:5.2f}%)")
     
-    # Distribución de calificaciones por grupo
+    # Grade distribution by group
     print("\n\n📊 DISTRIBUCIÓN DE RENDIMIENTO POR GRUPO")
     print("-" * 90)
     
@@ -103,11 +114,11 @@ def analisis_por_grupo_etnico(archivo_csv):
             porcentaje = (count / len(df_grupo)) * 100
             print(f"  {categoria:12} ({min_val:2d}-{max_val:2d}): {count:3d} estudiantes ({porcentaje:5.2f}%)")
     
-    # Interacción con otros factores
+    # Interaction with other factors
     print("\n\n🔗 INTERACCIÓN: GRUPO ÉTNICO Y EDUCACIÓN PARENTAL")
     print("-" * 90)
     
-    # Grupos con mayor proporción de educación universitaria parental
+    # Groups with higher proportion of college-educated parents
     niveles_uni = ["some college", "associate's degree", "bachelor's degree", "master's degree"]
     
     for grupo in sorted(df['race/ethnicity'].unique()):
@@ -118,7 +129,7 @@ def analisis_por_grupo_etnico(archivo_csv):
         
         print(f"{grupo:15}: {porcentaje:5.2f}% con educación universitaria (promedio: {avg_uni:.2f})")
     
-    # Análisis de género por grupo étnico
+    # Gender analysis by ethnic group
     print("\n\n👥 PROMEDIO POR GRUPO ÉTNICO Y GÉNERO")
     print("-" * 90)
     

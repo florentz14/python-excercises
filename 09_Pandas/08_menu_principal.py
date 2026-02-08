@@ -1,17 +1,27 @@
+# -------------------------------------------------
+# File Name: 08_menu_principal.py
+# Author: Florentino Báez
+# Date: Pandas
+# Description: Master Analysis Menu (Interactive).
+#              Interactive menu that launches all available
+#              analysis scripts via subprocess. Options include
+#              individual analyses (1-6), run all (7), or exit.
+# -------------------------------------------------
+
 """
-Programa Maestro de Análisis de Rendimiento Estudiantil
-Ejecuta todos los análisis disponibles con un menú interactivo
+Master Student Performance Analysis Program
+Executes all available analyses with an interactive menu
 """
 
 import subprocess
 import sys
 from pathlib import Path
 
-# Carpeta donde está este script (09_Pandas); los análisis se ejecutan desde aquí
+# Folder where this script is located (09_Pandas); analyses are executed from here
 CARPETA_PANDAS = Path(__file__).resolve().parent
 
 def mostrar_menu():
-    """Muestra el menú principal de opciones"""
+    """Shows the main options menu"""
     print("\n" + "=" * 80)
     print("SISTEMA DE ANÁLISIS DE RENDIMIENTO ESTUDIANTIL")
     print("=" * 80)
@@ -52,7 +62,7 @@ def mostrar_menu():
     print("\n" + "=" * 80)
 
 def ejecutar_programa(nombre_archivo):
-    """Ejecuta un programa de análisis específico"""
+    """Executes a specific analysis program"""
     try:
         print(f"\n\nEjecutando {nombre_archivo}...")
         print("-" * 80)
@@ -73,7 +83,7 @@ def ejecutar_programa(nombre_archivo):
         print(f"\n✗ Error: {e}")
 
 def ejecutar_todos():
-    """Ejecuta todos los análisis disponibles"""
+    """Executes all available analyses"""
     programas = [
         ('analisis_general.py', 'Análisis General'),
         ('analisis_por_genero.py', 'Análisis por Género'),
@@ -99,7 +109,7 @@ def ejecutar_todos():
     print("=" * 80)
 
 def main():
-    """Función principal del programa"""
+    """Main program function"""
     
     opciones = {
         '1': ('analisis_general.py', 'Análisis General'),

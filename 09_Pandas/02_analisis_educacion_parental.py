@@ -1,13 +1,24 @@
+# -------------------------------------------------
+# File Name: 02_analisis_educacion_parental.py
+# Author: Florentino Báez
+# Date: Pandas
+# Description: Parental Education Level Analysis.
+#              Examines how parental education level impacts
+#              student performance. Compares college-educated
+#              vs non-college parents, ranks education levels,
+#              and identifies high-performing students.
+# -------------------------------------------------
+
 """
-Análisis de Rendimiento según Nivel Educativo de los Padres
-Examina cómo el nivel educativo de los padres afecta el rendimiento estudiantil
+Parental Education Level Analysis
+Examines how parental education level affects student performance
 """
 
 import pandas as pd
 import numpy as np
 
 def analisis_por_educacion_parental(archivo_csv):
-    """Analiza el impacto del nivel educativo de los padres en el rendimiento"""
+    """Analyzes the impact of parental education level on performance"""
     
     df = pd.read_csv(archivo_csv)
     df['average_score'] = df[['math score', 'reading score', 'writing score']].mean(axis=1)
@@ -16,7 +27,7 @@ def analisis_por_educacion_parental(archivo_csv):
     print("ANÁLISIS DE RENDIMIENTO SEGÚN NIVEL EDUCATIVO DE LOS PADRES")
     print("=" * 90)
     
-    # Distribución de niveles educativos
+    # Distribution of educational levels
     print("\n🎓 DISTRIBUCIÓN DE NIVELES EDUCATIVOS PARENTALES")
     print("-" * 90)
     distribucion = df['parental level of education'].value_counts().sort_values(ascending=False)
@@ -24,7 +35,7 @@ def analisis_por_educacion_parental(archivo_csv):
         porcentaje = (count / len(df)) * 100
         print(f"{nivel:25}: {count:3d} estudiantes ({porcentaje:5.2f}%)")
     
-    # Ordenar niveles educativos de menor a mayor
+    # Order educational levels from lowest to highest
     orden_educativo = [
         'some high school',
         'high school',
@@ -34,10 +45,10 @@ def analisis_por_educacion_parental(archivo_csv):
         "master's degree"
     ]
     
-    # Filtrar solo los niveles que existen en los datos
+    # Filter only levels that exist in the data
     niveles_disponibles = [n for n in orden_educativo if n in df['parental level of education'].unique()]
     
-    # Promedios por nivel educativo
+    # Averages by educational level
     print("\n\n📊 PROMEDIO DE CALIFICACIONES POR NIVEL EDUCATIVO PARENTAL")
     print("-" * 90)
     print(f"{'Nivel Educativo':25} {'Matemáticas':>12} {'Lectura':>12} {'Escritura':>12} {'Promedio':>12}")
@@ -61,7 +72,7 @@ def analisis_por_educacion_parental(archivo_csv):
         
         print(f"{nivel:25} {math_avg:12.2f} {reading_avg:12.2f} {writing_avg:12.2f} {total_avg:12.2f}")
     
-    # Análisis de tendencias
+    # Trend analysis
     print("\n\n📈 TENDENCIA: NIVEL EDUCATIVO vs RENDIMIENTO")
     print("-" * 90)
     
@@ -73,7 +84,7 @@ def analisis_por_educacion_parental(archivo_csv):
         print(f"Menor rendimiento promedio:  {peor_nivel['nivel']:25} ({peor_nivel['total']:.2f})")
         print(f"Diferencia:                  {mejor_nivel['total'] - peor_nivel['total']:.2f} puntos")
     
-    # Comparación: con estudios universitarios vs sin estudios universitarios
+    # Comparison: college-educated vs non-college parents
     print("\n\n🎯 COMPARACIÓN: ESTUDIOS UNIVERSITARIOS vs NO UNIVERSITARIOS")
     print("-" * 90)
     
@@ -99,7 +110,7 @@ def analisis_por_educacion_parental(archivo_csv):
         diferencia = df_uni['average_score'].mean() - df_no_uni['average_score'].mean()
         print(f"\n  → Diferencia a favor de estudios universitarios: {diferencia:.2f} puntos")
     
-    # Estudiantes destacados por nivel educativo
+    # Outstanding students by educational level
     print("\n\n🏆 ESTUDIANTES CON PROMEDIO ≥80 POR NIVEL EDUCATIVO")
     print("-" * 90)
     
