@@ -9,21 +9,12 @@
 
 import pandas as pd
 import numpy as np
+from pathlib import Path
 
 # -------------------------------------------------
 # Create Iris DataFrame with at least 15 rows, 3 species, some NaN values
 # -------------------------------------------------
-np.random.seed(42)
-n = 18
-df = pd.DataFrame({
-    "sepal_length": [5.1, 4.9, 4.7, np.nan, 5.0, 5.4, 4.6, 5.0, 4.4, 4.9, 5.4, 4.8, np.nan, 5.8, 5.7, 5.4, 5.1, 5.7],
-    "sepal_width": [3.5, 3.0, 3.2, 3.1, 3.6, 3.9, 3.4, 3.4, 2.9, 3.1, 3.7, 3.0, 3.4, 2.7, 3.0, 2.9, 3.5, 2.8],
-    "petal_length": [1.4, 1.4, 1.3, 1.5, 1.4, 1.7, 1.4, 1.5, 1.4, 1.5, 1.5, 1.4, 1.7, 5.1, 5.4, 4.8, 4.5, 5.1],
-    "petal_width": [0.2, 0.2, 0.2, np.nan, 0.2, 0.4, 0.3, 0.2, 0.2, 0.1, 0.2, 0.1, 0.2, 1.9, 2.0, 1.8, 1.0, 1.9],
-    "species": ["setosa", "setosa", "setosa", "setosa", "setosa", "setosa",
-                "versicolor", "versicolor", "versicolor", "versicolor", "versicolor", "versicolor",
-                "virginica", "virginica", "virginica", "virginica", "virginica", "virginica"]
-})
+df = pd.read_csv(Path(__file__).parent / "iris.csv")
 print("Original Iris DataFrame:")
 print(df)
 print("Shape before any deletion:", df.shape)

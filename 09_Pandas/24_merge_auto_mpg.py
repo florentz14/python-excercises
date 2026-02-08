@@ -8,23 +8,10 @@
 # -------------------------------------------------
 
 import pandas as pd
+from pathlib import Path
 
-# Create first DataFrame: car performance data (at least 10 cars)
-df_cars = pd.DataFrame({
-    "car_name": ["chevrolet chevelle", "buick skylark", "plymouth satellite", "amc rebel sst", "ford torino", "ford galaxie", "chevrolet impala", "plymouth fury", "pontiac catalina", "amc ambassador"],
-    "mpg": [18.0, 15.0, 18.0, 16.0, 17.0, 15.0, 14.0, 14.0, 14.0, 15.0],
-    "cylinders": [8, 8, 8, 8, 8, 8, 8, 8, 8, 8],
-    "displacement": [307.0, 350.0, 318.0, 304.0, 302.0, 351.0, 400.0, 383.0, 400.0, 390.0],
-    "horsepower": [130.0, 165.0, 150.0, 150.0, 140.0, 153.0, 175.0, 170.0, 175.0, 190.0],
-})
-
-# Create second DataFrame: origin and specs (at least 8 cars, some overlapping)
-df_origin = pd.DataFrame({
-    "car_name": ["chevrolet chevelle", "buick skylark", "plymouth satellite", "amc rebel sst", "ford torino", "toyota corolla", "honda civic", "datsun 510"],
-    "origin": ["USA", "USA", "USA", "USA", "USA", "Japan", "Japan", "Japan"],
-    "model_year": [70, 70, 70, 70, 70, 70, 70, 70],
-    "weight": [3504, 3693, 3436, 3433, 3449, 2200, 2100, 2050],
-})
+df_cars = pd.read_csv(Path(__file__).parent / "auto_mpg_cars.csv")
+df_origin = pd.read_csv(Path(__file__).parent / "auto_mpg_origin.csv")
 
 print("=" * 60)
 print("DF_CARS (car_name, mpg, cylinders, displacement, horsepower)")

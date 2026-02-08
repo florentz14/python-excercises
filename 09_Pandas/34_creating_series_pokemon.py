@@ -50,14 +50,8 @@ print()
 # -------------------------------------------------
 # Creating DataFrame from dict of lists (at least 15 Pokemon)
 # -------------------------------------------------
-df_pokemon = pd.DataFrame({
-    "name": pokemon_names,
-    "type": list(pokemon_types.values()),
-    "hp": [35, 78, 45, 44, 55, 106, 60, 91, 160, 70, 72, 100, 80, 68, 80],
-    "attack": [55, 84, 49, 48, 55, 110, 65, 134, 110, 110, 95, 134, 120, 65, 135],
-    "defense": [40, 78, 49, 65, 50, 90, 60, 95, 65, 70, 67, 110, 70, 65, 130],
-    "speed": [90, 100, 45, 43, 55, 130, 110, 80, 30, 90, 122, 61, 80, 80, 70]
-})
+csv_path = Path(__file__).parent / "pokemon.csv"
+df_pokemon = pd.read_csv(csv_path)
 print("DataFrame from dict of lists:")
 print(df_pokemon)
 print()

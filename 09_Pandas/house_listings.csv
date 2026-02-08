@@ -1,0 +1,11 @@
+property_id,address,bedrooms,bathrooms,sqft,price,neighborhood
+101,100 Oak St,3,2,1800,350000,Downtown
+102,200 Pine Ave,4,3,2400,480000,Riverside
+103,300 Elm Rd,2,1,1200,220000,Downtown
+104,400 Maple Dr,5,4,3200,620000,Hillside
+105,500 Cedar Ln,3,2,1600,310000,Riverside
+106,600 Birch St,4,3,2200,445000,Downtown
+107,700 Spruce Ave,2,2,1100,195000,Uptown
+108,800 Willow Rd,4,3,2500,510000,Hillside
+109,900 Ash Dr,3,2,1900,380000,Uptown
+110,1000 Oak St,5,4,3000,590000,Riverside

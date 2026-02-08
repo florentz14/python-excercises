@@ -9,29 +9,13 @@
 
 import pandas as pd
 import matplotlib.pyplot as plt
+from pathlib import Path
 
 # Create retail DataFrame: InvoiceNo, InvoiceDate, Description, Quantity, UnitPrice, CustomerID, Country
 # At least 15 rows with dates
-data = {
-    "InvoiceNo": ["1001", "1002", "1003", "1004", "1005", "1006", "1007", "1008", "1009", "1010",
-                  "1011", "1012", "1013", "1014", "1015", "1016"],
-    "InvoiceDate": pd.to_datetime([
-        "2024-01-02", "2024-01-02", "2024-01-03", "2024-01-03", "2024-01-05",
-        "2024-01-05", "2024-01-07", "2024-01-07", "2024-01-08", "2024-01-10",
-        "2024-01-10", "2024-01-12", "2024-01-12", "2024-01-14", "2024-01-14", "2024-01-15"
-    ]),
-    "Description": [
-        "Whiteboard Markers", "Stapler", "Notebook A4", "Pen Pack", "Desk Lamp",
-        "Whiteboard Markers", "Notebook A4", "Stapler", "Pen Pack", "Desk Lamp",
-        "Notebook A4", "Whiteboard Markers", "Stapler", "Pen Pack", "Desk Lamp", "Notebook A4"
-    ],
-    "Quantity": [2, 1, 5, 3, 1, 4, 2, 2, 6, 1, 3, 2, 1, 4, 2, 2],
-    "UnitPrice": [3.50, 12.00, 4.25, 8.00, 25.00, 3.50, 4.25, 12.00, 8.00, 25.00, 4.25, 3.50, 12.00, 8.00, 25.00, 4.25],
-    "CustomerID": [101, 102, 101, 103, 104, 102, 105, 103, 101, 104, 106, 102, 103, 105, 104, 106],
-    "Country": ["UK", "Germany", "UK", "France", "UK", "Germany", "France", "Germany", "UK", "UK", "France", "Germany", "France", "France", "UK", "Germany"]
-}
-
-df = pd.DataFrame(data)
+csv_path = Path(__file__).parent / "online_retail.csv"
+df = pd.read_csv(csv_path)
+df["InvoiceDate"] = pd.to_datetime(df["InvoiceDate"])
 
 # Calculate TotalPrice = Quantity * UnitPrice
 df["TotalPrice"] = df["Quantity"] * df["UnitPrice"]

@@ -8,50 +8,10 @@
 # -------------------------------------------------
 
 import pandas as pd
+from pathlib import Path
 
-# Create sample alcohol consumption data by country and continent (no external CSV)
-alcohol_data = {
-    "country": [
-        "USA",
-        "Germany",
-        "France",
-        "Japan",
-        "Brazil",
-        "Australia",
-        "Italy",
-        "UK",
-        "Spain",
-        "Nigeria",
-        "South Africa",
-        "Russia",
-        "China",
-        "Mexico",
-        "Canada",
-    ],
-    "continent": [
-        "North America",
-        "Europe",
-        "Europe",
-        "Asia",
-        "South America",
-        "Oceania",
-        "Europe",
-        "Europe",
-        "Europe",
-        "Africa",
-        "Africa",
-        "Europe",
-        "Asia",
-        "North America",
-        "North America",
-    ],
-    "beer_servings": [249, 346, 127, 77, 245, 261, 85, 219, 284, 42, 225, 247, 79, 238, 240],
-    "spirit_servings": [100, 117, 151, 136, 145, 58, 42, 106, 112, 5, 76, 326, 192, 55, 122],
-    "wine_servings": [84, 175, 370, 16, 16, 107, 237, 167, 112, 1, 59, 73, 8, 7, 97],
-    "total_litres": [8.7, 11.8, 12.2, 7.0, 8.2, 10.4, 6.5, 11.6, 10.0, 10.1, 9.3, 11.5, 5.0, 5.5, 8.9],
-}
-
-df = pd.DataFrame(alcohol_data)
+csv_path = Path(__file__).parent / "alcohol_consumption.csv"
+df = pd.read_csv(csv_path)
 
 # Group by continent and calculate mean of all numeric columns
 print("=== GROUP BY continent: mean of numeric columns ===")

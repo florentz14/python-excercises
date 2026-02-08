@@ -9,39 +9,9 @@
 
 import pandas as pd
 import numpy as np
+from pathlib import Path
 
-# Create sample US baby names DataFrame with Name, Year, Gender, Count, State
-# At least 20 rows spanning 2010-2020, both M and F
-data = {
-    "Name": [
-        "Emma", "Liam", "Olivia", "Noah", "Ava", "Oliver", "Sophia", "Elijah",
-        "Isabella", "William", "Mia", "James", "Charlotte", "Benjamin", "Amelia",
-        "Lucas", "Harper", "Henry", "Evelyn", "Alexander", "Emma", "Liam",
-        "Olivia", "Noah", "Ava"
-    ],
-    "Year": [
-        2010, 2010, 2010, 2010, 2010, 2011, 2011, 2011, 2011, 2011,
-        2015, 2015, 2015, 2015, 2015, 2018, 2018, 2018, 2018, 2018,
-        2020, 2020, 2020, 2020, 2020
-    ],
-    "Gender": [
-        "F", "M", "F", "M", "F", "M", "F", "M", "F", "M",
-        "F", "M", "F", "M", "F", "M", "F", "M", "F", "M",
-        "F", "M", "F", "M", "F"
-    ],
-    "Count": [
-        25000, 22000, 23000, 21000, 20000, 24500, 22800, 21500, 22000, 20800,
-        26500, 24000, 25500, 23500, 24800, 28000, 26000, 25500, 25200, 25000,
-        29000, 27000, 27500, 26500, 26800
-    ],
-    "State": [
-        "CA", "CA", "TX", "TX", "NY", "CA", "TX", "NY", "FL", "FL",
-        "CA", "TX", "NY", "CA", "TX", "NY", "CA", "FL", "TX", "NY",
-        "CA", "TX", "NY", "FL", "CA"
-    ]
-}
-
-df = pd.DataFrame(data)
+df = pd.read_csv(Path(__file__).parent / "us_baby_names.csv")
 
 print("=" * 60)
 print("US BABY NAMES - STATISTICAL ANALYSIS")

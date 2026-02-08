@@ -9,65 +9,11 @@
 # -------------------------------------------------
 
 import pandas as pd
+from pathlib import Path
 
-# Create sample Chipotle order data inline (no external CSV)
-orders_data = {
-    "order_id": [1, 1, 1, 2, 2, 3, 3, 4, 5, 5, 6, 7, 8, 9, 10],
-    "quantity": [1, 1, 2, 1, 1, 2, 1, 1, 1, 1, 3, 1, 2, 1, 1],
-    "item_name": [
-        "Chicken Bowl",
-        "Chips and Guacamole",
-        "Chicken Bowl",
-        "Steak Burrito",
-        "Chips",
-        "Chicken Bowl",
-        "Coca-Cola",
-        "Veggie Bowl",
-        "Barbacoa Bowl",
-        "Chips and Guacamole",
-        "Chicken Bowl",
-        "Carnitas Burrito",
-        "Steak Bowl",
-        "Chips",
-        "Chicken Salad",
-    ],
-    "choice_description": [
-        "[Tomatillo-Red Chili, Rice, Black Beans]",
-        "[Fresh Tomato Salsa]",
-        "[Tomatillo-Green Chili, Rice, Pinto Beans]",
-        "[Tomatillo-Red Chili, Rice, Black Beans, Guacamole]",
-        "[Fresh Tomato Salsa]",
-        "[Tomatillo-Red Chili, Rice, Fajita Veggies]",
-        "[N/A]",
-        "[Tomatillo-Green Chili, Rice, Fajita Veggies]",
-        "[Tomatillo-Red Chili, Rice, Black Beans]",
-        "[Fresh Tomato Salsa]",
-        "[Tomatillo-Red Chili, Rice, Black Beans]",
-        "[Tomatillo-Red Chili, Rice, Black Beans, Guacamole]",
-        "[Tomatillo-Green Chili, Rice, Fajita Veggies]",
-        "[Fresh Tomato Salsa]",
-        "[Tomatillo-Red Chili, Rice, Black Beans]",
-    ],
-    "item_price": [
-        "$8.49",
-        "$4.45",
-        "$8.49",
-        "$11.75",
-        "$2.15",
-        "$8.49",
-        "$2.25",
-        "$8.49",
-        "$9.25",
-        "$4.45",
-        "$8.49",
-        "$10.98",
-        "$11.25",
-        "$2.15",
-        "$8.99",
-    ],
-}
-
-df = pd.DataFrame(orders_data)
+# Load Chipotle order data from the CSV file (same folder as this script)
+csv_path = Path(__file__).parent / "chipotle_orders.csv"
+df = pd.read_csv(csv_path)
 
 # Print dataset shape (rows, columns)
 print("=== SHAPE ===")

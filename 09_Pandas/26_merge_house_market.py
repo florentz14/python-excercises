@@ -9,39 +9,11 @@
 
 import pandas as pd
 import numpy as np
+from pathlib import Path
 
-# Create first DataFrame: property listings (10 rows)
-df_listings = pd.DataFrame({
-    "property_id": [101, 102, 103, 104, 105, 106, 107, 108, 109, 110],
-    "address": [
-        "100 Oak St", "200 Pine Ave", "300 Elm Rd", "400 Maple Dr", "500 Cedar Ln",
-        "600 Birch St", "700 Spruce Ave", "800 Willow Rd", "900 Ash Dr", "1000 Oak St",
-    ],
-    "bedrooms": [3, 4, 2, 5, 3, 4, 2, 4, 3, 5],
-    "bathrooms": [2, 3, 1, 4, 2, 3, 2, 3, 2, 4],
-    "sqft": [1800, 2400, 1200, 3200, 1600, 2200, 1100, 2500, 1900, 3000],
-    "price": [350000, 480000, 220000, 620000, 310000, 445000, 195000, 510000, 380000, 590000],
-})
-
-# Add neighborhood column to df_listings for merging
-df_listings["neighborhood"] = ["Downtown", "Riverside", "Downtown", "Hillside", "Riverside", "Downtown", "Uptown", "Hillside", "Uptown", "Riverside"]
-
-# Create second DataFrame: neighborhood info (6 neighborhoods)
-df_neighborhoods = pd.DataFrame({
-    "neighborhood": ["Downtown", "Riverside", "Hillside", "Uptown", "Midtown", "Lakeside"],
-    "city": ["Springfield", "Springfield", "Springfield", "Springfield", "Springfield", "Springfield"],
-    "median_income": [55000, 62000, 85000, 48000, 72000, 78000],
-    "crime_rate": [4.2, 2.8, 1.1, 5.0, 2.5, 1.8],
-    "school_rating": [7, 8, 9, 6, 8, 9],
-})
-
-# Create third DataFrame: sales history (8 rows, some properties sold multiple times)
-df_sales = pd.DataFrame({
-    "property_id": [101, 102, 103, 105, 106, 107, 108, 108],
-    "sale_date": ["2023-01-15", "2023-02-20", "2023-03-10", "2023-04-05", "2023-05-12", "2023-06-01", "2023-07-18", "2022-08-01"],
-    "sale_price": [340000, 475000, 215000, 305000, 438000, 190000, 505000, 495000],
-    "buyer_type": ["first_time", "investor", "first_time", "first_time", "investor", "first_time", "investor", "investor"],
-})
+df_listings = pd.read_csv(Path(__file__).parent / "house_listings.csv")
+df_neighborhoods = pd.read_csv(Path(__file__).parent / "house_neighborhoods.csv")
+df_sales = pd.read_csv(Path(__file__).parent / "house_sales.csv")
 
 print("=" * 60)
 print("DF_LISTINGS (with neighborhood)")

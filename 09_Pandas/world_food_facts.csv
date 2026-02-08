@@ -1,0 +1,13 @@
+product_name,brands,categories,countries,energy_100g,fat_100g,carbohydrates_100g,proteins_100g,salt_100g,nutrition_grade
+Organic Whole Milk,FarmFresh,Dairy,United States,266.0,3.3,4.8,3.2,0.1,b
+Dark Chocolate Bar,CocoaDeluxe,Snacks,Belgium,546.0,31.0,56.0,5.5,0.02,d
+Greek Yogurt,YogurtCo,Dairy,Greece,97.0,0.7,3.6,9.0,0.04,a
+Whole Grain Bread,BakeryBest,Bakery,Germany,246.0,3.2,49.0,9.0,1.1,b
+Orange Juice,,Beverages,United States,45.0,0.2,10.4,0.7,,c
+Cheddar Cheese,CheeseMaster,Dairy,United Kingdom,402.0,33.0,1.3,25.0,1.8,d
+Peanut Butter,NutSpread,Spreads,United States,598.0,50.0,20.0,25.0,0.6,d
+Tomato Ketchup,SauceCo,Condiments,Netherlands,112.0,0.1,27.0,1.8,2.7,d
+Corn Flakes,CerealCo,Cereals,United Kingdom,376.0,0.9,84.0,7.0,0.7,
+Salmon Fillet,,Seafood,Norway,,13.0,0.0,20.0,0.1,a
+Honey,BeeNatural,Sweeteners,Spain,304.0,0.0,82.0,0.3,0.0,c
+Olive Oil,MediterraneanOil,Oils,Italy,884.0,100.0,0.0,0.0,0.0,

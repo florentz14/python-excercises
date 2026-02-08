@@ -8,48 +8,14 @@
 # -------------------------------------------------
 
 import pandas as pd
+from pathlib import Path
 
-# Create sample Chipotle order data inline (no external CSV)
-orders_data = {
-    "order_id": [1, 1, 2, 2, 3, 4, 5, 5, 6, 7, 8, 9, 10, 11, 12],
-    "quantity": [1, 2, 1, 1, 1, 3, 1, 1, 2, 1, 1, 2, 1, 1, 1],
-    "item_name": [
-        "Chicken Bowl",
-        "Steak Burrito",
-        "Chicken Bowl",
-        "Chips and Guacamole",
-        "Veggie Bowl",
-        "Chicken Bowl",
-        "Barbacoa Bowl",
-        "Carnitas Burrito",
-        "Chicken Bowl",
-        "Steak Bowl",
-        "Chips",
-        "Chicken Bowl",
-        "Chicken Salad",
-        "Steak Burrito",
-        "Coca-Cola",
-    ],
-    "item_price": [
-        8.49,
-        11.75,
-        8.49,
-        4.45,
-        8.49,
-        8.49,
-        9.25,
-        10.98,
-        8.49,
-        11.25,
-        2.15,
-        8.49,
-        8.99,
-        11.75,
-        2.25,
-    ],
-}
+# Load Chipotle order data from the CSV file (same folder as this script)
+csv_path = Path(__file__).parent / "chipotle_orders.csv"
+df = pd.read_csv(csv_path)
 
-df = pd.DataFrame(orders_data)
+# Convert item_price from string "$8.49" to float 8.49
+df["item_price"] = df["item_price"].str.replace("$", "").astype(float)
 
 # Filter items with price > 10
 print("=== FILTER: item_price > 10 ===")

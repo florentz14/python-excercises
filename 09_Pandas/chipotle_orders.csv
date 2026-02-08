@@ -1,0 +1,16 @@
+order_id,quantity,item_name,choice_description,item_price
+1,1,Chicken Bowl,"[Tomatillo-Red Chili, Rice, Black Beans]",$8.49
+1,1,Chips and Guacamole,[Fresh Tomato Salsa],$4.45
+1,2,Chicken Bowl,"[Tomatillo-Green Chili, Rice, Pinto Beans]",$8.49
+2,1,Steak Burrito,"[Tomatillo-Red Chili, Rice, Black Beans, Guacamole]",$11.75
+2,1,Chips,[Fresh Tomato Salsa],$2.15
+3,2,Chicken Bowl,"[Tomatillo-Red Chili, Rice, Fajita Veggies]",$8.49
+3,1,Coca-Cola,[N/A],$2.25
+4,1,Veggie Bowl,"[Tomatillo-Green Chili, Rice, Fajita Veggies]",$8.49
+5,1,Barbacoa Bowl,"[Tomatillo-Red Chili, Rice, Black Beans]",$9.25
+5,1,Chips and Guacamole,[Fresh Tomato Salsa],$4.45
+6,3,Chicken Bowl,"[Tomatillo-Red Chili, Rice, Black Beans]",$8.49
+7,1,Carnitas Burrito,"[Tomatillo-Red Chili, Rice, Black Beans, Guacamole]",$10.98
+8,2,Steak Bowl,"[Tomatillo-Green Chili, Rice, Fajita Veggies]",$11.25
+9,1,Chips,[Fresh Tomato Salsa],$2.15
+10,1,Chicken Salad,"[Tomatillo-Red Chili, Rice, Black Beans]",$8.99

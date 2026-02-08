@@ -8,20 +8,10 @@
 # -------------------------------------------------
 
 import pandas as pd
+from pathlib import Path
 
-# Create sample user demographic data (inline, no external CSV)
-data = {
-    "user_id": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15],
-    "age": [25, 32, 28, 45, 22, 38, 29, 51, 27, 34, 41, 23, 36, 44, 30],
-    "gender": ["M", "F", "M", "M", "F", "F", "M", "F", "M", "F", "M", "F", "M", "F", "M"],
-    "occupation": [
-        "engineer", "teacher", "engineer", "doctor", "student",
-        "teacher", "engineer", "doctor", "student", "teacher",
-        "doctor", "student", "engineer", "nurse", "nurse",
-    ],
-    "zip_code": ["10001", "10002", "10003", "10004", "10005", "10006", "10007", "10008", "10009", "10010", "10011", "10012", "10013", "10014", "10015"],
-}
-df = pd.DataFrame(data)
+csv_path = Path(__file__).parent / "grouping_occupation_users.csv"
+df = pd.read_csv(csv_path, dtype={"zip_code": str})
 
 print("=" * 60)
 print("ORIGINAL DATAFRAME (user_id, age, gender, occupation, zip_code)")

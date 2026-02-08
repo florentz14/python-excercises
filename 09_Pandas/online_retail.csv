@@ -1,0 +1,17 @@
+InvoiceNo,InvoiceDate,Description,Quantity,UnitPrice,CustomerID,Country
+1001,2024-01-02,Whiteboard Markers,2,3.50,101,UK
+1002,2024-01-02,Stapler,1,12.00,102,Germany
+1003,2024-01-03,Notebook A4,5,4.25,101,UK
+1004,2024-01-03,Pen Pack,3,8.00,103,France
+1005,2024-01-05,Desk Lamp,1,25.00,104,UK
+1006,2024-01-05,Whiteboard Markers,4,3.50,102,Germany
+1007,2024-01-07,Notebook A4,2,4.25,105,France
+1008,2024-01-07,Stapler,2,12.00,103,Germany
+1009,2024-01-08,Pen Pack,6,8.00,101,UK
+1010,2024-01-10,Desk Lamp,1,25.00,104,UK
+1011,2024-01-10,Notebook A4,3,4.25,106,France
+1012,2024-01-12,Whiteboard Markers,2,3.50,102,Germany
+1013,2024-01-12,Stapler,1,12.00,103,France
+1014,2024-01-14,Pen Pack,4,8.00,105,France
+1015,2024-01-14,Desk Lamp,2,25.00,104,UK
+1016,2024-01-15,Notebook A4,2,4.25,106,Germany

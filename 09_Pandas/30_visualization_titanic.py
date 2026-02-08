@@ -10,25 +10,12 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
+from pathlib import Path
 
 # Create Titanic DataFrame: PassengerId, Survived, Pclass, Name, Sex, Age, Fare, Embarked
 # At least 20 rows
-data = {
-    "PassengerId": range(1, 26),
-    "Survived": [0, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 1, 1, 0, 1, 0, 1, 0, 1, 1, 0, 1],
-    "Pclass": [3, 1, 3, 1, 3, 2, 3, 2, 3, 1, 2, 3, 3, 1, 2, 1, 3, 2, 3, 1, 2, 2, 1, 3, 2],
-    "Name": [f"Passenger_{i}" for i in range(1, 26)],
-    "Sex": ["male", "female", "female", "female", "male", "male", "male", "female", "female", "female",
-            "male", "male", "female", "male", "female", "female", "male", "female", "male", "female",
-            "male", "female", "female", "male", "female"],
-    "Age": [22, 38, 26, 35, 28, 45, 30, 25, 19, 40, 32, 28, 22, 50, 36, 24, 29, 18, 34, 42, 27, 31, 21, 33, 17],
-    "Fare": [7.25, 71.28, 7.92, 53.1, 8.05, 13.5, 8.46, 21.07, 7.13, 30.0, 13.0, 8.03, 7.22, 26.55, 12.47,
-             27.72, 9.68, 11.34, 7.89, 26.0, 10.5, 15.75, 31.0, 7.75, 14.45],
-    "Embarked": ["S", "C", "S", "S", "S", "S", "Q", "S", "S", "C", "S", "S", "S", "S", "S",
-                 "C", "S", "S", "Q", "S", "S", "S", "C", "S", "S"]
-}
-
-df = pd.DataFrame(data)
+csv_path = Path(__file__).parent / "titanic.csv"
+df = pd.read_csv(csv_path)
 
 print("Titanic data (sample):")
 print(df.head())

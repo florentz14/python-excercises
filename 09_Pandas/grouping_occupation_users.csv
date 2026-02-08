@@ -1,0 +1,16 @@
+user_id,age,gender,occupation,zip_code
+1,25,M,engineer,10001
+2,32,F,teacher,10002
+3,28,M,engineer,10003
+4,45,M,doctor,10004
+5,22,F,student,10005
+6,38,F,teacher,10006
+7,29,M,engineer,10007
+8,51,F,doctor,10008
+9,27,M,student,10009
+10,34,F,teacher,10010
+11,41,M,doctor,10011
+12,23,F,student,10012
+13,36,M,engineer,10013
+14,44,F,nurse,10014
+15,30,M,nurse,10015

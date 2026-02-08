@@ -8,21 +8,10 @@
 # -------------------------------------------------
 
 import pandas as pd
+from pathlib import Path
 
-# Create sample student alcohol consumption data (inline, no external CSV)
-data = {
-    "school": ["GP", "GP", "MS", "MS", "GP", "MS", "GP", "GP", "MS", "GP", "MS", "GP", "GP", "MS", "GP"],
-    "sex": ["F", "F", "M", "M", "F", "M", "F", "M", "M", "F", "F", "M", "F", "M", "M"],
-    "age": [18, 17, 15, 15, 16, 16, 18, 17, 15, 16, 17, 18, 16, 15, 17],
-    "studytime": [2, 2, 2, 3, 2, 1, 1, 2, 3, 2, 1, 4, 2, 2, 3],
-    "failures": [0, 0, 3, 0, 0, 0, 0, 0, 2, 0, 0, 0, 1, 1, 0],
-    "Dalc": [1, 1, 3, 1, 2, 4, 1, 2, 5, 1, 3, 2, 2, 4, 2],
-    "Walc": [1, 1, 4, 1, 2, 5, 1, 3, 5, 2, 4, 3, 3, 5, 3],
-    "G1": [5, 5, 8, 14, 10, 10, 10, 11, 6, 12, 10, 12, 10, 8, 14],
-    "G2": [6, 5, 9, 14, 10, 11, 10, 11, 8, 12, 11, 12, 11, 9, 14],
-    "G3": [6, 6, 10, 14, 10, 11, 10, 11, 9, 12, 11, 12, 11, 10, 14],
-}
-df = pd.DataFrame(data)
+csv_path = Path(__file__).parent / "students_alcohol.csv"
+df = pd.read_csv(csv_path)
 
 print("=" * 60)
 print("ORIGINAL DATAFRAME (school, sex, age, studytime, failures, Dalc, Walc, G1, G2, G3)")

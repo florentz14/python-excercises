@@ -8,28 +8,10 @@
 # -------------------------------------------------
 
 import pandas as pd
+from pathlib import Path
 
-# Create sample military unit data (inline, no external CSV)
-data = {
-    "regiment": [
-        "Nighthawks", "Nighthawks", "Nighthawks", "Nighthawks", "Nighthawks",
-        "Scouts", "Scouts", "Scouts", "Scouts", "Scouts", "Scouts",
-        "Dragoons", "Dragoons", "Dragoons", "Dragoons",
-    ],
-    "company": [
-        "1st", "1st", "2nd", "2nd", "1st",
-        "1st", "1st", "2nd", "2nd", "1st", "2nd",
-        "1st", "1st", "2nd", "2nd",
-    ],
-    "name": [
-        "Miller", "Jacobson", "Ali", "Milner", "Cooze",
-        "Pacheco", "Rivers", "Lewis", "Setzer", "Snape", "Phillips",
-        "Smith", "Jones", "Williams", "Brown",
-    ],
-    "preTestScore": [4, 24, 31, 2, 3, 4, 24, 31, 2, 3, 4, 24, 31, 2, 3],
-    "postTestScore": [25, 94, 57, 62, 70, 88, 72, 65, 78, 82, 91, 55, 68, 73, 80],
-}
-df = pd.DataFrame(data)
+csv_path = Path(__file__).parent / "regiment.csv"
+df = pd.read_csv(csv_path)
 
 print("=" * 60)
 print("ORIGINAL DATAFRAME (regiment, company, name, preTestScore, postTestScore)")

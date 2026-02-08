@@ -1,0 +1,16 @@
+country,continent,beer_servings,spirit_servings,wine_servings,total_litres
+USA,North America,249,100,84,8.7
+Germany,Europe,346,117,175,11.8
+France,Europe,127,151,370,12.2
+Japan,Asia,77,136,16,7.0
+Brazil,South America,245,145,16,8.2
+Australia,Oceania,261,58,107,10.4
+Italy,Europe,85,42,237,6.5
+UK,Europe,219,106,167,11.6
+Spain,Europe,284,112,112,10.0
+Nigeria,Africa,42,5,1,10.1
+South Africa,Africa,225,76,59,9.3
+Russia,Europe,247,326,73,11.5
+China,Asia,79,192,8,5.0
+Mexico,North America,238,55,7,5.5
+Canada,North America,240,122,97,8.9

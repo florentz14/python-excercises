@@ -8,31 +8,10 @@
 # -------------------------------------------------
 
 import pandas as pd
+from pathlib import Path
 
-# Create Euro 2012-style DataFrame with European teams and realistic stats (no external CSV)
-euro_data = {
-    "Team": [
-        "Germany",
-        "Spain",
-        "Italy",
-        "England",
-        "France",
-        "Portugal",
-        "Netherlands",
-        "Greece",
-        "Croatia",
-        "Poland",
-    ],
-    "Goals": [10, 12, 6, 5, 3, 6, 2, 5, 4, 2],
-    "Shots on target": [32, 43, 22, 18, 12, 20, 8, 14, 15, 9],
-    "Shots off target": [18, 12, 25, 22, 15, 18, 12, 20, 16, 14],
-    "Shooting Accuracy": [64.0, 78.0, 47.0, 45.0, 44.0, 53.0, 40.0, 41.0, 48.0, 39.0],
-    "Goals-to-shots": [0.20, 0.22, 0.13, 0.13, 0.11, 0.16, 0.10, 0.15, 0.13, 0.09],
-    "Passes": [5876, 6142, 4512, 3982, 3921, 4692, 3580, 3210, 3850, 2980],
-    "Pass Accuracy": [90.0, 91.0, 88.0, 86.0, 85.0, 87.0, 82.0, 79.0, 84.0, 78.0],
-}
-
-df = pd.DataFrame(euro_data)
+csv_path = Path(__file__).parent / "euro12.csv"
+df = pd.read_csv(csv_path)
 
 # Select only Team and Goals columns
 print("=== SELECT: Team and Goals columns ===")

@@ -8,49 +8,10 @@
 # -------------------------------------------------
 
 import pandas as pd
+from pathlib import Path
 
-# Create sample fictional army data (no external CSV)
-army_data = {
-    "regiment": [
-        "Nighthawks",
-        "Nighthawks",
-        "Dragoons",
-        "Dragoons",
-        "Scouts",
-        "Scouts",
-        "Nighthawks",
-        "Dragoons",
-        "Scouts",
-        "Nighthawks",
-        "Dragoons",
-        "Scouts",
-        "Nighthawks",
-        "Dragoons",
-        "Scouts",
-    ],
-    "company": ["1st", "1st", "2nd", "1st", "2nd", "1st", "2nd", "2nd", "1st", "2nd", "1st", "2nd", "1st", "1st", "2nd"],
-    "name": [
-        "Miller",
-        "Johnson",
-        "Williams",
-        "Brown",
-        "Jones",
-        "Garcia",
-        "Davis",
-        "Rodriguez",
-        "Martinez",
-        "Wilson",
-        "Anderson",
-        "Taylor",
-        "Thomas",
-        "Moore",
-        "Jackson",
-    ],
-    "preTestScore": [4, 24, 31, 2, 3, 55, 62, 70, 58, 45, 52, 48, 38, 65, 72],
-    "postTestScore": [25, 94, 57, 62, 70, 80, 85, 90, 88, 75, 78, 82, 68, 92, 95],
-}
-
-df = pd.DataFrame(army_data)
+csv_path = Path(__file__).parent / "fictional_army.csv"
+df = pd.read_csv(csv_path)
 
 # Filter soldiers with preTestScore > 50
 print("=== FILTER: preTestScore > 50 ===")

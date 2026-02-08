@@ -9,26 +9,12 @@
 
 import pandas as pd
 import matplotlib.pyplot as plt
+from pathlib import Path
 
 # Create Chipotle order DataFrame with item_name, quantity, item_price, item_category
 # Approximately 15 rows
-data = {
-    "item_name": [
-        "Chicken Bowl", "Chicken Burrito", "Steak Bowl", "Carnitas Bowl",
-        "Barbacoa Bowl", "Chicken Bowl", "Veggie Bowl", "Steak Burrito",
-        "Chicken Bowl", "Carnitas Burrito", "Chicken Salad", "Steak Bowl",
-        "Chicken Burrito", "Veggie Burrito", "Barbacoa Burrito"
-    ],
-    "quantity": [2, 1, 1, 2, 1, 3, 1, 1, 2, 1, 1, 2, 1, 1, 1],
-    "item_price": [8.49, 7.49, 9.49, 8.99, 9.49, 8.49, 7.99, 9.49, 8.49, 8.99, 8.29, 9.49, 7.49, 7.99, 9.49],
-    "item_category": [
-        "Bowls", "Burritos", "Bowls", "Bowls", "Bowls", "Bowls", "Bowls",
-        "Burritos", "Bowls", "Burritos", "Salads", "Bowls", "Burritos",
-        "Burritos", "Burritos"
-    ]
-}
-
-df = pd.DataFrame(data)
+csv_path = Path(__file__).parent / "chipotle_viz.csv"
+df = pd.read_csv(csv_path)
 
 # Ensure item_price is numeric (in case stored as string in real data)
 df["item_price"] = pd.to_numeric(df["item_price"], errors="coerce")

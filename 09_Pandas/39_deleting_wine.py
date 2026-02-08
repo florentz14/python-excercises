@@ -9,22 +9,12 @@
 
 import pandas as pd
 import numpy as np
+from pathlib import Path
 
 # -------------------------------------------------
 # Create Wine DataFrame: at least 15 rows, some NaN and some duplicate rows
 # -------------------------------------------------
-np.random.seed(88)
-df = pd.DataFrame({
-    "wine_type": ["red", "white", "red", "white", "red", "white", "red", "white", "red", "white",
-                  "red", "white", "red", "white", "red", "white", "red", "white"],
-    "fixed_acidity": [7.4, 6.8, 7.8, 6.2, np.nan, 7.0, 7.2, 6.5, 7.9, 6.1, 7.4, 6.8, 7.8, 6.2, 7.0, 6.4, 7.5, 6.9],
-    "volatile_acidity": [0.70, 0.35, 0.88, 0.40, 0.76, 0.30, 0.65, 0.38, 0.72, 0.32, 0.70, 0.35, 0.88, 0.40, 0.68, 0.33, 0.71, 0.36],
-    "citric_acid": [0.00, 0.45, 0.00, 0.50, 0.04, 0.42, 0.02, 0.48, np.nan, 0.44, 0.00, 0.45, 0.00, 0.50, 0.03, 0.46, 0.01, 0.47],
-    "residual_sugar": [1.9, 8.2, 2.6, 7.5, 2.2, 9.1, 1.8, 8.0, 2.4, 7.8, 1.9, 8.2, 2.6, 7.5, 2.0, 8.5, 2.1, 7.9],
-    "alcohol": [9.4, 9.8, 9.8, 10.2, 10.1, 9.5, 9.6, 10.5, 10.8, 9.9, 9.4, 9.8, 9.8, 10.2, 15.5, 16.2, 9.7, 10.0],
-    "quality": [5, 6, 5, 6, np.nan, 7, 5, 6, 4, 5, 5, 6, 5, 6, 5, 6, 5, 6],
-    "pH": [3.51, 3.20, 3.26, 3.18, 3.45, 3.22, 3.48, 3.15, 3.30, 3.25, 3.51, 3.20, 3.26, 3.18, 3.40, 3.19, 3.50, 3.21]
-})
+df = pd.read_csv(Path(__file__).parent / "wine_quality.csv")
 print("Original Wine DataFrame:")
 print(df)
 print("Shape:", df.shape)

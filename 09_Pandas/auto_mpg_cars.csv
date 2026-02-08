@@ -1,0 +1,11 @@
+car_name,mpg,cylinders,displacement,horsepower
+chevrolet chevelle,18.0,8,307.0,130.0
+buick skylark,15.0,8,350.0,165.0
+plymouth satellite,18.0,8,318.0,150.0
+amc rebel sst,16.0,8,304.0,150.0
+ford torino,17.0,8,302.0,140.0
+ford galaxie,15.0,8,351.0,153.0
+chevrolet impala,14.0,8,400.0,175.0
+plymouth fury,14.0,8,383.0,170.0
+pontiac catalina,14.0,8,400.0,175.0
+amc ambassador,15.0,8,390.0,190.0

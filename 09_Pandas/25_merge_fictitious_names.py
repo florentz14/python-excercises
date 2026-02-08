@@ -8,30 +8,11 @@
 # -------------------------------------------------
 
 import pandas as pd
+from pathlib import Path
 
-# Create first DataFrame: personal info (10 rows)
-df_personal = pd.DataFrame({
-    "first_name": ["John", "Jane", "Bob", "Alice", "Charlie", "Diana", "Eve", "Frank", "Grace", "Henry"],
-    "last_name": ["Smith", "Doe", "Jones", "Brown", "Wilson", "Taylor", "Lee", "White", "Harris", "Martin"],
-    "age": [28, 34, 45, 29, 52, 31, 27, 38, 41, 33],
-    "city": ["NYC", "LA", "Chicago", "Houston", "Phoenix", "NYC", "Boston", "Seattle", "Denver", "Miami"],
-})
-
-# Create second DataFrame: work info (8 rows, some overlapping with personal)
-df_work = pd.DataFrame({
-    "first_name": ["John", "Jane", "Bob", "Alice", "Charlie", "Diana", "Eve", "Frank"],
-    "last_name": ["Smith", "Doe", "Jones", "Brown", "Wilson", "Taylor", "Lee", "White"],
-    "company": ["Acme", "TechCorp", "GlobalInc", "StartupX", "BigCo", "DesignCo", "DataCo", "CloudCo"],
-    "salary": [75000, 92000, 110000, 68000, 125000, 85000, 72000, 95000],
-})
-
-# Create third DataFrame: education (7 rows, some overlapping)
-df_education = pd.DataFrame({
-    "first_name": ["John", "Jane", "Bob", "Alice", "Charlie", "Diana", "Eve"],
-    "last_name": ["Smith", "Doe", "Jones", "Brown", "Wilson", "Taylor", "Lee"],
-    "degree": ["BS", "MS", "PhD", "BS", "MBA", "MS", "BS"],
-    "university": ["State U", "MIT", "Stanford", "State U", "Harvard", "Berkeley", "Boston U"],
-})
+df_personal = pd.read_csv(Path(__file__).parent / "fictitious_personal.csv")
+df_work = pd.read_csv(Path(__file__).parent / "fictitious_work.csv")
+df_education = pd.read_csv(Path(__file__).parent / "fictitious_education.csv")
 
 print("=" * 60)
 print("DF_PERSONAL (first_name, last_name, age, city)")

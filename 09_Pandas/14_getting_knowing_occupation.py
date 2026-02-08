@@ -8,49 +8,11 @@
 # -------------------------------------------------
 
 import pandas as pd
+from pathlib import Path
 
-# Create sample user/occupation data inline (no external CSV)
-users_data = {
-    "user_id": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15],
-    "age": [24, 53, 23, 24, 33, 42, 57, 36, 29, 53, 39, 28, 47, 45, 31],
-    "gender": ["M", "F", "M", "M", "F", "M", "M", "F", "F", "M", "F", "M", "F", "M", "F"],
-    "occupation": [
-        "technician",
-        "educator",
-        "engineer",
-        "student",
-        "engineer",
-        "educator",
-        "executive",
-        "administrator",
-        "student",
-        "lawyer",
-        "technician",
-        "engineer",
-        "educator",
-        "engineer",
-        "lawyer",
-    ],
-    "zip_code": [
-        "85711",
-        "94043",
-        "32067",
-        "43537",
-        "15213",
-        "98101",
-        "91344",
-        "05201",
-        "01002",
-        "90703",
-        "30329",
-        "06511",
-        "29205",
-        "55106",
-        "43202",
-    ],
-}
-
-df = pd.DataFrame(users_data)
+# Load user/occupation data from the CSV file (same folder as this script)
+csv_path = Path(__file__).parent / "occupation_users.csv"
+df = pd.read_csv(csv_path, dtype={"zip_code": str})
 
 # Show first 5 rows
 print("=== HEAD (first 5 rows) ===")

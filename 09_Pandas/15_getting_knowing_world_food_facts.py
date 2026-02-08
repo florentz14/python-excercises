@@ -8,88 +8,12 @@
 # -------------------------------------------------
 
 import pandas as pd
-import numpy as np
+from pathlib import Path
 
-# Create sample food product data with some NaN values (no external CSV)
-food_data = {
-    "product_name": [
-        "Organic Whole Milk",
-        "Dark Chocolate Bar",
-        "Greek Yogurt",
-        "Whole Grain Bread",
-        "Orange Juice",
-        "Cheddar Cheese",
-        "Peanut Butter",
-        "Tomato Ketchup",
-        "Corn Flakes",
-        "Salmon Fillet",
-        "Honey",
-        "Olive Oil",
-    ],
-    "brands": [
-        "FarmFresh",
-        "CocoaDeluxe",
-        "YogurtCo",
-        "BakeryBest",
-        np.nan,
-        "CheeseMaster",
-        "NutSpread",
-        "SauceCo",
-        "CerealCo",
-        np.nan,
-        "BeeNatural",
-        "MediterraneanOil",
-    ],
-    "categories": [
-        "Dairy",
-        "Snacks",
-        "Dairy",
-        "Bakery",
-        "Beverages",
-        "Dairy",
-        "Spreads",
-        "Condiments",
-        "Cereals",
-        "Seafood",
-        "Sweeteners",
-        "Oils",
-    ],
-    "countries": [
-        "United States",
-        "Belgium",
-        "Greece",
-        "Germany",
-        "United States",
-        "United Kingdom",
-        "United States",
-        "Netherlands",
-        "United Kingdom",
-        "Norway",
-        "Spain",
-        "Italy",
-    ],
-    "energy_100g": [266.0, 546.0, 97.0, 246.0, 45.0, 402.0, 598.0, 112.0, 376.0, np.nan, 304.0, 884.0],
-    "fat_100g": [3.3, 31.0, 0.7, 3.2, 0.2, 33.0, 50.0, 0.1, 0.9, 13.0, 0.0, 100.0],
-    "carbohydrates_100g": [4.8, 56.0, 3.6, 49.0, 10.4, 1.3, 20.0, 27.0, 84.0, 0.0, 82.0, 0.0],
-    "proteins_100g": [3.2, 5.5, 9.0, 9.0, 0.7, 25.0, 25.0, 1.8, 7.0, 20.0, 0.3, 0.0],
-    "salt_100g": [0.1, 0.02, 0.04, 1.1, np.nan, 1.8, 0.6, 2.7, 0.7, 0.1, 0.0, 0.0],
-    "nutrition_grade": [
-        "b",
-        "d",
-        "a",
-        "b",
-        "c",
-        "d",
-        "d",
-        "d",
-        np.nan,
-        "a",
-        "c",
-        np.nan,
-    ],
-}
-
-df = pd.DataFrame(food_data)
+# Load food product data from the CSV file (same folder as this script)
+# Empty cells in the CSV are automatically read as NaN by pandas
+csv_path = Path(__file__).parent / "world_food_facts.csv"
+df = pd.read_csv(csv_path)
 
 # Print shape
 print("=== SHAPE ===")

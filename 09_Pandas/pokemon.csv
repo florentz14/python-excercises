@@ -1,0 +1,16 @@
+name,type,hp,attack,defense,speed
+Pikachu,Electric,35,55,40,90
+Charizard,Fire/Flying,78,84,78,100
+Bulbasaur,Grass/Poison,45,49,49,45
+Squirtle,Water,44,48,65,43
+Eevee,Normal,55,55,50,55
+Mewtwo,Psychic,106,110,90,130
+Gengar,Ghost/Poison,60,65,60,110
+Dragonite,Dragon/Flying,91,134,95,80
+Snorlax,Normal,160,110,65,30
+Lucario,Fighting/Steel,70,110,70,90
+Greninja,Water/Dark,72,95,67,122
+Tyranitar,Rock/Dark,100,134,110,61
+Blaziken,Fire/Fighting,80,120,70,80
+Gardevoir,Psychic/Fairy,68,65,65,80
+Metagross,Steel/Psychic,80,135,130,70
