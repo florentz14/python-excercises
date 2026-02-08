@@ -1,3 +1,13 @@
+# -------------------------------------------------
+# File Name: 19_complement.py
+# Author: Florentino Báez
+# Date: Variables - Sets
+# Description: Complement of Sets.
+#              Computes A' = U - A (complement relative to a
+#              universal set). Verifies the Law of Double
+#              Complement: (A')' = A, and A ∪ A' = U.
+# -------------------------------------------------
+
 """
 Exercise 6: Complement of Sets
 This exercise demonstrates the complement operation.
@@ -17,6 +27,7 @@ def main():
     
     # a) Calculate A' (complement of A with respect to U)
     # The complement is U - A (all elements in U that are not in A)
+    # A' contains everything in the universal set except elements in A
     A_complement = U - A
     print(f"a) A' (complement of A) = {sorted(A_complement)}")
     print(f"   A' = U - A = {sorted(A_complement)}")
@@ -24,10 +35,12 @@ def main():
     
     # b) Calculate (A')' (complement of the complement)
     # This should give us back the original set A
+    # Demonstrates the Law of Double Complement: (A')' = A
     A_double_complement = U - A_complement
     print(f"b) (A')' (complement of complement) = {sorted(A_double_complement)}")
     
     # Verify that (A')' = A
+    # This confirms the mathematical property
     is_equal = A_double_complement == A
     print(f"   Is (A')' = A? {is_equal}")
     

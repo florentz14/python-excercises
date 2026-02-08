@@ -1,22 +1,36 @@
-"""
-Listas - Ejemplo 16: Listas anidadas y copiar (shallow / deep)
-================================================================
-Matriz como lista de listas; copy() vs copy.deepcopy().
-"""
+# -------------------------------------------------
+# File Name: 19_anidadas_copiar.py
+# Author: Florentino Báez
+# Date: Variables - Lists
+# Description: Nested Lists and Copying (Shallow vs Deep).
+#              A matrix is a list of lists. copy() creates
+#              a shallow copy (inner lists are shared).
+#              copy.deepcopy() creates a fully independent
+#              copy so changes don't propagate.
+# -------------------------------------------------
 
-print("=== Listas anidadas (matriz) ===")
+import copy
+
+print("=== Nested lists (matrix) ===")
+# A 3x3 matrix represented as a list of lists
 matriz = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
-print("Matriz 3x3:")
+print("3x3 Matrix:")
 for fila in matriz:
     print(f"  {fila}")
-print(f"Elemento [1][2]: {matriz[1][2]}\n")
+print(f"Element [1][2]: {matriz[1][2]}\n")   # Row 1, Column 2 -> 6
 
-print("=== Copiar listas ===")
-import copy
+print("=== Copying lists ===")
 original = [1, 2, 3, [4, 5]]
+
+# Shallow copy: inner list is still shared (same reference)
 copia_superficial = original.copy()
+
+# Deep copy: completely independent, inner list is duplicated
 copia_profunda = copy.deepcopy(original)
+
+# Modify the nested list inside the original
 original[3].append(6)
-print(f"Original: {original}")
-print(f"Copia superficial (se ve afectada): {copia_superficial}")
-print(f"Copia profunda (no cambia): {copia_profunda}")
+
+print(f"Original:                          {original}")
+print(f"Shallow copy (affected by change): {copia_superficial}")
+print(f"Deep copy (not affected):          {copia_profunda}")

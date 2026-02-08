@@ -1,9 +1,13 @@
-# ---------------------------------------------------------------------------
-# Sets - 04: Remove Set Items
-# ---------------------------------------------------------------------------
-# Description: Remove items from a set using remove(), discard(), pop(),
-#              clear(), or del. Each method behaves differently.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 04_remove_set_items.py
+# Author: Florentino Báez
+# Date: Variables - Sets
+# Description: Remove Items from a Set.
+#              remove() raises KeyError if missing.
+#              discard() silently ignores missing items.
+#              pop() removes an arbitrary element.
+#              clear() empties the set; del deletes it.
+# -------------------------------------------------
 
 fruits = {"apple", "banana", "cherry", "pineapple", "grape", "mango", "kiwi"}
 print("Original:", fruits)
@@ -28,7 +32,7 @@ except KeyError as e:
 fruits.discard("cherry")
 print("\nAfter discard('cherry'):", fruits)
 
-# No error if item doesn't exist
+# No error if item doesn't exist — safer than remove()
 fruits.discard("pear")  # Does nothing, no error
 print("After discard('pear'): no error, set unchanged")
 
@@ -48,11 +52,10 @@ print("After pop():", fruits)
 temp_set = {"a", "b", "c"}
 print(f"\nBefore clear: {temp_set}")
 temp_set.clear()
-print(f"After clear: {temp_set}")
-# Output: set()
+print(f"After clear: {temp_set}")    # Output: set()
 
 # =========================================================================
-# del - Deletes the set variable entirely
+# del - Deletes the set variable entirely from memory
 # =========================================================================
 
 temp_set2 = {1, 2, 3}
@@ -65,7 +68,7 @@ except NameError as e:
 # Output: name 'temp_set2' is not defined
 
 # =========================================================================
-# Comparison summary
+# Method comparison summary
 # =========================================================================
 print("\n" + "=" * 50)
 print("Method Comparison:")
@@ -77,7 +80,7 @@ print("clear()    -> Empties the set (variable remains)")
 print("del set    -> Deletes the variable entirely")
 
 # =========================================================================
-# Practical: safe removal pattern
+# Practical: safe removal patterns
 # =========================================================================
 colors = {"red", "blue", "green", "yellow"}
 
@@ -88,11 +91,11 @@ if to_remove in colors:
 else:
     print(f"\n'{to_remove}' not in set, skipping")
 
-# Safe pattern 2: just use discard (simpler)
-colors.discard("purple")  # Always safe
+# Safe pattern 2: just use discard (simpler and always safe)
+colors.discard("purple")
 
-# Remove multiple items
+# Remove multiple items using set difference assignment (-=)
 items_to_remove = {"red", "blue", "orange"}
-colors -= items_to_remove  # Set difference assignment
+colors -= items_to_remove  # Equivalent to colors.difference_update(...)
 print(f"After removing multiple: {colors}")
 # Output: {'green', 'yellow'}

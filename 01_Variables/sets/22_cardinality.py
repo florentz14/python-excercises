@@ -1,3 +1,13 @@
+# -------------------------------------------------
+# File Name: 22_cardinality.py
+# Author: Florentino Báez
+# Date: Variables - Sets
+# Description: Cardinality (Size) of Sets.
+#              Calculates n(A), n(B), n(A ∪ B) and verifies
+#              the Inclusion-Exclusion Principle:
+#              n(A ∪ B) = n(A) + n(B) - n(A ∩ B).
+# -------------------------------------------------
+
 """
 Exercise 9: Cardinality (Size) of Sets
 This exercise demonstrates set cardinality and the inclusion-exclusion principle.
@@ -5,9 +15,9 @@ Cardinality refers to the number of elements in a set.
 """
 
 def main():
-    # Define two sets
-    A = {2, 4, 6, 8}
-    B = {1, 3, 5, 7, 9}
+    # Define two disjoint sets (no common elements)
+    A = {2, 4, 6, 8}  # Even numbers
+    B = {1, 3, 5, 7, 9}  # Odd numbers
     
     print("Exercise 9: Cardinality of Sets")
     print("=" * 50)
@@ -16,12 +26,13 @@ def main():
     print()
     
     # a) Calculate n(A), n(B), and n(A ∪ B)
-    n_A = len(A)
-    n_B = len(B)
+    # Cardinality (size) is the number of elements in a set
+    n_A = len(A)  # Cardinality of set A
+    n_B = len(B)  # Cardinality of set B
     
-    # Calculate the union
-    A_union_B = A | B
-    n_A_union_B = len(A_union_B)
+    # Calculate the union to find total unique elements
+    A_union_B = A | B  # Union combines all elements from both sets
+    n_A_union_B = len(A_union_B)  # Cardinality of the union
     
     print("a) Cardinalities:")
     print(f"   n(A) = |A| = {n_A}")
@@ -31,8 +42,9 @@ def main():
     print()
     
     # b) Check if n(A ∪ B) = n(A) + n(B)
-    sum_cardinalities = n_A + n_B
-    are_equal = (n_A_union_B == sum_cardinalities)
+    # This equality only holds when sets are disjoint (no overlap)
+    sum_cardinalities = n_A + n_B  # Simple sum of individual cardinalities
+    are_equal = (n_A_union_B == sum_cardinalities)  # Check if equality holds
     
     print("b) Does n(A ∪ B) = n(A) + n(B)?")
     print(f"   n(A) + n(B) = {n_A} + {n_B} = {sum_cardinalities}")
@@ -40,9 +52,9 @@ def main():
     print(f"   Are they equal? {are_equal}")
     print()
     
-    # Calculate intersection to explain
-    A_intersect_B = A & B
-    n_A_intersect_B = len(A_intersect_B)
+    # Calculate intersection to explain why equality holds or doesn't
+    A_intersect_B = A & B  # Find common elements between A and B
+    n_A_intersect_B = len(A_intersect_B)  # Cardinality of intersection
     
     print("   Why?")
     if n_A_intersect_B == 0:

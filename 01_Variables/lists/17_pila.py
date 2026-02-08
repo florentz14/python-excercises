@@ -1,30 +1,39 @@
-# Listas como Pila (Stack - LIFO: Last In, First Out)
-print("=== Lista como pila (LIFO) ===")
-print("Operaciones: append() para agregar, pop() para sacar")
+# -------------------------------------------------
+# File Name: 17_pila.py
+# Author: Florentino Báez
+# Date: Variables - Lists
+# Description: List as a Stack (LIFO).
+#              Last In, First Out. Use append() to push
+#              and pop() to remove from the top. Peek
+#              with list[-1] without removing.
+# -------------------------------------------------
+
+print("=== List as a stack (LIFO) ===")
+print("Operations: append() to push, pop() to remove from top")
 print()
 
 pila = []
-print(f"Pila vacía: {pila}")
+print(f"Empty stack: {pila}")
 
-# Push (agregar al final)
+# Push — add to the top (end of list)
 pila.append(1)
 pila.append(2)
 pila.append(3)
-print(f"Después de append(1), append(2), append(3): {pila}")
+print(f"After append(1), append(2), append(3): {pila}")
 
-# Pop (sacar del final)
+# Pop — remove from the top (end of list)
 ultimo = pila.pop()
-print(f"pop() retorna: {ultimo}")
-print(f"Pila después de pop: {pila}")
+print(f"pop() returns: {ultimo}")
+print(f"Stack after pop: {pila}")
 
-# Más operaciones
+# More push/pop operations
 pila.append(4)
 pila.append(5)
-print(f"Después de append(4), append(5): {pila}")
+print(f"After append(4), append(5): {pila}")
 
 print(f"pop(): {pila.pop()}")
 print(f"pop(): {pila.pop()}")
-print(f"Pila final: {pila}")
+print(f"Final stack: {pila}")
 
-# Peek (ver el tope sin sacar)
-print(f"\nVer el tope sin sacar (peek): pila[-1] = {pila[-1]}")
+# Peek — view the top element without removing it
+print(f"\nPeek (top without removing): pila[-1] = {pila[-1]}")

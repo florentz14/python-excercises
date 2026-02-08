@@ -1,3 +1,13 @@
+# -------------------------------------------------
+# File Name: 26_run_all_exercises.py
+# Author: Florentino Báez
+# Date: Variables - Sets
+# Description: Master Script — Run All Set Theory Exercises.
+#              Executes all 12 set theory exercise files in
+#              sequence using subprocess, displaying output
+#              and tracking success/failure for each.
+# -------------------------------------------------
+
 """
 Master Script - Run All Set Theory Exercises
 This script executes all 12 set theory exercises in sequence.
@@ -16,6 +26,7 @@ def run_exercise(file_path):
     Args:
         file_path: Path to the Python exercise file
     """
+    # Format exercise name for display (convert underscores to spaces, title case)
     exercise_name = file_path.stem.replace('_', ' ').title()
     
     print("\n" + "=" * 70)
@@ -23,7 +34,10 @@ def run_exercise(file_path):
     print("=" * 70)
     
     try:
-        # Run the exercise file
+        # Run the exercise file using subprocess
+        # capture_output=True captures both stdout and stderr
+        # text=True returns output as string instead of bytes
+        # timeout=10 prevents hanging if exercise has infinite loop
         result = subprocess.run(
             [sys.executable, str(file_path)],
             capture_output=True,
@@ -31,16 +45,16 @@ def run_exercise(file_path):
             timeout=10
         )
         
-        # Display output
+        # Display output from the exercise
         if result.stdout:
             print(result.stdout)
         
-        # Display errors if any
+        # Display errors if any occurred during execution
         if result.stderr:
             print("ERRORS:", file=sys.stderr)
             print(result.stderr, file=sys.stderr)
         
-        # Check return code
+        # Check return code: 0 means success, non-zero means error
         if result.returncode != 0:
             print(f"⚠ Exercise exited with code {result.returncode}")
         else:
@@ -69,9 +83,10 @@ def main():
     input("Press ENTER to begin...")
     
     # Get the directory containing this script
+    # This ensures exercises are found regardless of where script is run from
     script_dir = Path(__file__).parent
     
-    # List of all exercise files in order
+    # List of all exercise files in order (must match actual filenames)
     exercise_files = [
         "exercise_01_notation_and_elements.py",
         "exercise_02_set_comprehension.py",
@@ -87,10 +102,11 @@ def main():
         "exercise_12_disjoint_sets.py",
     ]
     
-    # Run each exercise
+    # Run each exercise in sequence
     for exercise_file in exercise_files:
-        file_path = script_dir / exercise_file
+        file_path = script_dir / exercise_file  # Construct full path
         
+        # Check if file exists before attempting to run
         if file_path.exists():
             run_exercise(file_path)
         else:

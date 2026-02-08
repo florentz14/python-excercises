@@ -1,3 +1,13 @@
+# -------------------------------------------------
+# File Name: 16_union.py
+# Author: Florentino Báez
+# Date: Variables - Sets
+# Description: Union of Sets.
+#              Computes A ∪ B using the | operator or union()
+#              method. Counts elements and explains how
+#              duplicates are handled in the union result.
+# -------------------------------------------------
+
 """
 Exercise 3: Union of Sets
 This exercise demonstrates the union operation between sets.
@@ -5,7 +15,7 @@ The union combines all unique elements from both sets.
 """
 
 def main():
-    # Define two sets
+    # Define two sets with some overlapping elements
     A = {1, 3, 5, 7}
     B = {2, 3, 4, 5}
     
@@ -17,11 +27,13 @@ def main():
     
     # a) Calculate A ∪ B (union of A and B)
     # The union operator | or the union() method can be used
+    # Union contains all elements from both sets, duplicates removed
     union_AB = A | B  # Alternative: A.union(B)
     print(f"a) A ∪ B = {sorted(union_AB)}")
     print()
     
     # b) Count the number of elements in A ∪ B
+    # The length gives us the cardinality of the union set
     num_elements = len(union_AB)
     print(f"b) Number of elements in A ∪ B: {num_elements}")
     

@@ -1,10 +1,13 @@
-# ---------------------------------------------------------------------------
-# Sets - 06: Join Sets
-# ---------------------------------------------------------------------------
-# Description: Combine sets using union, intersection, difference, and
-#              symmetric difference. Each operation can be done with
-#              operators (|, &, -, ^) or methods.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 06_join_sets.py
+# Author: Florentino Báez
+# Date: Variables - Sets
+# Description: Join / Combine Sets.
+#              Union (|), Intersection (&), Difference (-),
+#              and Symmetric Difference (^). Each has both
+#              an operator and a method form, plus in-place
+#              update variants that modify the set directly.
+# -------------------------------------------------
 
 set1 = {"apple", "banana", "cherry"}
 set2 = {"banana", "grape", "mango", "cherry"}
@@ -22,7 +25,7 @@ print(f"\nUnion (|):      {union_op}")
 print(f"Union (method): {union_method}")
 # Output: {'apple', 'banana', 'cherry', 'grape', 'mango'}
 
-# Union of multiple sets
+# Union of multiple sets at once
 set3 = {"kiwi", "pear"}
 multi_union = set1 | set2 | set3
 print(f"Multi union:    {multi_union}")
@@ -43,12 +46,10 @@ print(f"Intersection (method): {inter_method}")
 # Operator: -    Method: .difference()
 diff_op = set1 - set2
 diff_method = set1.difference(set2)
-print(f"\nDifference (set1-set2):       {diff_op}")
-# Output: {'apple'}
+print(f"\nDifference (set1-set2):       {diff_op}")     # {'apple'}
 
 diff_reverse = set2 - set1
-print(f"Difference (set2-set1):       {diff_reverse}")
-# Output: {'grape', 'mango'}
+print(f"Difference (set2-set1):       {diff_reverse}")  # {'grape', 'mango'}
 
 # =========================================================================
 # SYMMETRIC DIFFERENCE - Items in either set, but NOT in both
@@ -61,33 +62,33 @@ print(f"Symmetric diff (method): {sym_method}")
 # Output: {'apple', 'grape', 'mango'}
 
 # =========================================================================
-# UPDATE methods (modify the set in-place)
+# IN-PLACE update methods (modify the set directly)
 # =========================================================================
 print("\n" + "=" * 50)
 print("In-place update methods:")
 
-# update() - adds all items (union in-place)
+# update() — union in-place (adds all items)
 a = {1, 2, 3}
 a.update({3, 4, 5})
 print(f"\nupdate (union in-place): {a}")           # {1, 2, 3, 4, 5}
 
-# intersection_update() - keeps only common items
+# intersection_update() — keeps only common items
 b = {1, 2, 3, 4, 5}
 b.intersection_update({2, 4, 6})
 print(f"intersection_update:     {b}")              # {2, 4}
 
-# difference_update() - removes items found in another set
+# difference_update() — removes items found in another set
 c = {1, 2, 3, 4, 5}
 c.difference_update({2, 4})
 print(f"difference_update:       {c}")              # {1, 3, 5}
 
-# symmetric_difference_update()
+# symmetric_difference_update() — keeps only non-common items
 d = {1, 2, 3}
 d.symmetric_difference_update({2, 3, 4})
 print(f"symmetric_diff_update:   {d}")              # {1, 4}
 
 # =========================================================================
-# Summary
+# Quick-reference summary table
 # =========================================================================
 print("\n" + "=" * 50)
 print("| Operation            | Operator | Method                         |")

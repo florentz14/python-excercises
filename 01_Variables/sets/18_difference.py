@@ -1,3 +1,13 @@
+# -------------------------------------------------
+# File Name: 18_difference.py
+# Author: Florentino Báez
+# Date: Variables - Sets
+# Description: Difference of Sets.
+#              Computes M - N and N - M using the - operator or
+#              difference() method. Demonstrates that set
+#              difference is NOT commutative.
+# -------------------------------------------------
+
 """
 Exercise 5: Difference of Sets
 This exercise demonstrates the set difference operation.
@@ -5,7 +15,7 @@ The difference A - B contains elements in A but not in B.
 """
 
 def main():
-    # Define two sets
+    # Define two sets with overlapping elements
     M = {1, 2, 3, 4, 5, 6}
     N = {2, 4, 6, 8}
     
@@ -17,18 +27,21 @@ def main():
     
     # a) Calculate M - N (elements in M but not in N)
     # The difference operator - or the difference() method can be used
+    # Result contains elements that exist in M but not in N
     diff_M_N = M - N  # Alternative: M.difference(N)
     print(f"a) M - N = {sorted(diff_M_N)}")
     print(f"   (Elements in M that are NOT in N)")
     print()
     
     # b) Calculate N - M (elements in N but not in M)
+    # This is the reverse operation, showing non-commutativity
     diff_N_M = N - M  # Alternative: N.difference(M)
     print(f"b) N - M = {sorted(diff_N_M)}")
     print(f"   (Elements in N that are NOT in M)")
     print()
     
     # c) Check if M - N equals N - M
+    # This verifies that set difference is not commutative
     are_equal = diff_M_N == diff_N_M
     print(f"c) Is M - N = N - M? {are_equal}")
     

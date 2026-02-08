@@ -1,3 +1,14 @@
+# -------------------------------------------------
+# File Name: 23_venn_diagram.py
+# Author: Florentino Báez
+# Date: Variables - Sets
+# Description: Venn Diagram Problem — Language Students.
+#              Solves a real-world problem using set theory:
+#              given total students, English, French, and both,
+#              calculates only-English, only-French, and neither.
+#              Includes an ASCII Venn diagram.
+# -------------------------------------------------
+
 """
 Exercise 10: Venn Diagram Problem
 This exercise solves a real-world problem using set theory and the inclusion-exclusion principle.
@@ -25,11 +36,11 @@ def draw_simple_venn():
 
 
 def main():
-    # Given data
-    total_students = 30
-    study_english = 18
-    study_french = 15
-    study_both = 8
+    # Given data: problem setup with total students and language enrollments
+    total_students = 30  # Universal set: all students in the class
+    study_english = 18  # Students studying English (includes those studying both)
+    study_french = 15  # Students studying French (includes those studying both)
+    study_both = 8  # Students studying both languages (intersection)
     
     print("Exercise 10: Venn Diagram - Language Students")
     print("=" * 50)
@@ -41,6 +52,7 @@ def main():
     print()
     
     # a) Students studying only English
+    # Subtract the intersection (both) from total English students
     only_english = study_english - study_both
     print(f"a) Students studying ONLY English:")
     print(f"   Only English = Total English - Both")
@@ -48,6 +60,7 @@ def main():
     print()
     
     # b) Students studying only French
+    # Subtract the intersection (both) from total French students
     only_french = study_french - study_both
     print(f"b) Students studying ONLY French:")
     print(f"   Only French = Total French - Both")
@@ -56,8 +69,9 @@ def main():
     
     # c) Students studying neither language
     # First, find total students studying at least one language
-    at_least_one = only_english + only_french + study_both
-    neither = total_students - at_least_one
+    # This is the union of English and French sets
+    at_least_one = only_english + only_french + study_both  # Union: all language students
+    neither = total_students - at_least_one  # Complement: students not in the union
     
     print(f"c) Students studying NEITHER language:")
     print(f"   Step 1: Students studying at least one language")

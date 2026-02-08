@@ -1,9 +1,15 @@
-# ---------------------------------------------------------------------------
-# Sets - 08: Set Methods (Complete Reference)
-# ---------------------------------------------------------------------------
-# Description: Comprehensive reference of ALL set methods in Python.
-#              Demonstrates each method with practical examples.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 08_set_methods.py
+# Author: Florentino Báez
+# Date: Variables - Sets
+# Description: Complete Set Methods Reference.
+#              Covers every built-in set method: adding
+#              (add, update), removing (remove, discard, pop,
+#              clear), set operations (union, intersection,
+#              difference, symmetric_difference), in-place
+#              variants, comparisons (issubset, issuperset,
+#              isdisjoint), and copy().
+# -------------------------------------------------
 
 # =========================================================================
 # ADDING ELEMENTS
@@ -14,11 +20,11 @@ print("=" * 50)
 
 s = {"apple", "banana"}
 
-# add(elem) - Add a single element
+# add(elem) — Add a single element; ignored if already present
 s.add("cherry")
 print(f"add('cherry'):          {s}")
 
-# update(iterable) - Add multiple elements from iterable
+# update(iterable) — Add all elements from an iterable
 s.update(["grape", "mango"])
 print(f"update(['grape','mango']): {s}")
 
@@ -31,25 +37,25 @@ print("=" * 50)
 
 s = {"apple", "banana", "cherry", "grape", "mango"}
 
-# remove(elem) - Remove element; raises KeyError if not found
+# remove(elem) — Remove element; raises KeyError if not found
 s.remove("banana")
 print(f"remove('banana'):  {s}")
 
-# discard(elem) - Remove element; NO error if not found
-s.discard("pear")  # No error
+# discard(elem) — Remove element; NO error if not found
+s.discard("pear")  # No error even though 'pear' is absent
 print(f"discard('pear'):   {s} (no error)")
 
-# pop() - Remove and return an arbitrary element
+# pop() — Remove and return an arbitrary element
 popped = s.pop()
 print(f"pop() returned:    '{popped}', set: {s}")
 
-# clear() - Remove all elements
+# clear() — Remove all elements, leaving an empty set
 temp = {"a", "b", "c"}
 temp.clear()
 print(f"clear():           {temp}")
 
 # =========================================================================
-# SET OPERATIONS
+# SET OPERATIONS (return new sets, do NOT modify originals)
 # =========================================================================
 print(f"\n{'='*50}")
 print("SET OPERATIONS")
@@ -60,41 +66,41 @@ b = {3, 4, 5, 6}
 print(f"a = {a}")
 print(f"b = {b}")
 
-# union(*others) - Return all unique elements
+# union(*others) — All unique elements from both sets
 print(f"\na.union(b):                    {a.union(b)}")
 
-# intersection(*others) - Return common elements
+# intersection(*others) — Only elements common to both
 print(f"a.intersection(b):             {a.intersection(b)}")
 
-# difference(*others) - Return elements in a but not in b
+# difference(*others) — Elements in a but not in b
 print(f"a.difference(b):               {a.difference(b)}")
 
-# symmetric_difference(other) - Return elements in either but not both
+# symmetric_difference(other) — Elements in either but not both
 print(f"a.symmetric_difference(b):     {a.symmetric_difference(b)}")
 
 # =========================================================================
-# IN-PLACE SET OPERATIONS
+# IN-PLACE SET OPERATIONS (modify the set directly)
 # =========================================================================
 print(f"\n{'='*50}")
 print("IN-PLACE OPERATIONS (modify the set)")
 print("=" * 50)
 
-# update(*others) - Add all elements (union in-place)
+# update(*others) — Union in-place (|=)
 x = {1, 2}
 x.update({2, 3})
 print(f"update (|=):                   {x}")     # {1, 2, 3}
 
-# intersection_update(*others) - Keep only common
+# intersection_update(*others) — Keep only common (&=)
 x = {1, 2, 3, 4}
 x.intersection_update({2, 4, 6})
 print(f"intersection_update (&=):      {x}")     # {2, 4}
 
-# difference_update(*others) - Remove items found in other
+# difference_update(*others) — Remove items found in other (-=)
 x = {1, 2, 3, 4, 5}
 x.difference_update({2, 4})
 print(f"difference_update (-=):        {x}")     # {1, 3, 5}
 
-# symmetric_difference_update(other) - Keep only non-common
+# symmetric_difference_update(other) — Keep only non-common (^=)
 x = {1, 2, 3}
 x.symmetric_difference_update({2, 3, 4})
 print(f"symmetric_difference_update:   {x}")     # {1, 4}
@@ -109,33 +115,33 @@ print("=" * 50)
 c = {1, 2}
 d = {1, 2, 3, 4}
 
-# issubset(other) - Is c a subset of d?
+# issubset(other) — Is every element of c also in d?
 print(f"c = {c}, d = {d}")
 print(f"c.issubset(d):     {c.issubset(d)}")       # True
-print(f"c <= d:            {c <= d}")               # True
+print(f"c <= d:            {c <= d}")               # True  (operator form)
 
-# issuperset(other) - Is d a superset of c?
+# issuperset(other) — Does d contain every element of c?
 print(f"d.issuperset(c):   {d.issuperset(c)}")     # True
 print(f"d >= c:            {d >= c}")               # True
 
-# isdisjoint(other) - No common elements?
+# isdisjoint(other) — Do the sets share NO common elements?
 e = {5, 6, 7}
 print(f"\ne = {e}")
-print(f"c.isdisjoint(e):   {c.isdisjoint(e)}")     # True
-print(f"c.isdisjoint(d):   {c.isdisjoint(d)}")     # False
+print(f"c.isdisjoint(e):   {c.isdisjoint(e)}")     # True  (no overlap)
+print(f"c.isdisjoint(d):   {c.isdisjoint(d)}")     # False (share 1, 2)
 
 # =========================================================================
-# COPY
+# COPY — Creates a shallow copy of the set
 # =========================================================================
 print(f"\n{'='*50}")
 print("COPY")
 print("=" * 50)
 
 original = {1, 2, 3}
-copy_set = original.copy()
+copy_set = original.copy()         # Independent shallow copy
 copy_set.add(4)
-print(f"Original: {original}")  # {1, 2, 3} (unchanged)
-print(f"Copy:     {copy_set}")   # {1, 2, 3, 4}
+print(f"Original: {original}")     # {1, 2, 3} — unchanged
+print(f"Copy:     {copy_set}")     # {1, 2, 3, 4}
 
 # =========================================================================
 # COMPLETE METHOD REFERENCE TABLE

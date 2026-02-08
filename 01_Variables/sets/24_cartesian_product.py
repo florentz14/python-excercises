@@ -1,3 +1,13 @@
+# -------------------------------------------------
+# File Name: 24_cartesian_product.py
+# Author: Florentino Báez
+# Date: Variables - Sets
+# Description: Cartesian Product of Sets (Bonus).
+#              Computes A × B and B × A using itertools.product.
+#              Demonstrates that the Cartesian product is NOT
+#              commutative: A × B ≠ B × A.
+# -------------------------------------------------
+
 """
 Exercise 11: Cartesian Product (Bonus)
 This exercise demonstrates the Cartesian product of two sets.
@@ -19,13 +29,14 @@ def cartesian_product(set_a, set_b):
         Set of tuples representing the Cartesian product
     """
     # Using itertools.product for efficient computation
+    # Sort sets first to ensure consistent ordering in results
     return set(product(sorted(set_a), sorted(set_b)))
 
 
 def main():
-    # Define two sets
-    A = {1, 2}
-    B = {'x', 'y'}
+    # Define two sets with different element types
+    A = {1, 2}  # Set of integers
+    B = {'x', 'y'}  # Set of characters
     
     print("Exercise 11: Cartesian Product (Bonus)")
     print("=" * 50)
@@ -34,6 +45,7 @@ def main():
     print()
     
     # a) Calculate A × B
+    # Cartesian product: all ordered pairs (a, b) where a ∈ A and b ∈ B
     A_cross_B = cartesian_product(A, B)
     print("a) A × B (Cartesian Product of A and B):")
     print(f"   A × B = {{(a, b) | a ∈ A and b ∈ B}}")
@@ -45,6 +57,7 @@ def main():
     print()
     
     # b) Calculate B × A
+    # Note: order matters in Cartesian product, so B × A is different from A × B
     B_cross_A = cartesian_product(B, A)
     print("b) B × A (Cartesian Product of B and A):")
     print(f"   B × A = {{(b, a) | b ∈ B and a ∈ A}}")
@@ -56,6 +69,7 @@ def main():
     print()
     
     # c) Check if A × B = B × A
+    # Cartesian product is NOT commutative (order matters in ordered pairs)
     are_equal = A_cross_B == B_cross_A
     print(f"c) Is A × B = B × A? {are_equal}")
     
