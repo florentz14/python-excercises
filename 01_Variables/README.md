@@ -7,7 +7,7 @@ listas, conjuntos (sets) y tuplas.
 
 ```
 01_Variables/
-|-- tipos_datos/    (6 archivos)  Tipos de datos basicos
+|-- tipos_datos/    (12 archivos)  Tipos de datos basicos
 |-- dictionaries/   (16 archivos)  Diccionarios
 |-- lists/          (20 archivos)  Listas
 |-- sets/           (18 archivos)  Conjuntos (Sets)
@@ -16,7 +16,7 @@ listas, conjuntos (sets) y tuplas.
 
 ## Subcarpetas
 
-### `tipos_datos/` - Tipos de Datos Basicos (6 archivos)
+### `tipos_datos/` - Tipos de Datos Basicos (12 archivos)
 
 | # | Archivo | Contenido |
 |---|---------|-----------|
@@ -26,6 +26,12 @@ listas, conjuntos (sets) y tuplas.
 | 04 | `04_comparacion.py` | Operadores de comparacion |
 | 05 | `05_tipos.py` | Tipos y conversion |
 | 06 | `06_operaciones.py` | Operaciones aritmeticas y logicas |
+| 07 | `07_inputs.py` | input(), conversion de entrada |
+| 08 | `08_conversion.py` | int(), float(), str(), list(), tuple(), set() |
+| 09 | `09_constantes_asignacion.py` | Constantes, asignacion multiple |
+| 10 | `10_none.py` | Tipo None |
+| 11 | `11_print_sep_end.py` | print(sep=, end=) |
+| 12 | `12_membresia.py` | in, not in |
 
 ### `dictionaries/` - Diccionarios (16 archivos)
 
@@ -119,12 +125,12 @@ listas, conjuntos (sets) y tuplas.
 
 | Subcarpeta | Archivos | Tema |
 |------------|----------|------|
-| `tipos_datos/` | 6 | Tipos de datos basicos |
+| `tipos_datos/` | 12 | Tipos de datos basicos |
 | `dictionaries/` | 16 | Diccionarios |
 | `lists/` | 20 | Listas |
 | `sets/` | 18 | Conjuntos (Sets) |
 | `tuples/` | 14 | Tuplas |
-| **Total** | **74** | |
+| **Total** | **80** | |
 
 ## Como ejecutar
 
