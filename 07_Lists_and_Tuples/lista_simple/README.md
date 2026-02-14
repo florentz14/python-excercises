@@ -3,7 +3,7 @@
 Coleccion de archivos individuales que demuestran cada metodo y operacion
 de las listas en Python. Cada archivo es independiente y ejecutable por separado.
 
-## Archivos
+## Archivos (26)
 
 | # | Archivo | Tema | Metodo/Concepto |
 |---|---------|------|-----------------|
@@ -32,6 +32,7 @@ de las listas en Python. Cada archivo es independiente y ejecutable por separado
 | 23 | `23_clear.py` | Vaciar lista | `lista.clear()` |
 | 24 | `24_min_max_sum.py` | Min, Max, Suma | `min()`, `max()`, `sum()` |
 | 25 | `25_in_membership.py` | Operador in | `in`, `not in` |
+| 26 | `26_todo_list.py` | Lista de tareas | Ejemplo practico |
 
 ## Metodos de Lista - Resumen Rapido
 

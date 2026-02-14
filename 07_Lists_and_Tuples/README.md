@@ -6,8 +6,8 @@ Ejercicios de listas y tuplas en Python, organizados en subcarpetas por tema.
 
 ```
 07_Lists_and_Tuples/
-|-- lista_simple/          (25 archivos)  Metodos basicos de listas
-|-- tuplas/                (18 archivos)  Ejercicios de tuplas
+|-- lista_simple/          (26 archivos)  Metodos basicos de listas
+|-- tuplas/                (21 archivos)  Ejercicios de tuplas
 |-- listas_anidadas/       (40 archivos)  Listas anidadas y matrices
 |-- busqueda_y_filtrado/   (64 archivos)  Busqueda, filtrado y conteo
 |-- ordenamiento/          (10 archivos)  Ordenamiento y organizacion
@@ -25,7 +25,7 @@ Archivos individuales que demuestran cada metodo y operacion de las listas:
 `extend()`, `count()`, `index()`, `clear()`, slicing, loops, list comprehension,
 `del`, `len()`, `in`, `min/max/sum`, concatenacion y mas.
 
-### `tuplas/` - Ejercicios de Tuplas (18 archivos)
+### `tuplas/` - Ejercicios de Tuplas (21 archivos)
 
 Operaciones con tuplas: creacion, inmutabilidad, acceso, conversion a lista,
 operador `in`, concatenacion, repeticion, unpacking, ordenamiento por elemento,
@@ -72,15 +72,15 @@ ejercicios variados.
 
 | Subcarpeta | Archivos | Tema |
 |------------|----------|------|
-| `lista_simple/` | 25 | Metodos basicos de listas |
-| `tuplas/` | 18 | Ejercicios de tuplas |
+| `lista_simple/` | 26 | Metodos basicos de listas |
+| `tuplas/` | 21 | Ejercicios de tuplas |
 | `listas_anidadas/` | 40 | Listas anidadas y matrices |
 | `busqueda_y_filtrado/` | 64 | Busqueda, filtrado y conteo |
 | `ordenamiento/` | 10 | Ordenamiento y organizacion |
 | `matematicas/` | 25 | Operaciones matematicas |
 | `funcional_y_avanzado/` | 11 | Programacion funcional |
 | `ejercicios_generales/` | 133 | Manipulacion y ejercicios variados |
-| **Total** | **326** | |
+| **Total** | **332** | |
 
 ## Como ejecutar
 

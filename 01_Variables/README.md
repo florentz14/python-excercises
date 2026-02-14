@@ -1,13 +1,13 @@
 # 01 - Variables y Tipos de Datos
 
-Tipos de datos en Python organizados en subcarpetas: variables basicas, diccionarios,
+Tipos de datos en Python organizados en subcarpetas: tipos de datos basicos, diccionarios,
 listas, conjuntos (sets) y tuplas.
 
 ## Estructura
 
 ```
 01_Variables/
-|-- variables/      (2 archivos)   Variables basicas y numeros complejos
+|-- tipos_datos/    (6 archivos)  Tipos de datos basicos
 |-- dictionaries/   (16 archivos)  Diccionarios
 |-- lists/          (20 archivos)  Listas
 |-- sets/           (18 archivos)  Conjuntos (Sets)
@@ -16,12 +16,16 @@ listas, conjuntos (sets) y tuplas.
 
 ## Subcarpetas
 
-### `variables/` - Variables Basicas (2 archivos)
+### `tipos_datos/` - Tipos de Datos Basicos (6 archivos)
 
 | # | Archivo | Contenido |
 |---|---------|-----------|
 | 01 | `01_complex.py` | Numeros complejos |
 | 02 | `02_variables.py` | int, float, str, bool |
+| 03 | `03_strings.py` | Strings y metodos |
+| 04 | `04_comparacion.py` | Operadores de comparacion |
+| 05 | `05_tipos.py` | Tipos y conversion |
+| 06 | `06_operaciones.py` | Operaciones aritmeticas y logicas |
 
 ### `dictionaries/` - Diccionarios (16 archivos)
 
@@ -115,12 +119,12 @@ listas, conjuntos (sets) y tuplas.
 
 | Subcarpeta | Archivos | Tema |
 |------------|----------|------|
-| `variables/` | 2 | Variables basicas y complejos |
+| `tipos_datos/` | 6 | Tipos de datos basicos |
 | `dictionaries/` | 16 | Diccionarios |
 | `lists/` | 20 | Listas |
 | `sets/` | 18 | Conjuntos (Sets) |
 | `tuples/` | 14 | Tuplas |
-| **Total** | **70** | |
+| **Total** | **74** | |
 
 ## Como ejecutar
 
