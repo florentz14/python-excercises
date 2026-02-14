@@ -21,6 +21,7 @@ from __future__ import annotations
 
 # For timestamp when saving session history to file
 from datetime import datetime
+from pathlib import Path
 
 
 # -------------------------
@@ -229,21 +230,28 @@ def save_histories_to_file(
     deposit_history: list[float],
     withdrawal_history: list[float],
     balance_history: list[float],
-    filename: str = "atm_history.txt"
+    filename: str | Path | None = None
 ) -> None:
     """
     Saves all three histories to a text file before exit.
     Overwrites the file if it already exists. Uses UTF-8 encoding for compatibility.
+    File is saved in the same folder as this script (Baez_Final_Project).
 
     Args:
         deposit_history (list[float]): List of all deposit amounts.
         withdrawal_history (list[float]): List of all withdrawal amounts.
         balance_history (list[float]): List of balance snapshots after each transaction.
-        filename (str): Output file path. Default: "atm_history.txt".
+        filename (str | Path | None): Output file path. Default: atm_history.txt in script's folder.
 
     Returns:
         None
     """
+    # Save in script's folder so file stays in Baez_Final_Project regardless of cwd
+    if filename is None:
+        filename = Path(__file__).parent / "atm_history.txt"
+    else:
+        filename = Path(filename)
+
     timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
     # "w" = write mode (overwrites); encoding="utf-8" for special chars
@@ -276,7 +284,7 @@ def save_histories_to_file(
         else:
             f.write("No balance changes.\n")
 
-    print(f"Histories saved to: {filename}")
+    print(f"Histories saved to: {filename.resolve()}")
 
 
 # -------------------------

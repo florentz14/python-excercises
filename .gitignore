@@ -5,6 +5,7 @@ __pycache__/
 
 # Generated / local data
 atm_history.txt
+!Baez_Final_Project/atm_history.txt
 
 # Environment variables (credentials)
 .env
