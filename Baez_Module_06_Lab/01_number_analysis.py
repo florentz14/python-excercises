@@ -13,10 +13,6 @@
 #              • The average of the numbers in the list
 # -------------------------------------------------
 
-# =============================================================================
-# EXERCISE 1: Number Analysis Program
-# =============================================================================
-
 print("=" * 60)
 print("EXERCISE 1: Number Analysis Program")
 print("=" * 60)
@@ -62,4 +58,7 @@ except Exception as e:
     # Handle any other unexpected errors
     print(f"Error: {e}")
 
-print()
+print() # Print a blank line
+print("=" * 60)
+print("END OF PROGRAM")
+print("=" * 60)

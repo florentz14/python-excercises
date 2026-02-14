@@ -12,10 +12,6 @@
 #              score dropped.
 # -------------------------------------------------
 
-# =============================================================================
-# EXERCISE 3: Exam Grades Program
-# =============================================================================
-
 print("=" * 60)
 print("EXERCISE 3: Exam Grades Program")
 print("=" * 60)
@@ -44,7 +40,7 @@ try:
             else:
                 test_scores.append(score)  # Add score to the list
                 print(
-                    f"    Score {score} added. Total scores: {len(test_scores)}")
+                    f"    Score {score} added. Total scores: {len(test_scores)}") # Display total scores
 
         except ValueError:
             # Handle invalid numeric input (e.g., non-numeric characters)
@@ -55,7 +51,7 @@ try:
         print("\nError: You must enter at least 2 test scores to calculate average with lowest dropped.")
     else:
         # Display all scores
-        print(f"\nAll test scores entered: {test_scores}")
+        print(f"\nAll test scores entered: {test_scores}") # Display all test scores
 
         # Find and remove lowest score
         lowest_score = min(test_scores)  # Find the lowest score
@@ -86,4 +82,7 @@ except Exception as e:
     # Handle any other unexpected errors
     print(f"Error: {e}")
 
-print()
+print() # Print a blank line
+print("=" * 60)
+print("END OF PROGRAM")
+print("=" * 60)

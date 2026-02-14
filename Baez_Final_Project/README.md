@@ -2,6 +2,14 @@
 
 Final Project: ATM Simulation Program.
 
+## Note on try-except Blocks
+
+A `try-except` block has been added to the program. **Reasons:**
+
+1. **Input validation**: `float()` and `int()` raise `ValueError` when the user enters non-numeric input (e.g., letters or empty input). The try-except catches this and displays a friendly error message instead of crashing.
+2. **Robustness**: Prevents the program from terminating unexpectedly due to invalid or unexpected input.
+3. **User experience**: Prompts the user to re-enter valid data rather than exiting with a traceback.
+
 ## Description
 
 Simulates a basic automated teller machine (ATM) with the following features:

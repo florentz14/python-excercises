@@ -254,37 +254,40 @@ def save_histories_to_file(
 
     timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
-    # "w" = write mode (overwrites); encoding="utf-8" for special chars
-    with open(filename, "w", encoding="utf-8") as f:
-        f.write("ATM SESSION HISTORY\n")
-        f.write(f"Saved at: {timestamp}\n")
-        f.write("=" * 50 + "\n\n")
+    try:
+        # "w" = write mode (overwrites); encoding="utf-8" for special chars
+        with open(filename, "w", encoding="utf-8") as f:
+            f.write("ATM SESSION HISTORY\n")
+            f.write(f"Saved at: {timestamp}\n")
+            f.write("=" * 50 + "\n\n")
 
-        f.write("Deposit History:\n")
-        if deposit_history:
-            # Loop: Iterate through each deposit in the history and write it to the file
-            for i, d in enumerate(deposit_history, start=1):
-                f.write(f"{i}. ${d:,.2f}\n")
-        else:
-            f.write("No deposits.\n")
+            f.write("Deposit History:\n")
+            if deposit_history:
+                # Loop: Iterate through each deposit in the history and write it to the file
+                for i, d in enumerate(deposit_history, start=1):
+                    f.write(f"{i}. ${d:,.2f}\n")
+            else:
+                f.write("No deposits.\n")
 
-        f.write("\nWithdrawal History:\n")
-        if withdrawal_history:
-            # Loop: Iterate through each withdrawal in the history and write it to the file
-            for i, w in enumerate(withdrawal_history, start=1):
-                f.write(f"{i}. ${w:,.2f}\n")
-        else:
-            f.write("No withdrawals.\n")
+            f.write("\nWithdrawal History:\n")
+            if withdrawal_history:
+                # Loop: Iterate through each withdrawal in the history and write it to the file
+                for i, w in enumerate(withdrawal_history, start=1):
+                    f.write(f"{i}. ${w:,.2f}\n")
+            else:
+                f.write("No withdrawals.\n")
 
-        f.write("\nBalance History:\n")
-        if balance_history:
-            # Loop: Iterate through each balance in the history and write it to the file
-            for i, b in enumerate(balance_history, start=1):
-                f.write(f"{i}. ${b:,.2f}\n")
-        else:
-            f.write("No balance changes.\n")
+            f.write("\nBalance History:\n")
+            if balance_history:
+                # Loop: Iterate through each balance in the history and write it to the file
+                for i, b in enumerate(balance_history, start=1):
+                    f.write(f"{i}. ${b:,.2f}\n")
+            else:
+                f.write("No balance changes.\n")
 
-    print(f"Histories saved to: {filename.resolve()}")
+        print(f"Histories saved to: {filename.resolve()}")
+    except OSError as e:
+        print(f"Error: Could not save file. {e}")
 
 
 # -------------------------
@@ -332,40 +335,46 @@ def main() -> None:
     balance_history: list[float] = []     # balance snapshot AFTER each deposit/withdraw
 
     # 3) Menu loop: keep showing menu and handling choice until user selects 7 (Exit)
-    while True:
-        print_menu()
-        choice = input("Enter your choice: ").strip()
+    # try-except: catch any unexpected errors (e.g., file I/O, keyboard interrupt)
+    try:
+        while True:
+            print_menu()
+            choice = input("Enter your choice: ").strip()
 
-        if choice == "1":
-            balance = deposit(balance, deposit_history, balance_history)
+            if choice == "1":
+                balance = deposit(balance, deposit_history, balance_history)
 
-        elif choice == "2":
-            balance = withdraw(balance, withdrawal_history, balance_history)
+            elif choice == "2":
+                balance = withdraw(balance, withdrawal_history, balance_history)
 
-        elif choice == "3":
-            check_balance(balance)
+            elif choice == "3":
+                check_balance(balance)
 
-        elif choice == "4":
-            show_deposit_history(deposit_history)
+            elif choice == "4":
+                show_deposit_history(deposit_history)
 
-        elif choice == "5":
-            show_withdrawal_history(withdrawal_history)
+            elif choice == "5":
+                show_withdrawal_history(withdrawal_history)
 
-        elif choice == "6":
-            show_balance_history(balance_history)
+            elif choice == "6":
+                show_balance_history(balance_history)
 
-        elif choice == "7":
-            print("\nThank you for using our ATM. Goodbye!")
+            elif choice == "7":
+                print("\nThank you for using our ATM. Goodbye!")
 
-            # Optional: offer to save session histories to a text file before exiting
-            save_option = input("Do you want to save histories to a file? (y/n): ").strip().lower()
-            if save_option == "y":
-                save_histories_to_file(deposit_history, withdrawal_history, balance_history)
+                # Optional: offer to save session histories to a text file before exiting
+                save_option = input("Do you want to save histories to a file? (y/n): ").strip().lower()
+                if save_option == "y":
+                    save_histories_to_file(deposit_history, withdrawal_history, balance_history)
 
-            break  # exit the loop and end the program
+                break  # exit the loop and end the program
 
-        else:
-            print("Invalid choice. Please enter a number from 1 to 7.")
+            else:
+                print("Invalid choice. Please enter a number from 1 to 7.")
+    except KeyboardInterrupt:
+        print("\n\nProgram interrupted by user.")
+    except Exception as e:
+        print(f"\nError: {e}")
 
 
 # Run program only when this file is executed directly (not when imported as a module)

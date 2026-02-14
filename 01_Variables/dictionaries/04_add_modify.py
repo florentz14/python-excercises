@@ -12,11 +12,14 @@
 print("Example 4: Add and modify values")
 print("-" * 40)
 
+#create a dictionary
 car = {"brand": "Toyota", "color": "red"}
 print("Original:", car)
 
+#add year
 car["year"] = 2023           # Add new key-value pair (key didn't exist)
 print("After adding year:", car)
 
+#modify color
 car["color"] = "blue"        # Modify existing value (key already exists)
 print("After modifying color:", car)

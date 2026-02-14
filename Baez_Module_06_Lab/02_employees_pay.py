@@ -47,7 +47,7 @@ try:
                     print(
                         "    Error: Hours worked cannot be negative. Please try again.")
                     continue  # Continue loop to ask for input again
-                hours_worked.append(hours)  # Add hours to the list
+                hours_worked.append(hours)  # Add hours worked to the list
                 break  # Exit the while loop when valid input is processed
             except ValueError:
                 # Handle invalid numeric input (e.g., non-numeric characters)
@@ -63,17 +63,20 @@ try:
 
     # Loop (for): Iterates through each employee to calculate and display gross pay
     for i in range(len(hours_worked)):
-        gross_pay = hours_worked[i] * HOURLY_PAY_RATE  # Calculate gross pay
-        print(f"Employee {i + 1}\t{hours_worked[i]:.2f}\t\t${gross_pay:.2f}")
+        gross_pay = hours_worked[i] * HOURLY_PAY_RATE  # Calculate gross pay for each employee
+        print(f"Employee {i + 1}\t{hours_worked[i]:.2f}\t\t${gross_pay:.2f}") # Display gross pay for each employee
 
     # Calculate and display totals
-    total_hours = sum(hours_worked)  # Calculate total hours worked
+    total_hours = sum(hours_worked)  # Calculate total hours worked for all employees
     total_gross_pay = total_hours * HOURLY_PAY_RATE  # Calculate total gross pay
     print("-" * 50)
-    print(f"Total\t\t{total_hours:.2f}\t\t${total_gross_pay:.2f}")
+    print(f"Total\t\t{total_hours:.2f}\t\t${total_gross_pay:.2f}") # Display total hours worked and total gross pay
 
 except Exception as e:
     # Handle any other unexpected errors
     print(f"Error: {e}")
 
-print()
+print() # Print a blank line
+print("=" * 60)
+print("END OF PROGRAM")
+print("=" * 60)
