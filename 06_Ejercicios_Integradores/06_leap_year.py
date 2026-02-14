@@ -67,9 +67,3 @@ print("=" * 60)
 print("Exercise completed!")
 print("=" * 60)
 
-# =============================================================================
-# CITATIONS
-# =============================================================================
-print("\nCitations:")
-print("Leap Year Calculation: Gregorian calendar rules")
-print("Source: https://en.wikipedia.org/wiki/Leap_year")

@@ -223,12 +223,3 @@ print("=" * 60)
 print("All exercises completed!")
 print("=" * 60)
 
-# =============================================================================
-# CITATIONS
-# =============================================================================
-print("\nCitations:")
-print("1. Distance formula: Distance = Speed * Time (standard physics formula)")
-print("2. BMI calculation formula: CDC - Body Mass Index (BMI)")
-print("   Source: https://www.cdc.gov/healthyweight/assessing/bmi/index.html")
-print("3. Python Turtle Graphics: Python Documentation")
-print("   Source: https://docs.python.org/3/library/turtle.html")

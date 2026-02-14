@@ -29,9 +29,3 @@ for year in range(1, YEARS_TO_DISPLAY + 1):
 
 print(f"\nAfter {YEARS_TO_DISPLAY} years, the ocean will have risen {RISE_RATE * YEARS_TO_DISPLAY:.1f} millimeters.")
 
-print("\n" + "=" * 60)
-print("CITATION")
-print("=" * 60)
-print("Ocean Level Rise: Based on scientific measurements")
-print("Source: NOAA - Sea Level Rise")
-print("https://oceanservice.noaa.gov/facts/sealevel.html")

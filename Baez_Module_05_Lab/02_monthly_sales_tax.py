@@ -52,11 +52,3 @@ else:
 
 # Display a new line
 print()
-
-print("\n" + "=" * 60)
-print("CITATION")
-print("=" * 60)
-print("1. Sales Tax Calculation:")
-print("   - Standard formula: Tax Amount = Sales Amount × Tax Rate")
-print("   Source: State and Local Sales Tax Rates")
-print("   https://taxfoundation.org/state-and-local-sales-tax-rates/")

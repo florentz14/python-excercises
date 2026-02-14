@@ -63,16 +63,3 @@ except Exception as e:
     print(f"Error: {e}")
 
 print()
-
-# =============================================================================
-# CITATIONS
-# =============================================================================
-# 1. List Operations in Python:
-#    - min(), max(), sum() functions for list analysis
-#    - List methods: append()
-#    Source: Python Documentation - Built-in Functions
-#    https://docs.python.org/3/library/functions.html
-#
-# 2. Statistical Calculations:
-#    - Average = Sum of values / Number of values
-#    Source: Standard statistical methods

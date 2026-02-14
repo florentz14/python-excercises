@@ -1,13 +1,20 @@
 # Baez_Module_02_Lab
 
-Laboratorio del Módulo 2: Cálculos y gráficos.
+Module 2 Lab: Calculations and graphics.
 
-## Archivos
+## Files
 
-| Archivo | Contenido |
-|---------|-----------|
-| `Baez_Module_02_01_distance.py` | Cálculo de distancia |
-| `Baez_Module_02_02_tip_tax.py` | Propina e impuestos |
-| `Baez_Module_02_03_graphics.py` | Gráficos |
-| `Baez_Module_02_04_bmi.py` | Índice de masa corporal |
-| `Baez_Module_02_Lab.py` | Archivo principal del lab |
+| File | Content |
+|------|---------|
+| `Baez_Module_02_01_distance.py` | Distance calculation |
+| `Baez_Module_02_02_tip_tax.py` | Tip and tax |
+| `Baez_Module_02_03_graphics.py` | Graphics |
+| `Baez_Module_02_04_bmi.py` | Body mass index |
+| `Baez_Module_02_Lab.py` | Main lab file |
+
+## Citations
+
+### `Baez_Module_02_Lab.py`
+- **Distance formula**: Distance = Speed × Time (standard physics formula)
+- **BMI calculation**: CDC - Body Mass Index (BMI). Source: https://www.cdc.gov/healthyweight/assessing/bmi/index.html
+- **Python Turtle Graphics**: [Python Documentation](https://docs.python.org/3/library/turtle.html)

@@ -124,20 +124,3 @@ def main() -> None:
 main()
 
 print()
-
-# =============================================================================
-# CITATIONS
-# =============================================================================
-# 1. Dictionary Operations in Python:
-#    - Dictionary creation, access, keys()
-#    Source: Python Documentation - Dictionaries
-#    https://docs.python.org/3/tutorial/datastructures.html#dictionaries
-#
-# 2. Random Module:
-#    - random.sample() for random selection without replacement
-#    Source: Python Documentation - Random Module
-#    https://docs.python.org/3/library/random.html
-#
-# 3. Card Game Values:
-#    - Blackjack card values: numeric cards (2-10), face cards (10), aces (1 or 11)
-#    Source: Standard Blackjack card values

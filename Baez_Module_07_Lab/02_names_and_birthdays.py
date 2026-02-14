@@ -155,16 +155,3 @@ print()
 print("=" * 60)
 print("All exercises completed!")
 print("=" * 60)
-
-# =============================================================================
-# CITATIONS
-# =============================================================================
-# 1. Dictionary Operations in Python:
-#    - Dictionary creation, access, update, and deletion
-#    - Dictionary methods: keys(), values(), items()
-#    Source: Python Documentation - Dictionaries
-#    https://docs.python.org/3/tutorial/datastructures.html#dictionaries
-#
-# 2. Menu-Driven Programs:
-#    - Design pattern for interactive programs with multiple options
-#    Source: Common programming design pattern

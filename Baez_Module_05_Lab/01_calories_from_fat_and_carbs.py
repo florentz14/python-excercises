@@ -37,12 +37,3 @@ else:
     print(f"Total calories: {total_calories:.2f}")
 
 print()
-
-print("\n" + "=" * 60)
-print("CITATION")
-print("=" * 60)
-print("1. Calories Calculation:")
-print("   - Fat: 1 gram of fat = 9 calories")
-print("   - Carbohydrates: 1 gram of carbohydrates = 4 calories")
-print("   Source: USDA National Nutrient Database")
-print("   https://www.nal.usda.gov/fnic/how-many-calories-are-one-gram-fat-carbohydrate-or-protein")

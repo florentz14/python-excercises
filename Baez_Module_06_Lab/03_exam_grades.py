@@ -87,17 +87,3 @@ except Exception as e:
     print(f"Error: {e}")
 
 print()
-
-# =============================================================================
-# CITATIONS
-# =============================================================================
-# 1. List Operations in Python:
-#    - min() function for list analysis
-#    - List methods: append(), remove(), copy()
-#    Source: Python Documentation - Built-in Functions
-#    https://docs.python.org/3/library/functions.html
-#
-# 2. Statistical Calculations:
-#    - Average = Sum of values / Number of values
-#    - Dropping lowest score before averaging
-#    Source: Standard statistical methods for grade calculation

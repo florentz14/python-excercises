@@ -28,3 +28,12 @@ Ejercicios que integran múltiples conceptos de Python.
 | `20_loop.py` | Ciclos |
 | `21_temperature.py` | Conversión de temperatura |
 | `22_while_loop.py` | Ciclos while |
+
+## Citations
+
+### `05_bmi.py`
+- **BMI Calculation**: CDC - Body Mass Index (BMI). Formula: BMI = (weight in pounds × 703) / (height in inches)². Source: https://www.cdc.gov/healthyweight/assessing/bmi/index.html
+- **BMI Categories**: CDC - About Adult BMI. Source: https://www.cdc.gov/healthyweight/assessing/bmi/adult_bmi/index.html
+
+### `06_leap_year.py`
+- **Leap Year Calculation**: Gregorian calendar rules. Source: https://en.wikipedia.org/wiki/Leap_year

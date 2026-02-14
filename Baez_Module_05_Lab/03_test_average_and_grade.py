@@ -57,10 +57,3 @@ else:
     print(f"Average Score: {average:.2f}\t\t{determine_grade(average)}")
 
 print()
-
-print("\n" + "=" * 60)
-print("CITATION")
-print("=" * 60)
-print("1. Grade Calculation:")
-print("   - Standard letter grade scale (A-F)")
-print("   Source: Common grading scale used in educational institutions")

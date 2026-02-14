@@ -36,11 +36,3 @@ else:
     print(f"\n{number} is not a prime number.")
 
 print()
-
-print("\n" + "=" * 60)
-print("CITATION")
-print("=" * 60)
-print("1. Prime Number Algorithm:")
-print("   - Trial division method: Check divisibility from 2 to √n")
-print("   Source: Prime Number - Wikipedia")
-print("   https://en.wikipedia.org/wiki/Prime_number")

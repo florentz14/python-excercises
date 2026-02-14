@@ -77,16 +77,3 @@ except Exception as e:
     print(f"Error: {e}")
 
 print()
-
-# =============================================================================
-# CITATIONS
-# =============================================================================
-# 1. List Operations in Python:
-#    - List methods: append()
-#    - sum() function for totaling list values
-#    Source: Python Documentation - Built-in Functions
-#    https://docs.python.org/3/library/functions.html
-#
-# 2. Payroll Calculation:
-#    - Gross Pay = Hours Worked × Hourly Rate
-#    Source: Standard payroll calculation formula

@@ -51,8 +51,3 @@ print(f"Number of months: {total_months}")
 print(f"Total inches of rainfall: {total_rainfall:.2f}")
 print(f"Average rainfall per month: {average_rainfall:.2f} inches")
 
-print("\n" + "=" * 60)
-print("CITATION")
-print("=" * 60)
-print("Average Rainfall Calculation: Standard statistical formula for average")
-print("Formula: Average = Total Rainfall / Number of Months")

@@ -34,9 +34,3 @@ for year in range(1, YEARS + 1):
     print(f"{year}\t\t${tuition:,.2f}")
     tuition = tuition * (1 + INCREASE_RATE)
 
-print("\n" + "=" * 60)
-print("CITATION")
-print("=" * 60)
-print("Tuition Increase Calculation: Compound interest formula")
-print("Formula: Future Value = Present Value × (1 + rate)^years")
-print("This demonstrates exponential growth commonly used in financial planning")

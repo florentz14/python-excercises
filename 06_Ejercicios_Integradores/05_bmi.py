@@ -73,12 +73,3 @@ print("=" * 60)
 print("Exercise completed!")
 print("=" * 60)
 
-# =============================================================================
-# CITATIONS
-# =============================================================================
-print("\nCitations:")
-print("1. BMI Calculation: CDC - Body Mass Index (BMI)")
-print("   Formula: BMI = (weight in pounds x 703) / (height in inches)^2")
-print("   Source: https://www.cdc.gov/healthyweight/assessing/bmi/index.html")
-print("2. BMI Categories: CDC - About Adult BMI")
-print("   Source: https://www.cdc.gov/healthyweight/assessing/bmi/adult_bmi/index.html")
