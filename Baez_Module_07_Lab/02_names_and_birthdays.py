@@ -28,13 +28,9 @@ DELETE = 4
 QUIT = 5
 
 
+# Function: Get the user's menu choice
+# int: User's menu choice
 def get_menu_choice() -> int:
-    """
-    Display the menu and get the user's choice.
-
-    Returns:
-        int: User's menu choice
-    """
     print("\n" + "=" * 60)
     print("BIRTHDAY MENU")
     print("=" * 60)
@@ -60,13 +56,8 @@ def get_menu_choice() -> int:
 
 
 def look_up(birthdays: dict[str, str]) -> None:
-    """
-    Look up a birthday in the dictionary.
-
-    Args:
-        birthdays (dict): Dictionary containing names and birthdays
-    """
-    name = input("Enter a name to look up: ")
+    # str: Name to look up
+    name: str = input("Enter a name to look up: ")
 
     # Check if name exists in dictionary
     if name in birthdays:
@@ -76,13 +67,8 @@ def look_up(birthdays: dict[str, str]) -> None:
 
 
 def add(birthdays: dict[str, str]) -> None:
-    """
-    Add a new birthday to the dictionary.
-
-    Args:
-        birthdays (dict): Dictionary containing names and birthdays
-    """
-    name = input("Enter a name: ")
+    # str: Name to add
+    name: str = input("Enter a name: ")
 
     # Check if name already exists
     if name in birthdays:
@@ -100,13 +86,8 @@ def add(birthdays: dict[str, str]) -> None:
 
 
 def change(birthdays: dict[str, str]) -> None:
-    """
-    Change an existing birthday in the dictionary.
-
-    Args:
-        birthdays (dict): Dictionary containing names and birthdays
-    """
-    name = input("Enter a name: ")
+    # str: Name to change
+    name: str = input("Enter a name: ")
 
     # Check if name exists in dictionary
     if name in birthdays:
@@ -119,13 +100,8 @@ def change(birthdays: dict[str, str]) -> None:
 
 
 def delete(birthdays: dict[str, str]) -> None:
-    """
-    Delete a birthday from the dictionary.
-
-    Args:
-        birthdays (dict): Dictionary containing names and birthdays
-    """
-    name = input("Enter a name: ")
+    # str: Name to delete
+    name: str = input("Enter a name: ")
 
     # Check if name exists in dictionary
     if name in birthdays:
@@ -140,10 +116,8 @@ def delete(birthdays: dict[str, str]) -> None:
         print(f"Sorry, {name} is not found in the dictionary.")
 
 
+# Function: Main function to run the names and birthdays program
 def main_birthdays() -> None:
-    """
-    Main function to run the names and birthdays program.
-    """
     print("=" * 60)
     print("EXERCISE 2: Names and Birthdays Program")
     print("=" * 60)
@@ -185,13 +159,12 @@ print("=" * 60)
 # =============================================================================
 # CITATIONS
 # =============================================================================
-print("\nCitations:")
-print("1. Dictionary Operations in Python:")
-print("   - Dictionary creation, access, update, and deletion")
-print("   - Dictionary methods: keys(), values(), items()")
-print("   Source: Python Documentation - Dictionaries")
-print("   https://docs.python.org/3/tutorial/datastructures.html#dictionaries")
-print()
-print("2. Menu-Driven Programs:")
-print("   - Design pattern for interactive programs with multiple options")
-print("   Source: Common programming design pattern")
+# 1. Dictionary Operations in Python:
+#    - Dictionary creation, access, update, and deletion
+#    - Dictionary methods: keys(), values(), items()
+#    Source: Python Documentation - Dictionaries
+#    https://docs.python.org/3/tutorial/datastructures.html#dictionaries
+#
+# 2. Menu-Driven Programs:
+#    - Design pattern for interactive programs with multiple options
+#    Source: Common programming design pattern

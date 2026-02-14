@@ -81,13 +81,12 @@ print()
 # =============================================================================
 # CITATIONS
 # =============================================================================
-print("Citations:")
-print("1. List Operations in Python:")
-print("   - List methods: append()")
-print("   - sum() function for totaling list values")
-print("   Source: Python Documentation - Built-in Functions")
-print("   https://docs.python.org/3/library/functions.html")
-print()
-print("2. Payroll Calculation:")
-print("   - Gross Pay = Hours Worked × Hourly Rate")
-print("   Source: Standard payroll calculation formula")
+# 1. List Operations in Python:
+#    - List methods: append()
+#    - sum() function for totaling list values
+#    Source: Python Documentation - Built-in Functions
+#    https://docs.python.org/3/library/functions.html
+#
+# 2. Payroll Calculation:
+#    - Gross Pay = Hours Worked × Hourly Rate
+#    Source: Standard payroll calculation formula

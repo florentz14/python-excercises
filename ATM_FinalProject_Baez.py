@@ -2,7 +2,17 @@
 # File Name: ATM_FinalProject_Baez.py
 # Author: Florentino Baez
 # Date: August 16, 2025
-# Description: Simple ATM Simulation Program (Final Project)
+# Description: ATM Simulation Program (Final Project). Simulates a basic
+#              automated teller machine with password protection (3 attempts,
+#              default PIN: 1234). Menu-driven interface offers: (1) Deposit
+#              - add funds with validation; (2) Withdraw - remove funds if
+#              sufficient balance; (3) Check Balance - display current amount;
+#              (4) Deposit History - list all deposits; (5) Withdrawal History -
+#              list all withdrawals; (6) Balance History - balance snapshot after
+#              each transaction; (7) Exit - optionally save all session histories
+#              (deposits, withdrawals, balance snapshots) to atm_history.txt
+#              before quitting. Input validation prevents invalid amounts and
+#              non-numeric entries.
 # Python Version: 3.14.2
 # ------------------------------------------------------------
 
@@ -19,8 +29,14 @@ from datetime import datetime
 
 def get_positive_amount(prompt: str) -> float:
     """
-    # Function: Keeps asking until the user enters a valid positive number (> 0).
+    Keeps asking until the user enters a valid positive number (> 0).
     Prevents crashes due to invalid input.
+
+    Args:
+        prompt (str): Message displayed when asking for input (e.g., "Enter amount: $").
+
+    Returns:
+        float: The valid positive amount entered by the user.
     """
     while True:
         raw = input(prompt).strip()
@@ -36,8 +52,15 @@ def get_positive_amount(prompt: str) -> float:
 
 def print_history(title: str, items: list[float]) -> None:
     """
-    # Function: Prints a list of amounts in a friendly format.
+    Prints a list of amounts in a friendly format.
     Used for both deposit and withdrawal history display.
+
+    Args:
+        title (str): Header text to display (e.g., "Deposit History").
+        items (list[float]): List of amounts to display.
+
+    Returns:
+        None
     """
     print("\n" + "-" * 50)
     print(title)
@@ -58,8 +81,15 @@ def print_history(title: str, items: list[float]) -> None:
 
 def verify_password(correct_password: str = "1234", max_attempts: int = 3) -> bool:
     """
-    # Function: Asks for a password and allows up to max_attempts.
+    Asks for a password and allows up to max_attempts.
     Returns True if correct, False otherwise.
+
+    Args:
+        correct_password (str): The valid password to compare against. Default: "1234".
+        max_attempts (int): Maximum number of login attempts allowed. Default: 3.
+
+    Returns:
+        bool: True if password is correct, False if all attempts are used.
     """
     attempts_left = max_attempts
 
@@ -84,7 +114,17 @@ def verify_password(correct_password: str = "1234", max_attempts: int = 3) -> bo
 # -------------------------
 
 def deposit(balance: float, deposit_history: list[float], balance_history: list[float]) -> float:
-    # Function: Process a deposit: validate amount, update balance and histories.
+    """
+    Process a deposit: validate amount, update balance and histories.
+
+    Args:
+        balance (float): Current account balance before the deposit.
+        deposit_history (list[float]): List of all deposit amounts (modified in place).
+        balance_history (list[float]): List of balance snapshots after each transaction (modified in place).
+
+    Returns:
+        float: The new balance after the deposit.
+    """
     amount = get_positive_amount("Enter amount to deposit: $")
     balance += amount
 
@@ -96,7 +136,17 @@ def deposit(balance: float, deposit_history: list[float], balance_history: list[
 
 
 def withdraw(balance: float, withdrawal_history: list[float], balance_history: list[float]) -> float:
-    # Function: Process a withdrawal: validate amount, check sufficient funds, update balance and histories.
+    """
+    Process a withdrawal: validate amount, check sufficient funds, update balance and histories.
+
+    Args:
+        balance (float): Current account balance before the withdrawal.
+        withdrawal_history (list[float]): List of all withdrawal amounts (modified in place).
+        balance_history (list[float]): List of balance snapshots after each transaction (modified in place).
+
+    Returns:
+        float: The new balance after the withdrawal (unchanged if withdrawal denied).
+    """
     amount = get_positive_amount("Enter amount to withdraw: $")
 
     # Reject withdrawal if requested amount exceeds current balance
@@ -113,22 +163,54 @@ def withdraw(balance: float, withdrawal_history: list[float], balance_history: l
 
 
 def check_balance(balance: float) -> None:
-    # Function: Print the current balance
+    """
+    Print the current balance to the console.
+
+    Args:
+        balance (float): Current account balance to display.
+
+    Returns:
+        None
+    """
     print(f"\nCurrent balance: ${balance:,.2f}")
 
 
 def show_deposit_history(deposit_history: list[float]) -> None:
-    # Function: Print the deposit history
+    """
+    Print the deposit history to the console.
+
+    Args:
+        deposit_history (list[float]): List of all deposit amounts in chronological order.
+
+    Returns:
+        None
+    """
     print_history("Deposit History", deposit_history)
 
 
 def show_withdrawal_history(withdrawal_history: list[float]) -> None:
-    # Function: Print the withdrawal history
+    """
+    Print the withdrawal history to the console.
+
+    Args:
+        withdrawal_history (list[float]): List of all withdrawal amounts in chronological order.
+
+    Returns:
+        None
+    """
     print_history("Withdrawal History", withdrawal_history)
 
 
 def show_balance_history(balance_history: list[float]) -> None:
-    """Display balance after each transaction (snapshot history)."""
+    """
+    Display balance after each transaction (snapshot history).
+
+    Args:
+        balance_history (list[float]): List of balance snapshots after each deposit/withdrawal.
+
+    Returns:
+        None
+    """
     print("\n" + "-" * 50)
     print("Balance History (after each transaction)")
     print("-" * 50)
@@ -150,8 +232,17 @@ def save_histories_to_file(
     filename: str = "atm_history.txt"
 ) -> None:
     """
-    # Function: Saves all three histories to a text file before exit.
-    Overwrites the file if it already exists. It uses UTF-8 encoding for compatibility.
+    Saves all three histories to a text file before exit.
+    Overwrites the file if it already exists. Uses UTF-8 encoding for compatibility.
+
+    Args:
+        deposit_history (list[float]): List of all deposit amounts.
+        withdrawal_history (list[float]): List of all withdrawal amounts.
+        balance_history (list[float]): List of balance snapshots after each transaction.
+        filename (str): Output file path. Default: "atm_history.txt".
+
+    Returns:
+        None
     """
     timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
@@ -193,7 +284,15 @@ def save_histories_to_file(
 # -------------------------
 
 def print_menu() -> None:
-    """# Function: Display the ATM main menu with all available options (1-7)."""
+    """
+    Display the ATM main menu with all available options (1-7).
+
+    Args:
+        None
+
+    Returns:
+        None
+    """
     print("\nWelcome, please pick an option")
     print("1 - Deposit")
     print("2 - Withdraw")
@@ -205,7 +304,15 @@ def print_menu() -> None:
 
 
 def main() -> None:
-    """# Function: Entry point: password check, then main menu loop until user chooses Exit."""
+    """
+    Entry point: password check, then main menu loop until user chooses Exit.
+
+    Args:
+        None
+
+    Returns:
+        None
+    """
     # 1) Password gate: exit immediately if user fails after max attempts
     if not verify_password(correct_password="1234", max_attempts=3):
         return

@@ -21,20 +21,16 @@ import random
 # EXERCISE 1: Deck Cards Program
 # =============================================================================
 
+# Function: Create a dictionary representing a standard deck of poker cards
+# dict[str, int]: Dictionary with card names as keys and numeric values as values
 def create_deck() -> dict[str, int]:
-    """
-    Create a dictionary representing a standard deck of poker cards.
-
-    Returns:
-        dict: Dictionary with card names as keys and numeric values as values
-    """
     # Define suits and ranks
     suits = ['Hearts', 'Diamonds', 'Clubs', 'Spades']
     ranks = ['Ace', '2', '3', '4', '5', '6', '7', '8', '9', '10',
              'Jack', 'Queen', 'King']
 
     # Initialize empty deck
-    deck = {}
+    deck: dict[str, int] = {}
 
     # Loop (for): Iterate through each suit
     for suit in suits:
@@ -62,28 +58,28 @@ def deal_cards(deck: dict[str, int], num_cards: int) -> tuple[list[str], int]:
     Deal a specified number of cards randomly from the deck.
 
     Args:
-        deck (dict): Dictionary representing the deck of cards
-        num_cards (int): Number of cards to deal
+        deck (dict[str, int]): Dictionary representing the deck of cards.
+            Keys are card names (e.g., 'Queen of Hearts'), values are numeric
+            values (e.g., 10 for face cards).
+        num_cards (int): Number of cards to deal from the deck.
 
     Returns:
-        tuple: (list of card names, total numeric value of the hand)
+        tuple[list[str], int]: (list of card names dealt, total numeric value of the hand)
     """
     # Convert deck dictionary keys to a list for random selection
-    card_list = list(deck.keys())
+    card_list: list[str] = list(deck.keys())
 
     # Randomly select cards (without replacement)
-    hand = random.sample(card_list, min(num_cards, len(card_list)))
+    hand: list[str] = random.sample(card_list, min(num_cards, len(card_list)))
 
     # Calculate total value of the hand
-    total_value = sum(deck[card] for card in hand)
+    total_value: int = sum(deck[card] for card in hand)
 
     return hand, total_value
 
 
+# Function: Main function to run the deck cards program
 def main() -> None:
-    """
-    Main function to run the deck cards program.
-    """
     print("=" * 60)
     print("EXERCISE 1: Deck Cards Program")
     print("=" * 60)
@@ -132,17 +128,16 @@ print()
 # =============================================================================
 # CITATIONS
 # =============================================================================
-print("Citations:")
-print("1. Dictionary Operations in Python:")
-print("   - Dictionary creation, access, keys()")
-print("   Source: Python Documentation - Dictionaries")
-print("   https://docs.python.org/3/tutorial/datastructures.html#dictionaries")
-print()
-print("2. Random Module:")
-print("   - random.sample() for random selection without replacement")
-print("   Source: Python Documentation - Random Module")
-print("   https://docs.python.org/3/library/random.html")
-print()
-print("3. Card Game Values:")
-print("   - Blackjack card values: numeric cards (2-10), face cards (10), aces (1 or 11)")
-print("   Source: Standard Blackjack card values")
+# 1. Dictionary Operations in Python:
+#    - Dictionary creation, access, keys()
+#    Source: Python Documentation - Dictionaries
+#    https://docs.python.org/3/tutorial/datastructures.html#dictionaries
+#
+# 2. Random Module:
+#    - random.sample() for random selection without replacement
+#    Source: Python Documentation - Random Module
+#    https://docs.python.org/3/library/random.html
+#
+# 3. Card Game Values:
+#    - Blackjack card values: numeric cards (2-10), face cards (10), aces (1 or 11)
+#    Source: Standard Blackjack card values

@@ -91,14 +91,13 @@ print()
 # =============================================================================
 # CITATIONS
 # =============================================================================
-print("Citations:")
-print("1. List Operations in Python:")
-print("   - min() function for list analysis")
-print("   - List methods: append(), remove(), copy()")
-print("   Source: Python Documentation - Built-in Functions")
-print("   https://docs.python.org/3/library/functions.html")
-print()
-print("2. Statistical Calculations:")
-print("   - Average = Sum of values / Number of values")
-print("   - Dropping lowest score before averaging")
-print("   Source: Standard statistical methods for grade calculation")
+# 1. List Operations in Python:
+#    - min() function for list analysis
+#    - List methods: append(), remove(), copy()
+#    Source: Python Documentation - Built-in Functions
+#    https://docs.python.org/3/library/functions.html
+#
+# 2. Statistical Calculations:
+#    - Average = Sum of values / Number of values
+#    - Dropping lowest score before averaging
+#    Source: Standard statistical methods for grade calculation

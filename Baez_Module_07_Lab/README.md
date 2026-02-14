@@ -1,10 +1,10 @@
 # Baez_Module_07_Lab
 
-Laboratorio del Módulo 7: Listas y estructuras de datos.
+Module 7 Lab: Lists and data structures.
 
-## Archivos
+## Files
 
-| Archivo | Contenido |
-|---------|-----------|
-| `01_deck_cards.py` | Baraja de cartas |
-| `02_names_and_birthdays.py` | Nombres y cumpleaños |
+| File | Content |
+|------|---------|
+| `01_deck_cards.py` | Deck of cards |
+| `02_names_and_birthdays.py` | Names and birthdays |
