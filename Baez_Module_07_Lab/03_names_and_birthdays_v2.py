@@ -5,12 +5,8 @@
 # Professor: Mauricio Quiroga
 # Date: Module 07 Lab
 # Description: Names and Birthdays Program (Version 2). Same as 02_names_and_birthdays
-#              but uses a while loop to display the menu options until the user quits. and displays the final dictionary contents.
+#              but displays the final dictionary contents.
 # -------------------------------------------------
-
-# =============================================================================
-# EXERCISE 3: Names and Birthdays Program (Version 2)
-# =============================================================================
 
 # Global constants for menu choices
 LOOK_UP = 1
@@ -153,12 +149,12 @@ def main_birthdays() -> None:
 
         if choice == LOOK_UP:
             look_up(birthdays) # Look up a birthday
-        elif choice == ADD:
+        elif choice == ADD: # Add a new birthday
             add(birthdays) # Add a new birthday
         elif choice == CHANGE:
             change(birthdays) # Change a birthday
         elif choice == DELETE:
-            delete(birthdays)
+            delete(birthdays) # Delete a birthday
         elif choice == QUIT:
             print("\nThank you for using the Birthday Dictionary program!")
             print(f"Total entries in dictionary: {len(birthdays)}")
@@ -167,5 +163,9 @@ def main_birthdays() -> None:
 
 # Main function to run the program
 # None: No return value
-if __name__ == "__main__":
-    main_birthdays()
+main_birthdays()
+
+print()
+print("=" * 60)
+print("END OF PROGRAM")
+print("=" * 60)
