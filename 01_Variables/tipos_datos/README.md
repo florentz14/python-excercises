@@ -2,7 +2,7 @@
 
 Ejercicios sobre tipos de datos fundamentales en Python: numeros complejos, variables, strings, comparacion, tipos y operaciones.
 
-## Archivos (12)
+## Archivos (14)
 
 | # | Archivo | Contenido |
 |---|---------|-----------|
@@ -18,6 +18,8 @@ Ejercicios sobre tipos de datos fundamentales en Python: numeros complejos, vari
 | 10 | `10_none.py` | Tipo None, is None |
 | 11 | `11_print_sep_end.py` | print(sep=, end=) |
 | 12 | `12_membresia.py` | Operadores in, not in |
+| 13 | `13_logicos.py` | and, or, not, short-circuit, combinacion con comparaciones |
+| 14 | `14_flujos.py` | if/elif/else, for, while |
 
 ## Ejecutar
 

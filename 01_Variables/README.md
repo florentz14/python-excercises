@@ -7,7 +7,7 @@ listas, conjuntos (sets) y tuplas.
 
 ```
 01_Variables/
-|-- tipos_datos/    (12 archivos)  Tipos de datos basicos
+|-- tipos_datos/    (14 archivos)  Tipos de datos basicos
 |-- dictionaries/   (16 archivos)  Diccionarios
 |-- lists/          (20 archivos)  Listas
 |-- sets/           (18 archivos)  Conjuntos (Sets)
@@ -16,7 +16,7 @@ listas, conjuntos (sets) y tuplas.
 
 ## Subcarpetas
 
-### `tipos_datos/` - Tipos de Datos Basicos (12 archivos)
+### `tipos_datos/` - Tipos de Datos Basicos (14 archivos)
 
 | # | Archivo | Contenido |
 |---|---------|-----------|
@@ -32,6 +32,8 @@ listas, conjuntos (sets) y tuplas.
 | 10 | `10_none.py` | Tipo None |
 | 11 | `11_print_sep_end.py` | print(sep=, end=) |
 | 12 | `12_membresia.py` | in, not in |
+| 13 | `13_logicos.py` | and, or, not, short-circuit |
+| 14 | `14_flujos.py` | if/elif/else, for, while |
 
 ### `dictionaries/` - Diccionarios (16 archivos)
 
@@ -125,12 +127,12 @@ listas, conjuntos (sets) y tuplas.
 
 | Subcarpeta | Archivos | Tema |
 |------------|----------|------|
-| `tipos_datos/` | 12 | Tipos de datos basicos |
+| `tipos_datos/` | 14 | Tipos de datos basicos |
 | `dictionaries/` | 16 | Diccionarios |
 | `lists/` | 20 | Listas |
 | `sets/` | 18 | Conjuntos (Sets) |
 | `tuples/` | 14 | Tuplas |
-| **Total** | **80** | |
+| **Total** | **82** | |
 
 ## Como ejecutar
 
