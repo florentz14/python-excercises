@@ -1,6 +1,8 @@
 # ------------------------------------------------------------
 # File Name: ATM_FinalProject_Baez.py
 # Author: Florentino Baez
+# Course: ITSE-1002: Python Programming
+# Professor: Mauricio Quiroga
 # Date: February 17, 2026
 # Description: ATM Simulation Program (Final Project). Simulates a basic
 #              automated teller machine with password protection (3 attempts,
@@ -215,19 +217,19 @@ def save_histories_to_file(
 
 
 # -------------------------
-# Menu Function
+# Print Menu Function
 # -------------------------
 
 def print_menu() -> None:
-    """Display ATM menu (1-7)."""
-    print("\nWelcome, please pick an option")
-    print("1 - Deposit")
-    print("2 - Withdraw")
-    print("3 - Check Balance")
-    print("4 - History of Deposit")
-    print("5 - History of Withdrawals")
-    print("6 - History of Balance")
-    print("7 - Exit")
+    """Display ATM menu (1-7).""" 
+    print("\nWelcome, please pick an option") # Print the welcome message
+    print("1 - Deposit") # Print the deposit option
+    print("2 - Withdraw") # Print the withdraw option
+    print("3 - Check Balance") # Print the check balance option
+    print("4 - History of Deposit") # Print the history of deposit option
+    print("5 - History of Withdrawals") # Print the history of withdrawals option
+    print("6 - History of Balance") # Print the history of balance option
+    print("7 - Exit") # Print the exit option
 
 
 # -------------------------
@@ -236,8 +238,8 @@ def print_menu() -> None:
 
 def main() -> None:
     """Entry point: authenticate, then menu loop until Exit."""
-    if not verify_password(correct_password="1234", max_attempts=3):
-        return
+    if not verify_password(correct_password="1234", max_attempts=3): # Check if the password is correct
+        return # Return if the password is incorrect
 
     # Initialize the balance, deposit history, withdrawal history, and balance history
     balance = 0.0
