@@ -9,7 +9,7 @@ Conexión y operaciones con bases de datos MySQL/MariaDB usando Python.
    MYSQL_HOST=localhost
    MYSQL_USER=root
    MYSQL_PASSWORD=tu_password
-   MYSQL_DATABASE=ATM_Database_Schema
+   MYSQL_DATABASE=ATM_Database_Schema  
    MYSQL_PORT=3306
    ```
 

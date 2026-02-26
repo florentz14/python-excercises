@@ -285,5 +285,5 @@ def main() -> None:
         print(f"\nError: {e}") # Print a message if an error occurs
 
 
-if __name__ == "__main__":
+if __name__ == "__main__": # If the name of the file is __main__, run the main function
     main() # Run the main function
