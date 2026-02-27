@@ -2,13 +2,11 @@
 
 Final Project: ATM Simulation Program.
 
-## Note on try-except Blocks
+**Author:** Florentino Baez  
+**Course:** ITSE-1002 Python Programming  
+**Professor:** Mauricio Quiroga
 
-A `try-except` block has been added to the program. **Reasons:**
-
-1. **Input validation**: `float()` and `int()` raise `ValueError` when the user enters non-numeric input (e.g., letters or empty input). The try-except catches this and displays a friendly error message instead of crashing.
-2. **Robustness**: Prevents the program from terminating unexpectedly due to invalid or unexpected input.
-3. **User experience**: Prompts the user to re-enter valid data rather than exiting with a traceback.
+---
 
 ## Description
 
@@ -17,6 +15,7 @@ Simulates a basic automated teller machine (ATM) with the following features:
 - **Password protection**: 3 login attempts, default PIN: 1234
 - **Menu-driven interface** with 7 options
 - **Input validation**: Prevents invalid amounts and non-numeric entries
+- **Session history**: Optional save to file on exit
 
 ## Menu Options
 
@@ -30,29 +29,66 @@ Simulates a basic automated teller machine (ATM) with the following features:
 | 6 | History of Balance | Balance snapshot after each transaction |
 | 7 | Exit | Save session histories to file (optional) and quit |
 
-## Files
+---
 
-| File | Content |
-|------|---------|
-| `ATM_FinalProject_Baez.py` | Main program: ATM simulation with menu, deposit, withdraw, balance, history, and file export |
-| `atm_history.txt` | Session history (generated when saving on exit; stored in this folder) |
+## Project Files
+
+| File | Description |
+|------|-------------|
+| `ATM_FinalProject_Baez.py` | **Main program** – Full ATM with try-except, type hints, all features |
+| `ATM_FinalProject_Baez_v2.py` | Simplified version with functions (same features, cleaner code) |
+| `ATM_FinalProject_Baez_v1.py` | Working ATM with **no functions** – all logic inline |
+| `ATM_FinalProject_Baez_v0.py` | ATM menu skeleton – functions print placeholder messages only |
+| `demo_menu.py` | Demo menu (Say Hello, Add Numbers, Show Name, Quit) – practice with `while choice != 4` |
+| `atm_history.txt` | Session history (generated when saving on exit) |
+
+### Version Overview
+
+| Version | Style | Use Case |
+|---------|--------|----------|
+| v0 | Menu + placeholder functions | Learning structure, add logic later |
+| v1 | No functions, inline code | Working app before refactoring |
+| v2 | Functions, simplified | Cleaner production-ready code |
+| Main | Full version, type hints, try-except | Complete reference implementation |
+
+---
 
 ## How to Run
 
+**Main program:**
 ```bash
 cd Baez_Final_Project
 python ATM_FinalProject_Baez.py
 ```
 
-Or from the project root:
+**Other versions:**
+```bash
+python ATM_FinalProject_Baez_v2.py   # Simplified with functions
+python ATM_FinalProject_Baez_v1.py   # No functions
+python ATM_FinalProject_Baez_v0.py   # Menu skeleton
+python demo_menu.py                 # Demo menu
+```
 
+From project root:
 ```bash
 python Baez_Final_Project/ATM_FinalProject_Baez.py
 ```
 
-The session history file (`atm_history.txt`) is always saved inside the `Baez_Final_Project` folder, regardless of where the program is run from.
+The session history file (`atm_history.txt`) is saved in the `Baez_Final_Project` folder.
+
+---
+
+## Note on try-except Blocks
+
+The main program uses `try-except` for:
+
+1. **Input validation**: `float()` and `int()` raise `ValueError` on non-numeric input. The try-except catches this and shows a friendly message instead of crashing.
+2. **Robustness**: Prevents unexpected termination from invalid input.
+3. **User experience**: Prompts the user to re-enter valid data.
+
+---
 
 ## Requirements
 
-- Python 3.14+ (or 3.10+ for type hints)
+- Python 3.10+ (3.14+ for full type hint support)
 - Standard library only (no external dependencies)
