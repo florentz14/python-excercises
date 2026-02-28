@@ -19,7 +19,7 @@ def verify_pin():
         if input("Enter PIN: ").strip() == PIN:
             return True
         print(f"Wrong. {MAX_ATTEMPTS - i - 1} attempts left.")
-    return False
+    return False 
 
 def print_menu():
     """Print the menu."""
