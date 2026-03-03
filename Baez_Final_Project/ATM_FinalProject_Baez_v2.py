@@ -12,14 +12,14 @@
 #              sufficient balance; (3) Check Balance - display current amount;
 #              (4) Deposit History - list all deposits; (5) Withdrawal History -
 #              list all withdrawals; (6) Balance History - balance snapshot after
-#              each transaction; (7) Exit - optionally save all session histories
-#              (deposits, withdrawals, balance snapshots) to atm_history.txt
+#              each transaction; (7) Exit - saves session histories to atm_data.txt
 #              before quitting. Input validation prevents invalid amounts and
 #              non-numeric entries.
 # Python Version: 3.14.2
 # ------------------------------------------------------------
 
 # Import necessary modules
+import getpass
 import os
 from datetime import datetime
 from pathlib import Path
@@ -59,7 +59,8 @@ def verify_login():
     # Loop over the number of attempts left
     for attempts_left in range(MAX_ATTEMPTS, 0, -1):
         entered_user = input("Enter username: ").strip()
-        entered_pin = input("Enter PIN: ").strip()
+        # Get the PIN from the user without showing the PIN while typing
+        entered_pin = getpass.getpass("Enter PIN (no se mostrará mientras escribe): ").strip()
         # Check if the entered username and pin are correct
         if entered_user == username and entered_pin == pin:
             clear_screen()
@@ -144,38 +145,6 @@ def print_menu(username):
     print("=" * 50)
 
 
-def save_to_file(deposits, withdrawals, balances):
-    """Save histories to atm_history.txt."""
-    # Get the path to the history file
-    filepath = Path(__file__).parent / "atm_history.txt"
-    try:
-        # Try to open the file and write the history to it
-        with open(filepath, "w", encoding="utf-8") as f:
-            f.write(f"ATM Session History\nSaved: {datetime.now():%Y-%m-%d %H:%M:%S}\n")
-            f.write("=" * 50 + "\n\n")
-            f.write("Deposit History:\n")
-            # Loop over the deposits and write the amount to the file
-            for i, d in enumerate(deposits, 1):
-                f.write(f"{i}. ${d:,.2f}\n")
-            if not deposits: # Check if the deposits is empty
-                f.write("No deposits.\n")
-            f.write("\nWithdrawal History:\n")
-            # Loop over the withdrawals and write the amount to the file
-            for i, w in enumerate(withdrawals, 1):
-                f.write(f"{i}. ${w:,.2f}\n")
-            if not withdrawals: # Check if the withdrawals is empty
-                f.write("No withdrawals.\n")
-            f.write("\nBalance History:\n")
-            # Loop over the balances and write the balance to the file
-            for i, b in enumerate(balances, 1):
-                f.write(f"{i}. ${b:,.2f}\n")
-            if not balances: # Check if the balances is empty
-                f.write("No balance changes.\n")
-        print(f"Saved to: {filepath.resolve()}") # Print the path to the file
-    except OSError as e: # Catch the error
-        print(f"Error saving file: {e}") # Print the error
-
-
 def get_data_filepath():
     """Return the path to the persistent data file."""
     return Path(__file__).parent / DATA_FILE # Return the path to the data file
@@ -190,12 +159,12 @@ def file_exists():
 def _parse_amount_line(line):
     """Extract amount from line like '1. $78.90'. Returns float or None."""
     line = line.strip() # Strip the line
-    if ". $" in line:
+    if ". $" in line: # Check if the line contains ". $"
         try:
             return float(line.split("$")[1].strip()) # Return the amount
-        except (IndexError, ValueError):
-            pass
-    return None # Return None
+        except (IndexError, ValueError): # Catch the error
+            pass # Pass the error
+    return None # Return None if the line does not contain ". $" and the error is not caught
 
 
 def load_account():
@@ -209,13 +178,13 @@ def load_account():
         with open(filepath, "r", encoding="utf-8") as f:
             content = f.read() # Read the content of the file
 
-        # Check if the content is in the file
+        # Parse format: Deposit History:, 1. $78.90, etc. (same as save_account writes)
         if "Deposit History:" in content:
             deposits = [] # Initialize the deposits list
             withdrawals = [] # Initialize the withdrawals list
             balances_list = [] # Initialize the balances list
             section = None # Initialize the section
-            # Loop over the content and split the lines
+            # Loop over the content and split the leines
             for line in content.splitlines():
                 line_stripped = line.strip() # Strip the line
                 if line_stripped == "Deposit History:":
@@ -247,7 +216,7 @@ def load_account():
 
 
 def save_account(balance, deposits, withdrawals, balances_list):
-    """Save account data to file (same format as atm_history.txt)."""
+    """Save account data to atm_data.txt."""
     filepath = get_data_filepath() # Get the path to the data file
     try:
         # Try to open the file and write the content
@@ -325,11 +294,9 @@ def main():
         elif choice == "7":
             clear_screen()
             print("\nThank you for using our ATM. Goodbye!")
-            # Always save account data (persistent)
-            save_account(balance, deposits, withdrawals, balances) # Save the account data
-            print("Account data saved.")
-            if input("Save session report to atm_history.txt? (y/n): ").strip().lower() == "y":
-                save_to_file(deposits, withdrawals, balances) # Save the session report to the file
+            # Save account data to atm_data.txt
+            save_account(balance, deposits, withdrawals, balances)
+            print("Account data saved to atm_data.txt")
             break
 
         else:

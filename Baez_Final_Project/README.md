@@ -12,11 +12,10 @@ Final Project: ATM Simulation Program.
 
 Simulates a basic automated teller machine (ATM) with the following features:
 
-- **User authentication**: Username + PIN, 3 login attempts (default: see `DEFAULT_USER`)
+- **User authentication**: Username + PIN (hidden input with `getpass`), 3 login attempts (default: see `DEFAULT_USER`)
 - **Menu-driven interface** with 7 options
-- **Persistent account**: `atm_data.txt` loads on start, saves on exit
+- **Persistent account**: Single file `atm_data.txt` loads on start, saves on exit
 - **Input validation**: Prevents invalid amounts and non-numeric entries
-- **Session report**: Optional save to `atm_history.txt` on exit
 
 ## Menu Options
 
@@ -28,7 +27,7 @@ Simulates a basic automated teller machine (ATM) with the following features:
 | 4 | History of Deposit | List all deposits |
 | 5 | History of Withdrawals | List all withdrawals |
 | 6 | History of Balance | Balance snapshot after each transaction |
-| 7 | Exit | Save session histories to file (optional) and quit |
+| 7 | Exit | Save account data to `atm_data.txt` and quit |
 
 ---
 
@@ -37,12 +36,11 @@ Simulates a basic automated teller machine (ATM) with the following features:
 | File | Description |
 |------|-------------|
 | `ATM_FinalProject_Baez_v2.py` | **Recommended** – functions, username+PIN, persistent account, clear screen |
-| `ATM_FinalProject_Baez.py` | Full version with type hints, try-except |
+| `ATM_FinalProject_Baez_v3.py` | Full version with type hints, try-except |
 | `ATM_FinalProject_Baez_v1.py` | Working ATM with **no functions** – all logic inline |
 | `ATM_FinalProject_Baez_v0.py` | ATM menu skeleton – functions print placeholder messages only |
 | `demo_menu.py` | Demo menu (Say Hello, Add Numbers, Show Name, Quit) |
-| `atm_data.txt` | Persistent account data (auto-saved on exit) |
-| `atm_history.txt` | Session report (optional save on exit) |
+| `atm_data.txt` | Persistent account data (loads on start, auto-saved on exit) |
 
 ### Version Overview
 
@@ -51,7 +49,7 @@ Simulates a basic automated teller machine (ATM) with the following features:
 | v0 | Menu + placeholder functions | Learning structure, add logic later |
 | v1 | No functions, inline code | Working app before refactoring |
 | v2 | Functions, username+PIN, persistent account | Main deliverable |
-| Main | Full version, type hints, try-except | Reference implementation |
+| v3 | Full version, type hints, try-except | Reference implementation |
 
 ---
 
@@ -60,7 +58,7 @@ Simulates a basic automated teller machine (ATM) with the following features:
 **Main program:**
 ```bash
 cd Baez_Final_Project
-python ATM_FinalProject_Baez.py
+python ATM_FinalProject_Baez_v3.py
 ```
 
 **Recommended (v2):**
@@ -70,15 +68,15 @@ python ATM_FinalProject_Baez_v2.py
 
 **Other versions:**
 ```bash
-python ATM_FinalProject_Baez.py     # Full version
+python ATM_FinalProject_Baez_v3.py  # Full version
 python ATM_FinalProject_Baez_v1.py # No functions
 python ATM_FinalProject_Baez_v0.py # Menu skeleton
 python demo_menu.py                # Demo menu
 ```
 
-Both `atm_data.txt` and `atm_history.txt` are saved in the `Baez_Final_Project` folder.
+`atm_data.txt` is saved in the `Baez_Final_Project` folder.
 
-**See `entregable.md`** for a detailed English explanation of `ATM_FinalProject_Baez_v2.py`.
+**See `note.md`** for a detailed explanation of what `ATM_FinalProject_Baez_v2.py` does and what each function does.
 
 ---
 
