@@ -1,0 +1,6 @@
+product_id,product_name,category,initial_stock,min_stock
+P001,Widget A,Electronics,100,20
+P002,Widget B,Office,200,50
+P003,Cable HDMI,Electronics,50,10
+P004,Notebook Pack,Office,150,30
+P005,Desk Lamp,Home,25,5

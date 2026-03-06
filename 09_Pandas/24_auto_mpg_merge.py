@@ -10,8 +10,8 @@
 import pandas as pd
 from pathlib import Path
 
-df_cars = pd.read_csv(Path(__file__).parent / "auto_mpg_cars.csv")
-df_origin = pd.read_csv(Path(__file__).parent / "auto_mpg_origin.csv")
+df_cars = pd.read_csv(Path(__file__).parent / "data" / "auto_mpg_cars.csv")
+df_origin = pd.read_csv(Path(__file__).parent / "data" / "auto_mpg_origin.csv")
 
 print("=" * 60)
 print("DF_CARS (car_name, mpg, cylinders, displacement, horsepower)")

@@ -10,7 +10,7 @@
 import pandas as pd
 from pathlib import Path
 
-csv_path = Path(__file__).parent / "grouping_occupation_users.csv"
+csv_path = Path(__file__).parent / "data" / "grouping_occupation_users.csv"
 df = pd.read_csv(csv_path, dtype={"zip_code": str})
 
 print("=" * 60)

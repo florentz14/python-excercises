@@ -11,7 +11,7 @@ import pandas as pd
 from pathlib import Path
 
 # Load user/occupation data from the CSV file (same folder as this script)
-csv_path = Path(__file__).parent / "occupation_users.csv"
+csv_path = Path(__file__).parent / "data" / "occupation_users.csv"
 df = pd.read_csv(csv_path, dtype={"zip_code": str})
 
 # Show first 5 rows

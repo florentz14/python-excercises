@@ -50,7 +50,7 @@ print()
 # -------------------------------------------------
 # Creating DataFrame from dict of lists (at least 15 Pokemon)
 # -------------------------------------------------
-csv_path = Path(__file__).parent / "pokemon.csv"
+csv_path = Path(__file__).parent / "data" / "pokemon.csv"
 df_pokemon = pd.read_csv(csv_path)
 print("DataFrame from dict of lists:")
 print(df_pokemon)

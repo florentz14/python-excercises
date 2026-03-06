@@ -10,7 +10,7 @@
 import pandas as pd
 from pathlib import Path
 
-csv_path = Path(__file__).parent / "regiment.csv"
+csv_path = Path(__file__).parent / "data" / "regiment.csv"
 df = pd.read_csv(csv_path)
 
 print("=" * 60)

@@ -11,9 +11,9 @@ import pandas as pd
 import numpy as np
 from pathlib import Path
 
-df_listings = pd.read_csv(Path(__file__).parent / "house_listings.csv")
-df_neighborhoods = pd.read_csv(Path(__file__).parent / "house_neighborhoods.csv")
-df_sales = pd.read_csv(Path(__file__).parent / "house_sales.csv")
+df_listings = pd.read_csv(Path(__file__).parent / "data" / "house_listings.csv")
+df_neighborhoods = pd.read_csv(Path(__file__).parent / "data" / "house_neighborhoods.csv")
+df_sales = pd.read_csv(Path(__file__).parent / "data" / "house_sales.csv")
 
 print("=" * 60)
 print("DF_LISTINGS (with neighborhood)")

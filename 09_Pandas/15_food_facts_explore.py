@@ -12,7 +12,7 @@ from pathlib import Path
 
 # Load food product data from the CSV file (same folder as this script)
 # Empty cells in the CSV are automatically read as NaN by pandas
-csv_path = Path(__file__).parent / "world_food_facts.csv"
+csv_path = Path(__file__).parent / "data" / "world_food_facts.csv"
 df = pd.read_csv(csv_path)
 
 # Print shape

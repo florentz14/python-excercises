@@ -1,25 +1,24 @@
-"""
-NumPy - Broadcasting
-====================
-Tema: 08_Matrices - Reglas para operar arrays de distintas formas
-Descripción: NumPy "expande" dimensiones para permitir v + escalar, matriz + vector, etc.
-"""
+# ------------------------------------------------------------
+# File: 36_numpy_broadcasting.py
+# Purpose: NumPy broadcasting.
+# Description: Expand dimensions to allow v+scalar, matrix+vector, etc.
+# ------------------------------------------------------------
 
 import numpy as np
 
-# Vector + escalar: el escalar se aplica a cada elemento
+# Vector + scalar: scalar applied to each element
 v = np.array([1, 2, 3])
 print("v =", v)
 print("v + 10 =", v + 10)
 
-# Matriz + vector (fila): cada fila de la matriz + el vector
+# Matrix + row vector: each row + vector
 A = np.array([[1, 2, 3], [4, 5, 6]])  # 2×3
-b = np.array([10, 20, 30])              # (3,)
+b = np.array([10, 20, 30])            # (3,)
 print("\nA =\n", A)
 print("b =", b)
-print("A + b =\n", A + b)  # b se "repite" en cada fila
+print("A + b =\n", A + b)  # b broadcast along rows
 
-# Matriz × vector columna (broadcasting)
+# Matrix + column vector
 col = np.array([[1], [2]])  # 2×1
 print("\ncol =", col.T)
-print("A + col =\n", A + col)  # col se repite en cada columna de A
+print("A + col =\n", A + col)  # col broadcast along cols

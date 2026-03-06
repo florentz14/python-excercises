@@ -14,7 +14,7 @@ from pathlib import Path
 
 # Create Titanic DataFrame: PassengerId, Survived, Pclass, Name, Sex, Age, Fare, Embarked
 # At least 20 rows
-csv_path = Path(__file__).parent / "titanic.csv"
+csv_path = Path(__file__).parent / "data" / "titanic.csv"
 df = pd.read_csv(csv_path)
 
 print("Titanic data (sample):")

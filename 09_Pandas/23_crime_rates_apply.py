@@ -10,7 +10,7 @@
 import pandas as pd
 from pathlib import Path
 
-df = pd.read_csv(Path(__file__).parent / "us_crime_rates.csv")
+df = pd.read_csv(Path(__file__).parent / "data" / "us_crime_rates.csv")
 
 print("=" * 60)
 print("ORIGINAL DATAFRAME (Year, Population, Total, Violent, Property, Murder, Robbery, Burglary)")

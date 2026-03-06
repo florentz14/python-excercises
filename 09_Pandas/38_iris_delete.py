@@ -14,7 +14,7 @@ from pathlib import Path
 # -------------------------------------------------
 # Create Iris DataFrame with at least 15 rows, 3 species, some NaN values
 # -------------------------------------------------
-df = pd.read_csv(Path(__file__).parent / "iris.csv")
+df = pd.read_csv(Path(__file__).parent / "data" / "iris.csv")
 print("Original Iris DataFrame:")
 print(df)
 print("Shape before any deletion:", df.shape)

@@ -12,7 +12,7 @@ import pandas as pd
 from pathlib import Path
 
 # Load Chipotle order data from the CSV file (same folder as this script)
-csv_path = Path(__file__).parent / "chipotle_orders.csv"
+csv_path = Path(__file__).parent / "data" / "chipotle_orders.csv"
 df = pd.read_csv(csv_path)
 
 # Print dataset shape (rows, columns)

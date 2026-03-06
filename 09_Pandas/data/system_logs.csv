@@ -1,0 +1,21 @@
+timestamp,server,level,message
+2024-01-10 09:15:22,SERVER-A,ERROR,Database connection failed
+2024-01-10 09:16:01,SERVER-B,WARNING,High memory usage 85%
+2024-01-10 09:18:33,SERVER-A,INFO,Connection restored
+2024-01-10 10:22:11,SERVER-C,ERROR,Timeout on API request
+2024-01-10 10:45:00,SERVER-A,WARNING,Disk space 78% used
+2024-01-10 11:02:44,SERVER-B,ERROR,Database connection failed
+2024-01-10 14:30:15,SERVER-A,WARNING,High memory usage 82%
+2024-01-10 15:12:09,SERVER-C,WARNING,Disk space 90% used
+2024-01-10 16:00:00,SERVER-B,ERROR,Timeout on API request
+2024-01-10 17:45:22,SERVER-A,ERROR,Database connection failed
+2024-01-10 18:30:11,SERVER-C,ERROR,Database connection failed
+2024-01-10 19:15:33,SERVER-B,WARNING,High memory usage 88%
+2024-01-11 08:00:01,SERVER-A,INFO,Service started
+2024-01-11 09:12:44,SERVER-B,ERROR,Database connection failed
+2024-01-11 10:05:22,SERVER-C,WARNING,High memory usage 80%
+2024-01-11 11:30:00,SERVER-A,ERROR,Timeout on API request
+2024-01-11 12:15:11,SERVER-B,WARNING,Disk space 85% used
+2024-01-11 14:22:33,SERVER-C,ERROR,Database connection failed
+2024-01-11 15:45:00,SERVER-A,WARNING,High memory usage 79%
+2024-01-11 16:20:22,SERVER-B,ERROR,Timeout on API request

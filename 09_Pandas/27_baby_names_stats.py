@@ -11,7 +11,7 @@ import pandas as pd
 import numpy as np
 from pathlib import Path
 
-df = pd.read_csv(Path(__file__).parent / "us_baby_names.csv")
+df = pd.read_csv(Path(__file__).parent / "data" / "us_baby_names.csv")
 
 print("=" * 60)
 print("US BABY NAMES - STATISTICAL ANALYSIS")

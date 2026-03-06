@@ -10,9 +10,9 @@
 import pandas as pd
 from pathlib import Path
 
-df_personal = pd.read_csv(Path(__file__).parent / "fictitious_personal.csv")
-df_work = pd.read_csv(Path(__file__).parent / "fictitious_work.csv")
-df_education = pd.read_csv(Path(__file__).parent / "fictitious_education.csv")
+df_personal = pd.read_csv(Path(__file__).parent / "data" / "fictitious_personal.csv")
+df_work = pd.read_csv(Path(__file__).parent / "data" / "fictitious_work.csv")
+df_education = pd.read_csv(Path(__file__).parent / "data" / "fictitious_education.csv")
 
 print("=" * 60)
 print("DF_PERSONAL (first_name, last_name, age, city)")

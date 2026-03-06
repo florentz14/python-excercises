@@ -13,7 +13,7 @@ from pathlib import Path
 
 # Create Chipotle order DataFrame with item_name, quantity, item_price, item_category
 # Approximately 15 rows
-csv_path = Path(__file__).parent / "chipotle_viz.csv"
+csv_path = Path(__file__).parent / "data" / "chipotle_viz.csv"
 df = pd.read_csv(csv_path)
 
 # Ensure item_price is numeric (in case stored as string in real data)

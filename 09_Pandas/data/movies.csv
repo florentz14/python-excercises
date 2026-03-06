@@ -1,0 +1,16 @@
+title,genre,year,rating,duration_min,platform
+The Dark Knight,Action,2008,9.0,152,cinema
+Inception,Sci-Fi,2010,8.8,148,cinema
+Interstellar,Sci-Fi,2014,8.6,169,cinema
+Pulp Fiction,Drama,1994,8.9,154,cinema
+Forrest Gump,Drama,1994,8.8,142,cinema
+The Matrix,Sci-Fi,1999,8.7,136,Netflix
+Breaking Bad,Drama,2008,9.5,45,Netflix
+Stranger Things,Sci-Fi,2016,8.7,50,Netflix
+The Crown,Drama,2016,8.6,58,Netflix
+Black Mirror,Sci-Fi,2011,8.8,60,Netflix
+Comedy Special,Comedy,2023,8.2,75,Netflix
+Action Hero,Action,2022,7.5,120,Amazon
+Drama Queen,Drama,2021,7.8,95,Amazon
+Sci-Fi Saga,Sci-Fi,2020,8.1,130,Amazon
+Romantic Comedy,Comedy,2019,7.2,100,Amazon

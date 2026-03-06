@@ -1,0 +1,27 @@
+timestamp,user_id,page,source,session_id,converted
+2024-01-08 09:15:00,U001,/home,google,1,0
+2024-01-08 09:15:30,U001,/products,google,1,0
+2024-01-08 09:16:00,U001,/checkout,google,1,1
+2024-01-08 10:22:00,U002,/home,direct,2,0
+2024-01-08 10:23:00,U002,/about,direct,2,0
+2024-01-08 11:05:00,U003,/home,facebook,3,0
+2024-01-08 11:06:00,U003,/products,facebook,3,0
+2024-01-08 14:30:00,U004,/home,google,4,0
+2024-01-08 14:31:00,U004,/products,google,4,0
+2024-01-08 14:32:00,U004,/pricing,google,4,0
+2024-01-09 09:00:00,U005,/home,direct,5,0
+2024-01-09 09:01:00,U005,/products,direct,5,0
+2024-01-09 09:02:00,U005,/checkout,direct,5,1
+2024-01-09 10:15:00,U006,/home,google,6,0
+2024-01-09 10:16:00,U006,/blog,google,6,0
+2024-01-09 11:30:00,U007,/home,facebook,7,0
+2024-01-09 11:31:00,U007,/products,facebook,7,0
+2024-01-09 11:32:00,U007,/checkout,facebook,7,1
+2024-01-09 14:00:00,U008,/home,google,8,0
+2024-01-09 14:01:00,U008,/products,google,8,0
+2024-01-10 09:45:00,U009,/home,direct,9,0
+2024-01-10 09:46:00,U009,/about,direct,9,0
+2024-01-10 10:30:00,U010,/home,google,10,0
+2024-01-10 10:31:00,U010,/products,google,10,0
+2024-01-10 10:32:00,U010,/pricing,google,10,0
+2024-01-10 10:33:00,U010,/checkout,google,10,1

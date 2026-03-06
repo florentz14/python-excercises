@@ -10,7 +10,7 @@
 import pandas as pd
 from pathlib import Path
 
-csv_path = Path(__file__).parent / "euro12.csv"
+csv_path = Path(__file__).parent / "data" / "euro12.csv"
 df = pd.read_csv(csv_path)
 
 # Select only Team and Goals columns

@@ -10,7 +10,7 @@
 import pandas as pd
 from pathlib import Path
 
-csv_path = Path(__file__).parent / "fictional_army.csv"
+csv_path = Path(__file__).parent / "data" / "fictional_army.csv"
 df = pd.read_csv(csv_path)
 
 # Filter soldiers with preTestScore > 50

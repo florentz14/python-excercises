@@ -14,7 +14,7 @@ from pathlib import Path
 # -------------------------------------------------
 # Create Wine DataFrame: at least 15 rows, some NaN and some duplicate rows
 # -------------------------------------------------
-df = pd.read_csv(Path(__file__).parent / "wine_quality.csv")
+df = pd.read_csv(Path(__file__).parent / "data" / "wine_quality.csv")
 print("Original Wine DataFrame:")
 print(df)
 print("Shape:", df.shape)

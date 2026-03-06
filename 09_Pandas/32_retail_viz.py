@@ -13,7 +13,7 @@ from pathlib import Path
 
 # Create retail DataFrame: InvoiceNo, InvoiceDate, Description, Quantity, UnitPrice, CustomerID, Country
 # At least 15 rows with dates
-csv_path = Path(__file__).parent / "online_retail.csv"
+csv_path = Path(__file__).parent / "data" / "online_retail.csv"
 df = pd.read_csv(csv_path)
 df["InvoiceDate"] = pd.to_datetime(df["InvoiceDate"])
 

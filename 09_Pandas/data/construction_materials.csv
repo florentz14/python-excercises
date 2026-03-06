@@ -1,0 +1,16 @@
+date,project,material,quantity_planned,quantity_used,unit_cost,stage
+2024-01-05,Office Tower A,sheetrock,500,480,12.50,interior
+2024-01-05,Office Tower A,cement,200,210,45.00,foundation
+2024-01-06,Office Tower B,sheetrock,400,420,12.50,interior
+2024-01-08,Office Tower A,lumber,150,165,8.00,framing
+2024-01-08,Office Tower B,cement,180,175,45.00,foundation
+2024-01-10,Mall Center,sheetrock,600,550,12.50,interior
+2024-01-10,Office Tower A,tiles,200,190,22.00,flooring
+2024-01-12,Mall Center,cement,250,265,45.00,foundation
+2024-01-12,Office Tower B,lumber,120,118,8.00,framing
+2024-01-15,Office Tower A,paint,80,95,35.00,finishing
+2024-01-15,Office Tower B,sheetrock,350,360,12.50,interior
+2024-01-18,Mall Center,lumber,200,195,8.00,framing
+2024-01-18,Office Tower A,sheetrock,100,105,12.50,interior
+2024-01-20,Office Tower B,tiles,180,175,22.00,flooring
+2024-01-22,Mall Center,sheetrock,400,430,12.50,interior

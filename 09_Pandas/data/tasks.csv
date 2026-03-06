@@ -1,0 +1,13 @@
+task_id,task_name,project,assignee,status,priority,created,completed,due_date
+T001,Design mockups,Website,Alice,completed,high,2024-01-02,2024-01-08,2024-01-10
+T002,API setup,Website,Bob,in_progress,high,2024-01-03,,2024-01-15
+T003,Database schema,Mobile,Carol,completed,high,2024-01-04,2024-01-12,2024-01-12
+T004,Login screen,Mobile,Bob,in_progress,medium,2024-01-05,,2024-01-18
+T005,Documentation,Website,Alice,pending,low,2024-01-06,,2024-01-20
+T006,Unit tests,Website,Bob,pending,medium,2024-01-07,,2024-01-22
+T007,Deploy staging,Mobile,Carol,in_progress,high,2024-01-08,,2024-01-14
+T008,Bug fix #101,Website,Alice,completed,high,2024-01-09,2024-01-10,2024-01-11
+T009,Code review,Website,Bob,pending,medium,2024-01-10,,2024-01-16
+T010,UI polish,Mobile,Carol,in_progress,low,2024-01-11,,2024-01-25
+T011,Performance audit,Website,Alice,pending,medium,2024-01-12,,2024-01-19
+T012,Integration tests,Mobile,Bob,pending,high,2024-01-13,,2024-01-17

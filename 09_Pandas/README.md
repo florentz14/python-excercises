@@ -8,23 +8,23 @@ Data analysis exercises with Pandas, organized by topic.
 
 | File | Description |
 |------|-------------|
-| `01_analisis_almuerzo.py` | Lunch type analysis (socioeconomic indicator) |
-| `02_analisis_educacion_parental.py` | Parental education level analysis |
-| `03_analisis_general.py` | General student performance analysis |
-| `04_analisis_grupo_etnico.py` | Ethnic group performance analysis |
-| `05_analisis_por_genero.py` | Gender performance analysis |
-| `06_analisis_preparacion.py` | Test preparation impact analysis |
-| `07_analisis_students_performance.py` | Full CSV analysis (load, stats, averages) |
-| `08_menu_principal.py` | Interactive menu to launch all analyses |
+| `01_lunch_analysis.py` | Lunch type analysis (socioeconomic indicator) |
+| `02_parental_education_analysis.py` | Parental education level analysis |
+| `03_general_analysis.py` | General student performance analysis |
+| `04_ethnic_group_analysis.py` | Ethnic group performance analysis |
+| `05_gender_analysis.py` | Gender performance analysis |
+| `06_test_preparation_analysis.py` | Test preparation impact analysis |
+| `07_students_performance_analysis.py` | Full CSV analysis (load, stats, averages) |
+| `08_main_menu.py` | Interactive menu to launch all analyses |
 
 ## Pandas Basics (09–12)
 
 | File | Description |
 |------|-------------|
-| `09_crear_dataframe.py` | Create a DataFrame from a dictionary |
-| `10_leer_csv.py` | Read a CSV file into a DataFrame |
-| `11_filtrar.py` | Filter rows by condition |
-| `12_columnas.py` | Select and create columns |
+| `09_create_dataframe.py` | Create a DataFrame from a dictionary |
+| `10_read_csv.py` | Read a CSV file into a DataFrame |
+| `11_filter.py` | Filter rows by condition |
+| `12_columns.py` | Select and create columns |
 
 ## Getting & Knowing (13–15)
 
@@ -103,9 +103,28 @@ Data analysis exercises with Pandas, organized by topic.
 | `38_iris_delete.py` | `iris.csv` | drop, dropna, del, pop, drop_duplicates |
 | `39_wine_delete.py` | `wine_quality.csv` | Outlier removal, select_dtypes, fillna vs dropna |
 
+## Real-World Analysis (40–49)
+
+| File | CSV(s) | Description |
+|------|--------|-------------|
+| `40_sales_analysis.py` | `store_sales.csv` | Best product, best month, top customer |
+| `41_student_attendance.py` | `student_attendance.csv` | Absences, attendance %, at-risk students |
+| `42_personal_budget.py` | `personal_budget.csv` | Spending by category, monthly savings |
+| `43_inventory_dashboard.py` | `inventory_movements.csv`, `inventory_stock.csv` | Reorder, turnover, unsold products |
+| `44_task_tracking.py` | `tasks.csv` | Pending by assignee, delays, completed |
+| `45_construction_materials.py` | `construction_materials.csv` | Consumption, waste, budget variance |
+| `46_system_logs.py` | `system_logs.csv` | Most errors, peak hour, server warnings |
+| `47_web_traffic.py` | `web_traffic.csv` | Top pages, traffic by day, conversion by source |
+| `48_movies_analysis.py` | `movies.csv` | Best genre, releases by year, top 10 |
+| `49_transport_analysis.py` | `transport.csv` | Longest route, trips by driver, delays |
+
 ---
 
-## HR Database CSVs
+## Data Folder
+
+All CSV files are located in `09_Pandas/data/`. Python scripts reference them via `Path(__file__).parent / "data" / "filename.csv"`.
+
+## HR Database CSVs (in data/)
 
 Relational dataset based on the classic HR schema (employees, departments, jobs).
 

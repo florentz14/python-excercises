@@ -1,0 +1,20 @@
+date,route,driver_id,vehicle_id,duration_min,distance_km,cost,delay_min,status
+2024-01-08,A-City Center,D001,V001,45,32,45.00,0,completed
+2024-01-08,B-Airport,D002,V002,90,65,78.00,15,completed
+2024-01-08,C-Downtown,D001,V003,30,18,35.00,0,completed
+2024-01-08,A-City Center,D003,V001,50,32,45.00,5,completed
+2024-01-09,B-Airport,D002,V002,85,65,78.00,10,completed
+2024-01-09,C-Downtown,D001,V003,35,18,35.00,8,completed
+2024-01-09,A-City Center,D003,V001,42,32,45.00,0,completed
+2024-01-09,D-Suburbs,D002,V004,60,45,55.00,20,completed
+2024-01-10,B-Airport,D001,V002,95,65,78.00,25,completed
+2024-01-10,A-City Center,D003,V001,44,32,45.00,0,completed
+2024-01-10,C-Downtown,D002,V003,32,18,35.00,2,completed
+2024-01-10,D-Suburbs,D001,V004,58,45,55.00,5,completed
+2024-01-11,A-City Center,D003,V001,48,32,45.00,3,completed
+2024-01-11,B-Airport,D002,V002,88,65,78.00,12,completed
+2024-01-11,C-Downtown,D001,V003,28,18,35.00,0,completed
+2024-01-11,D-Suburbs,D002,V004,62,45,55.00,18,completed
+2024-01-12,A-City Center,D001,V001,46,32,45.00,1,completed
+2024-01-12,B-Airport,D003,V002,92,65,78.00,22,completed
+2024-01-12,C-Downtown,D002,V003,33,18,35.00,5,completed
