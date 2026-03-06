@@ -13,6 +13,8 @@ Programs related to mathematical operations, arithmetic, and numerical algorithm
 | 05 | `05_two_sum_v2.py`         | Two Sum optimized (compact implementation)  |
 | 06 | `06_two_sum_bruteforce.py` | Two Sum bruteforce O(n²), no dictionary     |
 | 07 | `07_two_sum_numpy.py`      | Two Sum with NumPy (basic + matrix)         |
+| 08 | `08_max_subarray_sum_bruteforce.py` | Max sum subarray of size k (brute force)  |
+| 09 | `09_max_subarray_sum_sliding_window.py` | Max sum subarray (sliding window O(n))  |
 
 ## Files
 
@@ -75,6 +77,16 @@ Shorthand +=, -=, *=, /=, //= for operate-and-assign in one step.
 ### `04_logicos.py` - Logical operators
 
 and, or, not with practical examples (age + license → can drive).
+
+### `08_max_subarray_sum_bruteforce.py` - Max sum subarray (bruteforce)
+
+For each possible window of size k, compute the sum from scratch.
+**Time O(n·k), Space O(1).**
+
+### `09_max_subarray_sum_sliding_window.py` - Max sum subarray (sliding window)
+
+Update the window sum incrementally: subtract element leaving, add element entering.
+**Time O(n), Space O(1).**
 
 ## How to run
 

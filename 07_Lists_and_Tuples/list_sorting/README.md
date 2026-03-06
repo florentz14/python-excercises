@@ -1,4 +1,4 @@
-# Ordenamiento y Organizacion
+# list_sorting/ - Sorting y Organizacion
 
 Ordenar listas por diferentes criterios: alfabetico, numerico, por longitud, por otra lista, shuffle y verificaciones.
 
@@ -20,7 +20,7 @@ Ordenar listas por diferentes criterios: alfabetico, numerico, por longitud, por
 ## Ejecutar
 
 ```bash
-cd ordenamiento
+cd list_sorting
 python 01_sort.py
 python 09_sort_by_another_list.py
 ```

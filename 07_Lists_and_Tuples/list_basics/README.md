@@ -1,6 +1,6 @@
-# Lista Simple - Metodos y Operaciones
+# list_basics/ - List methods and operations
 
-Coleccion de archivos individuales que demuestran cada metodo y operacion
+Collection of individual files demonstrating each method and operation
 de las listas en Python. Cada archivo es independiente y ejecutable por separado.
 
 ## Archivos (26)

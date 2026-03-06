@@ -31,7 +31,7 @@ Ejercicios sobre tuplas en Python: creacion, acceso, inmutabilidad, unpacking, o
 ## Ejecutar
 
 ```bash
-cd tuplas
+cd tuples
 python 01_crear_tupla.py
 python 04_unpacking.py
 ```

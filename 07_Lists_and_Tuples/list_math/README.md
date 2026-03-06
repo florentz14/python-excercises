@@ -1,6 +1,6 @@
-# Operaciones Matematicas
+# list_math/ - Mathematical Operations
 
-Sumas, productos, promedios, maximos/minimos, criba de Eratostenes, promedios ponderados y operaciones con mapeo.
+Sums, products, averages, max/min, Sieve of Eratosthenes, weighted averages and mapping operations.
 
 ## Archivos (25)
 
@@ -35,7 +35,7 @@ Sumas, productos, promedios, maximos/minimos, criba de Eratostenes, promedios po
 ## Ejecutar
 
 ```bash
-cd matematicas
+cd list_math
 python 01_sum_items_in_list.py
 python 08_sieve_eratosthenes.py
 ```

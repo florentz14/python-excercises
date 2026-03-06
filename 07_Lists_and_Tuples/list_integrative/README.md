@@ -1,6 +1,6 @@
-# Ejercicios Generales
+# list_integrative/ - Integrative List Exercises
 
-Manipulacion general de listas: modificar, insertar, eliminar, rotar, intercalar, run-length encoding, conversion de tipos, iteracion ciclica, bigrams, fibonacci y ejercicios variados.
+General list manipulation: modificar, insertar, eliminar, rotar, intercalar, run-length encoding, conversion de tipos, iteracion ciclica, bigrams, fibonacci y ejercicios variados.
 
 ## Archivos (133)
 
@@ -31,7 +31,7 @@ Ejercicios numerados del 014 al 133 que cubren:
 ## Ejecutar
 
 ```bash
-cd ejercicios_generales
+cd list_integrative
 python 037_convert_string_to_list.py
 python 063_interleave_lists.py
 ```

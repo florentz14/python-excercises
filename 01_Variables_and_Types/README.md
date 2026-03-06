@@ -12,8 +12,8 @@ lists, sets, tuples, operations, and strings.
 |-- lists/          (20 archivos)  Listas
 |-- sets/           (18 archivos)  Conjuntos (Sets)
 |-- tuples/         (14 archivos)  Tuplas
-|-- operations/    (7 archivos)   Mathematical operations, arithmetic, etc.
-|-- strings/       (1 archivo)    Algoritmos y ejercicios con cadenas
+|-- operations/    (9 archivos)   Mathematical operations, arithmetic, etc.
+|-- strings/       (4 archivos)   Algoritmos y ejercicios con cadenas
 ```
 
 ## Subcarpetas
@@ -124,7 +124,7 @@ lists, sets, tuples, operations, and strings.
 | 13 | `13_nested.py` | Tuplas anidadas |
 | 14 | `14_convert_list_tuple.py` | Conversion lista-tupla |
 
-### `operations/` - Mathematical operations (7 archivos)
+### `operations/` - Mathematical operations (9 archivos)
 
 | # | Archivo | Contenido |
 |---|---------|-----------|
@@ -135,12 +135,18 @@ lists, sets, tuples, operations, and strings.
 | 05 | `05_two_sum_v2.py` | Two Sum optimizado (implementacion compacta) |
 | 06 | `06_two_sum_bruteforce.py` | Two Sum bruteforce O(n²), sin diccionario |
 | 07 | `07_two_sum_numpy.py` | Two Sum con NumPy (basic + matrix) |
+| 08 | `08_max_subarray_sum_bruteforce.py` | Max sum subarray size k (bruteforce) |
+| 09 | `09_max_subarray_sum_sliding_window.py` | Max sum subarray (sliding window) |
 
-### `strings/` - Algoritmos con cadenas (1 archivo)
+### `strings/` - Algoritmos con cadenas (5 archivos)
 
 | # | Archivo | Contenido |
 |---|---------|-----------|
 | 01 | `01_valid_palindrome.py` | Comprobar si una cadena es palindromo valido |
+| 02 | `02_longest_unique_substring_bruteforce.py` | Substring mas larga sin repetir (bruteforce) |
+| 03 | `03_longest_unique_substring_sliding_window.py` | Substring mas larga (sliding window) |
+| 04 | `04_longest_unique_substring_dict.py` | Substring mas larga (dict, recomendado) |
+| 05 | `05_longest_unique_substring_freq_counter.py` | Substring mas larga (defaultdict) |
 
 ## Resumen
 
@@ -151,9 +157,9 @@ lists, sets, tuples, operations, and strings.
 | `lists/` | 20 | Listas |
 | `sets/` | 18 | Conjuntos (Sets) |
 | `tuples/` | 14 | Tuplas |
-| `operations/` | 7 | Mathematical operations |
-| `strings/` | 1 | String algorithms |
-| **Total** | **89** | |
+| `operations/` | 9 | Mathematical operations |
+| `strings/` | 5 | String algorithms |
+| **Total** | **95** | |
 
 ## Como ejecutar
 

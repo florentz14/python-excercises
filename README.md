@@ -56,10 +56,14 @@ Algorithms and structures:
 
 ### 06_Integrative_Exercises
 
-Exercises combining several concepts:
-- BMI, años bisiestos, fechas magicas
-- Conversor de numeros romanos
-- Calculadora de areas
+Los ejercicios integradores fueron movidos a sus módulos correspondientes:
+- **02_Conditionals**: BMI, año bisiesto, fechas mágicas, convertidor romano, info nacimiento/zodíaco
+- **03_Loops**: Ejemplos de for y while
+- **04_Functions**: Calculadora de áreas, conversión de temperatura
+- **01_Variables_and_Types**: Variables, strings, tablas f-string, input
+- **10_Matplotlib**: Gráficos (seno, funciones matemáticas, Turtle)
+
+Ver `06_Integrative_Exercises/README.md` para la tabla de reubicación.
 
 ### 07_Lists_and_Tuples
 
@@ -160,7 +164,7 @@ Modulos de laboratorio con ejercicios practicos.
 3. **03_Loops** - Code repetition
 4. **04_Functions** - Modularity
 5. **05_Data_Structures** - Algorithms
-6. **06_Integrative_Exercises** - Application
+6. **06_Integrative_Exercises** - Índice de ejercicios reubicados en otros módulos
 7. **07_Lists_and_Tuples** - Practice
 8. **08_Matrices** - NumPy
 9. **09_Pandas** - Data analysis

@@ -1,69 +1,69 @@
-# 07 - Listas y Tuplas
+# 07 - Lists and Tuples
 
-Ejercicios de listas y tuplas en Python, organizados en subcarpetas por tema.
+List and tuple exercises in Python, organized by topic in subfolders.
 
-## Estructura
+## Structure
 
 ```
 07_Lists_and_Tuples/
-|-- lista_simple/          (26 archivos)  Metodos basicos de listas
-|-- tuplas/                (21 archivos)  Ejercicios de tuplas
-|-- listas_anidadas/       (40 archivos)  Listas anidadas y matrices
-|-- busqueda_y_filtrado/   (64 archivos)  Busqueda, filtrado y conteo
-|-- ordenamiento/          (10 archivos)  Ordenamiento y organizacion
-|-- matematicas/           (25 archivos)  Operaciones matematicas
-|-- funcional_y_avanzado/  (11 archivos)  Programacion funcional y avanzada
-|-- ejercicios_generales/  (133 archivos) Manipulacion y ejercicios variados
+|-- list_basics/           (26 files)  Basic list methods
+|-- tuples/                (21 files)  Tuple exercises
+|-- list_nested/           (40 files)  Nested lists and matrices
+|-- list_search_filter/    (64 files)  Search, filter and count
+|-- list_sorting/          (10 files)  Sorting and organization
+|-- list_math/             (25 files)  Mathematical operations
+|-- list_functional/       (11 files)  Functional programming
+|-- list_integrative/      (133 files) Integrative list exercises
 ```
 
-## Subcarpetas
+## Subfolders
 
-### `lista_simple/` - Metodos Basicos (25 archivos)
+### `list_basics/` - Basic Methods (26 files)
 
 Archivos individuales que demuestran cada metodo y operacion de las listas:
 `append()`, `insert()`, `remove()`, `pop()`, `sort()`, `reverse()`, `copy()`,
 `extend()`, `count()`, `index()`, `clear()`, slicing, loops, list comprehension,
 `del`, `len()`, `in`, `min/max/sum`, concatenacion y mas.
 
-### `tuplas/` - Ejercicios de Tuplas (21 archivos)
+### `tuples/` - Tuple Exercises (21 files)
 
-Operaciones con tuplas: creacion, inmutabilidad, acceso, conversion a lista,
+Operations with tuples: creation, immutability, access, conversion to list,
 operador `in`, concatenacion, repeticion, unpacking, ordenamiento por elemento,
 extraccion de elementos, productos min/max, y conversion a strings.
 
-### `listas_anidadas/` - Listas Anidadas y Matrices (40 archivos)
+### `list_nested/` - Nested Lists and Matrices (40 files)
 
-Ejercicios con listas de listas, matrices 2D/3D: aplanar (flatten), sublistas,
+Exercises with lists of lists, 2D/3D matrices: aplanar (flatten), sublistas,
 columnas, diagonales, matrices de ceros, grids, frecuencias en anidadas,
 ordenar por suma de filas, extraer columnas, y deep flatten.
 
-### `busqueda_y_filtrado/` - Busqueda y Filtrado (64 archivos)
+### `list_search_filter/` - Search and Filter (64 files)
 
-Buscar elementos, filtrar por condiciones, contar ocurrencias, encontrar
+Search elements, filter by conditions, count occurrences, find
 indices, elementos comunes entre listas, duplicados, frecuencias, valores
 unicos, verificar primos, y operaciones con funciones de filtrado.
 
-### `ordenamiento/` - Ordenamiento (10 archivos)
+### `list_sorting/` - Sorting (10 files)
 
-Ordenar listas por diferentes criterios: alfabetico, numerico, por longitud,
+Sort lists by different criteria: alfabetico, numerico, por longitud,
 por otro lista, mezclar (shuffle), verificar si esta ordenada, y ordenar
 listas mixtas.
 
-### `matematicas/` - Operaciones Matematicas (25 archivos)
+### `list_math/` - Mathematical Operations (25 files)
 
-Sumas, productos, promedios, maximos/minimos, segundo mas grande/pequeno,
+Sums, products, averages, max/min, segundo mas grande/pequeno,
 criba de Eratostenes, rangos, promedios ponderados, y operaciones con
 funciones de mapeo.
 
-### `funcional_y_avanzado/` - Programacion Funcional (11 archivos)
+### `list_functional/` - Functional Programming (11 files)
 
-Permutaciones, combinaciones, powerset, agrupacion por funcion, diferencia/
+Permutations, combinations, powerset, grouping by function, diferencia/
 union/interseccion con funciones personalizadas, y verificaciones con
 predicados (`all`, `any`).
 
-### `ejercicios_generales/` - Ejercicios Generales (133 archivos)
+### `list_integrative/` - Integrative Exercises (133 files)
 
-Manipulacion general de listas: modificar, insertar, eliminar, rotar,
+General list manipulation: modify, insert, delete, rotate,
 intercalar, codificacion run-length, operaciones con diccionarios en listas,
 conversion de tipos, iteracion ciclica, bigrams, fibonacci, y muchos mas
 ejercicios variados.
@@ -72,25 +72,25 @@ ejercicios variados.
 
 | Subcarpeta | Archivos | Tema |
 |------------|----------|------|
-| `lista_simple/` | 26 | Metodos basicos de listas |
-| `tuplas/` | 21 | Ejercicios de tuplas |
-| `listas_anidadas/` | 40 | Listas anidadas y matrices |
-| `busqueda_y_filtrado/` | 64 | Busqueda, filtrado y conteo |
-| `ordenamiento/` | 10 | Ordenamiento y organizacion |
-| `matematicas/` | 25 | Operaciones matematicas |
-| `funcional_y_avanzado/` | 11 | Programacion funcional |
-| `ejercicios_generales/` | 133 | Manipulacion y ejercicios variados |
+| `list_basics/` | 26 | Basic list methods |
+| `tuples/` | 21 | Tuple exercises |
+| `list_nested/` | 40 | Nested lists and matrices |
+| `list_search_filter/` | 64 | Search, filter and count |
+| `list_sorting/` | 10 | Sorting and organization |
+| `list_math/` | 25 | Mathematical operations |
+| `list_functional/` | 11 | Functional programming |
+| `list_integrative/` | 133 | Integrative list exercises |
 | **Total** | **332** | |
 
-## Como ejecutar
+## How to run
 
 Cada archivo se puede ejecutar de forma independiente:
 
 ```bash
 cd 07_Lists_and_Tuples
-python lista_simple/01_crear_lista.py
-python tuplas/001_colors.py
-python matematicas/034_sieve_eratosthenes.py
+python list_basics/01_crear_lista.py
+python tuples/001_colors.py
+python list_math/034_sieve_eratosthenes.py
 ```
 
 ## Requisitos

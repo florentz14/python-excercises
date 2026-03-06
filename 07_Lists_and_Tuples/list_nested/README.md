@@ -1,4 +1,4 @@
-# Listas Anidadas y Matrices
+# list_nested/ - Nested Lists and Matrices
 
 Ejercicios con listas de listas, matrices 2D/3D: aplanar, sublistas, columnas, diagonales y operaciones avanzadas.
 
@@ -50,7 +50,7 @@ Ejercicios con listas de listas, matrices 2D/3D: aplanar, sublistas, columnas, d
 ## Ejecutar
 
 ```bash
-cd listas_anidadas
+cd list_nested
 python 08_flatten_nested_list.py
 python 21_sort_matrix_by_row_sum.py
 ```

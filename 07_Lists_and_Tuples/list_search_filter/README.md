@@ -1,6 +1,6 @@
-# Busqueda y Filtrado
+# list_search_filter/ - Search and Filter
 
-Buscar elementos, filtrar por condiciones, contar ocurrencias, encontrar indices, elementos comunes, duplicados, frecuencias y valores unicos.
+Search elements, filter by conditions, count occurrences, find indices, common elements, duplicates, frequencies and unique values.
 
 ## Archivos (64)
 
@@ -53,7 +53,7 @@ Filtrado por condiciones, indices que satisfacen predicados, split por filtro, e
 ## Ejecutar
 
 ```bash
-cd busqueda_y_filtrado
+cd list_search_filter
 python 02_count.py
 python 10_count_frequency.py
 python 23_most_frequent_item.py

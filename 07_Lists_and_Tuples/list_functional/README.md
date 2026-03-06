@@ -1,6 +1,6 @@
-# Programacion Funcional y Avanzada
+# list_functional/ - Functional Programming
 
-Permutaciones, combinaciones, powerset, agrupacion por funcion, union/diferencia/interseccion con funciones personalizadas, y predicados (all, any).
+Permutations, combinations, powerset, grouping by function, union/difference/intersection with custom functions, and predicates (all, any).
 
 ## Archivos (11)
 
@@ -21,7 +21,7 @@ Permutaciones, combinaciones, powerset, agrupacion por funcion, union/diferencia
 ## Ejecutar
 
 ```bash
-cd funcional_y_avanzado
+cd list_functional
 python 01_generate_permutations.py
 python 11_powerset.py
 ```
