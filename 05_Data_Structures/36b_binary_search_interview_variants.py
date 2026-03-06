@@ -25,6 +25,7 @@
 #   | Search Insert Position | índice o posición de inserción |
 #   | Peak Element           | índice de un pico              |
 #   | Rotated Sorted Array   | índice en arreglo rotado       |
+#   | Find First True        | index of first True (bool list) |
 #
 # Complexity: O(log n) tiempo, O(1) espacio en todos.
 # ------------------------------------------------------------
@@ -183,6 +184,26 @@ def search_rotated_sorted(arr: list[int], target: int) -> int:
     return -1
 
 
+def find_boundary(arr: list[bool]) -> int:
+    """
+    7. Find First True (Boundary)
+    Find the index of the first True in a boolean list [False, False, True, True].
+    Returns -1 if no True. Binary search on predicate.
+    """
+    if not arr:
+        return -1
+    left, right = 0, len(arr) - 1
+    boundary_index = -1
+    while left <= right:
+        mid = left + (right - left) // 2
+        if arr[mid]:
+            boundary_index = mid
+            right = mid - 1
+        else:
+            left = mid + 1
+    return boundary_index
+
+
 # ------------------------------------------------------------
 # Ejemplos de uso - Orden de estudio
 # ------------------------------------------------------------
@@ -227,3 +248,10 @@ if __name__ == "__main__":
     for t in [0, 3, 5]:
         r = search_rotated_sorted(arr4, t)
         print(f"  Target {t} -> index {r}")
+
+    print("\n" + "=" * 55)
+    print("7. Find First True (Boundary)")
+    print("=" * 55)
+    arr5 = [False, False, True, True, True]
+    print(f"Array: {arr5}")
+    print(f"First True at index: {find_boundary(arr5)}")

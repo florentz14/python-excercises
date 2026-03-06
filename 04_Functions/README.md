@@ -51,6 +51,10 @@ Functions in Python: desde conceptos básicos hasta decoradores, recursión y ge
 | `43_print_user_info.py` | Información de usuario |
 | `44_lottery_number_generator.py` | Generador de números de lotería |
 | `45_lottery_number_generator_v2.py` | Generador de lotería (con constantes) |
+| `46_geometric_areas_calculator.py` | Calculadora de áreas geométricas |
+| `47_temperature_converter.py` | Conversión de temperatura (C/F/K) |
+| `48_args_kwargs_arbitrary.py` | *args, **kwargs, combinación (EN) |
+| `49_lambda_chapter_tutorial.py` | Lambda: básico, llamadas internas, factories (EN) |
 
 ## Temas Cubiertos
 

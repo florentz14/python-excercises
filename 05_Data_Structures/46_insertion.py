@@ -26,6 +26,6 @@ def insertion_sort(lista):
 
 
 if __name__ == "__main__":
-    ejemplo = [64, 34, 25, 12, 22, 11, 90]
-    print("Lista original:", ejemplo)
-    print("Insertion Sort:", insertion_sort(ejemplo))
+    arr = [64, 34, 25, 12, 22, 11, 90]
+    print("Original:", arr)
+    print("Insertion Sort:", insertion_sort(arr))

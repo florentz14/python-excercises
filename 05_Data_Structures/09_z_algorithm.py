@@ -1,76 +1,69 @@
 # -------------------------------------------------
-# File Name: 09_z_algorithm.py
+# File: 09_z_algorithm.py (Z-Algorithm for Pattern Search)
+# -------------------------------------------------
 # Author: Florentino Báez
-# Date: Data Structures - String Algorithms
-# Description: Z-Algorithm for pattern search in text.
-#              Builds the Z-array where Z[i] indicates the length
-#              of the longest prefix of the string that matches the
-#              substring starting at position i. To search, concatenates
-#              pattern + "$" + text and looks for Z[i] == m.
-#              Complexity: O(n + m) in time and space.
+# Module: Data Structures - String Algorithms
+#
+# Description:
+#   Z-Algorithm: Z[i] = length of longest prefix of string matching
+#   the substring starting at i. For pattern search: concatenate
+#   pattern + "$" + text; positions where Z[i] = len(pattern) are matches.
+#
+# Complexity: O(n + m) time and space.
 # -------------------------------------------------
 
-print("=== 2. Algoritmo Z-Algorithm ===\n")
 
-
-def construir_z_array(cadena):
+def build_z_array(s):
     """
-    Builds the Z array.
-    Z[i] = length of the longest prefix starting at i that is a prefix of the string.
-    Complexity: O(n)
+    Builds Z-array: Z[i] = longest common prefix length of s and s[i:].
     """
-    n = len(cadena)
+    n = len(s)
     z = [0] * n
-    z[0] = n         # Z[0] = total length by definition
-    l, r = 0, 0      # Window [l, r] of the rightmost Z-box
+    z[0] = n
+    l, r = 0, 0  # Rightmost Z-box [l, r]
 
     for i in range(1, n):
         if i <= r:
-            # Reuse information from the previous Z-box
             z[i] = min(r - i + 1, z[i - l])
 
-        # Extend the match character by character
-        while i + z[i] < n and cadena[z[i]] == cadena[i + z[i]]:
+        while i + z[i] < n and s[z[i]] == s[i + z[i]]:
             z[i] += 1
 
-        # Update the Z-box if the match extends beyond r
         if i + z[i] - 1 > r:
             l, r = i, i + z[i] - 1
 
     return z
 
 
-def z_algorithm_busqueda(texto, patron):
-    """
-    Searches for the pattern in the text using Z-algorithm.
-    Complexity: O(n + m)
-    """
-    m = len(patron)
+def z_search(text, pattern):
+    """Returns list of starting indices where pattern occurs in text."""
+    m = len(pattern)
     if m == 0:
         return [0]
 
-    # Concatenate pattern + separator + text
-    combinado = patron + "$" + texto
-    z = construir_z_array(combinado)
+    combined = pattern + "$" + text
+    z = build_z_array(combined)
 
-    ocurrencias = []
-    for i in range(m + 1, len(combinado)):
-        if z[i] == m:  # Z[i] == pattern length = full match
-            ocurrencias.append(i - m - 1)  # Convert index to position in text
+    matches = []
+    for i in range(m + 1, len(combined)):
+        if z[i] == m:
+            matches.append(i - m - 1)
 
-    return ocurrencias
+    return matches
 
 
 if __name__ == "__main__":
-    texto_z = "ABABDABACDABABCABCABAB"
-    patron_z = "ABABCABAB"
+    print("=== String Algorithms: Z-Algorithm ===\n")
 
-    print(f"Texto: '{texto_z}'")
-    print(f"Patrón: '{patron_z}'")
-    ocurrencias_z = z_algorithm_busqueda(texto_z, patron_z)
-    print(f"Ocurrencias (Z-Algorithm): {ocurrencias_z}")
+    text = "ABABDABACDABABCABCABAB"
+    pattern = "ABABCABAB"
 
-    cadena_z = "aabxaabxcaabxaabxay"
-    z_array = construir_z_array(cadena_z)
-    print(f"\nCadena: '{cadena_z}'")
-    print(f"Z-array: {z_array}")
+    print(f"Text: '{text}'")
+    print(f"Pattern: '{pattern}'")
+    matches = z_search(text, pattern)
+    print(f"Matches: {matches}")
+
+    s = "aabxaabxcaabxaabxay"
+    z_arr = build_z_array(s)
+    print(f"\nString: '{s}'")
+    print(f"Z-array: {z_arr}")

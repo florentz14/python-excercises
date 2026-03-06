@@ -151,6 +151,13 @@ Base de datos MySQL/MariaDB:
 - Sistema ATM completo con base de datos
 - CRUD, procedimientos almacenados
 
+### 22_Exceptions
+
+Exception handling:
+- try/except, multiple exception types
+- Exception, else, finally, raise
+- logging.exception
+
 ### Baez_Module_01_Lab ... 07_Lab
 
 Modulos de laboratorio con ejercicios practicos.

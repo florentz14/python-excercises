@@ -1,98 +1,94 @@
 # -------------------------------------------------
-# File Name: 04_huffman.py
+# File: 04_huffman.py (Huffman Coding)
+# -------------------------------------------------
 # Author: Florentino Báez
-# Date: Data Structures - Greedy Algorithms
-# Description: Huffman Coding (Greedy).
-#              Compresses text by assigning shorter binary codes
-#              to more frequent characters. Builds a binary tree
-#              by combining the two nodes with lowest frequency
-#              at each step (greedy strategy).
-#              Complexity: O(n log n) using a min-heap.
+# Module: Data Structures - Greedy Algorithms
+#
+# Description:
+#   Huffman coding for lossless compression. Assigns shorter binary
+#   codes to more frequent characters. Builds a binary tree by
+#   repeatedly merging the two nodes with lowest frequency (greedy).
+#
+# Strategy: Always combine lowest-frequency nodes first.
+# Complexity: O(n log n) using a min-heap.
 # -------------------------------------------------
 
 import heapq
 
-print("=== 4. Codificación de Huffman ===\n")
+
+class HuffmanNode:
+    """Node in the Huffman tree (leaf or internal)."""
+
+    def __init__(self, char=None, freq=0, left=None, right=None):
+        self.char = char
+        self.freq = freq
+        self.left = left
+        self.right = right
+
+    def __lt__(self, other):
+        return self.freq < other.freq
+
+    def is_leaf(self):
+        return self.left is None and self.right is None
 
 
-class NodoHuffman:
-    """Node for the Huffman tree."""
+def build_huffman_tree(frequencies):
+    """Build Huffman tree from char->freq dict. Returns root node."""
+    heap = []
+    for char, freq in frequencies.items():
+        heapq.heappush(heap, HuffmanNode(char, freq))
 
-    def __init__(self, caracter=None, frecuencia=0, izquierda=None, derecha=None):
-        self.caracter = caracter
-        self.frecuencia = frecuencia
-        self.izquierda = izquierda
-        self.derecha = derecha
+    while len(heap) > 1:
+        left = heapq.heappop(heap)
+        right = heapq.heappop(heap)
+        # Merge into internal node with combined frequency
+        merged = HuffmanNode(freq=left.freq + right.freq, left=left, right=right)
+        heapq.heappush(heap, merged)
 
-    def __lt__(self, otro):
-        return self.frecuencia < otro.frecuencia
-
-    def es_hoja(self):
-        return self.izquierda is None and self.derecha is None
-
-
-def construir_arbol_huffman(frecuencias):
-    """
-    Builds the Huffman tree (greedy).
-    Strategy: Always combine the two nodes with lowest frequency.
-    Complexity: O(n log n)
-    """
-    cola = []
-    for caracter, frecuencia in frecuencias.items():
-        heapq.heappush(cola, NodoHuffman(caracter, frecuencia))
-
-    while len(cola) > 1:
-        izquierda = heapq.heappop(cola)
-        derecha = heapq.heappop(cola)
-        nodo_fusion = NodoHuffman(
-            frecuencia=izquierda.frecuencia + derecha.frecuencia,
-            izquierda=izquierda,
-            derecha=derecha
-        )
-        heapq.heappush(cola, nodo_fusion)
-
-    return cola[0] if cola else None
+    return heap[0] if heap else None
 
 
-def generar_codigos_huffman(nodo, codigo="", codigos=None):
-    """Generates binary codes by traversing the tree."""
-    if codigos is None:
-        codigos = {}
-    if nodo is None:
-        return codigos
-    if nodo.es_hoja():
-        codigos[nodo.caracter] = codigo if codigo else "0"
-        return codigos
-    generar_codigos_huffman(nodo.izquierda, codigo + "0", codigos)
-    generar_codigos_huffman(nodo.derecha, codigo + "1", codigos)
-    return codigos
+def _generate_codes(node, code="", codes=None):
+    """DFS: assign binary code to each leaf (character)."""
+    if codes is None:
+        codes = {}
+    if node is None:
+        return codes
+    if node.is_leaf():
+        codes[node.char] = code if code else "0"
+        return codes
+    _generate_codes(node.left, code + "0", codes)
+    _generate_codes(node.right, code + "1", codes)
+    return codes
 
 
-def codificar_huffman(texto):
-    """Encodes a text using Huffman coding."""
-    frecuencias = {}
-    for caracter in texto:
-        frecuencias[caracter] = frecuencias.get(caracter, 0) + 1
+def huffman_encode(text):
+    """Returns (code_dict, encoded_string)."""
+    frequencies = {}
+    for c in text:
+        frequencies[c] = frequencies.get(c, 0) + 1
 
-    raiz = construir_arbol_huffman(frecuencias)
-    if raiz is None:
+    root = build_huffman_tree(frequencies)
+    if root is None:
         return {}, ""
 
-    codigos = generar_codigos_huffman(raiz)
-    texto_codificado = ''.join(codigos[caracter] for caracter in texto)
-    return codigos, texto_codificado
+    codes = _generate_codes(root)
+    encoded = ''.join(codes[c] for c in text)
+    return codes, encoded
 
 
 if __name__ == "__main__":
-    texto_huffman = "hello world"
-    print(f"Texto original: '{texto_huffman}'")
+    print("=== Greedy Algorithms: Huffman Coding ===\n")
 
-    codigos, texto_cod = codificar_huffman(texto_huffman)
-    print("\nCódigos de Huffman:")
-    for caracter, codigo in sorted(codigos.items()):
-        print(f"  '{caracter}': {codigo}")
+    text = "hello world"
+    print(f"Original text: '{text}'")
 
-    print(f"\nTexto codificado: {texto_cod}")
-    print(f"Longitud original: {len(texto_huffman) * 8} bits (ASCII)")
-    print(f"Longitud codificada: {len(texto_cod)} bits")
-    print(f"Compresión: {len(texto_cod) / (len(texto_huffman) * 8) * 100:.1f}%")
+    codes, encoded = huffman_encode(text)
+    print("\nHuffman codes:")
+    for char, code in sorted(codes.items()):
+        print(f"  '{char}': {code}")
+
+    print(f"\nEncoded string: {encoded}")
+    print(f"Original length: {len(text) * 8} bits (ASCII)")
+    print(f"Encoded length: {len(encoded)} bits")
+    print(f"Compression: {len(encoded) / (len(text) * 8) * 100:.1f}%")

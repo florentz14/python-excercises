@@ -1,45 +1,49 @@
 # -------------------------------------------------
-# File Name: 49_heap.py
+# File: 49_heap.py (Heap Sort)
+# -------------------------------------------------
 # Author: Florentino Báez
-# Date: Data Structures - Sorting Algorithms
-# Description: Heap Sort.
-#              Builds a max-heap (largest always at the root)
-#              and repeatedly extracts the maximum, placing it at
-#              the end. Uses heapify to maintain the heap property
-#              after each extraction.
-#              Complexity: O(n log n). Not stable. In-place.
+# Module: Data Structures - Sorting Algorithms
+#
+# Description:
+#   Heap Sort: build a max-heap (largest at root), repeatedly extract
+#   the maximum and place at the end. heapify maintains the heap
+#   property after each swap.
+#
+# Complexity: O(n log n). Not stable. In-place.
 # -------------------------------------------------
 
 
-def heap_sort(lista):
-    """Builds max heap and repeatedly extracts the maximum."""
-    lista = lista.copy()
-    n = len(lista)
-    # Step 1: Build max-heap (bottom-up from last parent node)
+def heap_sort(arr):
+    """Sorts by building max-heap and repeatedly extracting max."""
+    arr = arr.copy()
+    n = len(arr)
+    # Build max-heap from bottom up (start at last non-leaf)
     for i in range(n // 2 - 1, -1, -1):
-        heapify(lista, n, i)
-    # Step 2: Extract maximum and re-heapify
+        heapify(arr, n, i)
+    # Extract max, swap to end, re-heapify
     for i in range(n - 1, 0, -1):
-        lista[0], lista[i] = lista[i], lista[0]  # Move maximum to end
-        heapify(lista, i, 0)  # Re-heapify the reduced heap
-    return lista
+        arr[0], arr[i] = arr[i], arr[0]
+        heapify(arr, i, 0)
+    return arr
 
 
-def heapify(lista, n, i):
-    """Adjusts the tree so that the root at i is a max-heap."""
-    mayor = i                  # Assume current node is the largest
-    izquierda = 2 * i + 1     # Left child
-    derecha = 2 * i + 2       # Right child
-    if izquierda < n and lista[izquierda] > lista[mayor]:
-        mayor = izquierda      # Left child is larger
-    if derecha < n and lista[derecha] > lista[mayor]:
-        mayor = derecha        # Right child is larger
-    if mayor != i:
-        lista[i], lista[mayor] = lista[mayor], lista[i]  # Swap
-        heapify(lista, n, mayor)  # Recursion: sink the displaced node
+def heapify(arr, n, i):
+    """Sinks element at i so subtree rooted at i is a max-heap."""
+    largest = i
+    left = 2 * i + 1
+    right = 2 * i + 2
+    if left < n and arr[left] > arr[largest]:
+        largest = left
+    if right < n and arr[right] > arr[largest]:
+        largest = right
+    if largest != i:
+        arr[i], arr[largest] = arr[largest], arr[i]
+        heapify(arr, n, largest)
 
 
 if __name__ == "__main__":
-    ejemplo = [64, 34, 25, 12, 22, 11, 90]
-    print("Lista original:", ejemplo)
-    print("Heap Sort:", heap_sort(ejemplo))
+    print("=== Sorting: Heap Sort ===\n")
+
+    arr = [64, 34, 25, 12, 22, 11, 90]
+    print("Original:", arr)
+    print("Heap Sort:", heap_sort(arr))

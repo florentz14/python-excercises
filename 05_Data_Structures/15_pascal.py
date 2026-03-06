@@ -1,68 +1,63 @@
 # -------------------------------------------------
-# File Name: 15_pascal.py
+# File: 15_pascal.py (Pascal's Triangle & Binomial Coefficients)
+# -------------------------------------------------
 # Author: Florentino Báez
-# Date: Data Structures - Mathematical Algorithms
-# Description: Pascal's Triangle and Binomial Coefficients.
-#              Generates rows of the triangle where each element is
-#              the sum of the two above it. Allows computing
-#              binomial coefficients C(n, k) and generating
-#              individual rows efficiently.
-#              Complexity: O(n²) for n full rows.
+# Module: Data Structures - Mathematical Algorithms
+#
+# Description:
+#   Pascal's Triangle: each element is the sum of the two above it.
+#   - pascal_rows(n): first n rows.
+#   - binomial_coefficient(n, k): C(n,k) = n!/(k!(n-k)!).
+#   - pascal_row_n(n): generates only row n.
+#
+# Complexity: O(n²) for n full rows; O(n) for single row.
 # -------------------------------------------------
 
-print("=== Algoritmos Matemáticos ===\n")
-print("=== 1. Triángulo de Pascal ===\n")
 
-
-def triangulo_pascal_filas(n):
-    """
-    Generates the first n rows of Pascal's Triangle.
-    Complexity: O(n²)
-    """
-    triangulo = []
+def pascal_rows(n):
+    """Generates the first n rows of Pascal's Triangle."""
+    triangle = []
     for i in range(n):
-        fila = [1] * (i + 1)  # Each row starts and ends with 1
+        row = [1] * (i + 1)
         for j in range(1, i):
-            # Each inner value = sum of the two values above
-            fila[j] = triangulo[i - 1][j - 1] + triangulo[i - 1][j]
-        triangulo.append(fila)
-    return triangulo
+            row[j] = triangle[i - 1][j - 1] + triangle[i - 1][j]
+        triangle.append(row)
+    return triangle
 
 
-def triangulo_pascal_imprimir(n):
-    """Prints Pascal's Triangle in visual form."""
-    triangulo = triangulo_pascal_filas(n)
-    ancho_maximo = len(' '.join(map(str, triangulo[-1])))
-    for fila in triangulo:
-        fila_str = ' '.join(map(str, fila))
-        print(fila_str.center(ancho_maximo))
+def print_pascal(n):
+    """Prints Pascal's Triangle in centered visual form."""
+    triangle = pascal_rows(n)
+    width = len(' '.join(map(str, triangle[-1])))
+    for row in triangle:
+        print(' '.join(map(str, row)).center(width))
 
 
-def triangulo_pascal_coeficiente(n, k):
-    """
-    Binomial coefficient C(n, k) = n! / (k! * (n-k)!).
-    """
+def binomial_coefficient(n, k):
+    """Returns C(n, k) = n! / (k! * (n-k)!)."""
     if k > n or k < 0:
         return 0
     if k > n - k:
         k = n - k
-    resultado = 1
+    result = 1
     for i in range(k):
-        resultado = resultado * (n - i) // (i + 1)
-    return resultado
+        result = result * (n - i) // (i + 1)
+    return result
 
 
-def triangulo_pascal_fila_n(n):
-    """Generates only row n of Pascal's Triangle."""
-    fila = [1]
+def pascal_row_n(n):
+    """Generates only row n of Pascal's Triangle (0-indexed)."""
+    row = [1]
     for k in range(n):
-        siguiente = fila[k] * (n - k) // (k + 1)
-        fila.append(siguiente)
-    return fila
+        next_val = row[k] * (n - k) // (k + 1)
+        row.append(next_val)
+    return row
 
 
 if __name__ == "__main__":
-    print("Triángulo de Pascal (10 filas):")
-    triangulo_pascal_imprimir(10)
-    print(f"\nCoeficiente binomial C(5, 2) = {triangulo_pascal_coeficiente(5, 2)}")
-    print(f"Fila 5 del Triángulo de Pascal: {triangulo_pascal_fila_n(5)}")
+    print("=== Mathematical Algorithms: Pascal's Triangle ===\n")
+
+    print("Pascal's Triangle (10 rows):")
+    print_pascal(10)
+    print(f"\nBinomial coefficient C(5, 2) = {binomial_coefficient(5, 2)}")
+    print(f"Row 5 of Pascal's Triangle: {pascal_row_n(5)}")

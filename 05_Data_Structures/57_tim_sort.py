@@ -38,14 +38,17 @@ def calc_min_run(n):
 # 2. Insertion Sort for small runs
 # ============================================================
 def insertion_sort_range(arr, left, right):
-    """Insertion Sort in-place on range [left, right]."""
+    """
+    Insertion Sort in-place on range [left, right].
+    Used for small runs in Tim Sort (efficient on nearly sorted segments).
+    """
     for i in range(left + 1, right + 1):
-        clave = arr[i]
+        key = arr[i]  # Element to insert in sorted portion
         j = i - 1
-        while j >= left and arr[j] > clave:
-            arr[j + 1] = arr[j]
+        while j >= left and arr[j] > key:
+            arr[j + 1] = arr[j]  # Shift larger elements right
             j -= 1
-        arr[j + 1] = clave
+        arr[j + 1] = key  # Insert at correct position
 
 
 # ============================================================
@@ -125,50 +128,48 @@ def tim_sort(lista):
 # ============================================================
 # 5. Demo: Tim Sort vs partially sorted data
 # ============================================================
-def demostrar_ventaja():
-    """Shows the advantage of Tim Sort with partially sorted data."""
+def demonstrate_advantage():
+    """Shows Tim Sort's advantage with partially sorted data."""
     n = 5000
 
-    tipos_datos = {
-        "Aleatorio":           [random.randint(1, 10000) for _ in range(n)],
-        "Casi ordenado":       list(range(n)),  # Slightly shuffled below
-        "Bloques ordenados":   [],              # Built below
-        "Pocos únicos":        [random.choice(range(10)) for _ in range(n)],
-        "Inversamente ord.":   list(range(n, 0, -1)),
+    data_types = {
+        "Random":           [random.randint(1, 10000) for _ in range(n)],
+        "Almost sorted":    list(range(n)),  # Slightly shuffled below
+        "Sorted blocks":    [],              # Built below
+        "Few unique":       [random.choice(range(10)) for _ in range(n)],
+        "Reverse":          list(range(n, 0, -1)),
     }
 
     # Almost sorted: swap 5% of elements
-    casi = tipos_datos["Casi ordenado"]
+    almost = data_types["Almost sorted"]
     for _ in range(n // 20):
         i, j = random.randint(0, n-1), random.randint(0, n-1)
-        casi[i], casi[j] = casi[j], casi[i]
+        almost[i], almost[j] = almost[j], almost[i]
 
     # Sorted blocks: 10 already sorted blocks, concatenated out of order
-    bloques = []
+    blocks = []
     for _ in range(10):
-        bloque = sorted([random.randint(1, 10000) for _ in range(n // 10)])
-        bloques.extend(bloque)
-    tipos_datos["Bloques ordenados"] = bloques
+        block = sorted([random.randint(1, 10000) for _ in range(n // 10)])
+        blocks.extend(block)
+    data_types["Sorted blocks"] = blocks
 
-    print(f"\nRendimiento de Tim Sort vs sorted() ({n} elementos):")
+    print(f"\nTim Sort vs sorted() performance ({n} elements):")
     print("=" * 65)
-    print(f"{'Tipo de datos':<22s} {'Tim Sort':>12s} {'sorted()':>12s}")
+    print(f"{'Data type':<22s} {'Tim Sort':>12s} {'sorted()':>12s}")
     print("-" * 65)
 
-    for nombre, datos in tipos_datos.items():
-        # Tim Sort
-        copia1 = datos.copy()
-        inicio = time.time()
-        tim_sort(copia1)
-        t_tim = time.time() - inicio
+    for name, data in data_types.items():
+        copy1 = data.copy()
+        start_t = time.time()
+        tim_sort(copy1)
+        t_tim = time.time() - start_t
 
-        # Python sorted()
-        copia2 = datos.copy()
-        inicio = time.time()
-        sorted(copia2)
-        t_python = time.time() - inicio
+        copy2 = data.copy()
+        start_t = time.time()
+        sorted(copy2)
+        t_python = time.time() - start_t
 
-        print(f"  {nombre:<22s} {t_tim*1000:10.2f} ms {t_python*1000:10.2f} ms")
+        print(f"  {name:<22s} {t_tim*1000:10.2f} ms {t_python*1000:10.2f} ms")
 
 
 # ============================================================
@@ -180,13 +181,13 @@ def tim_sort_visual(lista):
     n = len(arr)
     min_run = calc_min_run(n)
 
-    print(f"\nTim Sort paso a paso")
-    print(f"Lista original: {arr}")
+    print(f"\nTim Sort step by step")
+    print(f"Original: {arr}")
     print(f"n = {n}, min_run = {min_run}")
-    print(f"{'='*60}")
+    print("=" * 60)
 
-    # Step 1: Create runs
-    print(f"\nPaso 1 - Crear runs (Insertion Sort en bloques de {min_run}):")
+    # Step 1: Create runs (min_run-sized blocks, each sorted with Insertion Sort)
+    print(f"\nStep 1 - Create runs (Insertion Sort on blocks of {min_run}):")
     for start in range(0, n, min_run):
         end = min(start + min_run - 1, n - 1)
         before = arr[start:end + 1].copy()
@@ -194,10 +195,10 @@ def tim_sort_visual(lista):
         after = arr[start:end + 1]
         print(f"  [{start}:{end+1}] {before} -> {after}")
 
-    # Step 2: Merge
-    print(f"\nPaso 2 - Merge de runs:")
+    # Step 2: Merge runs (size doubles each iteration until whole list merged)
+    print(f"\nStep 2 - Merge runs:")
     size = min_run
-    paso = 0
+    step = 0
     while size < n:
         paso += 1
         for left in range(0, n, 2 * size):
@@ -210,7 +211,7 @@ def tim_sort_visual(lista):
         size *= 2
 
     print(f"\n{'='*60}")
-    print(f"Resultado: {arr}")
+    print(f"Result: {arr}")
     return arr
 
 
@@ -225,26 +226,23 @@ if __name__ == "__main__":
     tim_sort_visual(lista_demo)
 
     # Functionality tests
-    print("\n--- Pruebas ---")
-    casos = {
-        "Aleatoria":     [random.randint(1, 50) for _ in range(15)],
-        "Ya ordenada":   list(range(1, 11)),
-        "Inversa":       list(range(10, 0, -1)),
-        "Iguales":       [5] * 8,
-        "Un elemento":   [42],
-        "Vacía":         [],
+    print("\n--- Tests ---")
+    cases = {
+        "Random":    [random.randint(1, 50) for _ in range(15)],
+        "Sorted":    list(range(1, 11)),
+        "Reverse":   list(range(10, 0, -1)),
+        "All same":  [5] * 8,
+        "Single":    [42],
+        "Empty":     [],
     }
 
-    for nombre, caso in casos.items():
-        resultado = tim_sort(caso)
-        ok = all(resultado[i] <= resultado[i + 1]
-                 for i in range(len(resultado) - 1)) if len(resultado) > 1 else True
-        print(f"  {nombre:15s}: {caso[:8]}{'...' if len(caso) > 8 else ''}"
-              f" -> {resultado[:8]}{'...' if len(resultado) > 8 else ''}"
-              f" {'OK' if ok else 'FAIL'}")
+    for name, case in cases.items():
+        result = tim_sort(case)
+        ok = all(result[i] <= result[i + 1] for i in range(len(result) - 1)) if len(result) > 1 else True
+        print(f"  {name:15s}: {str(case[:8])}{'...' if len(case) > 8 else ''} -> {str(result[:8])}{'...' if len(result) > 8 else ''} {'OK' if ok else 'FAIL'}")
 
     # Advantage with partially sorted data
-    demostrar_ventaja()
+    demonstrate_advantage()
 
-    print("\nNota: sorted() y list.sort() de Python usan Tim Sort internamente.")
-    print("Esta implementación es educativa; la versión de CPython está en C.")
+    print("\nNote: Python's sorted() and list.sort() use Tim Sort internally.")
+    print("This implementation is educational; CPython's version is in C.")

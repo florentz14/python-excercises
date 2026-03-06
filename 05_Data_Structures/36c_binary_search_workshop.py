@@ -226,6 +226,26 @@ def ej10_min_in_rotated_sorted(arr: list[int]) -> int:
     return arr[left]
 
 
+def ej11_find_boundary(arr: list[bool]) -> int:
+    """
+    EJERCICIO 11: Find First True (Boundary)
+    [False, False, True, True] -> 2
+    Binary search on boolean list. Input: space-separated "true"/"false".
+    """
+    if not arr:
+        return -1
+    left, right = 0, len(arr) - 1
+    boundary_index = -1
+    while left <= right:
+        mid = left + (right - left) // 2
+        if arr[mid]:
+            boundary_index = mid
+            right = mid - 1
+        else:
+            left = mid + 1
+    return boundary_index
+
+
 # =============================================================================
 # EJECUCIÓN Y VERIFICACIÓN
 # =============================================================================
@@ -278,6 +298,10 @@ def run_workshop():
     # Ej 10
     print("\n[10] Min in Rotated: [4,5,6,7,0,1,2]")
     print(f"    -> {ej10_min_in_rotated_sorted([4, 5, 6, 7, 0, 1, 2])} (esperado: 0)")
+
+    # Ej 11
+    print("\n[11] Find First True: [False,False,True,True,True]")
+    print(f"    -> {ej11_find_boundary([False, False, True, True, True])} (esperado: 2)")
 
     print("\n" + "=" * 60)
     print("Taller completado. Todos O(log n).")

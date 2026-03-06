@@ -2,7 +2,7 @@
 
 Ejercicios sobre tuplas en Python: crear, acceder, iterar y operaciones. Las tuplas son inmutables y ordenadas.
 
-## Archivos (14)
+## Archivos (15)
 
 | # | Archivo | Contenido |
 |---|---------|-----------|
@@ -20,6 +20,7 @@ Ejercicios sobre tuplas en Python: crear, acceder, iterar y operaciones. Las tup
 | 12 | `12_mixed_types.py` | Tipos mixtos |
 | 13 | `13_nested.py` | Tuplas anidadas |
 | 14 | `14_convert_list_tuple.py` | Conversion lista-tupla |
+| 15 | `15_tuples_chapter_tutorial.py` | Tutorial: basics, indexing, immutability, unpacking, list-of-tuples (EN) |
 
 ## Ejecutar
 

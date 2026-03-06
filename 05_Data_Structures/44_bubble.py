@@ -40,7 +40,7 @@ def bubble_sort_optimizado(lista):
 
 
 if __name__ == "__main__":
-    ejemplo = [64, 34, 25, 12, 22, 11, 90]
-    print("Lista original:", ejemplo)
-    print("Bubble Sort:", bubble_sort(ejemplo))
-    print("Bubble Sort Optimizado:", bubble_sort_optimizado(ejemplo))
+    arr = [64, 34, 25, 12, 22, 11, 90]
+    print("Original:", arr)
+    print("Bubble Sort:", bubble_sort(arr))
+    print("Bubble Sort Optimized:", bubble_sort_optimizado(arr))

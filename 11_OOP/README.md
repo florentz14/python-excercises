@@ -26,3 +26,4 @@ Programación Orientada a Objetos en Python.
 | `18_simple_punto.py` | Point: 2D coordinates, __str__ |
 | `19_simple_herencia.py` | Parent -> Child: inheritance |
 | `20_atm_oop.py` | ATM class - OOP version of Final Project |
+| `21_simple_circle.py` | Circle: private attrs, getter/setter, validation |

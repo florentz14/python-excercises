@@ -1,13 +1,15 @@
 # -------------------------------------------------
-# File Name: 54_radix_sort.py
+# File: 54_radix_sort.py (Radix Sort - Digit-based)
+# -------------------------------------------------
 # Author: Florentino Báez
-# Date: Data Structures - Sorting Algorithms
-# Description: Radix Sort (Digit-based Sorting).
-#              Non-comparison algorithm that sorts digit by
-#              digit from the least significant (LSD). Uses
-#              Counting Sort as a stable subroutine for each
-#              position. Includes versions for negatives and strings.
-#              Complexity: O(d * (n + k)), d = digits, k = base.
+# Module: Data Structures - Sorting Algorithms
+#
+# Description:
+#   Radix Sort: non-comparison sort. Sorts digit by digit from least
+#   significant (LSD). Uses Counting Sort as stable subroutine for each
+#   digit position. Includes versions for negatives and strings.
+#
+# Complexity: O(d * (n + k)), d = digits, k = base (10 for decimals).
 # -------------------------------------------------
 
 

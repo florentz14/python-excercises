@@ -1,237 +1,207 @@
 # -------------------------------------------------
-# File Name: 58_cocktail_sort.py
+# File: 58_cocktail_sort.py (Cocktail Sort - Bidirectional Bubble)
+# -------------------------------------------------
 # Author: Florentino Báez
-# Date: Data Structures - Sorting Algorithms
-# Description: Cocktail Sort (Bidirectional Bubble Sort).
-#              Variation of Bubble Sort that traverses the list in
-#              both directions (forward and backward). Solves the
-#              "turtles" problem of Bubble Sort by moving small
-#              elements quickly in the reverse pass. Includes
-#              visualization and swap count.
-#              Complexity: O(n²). Stable. In-place.
+# Module: Data Structures - Sorting Algorithms
+#
+# Description:
+#   Cocktail Sort: bidirectional Bubble Sort. Traverses left-to-right
+#   (bubble largest to end) then right-to-left (bubble smallest to start).
+#   Solves the "turtles" problem by moving small elements faster.
+#
+# Complexity: O(n²). Stable. In-place.
 # -------------------------------------------------
 
 import random
 import time
 
 
-# ============================================================
-# 1. Basic Cocktail Sort
-# ============================================================
-def cocktail_sort(lista):
+def cocktail_sort(arr):
     """
     Cocktail Sort: bidirectional Bubble Sort.
-    Traverses left to right then right to left.
+    Alternates left-to-right pass (bubbles largest right) with right-to-left
+    pass (bubbles smallest left). Shrinks the active range each pass.
     Does not modify the original list.
     """
-    lista = lista.copy()
-    n = len(lista)
-    inicio = 0
-    fin = n - 1
-    intercambiado = True
+    arr = arr.copy()
+    n = len(arr)
+    start, end = 0, n - 1  # Active range shrinks from both ends
+    swapped = True
 
-    while intercambiado:
-        intercambiado = False
-
-        # Pass left to right (bubble largest to end)
-        for i in range(inicio, fin):
-            if lista[i] > lista[i + 1]:
-                lista[i], lista[i + 1] = lista[i + 1], lista[i]
-                intercambiado = True
-        fin -= 1
-
-        if not intercambiado:
+    while swapped:
+        swapped = False
+        # Pass 1: left to right — bubble largest element to end
+        for i in range(start, end):
+            if arr[i] > arr[i + 1]:
+                arr[i], arr[i + 1] = arr[i + 1], arr[i]
+                swapped = True
+        end -= 1  # Largest is now in place
+        if not swapped:
             break
+        swapped = False
+        # Pass 2: right to left — bubble smallest element to start
+        for i in range(end, start, -1):
+            if arr[i] < arr[i - 1]:
+                arr[i], arr[i - 1] = arr[i - 1], arr[i]
+                swapped = True
+        start += 1  # Smallest is now in place
 
-        intercambiado = False
-
-        # Pass right to left (bubble smallest to start)
-        for i in range(fin, inicio, -1):
-            if lista[i] < lista[i - 1]:
-                lista[i], lista[i - 1] = lista[i - 1], lista[i]
-                intercambiado = True
-        inicio += 1
-
-    return lista
+    return arr
 
 
-# ============================================================
-# 2. Cocktail Sort with visualization
-# ============================================================
-def cocktail_sort_visual(lista):
-    """Cocktail Sort with step-by-step visualization."""
-    lista = lista.copy()
-    n = len(lista)
-    inicio = 0
-    fin = n - 1
-    intercambiado = True
-    paso = 0
+def cocktail_sort_visual(arr):
+    """
+    Cocktail Sort with step-by-step visualization.
+    Prints each pass (right and left) so the sorting process is visible.
+    """
+    arr = arr.copy()
+    n = len(arr)
+    start, end = 0, n - 1
+    swapped = True
+    step = 0
 
-    print(f"\nLista original: {lista}")
-    print(f"{'='*60}")
+    print(f"\nOriginal: {arr}")
+    print("=" * 60)
 
-    while intercambiado:
-        intercambiado = False
-        paso += 1
-
-        # Left -> Right
-        for i in range(inicio, fin):
-            if lista[i] > lista[i + 1]:
-                lista[i], lista[i + 1] = lista[i + 1], lista[i]
-                intercambiado = True
-        fin -= 1
-        print(f"Paso {paso}a (→ derecha): {lista}")
-
-        if not intercambiado:
+    while swapped:
+        swapped = False
+        step += 1
+        for i in range(start, end):
+            if arr[i] > arr[i + 1]:
+                arr[i], arr[i + 1] = arr[i + 1], arr[i]
+                swapped = True
+        end -= 1
+        print(f"Step {step}a (-> right): {arr}")
+        if not swapped:
             break
+        swapped = False
+        for i in range(end, start, -1):
+            if arr[i] < arr[i - 1]:
+                arr[i], arr[i - 1] = arr[i - 1], arr[i]
+                swapped = True
+        start += 1
+        print(f"Step {step}b (<- left): {arr}")
 
-        intercambiado = False
-
-        # Right -> Left
-        for i in range(fin, inicio, -1):
-            if lista[i] < lista[i - 1]:
-                lista[i], lista[i - 1] = lista[i - 1], lista[i]
-                intercambiado = True
-        inicio += 1
-        print(f"Paso {paso}b (← izquierda): {lista}")
-
-    print(f"{'='*60}")
-    print(f"Lista ordenada: {lista}")
-    return lista
+    print("=" * 60)
+    print(f"Sorted: {arr}")
+    return arr
 
 
 # ============================================================
 # 3. Comparison: Cocktail Sort vs Bubble Sort
 # ============================================================
-def bubble_sort(lista):
+def bubble_sort(arr):
     """Bubble Sort for comparison."""
-    lista = lista.copy()
-    n = len(lista)
+    arr = arr.copy()
+    n = len(arr)
     for i in range(n):
-        intercambiado = False
+        swapped = False
         for j in range(0, n - i - 1):
-            if lista[j] > lista[j + 1]:
-                lista[j], lista[j + 1] = lista[j + 1], lista[j]
-                intercambiado = True
-        if not intercambiado:
+            if arr[j] > arr[j + 1]:
+                arr[j], arr[j + 1] = arr[j + 1], arr[j]
+                swapped = True
+        if not swapped:
             break
-    return lista
+    return arr
 
 
-def comparar_con_bubble(n=2000):
+def compare_with_bubble(n=2000):
     """Compares Cocktail Sort vs Bubble Sort in different scenarios."""
-    escenarios = {
-        "Aleatorio":      [random.randint(1, 10000) for _ in range(n)],
-        "Casi ordenado":  list(range(n)),
-        "Inverso":        list(range(n, 0, -1)),
+    scenarios = {
+        "Random":         [random.randint(1, 10000) for _ in range(n)],
+        "Almost sorted":  list(range(n)),
+        "Reverse":        list(range(n, 0, -1)),
     }
 
     # Slightly shuffle "almost sorted"
-    casi = escenarios["Casi ordenado"]
+    casi = scenarios["Almost sorted"]
     for _ in range(n // 20):
         i, j = random.randint(0, n-1), random.randint(0, n-1)
         casi[i], casi[j] = casi[j], casi[i]
 
-    print(f"\nCocktail Sort vs Bubble Sort ({n} elementos):")
+    print(f"\nCocktail Sort vs Bubble Sort ({n} elements):")
     print("=" * 60)
-    print(f"{'Escenario':<18s} {'Cocktail':>12s} {'Bubble':>12s} {'Ganador':>10s}")
+    print(f"{'Scenario':<18s} {'Cocktail':>12s} {'Bubble':>12s} {'Winner':>10s}")
     print("-" * 60)
 
-    for nombre, datos in escenarios.items():
-        inicio = time.time()
-        cocktail_sort(datos)
-        t_cocktail = time.time() - inicio
+    for name, data in scenarios.items():
+        start_t = time.time()
+        cocktail_sort(data)
+        t_cocktail = time.time() - start_t
 
-        inicio = time.time()
-        bubble_sort(datos)
-        t_bubble = time.time() - inicio
+        start_t = time.time()
+        bubble_sort(data)
+        t_bubble = time.time() - start_t
 
-        ganador = "Cocktail" if t_cocktail < t_bubble else "Bubble"
-        print(f"  {nombre:<18s} {t_cocktail*1000:10.2f} ms {t_bubble*1000:10.2f} ms"
-              f" {ganador:>10s}")
+        winner = "Cocktail" if t_cocktail < t_bubble else "Bubble"
+        print(f"  {name:<18s} {t_cocktail*1000:10.2f} ms {t_bubble*1000:10.2f} ms"
+              f" {winner:>10s}")
 
 
-# ============================================================
-# 4. Count swaps and passes
-# ============================================================
-def cocktail_sort_stats(lista):
-    """Cocktail Sort that counts swaps and passes."""
-    lista = lista.copy()
-    n = len(lista)
-    inicio = 0
-    fin = n - 1
-    intercambiado = True
-    total_swaps = 0
-    total_pasadas = 0
+def cocktail_sort_stats(arr):
+    """
+    Cocktail Sort that returns (sorted_list, passes, swaps).
+    Useful for analyzing performance on different input distributions.
+    """
+    arr = arr.copy()
+    n = len(arr)
+    start, end = 0, n - 1
+    swapped = True
+    passes = swaps = 0
 
-    while intercambiado:
-        intercambiado = False
-        total_pasadas += 1
-
-        for i in range(inicio, fin):
-            if lista[i] > lista[i + 1]:
-                lista[i], lista[i + 1] = lista[i + 1], lista[i]
-                intercambiado = True
-                total_swaps += 1
-        fin -= 1
-
-        if not intercambiado:
+    while swapped:
+        swapped = False
+        passes += 1
+        for i in range(start, end):
+            if arr[i] > arr[i + 1]:
+                arr[i], arr[i + 1] = arr[i + 1], arr[i]
+                swapped = True
+                swaps += 1
+        end -= 1
+        if not swapped:
             break
+        swapped = False
+        passes += 1
+        for i in range(end, start, -1):
+            if arr[i] < arr[i - 1]:
+                arr[i], arr[i - 1] = arr[i - 1], arr[i]
+                swapped = True
+                swaps += 1
+        start += 1
 
-        intercambiado = False
-        total_pasadas += 1
-
-        for i in range(fin, inicio, -1):
-            if lista[i] < lista[i - 1]:
-                lista[i], lista[i - 1] = lista[i - 1], lista[i]
-                intercambiado = True
-                total_swaps += 1
-        inicio += 1
-
-    return lista, total_pasadas, total_swaps
+    return arr, passes, swaps
 
 
-# ============================================================
-# Main
-# ============================================================
 if __name__ == "__main__":
     print("=== Cocktail Sort (Bidirectional Bubble Sort) ===\n")
 
-    # Visual demo
-    lista_demo = [5, 1, 4, 2, 8, 0, 2, 7, 3, 6]
-    cocktail_sort_visual(lista_demo)
+    demo = [5, 1, 4, 2, 8, 0, 2, 7, 3, 6]
+    cocktail_sort_visual(demo)
 
-    # Statistics
-    print("\n--- Estadísticas de intercambios ---")
-    casos_stats = {
-        "Aleatorio":  [random.randint(1, 50) for _ in range(15)],
-        "Inverso":    list(range(10, 0, -1)),
-        "Ordenado":   list(range(1, 11)),
+    print("\n--- Swap Statistics ---")
+    stats_cases = {
+        "Random":    [random.randint(1, 50) for _ in range(15)],
+        "Reverse":   list(range(10, 0, -1)),
+        "Sorted":    list(range(1, 11)),
     }
 
-    for nombre, caso in casos_stats.items():
-        resultado, pasadas, swaps = cocktail_sort_stats(caso)
-        print(f"  {nombre:12s}: {pasadas:3d} pasadas, {swaps:3d} intercambios"
-              f" -> {resultado[:8]}{'...' if len(resultado) > 8 else ''}")
+    for name, case in stats_cases.items():
+        result, passes, swaps = cocktail_sort_stats(case)
+        print(f"  {name:12s}: {passes:3d} passes, {swaps:3d} swaps -> {result[:8]}{'...' if len(result) > 8 else ''}")
 
-    # Functionality tests
-    print("\n--- Pruebas ---")
-    casos = {
-        "Aleatoria":     [random.randint(1, 50) for _ in range(15)],
-        "Ya ordenada":   list(range(1, 11)),
-        "Inversa":       list(range(10, 0, -1)),
-        "Iguales":       [5] * 8,
-        "Un elemento":   [42],
-        "Vacía":         [],
+    print("\n--- Tests ---")
+    test_cases = {
+        "Random":      [random.randint(1, 50) for _ in range(15)],
+        "Sorted":      list(range(1, 11)),
+        "Reverse":     list(range(10, 0, -1)),
+        "All same":    [5] * 8,
+        "Single":      [42],
+        "Empty":       [],
     }
 
-    for nombre, caso in casos.items():
-        resultado = cocktail_sort(caso)
-        ok = all(resultado[i] <= resultado[i + 1]
-                 for i in range(len(resultado) - 1)) if len(resultado) > 1 else True
-        print(f"  {nombre:15s}: {caso[:8]}{'...' if len(caso) > 8 else ''}"
-              f" -> {resultado[:8]}{'...' if len(resultado) > 8 else ''}"
-              f" {'OK' if ok else 'FAIL'}")
+    for name, case in test_cases.items():
+        result = cocktail_sort(case)
+        ok = all(result[i] <= result[i + 1] for i in range(len(result) - 1)) if len(result) > 1 else True
+        print(f"  {name:15s}: {str(case[:8])}{'...' if len(case) > 8 else ''} -> {str(result[:8])}{'...' if len(result) > 8 else ''} {'OK' if ok else 'FAIL'}")
 
-    # Comparison
-    comparar_con_bubble(1500)
+    compare_with_bubble(1500)

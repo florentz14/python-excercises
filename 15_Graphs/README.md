@@ -18,3 +18,4 @@ Estructura de datos Grafo y algoritmos.
 | `10_ordenamiento_topologico.py` | Ordenamiento topológico |
 | `11_ponderado_completo.py` | Grafo ponderado completo |
 | `12_resumen.py` | Resumen |
+| `13_number_of_islands.py` | Number of Islands (DFS on grid, LeetCode 200) |

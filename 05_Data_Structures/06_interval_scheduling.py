@@ -1,59 +1,62 @@
 # -------------------------------------------------
-# File Name: 06_interval_scheduling.py
+# File: 06_interval_scheduling.py (Weighted Interval Scheduling)
+# -------------------------------------------------
 # Author: Florentino Báez
-# Date: Data Structures - Greedy Algorithms
-# Description: Weighted Interval Scheduling.
-#              Selects non-overlapping intervals maximizing the
-#              sum of weights. Combines greedy sorting with
-#              dynamic programming. Simplified version of the
-#              full algorithm.
+# Module: Data Structures - Greedy Algorithms
+#
+# Description:
+#   Weighted Interval Scheduling: select non-overlapping intervals
+#   that maximize the sum of weights. Uses DP: for each interval,
+#   either take it (plus best weight from compatible intervals)
+#   or skip it. Simplified version; full algorithm uses binary
+#   search for compatible intervals.
+#
+# Complexity: O(n log n) with sorting; O(n^2) in this implementation.
 # -------------------------------------------------
 
-print("=== 6. Programación de Intervalos con Pesos ===\n")
 
-
-def interval_scheduling_pesos(intervals):
+def weighted_interval_scheduling(intervals):
     """
-    Weighted Interval Scheduling.
-    Simplified version; the full version uses dynamic programming.
+    intervals: list of (start, end, weight) tuples.
+    Returns: (selected_indices, total_weight).
     """
-    # Sort intervals by finish time
     intervals.sort(key=lambda x: x[1])
     n = len(intervals)
-    pesos_acumulados = [0] * n  # Best possible weight up to each interval
+    # dp[i] = max total weight achievable using intervals 0..i
+    dp = [0] * n
 
-    for i, (inicio, fin, peso) in enumerate(intervals):
-        mejor_peso = peso  # At least the interval's own weight
-        # Find the last compatible interval (non-overlapping)
+    for i, (start, end, w) in enumerate(intervals):
+        best = w
+        # Find last compatible interval (ends before current starts)
         for j in range(i - 1, -1, -1):
-            if intervals[j][1] <= inicio:
-                # Add accumulated weight from the compatible interval
-                if pesos_acumulados[j] + peso > mejor_peso:
-                    mejor_peso = pesos_acumulados[j] + peso
+            if intervals[j][1] <= start:
+                if dp[j] + w > best:
+                    best = dp[j] + w
                 break
-        pesos_acumulados[i] = mejor_peso
+        dp[i] = best
 
-    # Reconstruct the solution (backtracking from the end)
-    seleccionados = []
+    # Reconstruct solution by backtracking
+    selected = []
     i = n - 1
     while i >= 0:
-        if i == 0 or pesos_acumulados[i] > pesos_acumulados[i - 1]:
-            seleccionados.append(i)
-            fin_actual = intervals[i][0]
+        if i == 0 or dp[i] > dp[i - 1]:
+            selected.append(i)
+            curr_end = intervals[i][0]
             i -= 1
-            # Skip overlapping intervals
-            while i >= 0 and intervals[i][1] > fin_actual:
+            while i >= 0 and intervals[i][1] > curr_end:
                 i -= 1
         else:
             i -= 1
 
-    seleccionados.reverse()  # Reverse for chronological order
-    peso_total = pesos_acumulados[-1] if pesos_acumulados else 0
-    return seleccionados, peso_total
+    selected.reverse()
+    total = dp[-1] if dp else 0
+    return selected, total
 
 
 if __name__ == "__main__":
-    intervalos_pesos = [
+    print("=== Greedy/DP: Weighted Interval Scheduling ===\n")
+
+    intervals = [
         (1, 4, 3),
         (3, 5, 4),
         (0, 6, 2),
@@ -62,13 +65,13 @@ if __name__ == "__main__":
         (5, 9, 2)
     ]
 
-    print("Intervalos (inicio, fin, peso):")
-    for i, (ini, fin, peso) in enumerate(intervalos_pesos):
-        print(f"  Intervalo {i}: [{ini}, {fin}] peso={peso}")
+    print("Intervals (start, end, weight):")
+    for i, (s, e, w) in enumerate(intervals):
+        print(f"  Interval {i}: [{s}, {e}] weight={w}")
 
-    seleccionados, peso_total = interval_scheduling_pesos(intervalos_pesos)
-    print(f"\nIntervalos seleccionados: {seleccionados}")
-    print(f"Peso total: {peso_total}")
-    for indice in seleccionados:
-        ini, fin, peso = intervalos_pesos[indice]
-        print(f"  Intervalo {indice}: [{ini}, {fin}] peso={peso}")
+    selected, total = weighted_interval_scheduling(intervals)
+    print(f"\nSelected intervals: {selected}")
+    print(f"Total weight: {total}")
+    for idx in selected:
+        s, e, w = intervals[idx]
+        print(f"  Interval {idx}: [{s}, {e}] weight={w}")

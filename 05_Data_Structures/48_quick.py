@@ -46,9 +46,9 @@ def particionar(lista, inicio, fin):
 
 
 if __name__ == "__main__":
-    ejemplo = [64, 34, 25, 12, 22, 11, 90]
-    print("Lista original:", ejemplo)
-    print("Quick Sort:", quick_sort(ejemplo))
-    copia = ejemplo.copy()
-    quick_sort_inplace(copia)
-    print("Quick Sort In-place:", copia)
+    arr = [64, 34, 25, 12, 22, 11, 90]
+    print("Original:", arr)
+    print("Quick Sort:", quick_sort(arr))
+    copy_arr = arr.copy()
+    quick_sort_inplace(copy_arr)
+    print("Quick Sort In-place:", copy_arr)

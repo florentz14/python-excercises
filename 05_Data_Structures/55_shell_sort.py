@@ -28,11 +28,11 @@ def shell_sort(lista):
     gap = n // 2  # Initial gap
 
     while gap > 0:
-        # Insertion Sort with current gap
+        # Gap insertion sort: compare elements gap positions apart
         for i in range(gap, n):
             temp = lista[i]
             j = i
-            # Move elements that are 'gap' distance apart
+            # Shift elements gap positions right while current is smaller
             while j >= gap and lista[j - gap] > temp:
                 lista[j] = lista[j - gap]
                 j -= gap
@@ -112,13 +112,13 @@ def shell_sort_visual(lista):
     lista = lista.copy()
     n = len(lista)
     gap = n // 2
-    paso = 0
+    step = 0
 
-    print(f"\nLista original: {lista}")
+    print(f"\nOriginal: {lista}")
     print(f"{'='*60}")
 
     while gap > 0:
-        paso += 1
+        step += 1
         for i in range(gap, n):
             temp = lista[i]
             j = i
@@ -127,19 +127,19 @@ def shell_sort_visual(lista):
                 j -= gap
             lista[j] = temp
 
-        print(f"Paso {paso} (gap={gap}): {lista}")
+        print(f"Step {step} (gap={gap}): {lista}")
         gap //= 2
 
     print(f"{'='*60}")
-    print(f"Lista ordenada: {lista}")
+    print(f"Sorted: {lista}")
     return lista
 
 
 # ============================================================
 # 5. Gap sequence comparison
 # ============================================================
-def comparar_secuencias(n=5000):
-    """Compares performance of different gap sequences."""
+def compare_gap_sequences(n=5000):
+    """Compares performance of different gap sequences (Shell, Knuth, Hibbard)."""
     lista = [random.randint(1, 10000) for _ in range(n)]
 
     secuencias = {
@@ -148,38 +148,37 @@ def comparar_secuencias(n=5000):
         "Hibbard":      shell_sort_hibbard,
     }
 
-    print(f"\nComparación de secuencias de gaps ({n} elementos):")
+    print(f"\nGap sequence comparison ({n} elements):")
     print("=" * 50)
 
-    for nombre, metodo in secuencias.items():
-        copia = lista.copy()
-        inicio = time.time()
-        resultado = metodo(copia)
-        tiempo = time.time() - inicio
-        ordenada = all(resultado[i] <= resultado[i + 1]
-                       for i in range(len(resultado) - 1))
-        estado = "OK" if ordenada else "FAIL"
-        print(f"  {estado} {nombre:15s}: {tiempo*1000:8.2f} ms")
+    for name, method in secuencias.items():
+        copy_arr = lista.copy()
+        start_t = time.time()
+        result = method(copy_arr)
+        elapsed = time.time() - start_t
+        is_ok = all(result[i] <= result[i + 1] for i in range(len(result) - 1))
+        status = "OK" if is_ok else "FAIL"
+        print(f"  {status} {name:15s}: {elapsed*1000:8.2f} ms")
 
 
 # ============================================================
 # 6. Shell Sort vs Insertion Sort comparison
 # ============================================================
-def insertion_sort(lista):
-    """Insertion Sort for comparison."""
-    lista = lista.copy()
-    for i in range(1, len(lista)):
-        clave = lista[i]
+def insertion_sort(arr):
+    """Insertion Sort for comparison with Shell Sort."""
+    arr = arr.copy()
+    for i in range(1, len(arr)):
+        key = arr[i]
         j = i - 1
-        while j >= 0 and lista[j] > clave:
-            lista[j + 1] = lista[j]
+        while j >= 0 and arr[j] > key:
+            arr[j + 1] = arr[j]
             j -= 1
-        lista[j + 1] = clave
-    return lista
+        arr[j + 1] = key
+    return arr
 
 
-def comparar_con_insertion(n=3000):
-    """Compares Shell Sort vs Insertion Sort."""
+def compare_with_insertion(n=3000):
+    """Compares Shell Sort vs Insertion Sort on random data."""
     lista = [random.randint(1, 10000) for _ in range(n)]
 
     metodos = {
@@ -188,18 +187,18 @@ def comparar_con_insertion(n=3000):
         "Shell (Knuth)":  shell_sort_knuth,
     }
 
-    print(f"\nShell Sort vs Insertion Sort ({n} elementos):")
+    print(f"\nShell Sort vs Insertion Sort ({n} elements):")
     print("=" * 50)
 
-    for nombre, metodo in metodos.items():
-        copia = lista.copy()
-        inicio = time.time()
-        metodo(copia)
-        tiempo = time.time() - inicio
-        print(f"  {nombre:20s}: {tiempo*1000:8.2f} ms")
+    for name, method in metodos.items():
+        copy_arr = lista.copy()
+        start_t = time.time()
+        method(copy_arr)
+        elapsed = time.time() - start_t
+        print(f"  {name:20s}: {elapsed*1000:8.2f} ms")
 
-    print("\nShell Sort es mucho más rápido que Insertion Sort")
-    print("porque mueve elementos lejanos antes de refinar.")
+    print("\nShell Sort is much faster than Insertion Sort on random data")
+    print("because it moves distant elements before refining locally.")
 
 
 # ============================================================
@@ -213,24 +212,21 @@ if __name__ == "__main__":
     shell_sort_visual(lista_demo)
 
     # Functionality tests
-    print("\n--- Pruebas ---")
-    casos = {
-        "Aleatoria":     [random.randint(1, 50) for _ in range(15)],
-        "Ya ordenada":   list(range(1, 11)),
-        "Inversa":       list(range(10, 0, -1)),
-        "Iguales":       [5] * 8,
-        "Un elemento":   [42],
-        "Vacía":         [],
+    print("\n--- Tests ---")
+    cases = {
+        "Random":    [random.randint(1, 50) for _ in range(15)],
+        "Sorted":    list(range(1, 11)),
+        "Reverse":   list(range(10, 0, -1)),
+        "All same":  [5] * 8,
+        "Single":    [42],
+        "Empty":     [],
     }
 
-    for nombre, caso in casos.items():
-        resultado = shell_sort(caso)
-        ok = all(resultado[i] <= resultado[i + 1]
-                 for i in range(len(resultado) - 1)) if len(resultado) > 1 else True
-        print(f"  {nombre:15s}: {caso[:8]}{'...' if len(caso) > 8 else ''}"
-              f" -> {resultado[:8]}{'...' if len(resultado) > 8 else ''}"
-              f" {'OK' if ok else 'FAIL'}")
+    for name, case in cases.items():
+        result = shell_sort(case)
+        ok = all(result[i] <= result[i + 1] for i in range(len(result) - 1)) if len(result) > 1 else True
+        print(f"  {name:15s}: {str(case[:8])}{'...' if len(case) > 8 else ''} -> {str(result[:8])}{'...' if len(result) > 8 else ''} {'OK' if ok else 'FAIL'}")
 
     # Comparisons
-    comparar_secuencias(3000)
-    comparar_con_insertion(3000)
+    compare_gap_sequences(3000)
+    compare_with_insertion(3000)
