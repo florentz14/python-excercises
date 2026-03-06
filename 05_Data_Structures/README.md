@@ -62,6 +62,9 @@ Algoritmos de ordenamiento, búsqueda, greedy, strings, matemáticos, backtracki
 |---------|-----------|
 | `35_lineal.py` | Búsqueda lineal, optimizada, todas las ocurrencias |
 | `36_binaria.py` | Búsqueda binaria (iterativa, recursiva, primera/última ocurrencia) |
+| `36a_binary_search_fundamentals.py` | Versión clásica vs optimizada (mid seguro), O(log n) |
+| `36b_binary_search_interview_variants.py` | 6 variantes: Normal, First/Last, Insert, Peak, Rotated Sorted |
+| `36c_binary_search_workshop.py` | Mini taller: 10 ejercicios (fácil → entrevista) |
 | `37_strings.py` | Búsqueda de patrón en texto (fuerza bruta) |
 | `38_kmp.py` | Algoritmo KMP (Knuth-Morris-Pratt) |
 | `39_comparacion.py` | Compara lineal vs binaria y bruta vs KMP |

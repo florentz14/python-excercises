@@ -17,7 +17,7 @@ def busqueda_binaria(lista, objetivo):
         return -1
     izquierda, derecha = 0, len(lista) - 1
     while izquierda <= derecha:
-        medio = (izquierda + derecha) // 2  # Midpoint of range
+        medio = izquierda + (derecha - izquierda) // 2  # Safe mid (evita overflow)
         if lista[medio] == objetivo:
             return medio                     # Found
         if lista[medio] < objetivo:
@@ -33,7 +33,7 @@ def busqueda_binaria_recursiva(lista, objetivo, izquierda=0, derecha=None):
         derecha = len(lista) - 1
     if izquierda > derecha:
         return -1  # Base case: empty range
-    medio = (izquierda + derecha) // 2
+    medio = izquierda + (derecha - izquierda) // 2
     if lista[medio] == objetivo:
         return medio
     if lista[medio] < objetivo:
@@ -46,7 +46,7 @@ def busqueda_binaria_primera_ocurrencia(lista, objetivo):
     izquierda, derecha = 0, len(lista) - 1
     resultado = -1
     while izquierda <= derecha:
-        medio = (izquierda + derecha) // 2
+        medio = izquierda + (derecha - izquierda) // 2
         if lista[medio] == objetivo:
             resultado = medio
             derecha = medio - 1
@@ -62,7 +62,7 @@ def busqueda_binaria_ultima_ocurrencia(lista, objetivo):
     izquierda, derecha = 0, len(lista) - 1
     resultado = -1
     while izquierda <= derecha:
-        medio = (izquierda + derecha) // 2
+        medio = izquierda + (derecha - izquierda) // 2
         if lista[medio] == objetivo:
             resultado = medio
             izquierda = medio + 1
