@@ -18,34 +18,34 @@ Incluye: `numpy`, `pandas`, `matplotlib`, `mysql-connector-python`, `bcrypt`, y 
 
 ## Contenido
 
-### 01_Variables
+### 01_Variables_and_Types
 
 Variables y tipos de datos:
 - Variables basicas, numeros complejos
 - Listas, Tuplas, Diccionarios, Conjuntos
 
-### 02_Condicionales
+### 02_Conditionals
 
-Condicionales y switch-case:
+Conditionals and switch-case:
 - if/elif/else, operadores logicos
 - match/case (Python 3.10+)
 
-### 03_Ciclos
+### 03_Loops
 
-Ejercicios de loops:
+Loop exercises:
 - while, for, anidados
 - break, continue, else en loops
 
-### 04_Funciones
+### 04_Functions
 
-Funciones en Python:
+Functions in Python:
 - Parametros, valores por defecto
 - *args, **kwargs
 - Lambda, decoradores, generadores
 
-### 05_Estructuras_de_Datos
+### 05_Data_Structures
 
-Algoritmos y estructuras:
+Algorithms and structures:
 - Algoritmos Greedy (mochila, Kruskal, Huffman)
 - Algoritmos de Strings (Rabin-Karp, KMP, Z-algorithm)
 - Algoritmos Matematicos (Pascal, Euclides, Eratostenes)
@@ -54,9 +54,9 @@ Algoritmos y estructuras:
 - Busqueda (lineal, binaria, KMP)
 - Ordenamiento (Bubble, Selection, Insertion, Merge, Quick, Heap, Counting, Radix)
 
-### 06_Ejercicios_Integradores
+### 06_Integrative_Exercises
 
-Ejercicios que combinan varios conceptos:
+Exercises combining several concepts:
 - BMI, años bisiestos, fechas magicas
 - Conversor de numeros romanos
 - Calculadora de areas
@@ -82,60 +82,61 @@ Analisis de datos:
 Visualizacion:
 - Graficos de linea, barras, dispersion
 
-### 11_POO
+### 11_OOP
 
-Programacion Orientada a Objetos:
+Object-Oriented Programming:
 - Clases, herencia, polimorfismo
 - Ejemplos: Animales, Dispositivos, Personas, Transporte, Usuarios
 
-### 12_Pilas
+### 12_Stacks
 
-Estructura de datos Pila (LIFO):
+Stack data structure (LIFO):
 - Implementacion con lista y clase
 - Parentesis balanceados, Infix a Postfix
 - Undo/Redo, historial de navegador
 
-### 13_Colas
+### 13_Queues
 
-Estructura de datos Cola (FIFO):
+Queue data structure (FIFO):
 - Implementacion con deque
 - Cola de impresion, servicio al cliente
 - Round-Robin, BFS en grafos
 
-### 14_Arboles
+### 14_Trees
 
-Arboles binarios:
+Binary trees:
 - Nodos, recorridos (inorden, preorden, postorden)
 - Altura, busqueda, insercion
 
-### 15_Grafos
+### 15_Graphs
 
-Grafos:
+Graphs:
 - Lista y matriz de adyacencia
 - BFS, DFS, Dijkstra
 - Deteccion de ciclos, ordenamiento topologico
 
-### 16_Archivos
+### 16_Files
 
-Manejo de archivos:
-- Lectura y escritura de archivos
-- JSON, CSV
+File handling (merged with former 22_Files):
+- Create, read, append, list directory
+- Copy, move, delete, context managers (with)
+- Custom context manager, CRUD with JSON
 
-### 17_Ecuaciones
+### 17_Equations
 
-Ecuaciones matematicas:
+Mathematical equations:
 - Algebra, calculo
 - SymPy para matematica simbolica
 
-### 18_Listas_Enlazadas
+### 18_Linked_Lists
 
-Listas enlazadas:
+Linked lists:
 - Simple, doble, circular
 - Operaciones: reversar, fusionar, detectar ciclos
 
-### 19_Tablas_Hash
+### 19_Hash_Tables
 
-Tablas hash:
+Hash tables:
 - Chaining, Open Addressing
 - Funciones hash, aplicaciones
 
@@ -154,24 +155,24 @@ Modulos de laboratorio con ejercicios practicos.
 
 ## Estructura de Aprendizaje Recomendada
 
-1. **01_Variables** - Conceptos basicos
-2. **02_Condicionales** - Toma de decisiones
-3. **03_Ciclos** - Repeticion de codigo
-4. **04_Funciones** - Modularidad
-5. **05_Estructuras_de_Datos** - Algoritmos
-6. **06_Ejercicios_Integradores** - Aplicacion
-7. **07_Lists_and_Tuples** - Practica
+1. **01_Variables_and_Types** - Basics
+2. **02_Conditionals** - Decision making
+3. **03_Loops** - Code repetition
+4. **04_Functions** - Modularity
+5. **05_Data_Structures** - Algorithms
+6. **06_Integrative_Exercises** - Application
+7. **07_Lists_and_Tuples** - Practice
 8. **08_Matrices** - NumPy
-9. **09_Pandas** - Analisis de datos
-10. **10_Matplotlib** - Visualizacion
-11. **11_POO** - Clases y objetos
-12. **12_Pilas** - Estructura LIFO
-13. **13_Colas** - Estructura FIFO
-14. **14_Arboles** - Arboles binarios
-15. **15_Grafos** - Teoria de grafos
-16. **18_Listas_Enlazadas** - Estructuras dinamicas
-17. **19_Tablas_Hash** - Acceso O(1)
-18. **20_MySQL** - Bases de datos
+9. **09_Pandas** - Data analysis
+10. **10_Matplotlib** - Visualization
+11. **11_OOP** - Classes and objects
+12. **12_Stacks** - LIFO structure
+13. **13_Queues** - FIFO structure
+14. **14_Trees** - Binary trees
+15. **15_Graphs** - Graph theory
+16. **18_Linked_Lists** - Dynamic structures
+17. **19_Hash_Tables** - O(1) access
+18. **20_MySQL** - Databases
 
 ---
 
@@ -212,7 +213,7 @@ Modulos de laboratorio con ejercicios practicos.
 5. **Ejecutar un archivo:**
 
    ```bash
-   python 01_Variables/01_variables.py
+   python 01_Variables_and_Types/data_types/02_variables.py
    python 20_MySQL/01_connection_test.py
    ```
 

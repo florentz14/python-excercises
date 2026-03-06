@@ -1,3 +1,0 @@
-Ana,CS,3.8
-Bob,Math,3.5
-Carol,Engineering,3.5

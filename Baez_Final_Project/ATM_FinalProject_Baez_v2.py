@@ -304,5 +304,5 @@ def main():
             print("Invalid choice. Enter 1-7.") # Print the invalid choice message
 
 
-if __name__ == "__main__":
-    main() # Run the main function
+#if __name__ == "__main__":
+main() # Run the main function
