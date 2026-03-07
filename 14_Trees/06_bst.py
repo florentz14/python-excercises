@@ -4,7 +4,7 @@
 ArbolBST: es_bst, encontrar_minimo, encontrar_maximo.
 """
 
-from arbol_05_recorridos import ArbolRecorridos
+from traversals import ArbolRecorridos
 
 
 class ArbolBST(ArbolRecorridos):

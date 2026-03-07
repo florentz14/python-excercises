@@ -4,7 +4,7 @@
 GrafoPonderado: camino_minimo (Dijkstra), arbol_expansion_minima (Prim).
 """
 
-from grafo_05_lista_adyacencia import GrafoListaAdyacencia
+from adjacency_list import GrafoListaAdyacencia
 
 
 class GrafoPonderado(GrafoListaAdyacencia):

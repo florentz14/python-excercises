@@ -4,7 +4,7 @@
 Distancias mínimas desde un nodo origen en grafo con pesos no negativos.
 """
 
-from grafo_05_lista_adyacencia import GrafoListaAdyacencia
+from adjacency_list import GrafoListaAdyacencia
 
 
 def dijkstra(grafo, inicio):

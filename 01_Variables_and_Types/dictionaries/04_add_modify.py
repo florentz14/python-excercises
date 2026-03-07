@@ -17,7 +17,7 @@ car = {"brand": "Toyota", "color": "red"}
 print("Original:", car)
 
 #add year
-car["year"] = 2023           # Add new key-value pair (key didn't exist)
+car["year"] = "2023"           # Add new key-value pair (key didn't exist)
 print("After adding year:", car)
 
 #modify color

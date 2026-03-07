@@ -6,7 +6,7 @@ GrafoCompleto: buscar_camino (BFS), todos_los_caminos, componentes_conexas.
 
 from collections import deque
 
-from grafo_05_lista_adyacencia import GrafoListaAdyacencia
+from adjacency_list import GrafoListaAdyacencia
 
 
 class GrafoCompleto(GrafoListaAdyacencia):

@@ -6,7 +6,7 @@ Orden lineal de nodos en grafo dirigido acíclico.
 
 from collections import deque, defaultdict
 
-from grafo_05_lista_adyacencia import GrafoListaAdyacencia
+from adjacency_list import GrafoListaAdyacencia
 
 
 def ordenamiento_topologico(grafo):

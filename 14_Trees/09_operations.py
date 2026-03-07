@@ -4,7 +4,7 @@
 contar_hojas, sumar_valores, es_completo.
 """
 
-from arbol_06_bst import ArbolBST
+from bst import ArbolBST
 
 
 def contar_hojas(arbol):

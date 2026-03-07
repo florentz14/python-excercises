@@ -6,7 +6,7 @@ ArbolRecorridos: preorden, inorden, postorden, nivel orden (BFS).
 
 from collections import deque
 
-from arbol_04_binario_basico import ArbolBinario, NodoArbol
+from basic_binary import ArbolBinario, NodoArbol
 
 
 class ArbolRecorridos(ArbolBinario):

@@ -4,7 +4,7 @@
 tiene_ciclo para grafos dirigidos y no dirigidos.
 """
 
-from grafo_05_lista_adyacencia import GrafoListaAdyacencia
+from adjacency_list import GrafoListaAdyacencia
 
 
 def tiene_ciclo(grafo, dirigido=True):

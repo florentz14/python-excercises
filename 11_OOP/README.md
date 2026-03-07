@@ -27,3 +27,9 @@ Programación Orientada a Objetos en Python.
 | `19_simple_herencia.py` | Parent -> Child: inheritance |
 | `20_atm_oop.py` | ATM class - OOP version of Final Project |
 | `21_simple_circle.py` | Circle: private attrs, getter/setter, validation |
+| `22_simple_product.py` | Product: name, price, __str__ |
+| `23_simple_student.py` | Student: name, grade |
+| `24_simple_counter.py` | Counter: increment, decrement, mutable state |
+| `25_simple_triangle.py` | Triangle: base, height, area() |
+| `26_simple_contact.py` | Contact: name, email, phone, __str__ |
+| `27_simple_dog.py` | Dog: inheritance from Animal, bark() |
