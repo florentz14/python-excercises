@@ -4,26 +4,29 @@
 #              Last node points back to first node.
 # -------------------------------------------------
 
+from typing import Optional, Any
+
 
 class Node:
     """Node for circular linked list."""
-    def __init__(self, data):
-        self.data = data          # stores the value
-        self.next = None          # pointer to next node
+
+    def __init__(self, data: Any) -> None:
+        self.data: Any = data
+        self.next: Optional["Node"] = None
 
 
 class CircularLinkedList:
     """Circular Linked List implementation."""
-    
-    def __init__(self):
-        self.head = None          # first node
-        self.size = 0             # number of nodes
-    
-    def is_empty(self):
+
+    def __init__(self) -> None:
+        self.head: Optional[Node] = None
+        self.size: int = 0
+
+    def is_empty(self) -> bool:
         """Check if list is empty."""
         return self.head is None
     
-    def append(self, data):
+    def append(self, data: Any) -> None:
         """Add node at the end."""
         new_node = Node(data)
         if self.is_empty():
@@ -54,7 +57,7 @@ class CircularLinkedList:
             self.head = new_node
         self.size += 1
     
-    def delete(self, data):
+    def delete(self, data: Any) -> bool:
         """Delete first occurrence of data."""
         if self.is_empty():
             return False
@@ -86,7 +89,7 @@ class CircularLinkedList:
             current = current.next
         return False
     
-    def search(self, data):
+    def search(self, data: Any) -> int:
         """Search for data, return position or -1."""
         if self.is_empty():
             return -1
@@ -102,7 +105,7 @@ class CircularLinkedList:
                 break
         return -1
     
-    def display(self):
+    def display(self) -> str:
         """Display all elements."""
         if self.is_empty():
             return "Empty list"
@@ -116,7 +119,7 @@ class CircularLinkedList:
                 break
         return " -> ".join(elements) + " -> (back to head)"
     
-    def traverse(self, times=1):
+    def traverse(self, times: int = 1) -> list[Any]:
         """Traverse the circular list multiple times."""
         if self.is_empty():
             return []
@@ -128,10 +131,10 @@ class CircularLinkedList:
             current = current.next
         return result
     
-    def __len__(self):
+    def __len__(self) -> int:
         return self.size
-    
-    def __str__(self):
+
+    def __str__(self) -> str:
         return self.display()
 
 

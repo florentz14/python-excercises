@@ -4,26 +4,28 @@
 #              Basic node-based linear data structure.
 # -------------------------------------------------
 
+from typing import Optional, Any
+
 
 class Node:
     """Node for singly linked list."""
-    def __init__(self, data):
-        self.data = data          # stores the value
-        self.next = None          # pointer to next node
+    def __init__(self, data: Any) -> None:
+        self.data: Any = data
+        self.next: Optional["Node"] = None
 
 
 class SinglyLinkedList:
     """Singly Linked List implementation."""
     
-    def __init__(self):
-        self.head = None          # first node
-        self.size = 0             # number of nodes
+    def __init__(self) -> None:
+        self.head: Optional[Node] = None
+        self.size: int = 0
     
-    def is_empty(self):
+    def is_empty(self) -> bool:
         """Check if list is empty."""
         return self.head is None
     
-    def append(self, data):
+    def append(self, data: Any) -> None:
         """Add node at the end."""
         new_node = Node(data)
         if self.is_empty():
@@ -35,14 +37,14 @@ class SinglyLinkedList:
             current.next = new_node
         self.size += 1
     
-    def prepend(self, data):
+    def prepend(self, data: Any) -> None:
         """Add node at the beginning."""
         new_node = Node(data)
         new_node.next = self.head
         self.head = new_node
         self.size += 1
     
-    def insert(self, data, position):
+    def insert(self, data: Any, position: int) -> None:
         """Insert node at specific position."""
         if position < 0 or position > self.size:
             raise IndexError("Position out of range")
@@ -59,7 +61,7 @@ class SinglyLinkedList:
         current.next = new_node
         self.size += 1
     
-    def delete(self, data):
+    def delete(self, data: Any) -> bool:
         """Delete first occurrence of data."""
         if self.is_empty():
             return False
@@ -78,7 +80,7 @@ class SinglyLinkedList:
             current = current.next
         return False
     
-    def search(self, data):
+    def search(self, data: Any) -> int:
         """Search for data, return position or -1."""
         current = self.head
         position = 0
@@ -89,7 +91,7 @@ class SinglyLinkedList:
             position += 1
         return -1
     
-    def get(self, position):
+    def get(self, position: int) -> Any:
         """Get data at position."""
         if position < 0 or position >= self.size:
             raise IndexError("Position out of range")
@@ -99,7 +101,7 @@ class SinglyLinkedList:
             current = current.next
         return current.data
     
-    def display(self):
+    def display(self) -> str:
         """Display all elements."""
         elements = []
         current = self.head
@@ -108,10 +110,10 @@ class SinglyLinkedList:
             current = current.next
         return " -> ".join(elements) + " -> None"
     
-    def __len__(self):
+    def __len__(self) -> int:
         return self.size
     
-    def __str__(self):
+    def __str__(self) -> str:
         return self.display()
 
 

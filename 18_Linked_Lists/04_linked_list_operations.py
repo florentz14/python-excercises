@@ -4,21 +4,24 @@
 #              Reverse, merge, detect cycle, find middle.
 # -------------------------------------------------
 
+from typing import Optional, Any
+
 
 class Node:
     """Node for singly linked list."""
-    def __init__(self, data):
-        self.data = data
-        self.next = None
+
+    def __init__(self, data: Any) -> None:
+        self.data: Any = data
+        self.next: Optional["Node"] = None
 
 
 class LinkedList:
     """Linked List with common operations."""
-    
-    def __init__(self):
-        self.head = None
-    
-    def append(self, data):
+
+    def __init__(self) -> None:
+        self.head: Optional[Node] = None
+
+    def append(self, data: Any) -> None:
         """Add node at the end."""
         new_node = Node(data)
         if not self.head:
@@ -29,7 +32,7 @@ class LinkedList:
             current = current.next
         current.next = new_node
     
-    def display(self):
+    def display(self) -> str:
         """Display list."""
         elements = []
         current = self.head
@@ -42,7 +45,7 @@ class LinkedList:
     # COMMON OPERATIONS
     # ===============================
     
-    def reverse(self):
+    def reverse(self) -> None:
         """Reverse the linked list in-place."""
         prev = None
         current = self.head
@@ -53,7 +56,7 @@ class LinkedList:
             current = next_node       # move current forward
         self.head = prev
     
-    def find_middle(self):
+    def find_middle(self) -> Optional[Any]:
         """Find middle element using slow/fast pointers."""
         if not self.head:
             return None
@@ -67,7 +70,7 @@ class LinkedList:
         
         return slow.data
     
-    def detect_cycle(self):
+    def detect_cycle(self) -> bool:
         """Detect if list has a cycle (Floyd's algorithm)."""
         if not self.head:
             return False
@@ -82,7 +85,7 @@ class LinkedList:
                 return True
         return False
     
-    def remove_duplicates(self):
+    def remove_duplicates(self) -> None:
         """Remove duplicate elements."""
         if not self.head:
             return
@@ -98,7 +101,7 @@ class LinkedList:
                 seen.add(current.next.data)
                 current = current.next
     
-    def get_nth_from_end(self, n):
+    def get_nth_from_end(self, n: int) -> Optional[Any]:
         """Get nth element from the end."""
         if not self.head or n <= 0:
             return None
@@ -119,7 +122,7 @@ class LinkedList:
         
         return second.data
     
-    def to_list(self):
+    def to_list(self) -> list[Any]:
         """Convert to Python list."""
         result = []
         current = self.head
@@ -129,7 +132,7 @@ class LinkedList:
         return result
 
 
-def merge_sorted_lists(list1, list2):
+def merge_sorted_lists(list1: LinkedList, list2: LinkedList) -> LinkedList:
     """Merge two sorted linked lists."""
     dummy = Node(0)
     current = dummy

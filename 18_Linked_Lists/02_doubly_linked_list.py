@@ -4,28 +4,31 @@
 #              Nodes with prev and next pointers.
 # -------------------------------------------------
 
+from typing import Optional, Any
+
 
 class Node:
     """Node for doubly linked list."""
-    def __init__(self, data):
-        self.data = data          # stores the value
-        self.prev = None          # pointer to previous node
-        self.next = None          # pointer to next node
+
+    def __init__(self, data: Any) -> None:
+        self.data: Any = data
+        self.prev: Optional["Node"] = None
+        self.next: Optional["Node"] = None
 
 
 class DoublyLinkedList:
     """Doubly Linked List implementation."""
-    
-    def __init__(self):
-        self.head = None          # first node
-        self.tail = None          # last node
-        self.size = 0             # number of nodes
-    
-    def is_empty(self):
+
+    def __init__(self) -> None:
+        self.head: Optional[Node] = None
+        self.tail: Optional[Node] = None
+        self.size: int = 0
+
+    def is_empty(self) -> bool:
         """Check if list is empty."""
         return self.head is None
     
-    def append(self, data):
+    def append(self, data: Any) -> None:
         """Add node at the end."""
         new_node = Node(data)
         if self.is_empty():
@@ -36,7 +39,7 @@ class DoublyLinkedList:
             self.tail = new_node
         self.size += 1
     
-    def prepend(self, data):
+    def prepend(self, data: Any) -> None:
         """Add node at the beginning."""
         new_node = Node(data)
         if self.is_empty():
@@ -47,7 +50,7 @@ class DoublyLinkedList:
             self.head = new_node
         self.size += 1
     
-    def insert(self, data, position):
+    def insert(self, data: Any, position: int) -> None:
         """Insert node at specific position."""
         if position < 0 or position > self.size:
             raise IndexError("Position out of range")
@@ -70,7 +73,7 @@ class DoublyLinkedList:
         current.prev = new_node
         self.size += 1
     
-    def delete(self, data):
+    def delete(self, data: Any) -> bool:
         """Delete first occurrence of data."""
         if self.is_empty():
             return False
@@ -93,7 +96,7 @@ class DoublyLinkedList:
             current = current.next
         return False
     
-    def search(self, data):
+    def search(self, data: Any) -> int:
         """Search for data, return position or -1."""
         current = self.head
         position = 0
@@ -104,7 +107,7 @@ class DoublyLinkedList:
             position += 1
         return -1
     
-    def display_forward(self):
+    def display_forward(self) -> str:
         """Display list from head to tail."""
         elements = []
         current = self.head
@@ -113,7 +116,7 @@ class DoublyLinkedList:
             current = current.next
         return "None <-> " + " <-> ".join(elements) + " <-> None"
     
-    def display_backward(self):
+    def display_backward(self) -> str:
         """Display list from tail to head."""
         elements = []
         current = self.tail
@@ -122,10 +125,10 @@ class DoublyLinkedList:
             current = current.prev
         return "None <-> " + " <-> ".join(elements) + " <-> None"
     
-    def __len__(self):
+    def __len__(self) -> int:
         return self.size
-    
-    def __str__(self):
+
+    def __str__(self) -> str:
         return self.display_forward()
 
 

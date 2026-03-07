@@ -1,34 +1,33 @@
 # Ejemplo de Clases: Animales
 # Este programa demuestra la herencia y polimorfismo con diferentes tipos de animales
 
-# Clase padre: Animal
+
 class Animal:
     """Clase base para todos los tipos de animales"""
 
-    def __init__(self, nombre, edad, especie):
+    def __init__(self, nombre: str, edad: int, especie: str) -> None:
         """Constructor para inicializar los atributos básicos"""
         self.nombre = nombre
         self.edad = edad
         self.especie = especie
 
-    def describir(self):
+    def describir(self) -> str:
         """Método para describir el animal"""
         return f"{self.nombre} es un {self.especie} de {self.edad} años"
 
-    def hacer_sonido(self):
+    def hacer_sonido(self) -> str:
         """Método virtual que será sobrescrito en las clases derivadas"""
         return f"{self.nombre} hace un sonido"
 
-    def moverse(self):
+    def moverse(self) -> str:
         """Método para el movimiento del animal"""
         return f"{self.nombre} se está moviendo"
 
 
-# Clase derivada: Perro
 class Perro(Animal):
     """Clase que representa un perro"""
 
-    def __init__(self, nombre, edad, raza):
+    def __init__(self, nombre: str, edad: int, raza: str) -> None:
         """Constructor que llama al constructor de la clase padre"""
         super().__init__(nombre, edad, "Perro")
         self.raza = raza
@@ -54,7 +53,7 @@ class Perro(Animal):
 class Gato(Animal):
     """Clase que representa un gato"""
 
-    def __init__(self, nombre, edad, color):
+    def __init__(self, nombre: str, edad: int, color: str) -> None:
         """Constructor que llama al constructor de la clase padre"""
         super().__init__(nombre, edad, "Gato")
         self.color = color
