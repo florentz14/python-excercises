@@ -1,7 +1,7 @@
 # -------------------------------------------------
-# File Name: 06b_grid_axis.py
+# File Name: 28_grid_axis.py
 # Author: Florentino Báez
-# Date: Matplotlib
+# Date: 10_Matplotlib
 # Description: Grid on specific axis: both, x-only, y-only (3 subplots).
 # -------------------------------------------------
 

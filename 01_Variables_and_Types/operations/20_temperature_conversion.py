@@ -1,4 +1,9 @@
-# Temperature Conversion in Python
+# -------------------------------------------------
+# File Name: 20_temperature_conversion.py
+# Author: Florentino Báez
+# Date: 01_Variables_and_Types
+# Description: Celsius, Fahrenheit, and Kelvin conversion functions.
+# -------------------------------------------------
 
 def celsius_to_fahrenheit(celsius):
     """Convert Celsius to Fahrenheit"""

@@ -1,4 +1,9 @@
-# 52_07_segundo_orden.py - EDO de segundo orden: oscilador armónico
+# -------------------------------------------------
+# File Name: 62_second_order.py
+# Author: Florentino Báez
+# Date: 17_Equations
+# Description: Second-order ODE: harmonic oscillator.
+# -------------------------------------------------
 
 import numpy as np
 import matplotlib.pyplot as plt

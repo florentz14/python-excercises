@@ -1,11 +1,9 @@
-"""
-Gradient Boosting - Sequential Ensemble Learning
-=================================================
-Builds weak models sequentially, each correcting the errors of the previous one.
-Excellent for tabular data and high-accuracy predictions.
-
-Author: Florentino Baez
-"""
+# -------------------------------------------------
+# File Name: 34_gradient_boosting.py
+# Author: Florentino Báez
+# Date: 21_Machine_Learning
+# Description: Gradient boosting sequential ensemble.
+# -------------------------------------------------
 
 from sklearn.model_selection import train_test_split
 from sklearn.ensemble import GradientBoostingClassifier

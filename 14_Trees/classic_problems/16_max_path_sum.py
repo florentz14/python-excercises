@@ -1,9 +1,9 @@
-"""
-#16 Maximum Path Sum - LeetCode 124
-====================================
-Max path sum (path can start/end anywhere; at most one turn at each node).
-Pattern: DFS, track max through node vs max in subtree.
-"""
+# -------------------------------------------------
+# File Name: 16_max_path_sum.py
+# Author: Florentino Báez
+# Date: 14_Trees
+# Description: LeetCode 124 - Maximum path sum (path may not pass root).
+# -------------------------------------------------
 
 from common import TreeNode
 

@@ -1,22 +1,9 @@
-"""
-Machine Learning - Categorical Data
-======================================
-ML models work with numbers, so categorical data must be converted.
-
-Types of categorical data:
-1. Nominal: No order (color: red, blue, green)
-2. Ordinal: Has order (size: S, M, L, XL)
-
-Encoding methods:
-1. Label Encoding: Assigns a unique integer to each category
-2. One-Hot Encoding: Creates binary columns for each category
-3. Ordinal Encoding: Preserves the order of categories
-
-When to use which:
-- Label Encoding: For ordinal data, or tree-based models
-- One-Hot Encoding: For nominal data, or linear/distance-based models
-- Ordinal Encoding: For data with a clear order
-"""
+# -------------------------------------------------
+# File Name: 18_categorical_data.py
+# Author: Florentino Báez
+# Date: 21_Machine_Learning
+# Description: Categorical encoding: label, one-hot, ordinal.
+# -------------------------------------------------
 
 import numpy as np
 import pandas as pd

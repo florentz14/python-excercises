@@ -1,10 +1,10 @@
-"""
-16_Files - Exercise 10: Read file, modify content, write back
-=============================================================
-Read all lines, modify one or more, write back with writelines().
-"""
+# -------------------------------------------------
+# File Name: 10_read_modify.py
+# Author: Florentino Báez
+# Date: 16_Files
+# Description: Read and modify file content. Read, process, write back.
+# -------------------------------------------------
 
-# 1. Read all lines
 with open("students.txt", "r", encoding="utf-8") as f:
     lines = f.readlines()
 

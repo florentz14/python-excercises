@@ -1,5 +1,9 @@
-# Archivo: 52_ecuaciones_diferenciales.py
-# Descripción: Resolución de Ecuaciones Diferenciales
+# -------------------------------------------------
+# File Name: 64_differential_equations.py
+# Author: Florentino Báez
+# Date: 17_Equations
+# Description: Differential equations resolution.
+# -------------------------------------------------
 
 import numpy as np
 import matplotlib.pyplot as plt

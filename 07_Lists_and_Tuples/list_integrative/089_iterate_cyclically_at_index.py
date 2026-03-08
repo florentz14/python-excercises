@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 181. Iterate List Cyclically Starting at Given Index
-# ---------------------------------------------------------------------------
-# Descripción: Iterate List Cyclically Starting at Given Index
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 089_iterate_cyclically_at_index.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Iterate List Cyclically Starting at Given Index
+# -------------------------------------------------
 
 def iterate_from_index(lst: list, start: int) -> list:
     return lst[start:] + lst[:start]

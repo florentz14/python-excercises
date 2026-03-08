@@ -1,7 +1,7 @@
 # -------------------------------------------------
-# File Name: 18_employees_salary_box.py
+# File Name: 71_employees_salary_box.py
 # Author: Florentino Báez
-# Date: Matplotlib
+# Date: 10_Matplotlib
 # Description: Box Plot — Salary Distribution by Department (Top 6).
 # -------------------------------------------------
 

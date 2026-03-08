@@ -1,6 +1,9 @@
-# Exercise 5: Printing a Table with the 'end' Parameter
-# Use the end parameter in print statements to control line breaks
-# and print table elements on the same line.
+# -------------------------------------------------
+# File Name: 20_table_print_end_parameter.py
+# Author: Florentino Báez
+# Date: 01_Variables_and_Types
+# Description: Use print(end=) to control line breaks and print
+# -------------------------------------------------
 
 print("Exercise 5: Printing a Table with end parameter")
 print("-" * 40)

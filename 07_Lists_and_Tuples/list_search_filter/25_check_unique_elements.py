@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 115. Check If All Elements in List Are Unique
-# ---------------------------------------------------------------------------
-# Descripción: Check If All Elements in List Are Unique
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 25_check_unique_elements.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Check If All Elements in List Are Unique
+# -------------------------------------------------
 
 def all_unique(lst: list) -> bool:
     # Se devuelve la cantidad de elementos.

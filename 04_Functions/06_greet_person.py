@@ -1,7 +1,8 @@
 # -------------------------------------------------
-# File: 06_greet_person.py
+# File Name: 06_greet_person.py
+# Author: Florentino Báez
+# Date: 04_Functions
 # Description: Greet a person by name.
-#              Function with string parameter.
 # -------------------------------------------------
 
 def greet_person(name: str) -> None:

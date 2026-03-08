@@ -1,9 +1,9 @@
-"""
-LeetCode 100 - Same Tree
-=========================
-Concept: Comparison. Recursively check structure and values.
-Time: O(n), Space: O(h)
-"""
+# -------------------------------------------------
+# File Name: 04_same_tree.py
+# Author: Florentino Báez
+# Date: 14_Trees
+# Description: LeetCode 100 - Check if two trees have same structure and values.
+# -------------------------------------------------
 
 from common import TreeNode
 

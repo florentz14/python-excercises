@@ -1,8 +1,9 @@
-"""Match-case: Letter grade with guards.
-Maps numeric score to letter grade using guard expressions.
-"""
+# -------------------------------------------------
+# File Name: 79_match_grade.py
 # Author: Florentino Báez
-
+# Date: 03_Loops
+# Description: Letter grade with guards.
+# -------------------------------------------------
 
 def letter_grade(score: int) -> str:
     match score:

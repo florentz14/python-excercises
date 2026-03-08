@@ -1,12 +1,8 @@
 # -------------------------------------------------
 # File Name: 12_ordenar_enumerar_zip.py
 # Author: Florentino Báez
-# Date: Variables - Lists
+# Date: 01_Variables_and_Types
 # Description: Sort, Enumerate, and Zip.
-#              sorted() returns a new sorted list; sort()
-#              sorts in place. enumerate() pairs indices with
-#              values. zip() combines multiple iterables into
-#              tuples element-by-element.
 # -------------------------------------------------
 
 print("=== Advanced sorting methods ===")

@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 251. Fill List with Specified Value
-# ---------------------------------------------------------------------------
-# Descripción: Fill List with Specified Value
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 116_fill_list_with_value.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Fill List with Specified Value
+# -------------------------------------------------
 
 def fill_list(value, length: int) -> list:
     # Se repite el valor length veces en una lista.

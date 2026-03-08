@@ -1,8 +1,9 @@
-# ------------------------------------------------------------
-# File: 20_tuple_as_dict_key.py
-# Purpose: Tuples as dictionary keys.
-# Description: Hashable tuples can be keys; lists cannot.
-# ------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 20_tuple_as_dict_key.py
+# Author: Florentino Báez
+# Date: 01_Variables_and_Types
+# Description: Tuples as dictionary keys. Hashable tuples can be keys;
+# -------------------------------------------------
 
 locations = {
     (10, 20): "Tree",

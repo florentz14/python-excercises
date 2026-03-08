@@ -1,7 +1,7 @@
 # -------------------------------------------------
-# File Name: 52_auto_mpg_bar.py
+# File Name: 105_auto_mpg_bar.py
 # Author: Florentino Báez
-# Date: Matplotlib
+# Date: 10_Matplotlib
 # Description: Bar chart of average MPG by cylinder count.
 # -------------------------------------------------
 

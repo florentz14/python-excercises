@@ -1,4 +1,9 @@
-# Reverse String Using Stack
+# -------------------------------------------------
+# File Name: 05_reverse_string.py
+# Author: Florentino Báez
+# Date: 12_Stacks
+# Description: Reverse string using stack. Push all, pop all.
+# -------------------------------------------------
 
 class Stack:
     """Basic stack implementation"""

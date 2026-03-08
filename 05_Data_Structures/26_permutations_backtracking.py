@@ -1,13 +1,8 @@
 # -------------------------------------------------
-# File Name: 26_permutaciones_backtracking.py
+# File Name: 26_permutations_backtracking.py
 # Author: Florentino Báez
-# Date: Data Structures - Backtracking
-# Description: Permutation Generation with Backtracking.
-#              Generates all possible orderings of a list.
-#              Uses a boolean array to track elements already
-#              used and builds permutations element by element,
-#              backtracking when exploring each branch.
-#              Complexity: O(n! * n) generates n! permutations.
+# Date: 05_Data_Structures
+# Description: Permutation generation with backtracking. All orderings of a sequence.
 # -------------------------------------------------
 
 print("=== 4. Generación de Permutaciones (Backtracking) ===\n")

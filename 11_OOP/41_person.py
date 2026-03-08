@@ -1,5 +1,9 @@
-# 14_simple_persona.py - Simple class: Person (attributes only)
-# Florentino Baez - ITSE-1002
+# -------------------------------------------------
+# File Name: 41_person.py
+# Author: Florentino Báez
+# Date: 11_OOP
+# Description: Simple Person class with name and age attributes.
+# -------------------------------------------------
 
 class Person:
     """Simple class with only __init__ and attributes."""

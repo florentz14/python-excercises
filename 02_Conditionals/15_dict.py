@@ -1,9 +1,9 @@
-"""
-Switch - Ejemplo 2: Emular switch con diccionario
-=================================================
-Topic: Conditionals - Switch (02_Conditionals)
-Descripción: Mapear valor → resultado con un diccionario (sin if/elif).
-"""
+# -------------------------------------------------
+# File Name: 15_dict.py
+# Author: Florentino Báez
+# Date: 02_Conditionals
+# Description: Mapear valor → resultado con un diccionario (sin if/elif).
+# -------------------------------------------------
 
 opcion = "B"
 

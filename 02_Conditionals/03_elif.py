@@ -1,9 +1,9 @@
-"""
-Condicional - Ejemplo 3: if / elif / else
-==========================================
-Topic: Conditionals (02_Conditionals)
-Descripción: Varias ramas con elif; solo se ejecuta la primera condición verdadera.
-"""
+# -------------------------------------------------
+# File Name: 03_elif.py
+# Author: Florentino Báez
+# Date: 02_Conditionals
+# Description: Varias ramas con elif; solo se ejecuta la primera condición verdadera.
+# -------------------------------------------------
 
 nota = 75
 

@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 149. Generate All Combinations of List Elements (powerset)
-# ---------------------------------------------------------------------------
-# Descripción: Generate All Combinations of List Elements (powerset)
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 03_all_combinations_elements.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Generate All Combinations of List Elements (powerset)
+# -------------------------------------------------
 
 import itertools
 

@@ -1,5 +1,9 @@
-# Archivo: 25_08_resumen.py
-# Descripción: Resumen del módulo de sistemas de ecuaciones lineales
+# -------------------------------------------------
+# File Name: 08_summary.py
+# Author: Florentino Báez
+# Date: 17_Equations
+# Description: Summary of linear systems module.
+# -------------------------------------------------
 
 if __name__ == "__main__":
     print("=== Resumen ===\n")

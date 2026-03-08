@@ -1,7 +1,8 @@
 # -------------------------------------------------
-# File: 22_rectangle.py
+# File Name: 22_rectangle.py
+# Author: Florentino Báez
+# Date: 11_OOP
 # Description: Rectangle class - practical application.
-#              Properties, methods, class methods.
 # -------------------------------------------------
 
 from typing import Optional, Tuple

@@ -1,16 +1,9 @@
 # -------------------------------------------------
-# File: 14_string_permutations.py (String Permutations)
-# -------------------------------------------------
+# File Name: 14_string_permutations.py
 # Author: Florentino Báez
-# Module: Data Structures - String Algorithms
-#
-# Description:
-#   Generates all permutations of a string recursively.
-#   For each position, pick a character and recurse on the rest.
-#
-# Complexity: O(n!).
+# Date: 05_Data_Structures
+# Description: String permutation generation. All permutations of a string using backtracking.
 # -------------------------------------------------
-
 
 def permutations(s):
     """Returns all permutations of string s (recursive)."""

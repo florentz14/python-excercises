@@ -1,15 +1,9 @@
 # -------------------------------------------------
-# File: 52_complexity.py (Sorting - Complexity Analysis)
-# -------------------------------------------------
+# File Name: 52_complexity.py
 # Author: Florentino Báez
-# Module: Data Structures - Sorting Algorithms
-#
-# Description:
-#   Comparative table of time complexity (best, average, worst) for
-#   all sorting algorithms. Includes space complexity and stability.
-#   Selection guide based on data type and constraints.
+# Date: 05_Data_Structures
+# Description: Sorting complexity analysis. Time/space and stability comparison.
 # -------------------------------------------------
-
 
 def analyze_complexity():
     """Prints complexity table for all sorting algorithms."""

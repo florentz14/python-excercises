@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 193. Find Dimension of Matrix (rows, cols)
-# ---------------------------------------------------------------------------
-# Descripción: Find Dimension of Matrix (rows, cols)
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 36_matrix_dimensions.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Find Dimension of Matrix (rows, cols)
+# -------------------------------------------------
 
 def matrix_dimension(matrix: list[list]) -> tuple[int, int]:
     if not matrix:

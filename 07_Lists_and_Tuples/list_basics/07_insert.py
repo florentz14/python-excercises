@@ -1,12 +1,9 @@
-# ---------------------------------------------------------------------------
-# Lista Simple - 07: Metodo insert()
-# ---------------------------------------------------------------------------
-# Descripcion: El metodo insert() agrega un elemento en una posicion
-#              especifica de la lista. Los elementos existentes se desplazan
-#              a la derecha. Modifica la lista original (in-place).
-# Sintaxis:    lista.insert(indice, elemento)
-# Complejidad: O(n) - porque desplaza los elementos posteriores
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 07_insert.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: El metodo insert() agrega un elemento en una posicion
+# -------------------------------------------------
 
 fruits = ["apple", "cherry", "pineapple", "grape"]
 print("Original:", fruits)

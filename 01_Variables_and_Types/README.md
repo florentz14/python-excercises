@@ -7,8 +7,8 @@ lists, sets, tuples, operations, and strings.
 
 ```
 01_Variables_and_Types/
-|-- data_types/    (14 archivos)  Basic data types
-|-- dictionaries/   (16 archivos)  Diccionarios
+|-- data_types/    (30 files)  Basic data types
+|-- dictionaries/   (57 archivos)  Diccionarios
 |-- lists/          (20 archivos)  Listas
 |-- sets/           (18 archivos)  Conjuntos (Sets)
 |-- tuples/         (14 archivos)  Tuplas
@@ -18,44 +18,50 @@ lists, sets, tuples, operations, and strings.
 
 ## Subcarpetas
 
-### `data_types/` - Basic Data Types (14 archivos)
+### `data_types/` - Basic Data Types (30 files)
 
-| # | Archivo | Contenido |
-|---|---------|-----------|
-| 01 | `01_complex.py` | Numeros complejos |
+| # | File | Content |
+|---|------|---------|
+| 01 | `01_complex.py` | Complex numbers |
 | 02 | `02_variables.py` | int, float, str, bool |
-| 03 | `03_strings.py` | Strings y metodos |
-| 04 | `04_comparacion.py` | Operadores de comparacion |
-| 05 | `05_tipos.py` | Tipos y conversion |
-| 07 | `07_inputs.py` | input(), conversion de entrada |
+| 03 | `03_strings.py` | Strings and methods |
+| 04 | `04_comparison.py` | Comparison operators |
+| 05 | `05_types.py` | Types and conversion |
+| 07 | `07_inputs.py` | input(), input conversion |
 | 08 | `08_conversion.py` | int(), float(), str(), list(), tuple(), set() |
-| 09 | `09_constantes_asignacion.py` | Constantes, asignacion multiple |
-| 10 | `10_none.py` | Tipo None |
+| 09 | `09_constants_assignment.py` | Constants, multiple assignment |
+| 10 | `10_none.py` | None type |
 | 11 | `11_print_sep_end.py` | print(sep=, end=) |
-| 12 | `12_membresia.py` | in, not in |
-| 13 | `13_logicos.py` | and, or, not, short-circuit |
-| 14 | `14_flujos.py` | if/elif/else, for, while |
+| 12 | `12_membership.py` | in, not in |
+| 13 | `13_logical.py` | and, or, not, short-circuit |
+| 14 | `14_control_flow.py` | if/elif/else, for, while |
+| 15-21 | table exercises | hello_world, tables, f-strings, etc. |
+| 22 | `22_hello_print_basics.py` | Basic print, separators |
+| 23 | `23_circle_area_variables.py` | Circle area with variables |
+| 24 | `24_arithmetic_operators.py` | +, -, *, /, % |
+| 25 | `25_variable_swapping.py` | Swapping variables |
+| 26-29 | operators | Integer division, modulo, augmented assignment, swap |
+| 30 | `30_input_type_conversion.py` | input() and type conversion |
 
-### `dictionaries/` - Diccionarios (16 archivos)
+### `dictionaries/` - Diccionarios (59 archivos)
 
 | # | Archivo | Contenido |
 |---|---------|-----------|
-| 01 | `01_create_and_display.py` | Crear y mostrar |
-| 02 | `02_access_by_key.py` | Acceso por clave |
-| 03 | `03_get_method.py` | Metodo get() |
+| 01 | `01_create.py` | Crear y mostrar |
+| 02 | `02_access.py` | Acceso por clave |
+| 03 | `03_get.py` | Metodo get() |
 | 04 | `04_add_modify.py` | Agregar y modificar |
-| 05 | `05_remove_items.py` | Eliminar elementos |
+| 05 | `05_remove.py` | Eliminar elementos |
 | 06 | `06_loop.py` | Iterar diccionarios |
 | 07 | `07_loop_items.py` | Iterar con items() |
 | 08 | `08_keys_values.py` | keys() y values() |
-| 09 | `09_check_key_exists.py` | Verificar si existe clave |
+| 09 | `09_check_key.py` | Verificar si existe clave |
 | 10 | `10_update.py` | Metodo update() |
 | 11 | `11_copy.py` | Copiar diccionario |
 | 12 | `12_clear.py` | Limpiar diccionario |
-| 13 | `13_nested.py` | Diccionarios anidados |
-| 14 | `14_comprehension.py` | Dict comprehension |
-| 15 | `15_list_tuples_to_dict.py` | Convertir lista de tuplas |
-| 16 | `16_setdefault.py` | Metodo setdefault() |
+| 13-20 | nested_* | Nested: basic, access, iterate, modify, deep, mixed |
+| 21-24 | list_to_dict, setdefault, fromkeys, comprehension | Conversion y creacion |
+| 25-57 | comp_*, ops, apps, advanced | Orden: basico -> complejo; GradeManager/ContactBook en 11_OOP |
 
 ### `lists/` - Listas (20 archivos)
 
@@ -153,7 +159,7 @@ lists, sets, tuples, operations, and strings.
 | Subcarpeta | Archivos | Tema |
 |------------|----------|------|
 | `data_types/` | 14 | Basic data types |
-| `dictionaries/` | 16 | Diccionarios |
+| `dictionaries/` | 57 | Diccionarios |
 | `lists/` | 20 | Listas |
 | `sets/` | 18 | Conjuntos (Sets) |
 | `tuples/` | 14 | Tuplas |
@@ -166,7 +172,7 @@ lists, sets, tuples, operations, and strings.
 ```bash
 cd 01_Variables_and_Types
 python data_types/01_complex.py
-python dictionaries/01_create_and_display.py
+python dictionaries/01_create.py
 ```
 
 ## Requisitos

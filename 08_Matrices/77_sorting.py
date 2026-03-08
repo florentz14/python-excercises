@@ -1,8 +1,9 @@
-# ------------------------------------------------------------
-# File: 48_array_sorting.py
-# Purpose: Array sorting: sort, argsort, lexsort.
+# -------------------------------------------------
+# File Name: 77_sorting.py
+# Author: Florentino Báez
+# Date: 08_Matrices
 # Description: In-place vs copy; get indices that would sort.
-# ------------------------------------------------------------
+# -------------------------------------------------
 
 import numpy as np
 

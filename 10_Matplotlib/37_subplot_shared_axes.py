@@ -1,7 +1,7 @@
 # -------------------------------------------------
-# File Name: 07e_subplot_shared_axes.py
+# File Name: 37_subplot_shared_axes.py
 # Author: Florentino Báez
-# Date: Matplotlib
+# Date: 10_Matplotlib
 # Description: Shared Y-axis between subplots.
 # -------------------------------------------------
 

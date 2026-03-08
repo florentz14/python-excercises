@@ -1,8 +1,9 @@
-# ------------------------------------------------------------
-# File: 35_row_operations.py
-# Purpose: Elementary row operations.
+# -------------------------------------------------
+# File Name: 35_row_operations.py
+# Author: Florentino Báez
+# Date: 08_Matrices
 # Description: Swap rows, scale row, row replacement (Ri += k*Rj).
-# ------------------------------------------------------------
+# -------------------------------------------------
 
 import numpy as np
 

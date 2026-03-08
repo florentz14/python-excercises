@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 146. Sum of Digits of Each Number in List (ignore non-numeric)
-# ---------------------------------------------------------------------------
-# Descripción: Sum of Digits of Each Number in List (ignore non-numeric)
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 14_sum_digits_in_list.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Sum of Digits of Each Number in List (ignore non-numeric)
+# -------------------------------------------------
 
 def sum_digits(n: int) -> int:
     # Se devuelve la suma de todos los elementos.

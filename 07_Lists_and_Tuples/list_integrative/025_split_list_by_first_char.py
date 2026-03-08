@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 40. Split List by First Character of Word
-# ---------------------------------------------------------------------------
-# Descripción: Split List by First Character of Word
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 025_split_list_by_first_char.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Split List by First Character of Word
+# -------------------------------------------------
 
 from itertools import groupby
 

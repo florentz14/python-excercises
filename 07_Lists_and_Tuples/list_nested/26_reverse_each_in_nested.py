@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 129. Reverse Each List in Nested List
-# ---------------------------------------------------------------------------
-# Descripción: Reverse Each List in Nested List
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 26_reverse_each_in_nested.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Reverse Each List in Nested List
+# -------------------------------------------------
 
 def reverse_each(lst: list[list]) -> list[list]:
     # Lista por comprensión: se construye la lista a partir del iterable.

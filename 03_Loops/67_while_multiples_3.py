@@ -1,8 +1,9 @@
-"""While loop: Multiples of 3 up to 15.
-Increments by 3 to print 3, 6, 9, 12, 15.
-"""
+# -------------------------------------------------
+# File Name: 67_while_multiples_3.py
 # Author: Florentino Báez
-
+# Date: 03_Loops
+# Description: Multiples of 3 up to 15.
+# -------------------------------------------------
 
 print("=" * 40)
 print("While #1 – Multiples of 3 up to 15")

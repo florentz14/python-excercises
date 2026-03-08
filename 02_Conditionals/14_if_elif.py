@@ -1,9 +1,9 @@
-"""
-Switch - Ejemplo 1: Emular switch con if / elif
-===============================================
-Topic: Conditionals - Switch (02_Conditionals)
-Descripción: Varios casos (como switch) usando if/elif/else.
-"""
+# -------------------------------------------------
+# File Name: 14_if_elif.py
+# Author: Florentino Báez
+# Date: 02_Conditionals
+# Description: Varios casos (como switch) usando if/elif/else.
+# -------------------------------------------------
 
 dia = 3  # 1=Lunes, 2=Martes, ...
 

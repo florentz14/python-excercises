@@ -1,16 +1,9 @@
-"""
-12_Stacks - Min Stack
-======================
-Stack that supports getMin() in O(1) time.
-All operations: push, pop, top, getMin in O(1).
-
-LeetCode 155 - Min Stack
-
-Idea: Keep a parallel stack of minimums.
-When we push x, min_stack pushes min(x, current_min).
-When we pop, min_stack pops too.
-"""
-
+# -------------------------------------------------
+# File Name: 15_min_stack.py
+# Author: Florentino Báez
+# Date: 12_Stacks
+# Description: Min stack. Stack with O(1) getMinimum operation.
+# -------------------------------------------------
 
 class MinStack:
     """Stack with O(1) getMin."""

@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 60. Find Tuple with Smallest Second Index from List of Tuples
-# ---------------------------------------------------------------------------
-# Descripción: Find Tuple with Smallest Second Index from List of Tuples
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 10_smallest_second_index_tuple.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Find Tuple with Smallest Second Index from List of Tuples
+# -------------------------------------------------
 
 def smallest_second_index(tuples: list[tuple]) -> tuple | None:
     # Se devuelve un valor u otro según la condición.

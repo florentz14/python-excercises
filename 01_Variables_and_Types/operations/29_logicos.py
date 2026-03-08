@@ -1,13 +1,10 @@
-"""
-Logical operators in Python
-===========================
-Topic: Operations (01_Variables_and_Types/operations)
-Description: and, or, not - Combining and negating boolean values.
+# -------------------------------------------------
+# File Name: 29_logicos.py
+# Author: Florentino Báez
+# Date: 01_Variables_and_Types
+# Description: Spanish-focused demo of logical operators (and, or, not)
+# -------------------------------------------------
 
-Complexity: O(1) - Boolean expression evaluation (short-circuit).
-"""
-
-# Logical operators: and, or, not
 p = True
 q = False
 print("p =", p, ", q =", q)

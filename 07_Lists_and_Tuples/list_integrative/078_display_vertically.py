@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 168. Display List Vertically (each element on new line; or 2D as columns)
-# ---------------------------------------------------------------------------
-# Descripción: Display List Vertically (each element on new line; or 2D as columns)
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 078_display_vertically.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Display List Vertically (each element on new line; or 2D as columns)
+# -------------------------------------------------
 
 def display_vertical(lst: list) -> None:
     for x in lst:

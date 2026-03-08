@@ -1,7 +1,8 @@
 # -------------------------------------------------
-# File: 13_len_method.py
+# File Name: 13_len_method.py
+# Author: Florentino Báez
+# Date: 11_OOP
 # Description: __len__ magic method.
-#              Making objects work with len() function.
 # -------------------------------------------------
 
 from typing import Any

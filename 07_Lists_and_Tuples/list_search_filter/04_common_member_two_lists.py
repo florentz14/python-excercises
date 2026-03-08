@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 11. Check Common Member Between Two Lists
-# ---------------------------------------------------------------------------
-# Descripción: Check Common Member Between Two Lists
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 04_common_member_two_lists.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Check Common Member Between Two Lists
+# -------------------------------------------------
 
 def have_common_member(a: list, b: list) -> bool:
     return bool(set(a) & set(b))

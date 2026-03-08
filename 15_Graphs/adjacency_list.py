@@ -1,7 +1,9 @@
-"""
-Re-export GrafoListaAdyacencia from 05_adjacency_list.
-Python cannot import modules whose names start with a number (e.g. 05_adjacency_list).
-"""
+# -------------------------------------------------
+# File Name: adjacency_list.py
+# Author: Florentino Báez
+# Date: 15_Graphs
+# Description: Re-export GrafoListaAdyacencia from 05_adjacency_list. Python cannot import modules whose names start with a number (e.g. 05_adjacency_list).
+# -------------------------------------------------
 
 import importlib.util
 from pathlib import Path

@@ -1,7 +1,8 @@
 # -------------------------------------------------
-# File: 07_reverse_linked_list.py
+# File Name: 07_reverse_linked_list.py
+# Author: Florentino Báez
+# Date: 18_Linked_Lists
 # Description: Reverse a singly linked list.
-#              Classic algorithm using iterative approach.
 # -------------------------------------------------
 
 from typing import Any, Optional

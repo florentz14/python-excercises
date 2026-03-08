@@ -1,13 +1,9 @@
-# ------------------------------------------------------------
-# File: 04_custom_exceptions.py
-# Chapter: Exceptions - Custom Exception Classes
-#
-# Purpose:
-#   Define and use custom exception classes for domain-specific errors.
-#   Inherit from Exception (or a more specific base) and add attributes.
-#
-# Author: Florentino Baez (adapted)
-# ------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 04_custom_exceptions.py
+# Author: Florentino Báez
+# Date: 22_Exceptions
+# Description: Custom Exceptions. InsufficientFundsError implementation.
+# -------------------------------------------------
 
 from typing import Optional
 

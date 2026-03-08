@@ -1,7 +1,7 @@
 # -------------------------------------------------
-# File Name: 05f_labels_tick_custom.py
+# File Name: 26_labels_tick_custom.py
 # Author: Florentino Báez
-# Date: Matplotlib
+# Date: 10_Matplotlib
 # Description: Custom tick labels (month names, rotation).
 # -------------------------------------------------
 

@@ -1,11 +1,8 @@
 # -------------------------------------------------
 # File Name: 16_slice_avanzado.py
 # Author: Florentino Báez
-# Date: Variables - Lists
+# Date: 01_Variables_and_Types
 # Description: Advanced Slicing.
-#              Covers [:n] first n, [-n:] last n,
-#              [a:b] range, [::step] every nth element,
-#              and [::-1] to reverse a list.
 # -------------------------------------------------
 
 print("=== Advanced slicing ===")

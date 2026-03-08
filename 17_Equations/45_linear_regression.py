@@ -1,5 +1,9 @@
-# Archivo: 49_04_regresion_lineal.py
-# Descripción: Regresión lineal (mínimos cuadrados)
+# -------------------------------------------------
+# File Name: 45_linear_regression.py
+# Author: Florentino Báez
+# Date: 17_Equations
+# Description: Linear regression (least squares).
+# -------------------------------------------------
 
 print("=== 4. Regresión Lineal (Desde Cero) ===\n")
 

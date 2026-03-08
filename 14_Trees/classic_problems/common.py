@@ -1,8 +1,9 @@
-"""
-Common TreeNode for classic tree problems.
-LeetCode-style: val, left, right.
-"""
-
+# -------------------------------------------------
+# File Name: common.py
+# Author: Florentino Báez
+# Date: 14_Trees
+# Description: Common TreeNode class (LeetCode-style) for classic tree problems.
+# -------------------------------------------------
 
 class TreeNode:
     """Binary tree node (LeetCode style)."""

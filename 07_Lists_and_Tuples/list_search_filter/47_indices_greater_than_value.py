@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 205. Indices of Elements Greater Than Specified Value
-# ---------------------------------------------------------------------------
-# Descripción: Indices of Elements Greater Than Specified Value
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 47_indices_greater_than_value.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Indices of Elements Greater Than Specified Value
+# -------------------------------------------------
 
 def indices_greater_than(lst: list[int | float], value: int | float) -> list[int]:
     # Lista por comprensión: se incluyen solo los elementos que cumplen la condición.

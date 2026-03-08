@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 182. Max and Min Sum Sublist in List of Lists
-# ---------------------------------------------------------------------------
-# Descripción: Max and Min Sum Sublist in List of Lists
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 15_max_min_sublist_sums.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Max and Min Sum Sublist in List of Lists
+# -------------------------------------------------
 
 def max_min_sublist_sum(lists: list[list[int]]) -> tuple[list[int], list[int]]:
     with_sum = [(sum(L), L) for L in lists]

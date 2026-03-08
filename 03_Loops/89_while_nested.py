@@ -1,9 +1,9 @@
-"""
-While loop: Nested while loops pattern.
-Prints a right-aligned triangle of asterisks (1, 2, 3 stars).
-
+# -------------------------------------------------
+# File Name: 89_while_nested.py
 # Author: Florentino Báez
-"""
+# Date: 03_Loops
+# Description: Nested while loops pattern.
+# -------------------------------------------------
 
 print("Example: Nested while loops pattern")
 print("-" * 40)

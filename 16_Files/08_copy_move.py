@@ -1,8 +1,9 @@
-"""
-16_Files - Exercise 08: Copy and move files
-===========================================
-shutil.copy() / copy2() for copying; shutil.move() for moving/renaming.
-"""
+# -------------------------------------------------
+# File Name: 08_copy_move.py
+# Author: Florentino Báez
+# Date: 16_Files
+# Description: Copy and move files. shutil.copy(), shutil.move().
+# -------------------------------------------------
 
 import shutil
 from pathlib import Path

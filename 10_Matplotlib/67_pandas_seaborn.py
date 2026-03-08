@@ -1,11 +1,8 @@
 # -------------------------------------------------
-# File Name: 14_pandas_seaborn.py
+# File Name: 67_pandas_seaborn.py
 # Author: Florentino Báez
-# Date: Matplotlib
+# Date: 10_Matplotlib
 # Description: Pandas + Matplotlib + Seaborn Integration.
-#              Combine DataFrame data (Pandas), statistical
-#              plots (Seaborn), and figure layout (Matplotlib).
-#              Line, bar, box, and histogram with KDE.
 # -------------------------------------------------
 
 """

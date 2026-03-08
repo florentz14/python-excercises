@@ -1,12 +1,9 @@
-# ---------------------------------------------------------------------------
-# Lista Simple - 19: Unir Listas con Bucle y append()
-# ---------------------------------------------------------------------------
-# Descripcion: Se puede agregar cada elemento de una lista a otra usando
-#              un bucle for con append(). Esto MODIFICA la lista original
-#              (a diferencia del operador + que crea una nueva).
-# Patron:      for x in lista2:
-#                  lista1.append(x)
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 19_join_append_loop.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Se puede agregar cada elemento de una lista a otra usando
+# -------------------------------------------------
 
 lista1 = ["a", "b", "c"]
 lista2 = [1, 2, 3]

@@ -1,8 +1,9 @@
-﻿# ------------------------------------------------------------
-# File: 23_longest_common_subsequence.py
-# Purpose: Longest common subsequence (LCS) of two strings.
-# Description: DP. dp[i][j] = 1+dp[i-1][j-1] if match else max(dp[i-1][j],dp[i][j-1]).
-# ------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 23_longest_common_subsequence.py
+# Author: Florentino Báez
+# Date: 01_Variables_and_Types
+# Description: Longest common subsequence (LCS) via dynamic programming.
+# -------------------------------------------------
 
 def lcs(s1: str, s2: str) -> int:
     m, n = len(s1), len(s2)

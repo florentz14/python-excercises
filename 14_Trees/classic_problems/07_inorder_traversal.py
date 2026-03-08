@@ -1,8 +1,9 @@
-"""
-#7 Binary Tree Inorder Traversal
-LeetCode 94. Left -> Root -> Right (BST gives sorted order)
-Time: O(n), Space: O(h)
-"""
+# -------------------------------------------------
+# File Name: 07_inorder_traversal.py
+# Author: Florentino Báez
+# Date: 14_Trees
+# Description: LeetCode 94 - Binary tree inorder traversal (Left, Root, Right).
+# -------------------------------------------------
 
 from common import TreeNode, build_example
 

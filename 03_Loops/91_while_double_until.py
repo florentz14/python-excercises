@@ -1,9 +1,9 @@
-"""
-While loop: Double until threshold.
-Starts at 1, doubles each step until exceeding 100.
-
+# -------------------------------------------------
+# File Name: 91_while_double_until.py
 # Author: Florentino Báez
-"""
+# Date: 03_Loops
+# Description: Double until threshold.
+# -------------------------------------------------
 
 n = 1
 print("Doubling: 1, 2, 4, 8, ... until > 100")

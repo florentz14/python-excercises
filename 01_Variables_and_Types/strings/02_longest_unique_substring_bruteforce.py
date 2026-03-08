@@ -1,18 +1,9 @@
-"""
-Longest Substring Without Repeating Characters - Brute force version
-===================================================================
-Topic: Strings (01_Variables_and_Types/strings)
-Description: Find the length of the longest substring without repeating characters.
-For each starting position, expand to the right until a repeated character is found.
-
-Input:  A string (e.g. "abccabcabcc")
-Output: Length of longest unique substring (e.g. 3)
-
-Complexity:
-    Time:   O(n²) - For each start, potentially scan to end
-    Space:  O(n)  - Set to track characters
-"""
-
+# -------------------------------------------------
+# File Name: 02_longest_unique_substring_bruteforce.py
+# Author: Florentino Báez
+# Date: 01_Variables_and_Types
+# Description: Longest substring without repeating characters - brute force.
+# -------------------------------------------------
 
 def longest_unique_substring_bruteforce(s: str) -> int:
     """

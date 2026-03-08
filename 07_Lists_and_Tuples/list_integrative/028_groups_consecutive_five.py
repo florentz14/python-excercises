@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 44. Generate Groups of Five Consecutive Numbers
-# ---------------------------------------------------------------------------
-# Descripción: Generate Groups of Five Consecutive Numbers
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 028_groups_consecutive_five.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Generate Groups of Five Consecutive Numbers
+# -------------------------------------------------
 
 def groups_of_five(n: int) -> list[list[int]]:
     # Lista por comprensión: se construye la lista a partir del iterable.

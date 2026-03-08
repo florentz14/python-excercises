@@ -1,11 +1,8 @@
 # -------------------------------------------------
 # File Name: 18_cola.py
 # Author: Florentino Báez
-# Date: Variables - Lists
+# Date: 01_Variables_and_Types
 # Description: List as a Queue (FIFO) with deque.
-#              First In, First Out. collections.deque is
-#              preferred over list for O(1) popleft().
-#              append() enqueues, popleft() dequeues.
 # -------------------------------------------------
 
 from collections import deque

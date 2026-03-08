@@ -1,9 +1,9 @@
 # -------------------------------------------------
-# File: 10_multiple_inheritance.py
+# File Name: 10_multiple_inheritance.py
+# Author: Florentino Báez
+# Date: 11_OOP
 # Description: Multiple inheritance in Python.
-#              Diamond problem and method resolution order.
 # -------------------------------------------------
-
 
 class Animal:
     """Base class - Animal."""

@@ -1,13 +1,10 @@
-"""
-Grafos - Ejemplo 1: Grafo con lista de adyacencia
-==================================================
-Topic: 15_Graphs
-Descripción: Grafo como dict: vértice → lista de vértices adyacentes.
-"""
+# -------------------------------------------------
+# File Name: 01_adjacency_list.py
+# Author: Florentino Báez
+# Date: 15_Graphs
+# Description: Graph as adjacency list (dict: vertex → list of adjacent vertices).
+# -------------------------------------------------
 
-# Grafo no dirigido: 0 -- 1
-#                     | \  |
-#                     2 -- 3
 grafo = {
     0: [1, 2],
     1: [0, 3],

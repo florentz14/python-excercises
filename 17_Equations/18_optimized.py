@@ -1,5 +1,9 @@
-# Archivo: 31_02_optimizada.py
-# Descripción: Integración optimizada con detalles y error
+# -------------------------------------------------
+# File Name: 18_optimized.py
+# Author: Florentino Báez
+# Date: 17_Equations
+# Description: Optimized integration with details and error estimate.
+# -------------------------------------------------
 
 from integracion_util import f_original, integrar_funcion
 

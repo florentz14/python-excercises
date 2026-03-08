@@ -1,16 +1,9 @@
 # -------------------------------------------------
-# File: 28_subset_sum.py (Subset Sum - Backtracking)
-# -------------------------------------------------
+# File Name: 28_subset_sum.py
 # Author: Florentino Báez
-# Module: Data Structures - Backtracking
-#
-# Description:
-#   Subset Sum: find all subsets whose sum equals the target. For each
-#   element, include or exclude; prune when sum exceeds target.
-#
-# Complexity: O(2^n) worst case.
+# Date: 05_Data_Structures
+# Description: Subset Sum. Find all subsets whose sum equals target. Backtracking. O(2^n).
 # -------------------------------------------------
-
 
 def subset_sum_backtracking(numbers, target):
     """Returns list of all subsets that sum exactly to target."""

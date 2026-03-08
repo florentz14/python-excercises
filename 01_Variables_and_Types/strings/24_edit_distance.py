@@ -1,8 +1,9 @@
-﻿# ------------------------------------------------------------
-# File: 24_edit_distance.py
-# Purpose: Levenshtein edit distance between two strings.
-# Description: dp[i][j] = min(insert, delete, replace) + cost.
-# ------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 24_edit_distance.py
+# Author: Florentino Báez
+# Date: 01_Variables_and_Types
+# Description: Levenshtein edit distance between two strings.
+# -------------------------------------------------
 
 def edit_distance(s1: str, s2: str) -> int:
     m, n = len(s1), len(s2)

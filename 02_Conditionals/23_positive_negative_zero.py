@@ -1,9 +1,9 @@
-"""
-Simple conditional: Positive, negative, or zero
-================================================
-Topic: Conditionals (02_Conditionals)
-Description: Classify a number with if/elif/else.
-"""
+# -------------------------------------------------
+# File Name: 23_positive_negative_zero.py
+# Author: Florentino Báez
+# Date: 02_Conditionals
+# Description: Positive, negative, or zero
+# -------------------------------------------------
 
 numero = int(input("Enter a number: "))
 

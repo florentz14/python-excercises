@@ -1,7 +1,8 @@
 # -------------------------------------------------
-# File: 32_fibonacci_generator.py
+# File Name: 32_fibonacci_generator.py
+# Author: Florentino Báez
+# Date: 04_Functions
 # Description: Fibonacci sequence generator.
-#              Using yield for lazy evaluation.
 # -------------------------------------------------
 
 def fibonacci(limit):

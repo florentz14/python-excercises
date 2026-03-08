@@ -1,12 +1,8 @@
 # -------------------------------------------------
 # File Name: 15_reduce.py
 # Author: Florentino Báez
-# Date: Variables - Lists
+# Date: 01_Variables_and_Types
 # Description: reduce() — Reduce a List to a Single Value.
-#              reduce(func, iterable) applies func cumulatively
-#              to pairs of elements, left to right, reducing
-#              the iterable to one value. Imported from
-#              functools.
 # -------------------------------------------------
 
 from functools import reduce

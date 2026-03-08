@@ -1,8 +1,9 @@
-# ------------------------------------------------------------
-# File: 18_tuple_as_function_return.py
-# Purpose: Tuples as function return values.
-# Description: Return multiple values from a function.
-# ------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 18_tuple_as_function_return.py
+# Author: Florentino Báez
+# Date: 01_Variables_and_Types
+# Description: Tuples as function return values.
+# -------------------------------------------------
 
 def min_max(nums):
     return min(nums), max(nums)

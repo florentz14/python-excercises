@@ -1,14 +1,8 @@
 # -------------------------------------------------
 # File Name: 27_fruits.py
 # Author: Florentino Báez
-# Date: 19/02/2026
+# Date: 01_Variables_and_Types
 # Description: Sets Example with fruits.
-#              Shows how to create a set, add elements,
-#              remove elements, loop through a set, and
-#              perform mathematical operations on sets.
-#              Also shows how to check if an element is
-#              in a set, clear a set, and convert a set
-#              to a list.
 # -------------------------------------------------
 
 print("Sets Example")

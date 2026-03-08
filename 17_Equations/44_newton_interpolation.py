@@ -1,5 +1,9 @@
-# Archivo: 49_03_newton_interpolacion.py
-# Descripción: Interpolación de Newton (diferencias divididas)
+# -------------------------------------------------
+# File Name: 44_newton_interpolation.py
+# Author: Florentino Báez
+# Date: 17_Equations
+# Description: Newton interpolation (divided differences).
+# -------------------------------------------------
 
 print("=== 3. Interpolación de Newton ===\n")
 

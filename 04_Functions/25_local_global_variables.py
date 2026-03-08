@@ -1,10 +1,10 @@
 # -------------------------------------------------
-# File: 25_local_global_variables.py
+# File Name: 25_local_global_variables.py
+# Author: Florentino Báez
+# Date: 04_Functions
 # Description: Local and global variables demo.
-#              Using 'global' keyword to modify variables.
 # -------------------------------------------------
 
-# Global variable - accessible from anywhere in the file
 counter = 0
 message = "Hello from global"
 

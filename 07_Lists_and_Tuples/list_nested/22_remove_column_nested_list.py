@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 107. Remove Specified Column from Nested List (1-based column index)
-# ---------------------------------------------------------------------------
-# Descripción: Remove Specified Column from Nested List (1-based column index)
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 22_remove_column_nested_list.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Remove Specified Column from Nested List (1-based column index)
+# -------------------------------------------------
 
 def remove_column(matrix: list[list], col: int) -> list[list]:
     """col is 1-based: 1 = first column."""

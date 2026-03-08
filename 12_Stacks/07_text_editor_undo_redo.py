@@ -1,4 +1,9 @@
-# Text Editor with Undo/Redo using Stacks
+# -------------------------------------------------
+# File Name: 07_text_editor_undo_redo.py
+# Author: Florentino Báez
+# Date: 12_Stacks
+# Description: Text editor undo/redo. Stack for command history.
+# -------------------------------------------------
 
 class Stack:
     """Basic stack implementation"""

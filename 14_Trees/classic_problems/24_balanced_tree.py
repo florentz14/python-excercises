@@ -1,9 +1,9 @@
-"""
-#24 Balanced Binary Tree
-=========================
-LeetCode 110. Check if height difference of left/right subtrees <= 1 for all nodes.
-Time: O(n), Space: O(h).
-"""
+# -------------------------------------------------
+# File Name: 24_balanced_tree.py
+# Author: Florentino Báez
+# Date: 14_Trees
+# Description: LeetCode 110 - Check if binary tree is height-balanced.
+# -------------------------------------------------
 
 from common import TreeNode
 

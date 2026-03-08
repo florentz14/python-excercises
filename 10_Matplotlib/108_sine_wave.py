@@ -1,4 +1,10 @@
-# Importar las librerías necesarias
+# -------------------------------------------------
+# File Name: 108_sine_wave.py
+# Author: Florentino Báez
+# Date: 10_Matplotlib
+# Description: Plot a sine wave using matplotlib and numpy;
+# -------------------------------------------------
+
 import matplotlib.pyplot as plt  # Para crear gráficos
 import numpy as np  # Para trabajar con arreglos numéricos
 

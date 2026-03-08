@@ -1,18 +1,9 @@
-"""
-Longest Substring Without Repeating Characters - Dictionary version
-===================================================================
-Topic: Strings (01_Variables_and_Types/strings)
-Description: Find the length using last-seen index of each character.
-Jumps left directly instead of shrinking step-by-step.
-
-Input:  A string (e.g. "abccabcabcc")
-Output: Length of longest unique substring (e.g. 3)
-
-Complexity:
-    Time:   O(n) - Single pass
-    Space:  O(n)  - Dictionary for last seen indices
-"""
-
+# -------------------------------------------------
+# File Name: 04_longest_unique_substring_dict.py
+# Author: Florentino Báez
+# Date: 01_Variables_and_Types
+# Description: Longest substring without repeating chars - dictionary version.
+# -------------------------------------------------
 
 def longest_unique_substring_dict(s: str) -> int:
     """

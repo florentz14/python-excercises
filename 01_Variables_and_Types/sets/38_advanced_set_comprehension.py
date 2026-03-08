@@ -1,7 +1,8 @@
 # -------------------------------------------------
 # File Name: 38_advanced_set_comprehension.py
-# Purpose: Advanced set comprehension examples
-# Description: Squares, evens, vowel filtering, lowercase normalization.
+# Author: Florentino Báez
+# Date: 01_Variables_and_Types
+# Description: Advanced set comprehension examples: squares, evens,
 # -------------------------------------------------
 
 print("Advanced Set Comprehension")

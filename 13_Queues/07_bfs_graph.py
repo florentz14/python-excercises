@@ -1,4 +1,9 @@
-# Breadth-First Search (BFS) Using Queue
+# -------------------------------------------------
+# File Name: 07_bfs_graph.py
+# Author: Florentino Báez
+# Date: 13_Queues
+# Description: BFS on graph. Queue for level-order traversal.
+# -------------------------------------------------
 
 from collections import deque
 

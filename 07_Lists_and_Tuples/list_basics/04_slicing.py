@@ -1,13 +1,9 @@
-# ---------------------------------------------------------------------------
-# Lista Simple - 04: Slicing (Rebanado)
-# ---------------------------------------------------------------------------
-# Descripcion: El slicing permite extraer una porcion (sublista) de la lista
-#              original. Se usan dos puntos [:] para definir el rango.
-# Sintaxis:    lista[inicio:fin]       -> desde inicio hasta fin-1
-#              lista[inicio:fin:paso]  -> con un paso especifico
-#              lista[:fin]             -> desde el principio hasta fin-1
-#              lista[inicio:]          -> desde inicio hasta el final
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 04_slicing.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: El slicing permite extraer una porcion (sublista) de la lista
+# -------------------------------------------------
 
 fruits = ["apple", "banana", "cherry", "pineapple", "grape", "blueberry", "mango", "strawberry"]
 #       index:  0        1         2         3           4        5           6        7

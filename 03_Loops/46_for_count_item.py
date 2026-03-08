@@ -1,8 +1,9 @@
-"""For loop: Count occurrences in list.
-Counts how many times an item appears in a list.
-"""
+# -------------------------------------------------
+# File Name: 46_for_count_item.py
 # Author: Florentino Báez
-
+# Date: 03_Loops
+# Description: Count occurrences in list.
+# -------------------------------------------------
 
 fruits = ["apple", "banana", "apple", "orange", "apple", "banana"]
 item = "apple"

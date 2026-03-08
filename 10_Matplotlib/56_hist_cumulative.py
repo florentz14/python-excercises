@@ -1,9 +1,8 @@
 # -------------------------------------------------
-# File Name: 10f_hist_cumulative.py
+# File Name: 56_hist_cumulative.py
 # Author: Florentino Báez
-# Date: Matplotlib
+# Date: 10_Matplotlib
 # Description: Cumulative Histogram — running total
-#              of frequency counts.
 # -------------------------------------------------
 
 import matplotlib.pyplot as plt

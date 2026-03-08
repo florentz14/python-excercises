@@ -1,5 +1,9 @@
-# 17_simple_cuenta.py - Simple class: Account (bank account)
-# Florentino Baez - ITSE-1002
+# -------------------------------------------------
+# File Name: 44_account.py
+# Author: Florentino Báez
+# Date: 11_OOP
+# Description: Simple bank Account class with deposit and balance operations.
+# -------------------------------------------------
 
 class Account:
     """Class with mutable state (bank balance)."""

@@ -1,4 +1,9 @@
-# Basic Calculator in Python
+# -------------------------------------------------
+# File Name: 14_basic_calculator.py
+# Author: Florentino Báez
+# Date: 01_Variables_and_Types
+# Description: Implements add, subtract, multiply, divide and an interactive
+# -------------------------------------------------
 
 def add(a, b):
     return a + b

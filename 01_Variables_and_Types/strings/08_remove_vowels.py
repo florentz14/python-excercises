@@ -1,8 +1,9 @@
-# ------------------------------------------------------------
-# File: 08_remove_vowels.py
-# Purpose: Remove vowels from string.
-# Description: Filter out a, e, i, o, u (case-insensitive).
-# ------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 08_remove_vowels.py
+# Author: Florentino Báez
+# Date: 01_Variables_and_Types
+# Description: Remove vowels from string (a, e, i, o, u case-insensitive).
+# -------------------------------------------------
 
 VOWELS = set("aeiouAEIOU")
 

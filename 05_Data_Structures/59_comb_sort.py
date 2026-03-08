@@ -1,15 +1,8 @@
 # -------------------------------------------------
 # File Name: 59_comb_sort.py
 # Author: Florentino Báez
-# Date: Data Structures - Sorting Algorithms
-# Description: Comb Sort.
-#              Improvement of Bubble Sort that compares elements at
-#              distance 'gap' which is reduced by factor 1.3 in each
-#              pass. When gap = 1, it is Bubble Sort. Eliminates
-#              "turtles" like Shell Sort does with Insertion Sort.
-#              Includes "Comb Sort 11" variant and comparison of
-#              shrink factors.
-#              Complexity: O(n log n) best, O(n²) worst case.
+# Date: 05_Data_Structures
+# Description: Comb Sort. Improves bubble sort with larger gaps. O(n²) or better.
 # -------------------------------------------------
 
 import random

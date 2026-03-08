@@ -1,17 +1,9 @@
-"""
-12_Stacks - Stock Span Problem
-================================
-Classic problem: for each day, find how many consecutive days
-the price was <= today's price (including today).
-
-Uses monotonic decreasing stack.
-LeetCode 901 - Online Stock Span (similar concept)
-
-Example:
-  prices = [100, 80, 60, 70, 60, 75, 85]
-  spans  = [1,  1,  1,  2,  1,  4,  6]
-"""
-
+# -------------------------------------------------
+# File Name: 13_stock_span_problem.py
+# Author: Florentino Báez
+# Date: 12_Stacks
+# Description: Stock span problem. Days until price greater than current.
+# -------------------------------------------------
 
 def stock_span(prices: list[int]) -> list[int]:
     """

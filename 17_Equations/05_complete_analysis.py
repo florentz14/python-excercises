@@ -1,5 +1,9 @@
-# Archivo: 25_05_analisis_completo.py
-# Descripción: Análisis completo del sistema de ecuaciones
+# -------------------------------------------------
+# File Name: 05_complete_analysis.py
+# Author: Florentino Báez
+# Date: 17_Equations
+# Description: Complete analysis of linear system of equations.
+# -------------------------------------------------
 
 import numpy as np
 

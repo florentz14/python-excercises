@@ -1,16 +1,9 @@
-# ------------------------------------------------------------
-# File: 64_two_pointers_pattern.py
-# Two Pointers Pattern - Examples
-#
-# Purpose:
-#   Two pointers move from different ends or same end.
-#   Used for: palindrome check, two sum (sorted), remove duplicates, etc.
-#
-# Examples: valid palindrome, two sum II (sorted), container with most water
-#
-# Author: Florentino Baez
-# ------------------------------------------------------------
-
+# -------------------------------------------------
+# File Name: 64_two_pointers_pattern.py
+# Author: Florentino Báez
+# Date: 05_Data_Structures
+# Description: Two pointers pattern. Common technique for array/string problems.
+# -------------------------------------------------
 
 def is_palindrome(s: str) -> bool:
     """Two pointers from both ends. O(n)."""

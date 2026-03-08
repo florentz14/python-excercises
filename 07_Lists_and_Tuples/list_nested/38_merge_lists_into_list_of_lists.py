@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 215. Merge Lists into List of Lists (zip by position)
-# ---------------------------------------------------------------------------
-# Descripción: Merge Lists into List of Lists (zip by position)
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 38_merge_lists_into_list_of_lists.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Merge Lists into List of Lists (zip by position)
+# -------------------------------------------------
 
 def merge_into_list_of_lists(*lists: list) -> list[list]:
     # Lista por comprensión: se construye la lista a partir del iterable.

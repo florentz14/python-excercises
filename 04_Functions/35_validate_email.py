@@ -1,7 +1,8 @@
 # -------------------------------------------------
-# File: 35_validate_email.py
+# File Name: 35_validate_email.py
+# Author: Florentino Báez
+# Date: 04_Functions
 # Description: Email format validation function.
-#              String parsing and validation rules.
 # -------------------------------------------------
 
 def is_valid_email(email):

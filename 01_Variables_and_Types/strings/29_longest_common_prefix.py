@@ -1,8 +1,9 @@
-﻿# ------------------------------------------------------------
-# File: 29_longest_common_prefix.py
-# Purpose: Longest common prefix of strings.
-# Description: Vertical scan or sort and compare first/last.
-# ------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 29_longest_common_prefix.py
+# Author: Florentino Báez
+# Date: 01_Variables_and_Types
+# Description: Longest common prefix of a list of strings.
+# -------------------------------------------------
 
 def longest_common_prefix(strs: list[str]) -> str:
     if not strs: return ""

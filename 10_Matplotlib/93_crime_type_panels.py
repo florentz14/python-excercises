@@ -1,7 +1,7 @@
 # -------------------------------------------------
-# File Name: 40_crime_type_panels.py
+# File Name: 93_crime_type_panels.py
 # Author: Florentino Báez
-# Date: Matplotlib
+# Date: 10_Matplotlib
 # Description: Subplots: Individual Crime Type Trends (2x2).
 # -------------------------------------------------
 

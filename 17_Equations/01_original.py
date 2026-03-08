@@ -1,5 +1,9 @@
-# Archivo: 25_01_original.py
-# Descripción: Versión original para resolver sistemas de ecuaciones lineales
+# -------------------------------------------------
+# File Name: 01_original.py
+# Author: Florentino Báez
+# Date: 17_Equations
+# Description: Original solver for linear systems of equations.
+# -------------------------------------------------
 
 import numpy as np
 

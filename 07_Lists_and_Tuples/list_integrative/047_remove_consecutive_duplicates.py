@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 73. Remove Consecutive Duplicates
-# ---------------------------------------------------------------------------
-# Descripción: Remove Consecutive Duplicates
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 047_remove_consecutive_duplicates.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Remove Consecutive Duplicates
+# -------------------------------------------------
 
 def remove_consecutive_duplicates(lst: list) -> list:
     result = []

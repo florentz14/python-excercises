@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 142. Sum Specific Column in List of Lists (1-based column)
-# ---------------------------------------------------------------------------
-# Descripción: Sum Specific Column in List of Lists (1-based column)
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 29_sum_specific_column.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Sum Specific Column in List of Lists (1-based column)
+# -------------------------------------------------
 
 def sum_column(matrix: list[list], col: int) -> int | float:
     # Se devuelve la suma de todos los elementos.

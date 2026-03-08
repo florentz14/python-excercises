@@ -1,12 +1,8 @@
 # -------------------------------------------------
 # File Name: 04_remove_set_items.py
 # Author: Florentino Báez
-# Date: Variables - Sets
+# Date: 01_Variables_and_Types
 # Description: Remove Items from a Set.
-#              remove() raises KeyError if missing.
-#              discard() silently ignores missing items.
-#              pop() removes an arbitrary element.
-#              clear() empties the set; del deletes it.
 # -------------------------------------------------
 
 fruits = {"apple", "banana", "cherry", "pineapple", "grape", "mango", "kiwi"}

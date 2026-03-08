@@ -1,5 +1,9 @@
-#DEBUGGING EXCERCISES:
-# Daniel and Florentino
+# -------------------------------------------------
+# File Name: debb.py
+# Author: Florentino Báez
+# Date: 01_Variables_and_Types
+# Description: Debugging exercise - nested dictionary iteration and update.
+# -------------------------------------------------
 
 myfamily = {
    "child1": {

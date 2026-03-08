@@ -1,8 +1,8 @@
 # -------------------------------------------------
 # File Name: 35_set_laws_verification.py
-# Purpose: Verify fundamental set laws
-# Description: Commutative, associative, distributive, identity,
-#              and idempotent laws with Python sets.
+# Author: Florentino Báez
+# Date: 01_Variables_and_Types
+# Description: Verify fundamental set laws: commutative, associative,
 # -------------------------------------------------
 
 print("Set Laws Verification")

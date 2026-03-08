@@ -1,15 +1,9 @@
 # -------------------------------------------------
 # File Name: 44_bubble.py
 # Author: Florentino Báez
-# Date: Data Structures - Sorting Algorithms
-# Description: Bubble Sort.
-#              Compares pairs of adjacent elements and
-#              swaps them if they are out of order, "bubbling"
-#              the largest to the end in each pass. Optimized
-#              version stops if no swaps occur in a pass.
-#              Complexity: O(n²). Stable. In-place.
+# Date: 05_Data_Structures
+# Description: Bubble Sort. Adjacent swaps, bubbles largest to end. O(n²). Stable. In-place.
 # -------------------------------------------------
-
 
 def bubble_sort(lista):
     """Classic bubble sort. Does not modify the original list."""

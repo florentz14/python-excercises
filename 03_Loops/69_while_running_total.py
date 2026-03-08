@@ -1,8 +1,9 @@
-"""While loop: Running total 1 to 5.
-Accumulates sum and prints counter with total each step.
-"""
+# -------------------------------------------------
+# File Name: 69_while_running_total.py
 # Author: Florentino Báez
-
+# Date: 03_Loops
+# Description: Running total 1 to 5.
+# -------------------------------------------------
 
 print("=" * 40)
 print("While #3 – Running Total (1 to 5)")

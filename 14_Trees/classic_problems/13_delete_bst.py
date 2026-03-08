@@ -1,9 +1,9 @@
-"""
-#13 Delete Node in a BST (LeetCode 450)
-========================================
-Concept: 3 cases - no child, one child, two children (replace with inorder successor)
-Time: O(h), Space: O(h)
-"""
+# -------------------------------------------------
+# File Name: 13_delete_bst.py
+# Author: Florentino Báez
+# Date: 14_Trees
+# Description: LeetCode 450 - Delete node in BST (3 cases: 0, 1, 2 children).
+# -------------------------------------------------
 
 from common import TreeNode
 

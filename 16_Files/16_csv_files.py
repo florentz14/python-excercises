@@ -1,9 +1,9 @@
-"""
-16_Files - Exercise 16: Working with CSV files using the csv module
-==================================================================
-CSV (Comma-Separated Values) is common for data exchange.
-The csv module handles quoting, escaping, and different delimiters.
-"""
+# -------------------------------------------------
+# File Name: 16_csv_files.py
+# Author: Florentino Báez
+# Date: 16_Files
+# Description: Work with CSV files. csv module for reading and writing CSV data.
+# -------------------------------------------------
 
 import csv
 

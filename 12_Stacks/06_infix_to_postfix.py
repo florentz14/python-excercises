@@ -1,4 +1,9 @@
-# Infix to Postfix Converter using Stack
+# -------------------------------------------------
+# File Name: 06_infix_to_postfix.py
+# Author: Florentino Báez
+# Date: 12_Stacks
+# Description: Infix to postfix conversion. Shunting-yard or stack-based conversion.
+# -------------------------------------------------
 
 class Stack:
     """Basic stack implementation"""

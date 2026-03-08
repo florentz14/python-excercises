@@ -1,10 +1,9 @@
-"""
-Clase VectorNP (NumPy)
-======================
-Topic: 11_OOP - Simple classes
-Descripción: Vector con NumPy; add(), scale() y magnitude().
-Requiere: pip install numpy
-"""
+# -------------------------------------------------
+# File Name: 40_vector_numpy.py
+# Author: Florentino Báez
+# Date: 11_OOP
+# Description: Vector class using NumPy.
+# -------------------------------------------------
 
 import numpy as np
 

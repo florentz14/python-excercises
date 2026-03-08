@@ -1,8 +1,9 @@
-﻿# ------------------------------------------------------------
-# File: 25_palindrome_partitioning.py
-# Purpose: Return list of all palindrome partitions.
-# Description: Backtracking.
-# ------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 25_palindrome_partitioning.py
+# Author: Florentino Báez
+# Date: 01_Variables_and_Types
+# Description: Return list of all palindrome partitions via backtracking.
+# -------------------------------------------------
 
 def partition(s: str) -> list[list[str]]:
     result: list[list[str]] = []

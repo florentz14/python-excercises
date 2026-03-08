@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 234. Convert Number to List of Digits
-# ---------------------------------------------------------------------------
-# Descripción: Convert Number to List of Digits
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 110_number_to_digits.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Convert Number to List of Digits
+# -------------------------------------------------
 
 def number_to_digits(n: int) -> list[int]:
     # Lista por comprensión: se construye la lista a partir del iterable.

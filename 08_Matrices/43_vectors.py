@@ -1,8 +1,9 @@
-# ------------------------------------------------------------
-# File: 31_numpy_vectors.py
-# Purpose: Vector operations with NumPy.
+# -------------------------------------------------
+# File Name: 43_vectors.py
+# Author: Florentino Báez
+# Date: 08_Matrices
 # Description: Add, scalar, dot product, norm.
-# ------------------------------------------------------------
+# -------------------------------------------------
 
 import numpy as np
 

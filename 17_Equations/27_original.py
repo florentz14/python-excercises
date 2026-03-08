@@ -1,5 +1,9 @@
-# Archivo: 33_01_original.py
-# Descripción: Versión original del sistema de ecuaciones específico
+# -------------------------------------------------
+# File Name: 27_original.py
+# Author: Florentino Báez
+# Date: 17_Equations
+# Description: Original version of specific equation system solver.
+# -------------------------------------------------
 
 import numpy as np
 

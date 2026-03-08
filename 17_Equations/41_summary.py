@@ -1,5 +1,9 @@
-# Archivo: 35_08_resumen.py
-# Descripción: Resumen del análisis de sumas de Riemann
+# -------------------------------------------------
+# File Name: 41_summary.py
+# Author: Florentino Báez
+# Date: 17_Equations
+# Description: Summary of Riemann sum analysis.
+# -------------------------------------------------
 
 if __name__ == "__main__":
     print("=== Resumen de Análisis ===\n")

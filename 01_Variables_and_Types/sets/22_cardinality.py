@@ -1,11 +1,8 @@
 # -------------------------------------------------
 # File Name: 22_cardinality.py
 # Author: Florentino Báez
-# Date: Variables - Sets
+# Date: 01_Variables_and_Types
 # Description: Cardinality (Size) of Sets.
-#              Calculates n(A), n(B), n(A ∪ B) and verifies
-#              the Inclusion-Exclusion Principle:
-#              n(A ∪ B) = n(A) + n(B) - n(A ∩ B).
 # -------------------------------------------------
 
 """

@@ -1,11 +1,9 @@
-"""
-Logistic Regression - Binary Classification
-============================================
-Although named "regression", it is used for classification.
-Examples: spam or not? fraud or not?
-
-Author: Florentino Báez
-"""
+# -------------------------------------------------
+# File Name: 25_logistic_regression.py
+# Author: Florentino Báez
+# Date: 21_Machine_Learning
+# Description: Logistic regression for binary classification.
+# -------------------------------------------------
 
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LogisticRegression

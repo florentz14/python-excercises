@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# Part 1: Lists - Exercise 8
-# ---------------------------------------------------------------------------
-# Descripción: Contar cuántas veces aparece el valor 2 en la lista
-#              usando el método .count(valor).
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 02_count.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Contar cuántas veces aparece el valor 2 en la lista
+# -------------------------------------------------
 
 nums = [1, 2, 2, 3, 4, 2, 5]
 # count(2) devuelve el número de veces que aparece el 2 en la lista

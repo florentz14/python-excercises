@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 236. Find Parity Outliers (majority even -> return odd; majority odd -> return even)
-# ---------------------------------------------------------------------------
-# Descripción: Find Parity Outliers (majority even -> return odd; majority odd -> ...
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 111_parity_outliers.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Find Parity Outliers (majority even -> return odd; majority odd -> ...
+# -------------------------------------------------
 
 def parity_outliers(lst: list[int]) -> list[int]:
     even = [x for x in lst if x % 2 == 0]

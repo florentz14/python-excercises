@@ -1,8 +1,9 @@
-# ------------------------------------------------------------
-# File: rank_util.py
-# Purpose: Shared utilities for matrix rank computation.
+# -------------------------------------------------
+# File Name: rank_util.py
+# Author: Florentino Báez
+# Date: 08_Matrices
 # Description: Sample matrix A and compute_matrix_rank() with optional details.
-# ------------------------------------------------------------
+# -------------------------------------------------
 
 import numpy as np
 

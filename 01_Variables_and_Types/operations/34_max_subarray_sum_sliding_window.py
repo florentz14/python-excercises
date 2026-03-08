@@ -1,20 +1,9 @@
-"""
-Maximum Sum Subarray - Sliding window version
-=============================================
-Topic: Operations (01_Variables_and_Types/operations)
-Description: Find the maximum sum of a subarray of size k using the sliding
-window technique. Instead of recomputing each subarray sum, update the window
-sum incrementally: new_sum = prev_sum - element_left + element_entered.
-
-Input:  First line: space-separated numbers
-        Second line: window size k
-Output: Maximum sum of any subarray of size k
-
-Complexity:
-    Time:   O(n) - Single pass, O(1) work per step
-    Space:  O(1)
-"""
-
+# -------------------------------------------------
+# File Name: 34_max_subarray_sum_sliding_window.py
+# Author: Florentino Báez
+# Date: 01_Variables_and_Types
+# Description: Maximum sum of fixed-size subarray using sliding window.
+# -------------------------------------------------
 
 def subarray_sum_fixed(nums: list[int], k: int) -> int:
     """

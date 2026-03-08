@@ -1,7 +1,7 @@
 # -------------------------------------------------
-# File Name: 06c_grid_custom_style.py
+# File Name: 29_grid_custom_style.py
 # Author: Florentino Báez
-# Date: Matplotlib
+# Date: 10_Matplotlib
 # Description: Grid style: color, linestyle, linewidth, alpha.
 # -------------------------------------------------
 

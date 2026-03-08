@@ -1,7 +1,8 @@
 # -------------------------------------------------
-# File: 02_doubly_linked_list.py
+# File Name: 02_doubly_linked_list.py
+# Author: Florentino Báez
+# Date: 18_Linked_Lists
 # Description: Doubly Linked List implementation.
-#              Nodes with prev and next pointers.
 # -------------------------------------------------
 
 from typing import Optional, Any

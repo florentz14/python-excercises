@@ -1,11 +1,9 @@
-# ---------------------------------------------------------------------------
-# Lista Simple - 18: Concatenar Listas (Operador +)
-# ---------------------------------------------------------------------------
-# Descripcion: El operador + permite unir (concatenar) dos o mas listas
-#              creando una NUEVA lista. Las listas originales no se
-#              modifican.
-# Sintaxis:    lista3 = lista1 + lista2
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 18_concatenate.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: El operador + permite unir (concatenar) dos o mas listas
+# -------------------------------------------------
 
 lista1 = ["a", "b", "c"]
 lista2 = [1, 2, 3]

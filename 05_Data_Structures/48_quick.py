@@ -1,15 +1,9 @@
 # -------------------------------------------------
 # File Name: 48_quick.py
 # Author: Florentino Báez
-# Date: Data Structures - Sorting Algorithms
-# Description: Quick Sort.
-#              Chooses a pivot and partitions the list into smaller,
-#              equal, and larger. Recursively sorts the partitions.
-#              Includes clear version with auxiliary lists and
-#              in-place version with Lomuto partition.
-#              Complexity: O(n log n) average, O(n²) worst case.
+# Date: 05_Data_Structures
+# Description: Quick Sort. Pivot partition, recursive sort. O(n log n) avg, O(n²) worst. In-place.
 # -------------------------------------------------
-
 
 def quick_sort(lista):
     """Version that uses auxiliary lists (clear). Pivot: middle element."""

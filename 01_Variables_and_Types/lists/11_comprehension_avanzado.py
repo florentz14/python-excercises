@@ -1,11 +1,8 @@
 # -------------------------------------------------
 # File Name: 11_comprehension_avanzado.py
 # Author: Florentino Báez
-# Date: Variables - Lists
+# Date: 01_Variables_and_Types
 # Description: Advanced List Comprehension.
-#              Basic comprehension, multiple conditions,
-#              and nested comprehension to build a matrix
-#              (list of lists).
 # -------------------------------------------------
 
 print("=== Basic list comprehension ===")

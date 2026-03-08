@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 46. Select Odd Items (index 1, 3, 5, ...)
-# ---------------------------------------------------------------------------
-# Descripción: Select Odd Items (index 1, 3, 5, ...)
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 14_select_odd_items.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Select Odd Items (index 1, 3, 5, ...)
+# -------------------------------------------------
 
 def odd_index_items(lst: list) -> list:
     return lst[1::2]

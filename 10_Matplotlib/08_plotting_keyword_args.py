@@ -1,7 +1,7 @@
 # -------------------------------------------------
-# File Name: 02d_plotting_keyword_args.py
+# File Name: 08_plotting_keyword_args.py
 # Author: Florentino Báez
-# Date: Matplotlib
+# Date: 10_Matplotlib
 # Description: Plot with keyword arguments (color, linewidth, marker, etc.).
 # -------------------------------------------------
 

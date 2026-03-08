@@ -1,7 +1,7 @@
 # -------------------------------------------------
-# File Name: 06a_grid_basic.py
+# File Name: 27_grid_basic.py
 # Author: Florentino Báez
-# Date: Matplotlib
+# Date: 10_Matplotlib
 # Description: Basic grid on/off.
 # -------------------------------------------------
 

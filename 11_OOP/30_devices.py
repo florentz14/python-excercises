@@ -1,7 +1,10 @@
-# Ejemplo de Clases: Dispositivos Móviles
-# Este programa demuestra la herencia y polimorfismo con diferentes tipos de dispositivos
+# -------------------------------------------------
+# File Name: 30_devices.py
+# Author: Florentino Báez
+# Date: 11_OOP
+# Description: Demonstrates inheritance and polymorphism with mobile devices.
+# -------------------------------------------------
 
-# Clase padre: DispositivoMovil
 class DispositivoMovil:
     """Clase base para todos los dispositivos móviles"""
 

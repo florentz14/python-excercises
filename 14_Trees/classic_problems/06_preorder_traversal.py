@@ -1,8 +1,9 @@
-"""
-#6 Binary Tree Preorder Traversal
-LeetCode 144. Root -> Left -> Right
-Time: O(n), Space: O(h)
-"""
+# -------------------------------------------------
+# File Name: 06_preorder_traversal.py
+# Author: Florentino Báez
+# Date: 14_Trees
+# Description: LeetCode 144 - Binary tree preorder traversal (Root, Left, Right).
+# -------------------------------------------------
 
 from common import TreeNode, build_example
 

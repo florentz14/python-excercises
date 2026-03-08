@@ -1,8 +1,9 @@
-"""
-15_Graphs - Path search and connected components
-======================================================
-GrafoCompleto: buscar_camino (BFS), todos_los_caminos, componentes_conexas.
-"""
+# -------------------------------------------------
+# File Name: 07_path_search.py
+# Author: Florentino Báez
+# Date: 15_Graphs
+# Description: 15_Graphs - Path search and connected components ====================================================== GrafoCompleto: buscar_camino (BFS), todos_los_caminos, componentes_conexas.
+# -------------------------------------------------
 
 from collections import deque
 

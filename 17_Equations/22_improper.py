@@ -1,5 +1,9 @@
-# Archivo: 31_06_impropias.py
-# Descripción: Integrales impropias (límites infinitos o discontinuidades)
+# -------------------------------------------------
+# File Name: 22_improper.py
+# Author: Florentino Báez
+# Date: 17_Equations
+# Description: Improper integrals (infinite limits or discontinuities).
+# -------------------------------------------------
 
 import numpy as np
 import scipy.integrate as spi

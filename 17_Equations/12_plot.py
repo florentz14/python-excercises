@@ -1,5 +1,9 @@
-# Archivo: 27_04_graficar.py
-# Descripción: Graficar ecuación cuadrática y marcar raíces/vértice
+# -------------------------------------------------
+# File Name: 12_plot.py
+# Author: Florentino Báez
+# Date: 17_Equations
+# Description: Plot quadratic equation and mark roots/vertex.
+# -------------------------------------------------
 
 import numpy as np
 import matplotlib.pyplot as plt

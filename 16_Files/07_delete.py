@@ -1,8 +1,9 @@
-"""
-16_Files - Exercise 07: Delete a file
-=====================================
-Path.unlink() or os.remove() delete the file (not folders).
-"""
+# -------------------------------------------------
+# File Name: 07_delete.py
+# Author: Florentino Báez
+# Date: 16_Files
+# Description: Delete files. os.remove() and pathlib.unlink().
+# -------------------------------------------------
 
 from pathlib import Path
 

@@ -1,7 +1,7 @@
 # -------------------------------------------------
-# File Name: 48_euro12_accuracy_scatter.py
+# File Name: 101_euro12_accuracy_scatter.py
 # Author: Florentino Báez
-# Date: Matplotlib
+# Date: 10_Matplotlib
 # Description: Scatter plot of shooting accuracy vs goals (color=passes).
 # -------------------------------------------------
 

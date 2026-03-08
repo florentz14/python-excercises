@@ -1,8 +1,9 @@
-"""For loop: Sum of even numbers with input.
-User enters positive even n; sums 2+4+...+n.
-"""
+# -------------------------------------------------
+# File Name: 76_for_sum_even_input.py
 # Author: Florentino Báez
-
+# Date: 03_Loops
+# Description: Sum of even numbers with input.
+# -------------------------------------------------
 
 print("=" * 40)
 print("For #5 – Sum of Even Numbers (with input)")

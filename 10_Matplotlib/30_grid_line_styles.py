@@ -1,7 +1,7 @@
 # -------------------------------------------------
-# File Name: 06d_grid_line_styles.py
+# File Name: 30_grid_line_styles.py
 # Author: Florentino Báez
-# Date: Matplotlib
+# Date: 10_Matplotlib
 # Description: Different grid line styles (2x2 grid).
 # -------------------------------------------------
 

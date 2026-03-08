@@ -1,12 +1,8 @@
 # -------------------------------------------------
-# File Name: 39_comparacion.py
+# File Name: 39_comparison.py
 # Author: Florentino Báez
-# Date: Estructuras de Datos - Algoritmos de Búsqueda
-# Description: Comparación de Eficiencia entre Algoritmos de
-#              Búsqueda. Mide tiempos de búsqueda lineal vs
-#              binaria en listas, y fuerza bruta vs KMP para
-#              búsqueda de patrones en texto. Demuestra cómo
-#              la complejidad algorítmica impacta el rendimiento.
+# Date: 05_Data_Structures
+# Description: Search algorithm comparison. Measures linear vs binary vs KMP performance.
 # -------------------------------------------------
 
 import time

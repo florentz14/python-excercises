@@ -1,7 +1,7 @@
 # -------------------------------------------------
-# File Name: 09f_bars_stacked.py
+# File Name: 49_bars_stacked.py
 # Author: Florentino Báez
-# Date: Matplotlib
+# Date: 10_Matplotlib
 # Description: Stacked bar chart.
 # -------------------------------------------------
 

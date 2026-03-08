@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 171. Concatenate Three Lists Element-Wise (str)
-# ---------------------------------------------------------------------------
-# Descripción: Concatenate Three Lists Element-Wise (str)
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 081_concatenate_element_wise.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Concatenate Three Lists Element-Wise (str)
+# -------------------------------------------------
 
 def concat_element_wise(*lists: list[str]) -> list[str]:
     # Lista por comprensión: se construye la lista a partir del iterable.

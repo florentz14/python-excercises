@@ -1,9 +1,10 @@
-# Increment and Decrement in Python
+# -------------------------------------------------
+# File Name: 13_increment_decrement.py
+# Author: Florentino Báez
+# Date: 01_Variables_and_Types
+# Description: Uses += 1 and -= 1 for increment and decrement. Python does not
+# -------------------------------------------------
 
-# Python doesn't have ++ or -- operators like other languages
-# We use += 1 and -= 1 instead
-
-# Increment
 print("Increment examples:")
 x = 5
 print(f"Initial x: {x}")

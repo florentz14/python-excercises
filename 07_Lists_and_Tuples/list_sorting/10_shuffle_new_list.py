@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 221. Shuffle List and Return New List
-# ---------------------------------------------------------------------------
-# Descripción: Shuffle List and Return New List
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 10_shuffle_new_list.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Shuffle List and Return New List
+# -------------------------------------------------
 
 import random
 

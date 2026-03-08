@@ -1,8 +1,8 @@
 # -------------------------------------------------
 # File Name: 32_update_operations.py
-# Purpose: In-place set update methods
-# Description: update(), intersection_update(), difference_update(),
-#              symmetric_difference_update() modify the set in place.
+# Author: Florentino Báez
+# Date: 01_Variables_and_Types
+# Description: In-place set update methods: update(), intersection_update(),
 # -------------------------------------------------
 
 print("Set Update Operations (In-Place)")

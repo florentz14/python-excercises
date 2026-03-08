@@ -1,5 +1,9 @@
-# Archivo: 35_01_original.py
-# Descripción: Versión original de sumas de Riemann
+# -------------------------------------------------
+# File Name: 34_original.py
+# Author: Florentino Báez
+# Date: 17_Equations
+# Description: Original Riemann sum implementation.
+# -------------------------------------------------
 
 import numpy as np
 

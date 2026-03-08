@@ -1,7 +1,7 @@
 # -------------------------------------------------
-# File Name: 02a_plotting_two_points.py
+# File Name: 05_plotting_two_points.py
 # Author: Florentino Báez
-# Date: Matplotlib
+# Date: 10_Matplotlib
 # Description: Line between two points.
 # -------------------------------------------------
 

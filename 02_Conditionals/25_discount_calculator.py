@@ -1,9 +1,9 @@
-"""
-Simple conditional: Discount by purchase amount
-================================================
-Topic: Conditionals (02_Conditionals)
-Description: Apply discount based on total purchase.
-"""
+# -------------------------------------------------
+# File Name: 25_discount_calculator.py
+# Author: Florentino Báez
+# Date: 02_Conditionals
+# Description: Discount by purchase amount
+# -------------------------------------------------
 
 total = float(input("Enter purchase total: $"))
 

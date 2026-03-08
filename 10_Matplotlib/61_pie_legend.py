@@ -1,7 +1,7 @@
 # -------------------------------------------------
-# File Name: 11d_pie_legend.py
+# File Name: 61_pie_legend.py
 # Author: Florentino Báez
-# Date: Matplotlib
+# Date: 10_Matplotlib
 # Description: Pie with legend instead of slice labels.
 # -------------------------------------------------
 

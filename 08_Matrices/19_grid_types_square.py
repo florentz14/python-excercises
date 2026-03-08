@@ -1,10 +1,10 @@
-# ------------------------------------------------------------
-# File: 19_grid_types_square.py
-# Purpose: Grid display, mixed types, square check.
+# -------------------------------------------------
+# File Name: 19_grid_types_square.py
+# Author: Florentino Báez
+# Date: 08_Matrices
 # Description: Print as grid, mixed type matrix, is_square check.
-# ------------------------------------------------------------
+# -------------------------------------------------
 
-# Print as grid (space-separated)
 grid = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
 print("Matrix as grid:")
 for row in grid:

@@ -1,13 +1,9 @@
-# ---------------------------------------------------------------------------
-# Lista Simple - 25: Operador 'in' (Membresia)
-# ---------------------------------------------------------------------------
-# Descripcion: El operador 'in' verifica si un valor existe en la lista.
-#              Retorna True si lo encuentra, False si no. 'not in' hace
-#              la comprobacion inversa.
-# Sintaxis:    valor in lista       -> True/False
-#              valor not in lista   -> True/False
-# Complejidad: O(n) - recorre la lista hasta encontrar el elemento
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 25_in_membership.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: El operador 'in' verifica si un valor existe en la lista.
+# -------------------------------------------------
 
 fruits = ["apple", "banana", "cherry", "pineapple", "grape", "mango", "blueberry"]
 

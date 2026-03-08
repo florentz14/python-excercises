@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 254. Weighted Average of Numbers
-# ---------------------------------------------------------------------------
-# Descripción: Weighted Average of Numbers
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 23_weighted_average.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Weighted Average of Numbers
+# -------------------------------------------------
 
 def weighted_average(values: list[float], weights: list[float]) -> float:
     # Se devuelve un valor u otro según la condición.

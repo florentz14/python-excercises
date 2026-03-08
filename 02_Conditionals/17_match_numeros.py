@@ -1,9 +1,9 @@
-"""
-Switch - Ejemplo 4: match / case con números
-===========================================
-Topic: Conditionals - Switch (02_Conditionals)
-Descripción: match con valores numéricos y caso por defecto.
-"""
+# -------------------------------------------------
+# File Name: 17_match_numeros.py
+# Author: Florentino Báez
+# Date: 02_Conditionals
+# Description: match con valores numéricos y caso por defecto.
+# -------------------------------------------------
 
 numero = 2
 

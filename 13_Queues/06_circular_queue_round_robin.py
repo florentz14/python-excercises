@@ -1,4 +1,9 @@
-# Circular Queue for Round-Robin CPU Scheduling
+# -------------------------------------------------
+# File Name: 06_circular_queue_round_robin.py
+# Author: Florentino Báez
+# Date: 13_Queues
+# Description: Circular queue / round robin. Fixed-size rotating buffer.
+# -------------------------------------------------
 
 class CircularQueue:
     """Circular queue implementation for round-robin scheduling"""

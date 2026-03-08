@@ -1,7 +1,8 @@
 # -------------------------------------------------
-# File: 11_polymorphism.py
+# File Name: 11_polymorphism.py
+# Author: Florentino Báez
+# Date: 11_OOP
 # Description: Polymorphism in Python.
-#              Same interface, different implementations.
 # -------------------------------------------------
 
 from typing import Any, List

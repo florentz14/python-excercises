@@ -1,7 +1,8 @@
 # -------------------------------------------------
-# File: 06_delete_operations.py
+# File Name: 06_delete_operations.py
+# Author: Florentino Báez
+# Date: 18_Linked_Lists
 # Description: Delete operations in singly linked list.
-#              Delete head, tail, by value, by position.
 # -------------------------------------------------
 
 from typing import Any, Optional

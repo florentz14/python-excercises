@@ -1,7 +1,8 @@
 # -------------------------------------------------
-# File: 44_lottery_number_generator.py
+# File Name: 44_lottery_number_generator.py
+# Author: Florentino Báez
+# Date: 04_Functions
 # Description: Lottery Number Generator.
-#              Generate seven random digits (0-9).
 # -------------------------------------------------
 
 import random

@@ -1,13 +1,10 @@
-# ---------------------------------------------------------------------------
-# Tuplas - 01: Python Tuples (Crear y Propiedades)
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 01_crear_tupla.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
 # Description: A tuple is an ordered, immutable collection of elements.
-#              Defined with parentheses (). Elements cannot be changed,
-#              added, or removed after creation. Tuples allow duplicates.
-# Syntax:      my_tuple = (item1, item2, item3)
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
 
-# --- Create a tuple ---
 fruits = ("apple", "banana", "cherry", "pineapple", "grape")
 print("Fruits tuple:", fruits)
 # Output: ('apple', 'banana', 'cherry', 'pineapple', 'grape')

@@ -1,8 +1,9 @@
-"""While loop: Repeated print.
-Prints a message 100 times using a while loop with counter.
-"""
+# -------------------------------------------------
+# File Name: 01_while_print.py
 # Author: Florentino Báez
-
+# Date: 03_Loops
+# Description: Repeated print.
+# -------------------------------------------------
 
 count = 0
 

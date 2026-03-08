@@ -1,12 +1,8 @@
 # -------------------------------------------------
 # File Name: 13_map.py
 # Author: Florentino Báez
-# Date: Variables - Lists
+# Date: 01_Variables_and_Types
 # Description: map() — Apply a Function to Every Element.
-#              map(func, iterable) returns an iterator that
-#              applies func to each item. Wrap with list()
-#              to get a list. Works with lambda, built-in
-#              methods, or user-defined functions.
 # -------------------------------------------------
 
 print("=== map — apply function ===")

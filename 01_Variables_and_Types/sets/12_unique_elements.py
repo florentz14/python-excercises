@@ -1,14 +1,10 @@
 # -------------------------------------------------
 # File Name: 12_unique_elements.py
 # Author: Florentino Báez
-# Date: Variables - Sets
+# Date: 01_Variables_and_Types
 # Description: Practical Example — Find Unique Elements.
-#              Converting a list to a set instantly removes
-#              duplicates. Useful for counting distinct items
-#              in collections like votes, tags, or IDs.
 # -------------------------------------------------
 
-# Example 17: Practical example - Find unique elements
 print("Example 17: Practical example - Find unique elements")
 print("-" * 40)
 

@@ -1,8 +1,9 @@
-# ------------------------------------------------------------
-# File: 09_capitalize_words.py
-# Purpose: Capitalize each word.
-# Description: First letter of each word uppercase.
-# ------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 09_capitalize_words.py
+# Author: Florentino Báez
+# Date: 01_Variables_and_Types
+# Description: Capitalize first letter of each word (title case).
+# -------------------------------------------------
 
 def capitalize_words(s: str) -> str:
     return s.title()

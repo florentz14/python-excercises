@@ -1,10 +1,10 @@
-"""
-Operadores lógicos: and, or, not
-=================================
-Topic: Variables and Types (01_Variables_and_Types)
-Descripción: Operadores lógicos, short-circuit, combinación con comparaciones.
-"""
-# and, or, not
+# -------------------------------------------------
+# File Name: 13_logical.py
+# Author: Florentino Báez
+# Date: 01_Variables_and_Types
+# Description: Logical operators (and, or, not), short-circuit
+# -------------------------------------------------
+
 p = True
 q = False
 print("p =", p, ", q =", q)
@@ -13,27 +13,27 @@ print("p or q:", p or q)
 print("not p:", not p)
 print("not q:", not q)
 
-# Combinar con comparaciones
-print("\n--- Con comparaciones ---")
-edad = 20
-tiene_licencia = True
-print("edad >= 18 and tiene_licencia:", edad >= 18 and tiene_licencia)
+# Combine with comparisons
+print("\n--- With comparisons ---")
+age = 20
+has_license = True
+print("age >= 18 and has_license:", age >= 18 and has_license)
 
-# Múltiples condiciones
+# Multiple conditions
 x = 5
 print("1 < x < 10:", 1 < x < 10)
 print("x > 3 and x < 7:", x > 3 and x < 7)
 
-# or: al menos una verdadera
-es_fin_de_semana = False
-es_feriado = True
-print("\nes_fin_de_semana or es_feriado:", es_fin_de_semana or es_feriado)
+# or: at least one true
+is_weekend = False
+is_holiday = True
+print("\nis_weekend or is_holiday:", is_weekend or is_holiday)
 
-# not: negación
-llueve = True
-print("not llueve:", not llueve)
+# not: negation
+raining = True
+print("not raining:", not raining)
 
-# Short-circuit: or retorna el primer valor truthy
+# Short-circuit: or returns the first truthy value
 print("\n--- Short-circuit ---")
 print("0 or 42:", 0 or 42)
 print("'' or 'default':", "" or "default")

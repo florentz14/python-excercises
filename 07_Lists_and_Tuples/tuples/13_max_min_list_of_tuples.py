@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 158. Max and Min Values in List of Tuples (by numeric element)
-# ---------------------------------------------------------------------------
-# Descripción: Max and Min Values in List of Tuples (by numeric element)
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 13_max_min_list_of_tuples.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Max and Min Values in List of Tuples (by numeric element)
+# -------------------------------------------------
 
 def max_min_tuples(tuples: list[tuple], index: int = 1) -> tuple:
     values = [t[index] for t in tuples if len(t) > index]

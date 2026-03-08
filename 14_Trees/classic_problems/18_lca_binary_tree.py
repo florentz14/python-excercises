@@ -1,9 +1,9 @@
-"""
-#18 Lowest Common Ancestor - Binary Tree - LeetCode 236
-========================================================
-Find LCA of two nodes (nodes exist in tree).
-Pattern: Recursion, return node if found.
-"""
+# -------------------------------------------------
+# File Name: 18_lca_binary_tree.py
+# Author: Florentino Báez
+# Date: 14_Trees
+# Description: LeetCode 236 - Lowest common ancestor in binary tree.
+# -------------------------------------------------
 
 from common import TreeNode
 

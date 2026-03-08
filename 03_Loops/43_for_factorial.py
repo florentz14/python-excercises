@@ -1,8 +1,9 @@
-"""For loop: Factorial.
-Computes n! by multiplying 1 through n.
-"""
+# -------------------------------------------------
+# File Name: 43_for_factorial.py
 # Author: Florentino Báez
-
+# Date: 03_Loops
+# Description: Factorial.
+# -------------------------------------------------
 
 number = 5
 factorial = 1

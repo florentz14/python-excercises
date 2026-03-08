@@ -1,11 +1,9 @@
-"""
-15_Graphs - Bellman-Ford algorithm
-=====================================
-Shortest path with negative edge weights. Detects negative cycles.
-Used in: network routing, currency arbitrage.
-Complexity: O(V * E)
-"""
-
+# -------------------------------------------------
+# File Name: 14_bellman_ford.py
+# Author: Florentino Báez
+# Date: 15_Graphs
+# Description: 15_Graphs - Bellman-Ford algorithm ===================================== Shortest path with negative edge weights. Detects negative cycles.
+# -------------------------------------------------
 
 def bellman_ford(n: int, edges: list[tuple[int, int, float]], start: int) -> tuple[dict[int, float], bool]:
     """

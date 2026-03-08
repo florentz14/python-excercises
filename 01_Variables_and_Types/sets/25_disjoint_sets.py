@@ -1,11 +1,8 @@
 # -------------------------------------------------
 # File Name: 25_disjoint_sets.py
 # Author: Florentino Báez
-# Date: Variables - Sets
+# Date: 01_Variables_and_Types
 # Description: Disjoint Sets (Bonus).
-#              Two sets are disjoint when their intersection is
-#              empty (A ∩ B = ∅). Tests two pairs of sets and
-#              includes real-world examples.
 # -------------------------------------------------
 
 """

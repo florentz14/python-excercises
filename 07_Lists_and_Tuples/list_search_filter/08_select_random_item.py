@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 25. Select Random Item from List
-# ---------------------------------------------------------------------------
-# Descripción: Select Random Item from List
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 08_select_random_item.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Select Random Item from List
+# -------------------------------------------------
 
 import random
 

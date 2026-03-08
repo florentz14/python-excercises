@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 17. Check If All Numbers Are Prime
-# ---------------------------------------------------------------------------
-# Descripción: Comprueba si todos los números de una lista son primos.
-#              Devuelve False si alguno no lo es (incl. 0, 1 o compuestos).
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 06_check_all_prime.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Comprueba si todos los números de una lista son primos.
+# -------------------------------------------------
 
 def is_prime(n: int) -> bool:
     # Los números menores que 2 no se consideran primos

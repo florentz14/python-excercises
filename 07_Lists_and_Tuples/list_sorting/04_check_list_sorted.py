@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 112. Check If List Is Sorted
-# ---------------------------------------------------------------------------
-# Descripción: Check If List Is Sorted
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 04_check_list_sorted.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Check If List Is Sorted
+# -------------------------------------------------
 
 def is_sorted(lst: list, ascending: bool = True) -> bool:
     if ascending:

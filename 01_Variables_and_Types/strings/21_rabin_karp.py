@@ -1,8 +1,9 @@
-﻿# ------------------------------------------------------------
-# File: 21_rabin_karp.py
-# Purpose: Rolling hash substring search.
-# Description: Compute hash for pattern and each window. O(n) avg.
-# ------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 21_rabin_karp.py
+# Author: Florentino Báez
+# Date: 01_Variables_and_Types
+# Description: Rabin-Karp rolling hash substring search.
+# -------------------------------------------------
 
 def rabin_karp(text: str, pattern: str, base: int = 256, mod: int = 10**9 + 7) -> list[int]:
     """Return indices where pattern occurs using rolling hash."""

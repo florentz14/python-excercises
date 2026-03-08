@@ -1,7 +1,7 @@
 # -------------------------------------------------
-# File Name: 05b_labels_custom_font.py
+# File Name: 22_labels_custom_font.py
 # Author: Florentino Báez
-# Date: Matplotlib
+# Date: 10_Matplotlib
 # Description: Custom font size, weight, family, color.
 # -------------------------------------------------
 

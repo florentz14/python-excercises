@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 117. Remove All Elements Present in Another List
-# ---------------------------------------------------------------------------
-# Descripción: Remove All Elements Present in Another List
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 26_remove_elements_in_another.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Remove All Elements Present in Another List
+# -------------------------------------------------
 
 def remove_if_in(list1: list, list2: list) -> list:
     set2 = set(list2)

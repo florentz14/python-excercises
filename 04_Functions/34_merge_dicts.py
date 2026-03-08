@@ -1,7 +1,8 @@
 # -------------------------------------------------
-# File: 34_merge_dicts.py
+# File Name: 34_merge_dicts.py
+# Author: Florentino Báez
+# Date: 04_Functions
 # Description: Merge and sort dictionaries.
-#              Dictionary unpacking and sorting.
 # -------------------------------------------------
 
 def merge_dicts(dict1, dict2):

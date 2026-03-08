@@ -1,8 +1,9 @@
-"""
-15_Graphs - Graph with adjacency list
-=========================================
-GrafoListaAdyacencia: dirigido/no dirigido, BFS, DFS, DFS iterativo.
-"""
+# -------------------------------------------------
+# File Name: 05_adjacency_list.py
+# Author: Florentino Báez
+# Date: 15_Graphs
+# Description: 15_Graphs - Graph with adjacency list ========================================= GrafoListaAdyacencia: dirigido/no dirigido, BFS, DFS, DFS iterativo.
+# -------------------------------------------------
 
 from collections import deque, defaultdict
 

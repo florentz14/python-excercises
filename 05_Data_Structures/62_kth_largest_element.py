@@ -1,15 +1,9 @@
-# ------------------------------------------------------------
-# File: 62_kth_largest_element.py
-# LeetCode 215 - Kth Largest Element in an Array (Heap)
-#
-# Purpose:
-#   Find the kth largest element in an unsorted array.
-#
-# Pattern: Min-heap of size k, or QuickSelect.
-# Complexity: O(n log k) with heap; O(n) average with QuickSelect.
-#
-# Author: Florentino Baez
-# ------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 62_kth_largest_element.py
+# Author: Florentino Báez
+# Date: 05_Data_Structures
+# Description: Kth Largest Element (LeetCode 215). Min-heap of size k or QuickSelect. O(n log k).
+# -------------------------------------------------
 
 import heapq
 

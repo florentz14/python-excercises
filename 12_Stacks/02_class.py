@@ -1,10 +1,9 @@
-"""
-Pilas - Ejemplo 2: Clase Pila
-==============================
-Topic: 12_Stacks
-Descripción: Clase que encapsula push(), pop(), peek() y empty().
-"""
-
+# -------------------------------------------------
+# File Name: 02_class.py
+# Author: Florentino Báez
+# Date: 12_Stacks
+# Description: Stack class. Encapsulates push(), pop(), peek(), and empty().
+# -------------------------------------------------
 
 class Pila:
     def __init__(self):

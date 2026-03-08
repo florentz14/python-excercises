@@ -1,5 +1,9 @@
-#DEBUGGING EXCERCISES:
-# Daniel and Florentino
+# -------------------------------------------------
+# File Name: debb_set.py
+# Author: Florentino Báez
+# Date: 01_Variables_and_Types
+# Description: Debugging exercise - set add() and discard() methods.
+# -------------------------------------------------
 
 students = {"Alice", "Bob", "Carlos"}
 print("Original set:", students)

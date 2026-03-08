@@ -1,9 +1,9 @@
-"""
-Grafos - Ejemplo 4: DFS (recorrido en profundidad)
-===================================================
-Topic: 15_Graphs
-Descripción: Recorrer el grafo desde un vértice con pila o recursión.
-"""
+# -------------------------------------------------
+# File Name: 04_dfs.py
+# Author: Florentino Báez
+# Date: 15_Graphs
+# Description: Grafos - Ejemplo 4: DFS (recorrido en profundidad) =================================================== Topic: 15_Graphs
+# -------------------------------------------------
 
 def dfs(grafo, inicio):
     """DFS desde 'inicio'. Devuelve orden de visita."""

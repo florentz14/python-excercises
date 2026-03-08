@@ -1,5 +1,9 @@
-# Archivo: 50_02_area_poligonos.py
-# Descripción: Área de polígonos (shoelace) y triángulos
+# -------------------------------------------------
+# File Name: 49_polygon_area.py
+# Author: Florentino Báez
+# Date: 17_Equations
+# Description: Polygon area (shoelace formula) and triangles.
+# -------------------------------------------------
 
 print("=== 2. Área de Polígonos ===\n")
 

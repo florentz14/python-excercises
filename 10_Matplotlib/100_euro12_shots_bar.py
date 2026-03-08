@@ -1,7 +1,7 @@
 # -------------------------------------------------
-# File Name: 47_euro12_shots_bar.py
+# File Name: 100_euro12_shots_bar.py
 # Author: Florentino Báez
-# Date: Matplotlib
+# Date: 10_Matplotlib
 # Description: Grouped bar chart of shots on vs off target (Euro 2012).
 # -------------------------------------------------
 

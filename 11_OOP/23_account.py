@@ -1,7 +1,8 @@
 # -------------------------------------------------
-# File: 23_account.py
+# File Name: 23_account.py
+# Author: Florentino Báez
+# Date: 11_OOP
 # Description: Bank account class - practical application.
-#              Encapsulation, validation, transactions.
 # -------------------------------------------------
 
 from datetime import datetime

@@ -1,17 +1,9 @@
 # -------------------------------------------------
-# File: 10_longest_common_substring.py (Longest Common Substring)
-# -------------------------------------------------
+# File Name: 10_longest_common_substring.py
 # Author: Florentino Báez
-# Module: Data Structures - String Algorithms
-#
-# Description:
-#   Longest Common Substring via DP. dp[i][j] = length of common
-#   substring ending at X[i-1] and Y[j-1]. Tracks max length and
-#   position to extract the result.
-#
-# Complexity: O(m * n) time and space.
+# Date: 05_Data_Structures
+# Description: Longest Common Substring via dynamic programming. dp[i][j] = length of common substring ending at X[i-1], Y[j-1]. O(m*n).
 # -------------------------------------------------
-
 
 def longest_common_substring(X, Y):
     """

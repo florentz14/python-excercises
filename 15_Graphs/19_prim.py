@@ -1,10 +1,9 @@
-"""
-15_Graphs - Prim's MST Algorithm
-===================================
-Minimum Spanning Tree using Prim's algorithm.
-Greedy: grow tree by adding minimum-weight edge from tree to non-tree.
-Complexity: O(V^2) simple, O(E log V) with heap.
-"""
+# -------------------------------------------------
+# File Name: 19_prim.py
+# Author: Florentino Báez
+# Date: 15_Graphs
+# Description: 15_Graphs - Prim's MST Algorithm =================================== Minimum Spanning Tree using Prim's algorithm.
+# -------------------------------------------------
 
 import heapq
 from collections import defaultdict

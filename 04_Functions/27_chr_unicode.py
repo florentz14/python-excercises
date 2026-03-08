@@ -1,7 +1,8 @@
 # -------------------------------------------------
-# File: 27_chr_unicode.py
+# File Name: 27_chr_unicode.py
+# Author: Florentino Báez
+# Date: 04_Functions
 # Description: chr() function and Unicode characters.
-#              Convert Unicode codes to characters.
 # -------------------------------------------------
 
 def code_to_char(code):

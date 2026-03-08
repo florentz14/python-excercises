@@ -1,7 +1,8 @@
 # -------------------------------------------------
-# File: 18_basica_parametros.py
+# File Name: 18_basic_parameters.py
+# Author: Florentino Báez
+# Date: 04_Functions
 # Description: Basic functions, parameters, defaults.
-#              Covers function fundamentals.
 # -------------------------------------------------
 
 print("=== Funciones: Básica, Parámetros y Por Defecto ===\n")

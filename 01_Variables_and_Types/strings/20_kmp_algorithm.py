@@ -1,8 +1,9 @@
-﻿# ------------------------------------------------------------
-# File: 20_kmp_algorithm.py
-# Purpose: KMP pattern search with failure function.
-# Description: Build LPS array, then search. O(n+m) time.
-# ------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 20_kmp_algorithm.py
+# Author: Florentino Báez
+# Date: 01_Variables_and_Types
+# Description: KMP pattern search with failure (LPS) function.
+# -------------------------------------------------
 
 def build_lps(pattern: str) -> list[int]:
     """Build longest proper prefix which is also suffix array."""

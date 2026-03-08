@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 87. Read Matrix from Console, Print Sum for Each Column
-# ---------------------------------------------------------------------------
-# Descripción: Read Matrix from Console, Print Sum for Each Column
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 11_sum_matrix_columns_input.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Read Matrix from Console, Print Sum for Each Column
+# -------------------------------------------------
 
 def read_matrix_and_sum_columns(rows: int, cols: int) -> list[int]:
     matrix = []

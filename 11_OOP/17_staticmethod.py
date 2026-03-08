@@ -1,9 +1,9 @@
 # -------------------------------------------------
-# File: 17_staticmethod.py
+# File Name: 17_staticmethod.py
+# Author: Florentino Báez
+# Date: 11_OOP
 # Description: @staticmethod decorator.
-#              Utility methods that don't need class or instance.
 # -------------------------------------------------
-
 
 class MathUtils:
     """Utility class with static methods."""

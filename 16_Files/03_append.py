@@ -1,8 +1,9 @@
-"""
-16_Files - Exercise 03: Append content to the end
-=================================================
-open() with mode "a" opens for appending; it does not erase existing content.
-"""
+# -------------------------------------------------
+# File Name: 03_append.py
+# Author: Florentino Báez
+# Date: 16_Files
+# Description: Append content to a file. open() with mode 'a' preserves existing content.
+# -------------------------------------------------
 
 filename = "example_03_append.txt"
 

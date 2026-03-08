@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 198. Indices of Values in First List That Appear in Second List
-# ---------------------------------------------------------------------------
-# Descripción: Indices of Values in First List That Appear in Second List
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 43_indices_common_elements.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Indices of Values in First List That Appear in Second List
+# -------------------------------------------------
 
 def indices_in_both(list1: list, list2: list) -> list[int]:
     set2 = set(list2)

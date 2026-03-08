@@ -1,5 +1,9 @@
-# Archivo: 31_03_multiples_funciones.py
-# Descripción: Integrar múltiples funciones en el mismo intervalo
+# -------------------------------------------------
+# File Name: 19_multiple_functions.py
+# Author: Florentino Báez
+# Date: 17_Equations
+# Description: Integrate multiple functions over same interval.
+# -------------------------------------------------
 
 import numpy as np
 import scipy.integrate as spi

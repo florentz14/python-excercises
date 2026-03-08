@@ -1,11 +1,9 @@
-# ---------------------------------------------------------------------------
-# 5. Count Strings with Same Start and End
-# ---------------------------------------------------------------------------
-# Descripción: Cuenta cuántas cadenas tienen longitud >= 2 y el mismo
-#              carácter al inicio y al final (ej: "aba", "1221").
-# Entrada: Lista de cadenas.
-# Salida: Número entero (cantidad de cadenas que cumplen la condición).
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 01_count_strings_same_start_end.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Demonstrates count strings same start end.
+# -------------------------------------------------
 
 def count_same_start_end(lst: list[str]) -> int:
     # sum() suma 1 por cada elemento que cumple la condición

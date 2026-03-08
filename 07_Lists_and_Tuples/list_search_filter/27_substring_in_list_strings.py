@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 119. Check If Substring Appears in Any String in List
-# ---------------------------------------------------------------------------
-# Descripción: Check If Substring Appears in Any String in List
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 27_substring_in_list_strings.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Check If Substring Appears in Any String in List
+# -------------------------------------------------
 
 def substring_in_list(lst: list[str], sub: str) -> bool:
     return any(sub in s for s in lst)

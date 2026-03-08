@@ -1,8 +1,9 @@
-"""
-16_Files - Exercise 06: List files and folders in a directory
-=============================================================
-os.listdir() or pathlib.Path.iterdir() list the directory contents.
-"""
+# -------------------------------------------------
+# File Name: 06_list_directory.py
+# Author: Florentino Báez
+# Date: 16_Files
+# Description: List directory contents. os.listdir() and os.scandir().
+# -------------------------------------------------
 
 import os
 from pathlib import Path

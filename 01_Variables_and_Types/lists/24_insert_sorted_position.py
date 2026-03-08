@@ -1,4 +1,9 @@
-# insertar ordenado
+# -------------------------------------------------
+# File Name: 24_insert_sorted_position.py
+# Author: Florentino Báez
+# Date: 01_Variables_and_Types
+# Description: Inserts an item into a sorted list while
+# -------------------------------------------------
 
 def insert_sorted(lst, item):
     """Insert item into sorted list maintaining order."""

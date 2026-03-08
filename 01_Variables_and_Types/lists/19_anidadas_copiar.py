@@ -1,12 +1,8 @@
 # -------------------------------------------------
 # File Name: 19_anidadas_copiar.py
 # Author: Florentino Báez
-# Date: Variables - Lists
+# Date: 01_Variables_and_Types
 # Description: Nested Lists and Copying (Shallow vs Deep).
-#              A matrix is a list of lists. copy() creates
-#              a shallow copy (inner lists are shared).
-#              copy.deepcopy() creates a fully independent
-#              copy so changes don't propagate.
 # -------------------------------------------------
 
 import copy

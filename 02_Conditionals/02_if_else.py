@@ -1,9 +1,9 @@
-"""
-Condicional - Ejemplo 2: if / else
-===================================
-Topic: Conditionals (02_Conditionals)
-Descripción: Dos ramas: una si la condición es verdadera, otra si es falsa.
-"""
+# -------------------------------------------------
+# File Name: 02_if_else.py
+# Author: Florentino Báez
+# Date: 02_Conditionals
+# Description: Dos ramas: una si la condición es verdadera, otra si es falsa.
+# -------------------------------------------------
 
 edad = 16
 

@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 203. Join Adjacent Members of List (pairs)
-# ---------------------------------------------------------------------------
-# Descripción: Join Adjacent Members of List (pairs)
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 099_join_adjacent_members.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Join Adjacent Members of List (pairs)
+# -------------------------------------------------
 
 def join_adjacent(lst: list[str]) -> list[str]:
     # Lista por comprensión: se construye la lista a partir del iterable.

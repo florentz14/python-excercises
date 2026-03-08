@@ -1,17 +1,9 @@
-"""
-Machine Learning - Data Distribution
-======================================
-Data distribution describes how data values are spread across a range.
-Understanding distributions helps choose the right ML algorithm
-and preprocessing techniques.
-
-Key concepts:
-- Histogram: Visual representation of data distribution
-- Uniform distribution: All values equally likely
-- Normal distribution: Bell-shaped curve (covered in next file)
-- Skewed distribution: Data concentrated on one side
-- Big Data distributions: When datasets have thousands+ of values
-"""
+# -------------------------------------------------
+# File Name: 05_data_distribution.py
+# Author: Florentino Báez
+# Date: 21_Machine_Learning
+# Description: Data distribution types and histograms.
+# -------------------------------------------------
 
 import numpy as np
 import matplotlib.pyplot as plt

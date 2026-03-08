@@ -1,17 +1,10 @@
-# ---------------------------------------------------------------------------
-# Lista Simple - 15: Metodo sort() - Ordenamiento
-# ---------------------------------------------------------------------------
-# Descripcion: El metodo sort() ordena la lista IN-PLACE (modifica la lista
-#              original). Por defecto ordena en orden ascendente.
-#              Puede ordenar strings (A-Z), numeros (menor a mayor), y
-#              acepta parametros para personalizar el orden.
-# Sintaxis:    lista.sort()                   -> ascendente
-#              lista.sort(reverse=True)        -> descendente
-#              lista.sort(key=funcion)         -> con clave personalizada
-# Complejidad: O(n log n) - usa Timsort internamente
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 15_sort.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: El metodo sort() ordena la lista IN-PLACE (modifica la lista
+# -------------------------------------------------
 
-# --- Ordenar strings alfabeticamente (A-Z) ---
 fruits = ["orange", "mango", "kiwi", "pineapple", "banana", "grape", "apple"]
 print("Original:", fruits)
 

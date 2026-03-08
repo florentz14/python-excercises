@@ -1,11 +1,8 @@
 # -------------------------------------------------
 # File Name: 16_union.py
 # Author: Florentino Báez
-# Date: Variables - Sets
+# Date: 01_Variables_and_Types
 # Description: Union of Sets.
-#              Computes A ∪ B using the | operator or union()
-#              method. Counts elements and explains how
-#              duplicates are handled in the union result.
 # -------------------------------------------------
 
 """

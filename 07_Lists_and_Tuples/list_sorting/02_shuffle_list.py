@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 15. Shuffle List
-# ---------------------------------------------------------------------------
-# Descripción: Shuffle List
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 02_shuffle_list.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Demonstrates shuffle list.
+# -------------------------------------------------
 
 import random
 

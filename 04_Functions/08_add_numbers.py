@@ -1,7 +1,8 @@
 # -------------------------------------------------
-# File: 08_add_numbers.py
+# File Name: 08_add_numbers.py
+# Author: Florentino Báez
+# Date: 04_Functions
 # Description: Add two numbers together.
-#              Function with two numeric parameters.
 # -------------------------------------------------
 
 def add_numbers(a: int | float, b: int | float) -> None:

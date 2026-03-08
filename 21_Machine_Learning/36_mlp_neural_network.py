@@ -1,11 +1,9 @@
-"""
-MLP Neural Network - Multi-Layer Perceptron
-============================================
-Basic neural network with hidden layers for capturing non-linear relationships.
-Use when classical models are not sufficient for the problem complexity.
-
-Author: Florentino Baez
-"""
+# -------------------------------------------------
+# File Name: 36_mlp_neural_network.py
+# Author: Florentino Báez
+# Date: 21_Machine_Learning
+# Description: MLP neural network for non-linear relationships.
+# -------------------------------------------------
 
 from sklearn.model_selection import train_test_split
 from sklearn.neural_network import MLPClassifier

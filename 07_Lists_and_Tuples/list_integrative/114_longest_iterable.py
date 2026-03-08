@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 245. Longest Iterable Among Arguments
-# ---------------------------------------------------------------------------
-# Descripción: Longest Iterable Among Arguments
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 114_longest_iterable.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Longest Iterable Among Arguments
+# -------------------------------------------------
 
 def longest(*args) -> list | str:
     return max(args, key=len)

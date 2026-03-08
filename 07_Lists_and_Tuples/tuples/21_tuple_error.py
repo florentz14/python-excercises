@@ -1,4 +1,10 @@
-# Debugging Assignment
+# -------------------------------------------------
+# File Name: 21_tuple_error.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Demonstrates tuple error.
+# -------------------------------------------------
+
 numbers = (4, 8, 12, 16, 20, 24, 28, 32)
 print("Using for loop")
 for i in range(len(numbers)):

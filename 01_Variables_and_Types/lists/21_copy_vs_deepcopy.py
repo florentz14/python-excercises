@@ -1,4 +1,9 @@
-# copy vs deepcopy
+# -------------------------------------------------
+# File Name: 21_copy_vs_deepcopy.py
+# Author: Florentino Báez
+# Date: 01_Variables_and_Types
+# Description: Demonstrates shallow copy vs deep copy.
+# -------------------------------------------------
 
 import copy
 

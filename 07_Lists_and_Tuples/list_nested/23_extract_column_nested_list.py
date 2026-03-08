@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 108. Extract Specified Column from Nested List (1-based)
-# ---------------------------------------------------------------------------
-# Descripción: Extract Specified Column from Nested List (1-based)
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 23_extract_column_nested_list.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Extract Specified Column from Nested List (1-based)
+# -------------------------------------------------
 
 def extract_column(matrix: list[list], col: int) -> list:
     # Lista por comprensión: se construye la lista a partir del iterable.

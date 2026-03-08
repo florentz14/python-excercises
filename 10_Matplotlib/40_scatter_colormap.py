@@ -1,9 +1,8 @@
 # -------------------------------------------------
-# File Name: 08c_scatter_colormap.py
+# File Name: 40_scatter_colormap.py
 # Author: Florentino Báez
-# Date: Matplotlib
+# Date: 10_Matplotlib
 # Description: Scatter with Colormap — custom colors,
-#              sizes, and viridis colormap.
 # -------------------------------------------------
 
 import matplotlib.pyplot as plt

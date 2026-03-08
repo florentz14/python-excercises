@@ -1,8 +1,9 @@
-"""While loop: Greeting repeat.
-Prints "Hello, welcome!" 5 times using a while loop.
-"""
+# -------------------------------------------------
+# File Name: 05_while_hello.py
 # Author: Florentino Báez
-
+# Date: 03_Loops
+# Description: Greeting repeat.
+# -------------------------------------------------
 
 count = 0
 

@@ -1,9 +1,9 @@
-"""
-15_Graphs - Kruskal's MST algorithm
-=====================================
-Minimum Spanning Tree. Sort edges by weight, add if no cycle (Union-Find).
-Used in: network design, clustering. Complexity: O(E log E).
-"""
+# -------------------------------------------------
+# File Name: 18_kruskal.py
+# Author: Florentino Báez
+# Date: 15_Graphs
+# Description: 15_Graphs - Kruskal's MST algorithm ===================================== Minimum Spanning Tree. Sort edges by weight, add if no cycle (Union-Find).
+# -------------------------------------------------
 
 from adjacency_list import GrafoListaAdyacencia
 

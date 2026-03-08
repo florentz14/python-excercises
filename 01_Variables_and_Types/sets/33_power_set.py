@@ -1,8 +1,8 @@
 # -------------------------------------------------
 # File Name: 33_power_set.py
-# Purpose: Generate all subsets (power set)
-# Description: Power set P(A) contains all subsets of A.
-#              Size is 2^n. Recursive and iterative generation.
+# Author: Florentino Báez
+# Date: 01_Variables_and_Types
+# Description: Generate all subsets (power set). P(A) has 2^n elements.
 # -------------------------------------------------
 
 print("Power Set (All Subsets)")

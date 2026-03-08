@@ -1,11 +1,8 @@
 # -------------------------------------------------
 # File Name: 10_operations.py
 # Author: Florentino Báez
-# Date: Variables - Lists
+# Date: 01_Variables_and_Types
 # Description: List Concatenation and Repetition.
-#              The + operator joins two lists into a new one.
-#              The * operator repeats a list n times. Both
-#              produce new lists (originals stay unchanged).
 # -------------------------------------------------
 
 print("Example 10: List operations")

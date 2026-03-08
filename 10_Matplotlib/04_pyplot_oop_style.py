@@ -1,7 +1,7 @@
 # -------------------------------------------------
-# File Name: 01d_pyplot_oop_style.py
+# File Name: 04_pyplot_oop_style.py
 # Author: Florentino Báez
-# Date: Matplotlib
+# Date: 10_Matplotlib
 # Description: Object-oriented approach (fig, ax). Includes print summary block.
 # -------------------------------------------------
 

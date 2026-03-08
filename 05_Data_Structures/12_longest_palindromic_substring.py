@@ -1,14 +1,8 @@
 # -------------------------------------------------
 # File Name: 12_longest_palindromic_substring.py
 # Author: Florentino Báez
-# Date: Data Structures - String Algorithms
-# Description: Longest Palindromic Substring.
-#              Finds the longest substring that reads the same
-#              from left to right as from right to left.
-#              Uses the expansion-from-center method: for each
-#              position, expand in both directions while
-#              characters match (odd and even length).
-#              Complexity: O(n²) in time, O(1) in space.
+# Date: 05_Data_Structures
+# Description: Longest palindromic substring. Expands around centers or uses DP. Finds the longest substring that reads the same forwards and backwards.
 # -------------------------------------------------
 
 print("=== 5. Subcadena Palindrómica Más Larga ===\n")

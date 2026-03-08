@@ -1,8 +1,9 @@
-"""Match-case: Day of Week (Python 3.10+).
-Switch-like structure mapping day number to name.
-"""
+# -------------------------------------------------
+# File Name: 77_match_day.py
 # Author: Florentino Báez
-
+# Date: 03_Loops
+# Description: Day of Week (Python 3.10+).
+# -------------------------------------------------
 
 def day_of_week(day: int) -> str:
     match day:

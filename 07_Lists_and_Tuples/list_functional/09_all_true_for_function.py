@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 243. Check If Function Returns True for Every Element
-# ---------------------------------------------------------------------------
-# Descripción: Check If Function Returns True for Every Element
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 09_all_true_for_function.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Check If Function Returns True for Every Element
+# -------------------------------------------------
 
 def all_match(lst: list, predicate) -> bool:
     return all(predicate(x) for x in lst)

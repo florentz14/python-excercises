@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 135. Iterate Over All Pairs of Consecutive Items
-# ---------------------------------------------------------------------------
-# Descripción: Iterate Over All Pairs of Consecutive Items
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 065_iterate_consecutive_pairs.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Iterate Over All Pairs of Consecutive Items
+# -------------------------------------------------
 
 def consecutive_pairs(lst: list) -> list[tuple]:
     # Se construye list/set/dict a partir del iterable (elimina duplicados en set/dict).

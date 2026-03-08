@@ -1,5 +1,9 @@
-# Archivo: 33_03_analisis_completo.py
-# Descripción: Análisis completo del sistema de ecuaciones específico
+# -------------------------------------------------
+# File Name: 29_complete_analysis.py
+# Author: Florentino Báez
+# Date: 17_Equations
+# Description: Complete analysis of specific equation system.
+# -------------------------------------------------
 
 import numpy as np
 from fractions import Fraction

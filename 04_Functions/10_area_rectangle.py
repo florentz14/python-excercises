@@ -1,7 +1,8 @@
 # -------------------------------------------------
-# File: 10_area_rectangle.py
+# File Name: 10_area_rectangle.py
+# Author: Florentino Báez
+# Date: 04_Functions
 # Description: Calculate the area of a rectangle.
-#              Function with width and height parameters.
 # -------------------------------------------------
 
 def area_rectangle(width: int | float, height: int | float) -> None:

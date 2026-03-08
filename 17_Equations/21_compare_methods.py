@@ -1,5 +1,9 @@
-# Archivo: 31_05_comparar_metodos.py
-# Descripción: Comparar métodos de integración numérica
+# -------------------------------------------------
+# File Name: 21_compare_methods.py
+# Author: Florentino Báez
+# Date: 17_Equations
+# Description: Compare numerical integration methods.
+# -------------------------------------------------
 
 import numpy as np
 import scipy.integrate as spi

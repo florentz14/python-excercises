@@ -1,11 +1,8 @@
 # -------------------------------------------------
 # File Name: 07_count.py
 # Author: Florentino Báez
-# Date: Variables - Tuples
+# Date: 01_Variables_and_Types
 # Description: Count Occurrences with count().
-#              count(value) returns how many times a value
-#              appears in the tuple. This and index() are
-#              the only two built-in tuple methods.
 # -------------------------------------------------
 
 print("Example 7: Count occurrences")

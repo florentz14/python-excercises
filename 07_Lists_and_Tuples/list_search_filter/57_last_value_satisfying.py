@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 240. Last Value That Satisfies Function
-# ---------------------------------------------------------------------------
-# Descripción: Last Value That Satisfies Function
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 57_last_value_satisfying.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Last Value That Satisfies Function
+# -------------------------------------------------
 
 def last_value_where(lst: list, predicate):
     for x in reversed(lst):

@@ -1,7 +1,8 @@
 # -------------------------------------------------
-# File: 12_intersection_of_lists.py
+# File Name: 12_intersection_of_lists.py
+# Author: Florentino Báez
+# Date: 18_Linked_Lists
 # Description: Find intersection point of two linked lists.
-#              Y-shaped linked lists intersection.
 # -------------------------------------------------
 
 from typing import Any, Optional

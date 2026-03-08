@@ -1,10 +1,9 @@
-"""
-Colas - Ejemplo 1: Cola con lista (FIFO)
-=========================================
-Topic: 13_Queues
-Descripción: Lista como cola: insert(0, x) = encolar al frente, pop() = desencolar al final (lento).
-              Mejor usar collections.deque.
-"""
+# -------------------------------------------------
+# File Name: 01_list.py
+# Author: Florentino Báez
+# Date: 13_Queues
+# Description: Queue with list (FIFO). append() and pop(0). Better: use deque.
+# -------------------------------------------------
 
 cola = []
 

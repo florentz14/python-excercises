@@ -1,7 +1,8 @@
 # -------------------------------------------------
-# File: 40_memoize_decorator.py
+# File Name: 40_memoize_decorator.py
+# Author: Florentino Báez
+# Date: 04_Functions
 # Description: Memoization decorator (caching).
-#              Optimize recursive functions.
 # -------------------------------------------------
 
 def memoize(func):

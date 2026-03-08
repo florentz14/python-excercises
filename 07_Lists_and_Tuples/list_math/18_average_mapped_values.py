@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 238. Average of List After Mapping Each Element
-# ---------------------------------------------------------------------------
-# Descripción: Average of List After Mapping Each Element
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 18_average_mapped_values.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Average of List After Mapping Each Element
+# -------------------------------------------------
 
 def average_after_map(lst: list, func) -> float:
     mapped = [func(x) for x in lst]

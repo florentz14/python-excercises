@@ -1,9 +1,9 @@
 # -------------------------------------------------
-# File: 01_basic_class.py
+# File Name: 01_basic_class.py
+# Author: Florentino Báez
+# Date: 11_OOP
 # Description: Creating a basic class in Python.
-#              Class definition, object creation, basic methods.
 # -------------------------------------------------
-
 
 class Car:
     """A basic class representing a car."""

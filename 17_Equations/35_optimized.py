@@ -1,5 +1,9 @@
-# Archivo: 35_02_optimizada.py
-# Descripción: Sumas de Riemann vectorizadas con NumPy
+# -------------------------------------------------
+# File Name: 35_optimized.py
+# Author: Florentino Báez
+# Date: 17_Equations
+# Description: Vectorized Riemann sums with NumPy.
+# -------------------------------------------------
 
 from riemann_util import f, a, b, n, suma_riemann_vectorizada
 

@@ -1,7 +1,7 @@
 # -------------------------------------------------
-# File Name: 10a_hist_basic.py
+# File Name: 51_hist_basic.py
 # Author: Florentino Báez
-# Date: Matplotlib
+# Date: 10_Matplotlib
 # Description: Basic histogram (heights, 15 bins).
 # -------------------------------------------------
 

@@ -1,8 +1,9 @@
-# ------------------------------------------------------------
-# File: 14_vector_product.py
-# Purpose: Matrix times column vector.
+# -------------------------------------------------
+# File Name: 14_vector_product.py
+# Author: Florentino Báez
+# Date: 08_Matrices
 # Description: A(m×n) * v(n×1) = vector of m components. Each row of A · v.
-# ------------------------------------------------------------
+# -------------------------------------------------
 
 A = [[1, 2], [3, 4], [5, 6]]  # 3x2
 v = [7, 8]  # 2-component vector

@@ -1,8 +1,9 @@
-# ------------------------------------------------------------
-# File: 46_array_stack_concatenate.py
-# Purpose: Stack and concatenate arrays.
+# -------------------------------------------------
+# File Name: 75_stack_concatenate.py
+# Author: Florentino Báez
+# Date: 08_Matrices
 # Description: vstack, hstack, concatenate, split.
-# ------------------------------------------------------------
+# -------------------------------------------------
 
 import numpy as np
 

@@ -1,12 +1,9 @@
-# ---------------------------------------------------------------------------
-# Lista Simple - 24: Funciones min(), max() y sum()
-# ---------------------------------------------------------------------------
-# Descripcion: Python incluye funciones integradas para obtener el valor
-#              minimo, maximo y la suma total de los elementos de una lista.
-# Sintaxis:    min(lista)   -> retorna el menor
-#              max(lista)   -> retorna el mayor
-#              sum(lista)   -> retorna la suma de todos
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 24_min_max_sum.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Python incluye funciones integradas para obtener el valor
+# -------------------------------------------------
 
 numeros = [34, 12, 89, 5, 67, 23, 45]
 print("Lista:", numeros)

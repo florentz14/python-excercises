@@ -1,16 +1,9 @@
-"""
-12_Stacks - Largest Rectangle in Histogram
-===========================================
-Classic problem: find the largest rectangle area in a histogram.
-Uses monotonic increasing stack.
-
-LeetCode 84 - Largest Rectangle in Histogram
-
-Example:
-  heights = [2, 1, 5, 6, 2, 3]
-  Result: 10 (rectangle of height 5, width 2: indices 2-3)
-"""
-
+# -------------------------------------------------
+# File Name: 14_largest_rectangle_histogram.py
+# Author: Florentino Báez
+# Date: 12_Stacks
+# Description: Largest rectangle in histogram. Monotonic stack. O(n).
+# -------------------------------------------------
 
 def largest_rectangle_area(heights: list[int]) -> int:
     """

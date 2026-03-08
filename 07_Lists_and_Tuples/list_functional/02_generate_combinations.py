@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 82. Generate Combinations of n Distinct Objects from List
-# ---------------------------------------------------------------------------
-# Descripción: Generate Combinations of n Distinct Objects from List
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 02_generate_combinations.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Generate Combinations of n Distinct Objects from List
+# -------------------------------------------------
 
 import itertools
 

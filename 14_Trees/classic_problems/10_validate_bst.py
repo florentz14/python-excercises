@@ -1,11 +1,9 @@
-"""
-#10 Validate Binary Search Tree (LeetCode 98)
-=============================================
-Concept: BST property (Left < Root < Right)
-Time: O(n), Space: O(h)
-
-Essential for interviews.
-"""
+# -------------------------------------------------
+# File Name: 10_validate_bst.py
+# Author: Florentino Báez
+# Date: 14_Trees
+# Description: LeetCode 98 - Validate BST using left < root < right property.
+# -------------------------------------------------
 
 from common import TreeNode
 

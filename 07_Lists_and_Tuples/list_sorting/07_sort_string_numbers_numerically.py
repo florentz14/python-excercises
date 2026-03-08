@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 139. Sort List of String Numbers Numerically
-# ---------------------------------------------------------------------------
-# Descripción: Sort List of String Numbers Numerically
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 07_sort_string_numbers_numerically.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Sort List of String Numbers Numerically
+# -------------------------------------------------
 
 def sort_numeric_strings(lst: list[str]) -> list[str]:
     # Se ordena la lista usando key para comparar (p. ej. por longitud o valor).

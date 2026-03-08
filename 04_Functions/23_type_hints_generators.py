@@ -1,7 +1,8 @@
 # -------------------------------------------------
-# File: 23_type_hints_generadores.py
+# File Name: 23_type_hints_generators.py
+# Author: Florentino Báez
+# Date: 04_Functions
 # Description: Type hints and generator functions.
-#              Type annotations and yield keyword.
 # -------------------------------------------------
 
 print("=== Type Hints y Generadores ===\n")

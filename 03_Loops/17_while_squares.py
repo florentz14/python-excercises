@@ -1,8 +1,9 @@
-"""While loop: Squared numbers.
-Prints each number 1-5 and its square.
-"""
+# -------------------------------------------------
+# File Name: 17_while_squares.py
 # Author: Florentino Báez
-
+# Date: 03_Loops
+# Description: Squared numbers.
+# -------------------------------------------------
 
 count = 1
 

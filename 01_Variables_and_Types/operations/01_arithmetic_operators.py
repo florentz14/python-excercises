@@ -1,6 +1,10 @@
-# Arithmetic Operators in Python
+# -------------------------------------------------
+# File Name: 01_arithmetic_operators.py
+# Author: Florentino Báez
+# Date: 01_Variables_and_Types
+# Description: Demonstrates basic arithmetic operators (+, -, *, /, //, %, **)
+# -------------------------------------------------
 
-# Addition
 a = 10
 b = 5
 print(f"Addition: {a} + {b} = {a + b}")

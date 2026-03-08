@@ -1,14 +1,10 @@
 # -------------------------------------------------
 # File Name: 09_subset_superset.py
 # Author: Florentino Báez
-# Date: Variables - Sets
+# Date: 01_Variables_and_Types
 # Description: Subset and Superset Comparison.
-#              issubset() checks if all elements of one set
-#              are contained in another. issuperset() is the
-#              inverse. isdisjoint() checks for zero overlap.
 # -------------------------------------------------
 
-# Example 11: Set comparison (subset, superset)
 print("Example 11: Set comparison")
 print("-" * 40)
 

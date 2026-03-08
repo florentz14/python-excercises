@@ -1,15 +1,10 @@
-# ---------------------------------------------------------------------------
-# Lista Simple - 14: List Comprehension
-# ---------------------------------------------------------------------------
-# Descripcion: List comprehension es una sintaxis compacta para crear listas
-#              a partir de iterables existentes. Combina el bucle for y la
-#              condicion if en UNA sola linea.
-# Sintaxis:    [expresion for elemento in iterable]
-#              [expresion for elemento in iterable if condicion]
-#              [expr_true if condicion else expr_false for elemento in iterable]
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 14_list_comprehension.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: List comprehension es una sintaxis compacta para crear listas
+# -------------------------------------------------
 
-# --- Filter fruits that contain "a" (compare with previous file) ---
 fruits = ["apple", "banana", "cherry", "kiwi", "mango", "grape", "pear", "peach"]
 
 # Con bucle (forma clasica):

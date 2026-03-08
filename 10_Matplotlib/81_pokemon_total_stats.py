@@ -1,7 +1,7 @@
 # -------------------------------------------------
-# File Name: 28_pokemon_total_stats.py
+# File Name: 81_pokemon_total_stats.py
 # Author: Florentino Báez
-# Date: Matplotlib
+# Date: 10_Matplotlib
 # Description: Horizontal Bar — Total Stats per Pokémon (sorted).
 # -------------------------------------------------
 

@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 95. Sort Each Sublist of Strings (and 96: sort by length and value)
-# ---------------------------------------------------------------------------
-# Descripción: Sort Each Sublist of Strings (and 96: sort by length and value)
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 19_sort_sublists_strings.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Sort Each Sublist of Strings (and 96: sort by length and value)
+# -------------------------------------------------
 
 def sort_sublists_by_length_and_value(lists: list[list]) -> list[list]:
     # Lista de pares (longitud, lista) para poder comparar por longitud.

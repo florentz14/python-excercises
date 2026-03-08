@@ -1,18 +1,9 @@
-# ------------------------------------------------------------
-# File: 02_exceptions_reference_and_exercises.py
-# Chapter: Exceptions - Reference & Exercises
-#
-# Purpose:
-#   Exceptions are runtime errors that can terminate a program unexpectedly.
-#   Control them with try / except / finally. Use raise to throw explicitly.
-#
-# Blocks: try (code that may fail) | except (handle) | finally (always runs)
-#
-# Run: python 02_exceptions_reference_and_exercises.py        # Demo mode
-#      python 02_exceptions_reference_and_exercises.py -i      # Interactive
-#
-# Author: Florentino Baez (adapted)
-# ------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 02_exceptions_reference_and_exercises.py
+# Author: Florentino Báez
+# Date: 22_Exceptions
+# Description: Demonstrates exceptions reference and exercises.
+# -------------------------------------------------
 
 import sys
 

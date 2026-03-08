@@ -1,11 +1,9 @@
-# ---------------------------------------------------------------------------
-# 35. Create List by Concatenating List with Range 1 to n
-# ---------------------------------------------------------------------------
-# Descripción: Create List by Concatenating List with Range 1 to n
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
-
-# Sample: ['p', 'q'], n=5 -> ['p1', 'q1', 'p2', 'q2', 'p3', 'q3', 'p4', 'q4', 'p5', 'q5']
+# -------------------------------------------------
+# File Name: 021_concatenate_list_with_range.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Create List by Concatenating List with Range 1 to n
+# -------------------------------------------------
 
 def concat_with_range(lst: list, n: int) -> list[str]:
     # Lista por comprensión: se construye la lista a partir del iterable.

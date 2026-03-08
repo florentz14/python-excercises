@@ -1,10 +1,9 @@
-# ---------------------------------------------------------------------------
-# 23. Flatten a Shallow List (one level)
-# ---------------------------------------------------------------------------
-# Descripción: "Aplana" una lista que contiene listas y otros elementos:
-#              cada sublista se reemplaza por sus elementos, el resto se
-#              deja igual. Solo un nivel de anidación.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 02_flatten_shallow_list.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: "Aplana" una lista que contiene listas y otros elementos:
+# -------------------------------------------------
 
 def flatten_shallow(lst: list) -> list:
     # Lista donde iremos acumulando los elementos ya aplanados

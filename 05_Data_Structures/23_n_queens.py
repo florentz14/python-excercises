@@ -1,17 +1,9 @@
 # -------------------------------------------------
-# File: 23_n_reinas.py (N-Queens Problem - Backtracking)
-# -------------------------------------------------
+# File Name: 23_n_queens.py
 # Author: Florentino Báez
-# Module: Data Structures - Backtracking
-#
-# Description:
-#   Place N queens on an NxN chessboard so no two attack each other
-#   (different rows, columns, and diagonals). Uses backtracking:
-#   try each row for the current column; recurse or backtrack.
-#
-# Complexity: O(N!) worst case.
+# Date: 05_Data_Structures
+# Description: N-Queens problem. Place N queens on NxN board with no two attacking.
 # -------------------------------------------------
-
 
 def is_safe(board, row, col, n):
     """Returns True if placing a queen at (row, col) does not conflict."""

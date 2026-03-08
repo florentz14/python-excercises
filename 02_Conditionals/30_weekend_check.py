@@ -1,9 +1,9 @@
-"""
-Simple conditional: Is it a weekend day?
-=======================================
-Topic: Conditionals (02_Conditionals)
-Description: Check if day number (1-7) is weekend.
-"""
+# -------------------------------------------------
+# File Name: 30_weekend_check.py
+# Author: Florentino Báez
+# Date: 02_Conditionals
+# Description: Is it a weekend day?
+# -------------------------------------------------
 
 day = int(input("Enter day (1=Mon .. 7=Sun): "))
 

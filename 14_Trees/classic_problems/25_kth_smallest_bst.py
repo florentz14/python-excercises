@@ -1,9 +1,9 @@
-"""
-#25 Kth Smallest Element in BST
-================================
-LeetCode 230. Inorder gives sorted order; kth element is answer.
-Time: O(k) with early stop, O(n) worst. Space: O(h).
-"""
+# -------------------------------------------------
+# File Name: 25_kth_smallest_bst.py
+# Author: Florentino Báez
+# Date: 14_Trees
+# Description: LeetCode 230 - Kth smallest element in BST via inorder.
+# -------------------------------------------------
 
 from common import TreeNode
 

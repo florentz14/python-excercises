@@ -1,8 +1,8 @@
 # -------------------------------------------------
 # File Name: 30_symmetric_difference.py
-# Purpose: Symmetric difference (A ^ B)
-# Description: Elements in one set or the other but not both.
-#              Equivalent to (A - B) | (B - A) or (A | B) - (A & B).
+# Author: Florentino Báez
+# Date: 01_Variables_and_Types
+# Description: Symmetric difference (A ^ B): elements in one set or the other
 # -------------------------------------------------
 
 print("Symmetric Difference (A ^ B)")

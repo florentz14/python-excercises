@@ -1,11 +1,9 @@
-# ---------------------------------------------------------------------------
-# Lista Simple - 11: Recorrer con for (Iteracion Directa)
-# ---------------------------------------------------------------------------
-# Descripcion: La forma mas pytonica de recorrer una lista es iterar
-#              directamente sobre sus elementos usando un bucle for.
-#              No se necesita usar indices.
-# Sintaxis:    for elemento in lista:
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 11_loop_for.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: La forma mas pytonica de recorrer una lista es iterar
+# -------------------------------------------------
 
 fruits = ["apple", "banana", "cherry", "pineapple", "grape", "blueberry"]
 

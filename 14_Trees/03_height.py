@@ -1,10 +1,9 @@
-"""
-Árboles - Ejemplo 3: Altura y tamaño de un árbol binario
-==========================================================
-Topic: 14_Trees
-Descripción: altura(nodo) = 1 + max(altura(izq), altura(der)); tamaño = número de nodos.
-"""
-
+# -------------------------------------------------
+# File Name: 03_height.py
+# Author: Florentino Báez
+# Date: 14_Trees
+# Description: Compute height and size of a binary tree recursively.
+# -------------------------------------------------
 
 class Nodo:
     def __init__(self, valor, izquierdo=None, derecho=None):

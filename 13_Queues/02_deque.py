@@ -1,9 +1,9 @@
-"""
-Colas - Ejemplo 2: Cola con collections.deque (FIFO)
-=====================================================
-Topic: 13_Queues
-Descripción: deque: append = encolar, popleft() = desencolar; O(1) en ambos extremos.
-"""
+# -------------------------------------------------
+# File Name: 02_deque.py
+# Author: Florentino Báez
+# Date: 13_Queues
+# Description: Queue with collections.deque. append and popleft. O(1) at both ends.
+# -------------------------------------------------
 
 from collections import deque
 

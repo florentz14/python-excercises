@@ -1,8 +1,9 @@
-"""For loop: Square pattern.
-Prints a 5x5 grid of asterisks.
-"""
+# -------------------------------------------------
+# File Name: 57_for_pattern_square.py
 # Author: Florentino Báez
-
+# Date: 03_Loops
+# Description: Square pattern.
+# -------------------------------------------------
 
 print("Patrón de Cuadrado")
 print("=" * 30)

@@ -1,11 +1,9 @@
-# ---------------------------------------------------------------------------
-# Lista Simple - 02: Acceso por Indices
-# ---------------------------------------------------------------------------
-# Descripcion: Cada elemento de una lista tiene un indice (posicion).
-#              Los indices positivos empiezan en 0 desde la izquierda.
-#              Los indices negativos empiezan en -1 desde la derecha.
-# Sintaxis:    lista[indice]
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 02_access_indices.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Cada elemento de una lista tiene un indice (posicion).
+# -------------------------------------------------
 
 fruits = ["apple", "banana", "cherry", "pineapple", "grape", "blueberry", "mango", "strawberry"]
 #          index:  0        1         2         3            4        5            6        7

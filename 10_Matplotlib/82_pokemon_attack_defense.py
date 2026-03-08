@@ -1,7 +1,7 @@
 # -------------------------------------------------
-# File Name: 29_pokemon_attack_defense.py
+# File Name: 82_pokemon_attack_defense.py
 # Author: Florentino Báez
-# Date: Matplotlib
+# Date: 10_Matplotlib
 # Description: Grouped Bar — Attack vs Defense per Pokémon.
 # -------------------------------------------------
 

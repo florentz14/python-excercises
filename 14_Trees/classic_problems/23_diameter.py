@@ -1,10 +1,9 @@
-"""
-#23 Diameter of Binary Tree
-============================
-LeetCode 543. Longest path between any two nodes (may not pass root).
-Diameter = max(left_height + right_height) over all nodes.
-Time: O(n), Space: O(h).
-"""
+# -------------------------------------------------
+# File Name: 23_diameter.py
+# Author: Florentino Báez
+# Date: 14_Trees
+# Description: LeetCode 543 - Diameter of binary tree (longest path).
+# -------------------------------------------------
 
 from common import TreeNode
 

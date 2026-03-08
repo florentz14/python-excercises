@@ -1,10 +1,10 @@
-# ------------------------------------------------------------
-# File: 38_vector_create_display.py
-# Purpose: Create and display a vector.
+# -------------------------------------------------
+# File Name: 61_create_display.py
+# Author: Florentino Báez
+# Date: 08_Matrices
 # Description: Vector as list, show dimension and components.
-# ------------------------------------------------------------
+# -------------------------------------------------
 
-# Vector as list (e.g. vector in R³)
 v = [3, -1, 4]
 print("Vector v:", v)
 print("Dimension:", len(v))

@@ -1,7 +1,7 @@
 # -------------------------------------------------
-# File Name: 11c_pie_customized.py
+# File Name: 60_pie_customized.py
 # Author: Florentino Báez
-# Date: Matplotlib
+# Date: 10_Matplotlib
 # Description: Customized pie (colors, explode, shadow, startangle).
 # -------------------------------------------------
 

@@ -1,13 +1,8 @@
 # -------------------------------------------------
 # File Name: 08_rabin_karp.py
 # Author: Florentino Báez
-# Date: Data Structures - String Algorithms
-# Description: Rabin-Karp algorithm for pattern matching.
-#              Uses rolling hash to compare the pattern against
-#              substrings of the text efficiently. Computes the
-#              hash of the sliding window in O(1) and only
-#              compares character by character when hashes match.
-#              Complexity: O(n + m) average, O(n * m) worst case.
+# Date: 05_Data_Structures
+# Description: Rabin-Karp algorithm for pattern matching. Uses rolling hash for efficient substring comparison. O(n + m) average, O(n*m) worst case.
 # -------------------------------------------------
 
 print("=== Algoritmos Avanzados de Strings ===\n")

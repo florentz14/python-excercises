@@ -1,7 +1,7 @@
 # -------------------------------------------------
-# File Name: 07b_subplot_stacked.py
+# File Name: 34_subplot_stacked.py
 # Author: Florentino Báez
-# Date: Matplotlib
+# Date: 10_Matplotlib
 # Description: Stacked subplots (2 rows, 1 col).
 # -------------------------------------------------
 

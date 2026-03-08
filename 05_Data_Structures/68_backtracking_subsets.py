@@ -1,15 +1,9 @@
-# ------------------------------------------------------------
-# Algorithm: Backtracking - Generate All Subsets
-# Purpose:
-#   Generate all subsets of a list using pure backtracking
-#   (choose → explore → unchoose pattern). No itertools.
-# Complexity:
-#   Time  : O(2^n)
-#   Space : O(n) recursion depth, excluding output
-# ------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 68_backtracking_subsets.py
 # Author: Florentino Báez
-# ------------------------------------------------------------
-
+# Date: 05_Data_Structures
+# Description: Backtracking subsets. Generate all subsets of a set.
+# -------------------------------------------------
 
 def subsets(nums: list[int]) -> list[list[int]]:
     """Generate all subsets of nums. Each subset is a list."""

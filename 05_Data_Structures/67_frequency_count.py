@@ -1,15 +1,9 @@
-# ------------------------------------------------------------
-# Algorithm: Frequency Count with Hash Map
-# Purpose:
-#   Count how many times each element appears in a list.
-#   Core pattern for: duplicates, top K, grouping, anagrams.
-# Complexity:
-#   Time  : O(n)
-#   Space : O(n)
-# ------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 67_frequency_count.py
 # Author: Florentino Báez
-# ------------------------------------------------------------
-
+# Date: 05_Data_Structures
+# Description: Frequency count. Count occurrences using dictionary or Counter.
+# -------------------------------------------------
 
 def frequency_count(items: list) -> dict:
     """

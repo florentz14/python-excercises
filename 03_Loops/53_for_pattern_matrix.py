@@ -1,8 +1,9 @@
-"""For loop: Matrix of symbols.
-Creates a 4x5 grid showing row/col coordinates.
-"""
+# -------------------------------------------------
+# File Name: 53_for_pattern_matrix.py
 # Author: Florentino Báez
-
+# Date: 03_Loops
+# Description: Matrix of symbols.
+# -------------------------------------------------
 
 print("Matriz Rectangular de Símbolos")
 print("=" * 30)

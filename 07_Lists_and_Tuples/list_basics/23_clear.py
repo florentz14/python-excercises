@@ -1,12 +1,9 @@
-# ---------------------------------------------------------------------------
-# Lista Simple - 23: Metodo clear()
-# ---------------------------------------------------------------------------
-# Descripcion: El metodo clear() elimina TODOS los elementos de la lista,
-#              dejandola vacia. La variable sigue existiendo (a diferencia
-#              de 'del lista' que elimina la variable).
-# Sintaxis:    lista.clear()
-# Complejidad: O(1)
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 23_clear.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: El metodo clear() elimina TODOS los elementos de la lista,
+# -------------------------------------------------
 
 fruits = ["apple", "banana", "cherry", "pineapple", "grape", "mango"]
 print("Before clear():", fruits)

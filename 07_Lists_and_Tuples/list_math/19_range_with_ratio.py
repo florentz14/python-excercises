@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 244. Generate Range with Ratio (geometric: start, start*step, start*step^2, ...)
-# ---------------------------------------------------------------------------
-# Descripción: Generate Range with Ratio (geometric: start, start*step, start*step...
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 19_range_with_ratio.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Generate Range with Ratio (geometric: start, start*step, start*step...
+# -------------------------------------------------
 
 def range_ratio(start: int | float, step: int | float, n: int) -> list:
     if step == 1:

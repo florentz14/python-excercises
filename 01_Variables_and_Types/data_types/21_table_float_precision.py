@@ -1,6 +1,9 @@
-# Exercise 6: Formatting Float Numbers with Precision
-# Format floating-point numbers to 2 decimal places using
-# the :.2f format specifier in f-strings.
+# -------------------------------------------------
+# File Name: 21_table_float_precision.py
+# Author: Florentino Báez
+# Date: 01_Variables_and_Types
+# Description: Format floats to 2 decimal places using :.2f
+# -------------------------------------------------
 
 print("Exercise 6: Formatting Float Numbers with Precision")
 print("-" * 40)

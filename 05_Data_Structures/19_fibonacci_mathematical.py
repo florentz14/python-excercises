@@ -1,14 +1,8 @@
 # -------------------------------------------------
-# File: 19_fibonacci_matematico.py (Fibonacci - Mathematical Methods)
-# -------------------------------------------------
+# File Name: 19_fibonacci_mathematical.py
 # Author: Florentino Báez
-# Module: Data Structures - Mathematical Algorithms
-#
-# Description:
-#   Methods for computing the n-th Fibonacci number:
-#   1) DP iterative: O(n) time, O(1) space - classic DP pattern.
-#   2) Binet's formula: O(1) but loses precision for large n.
-#   3) Matrix exponentiation [[1,1],[1,0]]^n: O(log n), exact.
+# Date: 05_Data_Structures
+# Description: Fibonacci sequence using mathematical formulas or matrix exponentiation.
 # -------------------------------------------------
 
 import math

@@ -1,9 +1,9 @@
-"""
-15_Graphs - Multi-Source BFS
-==============================
-BFS starting from multiple sources (e.g. LeetCode 994 Rotting Oranges).
-All sources at distance 0, expand in waves.
-"""
+# -------------------------------------------------
+# File Name: 23_multi_source_bfs.py
+# Author: Florentino Báez
+# Date: 15_Graphs
+# Description: 15_Graphs - Multi-Source BFS ============================== BFS starting from multiple sources (e.g. LeetCode 994 Rotting Oranges).
+# -------------------------------------------------
 
 from collections import deque
 

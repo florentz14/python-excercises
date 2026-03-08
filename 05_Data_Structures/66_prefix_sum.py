@@ -1,16 +1,9 @@
-# ------------------------------------------------------------
-# Algorithm: Prefix Sum
-# Purpose:
-#   Precompute cumulative sums to answer range-sum queries fast.
-# Example:
-#   range_sum(prefix, 2, 4) returns sum from index 2 to 4 inclusive.
-# Complexity:
-#   Build  : O(n)
-#   Query  : O(1)
-# ------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 66_prefix_sum.py
 # Author: Florentino Báez
-# ------------------------------------------------------------
-
+# Date: 05_Data_Structures
+# Description: Prefix sum. Precompute cumulative sums for O(1) range queries.
+# -------------------------------------------------
 
 def build_prefix_sum(nums: list[int]) -> list[int]:
     """Build prefix array: prefix[i] = sum of nums[0..i-1]. prefix[0]=0."""

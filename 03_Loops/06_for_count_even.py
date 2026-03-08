@@ -1,8 +1,9 @@
-"""For loop: Even numbers 0-20.
-Uses range with step 2 to print even numbers.
-"""
+# -------------------------------------------------
+# File Name: 06_for_count_even.py
 # Author: Florentino Báez
-
+# Date: 03_Loops
+# Description: Even numbers 0-20.
+# -------------------------------------------------
 
 for count in range(0, 21, 2):
     print(count)

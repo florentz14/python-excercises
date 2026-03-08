@@ -1,7 +1,8 @@
 # -------------------------------------------------
-# File: 12_duck_typing.py
+# File Name: 12_duck_typing.py
+# Author: Florentino Báez
+# Date: 11_OOP
 # Description: Duck typing in Python.
-#              "If it walks like a duck and quacks like a duck..."
 # -------------------------------------------------
 
 from typing import Any

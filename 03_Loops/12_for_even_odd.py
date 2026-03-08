@@ -1,8 +1,9 @@
-"""For loop: Even/odd classification.
-Classifies numbers 1-10 as even or odd using modulo.
-"""
+# -------------------------------------------------
+# File Name: 12_for_even_odd.py
 # Author: Florentino Báez
-
+# Date: 03_Loops
+# Description: Even/odd classification.
+# -------------------------------------------------
 
 for count in range(1, 11):
     if count % 2 == 0:

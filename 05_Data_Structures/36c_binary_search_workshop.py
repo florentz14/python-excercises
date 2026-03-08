@@ -1,20 +1,9 @@
-# ------------------------------------------------------------
-# Mini Taller: 10 Ejercicios de Binary Search
-# Nivel: Fácil → Entrevista técnica
-#
-# Cada ejercicio incluye:
-#   - Enunciado
-#   - Ejemplo
-#   - Solución con explicación
-#   - Complejidad
-#
-# Ejecutar: python 36c_binary_search_workshop.py
-# ------------------------------------------------------------
-
-
-# =============================================================================
-# NIVEL 1 - FÁCIL (Ejercicios 1-4)
-# =============================================================================
+# -------------------------------------------------
+# File Name: 36c_binary_search_workshop.py
+# Author: Florentino Báez
+# Date: 05_Data_Structures
+# Description: Binary search workshop. Practice problems and solutions.
+# -------------------------------------------------
 
 def ej1_binary_search(arr: list[int], target: int) -> int:
     """

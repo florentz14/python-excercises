@@ -1,7 +1,7 @@
 # -------------------------------------------------
-# File Name: 15_employees_avg_salary.py
+# File Name: 68_employees_avg_salary.py
 # Author: Florentino Báez
-# Date: Matplotlib
+# Date: 10_Matplotlib
 # Description: Horizontal Bar — Average Salary by Department (Top 10).
 # -------------------------------------------------
 

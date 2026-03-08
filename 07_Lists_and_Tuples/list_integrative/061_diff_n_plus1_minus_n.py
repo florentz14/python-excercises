@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 118. Difference (n+1)th - nth for Each Position
-# ---------------------------------------------------------------------------
-# Descripción: Difference (n+1)th - nth for Each Position
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 061_diff_n_plus1_minus_n.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Difference (n+1)th - nth for Each Position
+# -------------------------------------------------
 
 def diff_consecutive(lst: list[float]) -> list[float]:
     # Lista por comprensión: se construye la lista a partir del iterable.

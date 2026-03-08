@@ -1,20 +1,9 @@
-"""
-Machine Learning - Grid Search
-=================================
-Grid Search systematically works through multiple combinations of
-hyperparameters, cross-validating each to find the optimal settings.
-
-Hyperparameters: Settings that are NOT learned from data but set before training.
-Examples: max_depth in Decision Tree, C in Logistic Regression, k in KNN
-
-Grid Search process:
-1. Define a grid of hyperparameter values to try
-2. Train a model for EVERY combination
-3. Evaluate each using cross-validation
-4. Return the combination with the best score
-
-Alternative: RandomizedSearchCV (faster, samples random combinations)
-"""
+# -------------------------------------------------
+# File Name: 17_grid_search.py
+# Author: Florentino Báez
+# Date: 21_Machine_Learning
+# Description: Grid search for hyperparameter tuning.
+# -------------------------------------------------
 
 import numpy as np
 from sklearn.model_selection import GridSearchCV, RandomizedSearchCV, cross_val_score

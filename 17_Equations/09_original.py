@@ -1,5 +1,9 @@
-# Archivo: 27_01_original.py
-# Descripción: Versión original para resolver ecuaciones cuadráticas (solo reales)
+# -------------------------------------------------
+# File Name: 09_original.py
+# Author: Florentino Báez
+# Date: 17_Equations
+# Description: Original quadratic equation solver (real solutions only).
+# -------------------------------------------------
 
 import math
 

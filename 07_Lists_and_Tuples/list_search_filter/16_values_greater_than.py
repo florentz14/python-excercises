@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 67. Find All Values in List Greater Than Specified Number
-# ---------------------------------------------------------------------------
-# Descripción: Find All Values in List Greater Than Specified Number
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 16_values_greater_than.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Find All Values in List Greater Than Specified Number
+# -------------------------------------------------
 
 def greater_than(lst: list[int | float], n: int | float) -> list:
     # Lista por comprensión: se incluyen solo los elementos que cumplen la condición.

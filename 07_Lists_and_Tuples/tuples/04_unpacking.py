@@ -1,14 +1,10 @@
-# ---------------------------------------------------------------------------
-# Tuplas - 04: Unpack Tuples (Desempaquetar Tuplas)
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 04_unpacking.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
 # Description: Unpacking means extracting tuple values into individual
-#              variables. The number of variables must match the number of
-#              elements, unless you use the asterisk (*) operator.
-# Syntax:      a, b, c = my_tuple
-#              a, *b, c = my_tuple  (b gets remaining as a list)
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
 
-# --- Basic unpacking ---
 fruits = ("apple", "banana", "cherry")
 
 # Assign each value to a variable

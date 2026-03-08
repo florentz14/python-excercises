@@ -1,9 +1,9 @@
 # -------------------------------------------------
-# File: 04_str_repr.py
+# File Name: 04_str_repr.py
+# Author: Florentino Báez
+# Date: 11_OOP
 # Description: __str__ vs __repr__ magic methods.
-#              String representation of objects.
 # -------------------------------------------------
-
 
 class Point:
     """Point class with __str__ and __repr__."""

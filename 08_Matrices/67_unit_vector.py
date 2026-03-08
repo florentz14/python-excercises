@@ -1,8 +1,9 @@
-# ------------------------------------------------------------
-# File: 67_unit_vector.py
-# Purpose: Normalize vector to unit length.
+# -------------------------------------------------
+# File Name: 67_unit_vector.py
+# Author: Florentino Báez
+# Date: 08_Matrices
 # Description: u = v / ||v|| has magnitude 1.
-# ------------------------------------------------------------
+# -------------------------------------------------
 
 import numpy as np
 

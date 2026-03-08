@@ -1,24 +1,9 @@
-"""
-Machine Learning - Bootstrap Aggregation (Bagging)
-====================================================
-Bootstrap Aggregation (Bagging) is an ensemble method that improves
-model accuracy and reduces overfitting.
-
-How it works:
-1. Create multiple bootstrap samples (random samples WITH replacement)
-2. Train a separate model on each bootstrap sample
-3. Combine predictions:
-   - Classification: majority vote
-   - Regression: average of predictions
-
-Key benefits:
-- Reduces variance (overfitting)
-- Works well with unstable models (Decision Trees)
-- Random Forest = Bagging + feature randomization
-
-Key term: OOB (Out-of-Bag) score - each bootstrap sample leaves out ~37%
-of data, which can be used for validation without a separate test set.
-"""
+# -------------------------------------------------
+# File Name: 20_bootstrap_aggregation.py
+# Author: Florentino Báez
+# Date: 21_Machine_Learning
+# Description: Bagging ensemble to reduce overfitting.
+# -------------------------------------------------
 
 import numpy as np
 import matplotlib.pyplot as plt

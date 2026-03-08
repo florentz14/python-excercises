@@ -1,7 +1,7 @@
 # -------------------------------------------------
-# File Name: 06e_grid_major_minor.py
+# File Name: 31_grid_major_minor.py
 # Author: Florentino Báez
-# Date: Matplotlib
+# Date: 10_Matplotlib
 # Description: Major and minor grid lines.
 # -------------------------------------------------
 

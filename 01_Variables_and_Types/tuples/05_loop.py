@@ -1,11 +1,8 @@
 # -------------------------------------------------
 # File Name: 05_loop.py
 # Author: Florentino Báez
-# Date: Variables - Tuples
+# Date: 01_Variables_and_Types
 # Description: Loop Through a Tuple.
-#              Use a for loop to iterate over each element.
-#              Tuples are iterable just like lists, but
-#              their elements cannot be modified.
 # -------------------------------------------------
 
 print("Example 5: Loop through a tuple")

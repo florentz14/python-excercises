@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 216. Group Elements by Function and Return Count per Group
-# ---------------------------------------------------------------------------
-# Descripción: Group Elements by Function and Return Count per Group
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 04_group_by_function_count.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Group Elements by Function and Return Count per Group
+# -------------------------------------------------
 
 from collections import defaultdict
 

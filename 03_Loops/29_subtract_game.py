@@ -1,8 +1,9 @@
-"""While loop: Subtraction quiz.
-Math quiz; loops until user gives correct subtraction answer.
-"""
+# -------------------------------------------------
+# File Name: 29_subtract_game.py
 # Author: Florentino Báez
-
+# Date: 03_Loops
+# Description: Subtraction quiz.
+# -------------------------------------------------
 
 import random
 

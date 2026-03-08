@@ -1,14 +1,8 @@
 # -------------------------------------------------
 # File Name: 56_bucket_sort.py
 # Author: Florentino Báez
-# Date: Data Structures - Sorting Algorithms
-# Description: Bucket Sort.
-#              Distributes elements into buckets according to their value,
-#              sorts each bucket with Insertion Sort and concatenates.
-#              Ideal for uniformly distributed data. Includes versions
-#              for floats [0,1), integers and negative numbers.
-#              Step-by-step visualization.
-#              Complexity: O(n + k) average, O(n²) worst case.
+# Date: 05_Data_Structures
+# Description: Bucket Sort. Distributes elements into buckets, sorts each. O(n+k) average.
 # -------------------------------------------------
 
 import random

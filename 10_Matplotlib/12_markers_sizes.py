@@ -1,7 +1,7 @@
 # -------------------------------------------------
-# File Name: 03c_markers_sizes.py
+# File Name: 12_markers_sizes.py
 # Author: Florentino Báez
-# Date: Matplotlib
+# Date: 10_Matplotlib
 # Description: Marker Sizes — different markersize values.
 # -------------------------------------------------
 

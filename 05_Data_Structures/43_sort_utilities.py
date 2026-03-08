@@ -1,11 +1,8 @@
 # -------------------------------------------------
-# File Name: 43_utilidades.py
+# File Name: 43_sort_utilities.py
 # Author: Florentino Báez
-# Date: Data Structures - Sorting
-# Description: Utilities for Sorting Methods.
-#              Helper functions: check if a list is sorted in
-#              ascending order and generate random lists for
-#              testing sorting algorithms.
+# Date: 05_Data_Structures
+# Description: Sort utilities. Common helpers for sorting algorithms.
 # -------------------------------------------------
 
 import random

@@ -1,4 +1,9 @@
-# 52_02_runge_kutta.py - Método de Runge-Kutta orden 4 y comparación con Euler
+# -------------------------------------------------
+# File Name: 57_runge_kutta.py
+# Author: Florentino Báez
+# Date: 17_Equations
+# Description: Runge-Kutta 4th order method and comparison with Euler.
+# -------------------------------------------------
 
 import numpy as np
 import matplotlib.pyplot as plt

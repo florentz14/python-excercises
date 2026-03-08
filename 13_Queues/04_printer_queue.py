@@ -1,4 +1,9 @@
-# Printer Queue Simulator
+# -------------------------------------------------
+# File Name: 04_printer_queue.py
+# Author: Florentino Báez
+# Date: 13_Queues
+# Description: Printer queue simulation. FIFO job processing.
+# -------------------------------------------------
 
 class Queue:
     """Basic queue implementation using list"""

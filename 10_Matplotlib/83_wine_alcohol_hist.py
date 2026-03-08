@@ -1,7 +1,7 @@
 # -------------------------------------------------
-# File Name: 30_wine_alcohol_hist.py
+# File Name: 83_wine_alcohol_hist.py
 # Author: Florentino Báez
-# Date: Matplotlib
+# Date: 10_Matplotlib
 # Description: Histogram: Alcohol Distribution by Wine Type.
 # -------------------------------------------------
 

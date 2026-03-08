@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 109. Rotate List Left or Right by N Items
-# ---------------------------------------------------------------------------
-# Descripción: Rotate List Left or Right by N Items
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 059_rotate_list_left_right.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Rotate List Left or Right by N Items
+# -------------------------------------------------
 
 def rotate_left(lst: list, n: int) -> list:
     n = n % len(lst)

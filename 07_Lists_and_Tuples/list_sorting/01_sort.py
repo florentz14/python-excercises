@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# Part 1: Lists - Exercise 7
-# ---------------------------------------------------------------------------
-# Descripción: Ordenar la lista de menor a mayor con .sort(). Modifica
-#              la lista original (in-place).
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 01_sort.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Ordenar la lista de menor a mayor con .sort(). Modifica
+# -------------------------------------------------
 
 nums = [5, 1, 4, 2, 3]
 # sort() ordena la lista en su sitio; no devuelve nada, la lista queda ordenada

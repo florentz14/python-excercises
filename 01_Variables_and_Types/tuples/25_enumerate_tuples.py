@@ -1,8 +1,9 @@
-# ------------------------------------------------------------
-# File: 25_enumerate_tuples.py
-# Purpose: enumerate() with tuples.
-# Description: Iterate with index and value.
-# ------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 25_enumerate_tuples.py
+# Author: Florentino Báez
+# Date: 01_Variables_and_Types
+# Description: enumerate() with tuples for index and value iteration.
+# -------------------------------------------------
 
 names = ("Anna", "Louis", "Carlos")
 print("Tuple:", names)

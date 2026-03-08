@@ -1,9 +1,9 @@
-"""
-12_Stacks - Monotonic Stack
-============================
-Generic monotonic stack: increasing or decreasing.
-Used for: next greater/smaller, stock span, histogram problems.
-"""
+# -------------------------------------------------
+# File Name: 12_monotonic_stack.py
+# Author: Florentino Báez
+# Date: 12_Stacks
+# Description: Monotonic stack. Pattern for next greater/smaller element problems.
+# -------------------------------------------------
 
 from typing import Callable
 

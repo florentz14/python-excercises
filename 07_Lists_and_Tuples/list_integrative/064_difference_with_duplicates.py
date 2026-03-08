@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 134. Difference Between Two Lists Including Duplicates (multiset difference)
-# ---------------------------------------------------------------------------
-# Descripción: Difference Between Two Lists Including Duplicates (multiset differe...
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 064_difference_with_duplicates.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Difference Between Two Lists Including Duplicates (multiset differe...
+# -------------------------------------------------
 
 from collections import Counter
 

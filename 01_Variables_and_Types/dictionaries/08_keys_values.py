@@ -1,14 +1,10 @@
 # -------------------------------------------------
 # File Name: 08_keys_values.py
 # Author: Florentino Báez
-# Date: Variables - Dictionaries
-# Description: Get All Keys and Values.
-#              keys() returns a view of all keys.
-#              values() returns a view of all values.
-#              Wrap with list() to get a regular list.
+# Date: 01_Variables_and_Types
+# Description: Get all keys and values with keys() and values().
 # -------------------------------------------------
 
-# Example 8: Get all keys and values
 print("Example 8: Get all keys and values")
 print("-" * 40)
 

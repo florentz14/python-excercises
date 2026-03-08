@@ -1,9 +1,9 @@
-"""
-Condicional - Ejemplo 6: Operador ternario
-==========================================
-Topic: Conditionals (02_Conditionals)
-Descripción: valor_si_true if condición else valor_si_false (en una línea).
-"""
+# -------------------------------------------------
+# File Name: 06_ternary.py
+# Author: Florentino Báez
+# Date: 02_Conditionals
+# Description: valor_si_true if condición else valor_si_false (en una línea).
+# -------------------------------------------------
 
 edad = 20
 

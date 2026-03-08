@@ -1,9 +1,9 @@
-"""
-16_Files - Exercise 17: Working with temporary files using tempfile
-==================================================================
-Temporary files are useful for scripts, testing, and intermediate data.
-They are automatically cleaned up when closed (or on program exit).
-"""
+# -------------------------------------------------
+# File Name: 17_temp_files.py
+# Author: Florentino Báez
+# Date: 16_Files
+# Description: Temporary files. tempfile module for transient files.
+# -------------------------------------------------
 
 import tempfile
 import os

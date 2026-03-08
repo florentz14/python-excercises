@@ -1,8 +1,10 @@
-# Exercise 3: 3-Column Fruit Table
-# Create a table of fruit names organized in 3 columns using
-# f-string formatting with appropriate column widths.
+# -------------------------------------------------
+# File Name: 18_table_3_column_fruits.py
+# Author: Florentino Báez
+# Date: 01_Variables_and_Types
+# Description: Table of fruit names in 3 columns using
+# -------------------------------------------------
 
-# Variables for fruits
 fruit1 = "Apple"
 fruit2 = "Banana"
 fruit3 = "Cherry"

@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 200. Pair Consecutive Elements: [1,2,3,4,5,6] -> [[1,2],[2,3],[3,4],[4,5],[5,6]]
-# ---------------------------------------------------------------------------
-# Descripción: Pair Consecutive Elements: [1,2,3,4,5,6] -> [[1,2],[2,3],[3,4],[4,5...
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 098_pair_consecutive.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Pair Consecutive Elements: [1,2,3,4,5,6] -> [[1,2],[2,3],[3,4],[4,5...
+# -------------------------------------------------
 
 def pair_consecutive(lst: list) -> list[list]:
     # Lista por comprensión: se construye la lista a partir del iterable.

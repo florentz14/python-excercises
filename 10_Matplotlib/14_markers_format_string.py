@@ -1,7 +1,7 @@
 # -------------------------------------------------
-# File Name: 03e_markers_format_string.py
+# File Name: 14_markers_format_string.py
 # Author: Florentino Báez
-# Date: Matplotlib
+# Date: 10_Matplotlib
 # Description: Format string shortcut with markers (r*-, g^--, bs:).
 # -------------------------------------------------
 

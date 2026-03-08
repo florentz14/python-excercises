@@ -1,11 +1,9 @@
-# ---------------------------------------------------------------------------
-# Tuplas - 02: Access Tuples (Acceder a Elementos)
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 02_access_tuples.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
 # Description: Access tuple elements using index numbers. Positive indices
-#              start at 0 from the left. Negative indices start at -1 from
-#              the right. Use slicing to get a range of elements.
-# Syntax:      tuple[index]  /  tuple[start:end]  /  tuple[start:end:step]
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
 
 fruits = ("apple", "banana", "cherry", "pineapple", "grape", "mango", "kiwi")
 #  index:   0        1         2          3           4        5        6

@@ -1,12 +1,10 @@
-"""
-16_Files - Exercise 14: File pointer operations with seek() and tell()
-======================================================================
-seek() moves the file pointer to a specific position.
-tell() returns the current position of the file pointer.
-Useful for binary files, random access, and log parsing.
-"""
+# -------------------------------------------------
+# File Name: 14_file_seek_tell.py
+# Author: Florentino Báez
+# Date: 16_Files
+# Description: File seek and tell. Random access with seek() and tell().
+# -------------------------------------------------
 
-# Create a sample file
 filename = "seek_tell_example.txt"
 content = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 

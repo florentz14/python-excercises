@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 141. Remove Empty Lists from Nested List
-# ---------------------------------------------------------------------------
-# Descripción: Remove Empty Lists from Nested List
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 28_remove_empty_from_nested.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Remove Empty Lists from Nested List
+# -------------------------------------------------
 
 def remove_empty_lists(lst: list) -> list:
     # Lista por comprensión: se incluyen solo los elementos que cumplen la condición.

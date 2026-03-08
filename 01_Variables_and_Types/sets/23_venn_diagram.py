@@ -1,12 +1,8 @@
 # -------------------------------------------------
 # File Name: 23_venn_diagram.py
 # Author: Florentino Báez
-# Date: Variables - Sets
+# Date: 01_Variables_and_Types
 # Description: Venn Diagram Problem — Language Students.
-#              Solves a real-world problem using set theory:
-#              given total students, English, French, and both,
-#              calculates only-English, only-French, and neither.
-#              Includes an ASCII Venn diagram.
 # -------------------------------------------------
 
 """

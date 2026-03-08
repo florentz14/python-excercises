@@ -1,5 +1,9 @@
-# Archivo: 33_06_comparar_metodos.py
-# Descripción: Comparación de métodos de resolución
+# -------------------------------------------------
+# File Name: 32_compare_methods.py
+# Author: Florentino Báez
+# Date: 17_Equations
+# Description: Compare solution methods.
+# -------------------------------------------------
 
 import numpy as np
 

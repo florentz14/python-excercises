@@ -1,10 +1,9 @@
-"""
-13_Queues - Priority Queue as a class
-=======================================
-Custom implementation: push, pop, peek, size.
-Uses a list + sort (simple) or could use heapq internally.
-For production: use heapq or queue.PriorityQueue.
-"""
+# -------------------------------------------------
+# File Name: 10_priority_queue_class.py
+# Author: Florentino Báez
+# Date: 13_Queues
+# Description: Priority queue class. Heap-based implementation.
+# -------------------------------------------------
 
 import heapq
 

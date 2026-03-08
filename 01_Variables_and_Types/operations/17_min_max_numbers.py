@@ -1,4 +1,9 @@
-# Min Max Numbers in Python
+# -------------------------------------------------
+# File Name: 17_min_max_numbers.py
+# Author: Florentino Báez
+# Date: 01_Variables_and_Types
+# Description: Finds min and max with built-ins and manual loop.
+# -------------------------------------------------
 
 def find_min_max(numbers):
     """Find minimum and maximum in a list"""

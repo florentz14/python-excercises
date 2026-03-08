@@ -1,11 +1,8 @@
 # -------------------------------------------------
 # File Name: 20_subsets.py
 # Author: Florentino Báez
-# Date: Variables - Sets
+# Date: 01_Variables_and_Types
 # Description: Subsets of a Set.
-#              Generates all 2^n subsets of a given set using
-#              itertools.combinations. Explains the difference
-#              between proper subsets and improper subsets.
 # -------------------------------------------------
 
 """

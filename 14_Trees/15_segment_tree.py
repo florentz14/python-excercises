@@ -1,11 +1,9 @@
-"""
-14_Trees - Segment Tree
-========================
-Range queries: sum, min, max over array intervals.
-Build O(n), query/update O(log n).
-Used in competitive programming, interval analysis.
-"""
-
+# -------------------------------------------------
+# File Name: 15_segment_tree.py
+# Author: Florentino Báez
+# Date: 14_Trees
+# Description: Segment tree for range queries (sum, min, max) over intervals.
+# -------------------------------------------------
 
 class SegmentTree:
     """Segment tree for range queries (sum, min, max)."""

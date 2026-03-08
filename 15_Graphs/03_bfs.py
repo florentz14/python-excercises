@@ -1,9 +1,9 @@
-"""
-Grafos - Ejemplo 3: BFS (recorrido en anchura)
-===============================================
-Topic: 15_Graphs
-Descripción: Recorrer el grafo desde un vértice con cola (niveles).
-"""
+# -------------------------------------------------
+# File Name: 03_bfs.py
+# Author: Florentino Báez
+# Date: 15_Graphs
+# Description: Grafos - Ejemplo 3: BFS (recorrido en anchura) =============================================== Topic: 15_Graphs
+# -------------------------------------------------
 
 from collections import deque
 

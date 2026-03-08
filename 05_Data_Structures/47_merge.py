@@ -1,15 +1,9 @@
 # -------------------------------------------------
 # File Name: 47_merge.py
 # Author: Florentino Báez
-# Date: Data Structures - Sorting Algorithms
-# Description: Merge Sort.
-#              Recursively divides the list in half until
-#              sublists of one element, then merges them
-#              in order. Divide and conquer paradigm.
-#              Guarantees O(n log n) in all cases.
-#              Complexity: O(n log n). Stable. Space O(n).
+# Date: 05_Data_Structures
+# Description: Merge Sort. Divide and conquer; merges sorted halves. O(n log n). Stable.
 # -------------------------------------------------
-
 
 def merge_sort(lista):
     """Divide and conquer: divide, sort halves, merge."""

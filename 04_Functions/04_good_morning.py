@@ -1,7 +1,8 @@
 # -------------------------------------------------
-# File: 04_good_morning.py
+# File Name: 04_good_morning.py
+# Author: Florentino Báez
+# Date: 04_Functions
 # Description: Good morning greeting function.
-#              Basic function without parameters.
 # -------------------------------------------------
 
 def good_morning() -> None:

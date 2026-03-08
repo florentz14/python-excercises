@@ -1,8 +1,9 @@
-# ------------------------------------------------------------
-# File: 36_numpy_broadcasting.py
-# Purpose: NumPy broadcasting.
+# -------------------------------------------------
+# File Name: 48_broadcasting.py
+# Author: Florentino Báez
+# Date: 08_Matrices
 # Description: Expand dimensions to allow v+scalar, matrix+vector, etc.
-# ------------------------------------------------------------
+# -------------------------------------------------
 
 import numpy as np
 

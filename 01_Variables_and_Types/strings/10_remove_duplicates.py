@@ -1,8 +1,9 @@
-# ------------------------------------------------------------
-# File: 10_remove_duplicates.py
-# Purpose: Remove duplicate characters (preserve order).
-# Description: First occurrence kept. "banana" -> "ban".
-# ------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 10_remove_duplicates.py
+# Author: Florentino Báez
+# Date: 01_Variables_and_Types
+# Description: Remove duplicate characters while preserving order.
+# -------------------------------------------------
 
 def remove_duplicates(s: str) -> str:
     seen = set()

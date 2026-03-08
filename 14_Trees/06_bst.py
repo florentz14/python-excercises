@@ -1,8 +1,9 @@
-"""
-14_Trees - Binary search tree (BST)
-=============================================
-ArbolBST: es_bst, encontrar_minimo, encontrar_maximo.
-"""
+# -------------------------------------------------
+# File Name: 06_bst.py
+# Author: Florentino Báez
+# Date: 14_Trees
+# Description: Binary search tree: ArbolBST with validation, find min/max.
+# -------------------------------------------------
 
 from traversals import ArbolRecorridos
 

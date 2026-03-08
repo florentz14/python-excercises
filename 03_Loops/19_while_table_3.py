@@ -1,8 +1,9 @@
-"""While loop: Multiplication table of 3.
-Prints 3 × n for n from 1 to 10.
-"""
+# -------------------------------------------------
+# File Name: 19_while_table_3.py
 # Author: Florentino Báez
-
+# Date: 03_Loops
+# Description: Multiplication table of 3.
+# -------------------------------------------------
 
 count = 1
 

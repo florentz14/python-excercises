@@ -1,7 +1,8 @@
 # -------------------------------------------------
-# File: 36_timer_decorator.py
+# File Name: 36_timer_decorator.py
+# Author: Florentino Báez
+# Date: 04_Functions
 # Description: Timer decorator for execution time.
-#              Measure function performance.
 # -------------------------------------------------
 
 import time

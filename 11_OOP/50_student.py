@@ -1,5 +1,9 @@
-# 23_simple_student.py - Simple class: Student
-# Florentino Baez - ITSE-1002
+# -------------------------------------------------
+# File Name: 50_student.py
+# Author: Florentino Báez
+# Date: 11_OOP
+# Description: Simple Student class with name, grade, __str__ and passed().
+# -------------------------------------------------
 
 class Student:
     """Class with attributes and __str__."""

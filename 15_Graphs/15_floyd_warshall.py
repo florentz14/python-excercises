@@ -1,11 +1,9 @@
-"""
-15_Graphs - Floyd-Warshall algorithm
-=======================================
-All-pairs shortest path. Works with negative weights (no negative cycles).
-Used in: transitive closure, shortest path between all pairs.
-Complexity: O(V^3)
-"""
-
+# -------------------------------------------------
+# File Name: 15_floyd_warshall.py
+# Author: Florentino Báez
+# Date: 15_Graphs
+# Description: 15_Graphs - Floyd-Warshall algorithm ======================================= All-pairs shortest path. Works with negative weights (no negative cycles).
+# -------------------------------------------------
 
 def floyd_warshall(n: int, edges: list[tuple[int, int, float]]) -> list[list[float]]:
     """Returns n x n matrix of shortest distances. edges: (u, v, weight)."""

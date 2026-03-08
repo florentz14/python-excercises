@@ -1,4 +1,9 @@
-# Browser History Navigator using Stacks
+# -------------------------------------------------
+# File Name: 08_browser_history.py
+# Author: Florentino Báez
+# Date: 12_Stacks
+# Description: Browser history. Back/forward navigation with stack.
+# -------------------------------------------------
 
 class Stack:
     """Basic stack implementation"""

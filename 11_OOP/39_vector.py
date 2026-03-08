@@ -1,10 +1,9 @@
-"""
-Clase Vector (listas)
-=====================
-Topic: 11_OOP - Simple classes
-Descripción: Vector con listas; add() y scale().
-"""
-
+# -------------------------------------------------
+# File Name: 39_vector.py
+# Author: Florentino Báez
+# Date: 11_OOP
+# Description: Vector class using lists.
+# -------------------------------------------------
 
 class Vector:
     def __init__(self, values):

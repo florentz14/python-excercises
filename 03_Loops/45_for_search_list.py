@@ -1,8 +1,9 @@
-"""For loop: Search in list.
-Checks if a value exists; uses break when found.
-"""
+# -------------------------------------------------
+# File Name: 45_for_search_list.py
 # Author: Florentino Báez
-
+# Date: 03_Loops
+# Description: Search in list.
+# -------------------------------------------------
 
 numbers = [10, 20, 30, 40, 50]
 search = 30

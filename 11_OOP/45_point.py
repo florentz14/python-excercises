@@ -1,5 +1,9 @@
-# 18_simple_punto.py - Simple class: Point (2D coordinates)
-# Florentino Baez - ITSE-1002
+# -------------------------------------------------
+# File Name: 45_point.py
+# Author: Florentino Báez
+# Date: 11_OOP
+# Description: 2D Point class with __str__ for readable output.
+# -------------------------------------------------
 
 class Point:
     """Minimal class with __str__ for print."""

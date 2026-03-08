@@ -1,11 +1,9 @@
-"""
-13_Queues - BFS Shortest Path
-================================
-Find shortest path in unweighted graphs using a queue.
-Applications: maps, mazes, games.
-
-Time: O(V + E)
-"""
+# -------------------------------------------------
+# File Name: 13_bfs_shortest_path.py
+# Author: Florentino Báez
+# Date: 13_Queues
+# Description: BFS shortest path. Unweighted graph shortest path.
+# -------------------------------------------------
 
 from collections import deque
 

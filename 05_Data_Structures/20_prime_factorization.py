@@ -1,17 +1,9 @@
 # -------------------------------------------------
-# File: 20_factorizacion.py (Prime Factorization & Divisor Count)
-# -------------------------------------------------
+# File Name: 20_prime_factorization.py
 # Author: Florentino Báez
-# Module: Data Structures - Mathematical Algorithms
-#
-# Description:
-#   Prime factorization by trial division: divide n by the smallest
-#   prime divisor until n=1. Also: unique prime factors and total
-#   divisor count (using exponents in factorization).
-#
-# Complexity: O(√n).
+# Date: 05_Data_Structures
+# Description: Prime factorization. Decomposes integer into product of primes.
 # -------------------------------------------------
-
 
 def factorize(n):
     """Returns list of prime factors (with duplicates)."""

@@ -1,11 +1,8 @@
 # -------------------------------------------------
 # File Name: 08_sort_reverse.py
 # Author: Florentino Báez
-# Date: Variables - Lists
+# Date: 01_Variables_and_Types
 # Description: Sort and Reverse a List.
-#              sort() sorts in place (ascending by default).
-#              reverse() reverses in place. Both modify the
-#              original list and return None.
 # -------------------------------------------------
 
 print("Example 8: Sort and reverse")

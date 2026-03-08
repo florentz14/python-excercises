@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 157. Interleave Lists of Varying Lengths (cycle through until all exhausted)
-# ---------------------------------------------------------------------------
-# Descripción: Interleave Lists of Varying Lengths (cycle through until all exhaus...
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 073_interleave_varying_lengths.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Interleave Lists of Varying Lengths (cycle through until all exhaus...
+# -------------------------------------------------
 
 def interleave_varying(*lists: list) -> list:
     result = []

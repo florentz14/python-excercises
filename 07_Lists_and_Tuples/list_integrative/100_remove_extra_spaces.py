@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 206. Remove Additional/Extra Spaces from List (strip each string)
-# ---------------------------------------------------------------------------
-# Descripción: Remove Additional/Extra Spaces from List (strip each string)
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 100_remove_extra_spaces.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Remove Additional/Extra Spaces from List (strip each string)
+# -------------------------------------------------
 
 def remove_extra_spaces(lst: list[str]) -> list[str]:
     # Se devuelve un valor u otro según la condición.

@@ -1,19 +1,9 @@
 # -------------------------------------------------
-# File: 06_interval_scheduling.py (Weighted Interval Scheduling)
-# -------------------------------------------------
+# File Name: 06_interval_scheduling.py
 # Author: Florentino Báez
-# Module: Data Structures - Greedy Algorithms
-#
-# Description:
-#   Weighted Interval Scheduling: select non-overlapping intervals
-#   that maximize the sum of weights. Uses DP: for each interval,
-#   either take it (plus best weight from compatible intervals)
-#   or skip it. Simplified version; full algorithm uses binary
-#   search for compatible intervals.
-#
-# Complexity: O(n log n) with sorting; O(n^2) in this implementation.
+# Date: 05_Data_Structures
+# Description: Weighted Interval Scheduling. Select non-overlapping intervals to maximize sum of weights. Uses dynamic programming. O(n log n) with sorting.
 # -------------------------------------------------
-
 
 def weighted_interval_scheduling(intervals):
     """

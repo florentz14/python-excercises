@@ -1,15 +1,9 @@
 # -------------------------------------------------
 # File Name: 45_selection.py
 # Author: Florentino Báez
-# Date: Data Structures - Sorting Algorithms
-# Description: Selection Sort.
-#              In each iteration finds the minimum element of the
-#              unsorted subarray and swaps it with the first
-#              element of that subarray. Always does O(n²)
-#              comparisons regardless of the case.
-#              Complexity: O(n²). Not stable. In-place.
+# Date: 05_Data_Structures
+# Description: Selection Sort. Repeatedly selects minimum and places at front. O(n²).
 # -------------------------------------------------
-
 
 def selection_sort(lista):
     """At each step places the minimum of the rest at the current position."""

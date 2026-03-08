@@ -1,7 +1,7 @@
 # -------------------------------------------------
-# File Name: 10d_hist_overlapping.py
+# File Name: 54_hist_overlapping.py
 # Author: Florentino Báez
-# Date: Matplotlib
+# Date: 10_Matplotlib
 # Description: Multiple overlapping histograms (two groups).
 # -------------------------------------------------
 

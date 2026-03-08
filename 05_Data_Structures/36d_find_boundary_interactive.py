@@ -1,14 +1,9 @@
-# ------------------------------------------------------------
-# File: 36d_find_boundary_interactive.py
-# Find First True - Interactive version (matches the script from the image)
-#
-# Input: space-separated "true" or "false" (e.g. "false false true true")
-# Output: index of first True, or -1
-#
-# Run: python 36d_find_boundary_interactive.py
-#      Then enter: false false true true
-# ------------------------------------------------------------
-
+# -------------------------------------------------
+# File Name: 36d_find_boundary_interactive.py
+# Author: Florentino Báez
+# Date: 05_Data_Structures
+# Description: Find boundary (interactive binary search). First True in boolean array.
+# -------------------------------------------------
 
 def find_boundary(arr: list[bool]) -> int:
     """Index of first True in boolean list, or -1."""

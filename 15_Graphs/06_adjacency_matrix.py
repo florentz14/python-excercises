@@ -1,9 +1,9 @@
-"""
-15_Graphs - Graph with adjacency matrix
-===========================================
-GrafoMatrizAdyacencia: representación con matriz, nodos con índices.
-"""
-
+# -------------------------------------------------
+# File Name: 06_adjacency_matrix.py
+# Author: Florentino Báez
+# Date: 15_Graphs
+# Description: 15_Graphs - Graph with adjacency matrix =========================================== GrafoMatrizAdyacencia: representación con matriz, nodos con índices.
+# -------------------------------------------------
 
 class GrafoMatrizAdyacencia:
     """Grafo implementado con matriz de adyacencia."""

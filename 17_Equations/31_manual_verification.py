@@ -1,5 +1,9 @@
-# Archivo: 33_05_verificacion_manual.py
-# Descripción: Verificación manual de la solución ecuación por ecuación
+# -------------------------------------------------
+# File Name: 31_manual_verification.py
+# Author: Florentino Báez
+# Date: 17_Equations
+# Description: Manual verification of solution equation by equation.
+# -------------------------------------------------
 
 import numpy as np
 

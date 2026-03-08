@@ -1,9 +1,9 @@
-"""
-While loop: Simple menu (1=hello, 2=bye, 0=exit).
-Repeats menu until user chooses to exit.
-
+# -------------------------------------------------
+# File Name: 95_while_menu_loop.py
 # Author: Florentino Báez
-"""
+# Date: 03_Loops
+# Description: Simple menu (1=hello, 2=bye, 0=exit).
+# -------------------------------------------------
 
 while True:
     print("\nMenu: 1=Hello | 2=Bye | 0=Exit")

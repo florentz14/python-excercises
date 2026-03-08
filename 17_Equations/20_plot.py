@@ -1,5 +1,9 @@
-# Archivo: 31_04_graficar.py
-# Descripción: Graficar función y área bajo la curva (integral)
+# -------------------------------------------------
+# File Name: 20_plot.py
+# Author: Florentino Báez
+# Date: 17_Equations
+# Description: Plot function and area under curve (integral).
+# -------------------------------------------------
 
 import numpy as np
 import matplotlib.pyplot as plt

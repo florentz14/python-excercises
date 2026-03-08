@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 18. Generate All Permutations of a List
-# ---------------------------------------------------------------------------
-# Descripción: Generate All Permutations of a List
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 01_generate_permutations.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Generate All Permutations of a List
+# -------------------------------------------------
 
 import itertools
 

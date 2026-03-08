@@ -1,8 +1,9 @@
-﻿# ------------------------------------------------------------
-# File: 19_naive_pattern_search.py
-# Purpose: Brute force substring search.
-# Description: Try each starting position. O(n*m).
-# ------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 19_naive_pattern_search.py
+# Author: Florentino Báez
+# Date: 01_Variables_and_Types
+# Description: Brute force substring search. Try each starting position.
+# -------------------------------------------------
 
 def naive_search(text: str, pattern: str) -> list[int]:
     n, m = len(text), len(pattern)

@@ -1,9 +1,9 @@
-"""
-LeetCode 111 - Minimum Depth of Binary Tree
-============================================
-Concept: BFS (level order). First leaf reached = min depth.
-Time: O(n), Space: O(n)
-"""
+# -------------------------------------------------
+# File Name: 02_min_depth.py
+# Author: Florentino Báez
+# Date: 14_Trees
+# Description: LeetCode 111 - Minimum depth via BFS (first leaf = min depth).
+# -------------------------------------------------
 
 from collections import deque
 from common import TreeNode

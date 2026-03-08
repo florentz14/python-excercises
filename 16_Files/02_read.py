@@ -1,8 +1,9 @@
-"""
-16_Files - Exercise 02: Read a file
-===================================
-open() with mode "r" (default) opens for reading.
-"""
+# -------------------------------------------------
+# File Name: 02_read.py
+# Author: Florentino Báez
+# Date: 16_Files
+# Description: Read a file. open() with mode 'r'. read(), readline(), and iteration over lines.
+# -------------------------------------------------
 
 filename = "example_01.txt"
 

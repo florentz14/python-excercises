@@ -1,11 +1,9 @@
-# ---------------------------------------------------------------------------
-# 9. Clone or Copy a List
-# ---------------------------------------------------------------------------
-# Descripción: Crea una copia de la lista para que cambios en la copia
-#              no afecten a la original (y al revés).
-# Entrada: Lista original.
-# Salida: Nueva lista con los mismos elementos (objeto distinto en memoria).
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 011_clone_copy_list.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Crea una copia de la lista para que cambios en la copia
+# -------------------------------------------------
 
 def clone_list(lst: list) -> list:
     # .copy() crea una nueva lista con los mismos elementos (copia superficial)

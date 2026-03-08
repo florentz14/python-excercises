@@ -1,11 +1,9 @@
-"""
-K-Means Clustering - Unsupervised Grouping
-==========================================
-Groups data into K clusters without labels.
-Discovers natural groups in the data.
-
-Author: Florentino Báez
-"""
+# -------------------------------------------------
+# File Name: 31_kmeans.py
+# Author: Florentino Báez
+# Date: 21_Machine_Learning
+# Description: K-Means clustering for unsupervised grouping.
+# -------------------------------------------------
 
 from sklearn.cluster import KMeans
 

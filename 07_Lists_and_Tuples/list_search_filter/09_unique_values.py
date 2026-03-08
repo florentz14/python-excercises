@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 29. Get Unique Values from List (preserve order)
-# ---------------------------------------------------------------------------
-# Descripción: Get Unique Values from List (preserve order)
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 09_unique_values.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Get Unique Values from List (preserve order)
+# -------------------------------------------------
 
 def unique_values(lst: list) -> list:
     # Se construye list/set/dict a partir del iterable (elimina duplicados en set/dict).

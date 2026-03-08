@@ -1,11 +1,10 @@
-# ---------------------------------------------------------------------------
-# Part 1: Lists - Exercise 4
-# ---------------------------------------------------------------------------
-# Descripción: Añadir la cadena 'Python' al final de la lista usando
-#              el método .append().
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 005_append.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Añadir la cadena 'Python' al final de la lista usando
+# -------------------------------------------------
 
-# Lista de lenguajes
 langs = ['Java', 'C++', 'Ruby']
 # append() añade un único elemento al final de la lista
 langs.append('Python')

@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 229. First Index Where Element Satisfies Function
-# ---------------------------------------------------------------------------
-# Descripción: First Index Where Element Satisfies Function
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 52_first_index_satisfying.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: First Index Where Element Satisfies Function
+# -------------------------------------------------
 
 def first_index_where(lst: list, predicate) -> int:
     for i, x in enumerate(lst):

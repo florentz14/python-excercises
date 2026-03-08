@@ -1,8 +1,9 @@
-# ------------------------------------------------------------
-# File: 06_reverse_string.py
-# Purpose: Reverse a string.
-# Description: Multiple approaches: slicing, loop, two pointers.
-# ------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 06_reverse_string.py
+# Author: Florentino Báez
+# Date: 01_Variables_and_Types
+# Description: Reverse a string via slicing, loop, and two pointers.
+# -------------------------------------------------
 
 def reverse_slice(s: str) -> str:
     return s[::-1]

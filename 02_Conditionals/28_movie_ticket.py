@@ -1,9 +1,9 @@
-"""
-Simple conditional: Movie ticket price by age
-=============================================
-Topic: Conditionals (02_Conditionals)
-Description: Different prices for child, adult, senior.
-"""
+# -------------------------------------------------
+# File Name: 28_movie_ticket.py
+# Author: Florentino Báez
+# Date: 02_Conditionals
+# Description: Movie ticket price by age
+# -------------------------------------------------
 
 age = int(input("Enter age: "))
 

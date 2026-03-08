@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 192. Remove All Strings from List of Tuples
-# ---------------------------------------------------------------------------
-# Descripción: Remove All Strings from List of Tuples
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 17_remove_strings_from_tuples.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Remove All Strings from List of Tuples
+# -------------------------------------------------
 
 def remove_strings_from_tuples(tuples: list[tuple]) -> list[tuple]:
     # Lista por comprensión: se incluyen solo los elementos que cumplen la condición.

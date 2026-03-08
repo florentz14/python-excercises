@@ -1,7 +1,8 @@
 # -------------------------------------------------
 # File Name: 31_modify_sets.py
-# Purpose: Summary of set modification methods
-# Description: add(), remove(), discard(), pop(), clear() with examples.
+# Author: Florentino Báez
+# Date: 01_Variables_and_Types
+# Description: Summary of set modification methods: add(), remove(),
 # -------------------------------------------------
 
 print("Set Modification Methods")

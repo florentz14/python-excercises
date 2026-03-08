@@ -1,9 +1,9 @@
-"""
-if.py - Ejemplo 4: Par o impar
-==============================
-Topic: Conditionals (02_Conditionals)
-Descripción: if/else con num % 2 == 0 para par/impar.
-"""
+# -------------------------------------------------
+# File Name: 12_even_odd.py
+# Author: Florentino Báez
+# Date: 02_Conditionals
+# Description: if/else con num % 2 == 0 para par/impar.
+# -------------------------------------------------
 
 print("Example 4: Even or Odd")
 print("-" * 40)

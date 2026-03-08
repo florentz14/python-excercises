@@ -1,19 +1,9 @@
-"""
-Maximum Sum Subarray - Brute force version
-==========================================
-Topic: Operations (01_Variables_and_Types/operations)
-Description: Find the maximum sum of any subarray of size k. Brute force approach:
-for each possible window of size k, calculate the sum from scratch.
-
-Input:  First line: space-separated numbers
-        Second line: window size k
-Output: Maximum sum of any subarray of size k
-
-Complexity:
-    Time:   O(n * k) - For each of (n - k + 1) windows, we sum k elements
-    Space:  O(1)
-"""
-
+# -------------------------------------------------
+# File Name: 33_max_subarray_sum_bruteforce.py
+# Author: Florentino Báez
+# Date: 01_Variables_and_Types
+# Description: Maximum sum of fixed-size subarray using brute force.
+# -------------------------------------------------
 
 def subarray_sum_bruteforce(nums: list[int], k: int) -> int:
     """

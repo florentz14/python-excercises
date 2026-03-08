@@ -1,7 +1,7 @@
 # -------------------------------------------------
-# File Name: 02e_plotting_from_dict.py
+# File Name: 09_plotting_from_dict.py
 # Author: Florentino Báez
-# Date: Matplotlib
+# Date: 10_Matplotlib
 # Description: Plotting from a dictionary (data= parameter).
 # -------------------------------------------------
 

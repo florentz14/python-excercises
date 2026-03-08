@@ -1,8 +1,9 @@
-"""
-15_Graphs - Weighted graph: shortest path and minimum spanning tree
-=======================================================================
-GrafoPonderado: camino_minimo (Dijkstra), arbol_expansion_minima (Prim).
-"""
+# -------------------------------------------------
+# File Name: 11_weighted_complete.py
+# Author: Florentino Báez
+# Date: 15_Graphs
+# Description: 15_Graphs - Weighted graph: shortest path and minimum spanning tree ======================================================================= GrafoPonderado: camino_minimo (Dijkstra), arbol_expansion_mi
+# -------------------------------------------------
 
 from adjacency_list import GrafoListaAdyacencia
 

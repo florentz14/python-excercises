@@ -1,7 +1,7 @@
 # -------------------------------------------------
-# File Name: 50_auto_hp_scatter.py
+# File Name: 103_auto_hp_scatter.py
 # Author: Florentino Báez
-# Date: Matplotlib
+# Date: 10_Matplotlib
 # Description: Scatter plot of horsepower vs MPG by cylinders.
 # -------------------------------------------------
 

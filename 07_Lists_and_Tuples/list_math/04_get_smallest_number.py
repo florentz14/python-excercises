@@ -1,10 +1,9 @@
-# ---------------------------------------------------------------------------
-# 4. Get Smallest Number in List
-# ---------------------------------------------------------------------------
-# Descripción: Obtiene el número más pequeño de una lista.
-# Entrada: Lista de números.
-# Salida: El valor mínimo (un solo número).
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 04_get_smallest_number.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Obtiene el número más pequeño de una lista.
+# -------------------------------------------------
 
 def get_smallest(lst: list[int | float]) -> int | float:
     # min() es una función built-in que devuelve el elemento menor de la lista

@@ -1,7 +1,7 @@
 # -------------------------------------------------
-# File Name: 16_employees_salary_hist.py
+# File Name: 69_employees_salary_hist.py
 # Author: Florentino Báez
-# Date: Matplotlib
+# Date: 10_Matplotlib
 # Description: Histogram — Salary Distribution with Mean and Median Lines.
 # -------------------------------------------------
 

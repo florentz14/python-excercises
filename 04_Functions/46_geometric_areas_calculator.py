@@ -1,8 +1,9 @@
-"""
-Ejercicio: Cálculo de Áreas de Figuras Geométricas
-
-Programa que calcula el área de diferentes figuras geométricas.
-"""
+# -------------------------------------------------
+# File Name: 46_geometric_areas_calculator.py
+# Author: Florentino Báez
+# Date: 04_Functions
+# Description: Cálculo de Áreas de Figuras Geométricas
+# -------------------------------------------------
 
 import math
 

@@ -1,15 +1,9 @@
 # -------------------------------------------------
-# File: 21_conversion_bases.py (Numeric Base Conversion)
-# -------------------------------------------------
+# File Name: 21_base_conversion.py
 # Author: Florentino Báez
-# Module: Data Structures - Mathematical Algorithms
-#
-# Description:
-#   Converts numbers between bases (binary, octal, decimal, hex).
-#   Step 1: Convert from source base to decimal (if needed).
-#   Step 2: Convert from decimal to target base by successive division.
+# Date: 05_Data_Structures
+# Description: Base conversion. Converts numbers between different numeral bases.
 # -------------------------------------------------
-
 
 def convert_base(n, target_base, source_base=10):
     """

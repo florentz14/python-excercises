@@ -1,8 +1,9 @@
-# ------------------------------------------------------------
-# File: 50_array_arange_linspace.py
-# Purpose: Create sequences: arange, linspace.
+# -------------------------------------------------
+# File Name: 79_arange_linspace.py
+# Author: Florentino Báez
+# Date: 08_Matrices
 # Description: arange(start, stop, step); linspace for N evenly spaced values.
-# ------------------------------------------------------------
+# -------------------------------------------------
 
 import numpy as np
 

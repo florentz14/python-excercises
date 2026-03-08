@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 12. Remove 0th, 4th and 5th elements
-# ---------------------------------------------------------------------------
-# Descripción: Remove 0th, 4th and 5th elements
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 015_remove_specific_elements.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Remove 0th, 4th and 5th elements
+# -------------------------------------------------
 
 sample = ['Red', 'Green', 'White', 'Black', 'Pink', 'Yellow']
 # Remove indices 0, 4, 5 -> keep 1, 2, 3

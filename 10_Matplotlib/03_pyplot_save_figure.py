@@ -1,7 +1,7 @@
 # -------------------------------------------------
-# File Name: 01c_pyplot_save_figure.py
+# File Name: 03_pyplot_save_figure.py
 # Author: Florentino Báez
-# Date: Matplotlib
+# Date: 10_Matplotlib
 # Description: Saving a figure to file demo.
 # -------------------------------------------------
 

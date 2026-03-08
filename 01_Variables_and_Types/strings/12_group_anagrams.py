@@ -1,8 +1,9 @@
-# ------------------------------------------------------------
-# File: 12_group_anagrams.py
-# Purpose: Group anagrams together.
-# Description: Use sorted tuple as key. O(n*k*log k).
-# ------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 12_group_anagrams.py
+# Author: Florentino Báez
+# Date: 01_Variables_and_Types
+# Description: Group anagrams together using sorted tuple as key.
+# -------------------------------------------------
 
 from collections import defaultdict
 

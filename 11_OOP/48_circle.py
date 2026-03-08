@@ -1,20 +1,9 @@
-# ------------------------------------------------------------
-# File: 21_simple_circle.py
-# OOP: Class Circle with private attributes and encapsulation
-#
-# Purpose:
-#   Demonstrates:
-#   - Private attributes (name mangling: __attr -> _ClassName__attr)
-#   - Getter and setter methods
-#   - Validation in setter (type and positive value)
-#   - Area and perimeter calculations
-#
-# Note:
-#   __radius is name-mangled to _Circle__radius. In general: _ClassName__attr.
-#   This is not true privacy; it avoids accidental overrides in subclasses.
-#
-# Author: Florentino Baez (adapted)
-# ------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 48_circle.py
+# Author: Florentino Báez
+# Date: 11_OOP
+# Description: Circle class with private radius, getter/setter validation,
+# -------------------------------------------------
 
 import math
 

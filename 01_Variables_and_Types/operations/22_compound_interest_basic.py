@@ -1,4 +1,9 @@
-# Compound Interest Calculations in Python
+# -------------------------------------------------
+# File Name: 22_compound_interest_basic.py
+# Author: Florentino Báez
+# Date: 01_Variables_and_Types
+# Description: Compound interest with configurable compounding frequency.
+# -------------------------------------------------
 
 def calculate_compound_interest(principal, rate, time, compounding_frequency=1):
     """

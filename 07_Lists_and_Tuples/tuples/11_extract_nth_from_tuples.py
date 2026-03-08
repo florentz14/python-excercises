@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 114. Extract n-th Element from List of Tuples
-# ---------------------------------------------------------------------------
-# Descripción: Extract n-th Element from List of Tuples
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 11_extract_nth_from_tuples.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Extract n-th Element from List of Tuples
+# -------------------------------------------------
 
 def extract_nth(tuples: list[tuple], n: int) -> list:
     # Lista por comprensión: se incluyen solo los elementos que cumplen la condición.

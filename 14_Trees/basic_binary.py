@@ -1,7 +1,10 @@
-"""
-Helper module: re-exports ArbolBinario, NodoArbol from 04_basic_binary.
-Python cannot import modules whose names start with a number.
-"""
+# -------------------------------------------------
+# File Name: basic_binary.py
+# Author: Florentino Báez
+# Date: 14_Trees
+# Description: Re-exports ArbolBinario, NodoArbol from 04_basic_binary.
+# -------------------------------------------------
+
 import importlib.util
 from pathlib import Path
 

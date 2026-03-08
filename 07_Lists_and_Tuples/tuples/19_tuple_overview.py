@@ -1,12 +1,9 @@
-# ---------------------------------------------------------------------------
-# TUPPLE stores multiple items in one single variable
-# IS ORDERED AND UNCHANGEABLE
-# ---they are indexed starting at 0
-# ---unchangeable --> we cannot change, add or remove items
-# after the tuple has been created
-# ---they can have duplicates
-# ---they can have different data types
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 19_tuple_overview.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Demonstrates tuple overview.
+# -------------------------------------------------
 
 myFirstTuple = ("London", "Ankara", "Köln", 1945)
 

@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 76. Modified Run-Length Encode: single items not in [count, value]
-# ---------------------------------------------------------------------------
-# Descripción: Modified Run-Length Encode: single items not in [count, value]
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 050_modified_run_length_encode.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Modified Run-Length Encode: single items not in [count, value]
+# -------------------------------------------------
 
 def modified_rle(lst: list) -> list:
     if not lst:

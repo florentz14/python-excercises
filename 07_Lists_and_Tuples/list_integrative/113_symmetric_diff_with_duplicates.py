@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 242. Symmetric Difference Without Filtering Duplicates
-# ---------------------------------------------------------------------------
-# Descripción: Symmetric Difference Without Filtering Duplicates
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 113_symmetric_diff_with_duplicates.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Symmetric Difference Without Filtering Duplicates
+# -------------------------------------------------
 
 def symmetric_diff_keep_dupes(a: list, b: list) -> list:
     result = [x for x in a if x not in b]

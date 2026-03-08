@@ -1,7 +1,7 @@
 # -------------------------------------------------
-# File Name: 07c_subplot_grid.py
+# File Name: 35_subplot_grid.py
 # Author: Florentino Báez
-# Date: Matplotlib
+# Date: 10_Matplotlib
 # Description: 2x3 grid of subplots with trig functions.
 # -------------------------------------------------
 

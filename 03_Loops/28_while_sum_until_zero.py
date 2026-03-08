@@ -1,8 +1,9 @@
-"""While loop: Sum until zero.
-Reads numbers from user and sums until 0 is entered.
-"""
+# -------------------------------------------------
+# File Name: 28_while_sum_until_zero.py
 # Author: Florentino Báez
-
+# Date: 03_Loops
+# Description: Sum until zero.
+# -------------------------------------------------
 
 total = 0
 

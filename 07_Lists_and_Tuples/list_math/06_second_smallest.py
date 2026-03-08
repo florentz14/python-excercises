@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 27. Find Second Smallest Number in List
-# ---------------------------------------------------------------------------
-# Descripción: Find Second Smallest Number in List
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 06_second_smallest.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Find Second Smallest Number in List
+# -------------------------------------------------
 
 def second_smallest(lst: list[int | float]) -> int | float:
     uniq = sorted(set(lst))

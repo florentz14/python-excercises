@@ -1,9 +1,9 @@
-# ------------------------------------------------------------
-# File: 25_identity_trace_determinant.py
-# Purpose: Identity × matrix, trace, 2×2 determinant.
+# -------------------------------------------------
+# File Name: 25_identity_trace_determinant.py
+# Author: Florentino Báez
+# Date: 08_Matrices
 # Description: H×I = H, trace = sum of diagonal, det for 2x2.
-# ------------------------------------------------------------
-
+# -------------------------------------------------
 
 def print_matrix(matrix, name="Matrix"):
     """Print matrix with aligned columns."""

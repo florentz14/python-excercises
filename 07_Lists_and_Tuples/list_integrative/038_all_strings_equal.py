@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 57. Check If All Items in List Equal Given String
-# ---------------------------------------------------------------------------
-# Descripción: Check If All Items in List Equal Given String
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 038_all_strings_equal.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Check If All Items in List Equal Given String
+# -------------------------------------------------
 
 def all_equal_to(lst: list[str], s: str) -> bool:
     return all(x == s for x in lst)

@@ -1,9 +1,9 @@
-# ------------------------------------------------------------
-# File: 28_practical_examples.py
-# Purpose: Practical examples: image brightness, sales analysis.
+# -------------------------------------------------
+# File Name: 28_practical_examples.py
+# Author: Florentino Báez
+# Date: 08_Matrices
 # Description: Pixel scaling, Q1+Q2 sales, growth calculation.
-# ------------------------------------------------------------
-
+# -------------------------------------------------
 
 def print_matrix(matrix, name="Matrix"):
     """Print matrix with aligned columns."""

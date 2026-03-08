@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 249. Min Value After Mapping
-# ---------------------------------------------------------------------------
-# Descripción: Min Value After Mapping
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 21_min_mapped_value.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Min Value After Mapping
+# -------------------------------------------------
 
 def min_after_map(lst: list, func) -> int | float:
     return min(func(x) for x in lst)

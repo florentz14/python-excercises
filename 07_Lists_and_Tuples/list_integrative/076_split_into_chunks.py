@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 165. Split List into Specified-Sized Chunks
-# ---------------------------------------------------------------------------
-# Descripción: Split List into Specified-Sized Chunks
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 076_split_into_chunks.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Split List into Specified-Sized Chunks
+# -------------------------------------------------
 
 def chunk_list(lst: list, size: int) -> list[list]:
     # Lista por comprensión: se construye la lista a partir del iterable.

@@ -1,9 +1,9 @@
-"""
-if.py - Ejemplo 2: Elegibilidad para votar
-==========================================
-Topic: Conditionals (02_Conditionals)
-Descripción: if/else según edad >= 18.
-"""
+# -------------------------------------------------
+# File Name: 10_voting_eligibility.py
+# Author: Florentino Báez
+# Date: 02_Conditionals
+# Description: if/else según edad >= 18.
+# -------------------------------------------------
 
 print("Example 2: Voting Eligibility")
 print("-" * 40)

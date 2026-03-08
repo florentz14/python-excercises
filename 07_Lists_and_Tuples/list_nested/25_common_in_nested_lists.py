@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 122. Find Common Elements in Nested List (in all sublists)
-# ---------------------------------------------------------------------------
-# Descripción: Find Common Elements in Nested List (in all sublists)
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 25_common_in_nested_lists.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Find Common Elements in Nested List (in all sublists)
+# -------------------------------------------------
 
 def common_in_nested(lists: list[list]) -> list:
     if not lists:

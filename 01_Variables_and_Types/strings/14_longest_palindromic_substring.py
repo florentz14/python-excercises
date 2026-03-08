@@ -1,8 +1,9 @@
-# ------------------------------------------------------------
-# File: 14_longest_palindromic_substring.py
-# Purpose: Longest palindromic substring.
-# Description: Expand around center for each position. O(n^2).
-# ------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 14_longest_palindromic_substring.py
+# Author: Florentino Báez
+# Date: 01_Variables_and_Types
+# Description: Longest palindromic substring via expand-around-center.
+# -------------------------------------------------
 
 def expand(s: str, left: int, right: int) -> str:
     while left >= 0 and right < len(s) and s[left] == s[right]:

@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 252. Get n Maximum Elements from List
-# ---------------------------------------------------------------------------
-# Descripción: Get n Maximum Elements from List
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 117_n_maximum_elements.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Get n Maximum Elements from List
+# -------------------------------------------------
 
 def n_maximum(lst: list[int | float], n: int = 1) -> list:
     return sorted(lst, reverse=True)[:n]

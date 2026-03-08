@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 257. Check If Two Lists Have Same Elements (Regardless of Order)
-# ---------------------------------------------------------------------------
-# Descripción: Check If Two Lists Have Same Elements (Regardless of Order)
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 119_same_elements_regardless_order.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Check If Two Lists Have Same Elements (Regardless of Order)
+# -------------------------------------------------
 
 def same_elements(a: list, b: list) -> bool:
     # Se devuelve la cantidad de elementos.

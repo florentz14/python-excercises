@@ -1,8 +1,9 @@
-"""
-14_Trees - N-ary tree (general tree)
-==========================================
-NodoNario, ArbolNario: nodos con múltiples hijos; DFS y BFS.
-"""
+# -------------------------------------------------
+# File Name: 08_nary.py
+# Author: Florentino Báez
+# Date: 14_Trees
+# Description: N-ary tree (general tree) with multiple children; DFS and BFS.
+# -------------------------------------------------
 
 from collections import deque
 

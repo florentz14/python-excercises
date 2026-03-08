@@ -1,9 +1,9 @@
 # -------------------------------------------------
-# File: 01_hash_table_chaining.py
+# File Name: 01_hash_table_chaining.py
+# Author: Florentino Báez
+# Date: 19_Hash_Tables
 # Description: Hash Table with Chaining.
-#              Collision handling using linked lists.
 # -------------------------------------------------
-
 
 class HashTable:
     """Hash Table implementation using chaining for collisions."""

@@ -1,5 +1,9 @@
-# Archivo: 50_06_punto_en_poligono.py
-# Descripción: Punto en polígono (ray casting)
+# -------------------------------------------------
+# File Name: 53_punto_en_poligono.py
+# Author: Florentino Báez
+# Date: 17_Equations
+# Description: Point in polygon (ray casting).
+# -------------------------------------------------
 
 print("=== 6. Punto en Polígono (Ray Casting) ===\n")
 

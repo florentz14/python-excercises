@@ -1,11 +1,9 @@
-# ---------------------------------------------------------------------------
-# 10. Find Words Longer Than n
-# ---------------------------------------------------------------------------
-# Descripción: Filtra las palabras de una lista que tienen más de n
-#              caracteres.
-# Entrada: Lista de cadenas y un entero n.
-# Salida: Lista solo con las palabras que cumplen len(palabra) > n.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 03_find_words_longer_than_n.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Filtra las palabras de una lista que tienen más de n
+# -------------------------------------------------
 
 def words_longer_than(words: list[str], n: int) -> list[str]:
     # Lista por comprensión: incluimos w solo si su longitud es mayor que n

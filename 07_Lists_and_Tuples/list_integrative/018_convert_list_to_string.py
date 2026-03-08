@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 21. Convert List of Characters to String
-# ---------------------------------------------------------------------------
-# Descripción: Convert List of Characters to String
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 018_convert_list_to_string.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Convert List of Characters to String
+# -------------------------------------------------
 
 def chars_to_string(chars: list[str]) -> str:
     return ''.join(chars)

@@ -1,8 +1,9 @@
-# ------------------------------------------------------------
-# File: 52_axis_operations.py
-# Purpose: Axis in sum, mean, max, min.
+# -------------------------------------------------
+# File Name: 52_axis_operations.py
+# Author: Florentino Báez
+# Date: 08_Matrices
 # Description: axis=0 (columns), axis=1 (rows), axis=None (all).
-# ------------------------------------------------------------
+# -------------------------------------------------
 
 import numpy as np
 

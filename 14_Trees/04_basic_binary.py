@@ -1,9 +1,9 @@
-"""
-14_Trees - Basic binary tree
-==================================
-NodoArbol, ArbolBinario: insertar, buscar, altura, tamaño.
-"""
-
+# -------------------------------------------------
+# File Name: 04_basic_binary.py
+# Author: Florentino Báez
+# Date: 14_Trees
+# Description: Basic binary tree: NodoArbol, ArbolBinario with insert, search, height, size.
+# -------------------------------------------------
 
 class NodoArbol:
     """Nodo de un árbol binario."""

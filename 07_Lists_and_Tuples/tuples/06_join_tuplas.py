@@ -1,16 +1,9 @@
-# ---------------------------------------------------------------------------
-# Tuplas - 06: Join Tuples (Unir Tuplas)
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 06_join_tuplas.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
 # Description: Tuples are immutable, but you can join (concatenate) two or
-#              more tuples to create a NEW tuple using the + operator.
-#              You can also multiply a tuple using the * operator.
-# Syntax:      tuple3 = tuple1 + tuple2
-#              repeated = tuple1 * n
-# ---------------------------------------------------------------------------
-
-# =========================================================================
-# Concatenate tuples with +
-# =========================================================================
+# -------------------------------------------------
 
 tuple1 = ("apple", "banana", "cherry")
 tuple2 = ("mango", "grape", "kiwi")

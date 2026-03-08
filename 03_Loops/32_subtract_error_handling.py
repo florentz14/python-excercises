@@ -1,8 +1,9 @@
-"""While True: Subtraction quiz with error handling.
-Handles invalid input (non-integer) using try/except.
-"""
+# -------------------------------------------------
+# File Name: 32_subtract_error_handling.py
 # Author: Florentino Báez
-
+# Date: 03_Loops
+# Description: Subtraction quiz with error handling.
+# -------------------------------------------------
 
 import random
 

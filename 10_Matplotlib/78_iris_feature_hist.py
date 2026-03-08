@@ -1,7 +1,7 @@
 # -------------------------------------------------
-# File Name: 25_iris_feature_hist.py
+# File Name: 78_iris_feature_hist.py
 # Author: Florentino Báez
-# Date: Matplotlib
+# Date: 10_Matplotlib
 # Description: Histograms — Feature Distributions by Species (2x2 grid).
 # -------------------------------------------------
 

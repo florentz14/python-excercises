@@ -1,4 +1,10 @@
-# Programa para graficar diferentes funciones matemáticas
+# -------------------------------------------------
+# File Name: 109_math_functions_quadratic_exponential.py
+# Author: Florentino Báez
+# Date: 10_Matplotlib
+# Description: Plot quadratic, exponential, logarithmic, and
+# -------------------------------------------------
+
 import matplotlib.pyplot as plt  # Para crear gráficos
 import numpy as np  # Para trabajar con arreglos numéricos
 

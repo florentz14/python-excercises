@@ -1,7 +1,7 @@
 # -------------------------------------------------
-# File Name: 32_wine_quality_scatter.py
+# File Name: 85_wine_quality_scatter.py
 # Author: Florentino Báez
-# Date: Matplotlib
+# Date: 10_Matplotlib
 # Description: Scatter: Alcohol vs Quality by Wine Type.
 # -------------------------------------------------
 

@@ -1,14 +1,8 @@
 # -------------------------------------------------
 # File Name: 57_tim_sort.py
 # Author: Florentino Báez
-# Date: Data Structures - Sorting Algorithms
-# Description: Tim Sort (Tim Peters, 2002).
-#              Hybrid of Merge Sort + Insertion Sort. It is the
-#              algorithm behind sorted() and list.sort() in
-#              Python. Divides the list into "runs" of minimum size
-#              (minrun), sorts them with Insertion Sort and merges
-#              them. Excellent with partially sorted data.
-#              O(n) best case, O(n log n) worst case.
+# Date: 05_Data_Structures
+# Description: Tim Sort. Hybrid of merge and insertion. Python's default sort. O(n log n).
 # -------------------------------------------------
 
 import random

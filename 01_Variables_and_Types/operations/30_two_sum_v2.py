@@ -1,21 +1,9 @@
-"""
-Two Sum (v2) - Optimized version
-================================
-Topic: Operations (01_Variables_and_Types/operations)
-Description: Same algorithm as 01_two_sum, with a more compact implementation:
-  - Uses shorter variable names (s instead of num_to_index)
-  - Inlines complement computation (target - num) instead of a separate variable
-  - Explicit type hint for the dictionary
-
-Input:  One line with space-separated numbers (the array).
-        A second line with the target value.
-Output: The two indices separated by space, or empty if no solution exists.
-
-Complexity:
-    - Time:   O(n)
-    - Space:  O(n)
-"""
-
+# -------------------------------------------------
+# File Name: 30_two_sum_v2.py
+# Author: Florentino Báez
+# Date: 01_Variables_and_Types
+# Description: Two Sum (v2) - Compact implementation using dictionary lookup.
+# -------------------------------------------------
 
 def two_sum(arr: list[int], target: int) -> list[int]:
     """Finds two indices whose values sum to target. Optimized single-pass."""

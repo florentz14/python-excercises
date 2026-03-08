@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 224. List with Unique Values Filtered Out (keep only duplicates)
-# ---------------------------------------------------------------------------
-# Descripción: List with Unique Values Filtered Out (keep only duplicates)
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 51_unique_filtered_out.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: List with Unique Values Filtered Out (keep only duplicates)
+# -------------------------------------------------
 
 def only_duplicates(lst: list) -> list:
     # Lista por comprensión: se incluyen solo los elementos que cumplen la condición.

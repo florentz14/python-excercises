@@ -1,5 +1,9 @@
-# Archivo: 35_07_completo.py
-# Descripción: Función completa con todas las aproximaciones de Riemann
+# -------------------------------------------------
+# File Name: 40_complete.py
+# Author: Florentino Báez
+# Date: 17_Equations
+# Description: Complete function with all Riemann approximations.
+# -------------------------------------------------
 
 import scipy.integrate as spi
 

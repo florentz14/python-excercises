@@ -1,8 +1,9 @@
-# ------------------------------------------------------------
-# File: 70_cross_product.py
-# Purpose: Cross product of 3D vectors.
+# -------------------------------------------------
+# File Name: 70_cross_product.py
+# Author: Florentino Báez
+# Date: 08_Matrices
 # Description: np.cross(a, b) gives vector perpendicular to both.
-# ------------------------------------------------------------
+# -------------------------------------------------
 
 import numpy as np
 

@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 19. Calculate Difference Between Two Lists (elements in first not in second)
-# ---------------------------------------------------------------------------
-# Descripción: Calculate Difference Between Two Lists (elements in first not in se...
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 016_difference_between_lists.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Calculate Difference Between Two Lists (elements in first not in se...
+# -------------------------------------------------
 
 def list_difference(a: list, b: list) -> list:
     # Lista por comprensión: se incluyen solo los elementos que cumplen la condición.

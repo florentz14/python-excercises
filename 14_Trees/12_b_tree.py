@@ -1,12 +1,9 @@
-"""
-14_Trees - B-Tree
-=========================================
-Designed for disk/databases. Nodes hold multiple keys.
-Minimizes disk access. O(log n) operations.
-
-Used in: databases, file systems.
-"""
-
+# -------------------------------------------------
+# File Name: 12_b_tree.py
+# Author: Florentino Báez
+# Date: 14_Trees
+# Description: B-Tree for disk/databases; nodes hold multiple keys.
+# -------------------------------------------------
 
 class BTreeNode:
     """B-Tree node with multiple keys and children."""

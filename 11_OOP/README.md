@@ -122,6 +122,8 @@ Additional example-based classes for practice.
 | `52_triangle.py` | Triangle |
 | `53_contact.py` | Contact |
 | `54_dog.py` | Dog (inheritance) |
+| `55_grade_manager.py` | GradeManager - Student grades (from dictionaries) |
+| `56_contact_book.py` | ContactBook - CRUD with JSON persistence (from dictionaries) |
 
 ## Key OOP Concepts Covered
 

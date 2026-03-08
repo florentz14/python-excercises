@@ -1,14 +1,10 @@
 # -------------------------------------------------
 # File Name: 06_loop.py
 # Author: Florentino Báez
-# Date: Variables - Dictionaries
-# Description: Loop Through a Dictionary.
-#              Iterating over a dict with 'for key in dict'
-#              gives the keys. Use dict[key] to access the
-#              corresponding value inside the loop.
+# Date: 01_Variables_and_Types
+# Description: Loop through dictionary keys, values, and items().
 # -------------------------------------------------
 
-# Example 6: Loop through dictionary
 print("Example 6: Loop through dictionary")
 print("-" * 40)
 

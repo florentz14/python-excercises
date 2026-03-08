@@ -1,18 +1,9 @@
 # -------------------------------------------------
-# File: 05_cambio_monedas.py (Coin Change - Greedy)
-# -------------------------------------------------
+# File Name: 05_coin_change.py
 # Author: Florentino Báez
-# Module: Data Structures - Greedy Algorithms
-#
-# Description:
-#   Coin Change using a greedy algorithm. Always picks the largest
-#   coin that fits. This is optimal only for canonical coin systems
-#   (e.g. USD, EUR). For non-canonical systems, greedy may fail to
-#   find the minimum number of coins; a counter-example is shown.
-#
-# Complexity: O(n) where n = number of coin denominations.
+# Date: 05_Data_Structures
+# Description: Coin Change problem using greedy or dynamic programming. Finds minimum coins to make a given amount.
 # -------------------------------------------------
-
 
 def coin_change_greedy(coins, amount):
     """

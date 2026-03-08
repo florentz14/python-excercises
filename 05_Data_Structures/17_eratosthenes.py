@@ -1,17 +1,9 @@
 # -------------------------------------------------
-# File: 17_eratostenes.py (Sieve of Eratosthenes & Prime Check)
-# -------------------------------------------------
+# File Name: 17_eratosthenes.py
 # Author: Florentino Báez
-# Module: Data Structures - Mathematical Algorithms
-#
-# Description:
-#   Sieve of Eratosthenes: marks multiples of each prime as composite.
-#   Only needs to check up to √n (smaller multiples already marked).
-#   Also: is_prime(n) for individual checks using trial division.
-#
-# Sieve: O(n log log n). Prime check: O(√n).
+# Date: 05_Data_Structures
+# Description: Sieve of Eratosthenes. Finds all primes up to n by marking composites. O(n log log n).
 # -------------------------------------------------
-
 
 def sieve_of_eratosthenes(n):
     """Returns list of all primes up to n (inclusive)."""

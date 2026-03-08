@@ -1,8 +1,9 @@
-# ------------------------------------------------------------
-# File: 91_set_matrix_zeroes.py
-# Purpose: Set matrix zeroes.
+# -------------------------------------------------
+# File Name: 91_set_matrix_zeroes.py
+# Author: Florentino Báez
+# Date: 08_Matrices
 # Description: If M[i][j]==0, set entire row i and column j to 0.
-# ------------------------------------------------------------
+# -------------------------------------------------
 
 def set_zeroes(matrix):
     m, n = len(matrix), len(matrix[0])

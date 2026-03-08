@@ -1,7 +1,8 @@
 # -------------------------------------------------
-# File: 04_linked_list_operations.py
+# File Name: 04_linked_list_operations.py
+# Author: Florentino Báez
+# Date: 18_Linked_Lists
 # Description: Common Linked List operations.
-#              Reverse, merge, detect cycle, find middle.
 # -------------------------------------------------
 
 from typing import Optional, Any

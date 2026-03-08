@@ -1,11 +1,9 @@
-"""
-Linear Regression - Predicting Continuous Values
-==================================================
-Supervised algorithm for predicting continuous numeric values.
-Examples: house price, salary, sales.
-
-Author: Florentino Báez
-"""
+# -------------------------------------------------
+# File Name: 24_linear_regression.py
+# Author: Florentino Báez
+# Date: 21_Machine_Learning
+# Description: Linear regression for predicting continuous values.
+# -------------------------------------------------
 
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression

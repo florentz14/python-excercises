@@ -1,16 +1,10 @@
-"""
-16_Files - Exercise 09: Using "with" (context manager)
-=====================================================
-with open(...) closes the file automatically when exiting the block,
-even if an exception occurs. Avoids forgetting .close() and resource leaks.
-"""
+# -------------------------------------------------
+# File Name: 09_with_context.py
+# Author: Florentino Báez
+# Date: 16_Files
+# Description: Using with for file operations. Context manager ensures proper closing.
+# -------------------------------------------------
 
-# Without "with": must close manually (not recommended)
-# f = open("file.txt", "r")
-# content = f.read()
-# f.close()  # If error occurs before, file may remain open
-
-# With "with": file closes automatically when block ends
 name = "example_09_with.txt"
 with open(name, "w", encoding="utf-8") as f:
     f.write("Written inside the with block.\n")

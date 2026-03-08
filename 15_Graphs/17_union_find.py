@@ -1,10 +1,9 @@
-"""
-15_Graphs - Union-Find (Disjoint Set Union)
-=============================================
-Used in: Kruskal MST, cycle detection, connected components.
-Amortized O(α(n)) ≈ constant. Essential for Kruskal.
-"""
-
+# -------------------------------------------------
+# File Name: 17_union_find.py
+# Author: Florentino Báez
+# Date: 15_Graphs
+# Description: 15_Graphs - Union-Find (Disjoint Set Union) ============================================= Used in: Kruskal MST, cycle detection, connected components.
+# -------------------------------------------------
 
 class UnionFind:
     """Union-Find with path compression and union by rank."""

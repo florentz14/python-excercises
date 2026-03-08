@@ -1,11 +1,8 @@
 # -------------------------------------------------
 # File Name: 14_filter.py
 # Author: Florentino Báez
-# Date: Variables - Lists
+# Date: 01_Variables_and_Types
 # Description: filter() — Keep Elements That Match a Condition.
-#              filter(func, iterable) returns an iterator of
-#              items for which func returns True. Works with
-#              lambda or user-defined predicate functions.
 # -------------------------------------------------
 
 print("=== filter — keep matching elements ===")

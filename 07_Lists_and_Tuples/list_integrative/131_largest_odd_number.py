@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 276. Find Largest Odd Number in List
-# ---------------------------------------------------------------------------
-# Descripción: Find Largest Odd Number in List
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 131_largest_odd_number.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Find Largest Odd Number in List
+# -------------------------------------------------
 
 def largest_odd(lst: list[int]) -> int | None:
     odds = [x for x in lst if x % 2 != 0]

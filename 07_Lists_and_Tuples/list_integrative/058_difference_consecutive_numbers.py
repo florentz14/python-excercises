@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 104. Difference Between Consecutive Numbers (lst[i+1] - lst[i])
-# ---------------------------------------------------------------------------
-# Descripción: Difference Between Consecutive Numbers (lst[i+1] - lst[i])
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 058_difference_consecutive_numbers.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Difference Between Consecutive Numbers (lst[i+1] - lst[i])
+# -------------------------------------------------
 
 def consecutive_diffs(lst: list[int | float]) -> list[int | float]:
     # Lista por comprensión: se construye la lista a partir del iterable.

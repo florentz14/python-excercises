@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 256. Powerset of Iterable
-# ---------------------------------------------------------------------------
-# Descripción: Powerset of Iterable
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 11_powerset.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Powerset of Iterable
+# -------------------------------------------------
 
 import itertools
 

@@ -1,6 +1,10 @@
-# Area and Perimeter Calculations
+# -------------------------------------------------
+# File Name: 24_area_perimeter.py
+# Author: Florentino Báez
+# Date: 01_Variables_and_Types
+# Description: Area and perimeter for rectangle, circle, and triangle.
+# -------------------------------------------------
 
-# Rectangle
 import math
 
 

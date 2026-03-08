@@ -1,14 +1,8 @@
 # -------------------------------------------------
 # File Name: 55_shell_sort.py
 # Author: Florentino Báez
-# Date: Data Structures - Sorting Algorithms
-# Description: Shell Sort (1959).
-#              Generalization of Insertion Sort that allows
-#              swapping distant elements using decreasing
-#              gaps. When gap is 1, it becomes Insertion Sort
-#              on nearly sorted data. Includes Shell, Knuth
-#              and Hibbard sequences.
-#              Complexity: O(n^(3/2)) with Knuth. In-place.
+# Date: 05_Data_Structures
+# Description: Shell Sort. Insertion sort with decreasing gaps. O(n^1.5) with Knuth. In-place.
 # -------------------------------------------------
 
 import time

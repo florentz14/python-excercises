@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 233. Chunk List into n Smaller Lists (as equal as possible)
-# ---------------------------------------------------------------------------
-# Descripción: Chunk List into n Smaller Lists (as equal as possible)
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 109_chunk_into_n_parts.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Chunk List into n Smaller Lists (as equal as possible)
+# -------------------------------------------------
 
 def chunk_into_n(lst: list, n: int) -> list[list]:
     size = len(lst)

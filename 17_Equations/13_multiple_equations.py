@@ -1,5 +1,9 @@
-# Archivo: 27_05_multiples_ecuaciones.py
-# Descripción: Resolver múltiples ecuaciones cuadráticas
+# -------------------------------------------------
+# File Name: 13_multiple_equations.py
+# Author: Florentino Báez
+# Date: 17_Equations
+# Description: Solve multiple quadratic equations.
+# -------------------------------------------------
 
 from resolver_cuadratica import ecuacion_cuadratica_completa
 

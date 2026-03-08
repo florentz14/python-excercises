@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 55. Remove Key-Value Pairs from List of Dictionaries
-# ---------------------------------------------------------------------------
-# Descripción: Remove Key-Value Pairs from List of Dictionaries
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 036_remove_keys_from_dicts_in_list.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Remove Key-Value Pairs from List of Dictionaries
+# -------------------------------------------------
 
 def remove_keys_from_dicts(lst: list[dict], keys_to_remove: list) -> list[dict]:
     # Lista por comprensión: se incluyen solo los elementos que cumplen la condición.

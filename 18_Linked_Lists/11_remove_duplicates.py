@@ -1,7 +1,8 @@
 # -------------------------------------------------
-# File: 11_remove_duplicates.py
+# File Name: 11_remove_duplicates.py
+# Author: Florentino Báez
+# Date: 18_Linked_Lists
 # Description: Remove duplicates from singly linked list.
-#              Two versions: sorted and unsorted lists.
 # -------------------------------------------------
 
 from typing import Any, Optional

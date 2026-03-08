@@ -1,5 +1,9 @@
-# Archivo: 49_05_regresion_polinomial.py
-# Descripción: Regresión polinomial (mínimos cuadrados)
+# -------------------------------------------------
+# File Name: 46_polynomial_regression.py
+# Author: Florentino Báez
+# Date: 17_Equations
+# Description: Polynomial regression (least squares).
+# -------------------------------------------------
 
 import numpy as np
 

@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 49. Convert Two Lists to List of Dictionaries
-# ---------------------------------------------------------------------------
-# Descripción: Convert Two Lists to List of Dictionaries
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 031_list_to_list_of_dicts.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Convert Two Lists to List of Dictionaries
+# -------------------------------------------------
 
 def lists_to_dicts(keys: list, values: list, key_name: str = 'key', val_name: str = 'value') -> list[dict]:
     # Lista por comprensión: se construye la lista a partir del iterable.

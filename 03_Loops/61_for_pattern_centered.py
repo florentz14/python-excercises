@@ -1,8 +1,9 @@
-"""For loop: Centered number pyramid.
-Numbers centered with leading spaces.
-"""
+# -------------------------------------------------
+# File Name: 61_for_pattern_centered.py
 # Author: Florentino Báez
-
+# Date: 03_Loops
+# Description: Centered number pyramid.
+# -------------------------------------------------
 
 print("Pirámide Centrada con Números")
 print("=" * 40)

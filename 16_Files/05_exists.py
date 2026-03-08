@@ -1,8 +1,9 @@
-"""
-16_Files - Exercise 05: Check if file or folder exists
-======================================================
-Path.exists(), Path.is_file(), Path.is_dir()
-"""
+# -------------------------------------------------
+# File Name: 05_exists.py
+# Author: Florentino Báez
+# Date: 16_Files
+# Description: Check if file exists. os.path.exists() and pathlib.Path.exists().
+# -------------------------------------------------
 
 from pathlib import Path
 

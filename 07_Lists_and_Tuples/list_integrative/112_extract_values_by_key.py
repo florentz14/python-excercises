@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 237. Extract Values by Key from List of Dicts
-# ---------------------------------------------------------------------------
-# Descripción: Extract Values by Key from List of Dicts
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 112_extract_values_by_key.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Extract Values by Key from List of Dicts
+# -------------------------------------------------
 
 def extract_by_key(lst: list[dict], key) -> list:
     # Lista por comprensión: se incluyen solo los elementos que cumplen la condición.

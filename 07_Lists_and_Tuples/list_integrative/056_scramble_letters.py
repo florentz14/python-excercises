@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 98. Scramble Letters of Strings in List
-# ---------------------------------------------------------------------------
-# Descripción: Scramble Letters of Strings in List
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 056_scramble_letters.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Scramble Letters of Strings in List
+# -------------------------------------------------
 
 import random
 

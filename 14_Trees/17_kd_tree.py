@@ -1,10 +1,9 @@
-"""
-14_Trees - KD-Tree (K-Dimensional Tree)
-=========================================
-Tree for multidimensional data. Nearest neighbor search.
-Used in ML, nearest neighbor, graphics, spatial indexing.
-"""
-
+# -------------------------------------------------
+# File Name: 17_kd_tree.py
+# Author: Florentino Báez
+# Date: 14_Trees
+# Description: KD-Tree for multidimensional data and nearest neighbor search.
+# -------------------------------------------------
 
 class KDNode:
     """Node for KD-Tree."""

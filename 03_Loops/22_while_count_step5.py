@@ -1,8 +1,9 @@
-"""While loop: Count by 5.
-Prints numbers from 5 to 50 by incrementing by 5.
-"""
+# -------------------------------------------------
+# File Name: 22_while_count_step5.py
 # Author: Florentino Báez
-
+# Date: 03_Loops
+# Description: Count by 5.
+# -------------------------------------------------
 
 count = 5
 

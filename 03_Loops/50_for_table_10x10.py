@@ -1,8 +1,9 @@
-"""For loop: 10x10 multiplication table.
-Full multiplication grid from 1 to 10.
-"""
+# -------------------------------------------------
+# File Name: 50_for_table_10x10.py
 # Author: Florentino Báez
-
+# Date: 03_Loops
+# Description: 10x10 multiplication table.
+# -------------------------------------------------
 
 print("Tabla de Multiplicación 10x10")
 print("=" * 50)

@@ -1,13 +1,8 @@
 # -------------------------------------------------
 # File Name: 24_sudoku.py
 # Author: Florentino Báez
-# Date: Data Structures - Backtracking
-# Description: Sudoku Solver (Backtracking).
-#              Solves a 9x9 Sudoku by finding empty cells (0),
-#              trying numbers 1-9 and verifying they do not
-#              repeat in row, column or 3x3 box. If a number
-#              does not lead to a solution, backtracks.
-#              Complexity: O(9^(empty cells)) worst case.
+# Date: 05_Data_Structures
+# Description: Sudoku solver using backtracking. Fills valid digits in empty cells.
 # -------------------------------------------------
 
 print("=== 2. Solucionador de Sudoku ===\n")

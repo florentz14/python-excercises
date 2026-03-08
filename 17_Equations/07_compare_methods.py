@@ -1,5 +1,9 @@
-# Archivo: 25_07_comparar_metodos.py
-# Descripción: Comparar métodos para resolver el sistema
+# -------------------------------------------------
+# File Name: 07_compare_methods.py
+# Author: Florentino Báez
+# Date: 17_Equations
+# Description: Compare methods for solving linear systems.
+# -------------------------------------------------
 
 import numpy as np
 

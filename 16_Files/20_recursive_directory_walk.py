@@ -1,9 +1,9 @@
-"""
-16_Files - Exercise 20: Recursive directory traversal with os.walk
-==================================================================
-os.walk traverses directory trees recursively.
-Useful for backups, indexing, searching, and batch operations.
-"""
+# -------------------------------------------------
+# File Name: 20_recursive_directory_walk.py
+# Author: Florentino Báez
+# Date: 16_Files
+# Description: Recursive directory walk. os.walk() for traversing directory trees.
+# -------------------------------------------------
 
 import os
 import shutil

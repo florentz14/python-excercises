@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 13. Generate 3*4*6 3D array with '*'
-# ---------------------------------------------------------------------------
-# Descripción: Generate 3*4*6 3D array with '*'
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 01_generate_3d_array.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Generate 3*4*6 3D array with '*'
+# -------------------------------------------------
 
 def make_3d(h: int, w: int, d: int, fill: str = '*') -> list:
     # Lista por comprensión: se construye la lista a partir del iterable.

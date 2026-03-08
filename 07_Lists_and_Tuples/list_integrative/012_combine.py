@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# Part 1: Lists - Exercise 9
-# ---------------------------------------------------------------------------
-# Descripción: Unir dos listas en una sola usando el operador + (concatenación).
-#              El resultado es una lista nueva con todos los elementos en orden.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 012_combine.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Unir dos listas en una sola usando el operador + (concatenación).
+# -------------------------------------------------
 
 a = [1, 2, 3]
 b = [4, 5, 6]

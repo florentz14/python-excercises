@@ -1,7 +1,7 @@
 # -------------------------------------------------
-# File Name: 04a_line_styles.py
+# File Name: 16_line_styles.py
 # Author: Florentino Báez
-# Date: Matplotlib
+# Date: 10_Matplotlib
 # Description: Line styles comparison (2x2 grid: solid, dashed, dashdot, dotted).
 # -------------------------------------------------
 

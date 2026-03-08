@@ -1,9 +1,9 @@
-# ------------------------------------------------------------
-# File: 26_row_column_sums.py
-# Purpose: Total sum, row sums, column sums.
+# -------------------------------------------------
+# File Name: 26_row_column_sums.py
+# Author: Florentino Báez
+# Date: 08_Matrices
 # Description: Sum all elements, sum per row, sum per column.
-# ------------------------------------------------------------
-
+# -------------------------------------------------
 
 def print_matrix(matrix, name="Matrix"):
     """Print matrix with aligned columns."""

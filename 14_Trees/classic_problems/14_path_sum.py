@@ -1,9 +1,9 @@
-"""
-#14 Path Sum - LeetCode 112
-================================
-Check if there exists a root-to-leaf path with target sum.
-Pattern: DFS recursion.
-"""
+# -------------------------------------------------
+# File Name: 14_path_sum.py
+# Author: Florentino Báez
+# Date: 14_Trees
+# Description: LeetCode 112 - Check if root-to-leaf path with target sum exists.
+# -------------------------------------------------
 
 from common import TreeNode
 

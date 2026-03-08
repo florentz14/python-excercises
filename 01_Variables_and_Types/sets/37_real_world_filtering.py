@@ -1,8 +1,8 @@
 # -------------------------------------------------
 # File Name: 37_real_world_filtering.py
-# Purpose: Real-world set filtering examples
-# Description: Students in math but not science; customers who
-#              bought both product A and B. Practical use cases.
+# Author: Florentino Báez
+# Date: 01_Variables_and_Types
+# Description: Real-world set filtering: students in math but not science;
 # -------------------------------------------------
 
 print("Real-World Set Filtering")

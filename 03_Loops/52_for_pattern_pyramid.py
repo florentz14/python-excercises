@@ -1,8 +1,9 @@
-"""For loop: Pyramid of stars.
-Prints rows of asterisks forming a pyramid.
-"""
+# -------------------------------------------------
+# File Name: 52_for_pattern_pyramid.py
 # Author: Florentino Báez
-
+# Date: 03_Loops
+# Description: Pyramid of stars.
+# -------------------------------------------------
 
 print("Pirámide de Asteriscos")
 print("=" * 30)

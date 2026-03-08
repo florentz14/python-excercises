@@ -1,10 +1,9 @@
-"""
-Clase Point2D (NumPy)
-=====================
-Topic: 11_OOP - Simple classes
-Descripción: Punto en 2D; move() y distance_to_origin().
-Requiere: pip install numpy
-"""
+# -------------------------------------------------
+# File Name: 34_point.py
+# Author: Florentino Báez
+# Date: 11_OOP
+# Description: 2D Point class using NumPy.
+# -------------------------------------------------
 
 import numpy as np
 

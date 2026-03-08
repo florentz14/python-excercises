@@ -1,5 +1,9 @@
-# Archivo: 35_06_trapecio_simpson.py
-# Descripción: Regla del trapecio y de Simpson
+# -------------------------------------------------
+# File Name: 39_trapezoid_simpson.py
+# Author: Florentino Báez
+# Date: 17_Equations
+# Description: Trapezoid and Simpson's rule integration.
+# -------------------------------------------------
 
 import scipy.integrate as spi
 

@@ -1,9 +1,9 @@
 # -------------------------------------------------
-# File: 03_attributes_methods.py
+# File Name: 03_attributes_methods.py
+# Author: Florentino Báez
+# Date: 11_OOP
 # Description: Class attributes vs instance attributes.
-#              Instance methods, class methods, static methods.
 # -------------------------------------------------
-
 
 class Student:
     """Student class demonstrating attributes and methods."""

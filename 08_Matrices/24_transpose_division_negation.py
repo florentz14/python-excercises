@@ -1,9 +1,9 @@
-# ------------------------------------------------------------
-# File: 24_transpose_division_negation.py
-# Purpose: Transpose, scalar division, negation.
+# -------------------------------------------------
+# File Name: 24_transpose_division_negation.py
+# Author: Florentino Báez
+# Date: 08_Matrices
 # Description: G^T, A÷k, -A.
-# ------------------------------------------------------------
-
+# -------------------------------------------------
 
 def print_matrix(matrix, name="Matrix"):
     """Print matrix with aligned columns."""

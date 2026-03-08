@@ -1,7 +1,8 @@
 # -------------------------------------------------
-# File: 03_circular_linked_list.py
+# File Name: 03_circular_linked_list.py
+# Author: Florentino Báez
+# Date: 18_Linked_Lists
 # Description: Circular Linked List implementation.
-#              Last node points back to first node.
 # -------------------------------------------------
 
 from typing import Optional, Any

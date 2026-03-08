@@ -1,5 +1,9 @@
-# 16_simple_libro.py - Simple class: Book
-# Florentino Baez - ITSE-1002
+# -------------------------------------------------
+# File Name: 43_book.py
+# Author: Florentino Báez
+# Date: 11_OOP
+# Description: Simple Book class with title, author, pages and info() method.
+# -------------------------------------------------
 
 class Book:
     """Class with several attributes."""

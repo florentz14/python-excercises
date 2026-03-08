@@ -1,15 +1,10 @@
 # -------------------------------------------------
 # File Name: 13_common_hobbies.py
 # Author: Florentino Báez
-# Date: Variables - Sets
+# Date: 01_Variables_and_Types
 # Description: Practical Example — Common Hobbies.
-#              Uses intersection (&) to find shared hobbies
-#              between two people, and union (|) to list
-#              all hobbies combined. A real-world use case
-#              for set operations.
 # -------------------------------------------------
 
-# Example 18: Practical example - Common hobbies
 print("Example 18: Practical example - Common hobbies")
 print("-" * 40)
 

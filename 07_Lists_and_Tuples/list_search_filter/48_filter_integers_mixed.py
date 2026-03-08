@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 212. Filter Integers from Mixed List (keep only int, not float)
-# ---------------------------------------------------------------------------
-# Descripción: Filter Integers from Mixed List (keep only int, not float)
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 48_filter_integers_mixed.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Filter Integers from Mixed List (keep only int, not float)
+# -------------------------------------------------
 
 def filter_integers(lst: list) -> list[int]:
     # Lista por comprensión: se incluyen solo los elementos que cumplen la condición.

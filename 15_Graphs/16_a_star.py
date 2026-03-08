@@ -1,9 +1,9 @@
-"""
-15_Graphs - A* (A-Star) algorithm
-==================================
-Shortest path with heuristic. Used in: pathfinding, games, robotics.
-Requires admissible heuristic h(n) <= actual cost to goal.
-"""
+# -------------------------------------------------
+# File Name: 16_a_star.py
+# Author: Florentino Báez
+# Date: 15_Graphs
+# Description: 15_Graphs - A* (A-Star) algorithm ================================== Shortest path with heuristic. Used in: pathfinding, games, robotics.
+# -------------------------------------------------
 
 import heapq
 

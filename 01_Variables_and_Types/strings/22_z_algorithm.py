@@ -1,8 +1,9 @@
-﻿# ------------------------------------------------------------
-# File: 22_z_algorithm.py
-# Purpose: Z-array construction for pattern matching.
-# Description: Z[i] = longest prefix match starting at i.
-# ------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 22_z_algorithm.py
+# Author: Florentino Báez
+# Date: 01_Variables_and_Types
+# Description: Z-algorithm: Z-array construction for pattern matching.
+# -------------------------------------------------
 
 def build_z_array(s: str) -> list[int]:
     """Build Z-array: Z[i] = length of longest substring starting at i that matches prefix."""

@@ -1,6 +1,10 @@
-# Division Types in Python
+# -------------------------------------------------
+# File Name: 09_division_types.py
+# Author: Florentino Báez
+# Date: 01_Variables_and_Types
+# Description: Compares regular division, floor division, and modulus.
+# -------------------------------------------------
 
-# Regular division (float division)
 a = 10
 b = 3
 print(f"Regular division: {a} / {b} = {a / b} (type: {type(a / b)})")

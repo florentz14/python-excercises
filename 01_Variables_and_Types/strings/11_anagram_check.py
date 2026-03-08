@@ -1,8 +1,9 @@
-﻿# ------------------------------------------------------------
-# File: 11_anagram_check.py
-# Purpose: Check if two strings are anagrams.
-# Description: Same chars, same count. Use sorted() or Counter.
-# ------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 11_anagram_check.py
+# Author: Florentino Báez
+# Date: 01_Variables_and_Types
+# Description: Check if two strings are anagrams. Same chars, same count.
+# -------------------------------------------------
 
 from collections import Counter
 

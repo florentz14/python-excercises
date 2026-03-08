@@ -1,12 +1,8 @@
 # -------------------------------------------------
 # File Name: 31_segment_tree.py
 # Author: Florentino Báez
-# Date: Data Structures - Advanced Structures
-# Description: Segment Tree for Range Queries.
-#              Binary tree that stores aggregated information
-#              (sum, min, max) of array segments. Allows
-#              queries and updates in O(log n). Built bottom-up
-#              and queried by splitting the range into tree segments.
+# Date: 05_Data_Structures
+# Description: Segment tree for range queries and updates. O(log n) per operation.
 # -------------------------------------------------
 
 print("=== 2. Segment Tree ===\n")

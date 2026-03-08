@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 174. Add Number to Each Element in List
-# ---------------------------------------------------------------------------
-# Descripción: Add Number to Each Element in List
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 084_add_number_to_each.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Add Number to Each Element in List
+# -------------------------------------------------
 
 def add_to_each(lst: list[int | float], n: int | float) -> list:
     # Lista por comprensión: se construye la lista a partir del iterable.

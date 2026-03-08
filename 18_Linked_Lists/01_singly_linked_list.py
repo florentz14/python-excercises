@@ -1,7 +1,8 @@
 # -------------------------------------------------
-# File: 01_singly_linked_list.py
+# File Name: 01_singly_linked_list.py
+# Author: Florentino Báez
+# Date: 18_Linked_Lists
 # Description: Singly Linked List implementation.
-#              Basic node-based linear data structure.
 # -------------------------------------------------
 
 from typing import Optional, Any

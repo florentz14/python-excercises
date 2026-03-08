@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 91. Find List with Max and Min Lengths
-# ---------------------------------------------------------------------------
-# Descripción: Find List with Max and Min Lengths
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 15_max_min_length_lists.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Find List with Max and Min Lengths
+# -------------------------------------------------
 
 def max_min_length_lists(lists: list[list]) -> tuple[tuple[int, list], tuple[int, list]]:
     # Lista de pares (longitud, lista) para poder comparar por longitud.

@@ -1,9 +1,9 @@
-"""
-LeetCode 226 - Invert Binary Tree
-==================================
-Concept: DFS (swap left/right recursively).
-Time: O(n), Space: O(h)
-"""
+# -------------------------------------------------
+# File Name: 03_invert_tree.py
+# Author: Florentino Báez
+# Date: 14_Trees
+# Description: LeetCode 226 - Invert binary tree by swapping left/right.
+# -------------------------------------------------
 
 from common import TreeNode
 

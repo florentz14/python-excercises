@@ -1,25 +1,9 @@
-# ------------------------------------------------------------
-# File: 01_exceptions_chapter_tutorial.py
-# Chapter: 16 - Exceptions
-#
-# Purpose:
-#   Exceptions are errors that occur during program execution,
-#   even when syntax is correct. Handling them lets the program
-#   continue instead of crashing.
-#
-# Examples:
-#   - Accessing a list index out of range
-#   - Opening a file that does not exist
-#   - Converting "abc" to int
-#
-# Sections:
-#   1. try / except
-#   2. Handling multiple exception types
-#   3. Generic Exception and logging
-#   4. else, finally, raise
-#
-# Author: Florentino Baez (adapted)
-# ------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 01_exceptions_chapter_tutorial.py
+# Author: Florentino Báez
+# Date: 22_Exceptions
+# Description: Demonstrates exceptions chapter tutorial.
+# -------------------------------------------------
 
 import logging
 

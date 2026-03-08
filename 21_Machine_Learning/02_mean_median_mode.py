@@ -1,14 +1,9 @@
-"""
-Machine Learning - Mean, Median, Mode
-=======================================
-These are fundamental statistical measures used to understand data.
-
-- Mean   : The average value (sum / count)
-- Median : The middle value when data is sorted
-- Mode   : The most frequently occurring value(s)
-
-Understanding these helps in data preprocessing and feature analysis.
-"""
+# -------------------------------------------------
+# File Name: 02_mean_median_mode.py
+# Author: Florentino Báez
+# Date: 21_Machine_Learning
+# Description: Fundamental statistics: mean, median, mode.
+# -------------------------------------------------
 
 import numpy as np
 from scipy import stats

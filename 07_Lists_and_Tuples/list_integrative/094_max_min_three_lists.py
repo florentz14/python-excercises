@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 191. Max and Min Values Across Three Lists
-# ---------------------------------------------------------------------------
-# Descripción: Max and Min Values Across Three Lists
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 094_max_min_three_lists.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Max and Min Values Across Three Lists
+# -------------------------------------------------
 
 def max_min_three(*lists: list[int | float]) -> tuple:
     flat = [x for L in lists for x in L]

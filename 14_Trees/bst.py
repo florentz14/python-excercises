@@ -1,7 +1,10 @@
-"""
-Helper module: re-exports ArbolBST from 06_bst.
-Python cannot import modules whose names start with a number.
-"""
+# -------------------------------------------------
+# File Name: bst.py
+# Author: Florentino Báez
+# Date: 14_Trees
+# Description: Re-exports ArbolBST from 06_bst.
+# -------------------------------------------------
+
 import importlib.util
 from pathlib import Path
 

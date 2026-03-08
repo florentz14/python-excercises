@@ -1,4 +1,9 @@
-# 52_03_solve_ivp.py - Resolución con scipy.integrate.solve_ivp
+# -------------------------------------------------
+# File Name: 58_solve_ivp.py
+# Author: Florentino Báez
+# Date: 17_Equations
+# Description: ODE solving with scipy.integrate.solve_ivp.
+# -------------------------------------------------
 
 import numpy as np
 import matplotlib.pyplot as plt

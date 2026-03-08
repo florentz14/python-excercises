@@ -1,9 +1,9 @@
 # -------------------------------------------------
-# File: 08_inheritance_basic.py
+# File Name: 08_inheritance_basic.py
+# Author: Florentino Báez
+# Date: 11_OOP
 # Description: Basic inheritance in Python.
-#              Parent class and child classes.
 # -------------------------------------------------
-
 
 class Animal:
     """Parent class - Animal."""

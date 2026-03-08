@@ -1,20 +1,9 @@
-"""
-Machine Learning - Linear Regression
-======================================
-Linear Regression finds the relationship between a dependent variable (y)
-and one independent variable (x) by fitting a straight line.
-
-Equation: y = mx + b
-Where:
-  m = slope (how much y changes for each unit change in x)
-  b = intercept (value of y when x = 0)
-
-Uses: Predicting trends, understanding relationships between variables.
-
-Key metrics:
-- R² (R-squared): How well the line fits the data (0 to 1, closer to 1 is better)
-- Slope: Direction and strength of the relationship
-"""
+# -------------------------------------------------
+# File Name: 08_linear_regression.py
+# Author: Florentino Báez
+# Date: 21_Machine_Learning
+# Description: Linear regression: fitting a line to predict y from x.
+# -------------------------------------------------
 
 import numpy as np
 import matplotlib.pyplot as plt

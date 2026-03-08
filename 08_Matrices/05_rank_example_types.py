@@ -1,8 +1,9 @@
-# ------------------------------------------------------------
-# File: 05_rank_example_types.py
-# Purpose: Rank examples for different matrix types.
+# -------------------------------------------------
+# File Name: 05_rank_example_types.py
+# Author: Florentino Báez
+# Date: 08_Matrices
 # Description: Identity, full rank, rank deficient, zero, rectangular.
-# ------------------------------------------------------------
+# -------------------------------------------------
 
 import numpy as np
 

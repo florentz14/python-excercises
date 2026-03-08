@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 255. Deep Flatten List (any nesting level)
-# ---------------------------------------------------------------------------
-# Descripción: Deep Flatten List (any nesting level)
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 39_deep_flatten.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Deep Flatten List (any nesting level)
+# -------------------------------------------------
 
 def deep_flatten(lst: list) -> list:
     result = []

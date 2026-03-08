@@ -1,8 +1,9 @@
-"""While loop: Factorial with input.
-User enters number; computes factorial via while loop.
-"""
+# -------------------------------------------------
+# File Name: 71_while_factorial_input.py
 # Author: Florentino Báez
-
+# Date: 03_Loops
+# Description: Factorial with input.
+# -------------------------------------------------
 
 print("=" * 40)
 print("While #5 – Factorial (with input)")

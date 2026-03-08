@@ -1,15 +1,10 @@
 # -------------------------------------------------
 # File Name: 10_min_max_pop.py
 # Author: Florentino Báez
-# Date: Variables - Sets
+# Date: 01_Variables_and_Types
 # Description: Find Min/Max and Pop Elements.
-#              min() and max() return the smallest and largest
-#              elements. pop() removes and returns an arbitrary
-#              element (since sets are unordered, you cannot
-#              predict which one).
 # -------------------------------------------------
 
-# Example 15: Find and remove elements
 print("Example 15: Find and remove elements")
 print("-" * 40)
 

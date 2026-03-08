@@ -1,8 +1,9 @@
-# ------------------------------------------------------------
-# File: 17_unpacking_star_expression.py
-# Purpose: Advanced unpacking with * (star expression).
-# Description: Capture multiple elements into a list.
-# ------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 17_unpacking_star_expression.py
+# Author: Florentino Báez
+# Date: 01_Variables_and_Types
+# Description: Advanced unpacking with * (star expression).
+# -------------------------------------------------
 
 numbers = (1, 2, 3, 4, 5)
 

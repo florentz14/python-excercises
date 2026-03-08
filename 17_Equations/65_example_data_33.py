@@ -1,6 +1,9 @@
-# Archivo: datos_ejemplo_33.py
-# Descripción: Datos del sistema de ecuaciones específico (ejemplo 33)
-# Sistema: x + y + z = 2,  2x + z = 1,  x + 2y = 5
+# -------------------------------------------------
+# File Name: 65_example_data_33.py
+# Author: Florentino Báez
+# Date: 17_Equations
+# Description: Data for specific equation system example.
+# -------------------------------------------------
 
 import numpy as np
 

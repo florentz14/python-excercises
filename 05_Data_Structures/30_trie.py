@@ -1,13 +1,8 @@
 # -------------------------------------------------
 # File Name: 30_trie.py
 # Author: Florentino Báez
-# Date: Data Structures - Advanced Structures
-# Description: Trie (Prefix Tree).
-#              Tree structure where each node represents a
-#              character. Allows inserting, searching and
-#              autocompleting words efficiently. Each path from
-#              root to a node marked as end represents a word.
-#              Complexity: O(m) per operation, m = word length.
+# Date: 05_Data_Structures
+# Description: Trie (Prefix Tree). Insert, search, autocomplete words. O(m) per operation, m=word length.
 # -------------------------------------------------
 
 print("=== Estructuras de Datos Avanzadas ===\n")

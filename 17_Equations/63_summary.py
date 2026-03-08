@@ -1,4 +1,9 @@
-# 52_08_resumen.py - Resumen del módulo de ecuaciones diferenciales
+# -------------------------------------------------
+# File Name: 63_summary.py
+# Author: Florentino Báez
+# Date: 17_Equations
+# Description: Summary of differential equations module.
+# -------------------------------------------------
 
 print("=== Resumen: Ecuaciones Diferenciales ===\n")
 print("""

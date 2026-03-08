@@ -1,7 +1,8 @@
 # -------------------------------------------------
-# File: 08_find_middle.py
+# File Name: 08_find_middle.py
+# Author: Florentino Báez
+# Date: 18_Linked_Lists
 # Description: Find middle node of singly linked list.
-#              Using slow and fast pointer technique.
 # -------------------------------------------------
 
 from typing import Any, Optional

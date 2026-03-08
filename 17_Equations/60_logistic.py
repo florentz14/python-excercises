@@ -1,4 +1,9 @@
-# 52_05_logistico.py - Modelo logístico de crecimiento
+# -------------------------------------------------
+# File Name: 60_logistic.py
+# Author: Florentino Báez
+# Date: 17_Equations
+# Description: Logistic growth model.
+# -------------------------------------------------
 
 import numpy as np
 import matplotlib.pyplot as plt

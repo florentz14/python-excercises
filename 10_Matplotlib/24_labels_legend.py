@@ -1,7 +1,7 @@
 # -------------------------------------------------
-# File Name: 05d_labels_legend.py
+# File Name: 24_labels_legend.py
 # Author: Florentino Báez
-# Date: Matplotlib
+# Date: 10_Matplotlib
 # Description: Legend — positioning, font, border, and title.
 # -------------------------------------------------
 

@@ -1,11 +1,9 @@
-# ---------------------------------------------------------------------------
-# 2. Multiply Items in List
-# ---------------------------------------------------------------------------
-# Descripción: Multiplica todos los elementos de una lista entre sí.
-# Entrada: Lista de números (int o float).
-# Salida: Un solo número (producto total). Se inicializa en 1 para no alterar
-#         el producto al multiplicar.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 02_multiply_items_in_list.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Multiplica todos los elementos de una lista entre sí.
+# -------------------------------------------------
 
 def multiply_list_items(lst: list[int | float]) -> int | float:
     # Acumulador: debe empezar en 1 (si fuera 0, el producto siempre sería 0)

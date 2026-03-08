@@ -1,7 +1,7 @@
 # -------------------------------------------------
-# File Name: 06f_grid_colored_bg.py
+# File Name: 32_grid_colored_bg.py
 # Author: Florentino Báez
-# Date: Matplotlib
+# Date: 10_Matplotlib
 # Description: Grid with colored background. Includes print summary block.
 # -------------------------------------------------
 

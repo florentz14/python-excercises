@@ -1,11 +1,9 @@
-"""
-12_Stacks - Next Greater Element
-==================================
-For each element, find the next greater element to the right.
-Uses monotonic (decreasing) stack.
-Example: [2,1,2,4,3] -> [4,2,4,-1,-1]
-"""
-
+# -------------------------------------------------
+# File Name: 11_next_greater_element.py
+# Author: Florentino Báez
+# Date: 12_Stacks
+# Description: Next greater element. Monotonic stack pattern.
+# -------------------------------------------------
 
 def next_greater_element(nums: list[int]) -> list[int]:
     """

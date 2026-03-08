@@ -1,14 +1,10 @@
 # -------------------------------------------------
 # File Name: 12_clear.py
 # Author: Florentino Báez
-# Date: Variables - Dictionaries
-# Description: Clear a Dictionary.
-#              clear() removes all key-value pairs, leaving
-#              an empty dictionary {}. The dict object itself
-#              still exists in memory.
+# Date: 01_Variables_and_Types
+# Description: Remove all items with clear(), leaving empty dict {}.
 # -------------------------------------------------
 
-# Example 12: Clear dictionary
 print("Example 12: Clear dictionary")
 print("-" * 40)
 

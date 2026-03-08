@@ -1,7 +1,7 @@
 # -------------------------------------------------
-# File Name: 08e_scatter_alpha.py
+# File Name: 42_scatter_alpha.py
 # Author: Florentino Báez
-# Date: Matplotlib
+# Date: 10_Matplotlib
 # Description: Scatter with transparency (500 points, randn).
 # -------------------------------------------------
 

@@ -1,9 +1,9 @@
 # -------------------------------------------------
-# File: 02_init_constructor.py
+# File Name: 02_init_constructor.py
+# Author: Florentino Báez
+# Date: 11_OOP
 # Description: Understanding the __init__ constructor method.
-#              Initialization, default parameters, validation.
 # -------------------------------------------------
-
 
 class Person:
     """Person class demonstrating constructor usage."""

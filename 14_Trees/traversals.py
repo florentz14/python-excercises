@@ -1,7 +1,10 @@
-"""
-Helper module: re-exports ArbolRecorridos from 05_traversals.
-Python cannot import modules whose names start with a number.
-"""
+# -------------------------------------------------
+# File Name: traversals.py
+# Author: Florentino Báez
+# Date: 14_Trees
+# Description: Re-exports ArbolRecorridos from 05_traversals.
+# -------------------------------------------------
+
 import importlib.util
 from pathlib import Path
 

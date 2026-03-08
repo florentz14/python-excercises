@@ -1,8 +1,9 @@
-# ------------------------------------------------------------
-# File: 52_array_unique_counts.py
-# Purpose: Unique elements and counts.
+# -------------------------------------------------
+# File Name: 81_unique_counts.py
+# Author: Florentino Báez
+# Date: 08_Matrices
 # Description: unique, return_counts, bincount for non-negative ints.
-# ------------------------------------------------------------
+# -------------------------------------------------
 
 import numpy as np
 

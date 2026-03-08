@@ -1,11 +1,8 @@
 # -------------------------------------------------
 # File Name: 26_run_all_exercises.py
 # Author: Florentino Báez
-# Date: Variables - Sets
+# Date: 01_Variables_and_Types
 # Description: Master Script — Run All Set Theory Exercises.
-#              Executes all 12 set theory exercise files in
-#              sequence using subprocess, displaying output
-#              and tracking success/failure for each.
 # -------------------------------------------------
 
 """

@@ -1,8 +1,9 @@
-﻿# ------------------------------------------------------------
-# File: 26_string_compression.py
-# Purpose: Run-length encoding.
-# Description: "aabcccccaaa" -> "a2b1c5a3".
-# ------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 26_string_compression.py
+# Author: Florentino Báez
+# Date: 01_Variables_and_Types
+# Description: Run-length encoding. E.g. "aabcccccaaa" -> "a2b1c5a3".
+# -------------------------------------------------
 
 def compress(s: str) -> str:
     if not s: return ""

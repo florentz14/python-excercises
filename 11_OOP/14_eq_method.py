@@ -1,7 +1,8 @@
 # -------------------------------------------------
-# File: 14_eq_method.py
+# File Name: 14_eq_method.py
+# Author: Florentino Báez
+# Date: 11_OOP
 # Description: __eq__ magic method for equality comparison.
-#              Making objects comparable with == operator.
 # -------------------------------------------------
 
 from typing import Any

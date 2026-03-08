@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 33. Generate All Sublists (powerset of list as contiguous sublists - or all subsets)
-# ---------------------------------------------------------------------------
-# Descripción: Generate All Sublists (powerset of list as contiguous sublists - or...
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 04_generate_all_sublists.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Generate All Sublists (powerset of list as contiguous sublists - or...
+# -------------------------------------------------
 
 def all_sublists(lst: list) -> list:
     """All contiguous sublists."""

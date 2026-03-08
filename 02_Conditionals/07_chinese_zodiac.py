@@ -1,10 +1,10 @@
-"""
-Ejercicio: Zodíaco Chino
+# -------------------------------------------------
+# File Name: 07_chinese_zodiac.py
+# Author: Florentino Báez
+# Date: 02_Conditionals
+# Description: Zodíaco Chino
+# -------------------------------------------------
 
-Programa que determina el signo del zodíaco chino según el año de nacimiento.
-"""
-
-# Diccionario con los signos del zodíaco chino y sus características
 zodiac_signs = {
     "Rata": {
         "años": [1900, 1912, 1924, 1936, 1948, 1960, 1972, 1984, 1996, 2008, 2020],

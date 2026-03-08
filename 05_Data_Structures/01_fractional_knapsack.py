@@ -1,19 +1,9 @@
 # -------------------------------------------------
-# File: 01_mochila_fraccionaria.py (Fractional Knapsack)
-# -------------------------------------------------
+# File Name: 01_fractional_knapsack.py
 # Author: Florentino Báez
-# Module: Data Structures - Greedy Algorithms
-#
-# Description:
-#   Solves the Fractional Knapsack Problem using a greedy strategy.
-#   Items can be taken partially (fractionally). The algorithm sorts
-#   items by value/weight ratio and always picks the item with highest
-#   ratio first until the knapsack is full.
-#
-# Strategy: Take items with highest value/weight ratio first.
-# Complexity: O(n log n) due to sorting.
+# Date: 05_Data_Structures
+# Description: Solves the Fractional Knapsack Problem using a greedy strategy. Items sorted by value/weight ratio; picks highest ratio first. O(n log n).
 # -------------------------------------------------
-
 
 def fractional_knapsack(weights, values, capacity):
     """

@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 226. Common Elements After Applying Function to Both Lists
-# ---------------------------------------------------------------------------
-# Descripción: Common Elements After Applying Function to Both Lists
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 06_common_with_function.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Common Elements After Applying Function to Both Lists
+# -------------------------------------------------
 
 def common_by_func(a: list, b: list, func) -> list:
     set_b = {func(x) for x in b}

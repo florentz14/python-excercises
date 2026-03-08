@@ -1,10 +1,9 @@
-# ---------------------------------------------------------------------------
-# Tuplas - 03: Update Tuples (Modificar Tuplas)
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 03_update_tuples.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
 # Description: Tuples are IMMUTABLE - you cannot directly change, add, or
-#              remove items. However, there are workarounds by converting
-#              the tuple to a list, making changes, and converting back.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
 
 fruits = ("apple", "banana", "cherry")
 print("Original tuple:", fruits)

@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 99. Max and Min in Heterogeneous List (numbers only)
-# ---------------------------------------------------------------------------
-# Descripción: Max and Min in Heterogeneous List (numbers only)
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 057_max_min_heterogeneous_list.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Max and Min in Heterogeneous List (numbers only)
+# -------------------------------------------------
 
 def max_min_heterogeneous(lst: list) -> tuple:
     nums = [x for x in lst if isinstance(x, (int, float))]

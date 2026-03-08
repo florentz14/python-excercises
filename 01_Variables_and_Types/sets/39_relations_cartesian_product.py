@@ -1,8 +1,8 @@
 # -------------------------------------------------
 # File Name: 39_relations_cartesian_product.py
-# Purpose: Relations and Cartesian product
-# Description: A relation is a subset of A × B. Introduction to
-#              reflexive, symmetric, and transitive properties.
+# Author: Florentino Báez
+# Date: 01_Variables_and_Types
+# Description: Relations and Cartesian product. A relation is a subset of A × B.
 # -------------------------------------------------
 
 from itertools import product

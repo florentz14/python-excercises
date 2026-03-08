@@ -1,8 +1,9 @@
-"""For loop: Average of list.
-Sums list elements and divides by length for average.
-"""
+# -------------------------------------------------
+# File Name: 49_for_average_list.py
 # Author: Florentino Báez
-
+# Date: 03_Loops
+# Description: Average of list.
+# -------------------------------------------------
 
 numbers = [85, 90, 78, 92, 88]
 total = 0

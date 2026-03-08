@@ -1,4 +1,9 @@
-# 52_06_sistema.py - Sistema de EDOs: modelo predador-presa (Lotka-Volterra)
+# -------------------------------------------------
+# File Name: 61_sistema.py
+# Author: Florentino Báez
+# Date: 17_Equations
+# Description: System of ODEs: predator-prey model (Lotka-Volterra).
+# -------------------------------------------------
 
 import numpy as np
 import matplotlib.pyplot as plt

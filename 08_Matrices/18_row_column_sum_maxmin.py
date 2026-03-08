@@ -1,8 +1,9 @@
-# ------------------------------------------------------------
-# File: 18_row_column_sum_maxmin.py
-# Purpose: Row/column extraction, total sum, max/min.
+# -------------------------------------------------
+# File Name: 18_row_column_sum_maxmin.py
+# Author: Florentino Báez
+# Date: 08_Matrices
 # Description: Get row, get column, sum all elements, find max and min.
-# ------------------------------------------------------------
+# -------------------------------------------------
 
 M = [
     [10, 20, 30],

@@ -1,6 +1,9 @@
-# Exercise 4: Table with Headings
-# Add column headings to a table containing item names, prices, and quantities.
-# Format prices with currency symbols and decimal precision.
+# -------------------------------------------------
+# File Name: 19_table_headings_prices.py
+# Author: Florentino Báez
+# Date: 01_Variables_and_Types
+# Description: Table with column headings, item names, prices,
+# -------------------------------------------------
 
 print("Exercise 4: Table with Headings")
 print("-" * 40)

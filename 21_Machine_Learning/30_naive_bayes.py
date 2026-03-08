@@ -1,11 +1,9 @@
-"""
-Naive Bayes - Probabilistic Classification
-===========================================
-Based on Bayes' theorem.
-Used in: spam detection, sentiment analysis, text classification.
-
-Author: Florentino Báez
-"""
+# -------------------------------------------------
+# File Name: 30_naive_bayes.py
+# Author: Florentino Báez
+# Date: 21_Machine_Learning
+# Description: Naive Bayes probabilistic classification.
+# -------------------------------------------------
 
 from sklearn.model_selection import train_test_split
 from sklearn.naive_bayes import GaussianNB

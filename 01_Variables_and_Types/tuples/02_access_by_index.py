@@ -1,11 +1,8 @@
 # -------------------------------------------------
 # File Name: 02_access_by_index.py
 # Author: Florentino Báez
-# Date: Variables - Tuples
+# Date: 01_Variables_and_Types
 # Description: Access Tuple Elements by Index.
-#              Tuples support zero-based indexing (0, 1, 2…)
-#              and negative indexing (-1 = last, -2 = second
-#              to last). Access with tuple[index].
 # -------------------------------------------------
 
 print("Example 2: Access tuple elements by index")

@@ -1,8 +1,9 @@
 # -------------------------------------------------
-# Verifica si un número es primo e imprime la lista
-# de números primos hasta el número capturado.
+# File Name: 16_prime_numbers.py
+# Author: Florentino Báez
+# Date: 04_Functions
+# Description: Verifica si un número es primo.
 # -------------------------------------------------
-
 
 def es_primo(n: int) -> bool:
     """

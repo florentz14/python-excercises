@@ -1,7 +1,8 @@
 # -------------------------------------------------
-# File: 26_vehicle.py
+# File Name: 26_vehicle.py
+# Author: Florentino Báez
+# Date: 11_OOP
 # Description: Vehicle hierarchy - practical application.
-#              Multiple inheritance, mixins, advanced OOP.
 # -------------------------------------------------
 
 from abc import ABC, abstractmethod

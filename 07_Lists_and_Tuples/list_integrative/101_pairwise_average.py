@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 208. Pairwise Average: (a[i]+a[i+1])/2 for each i
-# ---------------------------------------------------------------------------
-# Descripción: Pairwise Average: (a[i]+a[i+1])/2 for each i
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 101_pairwise_average.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Pairwise Average: (a[i]+a[i+1])/2 for each i
+# -------------------------------------------------
 
 def pairwise_average(lst: list[float]) -> list[float]:
     # Lista por comprensión: se construye la lista a partir del iterable.

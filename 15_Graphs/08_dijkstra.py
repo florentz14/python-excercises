@@ -1,8 +1,9 @@
-"""
-15_Graphs - Dijkstra's algorithm (shortest path)
-=====================================================
-Distancias mínimas desde un nodo origen en grafo con pesos no negativos.
-"""
+# -------------------------------------------------
+# File Name: 08_dijkstra.py
+# Author: Florentino Báez
+# Date: 15_Graphs
+# Description: 15_Graphs - Dijkstra's algorithm (shortest path) ===================================================== Distancias mínimas desde un nodo origen en grafo con pesos no negativos.
+# -------------------------------------------------
 
 from adjacency_list import GrafoListaAdyacencia
 

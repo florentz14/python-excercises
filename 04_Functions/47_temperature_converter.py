@@ -1,5 +1,9 @@
-# Temperature Conversion Program
-# This program converts temperatures between Celsius, Fahrenheit, and Kelvin
+# -------------------------------------------------
+# File Name: 47_temperature_converter.py
+# Author: Florentino Báez
+# Date: 04_Functions
+# Description: Convert Celsius to Fahrenheit."""
+# -------------------------------------------------
 
 def celsius_to_fahrenheit(celsius):
     """Convert Celsius to Fahrenheit."""

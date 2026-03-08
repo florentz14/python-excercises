@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 88. Sum of Primary Diagonal of Square Matrix
-# ---------------------------------------------------------------------------
-# Descripción: Sum of Primary Diagonal of Square Matrix
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 12_sum_primary_diagonal.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Sum of Primary Diagonal of Square Matrix
+# -------------------------------------------------
 
 def sum_primary_diagonal(matrix: list[list[int]]) -> int:
     # Se devuelve la suma de todos los elementos.

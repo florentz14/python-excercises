@@ -1,7 +1,8 @@
 # -------------------------------------------------
-# File: 05_goodbye.py
+# File Name: 05_goodbye.py
+# Author: Florentino Báez
+# Date: 04_Functions
 # Description: Goodbye farewell function.
-#              Basic function without parameters.
 # -------------------------------------------------
 
 def goodbye() -> None:

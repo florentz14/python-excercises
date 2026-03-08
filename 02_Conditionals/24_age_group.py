@@ -1,9 +1,9 @@
-"""
-Simple conditional: Age group classifier
-========================================
-Topic: Conditionals (02_Conditionals)
-Description: Classify person as child, teen, adult, or senior.
-"""
+# -------------------------------------------------
+# File Name: 24_age_group.py
+# Author: Florentino Báez
+# Date: 02_Conditionals
+# Description: Age group classifier
+# -------------------------------------------------
 
 age = int(input("Enter your age: "))
 

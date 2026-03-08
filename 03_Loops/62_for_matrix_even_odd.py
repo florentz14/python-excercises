@@ -1,8 +1,9 @@
-"""For loop: Classify matrix as even/odd.
-Splits matrix elements into even and odd lists.
-"""
+# -------------------------------------------------
+# File Name: 62_for_matrix_even_odd.py
 # Author: Florentino Báez
-
+# Date: 03_Loops
+# Description: Classify matrix as even/odd.
+# -------------------------------------------------
 
 print("Clasificar Matriz 2D en Pares e Impares")
 print("=" * 45)

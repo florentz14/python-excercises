@@ -1,5 +1,9 @@
-# Archivo: 11_listas_avanzadas.py
-# Descripción: Operaciones avanzadas con listas
+# -------------------------------------------------
+# File Name: 014_advanced_lists.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Operaciones avanzadas con listas
+# -------------------------------------------------
 
 print("=== Listas Avanzadas en Python ===\n")
 

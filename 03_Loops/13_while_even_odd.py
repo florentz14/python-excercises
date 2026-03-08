@@ -1,8 +1,9 @@
-"""While loop: Even/odd classification.
-Classifies numbers 1-10 as even or odd using modulo.
-"""
+# -------------------------------------------------
+# File Name: 13_while_even_odd.py
 # Author: Florentino Báez
-
+# Date: 03_Loops
+# Description: Even/odd classification.
+# -------------------------------------------------
 
 count = 1
 

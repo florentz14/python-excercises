@@ -1,7 +1,7 @@
 # -------------------------------------------------
-# File Name: 11g_pie_nested.py
+# File Name: 64_pie_nested.py
 # Author: Florentino Báez
-# Date: Matplotlib
+# Date: 10_Matplotlib
 # Description: Nested pie chart (outer + inner ring).
 # -------------------------------------------------
 

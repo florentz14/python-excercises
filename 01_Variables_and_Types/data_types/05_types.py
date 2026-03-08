@@ -1,26 +1,26 @@
-"""
-Tipos de datos en Python
-=========================
-Topic: Variables and Types (01_Variables_and_Types)
-Descripción: int, float, str, bool, type(), conversión entre tipos.
-"""
-# Tipos numéricos
-entero = 42
+# -------------------------------------------------
+# File Name: 05_types.py
+# Author: Florentino Báez
+# Date: 01_Variables_and_Types
+# Description: int, float, str, bool types; type() function;
+# -------------------------------------------------
+
+integer = 42
 decimal = 3.14
-print("int:", entero, "->", type(entero))
+print("int:", integer, "->", type(integer))
 print("float:", decimal, "->", type(decimal))
 
-# Strings y booleanos
-texto = "Hola"
-verdadero = True
-falso = False
-print("str:", texto, "->", type(texto))
-print("bool:", verdadero, "->", type(verdadero))
+# Strings and booleans
+text = "Hello"
+true_val = True
+false_val = False
+print("str:", text, "->", type(text))
+print("bool:", true_val, "->", type(true_val))
 
-# Verificar tipo con type()
-print("\ntype(entero):", type(entero))
+# Check type with type()
+print("\ntype(integer):", type(integer))
 
-# Conversión entre tipos
+# Type conversion
 num_str = "100"
 num_int = int(num_str)
 print("\nint('100'):", num_int)
@@ -31,8 +31,8 @@ print("float('3.14'):", num_float)
 str_num = str(42)
 print("str(42):", str_num, "->", type(str_num))
 
-# bool() - valores "falsy": 0, 0.0, "", None, [], ()
+# bool() - falsy values: 0, 0.0, "", None, [], ()
 print("\nbool(1):", bool(1))
 print("bool(0):", bool(0))
 print("bool(''):", bool(""))
-print("bool('hola'):", bool("hola"))
+print("bool('hello'):", bool("hello"))

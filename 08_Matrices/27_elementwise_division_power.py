@@ -1,9 +1,9 @@
-# ------------------------------------------------------------
-# File: 27_elementwise_division_power.py
-# Purpose: Element-wise division and matrix power.
+# -------------------------------------------------
+# File Name: 27_elementwise_division_power.py
+# Author: Florentino Báez
+# Date: 08_Matrices
 # Description: A/B element-wise, I² = I × I (matrix squared).
-# ------------------------------------------------------------
-
+# -------------------------------------------------
 
 def print_matrix(matrix, name="Matrix"):
     """Print matrix with aligned columns."""

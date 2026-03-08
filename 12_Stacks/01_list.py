@@ -1,9 +1,9 @@
-"""
-Pilas - Ejemplo 1: Pila con lista (LIFO)
-========================================
-Topic: 12_Stacks
-Descripción: Usar lista como pila: append() = push, pop() = pop (último en entrar, primero en salir).
-"""
+# -------------------------------------------------
+# File Name: 01_list.py
+# Author: Florentino Báez
+# Date: 12_Stacks
+# Description: Stack with list (LIFO). append()=push, pop()=pop. Last in, first out.
+# -------------------------------------------------
 
 pila = []
 

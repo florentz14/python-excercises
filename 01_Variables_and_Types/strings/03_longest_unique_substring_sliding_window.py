@@ -1,18 +1,9 @@
-"""
-Longest Substring Without Repeating Characters - Sliding window version
-=======================================================================
-Topic: Strings (01_Variables_and_Types/strings)
-Description: Find the length of the longest substring without repeating characters.
-Uses a sliding window with two pointers (left, right) and a set to track characters.
-
-Input:  A string (e.g. "abccabcabcc")
-Output: Length of longest unique substring (e.g. 3)
-
-Complexity:
-    Time:   O(n) - Each character visited at most twice (by left and right)
-    Space:  O(n)  - Set for characters in window
-"""
-
+# -------------------------------------------------
+# File Name: 03_longest_unique_substring_sliding_window.py
+# Author: Florentino Báez
+# Date: 01_Variables_and_Types
+# Description: Longest substring without repeating chars - sliding window.
+# -------------------------------------------------
 
 def longest_unique_substring_optimized(s: str) -> int:
     """

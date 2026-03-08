@@ -1,8 +1,9 @@
-"""For loop: Print temperatures.
-Iterates over a list of Fahrenheit values and prints them.
-"""
+# -------------------------------------------------
+# File Name: 72_for_temperatures.py
 # Author: Florentino Báez
-
+# Date: 03_Loops
+# Description: Print temperatures.
+# -------------------------------------------------
 
 print("=" * 40)
 print("For #1 – Print Temperatures")

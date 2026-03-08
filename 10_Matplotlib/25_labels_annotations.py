@@ -1,7 +1,7 @@
 # -------------------------------------------------
-# File Name: 05e_labels_annotations.py
+# File Name: 25_labels_annotations.py
 # Author: Florentino Báez
-# Date: Matplotlib
+# Date: 10_Matplotlib
 # Description: Text annotations with arrows + plain text box.
 # -------------------------------------------------
 

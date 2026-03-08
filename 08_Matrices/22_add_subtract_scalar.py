@@ -1,9 +1,9 @@
-# ------------------------------------------------------------
-# File: 22_add_subtract_scalar.py
-# Purpose: Add, subtract, scalar product with formatting.
+# -------------------------------------------------
+# File Name: 22_add_subtract_scalar.py
+# Author: Florentino Báez
+# Date: 08_Matrices
 # Description: A+B, A-B, k*A with aligned print.
-# ------------------------------------------------------------
-
+# -------------------------------------------------
 
 def print_matrix(matrix, name="Matrix"):
     """Print matrix with aligned columns."""

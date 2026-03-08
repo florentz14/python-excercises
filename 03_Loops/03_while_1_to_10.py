@@ -1,8 +1,9 @@
-"""While loop: Numbers 1 to 10.
-Iterates from 1 to 10 using a counter and condition.
-"""
+# -------------------------------------------------
+# File Name: 03_while_1_to_10.py
 # Author: Florentino Báez
-
+# Date: 03_Loops
+# Description: Numbers 1 to 10.
+# -------------------------------------------------
 
 count = 1
 

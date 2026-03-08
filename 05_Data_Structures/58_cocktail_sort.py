@@ -1,15 +1,8 @@
 # -------------------------------------------------
-# File: 58_cocktail_sort.py (Cocktail Sort - Bidirectional Bubble)
-# -------------------------------------------------
+# File Name: 58_cocktail_sort.py
 # Author: Florentino Báez
-# Module: Data Structures - Sorting Algorithms
-#
-# Description:
-#   Cocktail Sort: bidirectional Bubble Sort. Traverses left-to-right
-#   (bubble largest to end) then right-to-left (bubble smallest to start).
-#   Solves the "turtles" problem by moving small elements faster.
-#
-# Complexity: O(n²). Stable. In-place.
+# Date: 05_Data_Structures
+# Description: Cocktail Sort. Bidirectional bubble sort. O(n²). Stable. In-place.
 # -------------------------------------------------
 
 import random

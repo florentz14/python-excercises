@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 166. Remove None from List
-# ---------------------------------------------------------------------------
-# Descripción: Remove None from List
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 42_remove_none.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Remove None from List
+# -------------------------------------------------
 
 def remove_none(lst: list) -> list:
     # Lista por comprensión: se incluyen solo los elementos que cumplen la condición.

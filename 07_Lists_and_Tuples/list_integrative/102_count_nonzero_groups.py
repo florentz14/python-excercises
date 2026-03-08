@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 209. Count Groups of Non-Zero Numbers Separated by Zeros
-# ---------------------------------------------------------------------------
-# Descripción: Count Groups of Non-Zero Numbers Separated by Zeros
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 102_count_nonzero_groups.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Count Groups of Non-Zero Numbers Separated by Zeros
+# -------------------------------------------------
 
 def count_nonzero_groups(lst: list[int]) -> int:
     count = 0

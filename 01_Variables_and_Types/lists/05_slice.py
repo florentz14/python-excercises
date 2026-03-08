@@ -1,11 +1,8 @@
 # -------------------------------------------------
 # File Name: 05_slice.py
 # Author: Florentino Báez
-# Date: Variables - Lists
+# Date: 01_Variables_and_Types
 # Description: Slice a List.
-#              list[start:stop:step] extracts a sub-list.
-#              Omit start for 0, omit stop for len().
-#              Step of -1 reverses the list.
 # -------------------------------------------------
 
 print("Example 5: Slice a list")

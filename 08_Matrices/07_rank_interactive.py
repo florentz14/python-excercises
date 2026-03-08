@@ -1,8 +1,9 @@
-# ------------------------------------------------------------
-# File: 07_rank_interactive.py
-# Purpose: Interactive matrix rank calculator.
+# -------------------------------------------------
+# File Name: 07_rank_interactive.py
+# Author: Florentino Báez
+# Date: 08_Matrices
 # Description: Use sample matrix or enter custom matrix from keyboard.
-# ------------------------------------------------------------
+# -------------------------------------------------
 
 import numpy as np
 

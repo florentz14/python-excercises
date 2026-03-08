@@ -1,8 +1,9 @@
-﻿# ------------------------------------------------------------
-# File: 30_decode_string.py
-# Purpose: Decode encoded string.
-# Description: "3[a2[c]]" -> "accaccacc". Stack with count and string.
-# ------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 30_decode_string.py
+# Author: Florentino Báez
+# Date: 01_Variables_and_Types
+# Description: Decode encoded string. E.g. "3[a2[c]]" -> "accaccacc".
+# -------------------------------------------------
 
 def decode_string(s: str) -> str:
     stack: list[str | int] = []

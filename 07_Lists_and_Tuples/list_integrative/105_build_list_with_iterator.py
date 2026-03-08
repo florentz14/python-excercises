@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 219. Build List Using Iterator and Seed (e.g. -10, -20, -30, -40)
-# ---------------------------------------------------------------------------
-# Descripción: Build List Using Iterator and Seed (e.g. -10, -20, -30, -40)
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 105_build_list_with_iterator.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Build List Using Iterator and Seed (e.g. -10, -20, -30, -40)
+# -------------------------------------------------
 
 def build_list(seed, func, n: int) -> list:
     result = []

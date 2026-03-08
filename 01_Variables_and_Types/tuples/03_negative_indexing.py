@@ -1,11 +1,8 @@
 # -------------------------------------------------
 # File Name: 03_negative_indexing.py
 # Author: Florentino Báez
-# Date: Variables - Tuples
+# Date: 01_Variables_and_Types
 # Description: Negative Indexing.
-#              Negative indices count from the end:
-#              -1 is the last element, -2 is second to last,
-#              -3 is third from the end, and so on.
 # -------------------------------------------------
 
 print("Example 3: Negative indexing")

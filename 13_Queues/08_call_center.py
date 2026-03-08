@@ -1,4 +1,9 @@
-# Call Center Queue with Average Wait Time Tracking
+# -------------------------------------------------
+# File Name: 08_call_center.py
+# Author: Florentino Báez
+# Date: 13_Queues
+# Description: Call center simulation. Queue for incoming calls.
+# -------------------------------------------------
 
 import time
 from collections import deque

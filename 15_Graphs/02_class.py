@@ -1,10 +1,9 @@
-"""
-Grafos - Ejemplo 2: Clase Grafo (lista de adyacencia)
-=====================================================
-Topic: 15_Graphs
-Descripción: Clase Grafo con add_vertice(), add_arista(), adyacentes().
-"""
-
+# -------------------------------------------------
+# File Name: 02_class.py
+# Author: Florentino Báez
+# Date: 15_Graphs
+# Description: Grafos - Ejemplo 2: Clase Grafo (lista de adyacencia) ===================================================== Topic: 15_Graphs
+# -------------------------------------------------
 
 class Grafo:
     def __init__(self):

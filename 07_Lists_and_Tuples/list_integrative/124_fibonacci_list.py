@@ -1,11 +1,9 @@
-# ---------------------------------------------------------------------------
-# 265. Generate Fibonacci List (first n terms)
-# ---------------------------------------------------------------------------
-# Descripción: Genera una lista con los primeros n términos de la sucesión
-#              de Fibonacci (cada término es la suma de los dos anteriores).
-# Entrada: n (cantidad de términos, entero).
-# Salida: Lista [0, 1, 1, 2, 3, 5, 8, ...].
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 124_fibonacci_list.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Genera una lista con los primeros n términos de la sucesión
+# -------------------------------------------------
 
 def fibonacci_list(n: int) -> list[int]:
     # Casos especiales: sin términos o solo el primero

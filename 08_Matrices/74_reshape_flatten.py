@@ -1,8 +1,9 @@
-# ------------------------------------------------------------
-# File: 45_array_reshape_flatten.py
-# Purpose: Reshape and flatten arrays.
+# -------------------------------------------------
+# File Name: 74_reshape_flatten.py
+# Author: Florentino Báez
+# Date: 08_Matrices
 # Description: reshape(), flatten(), ravel(); -1 for auto dimension.
-# ------------------------------------------------------------
+# -------------------------------------------------
 
 import numpy as np
 

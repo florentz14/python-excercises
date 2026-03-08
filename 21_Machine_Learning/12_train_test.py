@@ -1,17 +1,9 @@
-"""
-Machine Learning - Train/Test Split
-=====================================
-To evaluate an ML model, we split data into:
-- Training set: Used to TRAIN the model (typically 80%)
-- Testing set:  Used to EVALUATE the model (typically 20%)
-
-This tells us how well the model generalizes to unseen data.
-
-Why split?
-- If we evaluate on training data, we only see how well it memorizes
-- Testing on unseen data shows true predictive performance
-- Helps detect overfitting
-"""
+# -------------------------------------------------
+# File Name: 12_train_test.py
+# Author: Florentino Báez
+# Date: 21_Machine_Learning
+# Description: Train/test split for model evaluation.
+# -------------------------------------------------
 
 import numpy as np
 import matplotlib.pyplot as plt

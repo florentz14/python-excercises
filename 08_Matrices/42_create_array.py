@@ -1,8 +1,9 @@
-# ------------------------------------------------------------
-# File: 30_numpy_create_array.py
-# Purpose: Create NumPy arrays from lists.
+# -------------------------------------------------
+# File Name: 42_create_array.py
+# Author: Florentino Báez
+# Date: 08_Matrices
 # Description: Lists → np.array; .shape and .dtype.
-# ------------------------------------------------------------
+# -------------------------------------------------
 
 import numpy as np
 

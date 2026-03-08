@@ -1,13 +1,9 @@
-"""
-13_Queues - Sliding Window Maximum (LeetCode 239)
-==================================================
-Classic problem using monotonic queue.
-
-Given: nums = [1,3,-1,-3,5,3,6,7], k = 3
-Output: [3,3,5,5,6,7]
-
-Each element is the max of the current window of size k.
-"""
+# -------------------------------------------------
+# File Name: 12_sliding_window_maximum.py
+# Author: Florentino Báez
+# Date: 13_Queues
+# Description: Sliding window maximum. Monotonic deque. O(n).
+# -------------------------------------------------
 
 from collections import deque
 

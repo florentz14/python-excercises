@@ -1,35 +1,9 @@
-# ------------------------------------------------------------
-# Program: Binary Search - 6 Variantes de Entrevista
-# Purpose: Las variantes más importantes en entrevistas técnicas.
-#
-# Orden de estudio recomendado:
-#   1. binary_search (normal)
-#   2. first_occurrence
-#   3. last_occurrence
-#   4. search_insert_position
-#   5. search_rotated_sorted
-#   6. find_peak (peak_element)
-#
-# Resumen mental:
-#   - ¿Arreglo ordenado? Si no, quizá no se puede usar directamente.
-#   - ¿Cualquier posición? -> binary_search normal
-#   - ¿Primera/última aparición? -> guarda respuesta y sigue buscando
-#   - ¿Dónde insertar? -> devuelve left al final
-#   - ¿Propiedad especial (pico, rotado)? -> variante específica
-#
-# Tabla resumen:
-#   | Problema               | Resultado                      |
-#   | Standard Binary Search | índice exacto                  |
-#   | First Occurrence       | primera posición               |
-#   | Last Occurrence        | última posición                |
-#   | Search Insert Position | índice o posición de inserción |
-#   | Peak Element           | índice de un pico              |
-#   | Rotated Sorted Array   | índice en arreglo rotado       |
-#   | Find First True        | index of first True (bool list) |
-#
-# Complexity: O(log n) tiempo, O(1) espacio en todos.
-# ------------------------------------------------------------
-
+# -------------------------------------------------
+# File Name: 36b_binary_search_interview_variants.py
+# Author: Florentino Báez
+# Date: 05_Data_Structures
+# Description: Binary search interview variants. Common LeetCode-style problems.
+# -------------------------------------------------
 
 def binary_search(arr: list[int], target: int) -> int:
     """

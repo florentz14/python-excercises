@@ -1,8 +1,9 @@
-"""
-Ejercicio: Información Personal por Fecha de Nacimiento
-
-Programa que calcula información sobre una persona basada en su nombre y fecha de nacimiento.
-"""
+# -------------------------------------------------
+# File Name: 18_birth_date_info_zodiac.py
+# Author: Florentino Báez
+# Date: 02_Conditionals
+# Description: Información Personal por Fecha de Nacimiento
+# -------------------------------------------------
 
 from datetime import datetime, date
 

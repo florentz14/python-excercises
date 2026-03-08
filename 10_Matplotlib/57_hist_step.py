@@ -1,9 +1,8 @@
 # -------------------------------------------------
-# File Name: 10g_hist_step.py
+# File Name: 57_hist_step.py
 # Author: Florentino Báez
-# Date: Matplotlib
+# Date: 10_Matplotlib
 # Description: Step Histogram — outline and filled
-#              step histogram styles.
 # -------------------------------------------------
 
 import matplotlib.pyplot as plt

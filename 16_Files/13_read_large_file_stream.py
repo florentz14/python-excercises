@@ -1,11 +1,10 @@
-"""
-16_Files - Exercise 13: Reading large files efficiently with streaming
-======================================================================
-Reading large files line by line prevents loading the entire file into memory.
-Useful for log processing, data analysis, etc.
-"""
+# -------------------------------------------------
+# File Name: 13_read_large_file_stream.py
+# Author: Florentino Báez
+# Date: 16_Files
+# Description: Read large files by streaming. Memory-efficient line-by-line processing.
+# -------------------------------------------------
 
-# Create a large file for demonstration (simulate large data)
 large_file = "large_file.txt"
 with open(large_file, "w", encoding="utf-8") as f:
     for i in range(10000):  # Simulate 10,000 lines

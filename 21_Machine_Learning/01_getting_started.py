@@ -1,27 +1,10 @@
-"""
-Machine Learning - Getting Started
-===================================
-Machine Learning is about making computers learn from data
-and make predictions or decisions without being explicitly programmed.
+# -------------------------------------------------
+# File Name: 01_getting_started.py
+# Author: Florentino Báez
+# Date: 21_Machine_Learning
+# Description: ML intro: concepts, types, required libraries.
+# -------------------------------------------------
 
-Key concepts:
-- Data Set: A collection of data used to train the model
-- Features (X): Input variables used for prediction
-- Labels (y): Output variable we want to predict
-- Training: The process of learning patterns from data
-- Prediction: Using the trained model on new data
-
-Types of Machine Learning:
-1. Supervised Learning   - learns from labeled data (regression, classification)
-2. Unsupervised Learning - finds patterns in unlabeled data (clustering)
-3. Reinforcement Learning - learns by trial and reward
-
-Required libraries: numpy, scipy, scikit-learn, matplotlib
-"""
-
-# ============================================================
-# 1. Check that required libraries are installed
-# ============================================================
 import sys
 
 print("Python version:", sys.version)

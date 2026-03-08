@@ -1,11 +1,8 @@
 # -------------------------------------------------
 # File Name: 14_convert_list_tuple.py
 # Author: Florentino Báez
-# Date: Variables - Tuples
+# Date: 01_Variables_and_Types
 # Description: Convert Between List and Tuple.
-#              tuple(list) converts a list to a tuple.
-#              list(tuple) converts a tuple back to a list.
-#              Useful when you need mutability temporarily.
 # -------------------------------------------------
 
 print("Example 14: Convert list to tuple and vice versa")

@@ -1,5 +1,9 @@
-# Archivo: 27_06_interactiva.py
-# Descripción: Función interactiva para resolver ecuaciones cuadráticas
+# -------------------------------------------------
+# File Name: 14_interactive.py
+# Author: Florentino Báez
+# Date: 17_Equations
+# Description: Interactive quadratic equation solver.
+# -------------------------------------------------
 
 from resolver_cuadratica import ecuacion_cuadratica_completa
 

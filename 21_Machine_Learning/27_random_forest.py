@@ -1,11 +1,9 @@
-"""
-Random Forest - Ensemble of Decision Trees
-==========================================
-Combines many decision trees to produce a better prediction.
-Reduces overfitting compared to a single tree.
-
-Author: Florentino Báez
-"""
+# -------------------------------------------------
+# File Name: 27_random_forest.py
+# Author: Florentino Báez
+# Date: 21_Machine_Learning
+# Description: Random forest ensemble of decision trees.
+# -------------------------------------------------
 
 from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestClassifier

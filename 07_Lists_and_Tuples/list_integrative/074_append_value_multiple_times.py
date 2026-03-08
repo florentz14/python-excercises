@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 159. Append Same Value/List Multiple Times
-# ---------------------------------------------------------------------------
-# Descripción: Append Same Value/List Multiple Times
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 074_append_value_multiple_times.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Append Same Value/List Multiple Times
+# -------------------------------------------------
 
 def append_times(value, n: int) -> list:
     # Se repite el valor length veces en una lista.

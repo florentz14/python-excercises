@@ -1,25 +1,9 @@
-# ------------------------------------------------------------
-# File: 49_lambda_chapter_tutorial.py
-# Chapter: Lambda Functions
-#
-# Purpose:
-#   Lambda functions are anonymous (no name):
-#   - Accept multiple arguments
-#   - Contain only one expression
-#   - Syntax: lambda arg1, arg2: expression
-#
-# Sections:
-#   1. Defining lambda functions
-#   2. Calling functions inside a lambda
-#   3. Lambda inside regular functions (closures/factories)
-#
-# Author: Florentino Baez (adapted)
-# ------------------------------------------------------------
-
-
-# =============================================================================
-# Section 1: Defining a Lambda Function
-# =============================================================================
+# -------------------------------------------------
+# File Name: 49_lambda_chapter_tutorial.py
+# Author: Florentino Báez
+# Date: 04_Functions
+# Description: Simple lambda functions with one or more arguments."""
+# -------------------------------------------------
 
 def section1_basic():
     """Simple lambda functions with one or more arguments."""

@@ -1,10 +1,9 @@
-"""
-Clase Dataset (NumPy)
-=====================
-Topic: 11_OOP - Simple classes
-Descripción: Conjunto de datos; mean(), max() y normalize() por columnas.
-Requiere: pip install numpy
-"""
+# -------------------------------------------------
+# File Name: 29_dataset.py
+# Author: Florentino Báez
+# Date: 11_OOP
+# Description: Dataset class using NumPy with mean(), max() and normalize().
+# -------------------------------------------------
 
 import numpy as np
 

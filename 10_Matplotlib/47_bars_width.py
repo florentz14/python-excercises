@@ -1,7 +1,7 @@
 # -------------------------------------------------
-# File Name: 09d_bars_width.py
+# File Name: 47_bars_width.py
 # Author: Florentino Báez
-# Date: Matplotlib
+# Date: 10_Matplotlib
 # Description: Bar width comparison (thin vs wide, 2 subplots).
 # -------------------------------------------------
 

@@ -1,7 +1,7 @@
 # -------------------------------------------------
-# File Name: 08f_scatter_trend_line.py
+# File Name: 43_scatter_trend_line.py
 # Author: Florentino Báez
-# Date: Matplotlib
+# Date: 10_Matplotlib
 # Description: Student grades scatter with polyfit trend line.
 # -------------------------------------------------
 

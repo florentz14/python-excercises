@@ -1,10 +1,10 @@
-# ------------------------------------------------------------
-# File: 15_create_access_modify.py
-# Purpose: Create, access, and modify matrix elements.
+# -------------------------------------------------
+# File Name: 15_create_access_modify.py
+# Author: Florentino Báez
+# Date: 08_Matrices
 # Description: Indexing, element update, dimensions.
-# ------------------------------------------------------------
+# -------------------------------------------------
 
-# Create matrix as list of lists
 matrix = [
     [1, 2, 3],
     [4, 5, 6],

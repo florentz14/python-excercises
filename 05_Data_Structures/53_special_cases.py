@@ -1,18 +1,9 @@
 # -------------------------------------------------
-# File: 53_special_cases.py (Sorting - Special Cases)
-# -------------------------------------------------
+# File Name: 53_special_cases.py
 # Author: Florentino Báez
-# Module: Data Structures - Sorting Algorithms
-#
-# Description:
-#   Tests Merge Sort with edge cases to verify correct behavior:
-#   - Already sorted list
-#   - Reverse sorted list
-#   - All equal elements
-#   - Single element
-#   - Empty list
+# Date: 05_Data_Structures
+# Description: Special cases in sorting. Edge cases and optimizations.
 # -------------------------------------------------
-
 
 def is_sorted(arr):
     """Returns True if the list is sorted in ascending order."""

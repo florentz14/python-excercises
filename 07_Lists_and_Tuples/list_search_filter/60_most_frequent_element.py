@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 261. Most Frequent Element in List
-# ---------------------------------------------------------------------------
-# Descripción: Most Frequent Element in List
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 60_most_frequent_element.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Most Frequent Element in List
+# -------------------------------------------------
 
 from collections import Counter
 

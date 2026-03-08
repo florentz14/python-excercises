@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 100. Extract Common Index Elements (same value at same index across lists)
-# ---------------------------------------------------------------------------
-# Descripción: Extract Common Index Elements (same value at same index across lists)
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 19_common_index_elements.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Extract Common Index Elements (same value at same index across lists)
+# -------------------------------------------------
 
 def common_index_elements(*lists: list) -> list:
     # Lista por comprensión: se construye la lista a partir del iterable.

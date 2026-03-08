@@ -1,10 +1,9 @@
-# ------------------------------------------------------------
+# -------------------------------------------------
 # File Name: 03_create_atm_user.py
-# Author: Florentino Baez
-# Date: February 06, 2026
+# Author: Florentino Báez
+# Date: 20_MySQL
 # Description: Helper script to create ATM users easily
-# Usage: python 03_create_atm_user.py
-# ------------------------------------------------------------
+# -------------------------------------------------
 
 import os
 from dotenv import load_dotenv

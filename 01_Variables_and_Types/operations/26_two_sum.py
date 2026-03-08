@@ -1,23 +1,9 @@
-"""
-Two Sum - Find two indices that add up to the target
-====================================================
-Topic: Operations (01_Variables_and_Types/operations)
-Description: Given an array of integers and a target value, finds the indices
-of two numbers that sum exactly to the target. Uses a single pass with a
-dictionary for O(1) lookup.
-
-Input:  One line with space-separated numbers (the array).
-        A second line with the target value.
-Output: The two indices separated by space, or empty if no solution exists.
-
-Complexity:
-    - Time:   O(n) where n is the array size.
-      A single loop traverses the array; each lookup and storage
-      in the dictionary is O(1) on average.
-    - Space:  O(n) in the worst case, for the dictionary that may
-      store up to n pairs (value -> index).
-"""
-
+# -------------------------------------------------
+# File Name: 26_two_sum.py
+# Author: Florentino Báez
+# Date: 01_Variables_and_Types
+# Description: Two Sum: finds two indices that add up to the target.
+# -------------------------------------------------
 
 def two_sum(arr: list[int], target: int) -> list[int]:
     """

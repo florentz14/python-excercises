@@ -1,11 +1,8 @@
 # -------------------------------------------------
 # File Name: 08_concatenation_repetition.py
 # Author: Florentino Báez
-# Date: Variables - Tuples
+# Date: 01_Variables_and_Types
 # Description: Tuple Concatenation and Repetition.
-#              The + operator joins two tuples into a new one.
-#              The * operator repeats a tuple n times. Both
-#              produce new tuples (originals stay unchanged).
 # -------------------------------------------------
 
 print("Example 8: Tuple concatenation and repetition")

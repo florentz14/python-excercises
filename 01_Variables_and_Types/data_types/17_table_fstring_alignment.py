@@ -1,8 +1,10 @@
-# Exercise 2: Adding Spacing for Alignment
-# Use f-strings with left-alignment formatting (:<) to create neatly
-# aligned columns with consistent spacing.
+# -------------------------------------------------
+# File Name: 17_table_fstring_alignment.py
+# Author: Florentino Báez
+# Date: 01_Variables_and_Types
+# Description: Use f-strings with left-alignment (:<) for neatly
+# -------------------------------------------------
 
-# Create variables for numbers 1 to 9
 num1 = 1
 num2 = 2
 num3 = 3

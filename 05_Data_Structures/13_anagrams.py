@@ -1,16 +1,9 @@
 # -------------------------------------------------
-# File: 13_anagrams.py (Anagrams)
-# -------------------------------------------------
+# File Name: 13_anagrams.py
 # Author: Florentino Báez
-# Module: Data Structures - String Algorithms
-#
-# Description:
-#   - is_anagram: checks if two strings have the same characters.
-#   - group_anagrams: groups words that are anagrams of each other.
-#
-# Complexity: O(n log n) for is_anagram (sorting); O(n * k log k) for group.
+# Date: 05_Data_Structures
+# Description: Anagram utilities. is_anagram checks if two strings have same characters; group_anagrams groups words that are anagrams. O(n*k log k).
 # -------------------------------------------------
-
 
 def is_anagram(s1, s2):
     """Returns True if s1 and s2 are anagrams (same letters, different order)."""

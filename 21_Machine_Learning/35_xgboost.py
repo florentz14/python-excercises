@@ -1,11 +1,9 @@
-"""
-XGBoost - Optimized Gradient Boosting
-======================================
-Highly optimized boosting implementation. Very popular in Kaggle and production.
-Requires: pip install xgboost
-
-Author: Florentino Baez
-"""
+# -------------------------------------------------
+# File Name: 35_xgboost.py
+# Author: Florentino Báez
+# Date: 21_Machine_Learning
+# Description: XGBoost optimized gradient boosting.
+# -------------------------------------------------
 
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score

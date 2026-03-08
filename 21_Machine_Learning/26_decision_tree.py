@@ -1,10 +1,9 @@
-"""
-Decision Tree - Tree-Structured Classification
-=================================================
-Makes decisions in tree form: if income > 5000 → purchase, etc.
-
-Author: Florentino Báez
-"""
+# -------------------------------------------------
+# File Name: 26_decision_tree.py
+# Author: Florentino Báez
+# Date: 21_Machine_Learning
+# Description: Decision tree for tree-structured classification.
+# -------------------------------------------------
 
 from sklearn.model_selection import train_test_split
 from sklearn.tree import DecisionTreeClassifier

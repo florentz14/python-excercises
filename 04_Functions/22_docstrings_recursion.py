@@ -1,7 +1,8 @@
 # -------------------------------------------------
-# File: 22_docstrings_recursion.py
+# File Name: 22_docstrings_recursion.py
+# Author: Florentino Báez
+# Date: 04_Functions
 # Description: Docstrings and recursive functions.
-#              Documentation and self-calling functions.
 # -------------------------------------------------
 
 print("=== Docstrings y Recursión ===\n")

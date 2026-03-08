@@ -1,4 +1,9 @@
-# Average Numbers in Python
+# -------------------------------------------------
+# File Name: 16_average_numbers.py
+# Author: Florentino Báez
+# Date: 01_Variables_and_Types
+# Description: Average and weighted average of lists of numbers.
+# -------------------------------------------------
 
 import statistics
 

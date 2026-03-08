@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 176. Create New List by Dividing Two Lists Element-Wise
-# ---------------------------------------------------------------------------
-# Descripción: Create New List by Dividing Two Lists Element-Wise
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 085_divide_two_lists.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Create New List by Dividing Two Lists Element-Wise
+# -------------------------------------------------
 
 def divide_lists(a: list[float], b: list[float]) -> list[float]:
     # Se devuelve un valor u otro según la condición.

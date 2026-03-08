@@ -1,11 +1,9 @@
-"""
-K-Nearest Neighbors (KNN) - Classification by Neighbors
-========================================================
-Classifies based on the K nearest neighbors.
-If the 3 nearest neighbors are "red", this point is probably "red" too.
-
-Author: Florentino Báez
-"""
+# -------------------------------------------------
+# File Name: 29_knn.py
+# Author: Florentino Báez
+# Date: 21_Machine_Learning
+# Description: KNN classification by nearest neighbors.
+# -------------------------------------------------
 
 from sklearn.model_selection import train_test_split
 from sklearn.neighbors import KNeighborsClassifier

@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 189. Swap First and Last Element of List
-# ---------------------------------------------------------------------------
-# Descripción: Swap First and Last Element of List
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 092_swap_first_last.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Swap First and Last Element of List
+# -------------------------------------------------
 
 def swap_first_last(lst: list) -> list:
     if len(lst) < 2:

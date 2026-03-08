@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 116. Sort List of Lists by Given Index of Inner List
-# ---------------------------------------------------------------------------
-# Descripción: Sort List of Lists by Given Index of Inner List
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 05_sort_list_by_index.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Sort List of Lists by Given Index of Inner List
+# -------------------------------------------------
 
 def sort_by_inner_index(lst: list[tuple], index: int) -> list:
     # Se ordena la lista usando key para comparar (p. ej. por longitud o valor).

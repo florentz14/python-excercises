@@ -1,7 +1,7 @@
 # -------------------------------------------------
-# File Name: 46_euro12_goals_bar.py
+# File Name: 99_euro12_goals_bar.py
 # Author: Florentino Báez
-# Date: Matplotlib
+# Date: 10_Matplotlib
 # Description: Horizontal bar chart of goals scored by team (Euro 2012).
 # -------------------------------------------------
 

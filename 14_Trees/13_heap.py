@@ -1,13 +1,9 @@
-"""
-14_Trees - Heap (Min-Heap / Max-Heap)
-=========================================
-Complete binary tree with heap property.
-Min-Heap: parent <= children. Max-Heap: parent >= children.
-
-Complexity: insert O(log n), extract O(log n), peek O(1).
-Used in: Priority Queue, Dijkstra, Heapsort.
-"""
-
+# -------------------------------------------------
+# File Name: 13_heap.py
+# Author: Florentino Báez
+# Date: 14_Trees
+# Description: Min-Heap/Max-Heap: complete binary tree with heap property.
+# -------------------------------------------------
 
 class MinHeap:
     """Min-Heap: smallest at root. Parent <= children."""

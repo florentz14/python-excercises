@@ -1,8 +1,9 @@
-# ------------------------------------------------------------
-# File: 03_rank_full_analysis.py
-# Purpose: Complete analysis of matrix rank.
+# -------------------------------------------------
+# File Name: 03_rank_full_analysis.py
+# Author: Florentino Báez
+# Date: 08_Matrices
 # Description: Rank, determinant, fundamental subspaces, full/rank-deficient.
-# ------------------------------------------------------------
+# -------------------------------------------------
 
 import numpy as np
 

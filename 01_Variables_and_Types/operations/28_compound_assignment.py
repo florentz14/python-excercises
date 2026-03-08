@@ -1,13 +1,10 @@
-"""
-Compound assignment operators in Python
-=======================================
-Topic: Operations (01_Variables_and_Types/operations)
-Description: +=, -=, *=, /=, etc. - Shorthand for operate-and-assign in one step.
+# -------------------------------------------------
+# File Name: 28_compound_assignment.py
+# Author: Florentino Báez
+# Date: 01_Variables_and_Types
+# Description: Compound assignment operators (+=, -=, *=, /=, etc.)
+# -------------------------------------------------
 
-Complexity: O(1) for all operations (atomic operations).
-"""
-
-# Compound assignment operators: operate and assign in a single step
 x = 10
 x += 5   # x = x + 5
 print("x += 5 ->", x)

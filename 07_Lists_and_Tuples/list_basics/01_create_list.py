@@ -1,13 +1,10 @@
-# ---------------------------------------------------------------------------
-# Lista Simple - 01: Crear una Lista
-# ---------------------------------------------------------------------------
-# Descripcion: Una lista es una coleccion ordenada y mutable de elementos.
-#              Se define usando corchetes [] y puede contener cualquier tipo
-#              de dato. Los elementos se separan por comas.
-# Metodo:      list literal [] / list()
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 01_create_list.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Una lista es una coleccion ordenada y mutable de elementos.
+# -------------------------------------------------
 
-# Create a list of fruits
 fruits = ["apple", "banana", "cherry", "pineapple", "grape", "blueberry", "mango", "strawberry", "kiwi"]
 print("Fruit list:", fruits)
 # Output: ['apple', 'banana', 'cherry', 'pineapple', 'grape', 'blueberry', 'mango', 'strawberry', 'kiwi']

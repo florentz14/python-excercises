@@ -1,8 +1,9 @@
-# ------------------------------------------------------------
-# File: 15_valid_parentheses_string.py
-# Purpose: Valid parentheses in string.
-# Description: Stack-based. O(n).
-# ------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 15_valid_parentheses_string.py
+# Author: Florentino Báez
+# Date: 01_Variables_and_Types
+# Description: Valid parentheses check using stack-based approach.
+# -------------------------------------------------
 
 def is_valid(s: str) -> bool:
     stack = []

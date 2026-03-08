@@ -1,9 +1,9 @@
-"""
-if.py - Ejemplo 3: Asignar nota según puntuación
-================================================
-Topic: Conditionals (02_Conditionals)
-Descripción: if/elif/else para convertir score en letra (A–F).
-"""
+# -------------------------------------------------
+# File Name: 11_grade_assignment.py
+# Author: Florentino Báez
+# Date: 02_Conditionals
+# Description: if/elif/else para convertir score en letra (A–F).
+# -------------------------------------------------
 
 print("Example 3: Grade Assignment")
 print("-" * 40)

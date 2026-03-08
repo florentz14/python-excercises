@@ -1,8 +1,10 @@
-# Exercise 1: Simple 3-Column Number Table
-# In this exercise, we create variables for numbers 1-9 and print them
-# in a 3-column table format using basic print statements.
+# -------------------------------------------------
+# File Name: 16_table_3_column_numbers.py
+# Author: Florentino Báez
+# Date: 01_Variables_and_Types
+# Description: Create variables for numbers 1-9 and print them
+# -------------------------------------------------
 
-# Create variables for numbers 1 to 9
 num1 = 1
 num2 = 2
 num3 = 3

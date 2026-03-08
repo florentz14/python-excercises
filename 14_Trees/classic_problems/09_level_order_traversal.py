@@ -1,8 +1,9 @@
-"""
-#9 Binary Tree Level Order Traversal
-LeetCode 102. BFS level by level.
-Time: O(n), Space: O(n)
-"""
+# -------------------------------------------------
+# File Name: 09_level_order_traversal.py
+# Author: Florentino Báez
+# Date: 14_Trees
+# Description: LeetCode 102 - Level order traversal (BFS) level by level.
+# -------------------------------------------------
 
 from collections import deque
 

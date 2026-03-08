@@ -1,8 +1,8 @@
 # -------------------------------------------------
 # File Name: 29_subset_superset_equality.py
-# Purpose: Subset, proper subset, superset, and equality operators
-# Description: Demonstrates A <= B (subset), A < B (proper subset),
-#              A >= B (superset), A == B (equality) with Python sets.
+# Author: Florentino Báez
+# Date: 01_Variables_and_Types
+# Description: Demonstrates subset (<=), proper subset (<), superset (>=),
 # -------------------------------------------------
 
 print("Subset, Proper Subset, Superset, and Equality")

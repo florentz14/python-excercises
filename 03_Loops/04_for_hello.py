@@ -1,8 +1,9 @@
-"""For loop: Greeting repeat.
-Prints "Hello, welcome!" 5 times using range(5).
-"""
+# -------------------------------------------------
+# File Name: 04_for_hello.py
 # Author: Florentino Báez
-
+# Date: 03_Loops
+# Description: Greeting repeat.
+# -------------------------------------------------
 
 for count in range(5):
     print("Hello, welcome!")

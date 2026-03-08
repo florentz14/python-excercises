@@ -1,7 +1,7 @@
 # -------------------------------------------------
-# File Name: 03b_markers_types.py
+# File Name: 11_markers_types.py
 # Author: Florentino Báez
-# Date: Matplotlib
+# Date: 10_Matplotlib
 # Description: Different marker types (2x3 grid subplots). Includes print reference for common markers.
 # -------------------------------------------------
 

@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 136. Remove Duplicate Words from List (preserve order)
-# ---------------------------------------------------------------------------
-# Descripción: Remove Duplicate Words from List (preserve order)
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 34_remove_duplicate_words.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Remove Duplicate Words from List (preserve order)
+# -------------------------------------------------
 
 def remove_duplicate_words(lst: list[str]) -> list[str]:
     seen = set()

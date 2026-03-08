@@ -1,7 +1,7 @@
 # -------------------------------------------------
-# File Name: 10e_hist_horizontal.py
+# File Name: 55_hist_horizontal.py
 # Author: Florentino Báez
-# Date: Matplotlib
+# Date: 10_Matplotlib
 # Description: Horizontal histogram.
 # -------------------------------------------------
 

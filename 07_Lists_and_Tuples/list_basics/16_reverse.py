@@ -1,12 +1,9 @@
-# ---------------------------------------------------------------------------
-# Lista Simple - 16: Metodo reverse() - Invertir Lista
-# ---------------------------------------------------------------------------
-# Descripcion: El metodo reverse() invierte el orden de los elementos de la
-#              lista IN-PLACE (modifica la lista original). No ordena, solo
-#              invierte la posicion de los elementos.
-# Sintaxis:    lista.reverse()
-# Complejidad: O(n)
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 16_reverse.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Demonstrates reverse.
+# -------------------------------------------------
 
 fruits = ["apple", "banana", "cherry", "pineapple", "grape", "mango"]
 print("Original:", fruits)

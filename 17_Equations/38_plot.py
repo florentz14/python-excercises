@@ -1,5 +1,9 @@
-# Archivo: 35_05_graficar.py
-# Descripción: Visualización gráfica de la suma de Riemann
+# -------------------------------------------------
+# File Name: 38_plot.py
+# Author: Florentino Báez
+# Date: 17_Equations
+# Description: Graphical visualization of Riemann sum.
+# -------------------------------------------------
 
 import numpy as np
 import matplotlib.pyplot as plt

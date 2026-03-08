@@ -1,4 +1,9 @@
-# Balanced Parentheses Checker using Stack
+# -------------------------------------------------
+# File Name: 04_balanced_parentheses.py
+# Author: Florentino Báez
+# Date: 12_Stacks
+# Description: Balanced parentheses checker. Validates nesting of brackets.
+# -------------------------------------------------
 
 class Stack:
     """Basic stack implementation"""

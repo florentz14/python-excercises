@@ -1,8 +1,9 @@
-"""For loop: Sum 1 to 5.
-Accumulates the sum of numbers from 1 to 5.
-"""
+# -------------------------------------------------
+# File Name: 14_for_sum_1_to_5.py
 # Author: Florentino Báez
-
+# Date: 03_Loops
+# Description: Sum 1 to 5.
+# -------------------------------------------------
 
 total = 0
 

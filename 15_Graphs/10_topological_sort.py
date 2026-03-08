@@ -1,8 +1,9 @@
-"""
-15_Graphs - Topological sorting (DAG)
-=========================================
-Orden lineal de nodos en grafo dirigido acíclico.
-"""
+# -------------------------------------------------
+# File Name: 10_topological_sort.py
+# Author: Florentino Báez
+# Date: 15_Graphs
+# Description: 15_Graphs - Topological sorting (DAG) ========================================= Orden lineal de nodos en grafo dirigido acíclico.
+# -------------------------------------------------
 
 from collections import deque, defaultdict
 

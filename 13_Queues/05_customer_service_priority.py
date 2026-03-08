@@ -1,4 +1,9 @@
-# Customer Service Queue with Priority (VIP and Regular)
+# -------------------------------------------------
+# File Name: 05_customer_service_priority.py
+# Author: Florentino Báez
+# Date: 13_Queues
+# Description: Priority customer service. Queue with priority ordering.
+# -------------------------------------------------
 
 from collections import deque
 

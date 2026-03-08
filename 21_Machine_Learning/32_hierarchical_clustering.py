@@ -1,11 +1,9 @@
-"""
-Hierarchical Clustering - Hierarchical Grouping
-================================================
-Forms a hierarchy of clusters.
-Useful for seeing relationships between groups and subgroups.
-
-Author: Florentino Báez
-"""
+# -------------------------------------------------
+# File Name: 32_hierarchical_clustering.py
+# Author: Florentino Báez
+# Date: 21_Machine_Learning
+# Description: Hierarchical clustering for hierarchical grouping.
+# -------------------------------------------------
 
 from sklearn.cluster import AgglomerativeClustering
 

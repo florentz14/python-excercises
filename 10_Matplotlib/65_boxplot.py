@@ -1,11 +1,8 @@
 # -------------------------------------------------
-# File Name: 12_boxplot.py
+# File Name: 65_boxplot.py
 # Author: Florentino Báez
-# Date: Matplotlib
+# Date: 10_Matplotlib
 # Description: Box Plots (Boxplot).
-#              Display median, quartiles, and outliers using
-#              plt.boxplot(). Compare distributions across
-#              groups with patch_artist styling.
 # -------------------------------------------------
 
 """

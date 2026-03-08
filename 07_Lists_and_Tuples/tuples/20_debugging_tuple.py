@@ -1,7 +1,9 @@
-# ---------------------------------------------------------------------------
-# Debugging Assignment - Tuplas (corregido)
-# Las tuplas son INMUTABLES: no se pueden modificar elementos.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 20_debugging_tuple.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Demonstrates debugging tuple.
+# -------------------------------------------------
 
 numbers = (4, 8, 12, 16, 20, 24, 28, 32)
 

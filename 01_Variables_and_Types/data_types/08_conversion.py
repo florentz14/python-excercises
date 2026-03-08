@@ -1,40 +1,40 @@
-"""
-Conversión entre tipos de datos
-================================
-Topic: Variables and Types (01_Variables_and_Types)
-Descripción: int(), float(), str(), bool(), list(), tuple(), set(), dict().
-"""
-# Conversión numérica
-print("--- Conversión numérica ---")
-print("int(3.9):", int(3.9))      # Trunca decimales
+# -------------------------------------------------
+# File Name: 08_conversion.py
+# Author: Florentino Báez
+# Date: 01_Variables_and_Types
+# Description: Type conversion: int(), float(), str(), bool(),
+# -------------------------------------------------
+
+print("--- Numeric conversion ---")
+print("int(3.9):", int(3.9))      # Truncates decimals
 print("float(7):", float(7))
 print("int('42'):", int("42"))
 print("float('3.14'):", float("3.14"))
 
-# Conversión a string
-print("\n--- Conversión a string ---")
+# Conversion to string
+print("\n--- Conversion to string ---")
 print("str(100):", str(100))
 print("str(3.14):", str(3.14))
 print("str(True):", str(True))
 
-# Conversión a bool (valores truthy/falsy)
-print("\n--- Conversión a bool ---")
+# Conversion to bool (truthy/falsy values)
+print("\n--- Conversion to bool ---")
 print("bool(1):", bool(1))
 print("bool(0):", bool(0))
 print("bool(''):", bool(""))
-print("bool('texto'):", bool("texto"))
+print("bool('text'):", bool("text"))
 print("bool([]):", bool([]))
 print("bool([1,2]):", bool([1, 2]))
 
-# Conversión entre secuencias
-print("\n--- Conversión entre secuencias ---")
-lista = [1, 2, 3]
-tupla = tuple(lista)
-print("tuple([1,2,3]):", tupla)
+# Conversion between sequences
+print("\n--- Conversion between sequences ---")
+lst = [1, 2, 3]
+tpl = tuple(lst)
+print("tuple([1,2,3]):", tpl)
 
-cadena = "abc"
-lista_chars = list(cadena)
-print("list('abc'):", lista_chars)
+s = "abc"
+list_chars = list(s)  # string to list of chars
+print("list('abc'):", list_chars)
 
-conjunto = set([1, 2, 2, 3])
-print("set([1,2,2,3]):", conjunto)
+st = set([1, 2, 2, 3])  # list to set (removes duplicates)
+print("set([1,2,2,3]):", st)

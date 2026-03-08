@@ -1,5 +1,9 @@
-# 22_simple_product.py - Simple class: Product
-# Florentino Baez - ITSE-1002
+# -------------------------------------------------
+# File Name: 49_product.py
+# Author: Florentino Báez
+# Date: 11_OOP
+# Description: Simple Product class with name, price and info() method.
+# -------------------------------------------------
 
 class Product:
     """Class with attributes and a method."""

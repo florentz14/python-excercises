@@ -1,7 +1,8 @@
 # -------------------------------------------------
-# File: 21_person.py
+# File Name: 21_person.py
+# Author: Florentino Báez
+# Date: 11_OOP
 # Description: Person class - practical application.
-#              Encapsulation, validation, methods.
 # -------------------------------------------------
 
 from datetime import datetime, date

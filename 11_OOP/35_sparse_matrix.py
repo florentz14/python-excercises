@@ -1,10 +1,9 @@
-"""
-Clase SparseMatrix (diccionario)
-=================================
-Topic: 11_OOP - Simple classes
-Descripción: Matriz dispersa; solo guarda elementos no nulos en un dict (fila, col): valor.
-"""
-
+# -------------------------------------------------
+# File Name: 35_sparse_matrix.py
+# Author: Florentino Báez
+# Date: 11_OOP
+# Description: Sparse matrix storing only non-zero elements in dict.
+# -------------------------------------------------
 
 class SparseMatrix:
     def __init__(self):

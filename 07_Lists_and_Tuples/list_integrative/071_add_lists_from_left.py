@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 155. Add Two Lists from Left (element-wise, pad shorter with 0 or keep rest)
-# ---------------------------------------------------------------------------
-# Descripción: Add Two Lists from Left (element-wise, pad shorter with 0 or keep r...
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 071_add_lists_from_left.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Add Two Lists from Left (element-wise, pad shorter with 0 or keep r...
+# -------------------------------------------------
 
 def add_lists_left(a: list[int], b: list[int]) -> list[int]:
     result = []

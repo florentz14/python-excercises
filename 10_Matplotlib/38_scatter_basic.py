@@ -1,7 +1,7 @@
 # -------------------------------------------------
-# File Name: 08a_scatter_basic.py
+# File Name: 38_scatter_basic.py
 # Author: Florentino Báez
-# Date: Matplotlib
+# Date: 10_Matplotlib
 # Description: Basic scatter plot (age vs speed).
 # -------------------------------------------------
 

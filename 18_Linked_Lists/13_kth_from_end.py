@@ -1,7 +1,8 @@
 # -------------------------------------------------
-# File: 13_kth_from_end.py
+# File Name: 13_kth_from_end.py
+# Author: Florentino Báez
+# Date: 18_Linked_Lists
 # Description: Find kth node from the end of linked list.
-#              Using two pointer technique.
 # -------------------------------------------------
 
 from typing import Any, Optional

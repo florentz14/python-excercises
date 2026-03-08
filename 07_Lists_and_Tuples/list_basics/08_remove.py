@@ -1,12 +1,9 @@
-# ---------------------------------------------------------------------------
-# Lista Simple - 08: Metodo remove()
-# ---------------------------------------------------------------------------
-# Descripcion: El metodo remove() elimina la PRIMERA ocurrencia de un valor
-#              especifico de la lista. Si el valor no existe, lanza un
-#              ValueError.
-# Sintaxis:    lista.remove(valor)
-# Complejidad: O(n) - busca el elemento y desplaza los posteriores
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 08_remove.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: El metodo remove() elimina la PRIMERA ocurrencia de un valor
+# -------------------------------------------------
 
 fruits = ["apple", "banana", "cherry", "banana", "grape", "blueberry"]
 print("Original:", fruits)

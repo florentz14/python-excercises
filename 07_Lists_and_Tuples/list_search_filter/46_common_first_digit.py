@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 204. Check If First Digit/Character Same for All Elements
-# ---------------------------------------------------------------------------
-# Descripción: Check If First Digit/Character Same for All Elements
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 46_common_first_digit.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Check If First Digit/Character Same for All Elements
+# -------------------------------------------------
 
 def same_first_digit(lst: list) -> bool:
     if not lst:

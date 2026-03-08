@@ -1,5 +1,9 @@
-# Archivo: 27_02_optimizada.py
-# Descripción: Versión optimizada con soporte para números complejos
+# -------------------------------------------------
+# File Name: 10_optimized.py
+# Author: Florentino Báez
+# Date: 17_Equations
+# Description: Optimized quadratic solver with complex number support.
+# -------------------------------------------------
 
 from resolver_cuadratica import ecuacion_cuadratica_completa
 

@@ -1,7 +1,10 @@
-# Ejemplo de Clases: Personas
-# Este programa demuestra la herencia y polimorfismo con diferentes tipos de personas
+# -------------------------------------------------
+# File Name: 33_people.py
+# Author: Florentino Báez
+# Date: 11_OOP
+# Description: Demonstrates inheritance and polymorphism with people classes.
+# -------------------------------------------------
 
-# Clase padre: Persona
 class Persona:
     """Clase base para todas las personas"""
 

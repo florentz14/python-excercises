@@ -1,7 +1,8 @@
 # -------------------------------------------------
-# File: 16_classmethod.py
+# File Name: 16_classmethod.py
+# Author: Florentino Báez
+# Date: 11_OOP
 # Description: @classmethod decorator.
-#              Methods that operate on the class, not instances.
 # -------------------------------------------------
 
 from typing import TypeVar

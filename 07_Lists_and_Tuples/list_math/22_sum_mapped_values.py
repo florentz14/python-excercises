@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 250. Sum After Mapping
-# ---------------------------------------------------------------------------
-# Descripción: Sum After Mapping
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 22_sum_mapped_values.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Sum After Mapping
+# -------------------------------------------------
 
 def sum_after_map(lst: list, func) -> int | float:
     # Se devuelve la suma de todos los elementos.

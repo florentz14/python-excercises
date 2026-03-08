@@ -1,4 +1,9 @@
-# Bitwise Operators in Python
+# -------------------------------------------------
+# File Name: 05_bitwise_operators.py
+# Author: Florentino Báez
+# Date: 01_Variables_and_Types
+# Description: Demonstrates bitwise operators (&, |, ^, ~, <<, >>) with binary
+# -------------------------------------------------
 
 a = 10  # Binary: 1010
 b = 4   # Binary: 0100

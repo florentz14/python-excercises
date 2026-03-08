@@ -1,13 +1,9 @@
-# ---------------------------------------------------------------------------
-# Lista Simple - 09: Metodo pop()
-# ---------------------------------------------------------------------------
-# Descripcion: El metodo pop() elimina y RETORNA el elemento en un indice
-#              dado. Si no se especifica indice, elimina el ultimo elemento.
-#              Lanza IndexError si el indice esta fuera de rango.
-# Sintaxis:    lista.pop()       -> elimina y retorna el ultimo
-#              lista.pop(indice) -> elimina y retorna el del indice dado
-# Complejidad: O(1) sin indice / O(n) con indice
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 09_pop.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: El metodo pop() elimina y RETORNA el elemento en un indice
+# -------------------------------------------------
 
 fruits = ["apple", "banana", "cherry", "pineapple", "grape", "mango"]
 print("Original:", fruits)

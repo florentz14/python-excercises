@@ -1,7 +1,7 @@
 # -------------------------------------------------
-# File Name: 20_players_top_scorers.py
+# File Name: 73_players_top_scorers.py
 # Author: Florentino Báez
-# Date: Matplotlib
+# Date: 10_Matplotlib
 # Description: Horizontal Bar — Top 10 Players by Score.
 # -------------------------------------------------
 

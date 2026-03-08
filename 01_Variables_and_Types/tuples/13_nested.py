@@ -1,11 +1,8 @@
 # -------------------------------------------------
 # File Name: 13_nested.py
 # Author: Florentino Báez
-# Date: Variables - Tuples
+# Date: 01_Variables_and_Types
 # Description: Nested Tuples.
-#              A tuple can contain other tuples as elements.
-#              Access inner elements by chaining indices:
-#              tuple[outer][inner].
 # -------------------------------------------------
 
 print("Example 13: Nested tuples")

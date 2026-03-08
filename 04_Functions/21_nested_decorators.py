@@ -1,7 +1,8 @@
 # -------------------------------------------------
-# File: 21_anidadas_decoradores.py
+# File Name: 21_nested_decorators.py
+# Author: Florentino Báez
+# Date: 04_Functions
 # Description: Nested functions and decorators.
-#              Function composition patterns.
 # -------------------------------------------------
 
 print("=== Funciones Anidadas y Decoradores ===\n")

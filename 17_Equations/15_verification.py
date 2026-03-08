@@ -1,5 +1,9 @@
-# Archivo: 27_07_verificacion.py
-# Descripción: Verificación de soluciones de ecuaciones cuadráticas
+# -------------------------------------------------
+# File Name: 15_verification.py
+# Author: Florentino Báez
+# Date: 17_Equations
+# Description: Verify solutions of quadratic equations.
+# -------------------------------------------------
 
 from resolver_cuadratica import ecuacion_cuadratica_completa
 

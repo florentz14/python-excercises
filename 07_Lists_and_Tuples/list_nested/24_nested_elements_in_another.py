@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 121. Find Nested List Elements Present in Another List
-# ---------------------------------------------------------------------------
-# Descripción: Find Nested List Elements Present in Another List
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 24_nested_elements_in_another.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Find Nested List Elements Present in Another List
+# -------------------------------------------------
 
 def nested_intersection(flat: list, nested: list[list]) -> list[list]:
     """For each sublist, keep only elements that are in flat."""

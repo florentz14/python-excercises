@@ -1,9 +1,9 @@
 # -------------------------------------------------
-# File: 03_hash_functions.py
+# File Name: 03_hash_functions.py
+# Author: Florentino Báez
+# Date: 19_Hash_Tables
 # Description: Common Hash Functions.
-#              Different hashing techniques.
 # -------------------------------------------------
-
 
 def division_hash(key, size):
     """

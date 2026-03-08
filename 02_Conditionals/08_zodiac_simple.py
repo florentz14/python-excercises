@@ -1,4 +1,9 @@
-# There are 12 animals in the Chinese zodiac, separated by 12 years.
+# -------------------------------------------------
+# File Name: 08_zodiac_simple.py
+# Author: Florentino Báez
+# Date: 02_Conditionals
+# Description: Demonstrates 08 zodiac simple.
+# -------------------------------------------------
 
 year = int(input("What year were you born? "))
 

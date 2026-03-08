@@ -1,5 +1,9 @@
-# 24_simple_counter.py - Simple class: Counter (mutable state)
-# Florentino Baez - ITSE-1002
+# -------------------------------------------------
+# File Name: 51_counter.py
+# Author: Florentino Báez
+# Date: 11_OOP
+# Description: Counter class with mutable state, increment/decrement.
+# -------------------------------------------------
 
 class Counter:
     """Class with mutable state and methods."""

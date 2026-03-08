@@ -1,8 +1,9 @@
-"""
-14_Trees - Tree traversals (preorden, inorden, postorden, por niveles)
-=============================================================================
-ArbolRecorridos: preorden, inorden, postorden, nivel orden (BFS).
-"""
+# -------------------------------------------------
+# File Name: 05_traversals.py
+# Author: Florentino Báez
+# Date: 14_Trees
+# Description: Tree traversals: preorder, inorder, postorder, level-order (BFS).
+# -------------------------------------------------
 
 from collections import deque
 

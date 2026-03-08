@@ -1,19 +1,9 @@
 # -------------------------------------------------
-# File: 02_seleccion_actividades.py (Activity Selection)
-# -------------------------------------------------
+# File Name: 02_activity_selection.py
 # Author: Florentino Báez
-# Module: Data Structures - Greedy Algorithms
-#
-# Description:
-#   Activity Selection Problem (Interval Scheduling). Finds the maximum
-#   number of non-overlapping activities. The greedy strategy: always
-#   choose the activity that finishes earliest among those that don't
-#   conflict with already selected activities.
-#
-# Strategy: Sort by finish time; pick activities that finish first.
-# Complexity: O(n log n) due to sorting.
+# Date: 05_Data_Structures
+# Description: Activity Selection (Interval Scheduling). Maximum non-overlapping activities. Greedy: sort by finish time, pick earliest-finishing compatible. O(n log n).
 # -------------------------------------------------
-
 
 def activity_selection(starts, ends):
     """

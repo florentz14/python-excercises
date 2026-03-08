@@ -1,8 +1,9 @@
-"""For loop: Multiplication table of 4.
-Prints 4 × n for n from 1 to 10.
-"""
+# -------------------------------------------------
+# File Name: 20_for_table_4.py
 # Author: Florentino Báez
-
+# Date: 03_Loops
+# Description: Multiplication table of 4.
+# -------------------------------------------------
 
 for i in range(1, 11):
     print("4 x", i, "=", 4 * i)

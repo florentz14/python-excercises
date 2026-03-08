@@ -1,9 +1,9 @@
-"""
-#11 Search in a Binary Search Tree (LeetCode 700)
-==================================================
-Concept: BST property - go left if target < root, right if target > root
-Time: O(h), Space: O(h)
-"""
+# -------------------------------------------------
+# File Name: 11_search_bst.py
+# Author: Florentino Báez
+# Date: 14_Trees
+# Description: LeetCode 700 - Search in BST (go left/right by value).
+# -------------------------------------------------
 
 from common import TreeNode
 

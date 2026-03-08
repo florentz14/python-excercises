@@ -1,11 +1,9 @@
-"""
-ML Mini Course - Step 3: Classification with real dataset
-=========================================================
-Classify iris species (setosa, versicolor, virginica).
-Dataset: iris.csv
-
-Author: Florentino Báez
-"""
+# -------------------------------------------------
+# File Name: 41_iris_classification.py
+# Author: Florentino Báez
+# Date: 21_Machine_Learning
+# Description: Iris species classification (setosa, versicolor, virginica).
+# -------------------------------------------------
 
 import os
 import pandas as pd

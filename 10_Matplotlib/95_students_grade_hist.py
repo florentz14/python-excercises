@@ -1,7 +1,7 @@
 # -------------------------------------------------
-# File Name: 42_students_grade_hist.py
+# File Name: 95_students_grade_hist.py
 # Author: Florentino Báez
-# Date: Matplotlib
+# Date: 10_Matplotlib
 # Description: Histogram of distribution of final grades (G3).
 # -------------------------------------------------
 

@@ -1,13 +1,8 @@
 # -------------------------------------------------
 # File Name: 32_fenwick_tree.py
 # Author: Florentino Báez
-# Date: Data Structures - Advanced Structures
-# Description: Fenwick Tree (Binary Indexed Tree / BIT).
-#              Compact structure for prefix sums and
-#              point updates in O(log n). Uses bit
-#              manipulation (LSB) to navigate the implicit
-#              tree. Simpler than Segment Tree but
-#              limited to invertible operations (sum, XOR).
+# Date: 05_Data_Structures
+# Description: Fenwick Tree (Binary Indexed Tree). Range sum queries and point updates. O(log n).
 # -------------------------------------------------
 
 print("=== 3. Fenwick Tree (Binary Indexed Tree) ===\n")

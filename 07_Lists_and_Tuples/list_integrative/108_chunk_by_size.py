@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 232. Chunk List by Size
-# ---------------------------------------------------------------------------
-# Descripción: Chunk List by Size
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 108_chunk_by_size.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Chunk List by Size
+# -------------------------------------------------
 
 def chunk_by_size(lst: list, size: int) -> list[list]:
     # Lista por comprensión: se construye la lista a partir del iterable.

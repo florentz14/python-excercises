@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 113. Remove Duplicate Dictionaries from List (by content)
-# ---------------------------------------------------------------------------
-# Descripción: Remove Duplicate Dictionaries from List (by content)
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 060_remove_duplicate_dicts.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Remove Duplicate Dictionaries from List (by content)
+# -------------------------------------------------
 
 def unique_dicts(lst: list[dict]) -> list[dict]:
     seen = []

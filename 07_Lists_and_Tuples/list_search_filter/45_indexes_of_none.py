@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 202. Find Indexes of All None Items in List
-# ---------------------------------------------------------------------------
-# Descripción: Find Indexes of All None Items in List
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 45_indexes_of_none.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Find Indexes of All None Items in List
+# -------------------------------------------------
 
 def indexes_of_none(lst: list) -> list[int]:
     # Lista por comprensión: se incluyen solo los elementos que cumplen la condición.

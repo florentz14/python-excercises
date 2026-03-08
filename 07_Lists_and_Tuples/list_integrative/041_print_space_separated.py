@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 62. Print List as Space-Separated Elements
-# ---------------------------------------------------------------------------
-# Descripción: Print List as Space-Separated Elements
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 041_print_space_separated.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Print List as Space-Separated Elements
+# -------------------------------------------------
 
 def print_space_separated(lst: list) -> None:
     print(' '.join(str(x) for x in lst))

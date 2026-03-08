@@ -1,12 +1,9 @@
-"""
-13_Queues - Priority Queue using heapq
-=========================================
-Elements with highest (or lowest) priority are served first.
-Used in: OS scheduling, Dijkstra, simulations.
-
-Python's heapq is a min-heap: smallest value has highest priority.
-For max-heap behavior: negate values or use (-priority, item).
-"""
+# -------------------------------------------------
+# File Name: 09_priority_queue_heapq.py
+# Author: Florentino Báez
+# Date: 13_Queues
+# Description: Priority queue with heapq. Min-heap for sorted dequeue.
+# -------------------------------------------------
 
 import heapq
 

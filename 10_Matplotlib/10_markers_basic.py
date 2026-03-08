@@ -1,7 +1,7 @@
 # -------------------------------------------------
-# File Name: 03a_markers_basic.py
+# File Name: 10_markers_basic.py
 # Author: Florentino Báez
-# Date: Matplotlib
+# Date: 10_Matplotlib
 # Description: Default circle marker.
 # -------------------------------------------------
 

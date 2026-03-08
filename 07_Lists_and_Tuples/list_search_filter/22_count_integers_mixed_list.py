@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 106. Count Integers in Mixed List
-# ---------------------------------------------------------------------------
-# Descripción: Count Integers in Mixed List
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 22_count_integers_mixed_list.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Count Integers in Mixed List
+# -------------------------------------------------
 
 def count_integers(lst: list) -> int:
     # Se devuelve la suma de todos los elementos.

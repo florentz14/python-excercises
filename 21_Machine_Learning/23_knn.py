@@ -1,23 +1,9 @@
-"""
-Machine Learning - K-Nearest Neighbors (KNN)
-===============================================
-KNN is a simple, instance-based learning algorithm that classifies
-a data point based on how its neighbors are classified.
-
-How it works:
-1. Choose K (number of neighbors)
-2. Calculate the distance from the new point to all training points
-3. Select the K nearest neighbors
-4. Classification: majority vote of neighbors
-5. Regression: average of neighbors' values
-
-Key parameters:
-- n_neighbors (K): Number of neighbors to consider
-- metric: Distance metric (euclidean, manhattan, minkowski)
-- weights: 'uniform' (equal) or 'distance' (closer = more weight)
-
-Important: Feature scaling is CRITICAL for KNN!
-"""
+# -------------------------------------------------
+# File Name: 23_knn.py
+# Author: Florentino Báez
+# Date: 21_Machine_Learning
+# Description: K-Nearest Neighbors for classification and regression.
+# -------------------------------------------------
 
 import numpy as np
 import matplotlib.pyplot as plt

@@ -1,10 +1,10 @@
-"""For loop: Basic examples collection.
-Demonstrates range, list iteration, string iteration, tables, sum, nested loops, enumerate.
-"""
+# -------------------------------------------------
+# File Name: 82_for_examples.py
 # Author: Florentino Báez
+# Date: 03_Loops
+# Description: Basic examples collection.
+# -------------------------------------------------
 
-
-# Example 1: range()
 print("Example 1: Print numbers 1 to 5")
 print("-" * 40)
 for i in range(1, 6):

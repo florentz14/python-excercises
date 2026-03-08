@@ -1,15 +1,9 @@
 # -------------------------------------------------
 # File Name: 50_counting.py
 # Author: Florentino Báez
-# Date: Data Structures - Sorting Algorithms
-# Description: Counting Sort.
-#              Non-comparison algorithm that counts occurrences
-#              of each value in a count array and reconstructs
-#              the sorted list. Ideal for non-negative integers
-#              with small known range.
-#              Complexity: O(n + k), k = range. Stable. Space O(k).
+# Date: 05_Data_Structures
+# Description: Counting Sort. Non-comparison sort for small integer range. O(n+k).
 # -------------------------------------------------
-
 
 def counting_sort(lista, maximo=None):
     """Sorts by counting occurrences of each value (non-negative integers)."""

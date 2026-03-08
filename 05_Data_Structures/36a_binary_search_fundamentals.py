@@ -1,27 +1,9 @@
-# ------------------------------------------------------------
-# Program: Binary Search (Fundamentals)
-# Purpose:
-#   Search for a target value inside a sorted array.
-#
-# Requirements:
-#   The array must be sorted in ascending order.
-#
-# Method:
-#   Repeatedly divide the search space in half.
-#
-# Complexity:
-#   Time  : O(log n)
-#   Space : O(1)
-#
-# Comparison:
-#   | Linear Search | O(n)     |
-#   | Binary Search | O(log n) |
-#
-#   Example with 1,000,000 elements:
-#   - Linear: ~1,000,000 steps
-#   - Binary: ~20 steps
-# ------------------------------------------------------------
-
+# -------------------------------------------------
+# File Name: 36a_binary_search_fundamentals.py
+# Author: Florentino Báez
+# Date: 05_Data_Structures
+# Description: Binary search fundamentals. Core concepts and templates.
+# -------------------------------------------------
 
 def binary_search_classic(arr: list[int], target: int) -> int:
     """

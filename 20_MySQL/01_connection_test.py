@@ -1,7 +1,8 @@
 # -------------------------------------------------
-# File: 01_connection_test.py
+# File Name: 01_connection_test.py
+# Author: Florentino Báez
+# Date: 20_MySQL
 # Description: Test MySQL database connection.
-#              Uses .env file for credentials.
 # -------------------------------------------------
 
 import os

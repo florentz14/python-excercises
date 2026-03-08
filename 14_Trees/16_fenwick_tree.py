@@ -1,11 +1,9 @@
-"""
-14_Trees - Fenwick Tree (Binary Indexed Tree)
-==============================================
-Simpler than Segment Tree for prefix sums and point updates.
-Prefix sum, range sum, point update: O(log n).
-Used for prefix queries, inversions count, range updates.
-"""
-
+# -------------------------------------------------
+# File Name: 16_fenwick_tree.py
+# Author: Florentino Báez
+# Date: 14_Trees
+# Description: Fenwick tree (BIT) for prefix sums and point updates; O(log n).
+# -------------------------------------------------
 
 class FenwickTree:
     """Fenwick Tree (Binary Indexed Tree) for prefix sums."""

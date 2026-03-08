@@ -1,8 +1,9 @@
-"""While True: Subtraction quiz with max attempts.
-Uses while True with break on correct answer or max attempts reached.
-"""
+# -------------------------------------------------
+# File Name: 31_subtract_max_attempts.py
 # Author: Florentino Báez
-
+# Date: 03_Loops
+# Description: Subtraction quiz with max attempts.
+# -------------------------------------------------
 
 import random
 

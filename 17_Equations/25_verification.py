@@ -1,5 +1,9 @@
-# Archivo: 31_09_verificacion.py
-# Descripción: Verificación analítica vs numérica
+# -------------------------------------------------
+# File Name: 25_verification.py
+# Author: Florentino Báez
+# Date: 17_Equations
+# Description: Analytical vs numerical verification of integrals.
+# -------------------------------------------------
 
 import scipy.integrate as spi
 

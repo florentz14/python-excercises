@@ -1,5 +1,9 @@
-# Archivo: 49_02_lagrange.py
-# Descripción: Interpolación de Lagrange
+# -------------------------------------------------
+# File Name: 43_lagrange.py
+# Author: Florentino Báez
+# Date: 17_Equations
+# Description: Lagrange interpolation.
+# -------------------------------------------------
 
 print("=== 2. Interpolación de Lagrange ===\n")
 

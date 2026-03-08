@@ -1,8 +1,8 @@
 # -------------------------------------------------
 # File Name: 34_de_morgan_laws.py
-# Purpose: Verify De Morgan's laws for sets
-# Description: (A ∪ B)' = A' ∩ B'  and  (A ∩ B)' = A' ∪ B'
-#              Using complement relative to universal set U.
+# Author: Florentino Báez
+# Date: 01_Variables_and_Types
+# Description: Verify De Morgan's laws for sets: (A ∪ B)' = A' ∩ B'
 # -------------------------------------------------
 
 print("De Morgan's Laws Verification")

@@ -1,7 +1,7 @@
 # -------------------------------------------------
-# File Name: 10b_hist_bins.py
+# File Name: 52_hist_bins.py
 # Author: Florentino Báez
-# Date: Matplotlib
+# Date: 10_Matplotlib
 # Description: Different bin counts (5, 15, 50) in 1x3 subplots.
 # -------------------------------------------------
 

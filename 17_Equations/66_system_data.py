@@ -1,5 +1,9 @@
-# Archivo: datos_sistema.py
-# Descripción: Datos compartidos para los ejemplos de sistemas de ecuaciones lineales
+# -------------------------------------------------
+# File Name: 66_system_data.py
+# Author: Florentino Báez
+# Date: 17_Equations
+# Description: Shared data for linear systems examples.
+# -------------------------------------------------
 
 import numpy as np
 

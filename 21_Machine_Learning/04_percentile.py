@@ -1,16 +1,9 @@
-"""
-Machine Learning - Percentile
-===============================
-A percentile indicates the value below which a given percentage of data falls.
-
-- The 75th percentile means 75% of the data is below that value
-- Percentiles help understand the distribution and ranking of data
-- Quartiles are specific percentiles:
-  - Q1 = 25th percentile
-  - Q2 = 50th percentile (median)
-  - Q3 = 75th percentile
-- IQR (Interquartile Range) = Q3 - Q1
-"""
+# -------------------------------------------------
+# File Name: 04_percentile.py
+# Author: Florentino Báez
+# Date: 21_Machine_Learning
+# Description: Percentiles and quartiles for distribution analysis.
+# -------------------------------------------------
 
 import numpy as np
 

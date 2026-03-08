@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 183. Unique Values in List of Lists (flatten and unique)
-# ---------------------------------------------------------------------------
-# Descripción: Unique Values in List of Lists (flatten and unique)
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 34_unique_values_nested.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Unique Values in List of Lists (flatten and unique)
+# -------------------------------------------------
 
 def unique_in_nested(lists: list[list]) -> list:
     return sorted(set(x for L in lists for x in L))

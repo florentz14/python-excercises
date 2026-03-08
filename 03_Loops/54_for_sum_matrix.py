@@ -1,8 +1,9 @@
-"""For loop: Sum 2D matrix elements.
-Sums all values in a nested list (matrix).
-"""
+# -------------------------------------------------
+# File Name: 54_for_sum_matrix.py
 # Author: Florentino Báez
-
+# Date: 03_Loops
+# Description: Sum 2D matrix elements.
+# -------------------------------------------------
 
 print("Suma de Elementos en una Matriz 2D")
 print("=" * 40)

@@ -1,7 +1,8 @@
 # -------------------------------------------------
-# File: 25_inventory.py
+# File Name: 25_inventory.py
+# Author: Florentino Báez
+# Date: 11_OOP
 # Description: Inventory system - practical application.
-#              Composition, encapsulation, data management.
 # -------------------------------------------------
 
 from typing import List, Dict, Optional

@@ -1,7 +1,7 @@
 # -------------------------------------------------
-# File Name: 24_iris_petal_scatter.py
+# File Name: 77_iris_petal_scatter.py
 # Author: Florentino Báez
-# Date: Matplotlib
+# Date: 10_Matplotlib
 # Description: Scatter Plot — Petal Length vs Width by Species.
 # -------------------------------------------------
 

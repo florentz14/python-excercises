@@ -1,17 +1,9 @@
-# ------------------------------------------------------------
-# File: 13_number_of_islands.py
-# LeetCode 200 - Number of Islands (DFS)
-#
-# Purpose:
-#   Count islands in a 2D grid. 1 = land, 0 = water.
-#   Islands are formed by connecting adjacent lands (horizontally/vertically).
-#
-# Pattern: DFS on grid (flood fill)
-# Complexity: O(rows * cols)
-#
-# Author: Florentino Baez
-# ------------------------------------------------------------
-
+# -------------------------------------------------
+# File Name: 13_number_of_islands.py
+# Author: Florentino Báez
+# Date: 15_Graphs
+# Description: Number Of Islands. num_islands implementation.
+# -------------------------------------------------
 
 def num_islands(grid: list[list[str]]) -> int:
     """

@@ -1,11 +1,8 @@
 # -------------------------------------------------
 # File Name: 15_set_comprehension.py
 # Author: Florentino Báez
-# Date: Variables - Sets
+# Date: 01_Variables_and_Types
 # Description: Set Comprehension (Determination by Comprehension).
-#              Creates sets using comprehension syntax with
-#              conditions: even numbers, solutions to x²=16,
-#              and vowels extracted from a word.
 # -------------------------------------------------
 
 """
@@ -34,15 +31,15 @@ def main():
     print(f"   C = {sorted(C)}")
     print()
     
-    # c) D = {x | x is a vowel in the word "matemáticas"}
+    # c) D = {x | x is a vowel in the word "education"}
     # Extracting unique vowels from the word
     # The set automatically removes duplicates
-    word = "matemáticas"
-    # Define set of vowels including accented characters
-    vowels = {'a', 'e', 'i', 'o', 'u', 'á', 'é', 'í', 'ó', 'ú'}
+    word = "education"
+    # Define set of vowels
+    vowels = {'a', 'e', 'i', 'o', 'u'}
     # Filter characters that are vowels (case-insensitive)
     D = {char for char in word if char.lower() in vowels}
-    print(f"c) D = {{x | x is a vowel in the word 'matemáticas'}}")
+    print(f"c) D = {{x | x is a vowel in the word 'education'}}")
     print(f"   D = {sorted(D)}")
     
     print("\n" + "=" * 50)

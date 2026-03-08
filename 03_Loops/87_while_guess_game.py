@@ -1,9 +1,9 @@
-"""
-While loop: Guess the number game.
-User guesses secret number (1-10) with feedback until correct.
-
+# -------------------------------------------------
+# File Name: 87_while_guess_game.py
 # Author: Florentino Báez
-"""
+# Date: 03_Loops
+# Description: Guess the number game.
+# -------------------------------------------------
 
 print("Example: Guess the number (1-10)")
 print("-" * 40)

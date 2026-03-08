@@ -1,11 +1,9 @@
-# ------------------------------------------------------------
+# -------------------------------------------------
 # File Name: 02_ATM_Database_Version.py
-# Author: Florentino Baez
-# Date: February 06, 2026
+# Author: Florentino Báez
+# Date: 20_MySQL
 # Description: ATM Simulation with MySQL Database Integration
-# Python Version: 3.14.2
-# Requirements: pip install mysql-connector-python bcrypt python-dotenv
-# ------------------------------------------------------------
+# -------------------------------------------------
 
 from __future__ import annotations
 from datetime import datetime

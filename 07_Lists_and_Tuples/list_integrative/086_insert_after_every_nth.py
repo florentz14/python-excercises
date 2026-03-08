@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 178. Insert Specified Element After Every nth Element
-# ---------------------------------------------------------------------------
-# Descripción: Insert Specified Element After Every nth Element
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 086_insert_after_every_nth.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Insert Specified Element After Every nth Element
+# -------------------------------------------------
 
 def insert_after_every_nth(lst: list, n: int, elem) -> list:
     result = []

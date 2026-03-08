@@ -1,13 +1,10 @@
-# ---------------------------------------------------------------------------
-# Lista Simple - 17: Copiar Listas
-# ---------------------------------------------------------------------------
-# Descripcion: En Python, asignar una lista a otra variable NO crea una
-#              copia, sino una REFERENCIA al mismo objeto. Para crear una
-#              copia independiente se usan copy(), list() o slicing.
-# Metodos:     lista.copy()  /  list(lista)  /  lista[:]
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 17_copy.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: En Python, asignar una lista a otra variable NO crea una
+# -------------------------------------------------
 
-# --- El problema de la asignacion directa ---
 original = ["apple", "banana", "cherry"]
 referencia = original  # NO es una copia, es la misma lista
 

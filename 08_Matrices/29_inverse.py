@@ -1,8 +1,9 @@
-# ------------------------------------------------------------
-# File: 29_inverse.py
-# Purpose: Matrix inverse.
+# -------------------------------------------------
+# File Name: 29_inverse.py
+# Author: Florentino Báez
+# Date: 08_Matrices
 # Description: Compute A^(-1) with np.linalg.inv. Check A @ A^(-1) = I.
-# ------------------------------------------------------------
+# -------------------------------------------------
 
 import numpy as np
 

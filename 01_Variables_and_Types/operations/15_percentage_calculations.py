@@ -1,4 +1,9 @@
-# Percentage Calculations in Python
+# -------------------------------------------------
+# File Name: 15_percentage_calculations.py
+# Author: Florentino Báez
+# Date: 01_Variables_and_Types
+# Description: Functions for percentage, part, and whole calculations.
+# -------------------------------------------------
 
 def calculate_percentage(part, whole):
     """Calculate what percentage part is of whole"""

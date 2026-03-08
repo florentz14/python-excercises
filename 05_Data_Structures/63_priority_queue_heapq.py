@@ -1,16 +1,9 @@
-# ------------------------------------------------------------
-# File: 63_priority_queue_heapq.py
-# Priority Queue using heapq
-#
-# Purpose:
-#   Python's heapq implements a min-heap. Use it as a priority queue:
-#   - heappush(heap, (priority, item))
-#   - heappop(heap) returns smallest priority
-#
-# For max-heap: negate priorities, or use (-priority, item).
-#
-# Author: Florentino Baez
-# ------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 63_priority_queue_heapq.py
+# Author: Florentino Báez
+# Date: 05_Data_Structures
+# Description: Priority queue using heapq. Min-heap operations in Python.
+# -------------------------------------------------
 
 import heapq
 

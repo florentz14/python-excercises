@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 92. Check if Nested List Is Subset of Another
-# ---------------------------------------------------------------------------
-# Descripción: Check if Nested List Is Subset of Another
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 16_nested_list_subset.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Check if Nested List Is Subset of Another
+# -------------------------------------------------
 
 def nested_subset(a: list, b: list) -> bool:
     """Check if b is subset of a (all elements of b in a)."""

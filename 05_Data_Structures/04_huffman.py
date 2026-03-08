@@ -1,16 +1,8 @@
 # -------------------------------------------------
-# File: 04_huffman.py (Huffman Coding)
-# -------------------------------------------------
+# File Name: 04_huffman.py
 # Author: Florentino Báez
-# Module: Data Structures - Greedy Algorithms
-#
-# Description:
-#   Huffman coding for lossless compression. Assigns shorter binary
-#   codes to more frequent characters. Builds a binary tree by
-#   repeatedly merging the two nodes with lowest frequency (greedy).
-#
-# Strategy: Always combine lowest-frequency nodes first.
-# Complexity: O(n log n) using a min-heap.
+# Date: 05_Data_Structures
+# Description: Huffman coding for lossless compression. Builds tree by merging lowest-frequency nodes. Assigns shorter codes to more frequent characters. O(n log n).
 # -------------------------------------------------
 
 import heapq

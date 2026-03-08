@@ -1,13 +1,8 @@
 # -------------------------------------------------
-# File Name: 27_combinaciones_backtracking.py
+# File Name: 27_combinations_backtracking.py
 # Author: Florentino Báez
-# Date: Data Structures - Backtracking
-# Description: Combination Generation with Backtracking.
-#              Generates all ways to choose k elements from
-#              a list regardless of order. Uses a start index
-#              to avoid duplicates and builds subsets
-#              incrementally, backtracking when completing each.
-#              Complexity: O(C(n,k) * k).
+# Date: 05_Data_Structures
+# Description: Combination generation with backtracking. All ways to choose k from n. O(C(n,k)*k).
 # -------------------------------------------------
 
 print("=== 5. Generación de Combinaciones (Backtracking) ===\n")

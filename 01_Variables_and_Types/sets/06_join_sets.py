@@ -1,12 +1,8 @@
 # -------------------------------------------------
 # File Name: 06_join_sets.py
 # Author: Florentino Báez
-# Date: Variables - Sets
+# Date: 01_Variables_and_Types
 # Description: Join / Combine Sets.
-#              Union (|), Intersection (&), Difference (-),
-#              and Symmetric Difference (^). Each has both
-#              an operator and a method form, plus in-place
-#              update variants that modify the set directly.
 # -------------------------------------------------
 
 set1 = {"apple", "banana", "cherry"}

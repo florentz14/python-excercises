@@ -1,26 +1,8 @@
 # -------------------------------------------------
-# File Name: exercise_bmi.py
+# File Name: 19_bmi_calculator.py
 # Author: Florentino Báez
-# Course: ITSE-1002: Python Programming
-# Professor: Mauricio Quiroga
-# Date: Module 03 Lab
+# Date: 02_Conditionals
 # Description: Body Mass Index (BMI)
-#              Write a program that calculates and displays a person's Body Mass
-#              Index (BMI). The BMI is often used to determine whether a person
-#              is underweight, optimal weight, or overweight for their height.
-#              The program should ask the user to enter their weight in pounds
-#              and height in inches, then calculate and display their BMI. The
-#              program should also display a message indicating whether the
-#              person has optimal weight, is underweight, or is overweight. A
-#              person's BMI is calculated with the following formula:
-#
-#              BMI = weight x 703 / height^2
-#
-#              Where weight is measured in pounds and height is measured in
-#              inches. A person's weight status is determined as follows:
-#              • BMI < 18.5: Underweight
-#              • 18.5 ≤ BMI ≤ 25: Optimal weight
-#              • BMI > 25: Overweight
 # -------------------------------------------------
 
 print("=" * 60)

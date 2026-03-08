@@ -1,8 +1,9 @@
-"""
-14_Trees - Summary of tree types
-========================================
-Comparación y aplicaciones.
-"""
+# -------------------------------------------------
+# File Name: 10_summary.py
+# Author: Florentino Báez
+# Date: 14_Trees
+# Description: Summary and comparison of tree types and applications.
+# -------------------------------------------------
 
 print("=== Resumen de tipos de árboles ===\n")
 print("""

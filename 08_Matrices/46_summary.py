@@ -1,8 +1,9 @@
-# ------------------------------------------------------------
-# File: 34_numpy_summary.py
-# Purpose: Summary: Python lists vs NumPy equivalence.
+# -------------------------------------------------
+# File Name: 46_summary.py
+# Author: Florentino Báez
+# Date: 08_Matrices
 # Description: Quick reference for vector/matrix operations.
-# ------------------------------------------------------------
+# -------------------------------------------------
 
 import numpy as np
 

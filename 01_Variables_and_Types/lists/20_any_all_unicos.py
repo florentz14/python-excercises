@@ -1,12 +1,8 @@
 # -------------------------------------------------
 # File Name: 20_any_all_unicos.py
 # Author: Florentino Báez
-# Date: Variables - Lists
+# Date: 01_Variables_and_Types
 # Description: any(), all(), and Unique Elements.
-#              any() returns True if at least one element
-#              satisfies the condition. all() returns True
-#              only if every element does. dict.fromkeys()
-#              removes duplicates while preserving order.
 # -------------------------------------------------
 
 print("=== any and all ===")

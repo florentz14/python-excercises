@@ -1,7 +1,7 @@
 # -------------------------------------------------
-# File Name: 27_pokemon_radar.py
+# File Name: 80_pokemon_radar.py
 # Author: Florentino Báez
-# Date: Matplotlib
+# Date: 10_Matplotlib
 # Description: Radar Chart — Compare Stats of 4 Pokémon.
 # -------------------------------------------------
 

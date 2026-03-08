@@ -1,4 +1,9 @@
-# 52_04_crecimiento.py - Modelo de crecimiento poblacional (Malthus)
+# -------------------------------------------------
+# File Name: 59_crecimiento.py
+# Author: Florentino Báez
+# Date: 17_Equations
+# Description: Population growth model (Malthus, exponential).
+# -------------------------------------------------
 
 import numpy as np
 import matplotlib.pyplot as plt

@@ -1,9 +1,9 @@
-"""
-13_Queues - Task Scheduler Queue
-==================================
-Simulate task scheduling with queue, execution time, and cooldown.
-Common in distributed systems and LeetCode 621.
-"""
+# -------------------------------------------------
+# File Name: 15_task_scheduler_queue.py
+# Author: Florentino Báez
+# Date: 13_Queues
+# Description: Task scheduler with queue. Priority or round-robin scheduling.
+# -------------------------------------------------
 
 from collections import deque, Counter
 

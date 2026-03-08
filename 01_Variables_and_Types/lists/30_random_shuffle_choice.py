@@ -1,4 +1,9 @@
-# shuffle, choice
+# -------------------------------------------------
+# File Name: 30_random_shuffle_choice.py
+# Author: Florentino Báez
+# Date: 01_Variables_and_Types
+# Description: Demonstrates random.shuffle(), random.choice(),
+# -------------------------------------------------
 
 import random
 

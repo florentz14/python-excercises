@@ -1,11 +1,8 @@
 # -------------------------------------------------
 # File Name: 02_access_by_index.py
 # Author: Florentino Báez
-# Date: Variables - Lists
+# Date: 01_Variables_and_Types
 # Description: Access List Elements by Index.
-#              Lists use zero-based indexing (0, 1, 2…).
-#              Negative indices count from the end (-1 = last).
-#              Access with list[index].
 # -------------------------------------------------
 
 print("Example 2: Access list elements by index")

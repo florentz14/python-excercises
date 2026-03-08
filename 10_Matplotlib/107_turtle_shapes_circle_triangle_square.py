@@ -1,6 +1,9 @@
-# Exercise 7: Drawing Shapes with Turtle
-# Use the turtle module to draw basic shapes (circle, triangle, square)
-# with different colors and positions on the screen.
+# -------------------------------------------------
+# File Name: 107_turtle_shapes_circle_triangle_square.py
+# Author: Florentino Báez
+# Date: 10_Matplotlib
+# Description: Use turtle module to draw basic shapes (circle, triangle,
+# -------------------------------------------------
 
 import turtle
 

@@ -1,9 +1,9 @@
-"""
-Simple conditional: Even, odd, or multiple of 5
-===============================================
-Topic: Conditionals (02_Conditionals)
-Description: Classify number with multiple conditions.
-"""
+# -------------------------------------------------
+# File Name: 32_par_impar_multiplo.py
+# Author: Florentino Báez
+# Date: 02_Conditionals
+# Description: Even, odd, or multiple of 5
+# -------------------------------------------------
 
 n = int(input("Enter a number: "))
 

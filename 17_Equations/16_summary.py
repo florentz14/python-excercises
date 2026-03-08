@@ -1,5 +1,9 @@
-# Archivo: 27_08_resumen.py
-# Descripción: Resumen del módulo de ecuaciones cuadráticas
+# -------------------------------------------------
+# File Name: 16_summary.py
+# Author: Florentino Báez
+# Date: 17_Equations
+# Description: Summary of quadratic equations module.
+# -------------------------------------------------
 
 if __name__ == "__main__":
     print("=== Resumen de Análisis ===\n")

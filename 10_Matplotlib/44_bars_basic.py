@@ -1,7 +1,7 @@
 # -------------------------------------------------
-# File Name: 09a_bars_basic.py
+# File Name: 44_bars_basic.py
 # Author: Florentino Báez
-# Date: Matplotlib
+# Date: 10_Matplotlib
 # Description: Basic vertical bar chart (programming languages).
 # -------------------------------------------------
 

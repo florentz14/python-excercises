@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 170. Insert Element After Every nth Position
-# ---------------------------------------------------------------------------
-# Descripción: Insert Element After Every nth Position
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 080_insert_after_nth.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Insert Element After Every nth Position
+# -------------------------------------------------
 
 def insert_after_nth(lst: list, n: int, elem) -> list:
     result = []

@@ -1,14 +1,10 @@
 # -------------------------------------------------
 # File Name: 10_update.py
 # Author: Florentino Báez
-# Date: Variables - Dictionaries
-# Description: Update a Dictionary with Another Dictionary.
-#              update() merges key-value pairs from another
-#              dict. Existing keys are overwritten; new keys
-#              are added. Modifies the dict in place.
+# Date: 01_Variables_and_Types
+# Description: Merge dictionaries with update(). Existing keys overwritten,
 # -------------------------------------------------
 
-# Example 10: Update dictionary
 print("Example 10: Update dictionary")
 print("-" * 40)
 

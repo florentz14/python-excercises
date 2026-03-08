@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 66. Find List in List of Lists with Highest Sum
-# ---------------------------------------------------------------------------
-# Descripción: Find List in List of Lists with Highest Sum
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 09_list_with_highest_sum.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Find List in List of Lists with Highest Sum
+# -------------------------------------------------
 
 def list_with_max_sum(lists: list[list[int]]) -> list[int]:
     return max(lists, key=sum)

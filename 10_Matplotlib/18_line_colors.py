@@ -1,7 +1,7 @@
 # -------------------------------------------------
-# File Name: 04c_line_colors.py
+# File Name: 18_line_colors.py
 # Author: Florentino Báez
-# Date: Matplotlib
+# Date: 10_Matplotlib
 # Description: Line Colors — named, hex, and RGB colors.
 # -------------------------------------------------
 

@@ -1,8 +1,9 @@
-# ------------------------------------------------------------
-# File: 06_rank_properties.py
-# Purpose: Demonstrate key matrix rank properties.
+# -------------------------------------------------
+# File Name: 06_rank_properties.py
+# Author: Florentino Báez
+# Date: 08_Matrices
 # Description: rank(A)=rank(A^T), rank(AB)<=min(rank(A),rank(B)), etc.
-# ------------------------------------------------------------
+# -------------------------------------------------
 
 import numpy as np
 

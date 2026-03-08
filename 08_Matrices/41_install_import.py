@@ -1,11 +1,9 @@
-# ------------------------------------------------------------
-# File: 29_numpy_install_import.py
-# Purpose: Install and import NumPy.
+# -------------------------------------------------
+# File Name: 41_install_import.py
+# Author: Florentino Báez
+# Date: 08_Matrices
 # Description: pip install numpy, import as np, check version.
-# ------------------------------------------------------------
-
-# In terminal (once):
-#   pip install numpy
+# -------------------------------------------------
 
 import numpy as np
 

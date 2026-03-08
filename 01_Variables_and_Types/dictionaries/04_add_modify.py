@@ -1,14 +1,10 @@
 # -------------------------------------------------
 # File Name: 04_add_modify.py
 # Author: Florentino Báez
-# Date: Variables - Dictionaries
-# Description: Add and Modify Dictionary Values.
-#              Assigning to a new key adds a new entry.
-#              Assigning to an existing key overwrites
-#              the previous value. Both use dict[key] = value.
+# Date: 01_Variables_and_Types
+# Description: Add and modify dictionary entries using dict[key] = value.
 # -------------------------------------------------
 
-# Example 4: Add and modify values
 print("Example 4: Add and modify values")
 print("-" * 40)
 

@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 97. Remove Sublists That Contain Element Outside Given Range
-# ---------------------------------------------------------------------------
-# Descripción: Remove Sublists That Contain Element Outside Given Range
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 20_remove_sublists_outside_range.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Remove Sublists That Contain Element Outside Given Range
+# -------------------------------------------------
 
 def remove_sublists_outside_range(lists: list[list[int]], low: int, high: int) -> list[list[int]]:
     # Lista por comprensión: se incluyen solo los elementos que cumplen la condición.

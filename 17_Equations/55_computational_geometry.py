@@ -1,5 +1,9 @@
-# Archivo: 50_geometria_computacional.py
-# Descripción: Algoritmos de Geometría Computacional
+# -------------------------------------------------
+# File Name: 55_computational_geometry.py
+# Author: Florentino Báez
+# Date: 17_Equations
+# Description: Computational geometry algorithms.
+# -------------------------------------------------
 
 import math
 

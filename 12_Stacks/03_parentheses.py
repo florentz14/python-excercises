@@ -1,9 +1,9 @@
-"""
-Pilas - Ejemplo 3: Balanceo de paréntesis
-==========================================
-Topic: 12_Stacks
-Descripción: Usar pila para verificar si ( ) [ ] { } están balanceados.
-"""
+# -------------------------------------------------
+# File Name: 03_parentheses.py
+# Author: Florentino Báez
+# Date: 12_Stacks
+# Description: Parenthesis balancing. Stack verifies ( ) [ ] { } are balanced.
+# -------------------------------------------------
 
 def balanceado(s):
     pila = []

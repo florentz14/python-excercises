@@ -1,7 +1,7 @@
 # -------------------------------------------------
-# File Name: 23_iris_sepal_scatter.py
+# File Name: 76_iris_sepal_scatter.py
 # Author: Florentino Báez
-# Date: Matplotlib
+# Date: 10_Matplotlib
 # Description: Scatter Plot — Sepal Length vs Width by Species.
 # -------------------------------------------------
 

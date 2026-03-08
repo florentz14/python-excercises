@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 34. Sieve of Eratosthenes - Primes up to n
-# ---------------------------------------------------------------------------
-# Descripción: Sieve of Eratosthenes - Primes up to n
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 08_sieve_eratosthenes.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Sieve of Eratosthenes - Primes up to n
+# -------------------------------------------------
 
 def sieve(n: int) -> list[int]:
     if n < 2:

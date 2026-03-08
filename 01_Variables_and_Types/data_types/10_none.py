@@ -1,30 +1,30 @@
-"""
-El tipo None en Python
-=======================
-Topic: Variables and Types (01_Variables_and_Types)
-Descripción: None representa ausencia de valor, verificación con is None.
-"""
-# None es el único valor del tipo NoneType
-resultado = None
-print("resultado =", resultado)
+# -------------------------------------------------
+# File Name: 10_none.py
+# Author: Florentino Báez
+# Date: 01_Variables_and_Types
+# Description: None type represents absence of value; verification
+# -------------------------------------------------
+
+result = None
+print("result =", result)
 print("type(None):", type(None))
 
-# Uso típico: valor por defecto, indicar "sin valor"
-def buscar(nombre):
-    # Simula búsqueda que puede no encontrar nada
-    if nombre == "Ana":
+# Typical use: default value, indicate "no value"
+def search(name):
+    # Simulates search that may find nothing
+    if name == "Ana":
         return 25
-    return None  # No encontrado
+    return None  # Not found
 
-edad = buscar("Ana")
-print(f"\nbuscar('Ana'): {edad}")
+age = search("Ana")
+print(f"\nsearch('Ana'): {age}")
 
-edad = buscar("X")
-print(f"buscar('X'): {edad}")
+age = search("X")
+print(f"search('X'): {age}")
 
-# Verificar None con 'is' (no con ==)
-if edad is None:
-    print("No se encontró la edad.")
+# Check None with 'is' (not with ==)
+if age is None:
+    print("Age not found.")
 
-# None es falsy (evaluado como False en contexto booleano)
+# None is falsy (evaluated as False in boolean context)
 print(f"\nbool(None): {bool(None)}")

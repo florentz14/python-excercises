@@ -1,10 +1,10 @@
-# ------------------------------------------------------------
-# File: 09_create_display.py
-# Purpose: Create and display a matrix (list of lists).
+# -------------------------------------------------
+# File Name: 09_create_display.py
+# Author: Florentino Báez
+# Date: 08_Matrices
 # Description: Represent matrix as rows; show dimensions and element access.
-# ------------------------------------------------------------
+# -------------------------------------------------
 
-# Matrix 2x3: 2 rows, 3 columns
 A = [
     [1, 2, 3],
     [4, 5, 6],

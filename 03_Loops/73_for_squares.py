@@ -1,8 +1,9 @@
-"""For loop: Squares 1 to 5.
-Prints each number 1-5 and its square.
-"""
+# -------------------------------------------------
+# File Name: 73_for_squares.py
 # Author: Florentino Báez
-
+# Date: 03_Loops
+# Description: Squares 1 to 5.
+# -------------------------------------------------
 
 print("=" * 40)
 print("For #2 – Squares 1..5")

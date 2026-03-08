@@ -1,9 +1,9 @@
-"""
-15_Graphs - Tarjan's Strongly Connected Components (SCC)
-==========================================================
-Finds all SCCs in a directed graph using one DFS pass.
-Used in: compilers, deadlock detection, social networks.
-"""
+# -------------------------------------------------
+# File Name: 20_tarjan_scc.py
+# Author: Florentino Báez
+# Date: 15_Graphs
+# Description: 15_Graphs - Tarjan's Strongly Connected Components (SCC) ========================================================== Finds all SCCs in a directed graph using one DFS pass.
+# -------------------------------------------------
 
 from collections import defaultdict
 

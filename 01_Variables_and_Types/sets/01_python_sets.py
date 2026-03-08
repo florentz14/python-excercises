@@ -1,15 +1,10 @@
 # -------------------------------------------------
 # File Name: 01_python_sets.py
 # Author: Florentino Báez
-# Date: Variables - Sets
+# Date: 01_Variables_and_Types
 # Description: Create Sets and Understand Their Properties.
-#              A set is an unordered, unindexed collection of
-#              unique items. Elements must be immutable (hashable).
-#              Duplicates are automatically removed on creation.
-#              Covers set(), {}, mixed types, and bool/int overlap.
 # -------------------------------------------------
 
-# --- Create a set using curly braces ---
 fruits = {"apple", "banana", "cherry", "pineapple", "grape"}
 print("Fruits set:", fruits)
 # Note: Order may vary each time (sets are UNORDERED)

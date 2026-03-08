@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 248. Max Value After Mapping
-# ---------------------------------------------------------------------------
-# Descripción: Max Value After Mapping
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 20_max_mapped_value.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Max Value After Mapping
+# -------------------------------------------------
 
 def max_after_map(lst: list, func) -> int | float:
     return max(func(x) for x in lst)

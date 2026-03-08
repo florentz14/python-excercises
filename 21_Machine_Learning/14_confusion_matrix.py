@@ -1,26 +1,9 @@
-"""
-Machine Learning - Confusion Matrix
-======================================
-A confusion matrix summarizes classification model performance by showing
-the counts of correct and incorrect predictions for each class.
-
-For binary classification:
-                    Predicted
-                  Pos    Neg
-Actual  Pos  [  TP  |  FN  ]
-        Neg  [  FP  |  TN  ]
-
-TP = True Positive  (correctly predicted positive)
-TN = True Negative  (correctly predicted negative)
-FP = False Positive (predicted positive, but actually negative) — Type I error
-FN = False Negative (predicted negative, but actually positive) — Type II error
-
-Key Metrics:
-- Accuracy  = (TP + TN) / Total
-- Precision = TP / (TP + FP)   — "Of predicted positives, how many are correct?"
-- Recall    = TP / (TP + FN)   — "Of actual positives, how many did we find?"
-- F1 Score  = 2 * (Precision * Recall) / (Precision + Recall)
-"""
+# -------------------------------------------------
+# File Name: 14_confusion_matrix.py
+# Author: Florentino Báez
+# Date: 21_Machine_Learning
+# Description: Confusion matrix and classification metrics.
+# -------------------------------------------------
 
 import numpy as np
 import matplotlib.pyplot as plt

@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 235. Last Index Where Element Satisfies Function
-# ---------------------------------------------------------------------------
-# Descripción: Last Index Where Element Satisfies Function
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 55_last_index_satisfying.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Last Index Where Element Satisfies Function
+# -------------------------------------------------
 
 def last_index_where(lst: list, predicate) -> int:
     for i in range(len(lst) - 1, -1, -1):

@@ -1,16 +1,9 @@
-# ------------------------------------------------------------
-# Algorithm: Kadane's Algorithm
-# Purpose:
-#   Find the maximum sum of a contiguous subarray.
-# Return:
-#   Maximum subarray sum.
-# Complexity:
-#   Time  : O(n)
-#   Space : O(1)
-# ------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 65_kadane_max_subarray.py
 # Author: Florentino Báez
-# ------------------------------------------------------------
-
+# Date: 05_Data_Structures
+# Description: Kadane's algorithm. Maximum subarray sum in O(n).
+# -------------------------------------------------
 
 def max_subarray_sum(nums: list[int]) -> int:
     # Initialize current and best sums with the first element

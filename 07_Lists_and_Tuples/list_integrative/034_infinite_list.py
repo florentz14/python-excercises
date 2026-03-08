@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 53. Create List with Infinite Elements (using generator)
-# ---------------------------------------------------------------------------
-# Descripción: Create List with Infinite Elements (using generator)
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 034_infinite_list.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Create List with Infinite Elements (using generator)
+# -------------------------------------------------
 
 def infinite_list(start=0, step=1):
     """Generator yielding infinite elements."""

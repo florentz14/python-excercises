@@ -1,9 +1,9 @@
 # -------------------------------------------------
-# File: 02_hash_table_open_addressing.py
+# File Name: 02_hash_table_open_addressing.py
+# Author: Florentino Báez
+# Date: 19_Hash_Tables
 # Description: Hash Table with Open Addressing.
-#              Linear probing for collision handling.
 # -------------------------------------------------
-
 
 class HashTableOpenAddressing:
     """Hash Table using open addressing (linear probing)."""

@@ -1,8 +1,9 @@
-# ------------------------------------------------------------
-# File: 22_tuple_vs_list_performance.py
-# Purpose: Tuple vs list: memory and speed.
-# Description: sys.getsizeof, basic timeit comparison.
-# ------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 22_tuple_vs_list_performance.py
+# Author: Florentino Báez
+# Date: 01_Variables_and_Types
+# Description: Tuple vs list: memory and speed. sys.getsizeof comparison.
+# -------------------------------------------------
 
 import sys
 

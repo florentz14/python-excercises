@@ -1,10 +1,9 @@
-# ---------------------------------------------------------------------------
-# Lista Simple - 03: Longitud de una Lista (len)
-# ---------------------------------------------------------------------------
-# Descripcion: La funcion len() devuelve la cantidad de elementos en una
-#              lista. Es util para validaciones, bucles y comprobaciones.
-# Sintaxis:    len(lista)
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 03_length.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: La funcion len() devuelve la cantidad de elementos en una
+# -------------------------------------------------
 
 fruits = ["apple", "banana", "cherry", "pineapple", "grape", "blueberry", "mango", "strawberry", "kiwi"]
 

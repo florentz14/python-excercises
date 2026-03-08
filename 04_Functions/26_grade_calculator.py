@@ -1,10 +1,8 @@
 # -------------------------------------------------
-# File Name: 04_26_grade_calculator.py
+# File Name: 26_grade_calculator.py
 # Author: Florentino Báez
-# Date: Module 04 - Exercise 26
+# Date: 04_Functions
 # Description: Grade Calculator Program.
-#              Convert numeric scores to letter grades.
-#              Includes a while loop for multiple grade calculations.
 # -------------------------------------------------
 
 def get_grade(score: float) -> str:

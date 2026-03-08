@@ -1,4 +1,9 @@
-# Simple Interest Calculations in Python
+# -------------------------------------------------
+# File Name: 21_simple_interest.py
+# Author: Florentino Báez
+# Date: 01_Variables_and_Types
+# Description: Simple interest and related amount calculations.
+# -------------------------------------------------
 
 def calculate_simple_interest(principal, rate, time):
     """

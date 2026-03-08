@@ -1,21 +1,9 @@
-"""
-Machine Learning - K-Means Clustering
-========================================
-K-Means is an unsupervised learning algorithm that groups data
-into K clusters based on similarity (distance).
-
-How it works:
-1. Choose K (number of clusters)
-2. Randomly place K centroids
-3. Assign each data point to the nearest centroid
-4. Recalculate centroids as the mean of assigned points
-5. Repeat steps 3-4 until convergence
-
-Key parameters:
-- n_clusters (K): Number of clusters
-- init: Initialization method ('k-means++' is best)
-- n_init: Number of times to run with different seeds
-"""
+# -------------------------------------------------
+# File Name: 19_kmeans.py
+# Author: Florentino Báez
+# Date: 21_Machine_Learning
+# Description: K-Means clustering for unsupervised learning.
+# -------------------------------------------------
 
 import numpy as np
 import matplotlib.pyplot as plt

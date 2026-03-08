@@ -1,8 +1,9 @@
-"""For loop: Pascal's triangle.
-User inputs row count; prints triangle using binomial coefficient formula.
-"""
+# -------------------------------------------------
+# File Name: 66_pascal.py
 # Author: Florentino Báez
-
+# Date: 03_Loops
+# Description: Pascal's triangle.
+# -------------------------------------------------
 
 print("=" * 50)
 print("TRIÁNGULO DE PASCAL")

@@ -1,8 +1,9 @@
-"""Match-case: Rectangle area (tuple pattern).
-Matches tuple (name, width, height) to compute area.
-"""
+# -------------------------------------------------
+# File Name: 78_match_rectangle.py
 # Author: Florentino Báez
-
+# Date: 03_Loops
+# Description: Rectangle area (tuple pattern).
+# -------------------------------------------------
 
 def rectangle_area(shape: tuple[str, int | float, int | float]) -> None:
     match shape:

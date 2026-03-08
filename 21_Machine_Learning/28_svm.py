@@ -1,10 +1,9 @@
-"""
-Support Vector Machine (SVM) - Classification with Optimal Boundary
-===================================================================
-Finds the best boundary to separate classes.
-
-Author: Florentino Báez
-"""
+# -------------------------------------------------
+# File Name: 28_svm.py
+# Author: Florentino Báez
+# Date: 21_Machine_Learning
+# Description: SVM for classification with optimal boundary.
+# -------------------------------------------------
 
 from sklearn.model_selection import train_test_split
 from sklearn.svm import SVC

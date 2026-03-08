@@ -1,18 +1,9 @@
-"""
-Valid Palindrome Checker
-========================
-Topic: Strings (01_Variables_and_Types/strings)
-Description: Check whether a string is a palindrome. Ignores spaces, punctuation,
-and symbols. Ignores uppercase/lowercase differences.
-
-Input:  A string (e.g. "A man, a plan, a canal: Panama")
-Output: "true" or "false" (lowercase)
-
-Complexity:
-    - Time:   O(n) - Single pass with two pointers
-    - Space:  O(1) - No extra storage
-"""
-
+# -------------------------------------------------
+# File Name: 01_valid_palindrome.py
+# Author: Florentino Báez
+# Date: 01_Variables_and_Types
+# Description: Check whether a string is a palindrome. Ignores spaces,
+# -------------------------------------------------
 
 def is_palindrome(s: str) -> bool:
     """

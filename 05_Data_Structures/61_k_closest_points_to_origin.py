@@ -1,16 +1,9 @@
-# ------------------------------------------------------------
-# File: 61_k_closest_points_to_origin.py
-# LeetCode 973 - K Closest Points to Origin (Heap)
-#
-# Purpose:
-#   Return the k closest points to the origin (0,0).
-#   Distance = sqrt(x^2 + y^2). Use squared distance to avoid sqrt.
-#
-# Pattern: Min-heap (heapq). Alternative: QuickSelect.
-# Complexity: O(n log k) with heap; O(n) average with QuickSelect.
-#
-# Author: Florentino Baez
-# ------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 61_k_closest_points_to_origin.py
+# Author: Florentino Báez
+# Date: 05_Data_Structures
+# Description: K Closest Points to Origin (LeetCode 973). Min-heap or QuickSelect. O(n log k).
+# -------------------------------------------------
 
 import heapq
 

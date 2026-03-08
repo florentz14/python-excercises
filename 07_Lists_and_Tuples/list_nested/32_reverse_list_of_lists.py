@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 150. Reverse List of Lists (reverse order of outer list)
-# ---------------------------------------------------------------------------
-# Descripción: Reverse List of Lists (reverse order of outer list)
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 32_reverse_list_of_lists.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Reverse List of Lists (reverse order of outer list)
+# -------------------------------------------------
 
 def reverse_outer(lst: list[list]) -> list[list]:
     return lst[::-1]

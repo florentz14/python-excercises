@@ -1,18 +1,9 @@
-# ------------------------------------------------------------
-# File: 07_context_manager_exceptions.py
-# Chapter: Exceptions - Context Managers (with statement)
-#
-# Purpose:
-#   Handle exceptions when using context managers (with statement).
-#   Files, locks, and resources can raise during open/close.
-#
-# Topics:
-#   1. File operations - FileNotFoundError, PermissionError
-#   2. Nested context managers
-#   3. Suppressing exceptions with contextlib.suppress
-#
-# Author: Florentino Baez (adapted)
-# ------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 07_context_manager_exceptions.py
+# Author: Florentino Báez
+# Date: 22_Exceptions
+# Description: Demonstrates context manager exceptions.
+# -------------------------------------------------
 
 import os
 import tempfile

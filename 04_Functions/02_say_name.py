@@ -1,7 +1,8 @@
 # -------------------------------------------------
-# File: 02_say_name.py
+# File Name: 02_say_name.py
+# Author: Florentino Báez
+# Date: 04_Functions
 # Description: Function to display a name.
-#              Basic function without parameters.
 # -------------------------------------------------
 
 def say_name() -> None:

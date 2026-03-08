@@ -1,9 +1,9 @@
-"""
-#17 Binary Tree Paths - LeetCode 257
-=====================================
-Return all root-to-leaf paths as strings.
-Pattern: DFS.
-"""
+# -------------------------------------------------
+# File Name: 17_binary_tree_paths.py
+# Author: Florentino Báez
+# Date: 14_Trees
+# Description: LeetCode 257 - Return all root-to-leaf paths as strings.
+# -------------------------------------------------
 
 from common import TreeNode
 

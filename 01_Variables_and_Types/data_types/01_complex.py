@@ -1,16 +1,16 @@
-"""
-Números complejos en Python
-===========================
-Topic: Numeric types - complex (01_Variables_and_Types)
-Descripción: Crear números complejos (1+2j), partes real e imaginaria,
-operaciones aritméticas, conjugate(), abs(), phase() y el módulo cmath.
-"""
-import cmath
-# Examples of different numeric types in Python
+# -------------------------------------------------
+# File Name: 01_complex.py
+# Author: Florentino Báez
+# Date: 01_Variables_and_Types
+# Description: Create complex numbers (1+2j), real/imaginary parts,
+# -------------------------------------------------
 
-x = 1
-x = 1.1
-x = 1+2j  # complex number with real part 1 and imaginary part 2
+import cmath
+
+# Examples of different numeric types in Python
+x = 1      # int
+x = 1.1    # float (overwrites x)
+x = 1+2j   # complex: real=1, imaginary=2
 print(x)
 
 # Display the real and imaginary parts of the complex number

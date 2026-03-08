@@ -1,13 +1,10 @@
-# ---------------------------------------------------------------------------
-# Lista Simple - 26: Todo List con Ciclo While
-# ---------------------------------------------------------------------------
-# Descripcion: Una aplicacion de lista de tareas que usa un ciclo while para
-#              mostrar un menu y permitir agregar, eliminar, ver y marcar
-#              tareas como completadas. Utiliza operaciones basicas de listas.
-# Metodos:     append(), remove(), in, len(), indices
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 26_todo_list.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Una aplicacion de lista de tareas que usa un ciclo while para
+# -------------------------------------------------
 
-# Lista para almacenar las tareas
 tareas = []
 tareas_completadas = []
 

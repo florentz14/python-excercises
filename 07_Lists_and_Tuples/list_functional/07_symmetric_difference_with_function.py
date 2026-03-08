@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 227. Symmetric Difference After Applying Function
-# ---------------------------------------------------------------------------
-# Descripción: Symmetric Difference After Applying Function
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 07_symmetric_difference_with_function.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Symmetric Difference After Applying Function
+# -------------------------------------------------
 
 def symmetric_diff_by_func(a: list, b: list, func) -> list:
     set_a = {func(x) for x in a}

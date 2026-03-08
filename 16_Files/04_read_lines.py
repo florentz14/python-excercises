@@ -1,10 +1,10 @@
-"""
-16_Files - Exercise 04: Read line by line
-=========================================
-Use readlines() or iterate directly over the file object.
-"""
+# -------------------------------------------------
+# File Name: 04_read_lines.py
+# Author: Florentino Báez
+# Date: 16_Files
+# Description: Read file line by line. readlines() and iteration.
+# -------------------------------------------------
 
-# Read each line with readlines()
 with open("students.txt", "r", encoding="utf-8") as f:
     lines = f.readlines()
 

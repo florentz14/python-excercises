@@ -1,17 +1,9 @@
 # -------------------------------------------------
-# File: 16_euclides.py (Euclid's Algorithm - GCD, LCM, Extended)
-# -------------------------------------------------
+# File Name: 16_euclid.py
 # Author: Florentino Báez
-# Module: Data Structures - Mathematical Algorithms
-#
-# Description:
-#   Euclid's algorithm for Greatest Common Divisor (GCD). Repeatedly
-#   replaces (a, b) with (b, a mod b) until b=0. Includes LCM and
-#   Extended Euclid (finds x,y such that a*x + b*y = GCD).
-#
-# Complexity: O(log min(a, b)).
+# Date: 05_Data_Structures
+# Description: Euclidean algorithm for GCD. Computes greatest common divisor efficiently. O(log min(a,b)).
 # -------------------------------------------------
-
 
 def gcd(a, b):
     """Greatest Common Divisor (iterative)."""

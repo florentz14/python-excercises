@@ -1,7 +1,8 @@
 # -------------------------------------------------
-# File: 45_lottery_number_generator_v2.py
+# File Name: 45_lottery_number_generator_v2.py
+# Author: Florentino Báez
+# Date: 04_Functions
 # Description: Lottery Number Generator (Version 2).
-#              Using constants and pre-initialized list.
 # -------------------------------------------------
 
 import random

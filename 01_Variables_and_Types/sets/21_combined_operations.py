@@ -1,11 +1,8 @@
 # -------------------------------------------------
 # File Name: 21_combined_operations.py
 # Author: Florentino Báez
-# Date: Variables - Sets
+# Date: 01_Variables_and_Types
 # Description: Combined Set Operations.
-#              Performs multi-step operations: (A ∪ B) ∩ C,
-#              A ∪ (B ∩ C), and (A ∩ B) ∪ (B ∩ C).
-#              Shows how parentheses affect the result.
 # -------------------------------------------------
 
 """

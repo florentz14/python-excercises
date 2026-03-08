@@ -1,7 +1,7 @@
 # -------------------------------------------------
-# File Name: 01b_pyplot_multiple_lines.py
+# File Name: 02_pyplot_multiple_lines.py
 # Author: Florentino Báez
-# Date: Matplotlib
+# Date: 10_Matplotlib
 # Description: Multiple lines on one plot (x^2, x^3).
 # -------------------------------------------------
 

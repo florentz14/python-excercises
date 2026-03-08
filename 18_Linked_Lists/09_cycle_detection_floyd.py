@@ -1,7 +1,8 @@
 # -------------------------------------------------
-# File: 09_cycle_detection_floyd.py
+# File Name: 09_cycle_detection_floyd.py
+# Author: Florentino Báez
+# Date: 18_Linked_Lists
 # Description: Detect cycle in singly linked list.
-#              Using Floyd's Tortoise and Hare algorithm.
 # -------------------------------------------------
 
 from typing import Any, Optional

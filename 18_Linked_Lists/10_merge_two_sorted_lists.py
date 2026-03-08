@@ -1,7 +1,8 @@
 # -------------------------------------------------
-# File: 10_merge_two_sorted_lists.py
+# File Name: 10_merge_two_sorted_lists.py
+# Author: Florentino Báez
+# Date: 18_Linked_Lists
 # Description: Merge two sorted singly linked lists.
-#              Classic algorithm, LeetCode #21.
 # -------------------------------------------------
 
 from typing import Any, Optional

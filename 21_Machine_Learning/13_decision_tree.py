@@ -1,22 +1,9 @@
-"""
-Machine Learning - Decision Tree
-==================================
-A Decision Tree makes predictions by learning simple decision rules
-from data features. It works for both classification and regression.
-
-How it works:
-1. Picks the best feature to split the data
-2. Splits into branches based on feature values
-3. Repeats until a stopping condition is met
-4. Leaf nodes contain the final predictions
-
-Key terms:
-- Root node: Top of the tree (first split)
-- Internal node: Decision point
-- Leaf node: Final prediction
-- Depth: Number of levels in the tree
-- Gini impurity / Entropy: Measures how "mixed" a node is
-"""
+# -------------------------------------------------
+# File Name: 13_decision_tree.py
+# Author: Florentino Báez
+# Date: 21_Machine_Learning
+# Description: Decision tree for classification and regression.
+# -------------------------------------------------
 
 import numpy as np
 import matplotlib.pyplot as plt

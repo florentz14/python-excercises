@@ -1,15 +1,9 @@
 # -------------------------------------------------
 # File Name: 38_kmp.py
 # Author: Florentino Báez
-# Date: Data Structures - Search Algorithms
-# Description: KMP Algorithm (Knuth-Morris-Pratt).
-#              Pattern search in text that avoids re-comparing
-#              characters already verified. Pre-processes the pattern
-#              by building the LPS table (Longest Proper Prefix
-#              which is also Suffix) to skip positions.
-#              Complexity: O(n + m) in time, O(m) in space.
+# Date: 05_Data_Structures
+# Description: KMP algorithm for pattern matching. Builds failure table for linear-time search. O(n+m).
 # -------------------------------------------------
-
 
 def construir_tabla_lps(patron):
     """LPS table: Longest Proper Prefix which is also Suffix."""

@@ -1,5 +1,9 @@
-# Archivo: 50_07_resumen.py
-# Descripción: Resumen de geometría computacional
+# -------------------------------------------------
+# File Name: 54_summary.py
+# Author: Florentino Báez
+# Date: 17_Equations
+# Description: Summary of computational geometry.
+# -------------------------------------------------
 
 if __name__ == "__main__":
     print("=== RESUMEN - Geometría Computacional ===\n")

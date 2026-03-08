@@ -1,8 +1,9 @@
-"""For loop: Guess with 5 attempts.
-Guessing game limited to 5 attempts; uses for-else for game over.
-"""
+# -------------------------------------------------
+# File Name: 27_guess_for_5.py
 # Author: Florentino Báez
-
+# Date: 03_Loops
+# Description: Guess with 5 attempts.
+# -------------------------------------------------
 
 import random
 

@@ -1,17 +1,9 @@
-# ------------------------------------------------------------
-# File: 60_word_search.py
-# LeetCode 79 - Word Search (Backtracking)
-#
-# Purpose:
-#   Find if a word exists in a 2D grid. Word can be constructed from
-#   adjacent cells (horizontally or vertically). Each cell used at most once.
-#
-# Pattern: Backtracking on grid
-# Complexity: O(rows * cols * 4^len(word))
-#
-# Author: Florentino Baez
-# ------------------------------------------------------------
-
+# -------------------------------------------------
+# File Name: 60_word_search.py
+# Author: Florentino Báez
+# Date: 05_Data_Structures
+# Description: Word Search (LeetCode 79). Find word in 2D grid using backtracking.
+# -------------------------------------------------
 
 def exist(board: list[list[str]], word: str) -> bool:
     """Return True if word exists in board."""

@@ -1,13 +1,9 @@
-# ---------------------------------------------------------------------------
-# Lista Simple - 20: Metodo extend()
-# ---------------------------------------------------------------------------
-# Descripcion: El metodo extend() agrega todos los elementos de un iterable
-#              al final de la lista. Modifica la lista original (in-place).
-#              A diferencia de append(), no agrega el iterable como un solo
-#              elemento, sino que "desempaqueta" cada elemento.
-# Sintaxis:    lista.extend(iterable)
-# Complejidad: O(k) donde k es el tamano del iterable agregado
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 20_extend.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: El metodo extend() agrega todos los elementos de un iterable
+# -------------------------------------------------
 
 lista1 = ["a", "b", "c"]
 lista2 = [1, 2, 3]

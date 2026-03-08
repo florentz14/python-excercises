@@ -1,8 +1,9 @@
-"""While loop: Subtraction quiz with 3 attempts.
-Math quiz with limited attempts; breaks on correct or max tries.
-"""
+# -------------------------------------------------
+# File Name: 30_subtract_3_attempts.py
 # Author: Florentino Báez
-
+# Date: 03_Loops
+# Description: Subtraction quiz with 3 attempts.
+# -------------------------------------------------
 
 import random
 

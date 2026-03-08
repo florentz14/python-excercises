@@ -1,8 +1,9 @@
-# ------------------------------------------------------------
-# File: 47_array_statistics.py
-# Purpose: Array statistics: sum, mean, min, max, std.
+# -------------------------------------------------
+# File Name: 76_statistics.py
+# Author: Florentino Báez
+# Date: 08_Matrices
 # Description: Aggregate along axis (0=columns, 1=rows) or whole array.
-# ------------------------------------------------------------
+# -------------------------------------------------
 
 import numpy as np
 

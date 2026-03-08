@@ -1,11 +1,9 @@
-# ---------------------------------------------------------------------------
-# Tuplas - 07: Tuple Methods (Metodos de Tupla)
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 07_metodos_tupla.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
 # Description: Tuples have only TWO built-in methods: count() and index().
-#              This is because tuples are immutable - methods that modify
-#              (like append, remove, sort) are not available.
-# Methods:     tuple.count(value)  /  tuple.index(value)
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
 
 fruits = ("apple", "banana", "cherry", "banana", "grape", "banana", "kiwi")
 print("Tuple:", fruits)

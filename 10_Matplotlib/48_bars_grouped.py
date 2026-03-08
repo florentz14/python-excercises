@@ -1,9 +1,8 @@
 # -------------------------------------------------
-# File Name: 09e_bars_grouped.py
+# File Name: 48_bars_grouped.py
 # Author: Florentino Báez
-# Date: Matplotlib
+# Date: 10_Matplotlib
 # Description: Grouped Bar Chart — comparing three
-#              products across quarters.
 # -------------------------------------------------
 
 import matplotlib.pyplot as plt

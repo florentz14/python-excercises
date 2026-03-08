@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 145. Generate Number in Range Except Specific Numbers
-# ---------------------------------------------------------------------------
-# Descripción: Generate Number in Range Except Specific Numbers
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 35_random_in_range_except.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Generate Number in Range Except Specific Numbers
+# -------------------------------------------------
 
 import random
 

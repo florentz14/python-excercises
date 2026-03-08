@@ -1,7 +1,8 @@
 # -------------------------------------------------
-# File: 11_count_to_five.py
+# File Name: 11_count_to_five.py
+# Author: Florentino Báez
+# Date: 04_Functions
 # Description: Count from 1 to 5.
-#              Function with for loop.
 # -------------------------------------------------
 
 def count_to_five() -> None:

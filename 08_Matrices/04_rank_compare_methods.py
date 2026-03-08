@@ -1,8 +1,9 @@
-# ------------------------------------------------------------
-# File: 04_rank_compare_methods.py
-# Purpose: Compare methods for computing matrix rank.
+# -------------------------------------------------
+# File Name: 04_rank_compare_methods.py
+# Author: Florentino Báez
+# Date: 08_Matrices
 # Description: matrix_rank(), SVD, and QR decomposition.
-# ------------------------------------------------------------
+# -------------------------------------------------
 
 import numpy as np
 

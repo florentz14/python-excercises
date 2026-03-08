@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 111. Access Multiple Elements at Specified Indices
-# ---------------------------------------------------------------------------
-# Descripción: Access Multiple Elements at Specified Indices
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 24_access_multiple_by_index.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Access Multiple Elements at Specified Indices
+# -------------------------------------------------
 
 def elements_at_indices(lst: list, indices: list[int]) -> list:
     # Lista por comprensión: se incluyen solo los elementos que cumplen la condición.

@@ -1,11 +1,8 @@
 # -------------------------------------------------
-# File Name: clase_usuarios_avanzada.py
-# Author: Carlos Báez / Mejorado
-# Date: January 13, 2026
-# Description: Sistema avanzado de gestión de usuarios con
-#              hasheo seguro de contraseñas, bloqueo de cuenta,
-#              roles, sesiones, auditoría y permisos.
-# Python: 3.14+
+# File Name: 38_advanced_users.py
+# Author: Florentino Báez
+# Date: 11_OOP
+# Description: Advanced user management with secure password hashing,
 # -------------------------------------------------
 
 from __future__ import annotations

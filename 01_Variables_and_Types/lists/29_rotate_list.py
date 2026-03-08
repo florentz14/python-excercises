@@ -1,4 +1,9 @@
-# rotar listas (rotate list)
+# -------------------------------------------------
+# File Name: 29_rotate_list.py
+# Author: Florentino Báez
+# Date: 01_Variables_and_Types
+# Description: Rotates lists left or right by n positions.
+# -------------------------------------------------
 
 def rotate_left(lst, n):
     """Rotate list left by n positions."""

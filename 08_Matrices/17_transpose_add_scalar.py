@@ -1,10 +1,10 @@
-# ------------------------------------------------------------
-# File: 17_transpose_add_scalar.py
-# Purpose: Transpose, add matrices, scalar product.
+# -------------------------------------------------
+# File Name: 17_transpose_add_scalar.py
+# Author: Florentino Báez
+# Date: 08_Matrices
 # Description: A^T, A+B, k*A with list comprehensions.
-# ------------------------------------------------------------
+# -------------------------------------------------
 
-# Transpose
 original = [[1, 2, 3], [4, 5, 6]]
 print("Original (2x3):")
 for row in original:

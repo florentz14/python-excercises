@@ -1,6 +1,10 @@
-# Assignment Operators in Python
+# -------------------------------------------------
+# File Name: 04_assignment_operators.py
+# Author: Florentino Báez
+# Date: 01_Variables_and_Types
+# Description: Shows augmented assignment operators (+=, -=, *=, /=, %=, **=, //=)
+# -------------------------------------------------
 
-# Basic assignment
 a = 10
 print(f"Initial a: {a}")
 

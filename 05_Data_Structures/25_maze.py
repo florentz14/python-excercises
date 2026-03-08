@@ -1,16 +1,9 @@
 # -------------------------------------------------
-# File: 25_laberinto.py (Maze Solving - Backtracking)
-# -------------------------------------------------
+# File Name: 25_maze.py
 # Author: Florentino Báez
-# Module: Data Structures - Backtracking
-#
-# Description:
-#   Maze pathfinding via backtracking. 0 = open, 1 = wall. Explores
-#   the 4 directions (right, down, left, up) and backtracks on dead ends.
-#
-# Returns: path list if found, None otherwise.
+# Date: 05_Data_Structures
+# Description: Maze solving. Path finding in grid using BFS/DFS or backtracking.
 # -------------------------------------------------
-
 
 def solve_maze(maze, start, goal):
     """Returns path from start to goal, or None if no path exists."""

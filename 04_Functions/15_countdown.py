@@ -1,7 +1,8 @@
 # -------------------------------------------------
-# File: 15_countdown.py
+# File Name: 15_countdown.py
+# Author: Florentino Báez
+# Date: 04_Functions
 # Description: Countdown from n to 1, then "Go!".
-#              Function with reverse loop.
 # -------------------------------------------------
 
 def countdown(n: int) -> None:

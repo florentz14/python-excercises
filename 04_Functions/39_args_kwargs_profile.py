@@ -1,7 +1,8 @@
 # -------------------------------------------------
-# File: 39_args_kwargs_profile.py
+# File Name: 39_args_kwargs_profile.py
+# Author: Florentino Báez
+# Date: 04_Functions
 # Description: User profile with *args and **kwargs.
-#              Flexible function parameters.
 # -------------------------------------------------
 
 def create_profile(name, *hobbies, **details):

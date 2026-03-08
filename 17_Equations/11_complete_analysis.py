@@ -1,5 +1,9 @@
-# Archivo: 27_03_analisis_completo.py
-# Descripción: Análisis completo de una ecuación cuadrática
+# -------------------------------------------------
+# File Name: 11_complete_analysis.py
+# Author: Florentino Báez
+# Date: 17_Equations
+# Description: Complete analysis of a quadratic equation.
+# -------------------------------------------------
 
 from resolver_cuadratica import ecuacion_cuadratica_completa
 

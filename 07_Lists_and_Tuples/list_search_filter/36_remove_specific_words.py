@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 148. Remove Specific Words from List
-# ---------------------------------------------------------------------------
-# Descripción: Remove Specific Words from List
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 36_remove_specific_words.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Remove Specific Words from List
+# -------------------------------------------------
 
 def remove_words(lst: list[str], to_remove: list[str]) -> list[str]:
     remove_set = set(to_remove)

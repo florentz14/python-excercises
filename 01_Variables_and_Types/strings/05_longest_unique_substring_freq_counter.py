@@ -1,17 +1,9 @@
-"""
-Longest Substring Without Repeating Characters - Frequency counter version
-=========================================================================
-Topic: Strings (01_Variables_and_Types/strings)
-Description: Sliding window with a frequency counter (defaultdict). When a
-character's count exceeds 1, shrink the window from the left.
-
-Input:  A string (e.g. "abccabcabcc")
-Output: Length of longest unique substring (e.g. 3)
-
-Complexity:
-    Time:   O(n) - Each character visited at most twice
-    Space:  O(n)  - Frequency counter
-"""
+# -------------------------------------------------
+# File Name: 05_longest_unique_substring_freq_counter.py
+# Author: Florentino Báez
+# Date: 01_Variables_and_Types
+# Description: Longest substring without repeating chars - frequency counter.
+# -------------------------------------------------
 
 from collections import defaultdict
 

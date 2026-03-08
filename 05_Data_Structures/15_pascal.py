@@ -1,18 +1,9 @@
 # -------------------------------------------------
-# File: 15_pascal.py (Pascal's Triangle & Binomial Coefficients)
-# -------------------------------------------------
+# File Name: 15_pascal.py
 # Author: Florentino Báez
-# Module: Data Structures - Mathematical Algorithms
-#
-# Description:
-#   Pascal's Triangle: each element is the sum of the two above it.
-#   - pascal_rows(n): first n rows.
-#   - binomial_coefficient(n, k): C(n,k) = n!/(k!(n-k)!).
-#   - pascal_row_n(n): generates only row n.
-#
-# Complexity: O(n²) for n full rows; O(n) for single row.
+# Date: 05_Data_Structures
+# Description: Pascal's triangle. Generates binomial coefficients in triangular form.
 # -------------------------------------------------
-
 
 def pascal_rows(n):
     """Generates the first n rows of Pascal's Triangle."""

@@ -1,8 +1,9 @@
-# ------------------------------------------------------------
-# File: 21_sort_list_of_tuples.py
-# Purpose: Sort list of tuples.
-# Description: sort() with key=lambda for custom ordering.
-# ------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 21_sort_list_of_tuples.py
+# Author: Florentino Báez
+# Date: 01_Variables_and_Types
+# Description: Sort list of tuples with key=lambda for custom ordering.
+# -------------------------------------------------
 
 students = [
     ("Anna", 90),

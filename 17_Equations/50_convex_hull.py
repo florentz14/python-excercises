@@ -1,5 +1,9 @@
-# Archivo: 50_03_convex_hull.py
-# Descripción: Convex Hull (Graham Scan)
+# -------------------------------------------------
+# File Name: 50_convex_hull.py
+# Author: Florentino Báez
+# Date: 17_Equations
+# Description: Convex hull (Graham Scan algorithm).
+# -------------------------------------------------
 
 import math
 

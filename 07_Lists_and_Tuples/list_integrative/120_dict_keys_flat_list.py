@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 258. Flat List of All Keys from Dictionary
-# ---------------------------------------------------------------------------
-# Descripción: Flat List of All Keys from Dictionary
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 120_dict_keys_flat_list.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Flat List of All Keys from Dictionary
+# -------------------------------------------------
 
 def dict_keys_list(d: dict) -> list:
     # Se construye list/set/dict a partir del iterable (elimina duplicados en set/dict).

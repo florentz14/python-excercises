@@ -1,8 +1,9 @@
-# ------------------------------------------------------------
-# File: 49_array_boolean_indexing.py
-# Purpose: Filter arrays with boolean masks.
+# -------------------------------------------------
+# File Name: 78_boolean_indexing.py
+# Author: Florentino Báez
+# Date: 08_Matrices
 # Description: Comparison operators, logical AND/OR, where().
-# ------------------------------------------------------------
+# -------------------------------------------------
 
 import numpy as np
 

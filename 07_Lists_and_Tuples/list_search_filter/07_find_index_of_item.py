@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 22. Find Index of an Item in a List
-# ---------------------------------------------------------------------------
-# Descripción: Find Index of an Item in a List
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 07_find_index_of_item.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Find Index of an Item in a List
+# -------------------------------------------------
 
 def find_index(lst: list, item) -> int:
     # Se devuelve un valor u otro según la condición.

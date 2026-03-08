@@ -1,8 +1,9 @@
-"""While True: Guess the number with break.
-Guessing game using while True and break on correct guess.
-"""
+# -------------------------------------------------
+# File Name: 26_guess_while_true.py
 # Author: Florentino Báez
-
+# Date: 03_Loops
+# Description: Guess the number with break.
+# -------------------------------------------------
 
 import random
 

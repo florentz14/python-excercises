@@ -1,8 +1,9 @@
-"""For loop: Count matrix elements.
-Counts rows and total elements in a 2D matrix.
-"""
+# -------------------------------------------------
+# File Name: 60_for_count_matrix.py
 # Author: Florentino Báez
-
+# Date: 03_Loops
+# Description: Count matrix elements.
+# -------------------------------------------------
 
 print("Contar Elementos en Matriz 2D")
 print("=" * 40)

@@ -1,9 +1,9 @@
-"""
-Simple conditional: Minimum of three numbers
-============================================
-Topic: Conditionals (02_Conditionals)
-Description: Find the smallest of three numbers without min().
-"""
+# -------------------------------------------------
+# File Name: 31_min_of_three.py
+# Author: Florentino Báez
+# Date: 02_Conditionals
+# Description: Minimum of three numbers
+# -------------------------------------------------
 
 a = float(input("Number 1: "))
 b = float(input("Number 2: "))

@@ -1,4 +1,9 @@
-# Floor, Ceil, and Square Root Functions in Python
+# -------------------------------------------------
+# File Name: 08_floor_ceil_sqrt.py
+# Author: Florentino Báez
+# Date: 01_Variables_and_Types
+# Description: Uses math.floor(), math.ceil(), and math.sqrt(). Covers rounding
+# -------------------------------------------------
 
 import math
 

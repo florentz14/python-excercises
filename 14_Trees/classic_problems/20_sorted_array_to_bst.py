@@ -1,9 +1,9 @@
-"""
-#20 Convert Sorted Array to BST
-================================
-LeetCode 108. Build a height-balanced BST from sorted array.
-Time: O(n), Space: O(log n) recursion stack.
-"""
+# -------------------------------------------------
+# File Name: 20_sorted_array_to_bst.py
+# Author: Florentino Báez
+# Date: 14_Trees
+# Description: LeetCode 108 - Build height-balanced BST from sorted array.
+# -------------------------------------------------
 
 from common import TreeNode
 

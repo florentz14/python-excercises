@@ -1,10 +1,10 @@
-# ------------------------------------------------------------
-# File: 20_rotate_diagonal_traverse.py
-# Purpose: Rotate 90°, main diagonal, index traverse.
+# -------------------------------------------------
+# File Name: 20_rotate_diagonal_traverse.py
+# Author: Florentino Báez
+# Date: 08_Matrices
 # Description: Clockwise rotation, diagonal extraction, element-by-element.
-# ------------------------------------------------------------
+# -------------------------------------------------
 
-# Rotate 90° clockwise
 M = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
 print("Original:")
 for row in M:

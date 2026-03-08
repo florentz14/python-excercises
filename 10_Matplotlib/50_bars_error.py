@@ -1,7 +1,7 @@
 # -------------------------------------------------
-# File Name: 09g_bars_error.py
+# File Name: 50_bars_error.py
 # Author: Florentino Báez
-# Date: Matplotlib
+# Date: 10_Matplotlib
 # Description: Bar chart with error bars (yerr, capsize).
 # -------------------------------------------------
 

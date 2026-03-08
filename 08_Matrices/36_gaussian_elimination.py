@@ -1,8 +1,9 @@
-# ------------------------------------------------------------
-# File: 36_gaussian_elimination.py
-# Purpose: Solve systems by Gaussian elimination.
+# -------------------------------------------------
+# File Name: 36_gaussian_elimination.py
+# Author: Florentino Báez
+# Date: 08_Matrices
 # Description: Forward elimination to upper triangular, then back substitution.
-# ------------------------------------------------------------
+# -------------------------------------------------
 
 import numpy as np
 

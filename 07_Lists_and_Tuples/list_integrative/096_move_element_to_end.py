@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 196. Move Specified Element to End of List
-# ---------------------------------------------------------------------------
-# Descripción: Move Specified Element to End of List
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 096_move_element_to_end.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Move Specified Element to End of List
+# -------------------------------------------------
 
 def move_to_end(lst: list, elem) -> list:
     # Lista por comprensión: se incluyen solo los elementos que cumplen la condición.

@@ -1,9 +1,9 @@
-"""
-Simple conditional: Parking fee by hours
-========================================
-Topic: Conditionals (02_Conditionals)
-Description: Calculate parking fee (first hour free, then $2/hr).
-"""
+# -------------------------------------------------
+# File Name: 27_parking_fee.py
+# Author: Florentino Báez
+# Date: 02_Conditionals
+# Description: Parking fee by hours
+# -------------------------------------------------
 
 hours = float(input("Hours parked: "))
 

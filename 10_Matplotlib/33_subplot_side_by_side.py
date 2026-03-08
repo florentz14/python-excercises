@@ -1,7 +1,7 @@
 # -------------------------------------------------
-# File Name: 07a_subplot_side_by_side.py
+# File Name: 33_subplot_side_by_side.py
 # Author: Florentino Báez
-# Date: Matplotlib
+# Date: 10_Matplotlib
 # Description: Two subplots side by side (1 row, 2 cols).
 # -------------------------------------------------
 

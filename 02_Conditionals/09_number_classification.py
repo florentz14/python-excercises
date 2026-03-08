@@ -1,9 +1,9 @@
-"""
-if.py - Ejemplo 1: Clasificar número (positivo, negativo, cero)
-================================================================
-Topic: Conditionals (02_Conditionals)
-Descripción: if/elif/else para clasificar un número.
-"""
+# -------------------------------------------------
+# File Name: 09_number_classification.py
+# Author: Florentino Báez
+# Date: 02_Conditionals
+# Description: if/elif/else para clasificar un número.
+# -------------------------------------------------
 
 print("Example 1: Number Classification")
 print("-" * 40)

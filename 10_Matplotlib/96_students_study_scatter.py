@@ -1,7 +1,7 @@
 # -------------------------------------------------
-# File Name: 43_students_study_scatter.py
+# File Name: 96_students_study_scatter.py
 # Author: Florentino Báez
-# Date: Matplotlib
+# Date: 10_Matplotlib
 # Description: Scatter plot of study time vs final grade by sex.
 # -------------------------------------------------
 

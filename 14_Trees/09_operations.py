@@ -1,8 +1,9 @@
-"""
-14_Trees - Common tree operations
-===========================================
-contar_hojas, sumar_valores, es_completo.
-"""
+# -------------------------------------------------
+# File Name: 09_operations.py
+# Author: Florentino Báez
+# Date: 14_Trees
+# Description: Common tree operations: count leaves, sum values, check completeness.
+# -------------------------------------------------
 
 from bst import ArbolBST
 

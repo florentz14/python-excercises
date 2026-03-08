@@ -1,8 +1,9 @@
-# ------------------------------------------------------------
-# File: 92_search_2d_matrix.py
-# Purpose: Search in sorted 2D matrix.
+# -------------------------------------------------
+# File Name: 92_search_2d_matrix.py
+# Author: Florentino Báez
+# Date: 08_Matrices
 # Description: Rows and columns sorted. Search for target in O(m+n).
-# ------------------------------------------------------------
+# -------------------------------------------------
 
 def search_matrix(matrix, target):
     if not matrix or not matrix[0]:

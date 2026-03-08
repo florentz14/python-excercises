@@ -1,4 +1,9 @@
-# Basic Math Menu
+# -------------------------------------------------
+# File Name: 25_basic_math_menu.py
+# Author: Florentino Báez
+# Date: 01_Variables_and_Types
+# Description: Menu-driven calculator with add, subtract, multiply, divide.
+# -------------------------------------------------
 
 def add(a, b):
     return a + b

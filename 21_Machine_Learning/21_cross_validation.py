@@ -1,21 +1,9 @@
-"""
-Machine Learning - Cross Validation
-======================================
-Cross Validation provides a more reliable estimate of model performance
-than a single train/test split.
-
-Types:
-1. K-Fold CV: Split data into K folds, train on K-1, test on 1, rotate
-2. Stratified K-Fold: Preserves class proportions in each fold
-3. Leave-One-Out (LOO): K = number of samples (expensive)
-4. Repeated K-Fold: Repeat K-Fold multiple times
-5. Time Series Split: For sequential data (no data leakage)
-
-Why use it?
-- Single split can be "lucky" or "unlucky"
-- Uses ALL data for both training and testing
-- Gives mean and std of performance
-"""
+# -------------------------------------------------
+# File Name: 21_cross_validation.py
+# Author: Florentino Báez
+# Date: 21_Machine_Learning
+# Description: Cross validation for reliable performance estimation.
+# -------------------------------------------------
 
 import numpy as np
 from sklearn.model_selection import (cross_val_score, cross_validate,

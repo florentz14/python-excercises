@@ -1,7 +1,7 @@
 # -------------------------------------------------
-# File Name: 11f_pie_exploded.py
+# File Name: 63_pie_exploded.py
 # Author: Florentino Báez
-# Date: Matplotlib
+# Date: 10_Matplotlib
 # Description: Monthly expenses pie with all slices slightly exploded.
 # -------------------------------------------------
 

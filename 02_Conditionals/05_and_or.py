@@ -1,9 +1,9 @@
-"""
-Condicional - Ejemplo 5: and / or
-=================================
-Topic: Conditionals (02_Conditionals)
-Descripción: Combinar condiciones con and (todas verdaderas) y or (al menos una).
-"""
+# -------------------------------------------------
+# File Name: 05_and_or.py
+# Author: Florentino Báez
+# Date: 02_Conditionals
+# Description: Combinar condiciones con and (todas verdaderas) y or (al menos una).
+# -------------------------------------------------
 
 edad = 25
 tiene_entrada = True

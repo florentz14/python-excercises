@@ -1,19 +1,9 @@
 # -------------------------------------------------
-# File: 03_kruskal.py (Kruskal's MST Algorithm)
-# -------------------------------------------------
+# File Name: 03_kruskal.py
 # Author: Florentino Báez
-# Module: Data Structures - Greedy Algorithms
-#
-# Description:
-#   Kruskal's algorithm for Minimum Spanning Tree (MST). Given an
-#   undirected weighted graph, finds the spanning tree with minimum
-#   total edge weight. Uses Union-Find (disjoint set) to detect
-#   cycles when adding edges.
-#
-# Strategy: Sort edges by weight; add each edge if it doesn't form a cycle.
-# Complexity: O(E log E) where E = number of edges.
+# Date: 05_Data_Structures
+# Description: Kruskal's algorithm for Minimum Spanning Tree. Uses Union-Find to detect cycles. Sorts edges by weight; adds each if it doesn't form a cycle. O(E log E).
 # -------------------------------------------------
-
 
 class UnionFind:
     """Union-Find (disjoint set) for cycle detection in Kruskal's algorithm."""

@@ -1,8 +1,9 @@
-"""While loop: Guess the number (infinite).
-Guessing game that loops until user guesses correctly.
-"""
+# -------------------------------------------------
+# File Name: 25_guess_while.py
 # Author: Florentino Báez
-
+# Date: 03_Loops
+# Description: Guess the number (infinite).
+# -------------------------------------------------
 
 import random
 

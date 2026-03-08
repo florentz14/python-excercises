@@ -1,8 +1,9 @@
-﻿# ------------------------------------------------------------
-# File: 18_permutation_in_string.py
-# Purpose: Check if s1 permutation exists in s2.
-# Description: Sliding window of len(s1), compare frequency.
-# ------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 18_permutation_in_string.py
+# Author: Florentino Báez
+# Date: 01_Variables_and_Types
+# Description: Check if permutation of s1 exists in s2.
+# -------------------------------------------------
 
 from collections import Counter
 

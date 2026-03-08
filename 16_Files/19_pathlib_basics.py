@@ -1,9 +1,9 @@
-"""
-16_Files - Exercise 19: Modern file handling with pathlib
-========================================================
-pathlib provides an object-oriented interface to filesystem paths.
-It's more intuitive and cross-platform than os.path.
-"""
+# -------------------------------------------------
+# File Name: 19_pathlib_basics.py
+# Author: Florentino Báez
+# Date: 16_Files
+# Description: pathlib basics. Modern object-oriented path handling.
+# -------------------------------------------------
 
 from pathlib import Path
 import shutil

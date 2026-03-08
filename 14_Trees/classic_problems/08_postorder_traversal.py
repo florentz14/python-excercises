@@ -1,8 +1,9 @@
-"""
-#8 Binary Tree Postorder Traversal
-LeetCode 145. Left -> Right -> Root
-Time: O(n), Space: O(h)
-"""
+# -------------------------------------------------
+# File Name: 08_postorder_traversal.py
+# Author: Florentino Báez
+# Date: 14_Trees
+# Description: LeetCode 145 - Binary tree postorder traversal (Left, Right, Root).
+# -------------------------------------------------
 
 from common import TreeNode, build_example
 

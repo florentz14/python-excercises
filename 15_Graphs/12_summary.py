@@ -1,7 +1,9 @@
-"""
-15_Graphs - Summary of representations and algorithms
-=====================================================
-"""
+# -------------------------------------------------
+# File Name: 12_summary.py
+# Author: Florentino Báez
+# Date: 15_Graphs
+# Description: 15_Graphs - Summary of representations and algorithms =====================================================
+# -------------------------------------------------
 
 print("=== Resumen de grafos ===\n")
 print("""

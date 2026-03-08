@@ -1,6 +1,10 @@
-# Modulo Examples in Python
+# -------------------------------------------------
+# File Name: 10_modulo_examples.py
+# Author: Florentino Báez
+# Date: 01_Variables_and_Types
+# Description: Shows modulo operator for even/odd check, 12-hour clock arithmetic,
+# -------------------------------------------------
 
-# Basic modulo
 print("Basic modulo operations:")
 print(f"10 % 3 = {10 % 3}")
 print(f"15 % 4 = {15 % 4}")

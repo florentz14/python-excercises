@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 37. Find Common Items in Two Lists
-# ---------------------------------------------------------------------------
-# Descripción: Find Common Items in Two Lists
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 12_common_items_two_lists.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Find Common Items in Two Lists
+# -------------------------------------------------
 
 def common_items(a: list, b: list) -> list:
     # Se construye list/set/dict a partir del iterable (elimina duplicados en set/dict).

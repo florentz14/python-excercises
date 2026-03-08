@@ -1,11 +1,8 @@
 # -------------------------------------------------
 # File Name: 03_add_elements.py
 # Author: Florentino Báez
-# Date: Variables - Lists
+# Date: 01_Variables_and_Types
 # Description: Add Elements to a List.
-#              append() adds a single item at the end.
-#              extend() adds all items from an iterable.
-#              insert(i, x) places x at position i.
 # -------------------------------------------------
 
 print("Example 3: Add elements to a list")

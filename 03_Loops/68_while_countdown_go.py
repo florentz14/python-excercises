@@ -1,8 +1,9 @@
-"""While loop: Countdown then Go.
-Counts from 5 to 1, then prints Go!
-"""
+# -------------------------------------------------
+# File Name: 68_while_countdown_go.py
 # Author: Florentino Báez
-
+# Date: 03_Loops
+# Description: Countdown then Go.
+# -------------------------------------------------
 
 print("=" * 40)
 print("While #2 – Countdown then Go")

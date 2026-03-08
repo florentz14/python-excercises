@@ -1,8 +1,9 @@
-# ------------------------------------------------------------
-# File: 32_numpy_matrices.py
-# Purpose: Matrix operations with NumPy.
+# -------------------------------------------------
+# File Name: 44_matrices.py
+# Author: Florentino Báez
+# Date: 08_Matrices
 # Description: Add, scalar, transpose, subtract.
-# ------------------------------------------------------------
+# -------------------------------------------------
 
 import numpy as np
 

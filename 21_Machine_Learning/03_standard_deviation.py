@@ -1,20 +1,9 @@
-"""
-Machine Learning - Standard Deviation
-=======================================
-Standard deviation measures how spread out the data is from the mean.
-
-- Low standard deviation  -> data points are close to the mean
-- High standard deviation -> data points are spread over a wide range
-
-Formula: σ = sqrt( Σ(xi - μ)² / N )
-Where:
-  σ  = standard deviation
-  xi = each data point
-  μ  = mean of the data
-  N  = number of data points
-
-Related concept: Variance = σ² (standard deviation squared)
-"""
+# -------------------------------------------------
+# File Name: 03_standard_deviation.py
+# Author: Florentino Báez
+# Date: 21_Machine_Learning
+# Description: Standard deviation and variance for data spread.
+# -------------------------------------------------
 
 import numpy as np
 

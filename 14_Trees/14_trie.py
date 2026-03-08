@@ -1,10 +1,9 @@
-"""
-14_Trees - Trie (Prefix Tree)
-=========================================
-Structure for strings. O(word_length) insert/search.
-Used in: autocomplete, dictionaries, search engines.
-"""
-
+# -------------------------------------------------
+# File Name: 14_trie.py
+# Author: Florentino Báez
+# Date: 14_Trees
+# Description: Trie (prefix tree) for string storage; O(word_length) insert/search.
+# -------------------------------------------------
 
 class TrieNode:
     """Trie node with children map."""

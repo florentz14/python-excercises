@@ -1,16 +1,9 @@
-"""
-Machine Learning - Multiple Regression
-========================================
-Multiple Regression uses TWO OR MORE independent variables (features)
-to predict a dependent variable (target).
-
-Equation: y = b₀ + b₁x₁ + b₂x₂ + ... + bₙxₙ
-
-Example: Predicting car CO2 emissions based on:
-  - Engine volume (cm³)
-  - Weight (kg)
-  - Number of cylinders
-"""
+# -------------------------------------------------
+# File Name: 10_multiple_regression.py
+# Author: Florentino Báez
+# Date: 21_Machine_Learning
+# Description: Multiple regression with multiple features.
+# -------------------------------------------------
 
 import numpy as np
 import pandas as pd

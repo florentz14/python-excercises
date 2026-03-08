@@ -1,7 +1,8 @@
 # -------------------------------------------------
-# File: 12_print_stars.py
+# File Name: 12_print_stars.py
+# Author: Florentino Báez
+# Date: 04_Functions
 # Description: Print n stars vertically.
-#              Function with loop and parameter.
 # -------------------------------------------------
 
 def print_stars(n: int) -> None:

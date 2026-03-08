@@ -1,7 +1,7 @@
 # -------------------------------------------------
-# File Name: 08b_scatter_two_datasets.py
+# File Name: 39_scatter_two_datasets.py
 # Author: Florentino Báez
-# Date: Matplotlib
+# Date: 10_Matplotlib
 # Description: Compare two datasets (morning vs afternoon).
 # -------------------------------------------------
 

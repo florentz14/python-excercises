@@ -1,11 +1,8 @@
 # -------------------------------------------------
 # File Name: 17_pila.py
 # Author: Florentino Báez
-# Date: Variables - Lists
+# Date: 01_Variables_and_Types
 # Description: List as a Stack (LIFO).
-#              Last In, First Out. Use append() to push
-#              and pop() to remove from the top. Peek
-#              with list[-1] without removing.
 # -------------------------------------------------
 
 print("=== List as a stack (LIFO) ===")

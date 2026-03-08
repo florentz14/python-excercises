@@ -1,8 +1,9 @@
-"""For loop: Diagonal pattern.
-Prints X on main diagonal, dots elsewhere.
-"""
+# -------------------------------------------------
+# File Name: 58_for_pattern_diagonal.py
 # Author: Florentino Báez
-
+# Date: 03_Loops
+# Description: Diagonal pattern.
+# -------------------------------------------------
 
 print("Patrón de Diagonal")
 print("=" * 30)

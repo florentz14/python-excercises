@@ -1,5 +1,9 @@
-# Archivo: 33_04_paso_a_paso.py
-# Descripción: Solución paso a paso (matriz aumentada)
+# -------------------------------------------------
+# File Name: 30_step_by_step.py
+# Author: Florentino Báez
+# Date: 17_Equations
+# Description: Step-by-step solution (augmented matrix).
+# -------------------------------------------------
 
 import numpy as np
 

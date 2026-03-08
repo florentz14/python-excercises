@@ -1,5 +1,9 @@
-# 19_simple_herencia.py - Simple inheritance: Parent -> Child
-# Florentino Baez - ITSE-1002
+# -------------------------------------------------
+# File Name: 46_inheritance.py
+# Author: Florentino Báez
+# Date: 11_OOP
+# Description: Simple inheritance: Parent and Child classes.
+# -------------------------------------------------
 
 class Parent:
     """Base class."""

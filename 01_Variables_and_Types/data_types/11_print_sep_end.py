@@ -1,22 +1,22 @@
-"""
-Control de print(): sep y end
-==============================
-Topic: Variables and Types (01_Variables_and_Types)
-Descripción: sep (separador entre argumentos), end (final de línea).
-"""
-# sep: separador entre múltiples argumentos (default: espacio)
+# -------------------------------------------------
+# File Name: 11_print_sep_end.py
+# Author: Florentino Báez
+# Date: 01_Variables_and_Types
+# Description: Controlling print(): sep (separator between arguments)
+# -------------------------------------------------
+
 print(1, 2, 3)
 print(1, 2, 3, sep="-")
 print(1, 2, 3, sep=", ")
 print("a", "b", "c", sep="")
 
-# end: qué imprimir al final (default: \n)
-print("Sin salto", end="")
-print(" de línea")
-print("Línea 1", end=" | ")
-print("Línea 2", end=" | ")
-print("Línea 3")
+# end: what to print at the end (default: \n)
+print("No newline", end="")
+print(" here")
+print("Line 1", end=" | ")
+print("Line 2", end=" | ")
+print("Line 3")
 
-# Combinar sep y end
+# Combine sep and end
 print(10, 20, 30, sep=" + ", end=" = ")
 print(60)

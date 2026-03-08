@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 72. Flatten Nested List Structure (arbitrary depth)
-# ---------------------------------------------------------------------------
-# Descripción: Flatten Nested List Structure (arbitrary depth)
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 08_flatten_nested_list.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Flatten Nested List Structure (arbitrary depth)
+# -------------------------------------------------
 
 def flatten_deep(lst: list) -> list:
     result = []

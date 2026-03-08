@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 105. Average of Two Lists (average of all elements from both)
-# ---------------------------------------------------------------------------
-# Descripción: Average of Two Lists (average of all elements from both)
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 11_average_two_lists.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Average of Two Lists (average of all elements from both)
+# -------------------------------------------------
 
 def average_two_lists(a: list[float], b: list[float]) -> float:
     combined = a + b

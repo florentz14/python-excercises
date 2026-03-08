@@ -1,9 +1,9 @@
-"""
-While loop: Countdown from 5 to Blastoff.
-Decrements counter until zero, then prints message.
-
+# -------------------------------------------------
+# File Name: 86_while_countdown.py
 # Author: Florentino Báez
-"""
+# Date: 03_Loops
+# Description: Countdown from 5 to Blastoff.
+# -------------------------------------------------
 
 print("Example: Countdown from 5")
 print("-" * 40)

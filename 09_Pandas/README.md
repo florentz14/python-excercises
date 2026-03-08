@@ -1,122 +1,238 @@
 # 09_Pandas
 
-Data analysis exercises with Pandas, organized by topic.
+Data analysis exercises with Pandas, organized by level from basic to advanced.
+
+**Requirements:** `pandas`, `numpy`; optional `matplotlib` (viz 37–41), `openpyxl` (Excel 80–81), `pyarrow` (Parquet 80).
+
+**Run:** `python 01_create_dataframe.py` (or any `NN_*.py`) from `09_Pandas/`.
+
+**Naming convention:** `NN_topic_action.py` — number, domain/dataset, operation (e.g. `21_chipotle_explore`, `32_auto_mpg_merge`).
 
 ---
 
-## Students Performance Analysis (01–08)
+## Fundamentals (01–12)
 
 | File | Description |
 |------|-------------|
-| `01_lunch_analysis.py` | Lunch type analysis (socioeconomic indicator) |
-| `02_parental_education_analysis.py` | Parental education level analysis |
-| `03_general_analysis.py` | General student performance analysis |
-| `04_ethnic_group_analysis.py` | Ethnic group performance analysis |
-| `05_gender_analysis.py` | Gender performance analysis |
-| `06_test_preparation_analysis.py` | Test preparation impact analysis |
-| `07_students_performance_analysis.py` | Full CSV analysis (load, stats, averages) |
-| `08_main_menu.py` | Interactive menu to launch all analyses |
+| `01_create_dataframe.py` | Create a DataFrame from a dictionary |
+| `02_read_csv.py` | Read a CSV file into a DataFrame |
+| `03_explore.py` | Explore a DataFrame (head, tail, info, describe) |
+| `04_selection.py` | Select rows and columns with loc/iloc |
+| `05_filter_sort.py` | Filter rows by condition and sort |
+| `06_columns.py` | Select and create columns |
+| `07_nulls.py` | Handle null values (isna, fillna, dropna) |
+| `08_groupby.py` | GroupBy operations |
+| `09_merge_concat.py` | Merge and concat DataFrames |
+| `10_drop.py` | Drop rows, columns, duplicates |
+| `11_statistics.py` | Basic statistics |
+| `12_time_series.py` | Time series basics |
 
-## Pandas Basics (09–12)
+## Students Performance Analysis (13–20)
 
 | File | Description |
 |------|-------------|
-| `09_create_dataframe.py` | Create a DataFrame from a dictionary |
-| `10_read_csv.py` | Read a CSV file into a DataFrame |
-| `11_filter.py` | Filter rows by condition |
-| `12_columns.py` | Select and create columns |
+| `13_lunch_analysis.py` | Lunch type analysis (socioeconomic indicator) |
+| `14_parental_education.py` | Parental education level analysis |
+| `15_general_analysis.py` | General student performance analysis |
+| `16_ethnic_group.py` | Ethnic group performance analysis |
+| `17_gender_analysis.py` | Gender performance analysis |
+| `18_test_preparation.py` | Test preparation impact analysis |
+| `19_students_performance.py` | Full CSV analysis (load, stats, averages) |
+| `20_main_menu.py` | Interactive menu to launch all analyses |
 
-## Getting & Knowing (13–15)
-
-| File | CSV | Description |
-|------|-----|-------------|
-| `13_chipotle_explore.py` | `chipotle_orders.csv` | Explore Chipotle orders: shape, info, dtypes, value_counts, revenue |
-| `14_occupation_explore.py` | `occupation_users.csv` | Explore user demographics: unique occupations, describe, age stats |
-| `15_food_facts_explore.py` | `world_food_facts.csv` | Explore food nutrition: isnull, missing %, data quality |
-
-## Filtering & Sorting (16–18)
+## Getting & Knowing (21–23)
 
 | File | CSV | Description |
 |------|-----|-------------|
-| `16_chipotle_filter.py` | `chipotle_orders.csv` | Boolean indexing, query(), sort_values, loc/iloc |
-| `17_euro12_filter.py` | `euro12.csv` | Filter teams by goals, sort, string filtering |
-| `18_army_filter.py` | `fictional_army.csv` | Complex conditions, multi-sort, top-N selection |
+| `21_chipotle_explore.py` | `chipotle_orders.csv` | Explore Chipotle orders: shape, info, dtypes, value_counts, revenue |
+| `22_occupation_explore.py` | `occupation_users.csv` | Explore user demographics: unique occupations, describe, age stats |
+| `23_food_facts.py` | `world_food_facts.csv` | Explore food nutrition: isnull, missing %, data quality |
 
-## Grouping (19–21)
-
-| File | CSV | Description |
-|------|-----|-------------|
-| `19_alcohol_groupby.py` | `alcohol_consumption.csv` | groupby continent, agg(mean/min/max/std), median |
-| `20_occupation_groupby.py` | `grouping_occupation_users.csv` | Mean age per occupation, gender ratio, agg |
-| `21_regiment_groupby.py` | `regiment.csv` | Regiment/company scores, improvement, multi-agg |
-
-## Apply (22–23)
+## Filtering & Sorting (24–26)
 
 | File | CSV | Description |
 |------|-----|-------------|
-| `22_alcohol_apply.py` | `students_alcohol.csv` | apply, map, lambda, custom functions, risk flags |
-| `23_crime_rates_apply.py` | `us_crime_rates.csv` | Per-capita rates, pct_change, normalization |
+| `24_chipotle_filter.py` | `chipotle_orders.csv` | Boolean indexing, query(), sort_values, loc/iloc |
+| `25_euro12_filter.py` | `euro12.csv` | Filter teams by goals, sort, string filtering |
+| `26_army_filter.py` | `fictional_army.csv` | Complex conditions, multi-sort, top-N selection |
 
-## Merge (24–26)
+## Grouping (27–29)
+
+| File | CSV | Description |
+|------|-----|-------------|
+| `27_alcohol_groupby.py` | `alcohol_consumption.csv` | groupby continent, agg(mean/min/max/std), median |
+| `28_occupation_groupby.py` | `grouping_occupation_users.csv` | Mean age per occupation, gender ratio, agg |
+| `29_regiment_groupby.py` | `regiment.csv` | Regiment/company scores, improvement, multi-agg |
+
+## Apply (30–31)
+
+| File | CSV | Description |
+|------|-----|-------------|
+| `30_alcohol_apply.py` | `students_alcohol.csv` | apply, map, lambda, custom functions, risk flags |
+| `31_crime_rates_apply.py` | `us_crime_rates.csv` | Per-capita rates, pct_change, normalization |
+
+## Merge (32–34)
 
 | File | CSV(s) | Description |
 |------|--------|-------------|
-| `24_auto_mpg_merge.py` | `auto_mpg_cars.csv`, `auto_mpg_origin.csv` | Inner/left/right/outer joins, suffixes |
-| `25_names_merge.py` | `fictitious_personal.csv`, `fictitious_work.csv`, `fictitious_education.csv` | Multi-key merge, pd.concat, indicator |
-| `26_house_merge.py` | `house_listings.csv`, `house_neighborhoods.csv`, `house_sales.csv` | 3-table merge, NaN detection, price analysis |
+| `32_auto_mpg_merge.py` | `auto_mpg_cars.csv`, `auto_mpg_origin.csv` | Inner/left/right/outer joins, suffixes |
+| `33_names_merge.py` | `fictitious_personal.csv`, `fictitious_work.csv`, `fictitious_education.csv` | Multi-key merge, pd.concat, indicator |
+| `34_house_merge.py` | `house_listings.csv`, `house_neighborhoods.csv`, `house_sales.csv` | 3-table merge, NaN detection, price analysis |
 
-## Stats (27–28)
-
-| File | CSV | Description |
-|------|-----|-------------|
-| `27_baby_names_stats.py` | `us_baby_names.csv` | rank, nunique, std, variance, trends |
-| `28_wind_stats.py` | *(generated inline)* | DatetimeIndex, resample, corr, rolling avg, quantile |
-
-## Visualization (29–33)
+## Stats (35–36)
 
 | File | CSV | Description |
 |------|-----|-------------|
-| `29_chipotle_viz.py` | `chipotle_viz.csv` | Bar, histogram, pie, horizontal bar charts |
-| `30_titanic_viz.py` | `titanic.csv` | Survival charts, grouped bars, box plots |
-| `31_scores_viz.py` | *(generated inline)* | Scatter, box, histogram, cumulative line |
-| `32_retail_viz.py` | `online_retail.csv` | Sales trends, top products, country pie |
-| `33_tips_viz.py` | *(generated inline)* | Scatter, box by day, tip percentage |
+| `35_baby_names_stats.py` | `us_baby_names.csv` | rank, nunique, std, variance, trends |
+| `36_wind_stats.py` | *(generated inline)* | DatetimeIndex, resample, corr, rolling avg, quantile |
 
-## Creating Series & DataFrames (34)
+## Visualization (37–41)
 
 | File | CSV | Description |
 |------|-----|-------------|
-| `34_pokemon_series.py` | `pokemon.csv` | pd.Series, pd.DataFrame from dicts/lists/numpy, set_index |
+| `37_chipotle_viz.py` | `chipotle_viz.csv` | Bar, histogram, pie, horizontal bar charts |
+| `38_titanic_viz.py` | `titanic.csv` | Survival charts, grouped bars, box plots |
+| `39_scores_viz.py` | *(generated inline)* | Scatter, box, histogram, cumulative line |
+| `40_retail_viz.py` | `online_retail.csv` | Sales trends, top products, country pie |
+| `41_tips_viz.py` | *(generated inline)* | Scatter, box by day, tip percentage |
 
-## Time Series (35–37)
-
-| File | CSV | Description |
-|------|-----|-------------|
-| `35_apple_stock_ts.py` | *(generated inline)* | DatetimeIndex, resample, rolling, pct_change |
-| `36_financial_ts.py` | *(generated inline)* | shift, moving averages, drawdown, expanding |
-| `37_investor_flow_ts.py` | *(generated inline)* | Quarterly periods, cumsum, trend analysis |
-
-## Deleting (38–39)
+## Creating Series & DataFrames (42)
 
 | File | CSV | Description |
 |------|-----|-------------|
-| `38_iris_delete.py` | `iris.csv` | drop, dropna, del, pop, drop_duplicates |
-| `39_wine_delete.py` | `wine_quality.csv` | Outlier removal, select_dtypes, fillna vs dropna |
+| `42_pokemon_series.py` | `pokemon.csv` | pd.Series, pd.DataFrame from dicts/lists/numpy, set_index |
 
-## Real-World Analysis (40–49)
+## Time Series (43–45)
+
+| File | CSV | Description |
+|------|-----|-------------|
+| `43_apple_stock_ts.py` | *(generated inline)* | DatetimeIndex, resample, rolling, pct_change |
+| `44_financial_ts.py` | *(generated inline)* | shift, moving averages, drawdown, expanding |
+| `45_investor_flow_ts.py` | *(generated inline)* | Quarterly periods, cumsum, trend analysis |
+
+## Deleting (46–47)
+
+| File | CSV | Description |
+|------|-----|-------------|
+| `46_iris_delete.py` | `iris.csv` | drop, dropna, del, pop, drop_duplicates |
+| `47_wine_delete.py` | `wine_quality.csv` | Outlier removal, select_dtypes, fillna vs dropna |
+
+## Real-World Analysis (48–57)
 
 | File | CSV(s) | Description |
 |------|--------|-------------|
-| `40_sales_analysis.py` | `store_sales.csv` | Best product, best month, top customer |
-| `41_student_attendance.py` | `student_attendance.csv` | Absences, attendance %, at-risk students |
-| `42_personal_budget.py` | `personal_budget.csv` | Spending by category, monthly savings |
-| `43_inventory_dashboard.py` | `inventory_movements.csv`, `inventory_stock.csv` | Reorder, turnover, unsold products |
-| `44_task_tracking.py` | `tasks.csv` | Pending by assignee, delays, completed |
-| `45_construction_materials.py` | `construction_materials.csv` | Consumption, waste, budget variance |
-| `46_system_logs.py` | `system_logs.csv` | Most errors, peak hour, server warnings |
-| `47_web_traffic.py` | `web_traffic.csv` | Top pages, traffic by day, conversion by source |
-| `48_movies_analysis.py` | `movies.csv` | Best genre, releases by year, top 10 |
-| `49_transport_analysis.py` | `transport.csv` | Longest route, trips by driver, delays |
+| `48_sales_analysis.py` | `store_sales.csv` | Best product, best month, top customer |
+| `49_student_attendance.py` | `student_attendance.csv` | Absences, attendance %, at-risk students |
+| `50_personal_budget.py` | `personal_budget.csv` | Spending by category, monthly savings |
+| `51_inventory.py` | `inventory_movements.csv`, `inventory_stock.csv` | Reorder, turnover, unsold products |
+| `52_task_tracking.py` | `tasks.csv` | Pending by assignee, delays, completed |
+| `53_construction.py` | `construction_materials.csv` | Consumption, waste, budget variance |
+| `54_system_logs.py` | `system_logs.csv` | Most errors, peak hour, server warnings |
+| `55_web_traffic.py` | `web_traffic.csv` | Top pages, traffic by day, conversion by source |
+| `56_movies_analysis.py` | `movies.csv` | Best genre, releases by year, top 10 |
+| `57_transport_analysis.py` | `transport.csv` | Longest route, trips by driver, delays |
+
+## HR Database (58)
+
+| File | CSV(s) | Description |
+|------|--------|-------------|
+| `58_hr_analysis.py` | `employees.csv`, `departments.csv`, `jobs.csv` | Headcount by dept, salary stats, top earners, hires by year |
+
+## Reshape (59)
+
+| File | Description |
+|------|-------------|
+| `59_pivot_melt.py` | pivot_table, melt, unstack — wide vs long format |
+
+## String Methods (60)
+
+| File | Description |
+|------|-------------|
+| `60_string_methods.py` | str.lower, str.contains, str.extract, str.split, str.replace |
+
+## Categorical & Binning (61)
+
+| File | Description |
+|------|-------------|
+| `61_categorical_binning.py` | categorical dtype, pd.cut, pd.qcut |
+
+## Data Cleaning (62–64)
+
+| File | Description |
+|------|-------------|
+| `62_data_cleaning.py` | Strip spaces, fix capitalization, replace values, clip |
+| `63_duplicate_detection.py` | duplicated(), drop_duplicates() |
+| `64_outlier_detection.py` | IQR and z-score outlier detection |
+
+## Advanced Indexing (65–67)
+
+| File | Description |
+|------|-------------|
+| `65_index_operations.py` | set_index, reset_index, rename index |
+| `66_multiindex.py` | MultiIndex basics — hierarchical indexing, stack/unstack |
+| `67_multiindex_groupby.py` | GroupBy with MultiIndex |
+
+## Window Functions (68–70)
+
+| File | Description |
+|------|-------------|
+| `68_rolling_window.py` | rolling mean, rolling std |
+| `69_expanding_window.py` | expanding statistics |
+| `70_ewm_window.py` | Exponential weighted moving average |
+
+## Advanced GroupBy (71–73)
+
+| File | Description |
+|------|-------------|
+| `71_groupby_transform.py` | groupby + transform |
+| `72_groupby_filter.py` | groupby + filter |
+| `73_custom_aggregations.py` | Custom aggregation functions |
+
+## Performance (74–76)
+
+| File | Description |
+|------|-------------|
+| `74_vectorization.py` | Vectorized operations vs loops |
+| `75_memory_optimization.py` | category dtype, memory_usage |
+| `76_chunk_processing.py` | read_csv chunksize for big data |
+
+## Advanced Time Series (77–79)
+
+| File | Description |
+|------|-------------|
+| `77_time_series_features.py` | Extract year, month, day, quarter |
+| `78_time_series_resample_advanced.py` | Advanced resampling, ohlc |
+| `79_time_series_forecasting_basics.py` | Rolling forecast, naive, pct_change |
+
+## Export (80–81)
+
+| File | Description |
+|------|-------------|
+| `80_export_files.py` | to_csv, to_json, to_excel, to_parquet |
+| `81_excel_operations.py` | Multiple sheets, read_excel |
+
+## API Data (82–83)
+
+| File | Description |
+|------|-------------|
+| `82_api_data_loading.py` | Load JSON from API, pd.DataFrame |
+| `83_api_to_dataframe.py` | pd.json_normalize, nested JSON |
+
+## Feature Engineering (84–86)
+
+| File | Description |
+|------|-------------|
+| `84_feature_engineering.py` | Derived features, lag, diff |
+| `85_encoding_features.py` | One-hot, get_dummies, label encoding |
+| `86_scaling_features.py` | Min-max, z-score, robust scale |
+
+## Data Projects (87–89)
+
+| File | CSV | Description |
+|------|-----|-------------|
+| `87_customer_segmentation.py` | `store_sales.csv` | RFM analysis |
+| `88_sales_forecast_project.py` | `store_sales.csv` | Sales forecasting with rolling |
+| `89_data_quality_report.py` | `store_sales.csv` | Automatic data quality checks |
 
 ---
 

@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 26. Check if Two Lists Are Circularly Identical
-# ---------------------------------------------------------------------------
-# Descripción: Check if Two Lists Are Circularly Identical
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 020_circularly_identical_lists.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Check if Two Lists Are Circularly Identical
+# -------------------------------------------------
 
 def circularly_identical(a: list, b: list) -> bool:
     if len(a) != len(b):

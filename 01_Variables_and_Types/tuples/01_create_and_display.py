@@ -1,11 +1,8 @@
 # -------------------------------------------------
 # File Name: 01_create_and_display.py
 # Author: Florentino Báez
-# Date: Variables - Tuples
+# Date: 01_Variables_and_Types
 # Description: Create and Display a Tuple.
-#              A tuple is an ordered, immutable sequence
-#              created with parentheses (). Shows len()
-#              for size and type() for type checking.
 # -------------------------------------------------
 
 print("Example 1: Create and display a tuple")

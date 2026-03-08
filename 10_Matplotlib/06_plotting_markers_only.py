@@ -1,7 +1,7 @@
 # -------------------------------------------------
-# File Name: 02b_plotting_markers_only.py
+# File Name: 06_plotting_markers_only.py
 # Author: Florentino Báez
-# Date: Matplotlib
+# Date: 10_Matplotlib
 # Description: Points only, no line ("o" format).
 # -------------------------------------------------
 

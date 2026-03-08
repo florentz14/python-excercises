@@ -1,4 +1,9 @@
-# Sum Numbers in Python
+# -------------------------------------------------
+# File Name: 18_sum_numbers.py
+# Author: Florentino Báez
+# Date: 01_Variables_and_Types
+# Description: Sums numbers with iterative and recursive functions.
+# -------------------------------------------------
 
 def sum_numbers(numbers):
     """Calculate sum of a list of numbers"""

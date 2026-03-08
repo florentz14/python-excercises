@@ -1,15 +1,9 @@
 # -------------------------------------------------
-# File Name: 35_lineal.py
+# File Name: 35_linear_search.py
 # Author: Florentino Báez
-# Date: Data Structures - Search Algorithms
-# Description: Linear Search.
-#              Traverses the list sequentially comparing each
-#              element with the target. Works with unsorted lists.
-#              Includes optimized version for sorted lists and
-#              search for all occurrences.
-#              Complexity: O(n) in the worst case.
+# Date: 05_Data_Structures
+# Description: Linear search. Sequential traversal; works with unsorted lists. O(n).
 # -------------------------------------------------
-
 
 def busqueda_lineal(lista, objetivo):
     """Searches element by element. Returns index or -1."""

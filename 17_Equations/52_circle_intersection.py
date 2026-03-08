@@ -1,5 +1,9 @@
-# Archivo: 50_05_interseccion_circulos.py
-# Descripción: Intersección de dos círculos
+# -------------------------------------------------
+# File Name: 52_circle_intersection.py
+# Author: Florentino Báez
+# Date: 17_Equations
+# Description: Intersection of two circles.
+# -------------------------------------------------
 
 import math
 

@@ -1,9 +1,9 @@
-"""
-Switch - Ejemplo 3: match / case (Python 3.10+)
-===============================================
-Topic: Conditionals - Switch (02_Conditionals)
-Descripción: Sintaxis nativa match/case, similar a switch en otros lenguajes.
-"""
+# -------------------------------------------------
+# File Name: 16_match_case.py
+# Author: Florentino Báez
+# Date: 02_Conditionals
+# Description: Sintaxis nativa match/case, similar a switch en otros lenguajes.
+# -------------------------------------------------
 
 comando = "salir"
 

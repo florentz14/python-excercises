@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 273. Find Element That Divides List into Two Parts with Equal Sum
-# ---------------------------------------------------------------------------
-# Descripción: Find Element That Divides List into Two Parts with Equal Sum
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 130_divisor_equal_sums.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Find Element That Divides List into Two Parts with Equal Sum
+# -------------------------------------------------
 
 def equal_sum_divider(lst: list[int]) -> int | str:
     """Return element at index i where sum(lst[:i]) == sum(lst[i+1:])."""

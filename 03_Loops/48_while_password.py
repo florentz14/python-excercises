@@ -1,8 +1,9 @@
-"""While loop: Password check.
-Three attempts to guess password; breaks on correct input.
-"""
+# -------------------------------------------------
+# File Name: 48_while_password.py
 # Author: Florentino Báez
-
+# Date: 03_Loops
+# Description: Password check.
+# -------------------------------------------------
 
 password = "secret"
 attempts = 0

@@ -1,8 +1,9 @@
-# ------------------------------------------------------------
-# File: 44_array_slicing_indexing.py
-# Purpose: Array slicing and advanced indexing.
+# -------------------------------------------------
+# File Name: 73_slicing_indexing.py
+# Author: Florentino Báez
+# Date: 08_Matrices
 # Description: start:stop:step, negative indices, multi-dim slices.
-# ------------------------------------------------------------
+# -------------------------------------------------
 
 import numpy as np
 

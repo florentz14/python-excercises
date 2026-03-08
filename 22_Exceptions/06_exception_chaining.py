@@ -1,15 +1,9 @@
-# ------------------------------------------------------------
-# File: 06_exception_chaining.py
-# Chapter: Exceptions - Exception Chaining (raise from)
-#
-# Purpose:
-#   Use "raise X from Y" to chain exceptions and preserve the
-#   original cause. Useful when wrapping low-level errors in
-#   higher-level domain exceptions.
-#
-# Author: Florentino Baez (adapted)
-# ------------------------------------------------------------
-
+# -------------------------------------------------
+# File Name: 06_exception_chaining.py
+# Author: Florentino Báez
+# Date: 22_Exceptions
+# Description: Exception Chaining. load_config implementation.
+# -------------------------------------------------
 
 def load_config(path: str) -> dict:
     """

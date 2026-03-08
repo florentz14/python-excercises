@@ -1,5 +1,9 @@
-# 52_01_euler.py - Método de Euler para EDOs
-# Resolución de dy/dt = f(t, y) con método de Euler
+# -------------------------------------------------
+# File Name: 56_euler.py
+# Author: Florentino Báez
+# Date: 17_Equations
+# Description: Euler method for ODEs dy/dt = f(t, y).
+# -------------------------------------------------
 
 import numpy as np
 import matplotlib.pyplot as plt

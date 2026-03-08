@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 213. Sum of Two Lowest Negative Numbers
-# ---------------------------------------------------------------------------
-# Descripción: Sum of Two Lowest Negative Numbers
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 17_sum_two_lowest_negatives.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Sum of Two Lowest Negative Numbers
+# -------------------------------------------------
 
 def sum_two_lowest_negatives(lst: list[int]) -> int | None:
     negatives = sorted([x for x in lst if x < 0])

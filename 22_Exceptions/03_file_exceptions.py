@@ -1,13 +1,9 @@
-"""
-File Exceptions - FileNotFoundError, PermissionError, IOError
-=============================================================
-Common exceptions when working with files:
-- FileNotFoundError: file or directory does not exist
-- PermissionError: no permission to access the file
-- IOError / OSError: general I/O failures
-
-Author: Florentino Baez (adapted)
-"""
+# -------------------------------------------------
+# File Name: 03_file_exceptions.py
+# Author: Florentino Báez
+# Date: 22_Exceptions
+# Description: File Exceptions - FileNotFoundError, PermissionError, IOError ============================================================= Common exceptions when working with files:
+# -------------------------------------------------
 
 import os
 

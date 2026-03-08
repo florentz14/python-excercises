@@ -1,18 +1,9 @@
 # -------------------------------------------------
-# File: 40_utilidades.py (Utility Functions for Sorted Lists)
-# -------------------------------------------------
+# File Name: 40_utilities.py
 # Author: Florentino Báez
-# Module: Data Structures - Search Algorithms
-#
-# Description:
-#   Useful functions for sorted lists using binary search:
-#   - Insert position (equivalent to bisect_left)
-#   - First and last occurrence indices
-#   - Count occurrences in O(log n)
-#
-# Complexity: O(log n) for each operation.
+# Date: 05_Data_Structures
+# Description: Sorting utilities. Helper functions for sort implementations.
 # -------------------------------------------------
-
 
 def binary_search_first(arr, target):
     """Returns index of first occurrence, or -1 if not found."""

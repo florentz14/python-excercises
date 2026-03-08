@@ -1,5 +1,9 @@
-# Archivo: 25_03_multiples_sistemas.py
-# Descripción: Resolver múltiples sistemas Ax = b simultáneamente
+# -------------------------------------------------
+# File Name: 03_multiple_systems.py
+# Author: Florentino Báez
+# Date: 17_Equations
+# Description: Solve multiple linear systems Ax = b simultaneously.
+# -------------------------------------------------
 
 import numpy as np
 

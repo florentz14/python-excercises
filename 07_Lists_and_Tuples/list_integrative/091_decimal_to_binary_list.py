@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 185. Convert Decimal to Binary List (list of digits 0/1)
-# ---------------------------------------------------------------------------
-# Descripción: Convert Decimal to Binary List (list of digits 0/1)
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 091_decimal_to_binary_list.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Convert Decimal to Binary List (list of digits 0/1)
+# -------------------------------------------------
 
 def decimal_to_binary_list(n: int) -> list[int]:
     if n == 0:

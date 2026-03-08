@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 28. Find Second Largest Number in List
-# ---------------------------------------------------------------------------
-# Descripción: Find Second Largest Number in List
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 07_second_largest.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Find Second Largest Number in List
+# -------------------------------------------------
 
 def second_largest(lst: list[int | float]) -> int | float:
     uniq = sorted(set(lst), reverse=True)

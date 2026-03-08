@@ -1,7 +1,8 @@
 # -------------------------------------------------
-# File: 05_insert_operations.py
+# File Name: 05_insert_operations.py
+# Author: Florentino Báez
+# Date: 18_Linked_Lists
 # Description: Insert operations in singly linked list.
-#              Insert at beginning, end, position, after node.
 # -------------------------------------------------
 
 from typing import Any, Optional

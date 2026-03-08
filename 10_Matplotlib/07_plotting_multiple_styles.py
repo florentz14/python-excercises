@@ -1,7 +1,7 @@
 # -------------------------------------------------
-# File Name: 02c_plotting_multiple_styles.py
+# File Name: 07_plotting_multiple_styles.py
 # Author: Florentino Báez
-# Date: Matplotlib
+# Date: 10_Matplotlib
 # Description: Multiple lines with format strings (r-o, g--s, b:^). Includes format string reference.
 # -------------------------------------------------
 

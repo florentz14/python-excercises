@@ -1,5 +1,9 @@
-# Archivo: 50_04_interseccion_lineas.py
-# Descripción: Intersección de líneas y segmentos
+# -------------------------------------------------
+# File Name: 51_line_intersection.py
+# Author: Florentino Báez
+# Date: 17_Equations
+# Description: Line and segment intersection.
+# -------------------------------------------------
 
 print("=== 4. Intersección de Líneas ===\n")
 

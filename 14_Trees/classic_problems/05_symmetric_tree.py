@@ -1,9 +1,9 @@
-"""
-LeetCode 101 - Symmetric Tree
-==============================
-Concept: Recursion. Tree is symmetric if left subtree mirrors right.
-Time: O(n), Space: O(h)
-"""
+# -------------------------------------------------
+# File Name: 05_symmetric_tree.py
+# Author: Florentino Báez
+# Date: 14_Trees
+# Description: LeetCode 101 - Check if tree is symmetric (left mirrors right).
+# -------------------------------------------------
 
 from common import TreeNode
 

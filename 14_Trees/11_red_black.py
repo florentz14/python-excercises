@@ -1,12 +1,9 @@
-"""
-14_Trees - Red-Black Tree
-=========================================
-Self-balancing BST with color rules. O(log n) operations.
-Used in: std::map (C++), TreeMap (Java), database internals.
-
-Rules: root black, no two consecutive reds, same black count on all paths.
-"""
-
+# -------------------------------------------------
+# File Name: 11_red_black.py
+# Author: Florentino Báez
+# Date: 14_Trees
+# Description: Red-Black tree: self-balancing BST with color rules; O(log n) ops.
+# -------------------------------------------------
 
 class RBNode:
     """Red-Black tree node."""

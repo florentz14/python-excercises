@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 43. Split List into Different Variables
-# ---------------------------------------------------------------------------
-# Descripción: Split List into Different Variables
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 027_split_list_into_variables.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Split List into Different Variables
+# -------------------------------------------------
 
 lst = [1, 2, 3, 4]
 a, b, c, d = lst

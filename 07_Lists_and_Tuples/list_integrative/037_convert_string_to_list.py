@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 56. Convert String to List (characters or by delimiter)
-# ---------------------------------------------------------------------------
-# Descripción: Convert String to List (characters or by delimiter)
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 037_convert_string_to_list.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Convert String to List (characters or by delimiter)
+# -------------------------------------------------
 
 def string_to_list(s: str, split_by: str | None = None) -> list:
     if split_by is None:

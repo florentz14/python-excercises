@@ -1,13 +1,8 @@
 # -------------------------------------------------
 # File Name: 11_edit_distance.py
 # Author: Florentino Báez
-# Date: Data Structures - String Algorithms
-# Description: Edit Distance (Levenshtein).
-#              Computes the minimum number of operations (insert,
-#              delete, substitute) to transform one string into
-#              another. Uses dynamic programming with table dp
-#              where dp[i][j] = distance between str1[:i] and str2[:j].
-#              Complexity: O(m * n) in time and space.
+# Date: 05_Data_Structures
+# Description: Edit Distance (Levenshtein). Minimum insert/delete/substitute operations to transform strings. Dynamic programming. O(m*n) time and space.
 # -------------------------------------------------
 
 print("=== 4. Distancia de Edición (Levenshtein) ===\n")

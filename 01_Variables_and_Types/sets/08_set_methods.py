@@ -1,19 +1,10 @@
 # -------------------------------------------------
 # File Name: 08_set_methods.py
 # Author: Florentino Báez
-# Date: Variables - Sets
+# Date: 01_Variables_and_Types
 # Description: Complete Set Methods Reference.
-#              Covers every built-in set method: adding
-#              (add, update), removing (remove, discard, pop,
-#              clear), set operations (union, intersection,
-#              difference, symmetric_difference), in-place
-#              variants, comparisons (issubset, issuperset,
-#              isdisjoint), and copy().
 # -------------------------------------------------
 
-# =========================================================================
-# ADDING ELEMENTS
-# =========================================================================
 print("=" * 50)
 print("ADDING ELEMENTS")
 print("=" * 50)

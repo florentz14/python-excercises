@@ -1,9 +1,9 @@
-"""
-16_Files - Exercise 11: Context manager for file logging
-========================================================
-Custom context manager using a class for file logging.
-"""
-
+# -------------------------------------------------
+# File Name: 11_context_manager_logger.py
+# Author: Florentino Báez
+# Date: 16_Files
+# Description: Custom context manager for logging to file.
+# -------------------------------------------------
 
 class FileLogger:
     """

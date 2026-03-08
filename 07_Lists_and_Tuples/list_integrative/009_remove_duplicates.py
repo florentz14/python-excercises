@@ -1,11 +1,9 @@
-# ---------------------------------------------------------------------------
-# 7. Remove Duplicates from List
-# ---------------------------------------------------------------------------
-# Descripción: Elimina elementos duplicados de una lista manteniendo el
-#              orden de la primera aparición de cada valor.
-# Entrada: Lista (cualquier tipo de elementos).
-# Salida: Lista sin duplicados, mismo orden.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 009_remove_duplicates.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Demonstrates remove duplicates.
+# -------------------------------------------------
 
 def remove_duplicates(lst: list) -> list:
     # Conjunto para recordar qué elementos ya hemos visto

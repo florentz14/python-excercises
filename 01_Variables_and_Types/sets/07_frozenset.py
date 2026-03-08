@@ -1,20 +1,10 @@
 # -------------------------------------------------
 # File Name: 07_frozenset.py
 # Author: Florentino Báez
-# Date: Variables - Sets
+# Date: 01_Variables_and_Types
 # Description: Frozenset — Immutable Sets.
-#              A frozenset cannot be modified after creation
-#              (no add, remove, pop, etc.). Because it is
-#              hashable, it can serve as a dict key or as
-#              an element inside another set. Supports all
-#              read-only set operations (|, &, -, ^, in).
 # -------------------------------------------------
 
-# =========================================================================
-# Create a frozenset from different iterables
-# =========================================================================
-
-# From a list
 fruits = frozenset(["apple", "banana", "cherry", "grape"])
 print("Frozenset:", fruits)
 print("Type:", type(fruits))

@@ -1,9 +1,8 @@
 # -------------------------------------------------
-# File Name: 03d_markers_colors.py
+# File Name: 13_markers_colors.py
 # Author: Florentino Báez
-# Date: Matplotlib
+# Date: 10_Matplotlib
 # Description: Marker Colors — face color, edge color,
-#              and hollow markers (3 subplots).
 # -------------------------------------------------
 
 import matplotlib.pyplot as plt

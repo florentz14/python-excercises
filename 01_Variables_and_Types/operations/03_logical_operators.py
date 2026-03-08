@@ -1,4 +1,9 @@
-# Logical Operators in Python
+# -------------------------------------------------
+# File Name: 03_logical_operators.py
+# Author: Florentino Báez
+# Date: 01_Variables_and_Types
+# Description: Shows logical operators (and, or, not) with boolean and numeric
+# -------------------------------------------------
 
 a = True
 b = False

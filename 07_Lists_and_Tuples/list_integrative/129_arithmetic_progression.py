@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 272. Generate Arithmetic Progression (start, step, limit)
-# ---------------------------------------------------------------------------
-# Descripción: Generate Arithmetic Progression (start, step, limit)
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 129_arithmetic_progression.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Generate Arithmetic Progression (start, step, limit)
+# -------------------------------------------------
 
 def arithmetic_progression(start: int, step: int, limit: int) -> list[int]:
     result = []

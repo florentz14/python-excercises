@@ -1,11 +1,9 @@
-"""
-13_Queues - Multi-Source BFS
-=============================
-BFS starting from multiple nodes simultaneously.
-Applications: virus spread, fire in forest, rotting oranges.
-
-Time: O(rows * cols)
-"""
+# -------------------------------------------------
+# File Name: 14_multi_source_bfs.py
+# Author: Florentino Báez
+# Date: 13_Queues
+# Description: Multi-source BFS. BFS from multiple starting points.
+# -------------------------------------------------
 
 from collections import deque
 

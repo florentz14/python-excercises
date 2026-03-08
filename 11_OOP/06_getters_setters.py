@@ -1,9 +1,9 @@
 # -------------------------------------------------
-# File: 06_getters_setters.py
+# File Name: 06_getters_setters.py
+# Author: Florentino Báez
+# Date: 11_OOP
 # Description: Traditional getters and setters.
-#              Encapsulation with manual property management.
 # -------------------------------------------------
-
 
 class Temperature:
     """Temperature class with manual getters and setters."""

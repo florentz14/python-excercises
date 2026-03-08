@@ -1,11 +1,9 @@
-# ---------------------------------------------------------------------------
-# Lista Simple - 21: Metodo count()
-# ---------------------------------------------------------------------------
-# Descripcion: El metodo count() retorna el numero de veces que un valor
-#              aparece en la lista. Si el valor no existe, retorna 0.
-# Sintaxis:    lista.count(valor)
-# Complejidad: O(n) - recorre toda la lista
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 21_count.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: El metodo count() retorna el numero de veces que un valor
+# -------------------------------------------------
 
 fruits = ["apple", "banana", "cherry", "banana", "grape", "banana", "mango"]
 

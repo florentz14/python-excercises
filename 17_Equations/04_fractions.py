@@ -1,5 +1,9 @@
-# Archivo: 25_04_fracciones.py
-# Descripción: Resolver sistema y mostrar solución en fracciones
+# -------------------------------------------------
+# File Name: 04_fractions.py
+# Author: Florentino Báez
+# Date: 17_Equations
+# Description: Solve linear system and display solution in fractions.
+# -------------------------------------------------
 
 import numpy as np
 from fractions import Fraction

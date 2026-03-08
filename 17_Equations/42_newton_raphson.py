@@ -1,5 +1,9 @@
-# Archivo: 49_01_newton_raphson.py
-# Descripción: Método de Newton-Raphson para raíces
+# -------------------------------------------------
+# File Name: 42_newton_raphson.py
+# Author: Florentino Báez
+# Date: 17_Equations
+# Description: Newton-Raphson method for finding roots.
+# -------------------------------------------------
 
 print("=== Métodos Numéricos ===\n")
 print("=== 1. Método de Newton-Raphson ===\n")

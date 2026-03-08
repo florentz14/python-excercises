@@ -1,4 +1,9 @@
-# Even Odd Check in Python
+# -------------------------------------------------
+# File Name: 11_even_odd_check.py
+# Author: Florentino Báez
+# Date: 01_Variables_and_Types
+# Description: Provides is_even() and is_odd() functions using modulo.
+# -------------------------------------------------
 
 def is_even(num):
     return num % 2 == 0

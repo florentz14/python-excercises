@@ -1,8 +1,9 @@
-"""For loop: continue statement.
-Skips printing when value is 3.
-"""
+# -------------------------------------------------
+# File Name: 36_for_continue.py
 # Author: Florentino Báez
-
+# Date: 03_Loops
+# Description: continue statement.
+# -------------------------------------------------
 
 for i in range(1, 6):
     if i == 3:

@@ -1,19 +1,8 @@
 # -------------------------------------------------
-# File Name: exercise_leap_year.py
+# File Name: 20_leap_year_february_days.py
 # Author: Florentino Báez
-# Course: ITSE-1002: Python Programming
-# Professor: Mauricio Quiroga
-# Date: Module 03 Lab
+# Date: 02_Conditionals
 # Description: February Days (Leap Year)
-#              The month of February normally has 28 days. But if it is a leap
-#              year, February has 29 days. Write a program that asks the user
-#              to enter a year. The program should then display the number of
-#              days in February that year. Use the following criteria to
-#              identify leap years:
-#              • If the year is divisible by 100, then it is a leap year if
-#                and only if it is also divisible by 400.
-#              • If the year is not divisible by 100, then it is a leap year
-#                if and only if it is divisible by 4.
 # -------------------------------------------------
 
 print("=" * 60)

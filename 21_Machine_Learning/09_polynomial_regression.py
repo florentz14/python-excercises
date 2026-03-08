@@ -1,18 +1,9 @@
-"""
-Machine Learning - Polynomial Regression
-==========================================
-Polynomial Regression fits a curved line to data when the relationship
-between X and Y is not linear.
-
-Equation: y = b₀ + b₁x + b₂x² + b₃x³ + ... + bₙxⁿ
-
-When to use:
-- When a straight line doesn't fit the data well
-- When scatter plot shows a curved pattern
-- Common in real-world data (diminishing returns, growth curves)
-
-Caution: High-degree polynomials can OVERFIT the data!
-"""
+# -------------------------------------------------
+# File Name: 09_polynomial_regression.py
+# Author: Florentino Báez
+# Date: 21_Machine_Learning
+# Description: Polynomial regression for non-linear relationships.
+# -------------------------------------------------
 
 import numpy as np
 import matplotlib.pyplot as plt

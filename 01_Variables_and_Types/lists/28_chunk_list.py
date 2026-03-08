@@ -1,4 +1,9 @@
-# dividir listas (chunk list)
+# -------------------------------------------------
+# File Name: 28_chunk_list.py
+# Author: Florentino Báez
+# Date: 01_Variables_and_Types
+# Description: Splits a list into fixed-size chunks using
+# -------------------------------------------------
 
 def chunk_list(lst, chunk_size):
     """Split list into chunks of given size."""

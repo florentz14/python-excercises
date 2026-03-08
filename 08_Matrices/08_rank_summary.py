@@ -1,8 +1,9 @@
-# ------------------------------------------------------------
-# File: 08_rank_summary.py
-# Purpose: Summary of matrix rank analysis module.
+# -------------------------------------------------
+# File Name: 08_rank_summary.py
+# Author: Florentino Báez
+# Date: 08_Matrices
 # Description: Overview of features and key concepts.
-# ------------------------------------------------------------
+# -------------------------------------------------
 
 if __name__ == "__main__":
     print("=== Summary ===\n")

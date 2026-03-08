@@ -1,15 +1,10 @@
 # -------------------------------------------------
 # File Name: 11_comprehension.py
 # Author: Florentino Báez
-# Date: Variables - Sets
+# Date: 01_Variables_and_Types
 # Description: Set Comprehension.
-#              Create sets in one line with the syntax
-#              {expr for item in iterable if condition}.
-#              Duplicates from the source are automatically
-#              removed in the resulting set.
 # -------------------------------------------------
 
-# Example 16: Set comprehension
 print("Example 16: Set comprehension")
 print("-" * 40)
 

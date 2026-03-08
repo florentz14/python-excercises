@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 188. Sort List of Tuples by Specified Element (1-based index)
-# ---------------------------------------------------------------------------
-# Descripción: Sort List of Tuples by Specified Element (1-based index)
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 16_sort_tuples_by_element.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Sort List of Tuples by Specified Element (1-based index)
+# -------------------------------------------------
 
 def sort_tuples_by(tuples: list[tuple], index: int) -> list[tuple]:
     """index 1 = first element, 2 = second, etc."""

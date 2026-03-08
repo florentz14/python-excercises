@@ -1,13 +1,8 @@
 # -------------------------------------------------
-# File Name: 51_comparacion.py
+# File Name: 51_comparison.py
 # Author: Florentino Báez
-# Date: Data Structures - Sorting Algorithms
-# Description: Comparison of All Sorting Methods.
-#              Measures execution times of 15 algorithms on
-#              the same list: Bubble, Selection, Insertion, Merge,
-#              Quick, Heap, Counting, Radix, Shell, Bucket, Tim,
-#              Cocktail and Comb Sort. Compares small, medium and
-#              large lists showing the fastest one.
+# Date: 05_Data_Structures
+# Description: Sorting algorithm comparison. Performance benchmarks.
 # -------------------------------------------------
 
 import time

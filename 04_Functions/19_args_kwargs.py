@@ -1,7 +1,8 @@
 # -------------------------------------------------
-# File: 19_args_kwargs.py
+# File Name: 19_args_kwargs.py
+# Author: Florentino Báez
+# Date: 04_Functions
 # Description: Variable arguments (*args, **kwargs).
-#              Flexible function parameters.
 # -------------------------------------------------
 
 print("=== *args y **kwargs ===\n")

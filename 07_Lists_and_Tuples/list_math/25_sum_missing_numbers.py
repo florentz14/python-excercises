@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 278. Sum of Missing Numbers (in range min to max not in list)
-# ---------------------------------------------------------------------------
-# Descripción: Sum of Missing Numbers (in range min to max not in list)
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 25_sum_missing_numbers.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Sum of Missing Numbers (in range min to max not in list)
+# -------------------------------------------------
 
 def sum_missing(lst: list[int]) -> int:
     if not lst:

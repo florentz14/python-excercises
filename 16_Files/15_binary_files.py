@@ -1,10 +1,9 @@
-"""
-16_Files - Exercise 15: Working with binary files
-=================================================
-Binary files store data in raw bytes format.
-Use "rb" for reading, "wb" for writing.
-Common for images, audio, compressed files, etc.
-"""
+# -------------------------------------------------
+# File Name: 15_binary_files.py
+# Author: Florentino Báez
+# Date: 16_Files
+# Description: Binary file operations. Read/write bytes with 'rb' and 'wb'.
+# -------------------------------------------------
 
 import os
 

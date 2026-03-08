@@ -1,8 +1,9 @@
-# ------------------------------------------------------------
-# File: 51_array_random.py
-# Purpose: Random arrays with NumPy.
+# -------------------------------------------------
+# File Name: 80_random.py
+# Author: Florentino Báez
+# Date: 08_Matrices
 # Description: rand, randn, randint, shuffle, choice.
-# ------------------------------------------------------------
+# -------------------------------------------------
 
 import numpy as np
 

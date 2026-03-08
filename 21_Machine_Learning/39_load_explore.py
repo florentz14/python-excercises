@@ -1,10 +1,9 @@
-"""
-ML Mini Course - Step 1: Load and explore data with pandas
-============================================================
-Learn to load CSVs and explore datasets before modeling.
-
-Author: Florentino Báez
-"""
+# -------------------------------------------------
+# File Name: 39_load_explore.py
+# Author: Florentino Báez
+# Date: 21_Machine_Learning
+# Description: Load and explore data with pandas.
+# -------------------------------------------------
 
 import pandas as pd
 import os

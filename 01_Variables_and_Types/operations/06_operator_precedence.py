@@ -1,8 +1,10 @@
-# Operator Precedence in Python
+# -------------------------------------------------
+# File Name: 06_operator_precedence.py
+# Author: Florentino Báez
+# Date: 01_Variables_and_Types
+# Description: Shows operator precedence and how parentheses change evaluation
+# -------------------------------------------------
 
-# Precedence order: () > ** > * / // % > + - > << >> & > ^ | > <= < > >= > == != > = %= /= //= -= += *= **= > and > or
-
-# Example 1: Multiplication before addition
 result1 = 2 + 3 * 4
 print(f"2 + 3 * 4 = {result1}")  # 14, not 20
 

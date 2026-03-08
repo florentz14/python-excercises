@@ -1,4 +1,9 @@
-# Comparison Operators in Python
+# -------------------------------------------------
+# File Name: 02_comparison_operators.py
+# Author: Florentino Báez
+# Date: 01_Variables_and_Types
+# Description: Demonstrates comparison operators (==, !=, >, <, >=, <=) and their
+# -------------------------------------------------
 
 a = 10
 b = 5

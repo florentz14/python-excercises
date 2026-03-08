@@ -1,8 +1,9 @@
-﻿# ------------------------------------------------------------
-# File: 17_longest_repeating_replacement.py
-# Purpose: Longest substring with at most k character replacements.
-# Description: Sliding window. Valid if len - max_freq <= k.
-# ------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 17_longest_repeating_replacement.py
+# Author: Florentino Báez
+# Date: 01_Variables_and_Types
+# Description: Longest substring with at most k character replacements.
+# -------------------------------------------------
 
 from collections import Counter
 

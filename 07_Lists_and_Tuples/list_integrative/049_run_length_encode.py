@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 75. Run-Length Encoding - [[count, value], ...]
-# ---------------------------------------------------------------------------
-# Descripción: Run-Length Encoding - [[count, value], ...]
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 049_run_length_encode.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Run-Length Encoding - [[count, value], ...]
+# -------------------------------------------------
 
 def run_length_encode(lst: list) -> list[list]:
     if not lst:

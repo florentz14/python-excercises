@@ -1,11 +1,10 @@
-# ---------------------------------------------------------------------------
-# 41. Create Multiple Lists
-# ---------------------------------------------------------------------------
-# Descripción: Create Multiple Lists
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 026_create_multiple_lists.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Create Multiple Lists
+# -------------------------------------------------
 
-# Create 3 empty lists
 list1 = []
 list2 = []
 list3 = []

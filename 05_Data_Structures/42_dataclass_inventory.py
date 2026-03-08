@@ -1,12 +1,8 @@
 # -------------------------------------------------
 # File Name: 42_dataclass_inventory.py
 # Author: Florentino Báez
-# Date: Data Structures - Dataclass and Type Hints
-# Description: Inventory System with Dataclass and Type Hints.
-#              Demonstrates the use of @dataclass to define products
-#              and customers with annotated types. Includes functions to
-#              calculate inventory value, filter by category,
-#              and detect low-stock products.
+# Date: 05_Data_Structures
+# Description: Dataclass inventory example. Uses dataclasses for structured data.
 # -------------------------------------------------
 
 from dataclasses import dataclass, field

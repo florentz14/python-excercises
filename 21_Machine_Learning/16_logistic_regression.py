@@ -1,17 +1,9 @@
-"""
-Machine Learning - Logistic Regression
-========================================
-Logistic Regression is used for CLASSIFICATION (not regression despite the name).
-It predicts the probability that an observation belongs to a class.
-
-Key concepts:
-- Uses the sigmoid function: σ(z) = 1 / (1 + e^(-z))
-- Output is a probability between 0 and 1
-- Threshold (usually 0.5) converts probability to class
-- Works for binary and multi-class classification
-
-Use cases: spam detection, disease diagnosis, pass/fail prediction
-"""
+# -------------------------------------------------
+# File Name: 16_logistic_regression.py
+# Author: Florentino Báez
+# Date: 21_Machine_Learning
+# Description: Logistic regression for classification.
+# -------------------------------------------------
 
 import numpy as np
 import matplotlib.pyplot as plt

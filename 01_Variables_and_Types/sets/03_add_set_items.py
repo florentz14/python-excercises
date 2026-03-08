@@ -1,12 +1,8 @@
 # -------------------------------------------------
 # File Name: 03_add_set_items.py
 # Author: Florentino Báez
-# Date: Variables - Sets
+# Date: 01_Variables_and_Types
 # Description: Add Items to a Set.
-#              add() inserts a single element.
-#              update() merges multiple elements from any
-#              iterable (list, set, tuple, string).
-#              Duplicates are silently ignored.
 # -------------------------------------------------
 
 fruits = {"apple", "banana", "cherry"}

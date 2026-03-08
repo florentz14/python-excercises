@@ -1,5 +1,9 @@
-# Archivo: riemann_util.py
-# Descripción: Utilidades para sumas de Riemann
+# -------------------------------------------------
+# File Name: 70_riemann_util.py
+# Author: Florentino Báez
+# Date: 17_Equations
+# Description: Utilities for Riemann sums.
+# -------------------------------------------------
 
 import numpy as np
 import scipy.integrate as spi

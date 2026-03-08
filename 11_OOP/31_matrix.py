@@ -1,10 +1,9 @@
-"""
-Clase Matrix (listas)
-=====================
-Topic: 11_OOP - Simple classes
-Descripción: Matriz con lista de listas; add() elemento a elemento.
-"""
-
+# -------------------------------------------------
+# File Name: 31_matrix.py
+# Author: Florentino Báez
+# Date: 11_OOP
+# Description: Matrix class using nested lists.
+# -------------------------------------------------
 
 class Matrix:
     def __init__(self, data):

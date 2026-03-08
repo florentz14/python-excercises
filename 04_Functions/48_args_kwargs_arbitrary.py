@@ -1,25 +1,9 @@
-# ------------------------------------------------------------
-# File: 48_args_kwargs_arbitrary.py
-# Chapter: 10 - Functions: Arbitrary & Keyword Arguments
-#
-# Purpose:
-#   Demonstrates *args (arbitrary positional args) and **kwargs
-#   (arbitrary keyword args) in Python functions.
-#
-# Sections:
-#   1. Arbitrary arguments (*args)
-#   2. Keyword arguments (named parameters)
-#   3. Keyword arbitrary arguments (**kwargs)
-#   4. Combined usage (*args + **kwargs)
-#
-# Author: Florentino Baez (adapted)
-# ------------------------------------------------------------
-
-
-# =============================================================================
-# Section 1: Arbitrary Arguments (*args)
-# Use when the exact number of parameters is unknown.
-# =============================================================================
+# -------------------------------------------------
+# File Name: 48_args_kwargs_arbitrary.py
+# Author: Florentino Báez
+# Date: 04_Functions
+# Description: Return the maximum value among all arguments.
+# -------------------------------------------------
 
 def find_maximum(*args):
     """

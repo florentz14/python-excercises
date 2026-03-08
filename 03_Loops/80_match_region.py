@@ -1,8 +1,9 @@
-"""Match-case: Region by state abbreviation.
-Uses alternation (|) to match multiple state codes per region.
-"""
+# -------------------------------------------------
+# File Name: 80_match_region.py
 # Author: Florentino Báez
-
+# Date: 03_Loops
+# Description: Region by state abbreviation.
+# -------------------------------------------------
 
 def get_region(abbr: str) -> str:
     match abbr:

@@ -1,12 +1,8 @@
 # -------------------------------------------------
 # File Name: 05_loop_sets.py
 # Author: Florentino Báez
-# Date: Variables - Sets
+# Date: 01_Variables_and_Types
 # Description: Loop Through Sets.
-#              Iterate using for loops, enumerate(), sorted(),
-#              and set comprehensions. Also shows filtering,
-#              set intersection/difference in loops, and
-#              while loop via list conversion.
 # -------------------------------------------------
 
 fruits = {"apple", "banana", "cherry", "pineapple", "grape", "mango"}

@@ -1,9 +1,9 @@
 # -------------------------------------------------
-# File: 07_property_decorator.py
+# File Name: 07_property_decorator.py
+# Author: Florentino Báez
+# Date: 11_OOP
 # Description: @property decorator for Pythonic getters/setters.
-#              Computed properties and property validation.
 # -------------------------------------------------
-
 
 class Rectangle:
     """Rectangle class using @property decorator."""

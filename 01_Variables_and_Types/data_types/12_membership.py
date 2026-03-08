@@ -1,25 +1,25 @@
-"""
-Operadores de membresía: in y not in
-=====================================
-Topic: Variables and Types (01_Variables_and_Types)
-Descripción: Verificar si un elemento está en una secuencia (string, lista, etc).
-"""
-# in y not in con strings (subcadena)
-texto = "Python es genial"
-print("'es' in texto:", "es" in texto)
-print("'Java' in texto:", "Java" in texto)
-print("'xyz' not in texto:", "xyz" not in texto)
+# -------------------------------------------------
+# File Name: 12_membership.py
+# Author: Florentino Báez
+# Date: 01_Variables_and_Types
+# Description: Membership operators in and not in to check if an
+# -------------------------------------------------
 
-# Con caracteres
+text = "Python is great"
+print("'es' in text:", "es" in text)
+print("'Java' in text:", "Java" in text)
+print("'xyz' not in text:", "xyz" not in text)
+
+# With characters
 print("\n'P' in 'Python':", "P" in "Python")
 
-# Con listas
-numeros = [1, 2, 3, 4, 5]
-print("\n3 in numeros:", 3 in numeros)
-print("10 not in numeros:", 10 not in numeros)
+# With lists
+numbers = [1, 2, 3, 4, 5]
+print("\n3 in numbers:", 3 in numbers)
+print("10 not in numbers:", 10 not in numbers)
 
-# Aplicación: validar entrada
-opciones_validas = ["s", "n", "si", "no"]
-respuesta = "s"
-if respuesta.lower() in opciones_validas:
-    print("\nRespuesta válida")
+# Application: validate input
+valid_options = ["y", "n", "yes", "no"]
+response = "y"
+if response.lower() in valid_options:
+    print("\nValid response")

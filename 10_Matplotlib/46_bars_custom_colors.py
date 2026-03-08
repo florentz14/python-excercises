@@ -1,7 +1,7 @@
 # -------------------------------------------------
-# File Name: 09c_bars_custom_colors.py
+# File Name: 46_bars_custom_colors.py
 # Author: Florentino Báez
-# Date: Matplotlib
+# Date: 10_Matplotlib
 # Description: Custom colors with value labels on top.
 # -------------------------------------------------
 

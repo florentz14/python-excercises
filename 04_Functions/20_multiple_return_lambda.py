@@ -1,7 +1,8 @@
 # -------------------------------------------------
-# File: 20_multiple_return_lambda.py
+# File Name: 20_multiple_return_lambda.py
+# Author: Florentino Báez
+# Date: 04_Functions
 # Description: Multiple return values and lambdas.
-#              Anonymous functions and tuple returns.
 # -------------------------------------------------
 
 print("=== Retorno Múltiple y Lambda ===\n")

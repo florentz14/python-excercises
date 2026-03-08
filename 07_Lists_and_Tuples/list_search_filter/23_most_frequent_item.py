@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 110. Find Item with Most Occurrences in List
-# ---------------------------------------------------------------------------
-# Descripción: Find Item with Most Occurrences in List
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 23_most_frequent_item.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Find Item with Most Occurrences in List
+# -------------------------------------------------
 
 from collections import Counter
 

@@ -1,7 +1,7 @@
 # -------------------------------------------------
-# File Name: 19_players_goals_scatter.py
+# File Name: 72_players_goals_scatter.py
 # Author: Florentino Báez
-# Date: Matplotlib
+# Date: 10_Matplotlib
 # Description: Scatter Plot — Goals vs Score Colored by Position.
 # -------------------------------------------------
 

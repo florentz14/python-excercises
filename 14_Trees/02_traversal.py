@@ -1,10 +1,9 @@
-"""
-Árboles - Ejemplo 2: Recorridos (inorden, preorden, postorden)
-===============================================================
-Topic: 14_Trees
-Descripción: Recorrer árbol binario: inorden (izq, raíz, der), preorden (raíz, izq, der), postorden (izq, der, raíz).
-"""
-
+# -------------------------------------------------
+# File Name: 02_traversal.py
+# Author: Florentino Báez
+# Date: 14_Trees
+# Description: Binary tree traversals: inorder, preorder, postorder.
+# -------------------------------------------------
 
 class Nodo:
     def __init__(self, valor, izquierdo=None, derecho=None):

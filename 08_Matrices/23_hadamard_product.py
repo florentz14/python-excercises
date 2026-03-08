@@ -1,9 +1,9 @@
-# ------------------------------------------------------------
-# File: 23_hadamard_product.py
-# Purpose: Matrix multiplication and Hadamard (element-wise) product.
+# -------------------------------------------------
+# File Name: 23_hadamard_product.py
+# Author: Florentino Báez
+# Date: 08_Matrices
 # Description: C×D (matrix product), E⊙F (element-wise Hadamard).
-# ------------------------------------------------------------
-
+# -------------------------------------------------
 
 def print_matrix(matrix, name="Matrix"):
     """Print matrix with aligned columns."""

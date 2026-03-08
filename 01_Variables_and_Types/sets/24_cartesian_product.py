@@ -1,11 +1,8 @@
 # -------------------------------------------------
 # File Name: 24_cartesian_product.py
 # Author: Florentino Báez
-# Date: Variables - Sets
+# Date: 01_Variables_and_Types
 # Description: Cartesian Product of Sets (Bonus).
-#              Computes A × B and B × A using itertools.product.
-#              Demonstrates that the Cartesian product is NOT
-#              commutative: A × B ≠ B × A.
 # -------------------------------------------------
 
 """

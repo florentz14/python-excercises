@@ -1,7 +1,8 @@
 # -------------------------------------------------
-# File: 15_lru_cache_simulation.py
+# File Name: 15_lru_cache_simulation.py
+# Author: Florentino Báez
+# Date: 18_Linked_Lists
 # Description: Simulate LRU Cache using doubly linked list + hashmap.
-#              Least Recently Used cache implementation.
 # -------------------------------------------------
 
 from typing import Optional, Any, Dict

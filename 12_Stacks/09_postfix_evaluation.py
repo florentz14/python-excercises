@@ -1,10 +1,9 @@
-"""
-12_Stacks - Postfix (RPN) Expression Evaluation
-=================================================
-Evaluate Reverse Polish Notation: operands → push, operator → pop 2, compute, push.
-Used in: compilers, calculators, interpreters.
-"""
-
+# -------------------------------------------------
+# File Name: 09_postfix_evaluation.py
+# Author: Florentino Báez
+# Date: 12_Stacks
+# Description: Postfix (RPN) evaluation. Stack-based expression evaluation.
+# -------------------------------------------------
 
 def eval_postfix(tokens: list[str]) -> float:
     """

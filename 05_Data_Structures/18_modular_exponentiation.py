@@ -1,13 +1,8 @@
 # -------------------------------------------------
-# File Name: 18_exponenciacion_modular.py
+# File Name: 18_modular_exponentiation.py
 # Author: Florentino Báez
-# Date: Data Structures - Mathematical Algorithms
-# Description: Fast Modular Exponentiation.
-#              Computes (base^exponent) mod modulo efficiently
-#              using the repeated squaring method (binary exponentiation).
-#              At each step, if the current bit of the exponent is 1,
-#              multiply the result by the current base.
-#              Complexity: O(log exponent).
+# Date: 05_Data_Structures
+# Description: Fast modular exponentiation. (base^exp) mod m via repeated squaring. Binary exponentiation. O(log exponent).
 # -------------------------------------------------
 
 print("=== 4. Exponenciación Modular Rápida ===\n")

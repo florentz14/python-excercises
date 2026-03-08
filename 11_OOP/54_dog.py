@@ -1,5 +1,9 @@
-# 27_simple_dog.py - Simple inheritance: Animal -> Dog
-# Florentino Baez - ITSE-1002
+# -------------------------------------------------
+# File Name: 54_dog.py
+# Author: Florentino Báez
+# Date: 11_OOP
+# Description: Simple inheritance: Animal base and Dog child with speak override.
+# -------------------------------------------------
 
 class Animal:
     """Base class."""

@@ -1,8 +1,9 @@
-# ------------------------------------------------------------
-# File: 13_first_unique_character.py
-# Purpose: First non-repeating character.
-# Description: Two passes: count, then find first with count 1.
-# ------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 13_first_unique_character.py
+# Author: Florentino Báez
+# Date: 01_Variables_and_Types
+# Description: Find index of first non-repeating character.
+# -------------------------------------------------
 
 from collections import Counter
 

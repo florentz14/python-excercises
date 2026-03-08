@@ -1,8 +1,9 @@
-# ------------------------------------------------------------
-# File: 35_numpy_linalg.py
-# Purpose: Linear algebra: dot, norm, inverse.
+# -------------------------------------------------
+# File Name: 47_linalg.py
+# Author: Florentino Báez
+# Date: 08_Matrices
 # Description: np.dot, np.linalg.norm, np.linalg.inv (inverse).
-# ------------------------------------------------------------
+# -------------------------------------------------
 
 import numpy as np
 

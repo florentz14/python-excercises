@@ -1,8 +1,9 @@
-"""For loop: enumerate letters.
-Uses enumerate() to print index and character of a word.
-"""
+# -------------------------------------------------
+# File Name: 74_for_enumerate.py
 # Author: Florentino Báez
-
+# Date: 03_Loops
+# Description: enumerate letters.
+# -------------------------------------------------
 
 print("=" * 40)
 print("For #3 – Enumerate Letters")

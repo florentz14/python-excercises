@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 269. Get Every nth Element
-# ---------------------------------------------------------------------------
-# Descripción: Get Every nth Element
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 128_every_nth_element.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Get Every nth Element
+# -------------------------------------------------
 
 def every_nth(lst: list, n: int) -> list:
     return lst[::n]

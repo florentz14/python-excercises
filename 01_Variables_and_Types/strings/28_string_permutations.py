@@ -1,8 +1,9 @@
-﻿# ------------------------------------------------------------
-# File: 28_string_permutations.py
-# Purpose: Generate all permutations of a string.
-# Description: itertools.permutations or backtrack.
-# ------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 28_string_permutations.py
+# Author: Florentino Báez
+# Date: 01_Variables_and_Types
+# Description: Generate all permutations via itertools or backtracking.
+# -------------------------------------------------
 
 import itertools
 

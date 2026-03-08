@@ -1,7 +1,8 @@
 # -------------------------------------------------
-# File: 24_scope_funcion_parametro.py
+# File Name: 24_scope_function_parameter.py
+# Author: Florentino Báez
+# Date: 04_Functions
 # Description: Variable scope and higher-order functions.
-#              Local/global scope and functions as parameters.
 # -------------------------------------------------
 
 print("=== Scope y Función como Parámetro ===\n")

@@ -1,11 +1,9 @@
-# ---------------------------------------------------------------------------
-# 6. Sort Tuples by Last Element
-# ---------------------------------------------------------------------------
-# Descripción: Ordena una lista de tuplas en orden creciente según el
-#              último elemento de cada tupla (t[-1]).
-# Entrada: Lista de tuplas.
-# Salida: Nueva lista con las mismas tuplas ordenadas.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 08_sort_tuples_by_last_element.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Demonstrates sort tuples by last element.
+# -------------------------------------------------
 
 def sort_by_last(tuples: list[tuple]) -> list[tuple]:
     # sorted() crea una lista ordenada sin modificar la original

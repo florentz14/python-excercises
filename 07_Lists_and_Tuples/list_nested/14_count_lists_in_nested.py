@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 90. Count Number of Lists in Nested List (top-level only, or recursive)
-# ---------------------------------------------------------------------------
-# Descripción: Count Number of Lists in Nested List (top-level only, or recursive)
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 14_count_lists_in_nested.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Count Number of Lists in Nested List (top-level only, or recursive)
+# -------------------------------------------------
 
 def count_lists_top(lst: list) -> int:
     # Se devuelve la suma de todos los elementos.

@@ -1,5 +1,9 @@
-# Archivo: 49_06_resumen.py
-# Descripción: Resumen de métodos numéricos
+# -------------------------------------------------
+# File Name: 47_summary.py
+# Author: Florentino Báez
+# Date: 17_Equations
+# Description: Summary of numerical methods.
+# -------------------------------------------------
 
 if __name__ == "__main__":
     print("=== RESUMEN - Métodos Numéricos ===\n")

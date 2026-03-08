@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 30. Count Frequency of Elements in List
-# ---------------------------------------------------------------------------
-# Descripción: Count Frequency of Elements in List
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 10_count_frequency.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Count Frequency of Elements in List
+# -------------------------------------------------
 
 from collections import Counter
 

@@ -1,7 +1,8 @@
 # -------------------------------------------------
-# File: 09_repeat_word.py
+# File Name: 09_repeat_word.py
+# Author: Florentino Báez
+# Date: 04_Functions
 # Description: Repeat a word multiple times.
-#              Function with string and int parameters.
 # -------------------------------------------------
 
 def repeat_word(word: str, times: int) -> None:

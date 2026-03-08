@@ -1,7 +1,7 @@
 # -------------------------------------------------
-# File Name: 05a_labels_basic.py
+# File Name: 21_labels_basic.py
 # Author: Florentino Báez
-# Date: Matplotlib
+# Date: 10_Matplotlib
 # Description: Basic title, xlabel, ylabel.
 # -------------------------------------------------
 

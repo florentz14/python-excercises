@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 275. Sum of List Excluding Each Index (return list of sums)
-# ---------------------------------------------------------------------------
-# Descripción: Sum of List Excluding Each Index (return list of sums)
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 24_sum_excluding_index.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Sum of List Excluding Each Index (return list of sums)
+# -------------------------------------------------
 
 def sum_excluding_each(lst: list[int]) -> list[int]:
     total = sum(lst)

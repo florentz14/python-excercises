@@ -1,12 +1,8 @@
 # -------------------------------------------------
 # File Name: 02_access_set_items.py
 # Author: Florentino Báez
-# Date: Variables - Sets
+# Date: 01_Variables_and_Types
 # Description: Access Set Items.
-#              Sets do NOT support indexing (no set[0]).
-#              Use 'in' for membership testing, loop to
-#              iterate, or convert to list for index access.
-#              Also shows min(), max(), sum(), len().
 # -------------------------------------------------
 
 fruits = {"apple", "banana", "cherry", "pineapple", "grape", "mango"}

@@ -1,8 +1,9 @@
-"""For loop: Search in 2D matrix.
-Finds value position; breaks both loops when found.
-"""
+# -------------------------------------------------
+# File Name: 55_for_search_matrix.py
 # Author: Florentino Báez
-
+# Date: 03_Loops
+# Description: Search in 2D matrix.
+# -------------------------------------------------
 
 print("Búsqueda en Matriz 2D")
 print("=" * 40)

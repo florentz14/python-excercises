@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 260. Check If All Elements of List Are in Another List
-# ---------------------------------------------------------------------------
-# Descripción: Check If All Elements of List Are in Another List
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 59_list_elements_in_another.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Check If All Elements of List Are in Another List
+# -------------------------------------------------
 
 def all_in(list1: list, list2: list) -> bool:
     return all(x in list2 for x in list1)

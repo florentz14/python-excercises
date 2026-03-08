@@ -1,5 +1,9 @@
-# 25_simple_triangle.py - Simple class: Triangle
-# Florentino Baez - ITSE-1002
+# -------------------------------------------------
+# File Name: 52_triangle.py
+# Author: Florentino Báez
+# Date: 11_OOP
+# Description: Triangle class with base, height and area() method.
+# -------------------------------------------------
 
 class Triangle:
     """Class with attributes and area method."""

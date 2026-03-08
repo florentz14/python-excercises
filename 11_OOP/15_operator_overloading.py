@@ -1,7 +1,8 @@
 # -------------------------------------------------
-# File: 15_operator_overloading.py
+# File Name: 15_operator_overloading.py
+# Author: Florentino Báez
+# Date: 11_OOP
 # Description: Operator overloading with magic methods.
-#              __add__, __sub__, __mul__, etc.
 # -------------------------------------------------
 
 from typing import Any, Union

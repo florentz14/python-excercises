@@ -1,7 +1,8 @@
 # -------------------------------------------------
-# File: 37_flatten_list.py
+# File Name: 37_flatten_list.py
+# Author: Florentino Báez
+# Date: 04_Functions
 # Description: Flatten nested lists recursively.
-#              Handle any depth of nesting.
 # -------------------------------------------------
 
 def flatten_list(nested_list):

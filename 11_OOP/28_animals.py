@@ -1,6 +1,9 @@
-# Ejemplo de Clases: Animales
-# Este programa demuestra la herencia y polimorfismo con diferentes tipos de animales
-
+# -------------------------------------------------
+# File Name: 28_animals.py
+# Author: Florentino Báez
+# Date: 11_OOP
+# Description: Demonstrates inheritance and polymorphism with animal classes.
+# -------------------------------------------------
 
 class Animal:
     """Clase base para todos los tipos de animales"""

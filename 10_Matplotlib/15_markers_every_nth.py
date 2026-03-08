@@ -1,7 +1,7 @@
 # -------------------------------------------------
-# File Name: 03f_markers_every_nth.py
+# File Name: 15_markers_every_nth.py
 # Author: Florentino Báez
-# Date: Matplotlib
+# Date: 10_Matplotlib
 # Description: markevery parameter (show every 10th point).
 # -------------------------------------------------
 

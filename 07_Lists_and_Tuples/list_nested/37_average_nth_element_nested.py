@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 197. Average of n-th Element Across Nested Lists (Different Lengths)
-# ---------------------------------------------------------------------------
-# Descripción: Average of n-th Element Across Nested Lists (Different Lengths)
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 37_average_nth_element_nested.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Average of n-th Element Across Nested Lists (Different Lengths)
+# -------------------------------------------------
 
 def average_nth_element(lists: list[list[float]], n: int) -> float:
     """n is 0-based index. Only include lists that have that index."""

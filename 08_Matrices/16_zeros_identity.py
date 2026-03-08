@@ -1,10 +1,10 @@
-# ------------------------------------------------------------
-# File: 16_zeros_identity.py
-# Purpose: Create zero matrix and identity matrix.
+# -------------------------------------------------
+# File Name: 16_zeros_identity.py
+# Author: Florentino Báez
+# Date: 08_Matrices
 # Description: Using list comprehensions without NumPy.
-# ------------------------------------------------------------
+# -------------------------------------------------
 
-# Zero matrix 3x3
 zeros = [[0 for _ in range(3)] for _ in range(3)]
 print("Zero matrix (3x3):")
 for row in zeros:

@@ -1,9 +1,9 @@
 # -------------------------------------------------
-# File: 09_method_override.py
+# File Name: 09_method_override.py
+# Author: Florentino Báez
+# Date: 11_OOP
 # Description: Method overriding in inheritance.
-#              Polymorphism through method overriding.
 # -------------------------------------------------
-
 
 class Vehicle:
     """Parent class - Vehicle."""

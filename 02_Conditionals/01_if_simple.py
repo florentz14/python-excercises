@@ -1,9 +1,9 @@
-"""
-Condicional - Ejemplo 1: if simple
-===================================
-Topic: Conditionals (02_Conditionals)
-Descripción: Un solo if para ejecutar código cuando la condición es verdadera.
-"""
+# -------------------------------------------------
+# File Name: 01_if_simple.py
+# Author: Florentino Báez
+# Date: 02_Conditionals
+# Description: Un solo if para ejecutar código cuando la condición es verdadera.
+# -------------------------------------------------
 
 numero = 7
 

@@ -1,8 +1,9 @@
-"""While loop: Odd numbers 1 to 19.
-Prints odd numbers by incrementing counter by 2.
-"""
+# -------------------------------------------------
+# File Name: 11_while_odd_1_to_19.py
 # Author: Florentino Báez
-
+# Date: 03_Loops
+# Description: Odd numbers 1 to 19.
+# -------------------------------------------------
 
 count = 1
 

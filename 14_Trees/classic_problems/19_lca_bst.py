@@ -1,9 +1,9 @@
-"""
-#19 Lowest Common Ancestor - BST - LeetCode 235
-===============================================
-LCA in BST: use property Left < Root < Right.
-If p,q < root -> go left; if p,q > root -> go right; else root is LCA.
-"""
+# -------------------------------------------------
+# File Name: 19_lca_bst.py
+# Author: Florentino Báez
+# Date: 14_Trees
+# Description: LeetCode 235 - Lowest common ancestor in BST.
+# -------------------------------------------------
 
 from common import TreeNode
 

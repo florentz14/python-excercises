@@ -1,14 +1,9 @@
 # -------------------------------------------------
 # File Name: 37_strings.py
 # Author: Florentino Báez
-# Date: Data Structures - Search Algorithms
-# Description: Pattern Search in Text (Brute Force).
-#              Compares the pattern against each possible position
-#              of the text, character by character. Includes version
-#              for first occurrence and for all occurrences.
-#              Complexity: O(n * m) where n = text, m = pattern.
+# Date: 05_Data_Structures
+# Description: String algorithms collection. Pattern matching and string utilities.
 # -------------------------------------------------
-
 
 def busqueda_bruta_texto(texto, patron):
     """First occurrence of the pattern in the text. -1 if not found."""

@@ -1,7 +1,8 @@
 # -------------------------------------------------
-# File: 28_factorial.py
+# File Name: 28_factorial.py
+# Author: Florentino Báez
+# Date: 04_Functions
 # Description: Factorial calculation using recursion.
-#              Recursive function example (n!).
 # -------------------------------------------------
 
 def factorial(n):

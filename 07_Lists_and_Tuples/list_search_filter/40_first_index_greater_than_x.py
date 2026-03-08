@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 163. Index of First Element Greater Than Specified Value
-# ---------------------------------------------------------------------------
-# Descripción: Index of First Element Greater Than Specified Value
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 40_first_index_greater_than_x.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Index of First Element Greater Than Specified Value
+# -------------------------------------------------
 
 def first_index_greater_than(lst: list[int | float], x: int | float) -> int:
     for i, v in enumerate(lst):

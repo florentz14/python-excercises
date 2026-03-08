@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 128. Sum of Numbers in List Between Two Indices (inclusive)
-# ---------------------------------------------------------------------------
-# Descripción: Sum of Numbers in List Between Two Indices (inclusive)
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 13_sum_between_indices.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Sum of Numbers in List Between Two Indices (inclusive)
+# -------------------------------------------------
 
 def sum_between_indices(lst: list[int], start: int, end: int) -> int:
     # Se devuelve la suma de todos los elementos.

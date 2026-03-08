@@ -1,4 +1,9 @@
-# eliminar duplicados
+# -------------------------------------------------
+# File Name: 25_remove_duplicates.py
+# Author: Florentino Báez
+# Date: 01_Variables_and_Types
+# Description: Removes duplicates from a list using set()
+# -------------------------------------------------
 
 def remove_duplicates(lst):
     return list(set(lst))

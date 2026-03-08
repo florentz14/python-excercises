@@ -1,5 +1,9 @@
-# Archivo: 35_04_convergencia.py
-# Descripción: Análisis de convergencia al variar n
+# -------------------------------------------------
+# File Name: 37_convergence.py
+# Author: Florentino Báez
+# Date: 17_Equations
+# Description: Convergence analysis varying n.
+# -------------------------------------------------
 
 import scipy.integrate as spi
 

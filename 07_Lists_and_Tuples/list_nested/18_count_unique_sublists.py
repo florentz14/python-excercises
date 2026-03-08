@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 94. Count Unique Sublists (frequency of each distinct sublist)
-# ---------------------------------------------------------------------------
-# Descripción: Count Unique Sublists (frequency of each distinct sublist)
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 18_count_unique_sublists.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Count Unique Sublists (frequency of each distinct sublist)
+# -------------------------------------------------
 
 from collections import Counter
 

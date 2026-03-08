@@ -1,7 +1,10 @@
-# Ejemplo de Clases: Transporte
-# Este programa demuestra la herencia y polimorfismo con diferentes tipos de transporte
+# -------------------------------------------------
+# File Name: 36_transport.py
+# Author: Florentino Báez
+# Date: 11_OOP
+# Description: Demonstrates inheritance and polymorphism with transport classes.
+# -------------------------------------------------
 
-# Clase padre: Transporte
 class Transporte:
     """Clase base para todos los tipos de transporte"""
 

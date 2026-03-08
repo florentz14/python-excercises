@@ -1,17 +1,9 @@
 # -------------------------------------------------
-# File: 49_heap.py (Heap Sort)
-# -------------------------------------------------
+# File Name: 49_heap.py
 # Author: Florentino Báez
-# Module: Data Structures - Sorting Algorithms
-#
-# Description:
-#   Heap Sort: build a max-heap (largest at root), repeatedly extract
-#   the maximum and place at the end. heapify maintains the heap
-#   property after each swap.
-#
-# Complexity: O(n log n). Not stable. In-place.
+# Date: 05_Data_Structures
+# Description: Heap Sort. Builds max-heap, repeatedly extracts max. O(n log n). In-place.
 # -------------------------------------------------
-
 
 def heap_sort(arr):
     """Sorts by building max-heap and repeatedly extracting max."""

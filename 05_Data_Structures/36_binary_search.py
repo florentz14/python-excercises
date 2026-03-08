@@ -1,17 +1,9 @@
 # -------------------------------------------------
-# File: 36_binaria.py (Binary Search)
-# -------------------------------------------------
+# File Name: 36_binary_search.py
 # Author: Florentino Báez
-# Module: Data Structures - Search Algorithms
-#
-# Description:
-#   Binary search on a sorted list. Halves the search space each step.
-#   Includes: iterative, recursive, first occurrence, last occurrence.
-#   Uses safe mid calculation: left + (right - left) // 2 to avoid overflow.
-#
-# Complexity: O(log n). Requires sorted input.
+# Date: 05_Data_Structures
+# Description: Binary search on sorted list. Halves search space each step. O(log n).
 # -------------------------------------------------
-
 
 def binary_search(arr, target):
     """Iterative binary search. Returns index or -1 if not found."""

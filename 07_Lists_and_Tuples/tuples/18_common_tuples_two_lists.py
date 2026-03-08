@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 207. Common Tuples Between Two Lists
-# ---------------------------------------------------------------------------
-# Descripción: Common Tuples Between Two Lists
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 18_common_tuples_two_lists.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Common Tuples Between Two Lists
+# -------------------------------------------------
 
 def common_tuples(a: list[tuple], b: list[tuple]) -> list[tuple]:
     set_b = set(b)

@@ -1,11 +1,8 @@
 # -------------------------------------------------
 # File Name: 18_difference.py
 # Author: Florentino Báez
-# Date: Variables - Sets
+# Date: 01_Variables_and_Types
 # Description: Difference of Sets.
-#              Computes M - N and N - M using the - operator or
-#              difference() method. Demonstrates that set
-#              difference is NOT commutative.
 # -------------------------------------------------
 
 """

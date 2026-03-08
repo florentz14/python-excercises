@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 177. Common Elements in List of Lists (intersection of all)
-# ---------------------------------------------------------------------------
-# Descripción: Common Elements in List of Lists (intersection of all)
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 33_common_in_list_of_lists.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Common Elements in List of Lists (intersection of all)
+# -------------------------------------------------
 
 def common_in_all(lists: list[list]) -> list:
     if not lists:

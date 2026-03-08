@@ -1,8 +1,9 @@
-# ------------------------------------------------------------
-# File: 90_spiral_traversal.py
-# Purpose: Spiral traversal of matrix.
+# -------------------------------------------------
+# File Name: 90_spiral_traversal.py
+# Author: Florentino Báez
+# Date: 08_Matrices
 # Description: Traverse matrix in clockwise spiral order.
-# ------------------------------------------------------------
+# -------------------------------------------------
 
 def spiral_order(matrix):
     if not matrix or not matrix[0]:

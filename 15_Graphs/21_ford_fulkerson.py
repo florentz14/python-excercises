@@ -1,9 +1,9 @@
-"""
-15_Graphs - Ford-Fulkerson Max Flow
-=====================================
-Maximum flow from source to sink using DFS to find augmenting paths.
-Edmonds-Karp (BFS) is a variant. Used in: network routing, bipartite matching.
-"""
+# -------------------------------------------------
+# File Name: 21_ford_fulkerson.py
+# Author: Florentino Báez
+# Date: 15_Graphs
+# Description: 15_Graphs - Ford-Fulkerson Max Flow ===================================== Maximum flow from source to sink using DFS to find augmenting paths.
+# -------------------------------------------------
 
 from collections import defaultdict
 

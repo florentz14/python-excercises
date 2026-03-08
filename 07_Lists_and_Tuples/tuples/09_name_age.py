@@ -1,11 +1,10 @@
-# ---------------------------------------------------------------------------
-# Part 2: Tuples - Exercise 9
-# ---------------------------------------------------------------------------
-# Descripción: Pedir nombre y edad al usuario, guardarlos en una tupla
-#              y mostrar la tupla. input() lee texto; int() convierte la edad.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 09_name_age.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Pedir nombre y edad al usuario, guardarlos en una tupla
+# -------------------------------------------------
 
-# input() devuelve una cadena; la guardamos en name
 name = input('Enter your name: ')
 # Convertimos la entrada a entero para la edad
 age = int(input('Enter your age: '))

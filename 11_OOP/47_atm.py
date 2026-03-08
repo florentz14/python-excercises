@@ -1,11 +1,9 @@
-# ------------------------------------------------------------
-# File Name: 20_atm_oop.py
-# Author: Florentino Baez
-# Course: ITSE-1002: Python Programming
-# Professor: Mauricio Quiroga
-# Description: ATM Simulation - OOP version. Same features as ATM_FinalProject_Baez_v2
-#              but using classes (ATM encapsulates balance, history, and operations).
-# ------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 47_atm.py
+# Author: Florentino Báez
+# Date: 11_OOP
+# Description: ATM simulation with deposit, withdraw, balance and history.
+# -------------------------------------------------
 
 from datetime import datetime
 from pathlib import Path

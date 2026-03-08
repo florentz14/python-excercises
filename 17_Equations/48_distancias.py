@@ -1,5 +1,9 @@
-# Archivo: 50_01_distancias.py
-# Descripción: Distancias entre puntos (Euclidiana, Manhattan, Chebyshev)
+# -------------------------------------------------
+# File Name: 48_distancias.py
+# Author: Florentino Báez
+# Date: 17_Equations
+# Description: Distances between points (Euclidean, Manhattan, Chebyshev).
+# -------------------------------------------------
 
 import math
 

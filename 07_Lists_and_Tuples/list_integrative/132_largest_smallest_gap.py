@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 277. Largest and Smallest Gap Between Sorted Elements
-# ---------------------------------------------------------------------------
-# Descripción: Largest and Smallest Gap Between Sorted Elements
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 132_largest_smallest_gap.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Largest and Smallest Gap Between Sorted Elements
+# -------------------------------------------------
 
 def largest_smallest_gap(lst: list[int]) -> tuple[int, int]:
     sorted_lst = sorted(lst)

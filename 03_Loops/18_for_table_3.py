@@ -1,8 +1,9 @@
-"""For loop: Multiplication table of 3.
-Prints 3 × n for n from 1 to 10.
-"""
+# -------------------------------------------------
+# File Name: 18_for_table_3.py
 # Author: Florentino Báez
-
+# Date: 03_Loops
+# Description: Multiplication table of 3.
+# -------------------------------------------------
 
 for count in range(1, 11):
     print("3 x", count, "=", 3 * count)

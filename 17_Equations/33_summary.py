@@ -1,5 +1,9 @@
-# Archivo: 33_07_resumen.py
-# Descripción: Resumen del análisis del sistema de ecuaciones ejemplo
+# -------------------------------------------------
+# File Name: 33_summary.py
+# Author: Florentino Báez
+# Date: 17_Equations
+# Description: Summary of example equation system analysis.
+# -------------------------------------------------
 
 if __name__ == "__main__":
     print("=== Resumen de Análisis ===\n")

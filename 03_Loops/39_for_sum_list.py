@@ -1,8 +1,9 @@
-"""For loop: Sum list elements.
-Accumulates the total of all numbers in a list.
-"""
+# -------------------------------------------------
+# File Name: 39_for_sum_list.py
 # Author: Florentino Báez
-
+# Date: 03_Loops
+# Description: Sum list elements.
+# -------------------------------------------------
 
 numbers = [10, 20, 30, 40, 50]
 total = 0

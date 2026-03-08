@@ -1,9 +1,9 @@
-"""
-Colas - Ejemplo 3: Clase Cola (con deque)
-==========================================
-Topic: 13_Queues
-Descripción: Clase Cola con enqueue(), dequeue(), front() y empty().
-"""
+# -------------------------------------------------
+# File Name: 03_queue_class_deque.py
+# Author: Florentino Báez
+# Date: 13_Queues
+# Description: Queue class with deque. enqueue(), dequeue(), front(), empty().
+# -------------------------------------------------
 
 from collections import deque
 

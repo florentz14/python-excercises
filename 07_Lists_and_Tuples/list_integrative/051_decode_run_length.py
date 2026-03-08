@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 77. Decode Run-Length Encoded List
-# ---------------------------------------------------------------------------
-# Descripción: Decode Run-Length Encoded List
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 051_decode_run_length.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Decode Run-Length Encoded List
+# -------------------------------------------------
 
 def decode_rle(encoded: list) -> list:
     result = []

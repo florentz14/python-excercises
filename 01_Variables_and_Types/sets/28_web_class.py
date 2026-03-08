@@ -1,3 +1,10 @@
+# -------------------------------------------------
+# File Name: 28_web_class.py
+# Author: Florentino Báez
+# Date: 01_Variables_and_Types
+# Description: Set operations comparing Python and Web class subjects.
+# -------------------------------------------------
+
 python_class = {"Python", "HTML", "CSS", "JavaScript", "SQL"}
 web_class = {"HTML", "CSS", "JavaScript", "PHP", "SQL"}
 

@@ -1,28 +1,28 @@
-"""
-Constantes y asignación múltiple
-=================================
-Topic: Variables and Types (01_Variables_and_Types)
-Descripción: Constantes (UPPER_CASE), asignación múltiple, intercambio de variables.
-"""
-# Constantes: convención UPPER_CASE para valores que no cambian
+# -------------------------------------------------
+# File Name: 09_constants_assignment.py
+# Author: Florentino Báez
+# Date: 01_Variables_and_Types
+# Description: Constants (UPPER_CASE convention), multiple assignment,
+# -------------------------------------------------
+
 PI = 3.14159
-IVA = 0.16
-MAX_INTENTOS = 3
+TAX_RATE = 0.16
+MAX_ATTEMPTS = 3
 
-print("Constantes:")
+print("Constants:")
 print(f"PI = {PI}")
-print(f"IVA = {IVA * 100}%")
+print(f"TAX_RATE = {TAX_RATE * 100}%")
 
-# Asignación múltiple
+# Multiple assignment
 x, y = 10, 20
-print(f"\nAsignación múltiple: x, y = 10, 20 -> x={x}, y={y}")
+print(f"\nMultiple assignment: x, y = 10, 20 -> x={x}, y={y}")
 
-# Misma valor a varias variables
+# Same value to multiple variables
 a = b = c = 0
-print(f"Mismo valor: a = b = c = 0 -> a={a}, b={b}, c={c}")
+print(f"Same value: a = b = c = 0 -> a={a}, b={b}, c={c}")
 
-# Intercambio de variables (swap) sin variable temporal
+# Variable swap without temporary variable
 a, b = 5, 10
-print(f"\nAntes del swap: a={a}, b={b}")
+print(f"\nBefore swap: a={a}, b={b}")
 a, b = b, a
-print(f"Después del swap: a={a}, b={b}")
+print(f"After swap: a={a}, b={b}")

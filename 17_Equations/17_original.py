@@ -1,5 +1,9 @@
-# Archivo: 31_01_original.py
-# Descripción: Versión original de integración numérica
+# -------------------------------------------------
+# File Name: 17_original.py
+# Author: Florentino Báez
+# Date: 17_Equations
+# Description: Original numerical integration version.
+# -------------------------------------------------
 
 import scipy.integrate as spi
 

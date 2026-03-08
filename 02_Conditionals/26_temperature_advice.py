@@ -1,9 +1,9 @@
-"""
-Simple conditional: Temperature advice
-======================================
-Topic: Conditionals (02_Conditionals)
-Description: Give clothing advice based on temperature.
-"""
+# -------------------------------------------------
+# File Name: 26_temperature_advice.py
+# Author: Florentino Báez
+# Date: 02_Conditionals
+# Description: Temperature advice
+# -------------------------------------------------
 
 temp = float(input("Enter temperature (°C): "))
 

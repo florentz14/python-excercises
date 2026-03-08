@@ -1,13 +1,9 @@
-# ---------------------------------------------------------------------------
-# Lista Simple - 10: Palabra Clave del
-# ---------------------------------------------------------------------------
-# Descripcion: La palabra clave 'del' permite eliminar elementos por indice,
-#              eliminar secciones (slices), o eliminar la lista completa de
-#              memoria. A diferencia de pop(), NO retorna el valor eliminado.
-# Sintaxis:    del lista[indice]
-#              del lista[inicio:fin]
-#              del lista
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 10_del.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: La palabra clave 'del' permite eliminar elementos por indice,
+# -------------------------------------------------
 
 fruits = ["apple", "banana", "cherry", "pineapple", "grape", "blueberry", "mango"]
 print("Original:", fruits)

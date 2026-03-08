@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 47. Insert Element Before Each List Item
-# ---------------------------------------------------------------------------
-# Descripción: Insert Element Before Each List Item
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 030_insert_before_each.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Insert Element Before Each List Item
+# -------------------------------------------------
 
 def insert_before(lst: list, elem) -> list:
     result = []

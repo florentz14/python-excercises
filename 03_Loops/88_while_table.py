@@ -1,9 +1,9 @@
-"""
-While loop: Multiplication table of 3.
-Prints 3 × i for i from 1 to 10 using while.
-
+# -------------------------------------------------
+# File Name: 88_while_table.py
 # Author: Florentino Báez
-"""
+# Date: 03_Loops
+# Description: Multiplication table of 3.
+# -------------------------------------------------
 
 print("Example: Multiplication table of 3")
 print("-" * 40)

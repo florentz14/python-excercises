@@ -1,5 +1,9 @@
-# Archivo: resolver_mejorado.py
-# Descripción: Resolver sistema de ecuaciones lineales (versión mejorada)
+# -------------------------------------------------
+# File Name: 69_solve_improved.py
+# Author: Florentino Báez
+# Date: 17_Equations
+# Description: Improved linear system solver.
+# -------------------------------------------------
 
 import numpy as np
 

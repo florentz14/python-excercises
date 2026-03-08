@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 81. Extract N Randomly Selected Elements from List
-# ---------------------------------------------------------------------------
-# Descripción: Extract N Randomly Selected Elements from List
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 18_extract_random_elements.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Extract N Randomly Selected Elements from List
+# -------------------------------------------------
 
 import random
 

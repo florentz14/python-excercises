@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 199. Convert Unicode List to List of Strings (ensure str type)
-# ---------------------------------------------------------------------------
-# Descripción: Convert Unicode List to List of Strings (ensure str type)
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 097_unicode_list_to_strings.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Convert Unicode List to List of Strings (ensure str type)
+# -------------------------------------------------
 
 def unicode_to_strings(lst: list) -> list[str]:
     # Lista por comprensión: se construye la lista a partir del iterable.

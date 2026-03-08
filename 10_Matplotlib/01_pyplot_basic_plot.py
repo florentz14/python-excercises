@@ -1,7 +1,7 @@
 # -------------------------------------------------
-# File Name: 01a_pyplot_basic_plot.py
+# File Name: 01_pyplot_basic_plot.py
 # Author: Florentino Báez
-# Date: Matplotlib
+# Date: 10_Matplotlib
 # Description: Basic plot: Y-only vs X+Y (subplot with 2 panels).
 # -------------------------------------------------
 

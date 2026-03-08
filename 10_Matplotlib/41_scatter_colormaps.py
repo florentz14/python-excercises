@@ -1,7 +1,7 @@
 # -------------------------------------------------
-# File Name: 08d_scatter_colormaps.py
+# File Name: 41_scatter_colormaps.py
 # Author: Florentino Báez
-# Date: Matplotlib
+# Date: 10_Matplotlib
 # Description: Different colormaps comparison (2x2 grid).
 # -------------------------------------------------
 

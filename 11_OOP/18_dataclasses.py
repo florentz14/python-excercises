@@ -1,7 +1,8 @@
 # -------------------------------------------------
-# File: 18_dataclasses.py
+# File Name: 18_dataclasses.py
+# Author: Florentino Báez
+# Date: 11_OOP
 # Description: @dataclass decorator.
-#              Automatic generation of special methods.
 # -------------------------------------------------
 
 from dataclasses import dataclass, field

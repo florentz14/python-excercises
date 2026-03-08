@@ -1,10 +1,9 @@
-"""
-16_Files - Exercise 18: Understanding file permissions with os.chmod
-====================================================================
-File permissions control read, write, and execute access.
-Important for security and multi-user environments.
-Note: On Windows, permissions work differently than Unix/Linux.
-"""
+# -------------------------------------------------
+# File Name: 18_file_permissions.py
+# Author: Florentino Báez
+# Date: 16_Files
+# Description: File permissions. Check and modify file access modes.
+# -------------------------------------------------
 
 import os
 import stat

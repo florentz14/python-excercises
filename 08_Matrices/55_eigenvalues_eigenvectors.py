@@ -1,8 +1,9 @@
-# ------------------------------------------------------------
-# File: 55_eigenvalues_eigenvectors.py
-# Purpose: Eigenvalues and eigenvectors.
+# -------------------------------------------------
+# File Name: 55_eigenvalues_eigenvectors.py
+# Author: Florentino Báez
+# Date: 08_Matrices
 # Description: np.linalg.eig returns eigenvalues and eigenvectors.
-# ------------------------------------------------------------
+# -------------------------------------------------
 
 import numpy as np
 

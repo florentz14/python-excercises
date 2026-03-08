@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 211. Remove Element from List by Index
-# ---------------------------------------------------------------------------
-# Descripción: Remove Element from List by Index
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 104_remove_element_by_index.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Remove Element from List by Index
+# -------------------------------------------------
 
 def remove_at(lst: list, index: int) -> list:
     return lst[:index] + lst[index + 1:]

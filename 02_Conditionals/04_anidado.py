@@ -1,9 +1,9 @@
-"""
-Condicional - Ejemplo 4: if anidado
-===================================
-Topic: Conditionals (02_Conditionals)
-Descripción: Un if dentro de otro para decisiones en dos niveles.
-"""
+# -------------------------------------------------
+# File Name: 04_anidado.py
+# Author: Florentino Báez
+# Date: 02_Conditionals
+# Description: Un if dentro de otro para decisiones en dos niveles.
+# -------------------------------------------------
 
 edad = 20
 tiene_permiso = True

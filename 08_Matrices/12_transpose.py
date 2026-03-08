@@ -1,8 +1,9 @@
-# ------------------------------------------------------------
-# File: 12_transpose.py
-# Purpose: Transpose a matrix (swap rows and columns).
+# -------------------------------------------------
+# File Name: 12_transpose.py
+# Author: Florentino Báez
+# Date: 08_Matrices
 # Description: A^T: row j of A^T = column j of A. If A is m×n, A^T is n×m.
-# ------------------------------------------------------------
+# -------------------------------------------------
 
 A = [
     [1, 2, 3],

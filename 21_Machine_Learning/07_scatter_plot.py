@@ -1,15 +1,9 @@
-"""
-Machine Learning - Scatter Plot
-=================================
-Scatter plots display data points on a 2D plane (x, y).
-They help visualize relationships between two variables:
-- Positive correlation: as X increases, Y increases
-- Negative correlation: as X increases, Y decreases
-- No correlation: no clear pattern
-
-Scatter plots are essential for understanding data before
-building ML models.
-"""
+# -------------------------------------------------
+# File Name: 07_scatter_plot.py
+# Author: Florentino Báez
+# Date: 21_Machine_Learning
+# Description: Scatter plots for visualizing variable relationships.
+# -------------------------------------------------
 
 import numpy as np
 import matplotlib.pyplot as plt

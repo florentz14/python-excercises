@@ -1,9 +1,9 @@
-"""
-While loop: Sum positive numbers until 0.
-User enters numbers; sum only positives, stop on zero or negative.
-
+# -------------------------------------------------
+# File Name: 93_while_positive_sum.py
 # Author: Florentino Báez
-"""
+# Date: 03_Loops
+# Description: Sum positive numbers until 0.
+# -------------------------------------------------
 
 total = 0
 print("Enter positive numbers (0 or negative to stop):")

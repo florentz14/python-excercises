@@ -1,5 +1,9 @@
-# Archivo: 31_10_resumen.py
-# Descripción: Resumen del módulo de integración numérica
+# -------------------------------------------------
+# File Name: 26_summary.py
+# Author: Florentino Báez
+# Date: 17_Equations
+# Description: Summary of numerical integration module.
+# -------------------------------------------------
 
 if __name__ == "__main__":
     print("=== Resumen de Análisis ===\n")

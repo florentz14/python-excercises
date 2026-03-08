@@ -1,8 +1,9 @@
-# ------------------------------------------------------------
-# File: 01_rank_original.py
-# Purpose: Original matrix rank computation using NumPy.
+# -------------------------------------------------
+# File Name: 01_rank_original.py
+# Author: Florentino Báez
+# Date: 08_Matrices
 # Description: Basic example that computes rank of a matrix.
-# ------------------------------------------------------------
+# -------------------------------------------------
 
 import numpy as np
 

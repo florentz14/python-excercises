@@ -1,10 +1,9 @@
-"""
-#22 Serialize and Deserialize Binary Tree
-==========================================
-LeetCode 297. Encode tree to string, decode back.
-Uses preorder with "null" for None. Comma-separated.
-Time: O(n), Space: O(n).
-"""
+# -------------------------------------------------
+# File Name: 22_serialize_deserialize.py
+# Author: Florentino Báez
+# Date: 14_Trees
+# Description: LeetCode 297 - Serialize/deserialize binary tree to string.
+# -------------------------------------------------
 
 from common import TreeNode
 

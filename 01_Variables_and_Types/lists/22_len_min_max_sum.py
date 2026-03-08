@@ -1,4 +1,9 @@
-# len, min, max, sum
+# -------------------------------------------------
+# File Name: 22_len_min_max_sum.py
+# Author: Florentino Báez
+# Date: 01_Variables_and_Types
+# Description: Uses len(), min(), max(), and sum() built-in
+# -------------------------------------------------
 
 numbers = [1, 2, 3, 4, 5]
 

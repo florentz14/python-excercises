@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 264. Convert List of Lists to 2D (transpose to tuples of columns)
-# ---------------------------------------------------------------------------
-# Descripción: Convert List of Lists to 2D (transpose to tuples of columns)
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 40_list_of_lists_to_2d.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Convert List of Lists to 2D (transpose to tuples of columns)
+# -------------------------------------------------
 
 def rows_to_columns(matrix: list[list]) -> list[tuple]:
     # Se construye list/set/dict a partir del iterable (elimina duplicados en set/dict).

@@ -1,5 +1,9 @@
-# Archivo: 25_02_mejorado.py
-# Descripción: Versión optimizada y mejorada del resolver
+# -------------------------------------------------
+# File Name: 02_improved.py
+# Author: Florentino Báez
+# Date: 17_Equations
+# Description: Optimized and improved linear system solver.
+# -------------------------------------------------
 
 from datos_sistema import A, b
 from resolver_mejorado import resolver_sistema_mejorado

@@ -1,8 +1,9 @@
-# ------------------------------------------------------------
-# File: 07_count_characters.py
-# Purpose: Count character frequencies.
-# Description: Use Counter or dict to count occurrences.
-# ------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 07_count_characters.py
+# Author: Florentino Báez
+# Date: 01_Variables_and_Types
+# Description: Count character frequencies using Counter or dict.
+# -------------------------------------------------
 
 from collections import Counter
 

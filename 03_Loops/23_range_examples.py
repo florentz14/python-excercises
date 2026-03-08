@@ -1,10 +1,10 @@
-"""For loop: range() examples.
-Demonstrates range() with start, stop, and step parameters.
-"""
+# -------------------------------------------------
+# File Name: 23_range_examples.py
 # Author: Florentino Báez
+# Date: 03_Loops
+# Description: range() examples.
+# -------------------------------------------------
 
-
-# Range 4 to 7 (8 is excluded)
 for v in range(4, 8):
     print(v)
 

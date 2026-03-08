@@ -1,7 +1,7 @@
 # -------------------------------------------------
-# File Name: 51_auto_mpg_hist.py
+# File Name: 104_auto_mpg_hist.py
 # Author: Florentino Báez
-# Date: Matplotlib
+# Date: 10_Matplotlib
 # Description: Histograms of MPG distribution by cylinder count (1x3).
 # -------------------------------------------------
 

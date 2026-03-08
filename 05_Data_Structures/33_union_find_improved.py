@@ -1,14 +1,9 @@
 # -------------------------------------------------
-# File: 33_union_find_mejorado.py (Union-Find / Disjoint Set Union)
-# -------------------------------------------------
+# File Name: 33_union_find_improved.py
 # Author: Florentino Báez
-# Module: Data Structures - Advanced Structures
-#
-# Description:
-#   Union-Find with path compression and union by rank.
-#   Amortized O(α(n)) ≈ constant. Used for cycles, connected components.
+# Date: 05_Data_Structures
+# Description: Union-Find (Disjoint Set) with path compression and rank. O(α(n)) amortized.
 # -------------------------------------------------
-
 
 class UnionFind:
     """

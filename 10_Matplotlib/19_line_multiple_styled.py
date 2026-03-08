@@ -1,7 +1,7 @@
 # -------------------------------------------------
-# File Name: 04d_line_multiple_styled.py
+# File Name: 19_line_multiple_styled.py
 # Author: Florentino Báez
-# Date: Matplotlib
+# Date: 10_Matplotlib
 # Description: Multiple styled lines (sin, cos, sin*cos).
 # -------------------------------------------------
 

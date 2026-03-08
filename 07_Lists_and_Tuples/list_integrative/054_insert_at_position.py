@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 80. Insert Element at Specified Position
-# ---------------------------------------------------------------------------
-# Descripción: Insert Element at Specified Position
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 054_insert_at_position.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Insert Element at Specified Position
+# -------------------------------------------------
 
 def insert_at(lst: list, index: int, value) -> list:
     result = lst.copy()

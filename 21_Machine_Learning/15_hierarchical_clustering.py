@@ -1,21 +1,9 @@
-"""
-Machine Learning - Hierarchical Clustering
-=============================================
-Hierarchical clustering groups data into a tree of clusters (dendrogram).
-It does NOT require specifying the number of clusters in advance.
-
-Two approaches:
-1. Agglomerative (bottom-up): Start with each point as its own cluster,
-   merge the closest pairs until one cluster remains.
-2. Divisive (top-down): Start with one cluster, split until each point
-   is its own cluster.
-
-Linkage methods (how to measure distance between clusters):
-- Single:   min distance between any two points in different clusters
-- Complete: max distance between any two points in different clusters
-- Average:  average distance between all pairs of points
-- Ward:     minimizes the total within-cluster variance (most common)
-"""
+# -------------------------------------------------
+# File Name: 15_hierarchical_clustering.py
+# Author: Florentino Báez
+# Date: 21_Machine_Learning
+# Description: Hierarchical clustering with dendrogram.
+# -------------------------------------------------
 
 import numpy as np
 import matplotlib.pyplot as plt

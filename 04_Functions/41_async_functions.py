@@ -1,7 +1,8 @@
 # -------------------------------------------------
-# File: 41_async_functions.py
+# File Name: 41_async_functions.py
+# Author: Florentino Báez
+# Date: 04_Functions
 # Description: Async functions with aiohttp.
-#              Concurrent API requests (async/await).
 # -------------------------------------------------
 
 import asyncio

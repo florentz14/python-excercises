@@ -1,22 +1,9 @@
-"""
-Two Sum (NumPy) - Two approaches using NumPy
-============================================
-Topic: Operations (01_Variables_and_Types/operations)
-Description: NumPy is not ideal for Two Sum (dictionary or bruteforce are
-usually better), but it can be done for comparison purposes.
-
-Option A: NumPy + double loop - Same logic as bruteforce, array as np.ndarray.
-Option B: Matrix of sums - More "NumPy style", builds sums[i,j] = arr[i]+arr[j],
-          but uses more memory (O(n²) for the matrix).
-
-Input:  One line with space-separated numbers (the array).
-        A second line with the target value.
-Output: The two indices separated by space, or empty if no solution exists.
-
-Complexity:
-    - Option A: Time O(n²), Space O(n) for the numpy array
-    - Option B: Time O(n²), Space O(n²) for the sums matrix
-"""
+# -------------------------------------------------
+# File Name: 32_two_sum_numpy.py
+# Author: Florentino Báez
+# Date: 01_Variables_and_Types
+# Description: Two Sum using NumPy - double loop and sums matrix approaches.
+# -------------------------------------------------
 
 import numpy as np
 

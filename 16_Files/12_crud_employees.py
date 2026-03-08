@@ -1,8 +1,9 @@
-"""
-16_Files - Exercise 12: CRUD employees with files (JSON)
-=======================================================
-Create, list, edit, delete records and delete the file.
-"""
+# -------------------------------------------------
+# File Name: 12_crud_employees.py
+# Author: Florentino Báez
+# Date: 16_Files
+# Description: CRUD operations on employee data file. Create, read, update, delete.
+# -------------------------------------------------
 
 import json
 from pathlib import Path

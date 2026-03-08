@@ -1,7 +1,7 @@
 # -------------------------------------------------
-# File Name: 09b_bars_horizontal.py
+# File Name: 45_bars_horizontal.py
 # Author: Florentino Báez
-# Date: Matplotlib
+# Date: 10_Matplotlib
 # Description: Horizontal bar chart (barh).
 # -------------------------------------------------
 

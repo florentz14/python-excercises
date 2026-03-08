@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 225. Retrieve Nested Key Value from Dict/List by Selector List
-# ---------------------------------------------------------------------------
-# Descripción: Retrieve Nested Key Value from Dict/List by Selector List
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 107_retrieve_nested_key.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Retrieve Nested Key Value from Dict/List by Selector List
+# -------------------------------------------------
 
 def get_nested(obj, selector: list):
     for key in selector:

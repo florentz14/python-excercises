@@ -1,8 +1,9 @@
-"""
-15_Graphs - Cycle detection
-================================
-tiene_ciclo para grafos dirigidos y no dirigidos.
-"""
+# -------------------------------------------------
+# File Name: 09_cycle_detection.py
+# Author: Florentino Báez
+# Date: 15_Graphs
+# Description: 15_Graphs - Cycle detection ================================ tiene_ciclo para grafos dirigidos y no dirigidos.
+# -------------------------------------------------
 
 from adjacency_list import GrafoListaAdyacencia
 

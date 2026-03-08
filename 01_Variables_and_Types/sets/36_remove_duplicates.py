@@ -1,8 +1,8 @@
 # -------------------------------------------------
 # File Name: 36_remove_duplicates.py
-# Purpose: Convert list to set for uniqueness
+# Author: Florentino Báez
+# Date: 01_Variables_and_Types
 # Description: Use set() to remove duplicates from a list.
-#              Note: order is not preserved (sets are unordered).
 # -------------------------------------------------
 
 print("Remove Duplicates Using Sets")

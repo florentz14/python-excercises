@@ -1,16 +1,10 @@
-# ---------------------------------------------------------------------------
-# Lista Simple - 13: Filtrado con Bucle for
-# ---------------------------------------------------------------------------
-# Descripcion: Crear una nueva lista filtrando elementos de otra lista
-#              usando un bucle for tradicional con una condicion if.
-#              Es la forma clasica antes de aprender list comprehension.
-# Patron:      nueva_lista = []
-#              for x in lista:
-#                  if condicion:
-#                      nueva_lista.append(x)
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 13_filter_loop.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Crear una nueva lista filtrando elementos de otra lista
+# -------------------------------------------------
 
-# --- Filter fruits that contain the letter "a" ---
 fruits = ["apple", "banana", "cherry", "kiwi", "mango", "grape", "pear", "peach"]
 
 new_list = []

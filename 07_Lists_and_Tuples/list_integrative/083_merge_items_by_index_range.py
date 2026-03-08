@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 173. Merge List Items in Index Range (join strings from start to end index)
-# ---------------------------------------------------------------------------
-# Descripción: Merge List Items in Index Range (join strings from start to end index)
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 083_merge_items_by_index_range.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Merge List Items in Index Range (join strings from start to end index)
+# -------------------------------------------------
 
 def merge_range(lst: list[str], start: int, end: int) -> list:
     result = lst[:start] + [''.join(lst[start:end])] + lst[end:]

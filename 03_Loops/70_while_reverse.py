@@ -1,8 +1,9 @@
-"""While loop: Reverse a name/string.
-User enters a string; prints it reversed using a while loop.
-"""
+# -------------------------------------------------
+# File Name: 70_while_reverse.py
 # Author: Florentino Báez
-
+# Date: 03_Loops
+# Description: Reverse a name/string.
+# -------------------------------------------------
 
 name = input("Enter your name: ")
 

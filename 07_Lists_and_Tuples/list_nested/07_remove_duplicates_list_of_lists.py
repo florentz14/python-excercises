@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 69. Remove Duplicate Sublists (preserve order of first occurrence)
-# ---------------------------------------------------------------------------
-# Descripción: Remove Duplicate Sublists (preserve order of first occurrence)
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 07_remove_duplicates_list_of_lists.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Remove Duplicate Sublists (preserve order of first occurrence)
+# -------------------------------------------------
 
 def unique_sublists(lst: list[list]) -> list[list]:
     seen = set()

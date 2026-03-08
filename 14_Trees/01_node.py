@@ -1,10 +1,9 @@
-"""
-Árboles - Ejemplo 1: Nodo de árbol binario
-===========================================
-Topic: 14_Trees
-Descripción: Clase Nodo con valor, izquierdo y derecho.
-"""
-
+# -------------------------------------------------
+# File Name: 01_node.py
+# Author: Florentino Báez
+# Date: 14_Trees
+# Description: Binary tree node class with value, left, and right children.
+# -------------------------------------------------
 
 class Nodo:
     def __init__(self, valor, izquierdo=None, derecho=None):

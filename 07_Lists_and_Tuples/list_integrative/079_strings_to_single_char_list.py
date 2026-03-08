@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 169. Convert List of Strings and Chars to Single List of Characters
-# ---------------------------------------------------------------------------
-# Descripción: Convert List of Strings and Chars to Single List of Characters
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 079_strings_to_single_char_list.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Convert List of Strings and Chars to Single List of Characters
+# -------------------------------------------------
 
 def to_single_char_list(lst: list) -> list[str]:
     result = []

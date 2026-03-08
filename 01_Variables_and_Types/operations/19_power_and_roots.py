@@ -1,4 +1,9 @@
-# Power and Roots Calculations in Python
+# -------------------------------------------------
+# File Name: 19_power_and_roots.py
+# Author: Florentino Báez
+# Date: 01_Variables_and_Types
+# Description: Power and root calculations (square, cube, nth root).
+# -------------------------------------------------
 
 import math
 

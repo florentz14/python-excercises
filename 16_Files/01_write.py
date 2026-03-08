@@ -1,10 +1,10 @@
-"""
-16_Files - Exercise 01: Create and write to a file
-===================================================
-open() with mode "w" creates the file (or overwrites it) and writes.
-"""
+# -------------------------------------------------
+# File Name: 01_write.py
+# Author: Florentino Báez
+# Date: 16_Files
+# Description: Create and write to a file. open() with mode 'w' creates/overwrites. write() and writelines().
+# -------------------------------------------------
 
-# Create/overwrite file and write content
 filename = "example_01.txt"
 content = "Hello, this is the file content.\nSecond line.\n"
 

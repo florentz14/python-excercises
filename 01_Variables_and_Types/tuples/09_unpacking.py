@@ -1,11 +1,8 @@
 # -------------------------------------------------
 # File Name: 09_unpacking.py
 # Author: Florentino Báez
-# Date: Variables - Tuples
+# Date: 01_Variables_and_Types
 # Description: Tuple Unpacking.
-#              Assign each element of a tuple to individual
-#              variables in a single statement. The number of
-#              variables must match the number of elements.
 # -------------------------------------------------
 
 print("Example 9: Tuple unpacking")

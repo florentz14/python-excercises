@@ -1,7 +1,8 @@
 # -------------------------------------------------
-# File: 20_composition.py
+# File Name: 20_composition.py
+# Author: Florentino Báez
+# Date: 11_OOP
 # Description: Composition vs inheritance.
-#              Building objects from other objects.
 # -------------------------------------------------
 
 from typing import List

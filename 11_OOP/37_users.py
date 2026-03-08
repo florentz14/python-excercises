@@ -1,7 +1,10 @@
-# Ejemplo de Clases: Usuarios, Empleados, Vendedores y más
-# Este programa demuestra la herencia y polimorfismo en un sistema de usuarios
+# -------------------------------------------------
+# File Name: 37_users.py
+# Author: Florentino Báez
+# Date: 11_OOP
+# Description: User management system with inheritance and polymorphism.
+# -------------------------------------------------
 
-# Clase padre: Usuario
 class Usuario:
     """Clase base para todos los usuarios del sistema"""
 

@@ -1,7 +1,7 @@
 # -------------------------------------------------
-# File Name: 53_auto_bubble_chart.py
+# File Name: 106_auto_bubble_chart.py
 # Author: Florentino Báez
-# Date: Matplotlib
+# Date: 10_Matplotlib
 # Description: Bubble chart of displacement vs MPG (size=horsepower).
 # -------------------------------------------------
 

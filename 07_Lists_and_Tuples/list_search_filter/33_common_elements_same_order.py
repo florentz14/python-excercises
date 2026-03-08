@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 133. Check If Common Elements in Two Lists Appear in Same Order
-# ---------------------------------------------------------------------------
-# Descripción: Check If Common Elements in Two Lists Appear in Same Order
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 33_common_elements_same_order.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Check If Common Elements in Two Lists Appear in Same Order
+# -------------------------------------------------
 
 def common_same_order(a: list, b: list) -> bool:
     common = [x for x in a if x in b]

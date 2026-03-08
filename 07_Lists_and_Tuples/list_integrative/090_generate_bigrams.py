@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 184. Generate Bigrams from List of Strings (pairs of consecutive words)
-# ---------------------------------------------------------------------------
-# Descripción: Generate Bigrams from List of Strings (pairs of consecutive words)
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 090_generate_bigrams.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Generate Bigrams from List of Strings (pairs of consecutive words)
+# -------------------------------------------------
 
 def bigrams_from_sentences(sentences: list[str]) -> list[tuple[str, str]]:
     result = []

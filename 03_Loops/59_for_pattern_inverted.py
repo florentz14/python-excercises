@@ -1,8 +1,9 @@
-"""For loop: Inverted triangle pattern.
-Each row has decreasing number of columns.
-"""
+# -------------------------------------------------
+# File Name: 59_for_pattern_inverted.py
 # Author: Florentino Báez
-
+# Date: 03_Loops
+# Description: Inverted triangle pattern.
+# -------------------------------------------------
 
 print("Triángulo Invertido")
 print("=" * 30)

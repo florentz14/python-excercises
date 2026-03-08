@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 152. Merge Two Sorted Lists Using heapq
-# ---------------------------------------------------------------------------
-# Descripción: Merge Two Sorted Lists Using heapq
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 069_merge_sorted_heapq.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Merge Two Sorted Lists Using heapq
+# -------------------------------------------------
 
 import heapq
 

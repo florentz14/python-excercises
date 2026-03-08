@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 239. First Value That Satisfies Function
-# ---------------------------------------------------------------------------
-# Descripción: First Value That Satisfies Function
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 56_first_value_satisfying.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: First Value That Satisfies Function
+# -------------------------------------------------
 
 def first_value_where(lst: list, predicate):
     for x in lst:

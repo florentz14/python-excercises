@@ -1,4 +1,10 @@
-# Display welcome message
+# -------------------------------------------------
+# File Name: 15_hello_world_greet.py
+# Author: Florentino Báez
+# Date: 01_Variables_and_Types
+# Description: Basic print output, separators, and a simple
+# -------------------------------------------------
+
 print("Hello, World!")
 print("*" * 30)  # Print a decorative separator line
 print("This is a sample Python application.")

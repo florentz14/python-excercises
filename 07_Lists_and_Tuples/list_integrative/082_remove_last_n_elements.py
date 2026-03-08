@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 172. Remove Last N Elements from List
-# ---------------------------------------------------------------------------
-# Descripción: Remove Last N Elements from List
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 082_remove_last_n_elements.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Remove Last N Elements from List
+# -------------------------------------------------
 
 def remove_last_n(lst: list, n: int) -> list:
     # Se devuelve un valor u otro según la condición.

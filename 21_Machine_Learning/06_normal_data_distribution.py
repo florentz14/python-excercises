@@ -1,18 +1,9 @@
-"""
-Machine Learning - Normal Data Distribution
-=============================================
-The Normal (Gaussian) distribution is the most important distribution in ML.
-It forms a bell-shaped curve, symmetric around the mean.
-
-Key properties:
-- Mean, Median, and Mode are all at the center
-- Symmetric around the mean
-- Defined by two parameters: mean (μ) and standard deviation (σ)
-- 68-95-99.7 rule applies
-
-The formula (probability density function):
-  f(x) = (1 / (σ√(2π))) * e^(-(x-μ)²/(2σ²))
-"""
+# -------------------------------------------------
+# File Name: 06_normal_data_distribution.py
+# Author: Florentino Báez
+# Date: 21_Machine_Learning
+# Description: Normal (Gaussian) distribution in ML.
+# -------------------------------------------------
 
 import numpy as np
 import matplotlib.pyplot as plt

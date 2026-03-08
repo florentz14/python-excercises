@@ -1,26 +1,9 @@
-# ------------------------------------------------------------
-# File: 15_tuples_chapter_tutorial.py
-# Chapter: 11 - Tuples
-#
-# Purpose:
-#   Tutorial covering tuple basics: creation, indexing,
-#   immutability, conversion, unpacking, and list-of-tuples.
-#
-# Sections:
-#   1. Basic concepts
-#   2. Indexing and slicing
-#   3. Immutability and conversion (tuple <-> list)
-#   4. Packing and unpacking
-#   5. List of tuples (iterating, dict.items())
-#
-# Author: Florentino Baez (adapted)
-# ------------------------------------------------------------
-
-
-# =============================================================================
-# Section 1: Tuples - Basic Concepts
-# Tuples are ordered, immutable sequences. Elements cannot be modified.
-# =============================================================================
+# -------------------------------------------------
+# File Name: 15_tuples_chapter_tutorial.py
+# Author: Florentino Báez
+# Date: 01_Variables_and_Types
+# Description: Tutorial covering tuple basics: creation, indexing,
+# -------------------------------------------------
 
 def section1_basics():
     """Create a tuple, show length, and iterate."""

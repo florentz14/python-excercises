@@ -1,8 +1,9 @@
-"""While loop: Even numbers 0-20.
-Prints even numbers by incrementing counter by 2.
-"""
+# -------------------------------------------------
+# File Name: 07_while_count_even.py
 # Author: Florentino Báez
-
+# Date: 03_Loops
+# Description: Even numbers 0-20.
+# -------------------------------------------------
 
 count = 0
 

@@ -1,13 +1,10 @@
-"""
-Arithmetic operators in Python
-==============================
-Topic: Operations (01_Variables_and_Types/operations)
-Description: +, -, *, /, //, %, ** - Basic operations with numbers.
+# -------------------------------------------------
+# File Name: 27_aritmeticos.py
+# Author: Florentino Báez
+# Date: 01_Variables_and_Types
+# Description: Spanish-focused demo of basic arithmetic operators
+# -------------------------------------------------
 
-Complexity: O(1) for all operations (atomic operations).
-"""
-
-# Basic arithmetic operators
 a = 15
 b = 4
 

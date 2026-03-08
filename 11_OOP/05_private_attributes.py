@@ -1,9 +1,9 @@
 # -------------------------------------------------
-# File: 05_private_attributes.py
+# File Name: 05_private_attributes.py
+# Author: Florentino Báez
+# Date: 11_OOP
 # Description: Private attributes in Python.
-#              Name mangling, convention vs enforcement.
 # -------------------------------------------------
-
 
 class BankAccount:
     """Bank account with private attributes."""

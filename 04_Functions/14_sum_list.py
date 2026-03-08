@@ -1,7 +1,8 @@
 # -------------------------------------------------
-# File: 14_sum_list.py
+# File Name: 14_sum_list.py
+# Author: Florentino Báez
+# Date: 04_Functions
 # Description: Sum all elements in a list.
-#              Function with list parameter and loop.
 # -------------------------------------------------
 
 def sum_list(numbers: list[int | float]) -> None:

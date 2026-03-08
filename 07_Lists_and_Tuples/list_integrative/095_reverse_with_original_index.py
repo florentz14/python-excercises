@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 195. Traverse List in Reverse with Original Index
-# ---------------------------------------------------------------------------
-# Descripción: Traverse List in Reverse with Original Index
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 095_reverse_with_original_index.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Traverse List in Reverse with Original Index
+# -------------------------------------------------
 
 def reverse_with_index(lst: list) -> None:
     for i in range(len(lst) - 1, -1, -1):

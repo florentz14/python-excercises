@@ -1,14 +1,9 @@
-# ---------------------------------------------------------------------------
-# Lista Simple - 22: Metodo index()
-# ---------------------------------------------------------------------------
-# Descripcion: El metodo index() retorna el indice de la PRIMERA ocurrencia
-#              de un valor. Si el valor no se encuentra, lanza ValueError.
-#              Opcionalmente acepta inicio y fin para limitar la busqueda.
-# Sintaxis:    lista.index(valor)
-#              lista.index(valor, inicio)
-#              lista.index(valor, inicio, fin)
-# Complejidad: O(n)
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 22_index.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: El metodo index() retorna el indice de la PRIMERA ocurrencia
+# -------------------------------------------------
 
 fruits = ["apple", "banana", "cherry", "pineapple", "banana", "grape", "mango"]
 

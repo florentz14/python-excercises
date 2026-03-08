@@ -1,14 +1,10 @@
 # -------------------------------------------------
 # File Name: 11_copy.py
 # Author: Florentino Báez
-# Date: Variables - Dictionaries
-# Description: Copy a Dictionary.
-#              copy() creates a shallow copy, so changes to
-#              the copy do not affect the original (for simple
-#              values). Nested mutable objects are still shared.
+# Date: 01_Variables_and_Types
+# Description: Shallow copy with copy(). Simple values isolated;
 # -------------------------------------------------
 
-# Example 11: Copy dictionary
 print("Example 11: Copy dictionary")
 print("-" * 40)
 

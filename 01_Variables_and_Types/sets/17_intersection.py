@@ -1,11 +1,8 @@
 # -------------------------------------------------
 # File Name: 17_intersection.py
 # Author: Florentino Báez
-# Date: Variables - Sets
+# Date: 01_Variables_and_Types
 # Description: Intersection of Sets.
-#              Computes P ∩ Q using the & operator or
-#              intersection() method. Checks if the result is
-#              empty (disjoint) and explains the concept.
 # -------------------------------------------------
 
 """

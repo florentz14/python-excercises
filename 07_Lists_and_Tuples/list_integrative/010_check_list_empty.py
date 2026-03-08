@@ -1,10 +1,9 @@
-# ---------------------------------------------------------------------------
-# 8. Check if List is Empty
-# ---------------------------------------------------------------------------
-# Descripción: Comprueba si una lista no tiene elementos.
-# Entrada: Una lista.
-# Salida: True si está vacía, False en caso contrario.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 010_check_list_empty.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Comprueba si una lista no tiene elementos.
+# -------------------------------------------------
 
 def is_empty(lst: list) -> bool:
     # len(lst) da el número de elementos; 0 significa vacía

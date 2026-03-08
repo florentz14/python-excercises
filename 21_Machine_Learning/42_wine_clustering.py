@@ -1,11 +1,9 @@
-"""
-ML Mini Course - Step 4: Clustering with real dataset
-======================================================
-Cluster wines (red/white) without using the label.
-Dataset: wine_quality.csv
-
-Author: Florentino Báez
-"""
+# -------------------------------------------------
+# File Name: 42_wine_clustering.py
+# Author: Florentino Báez
+# Date: 21_Machine_Learning
+# Description: Wine clustering without labels.
+# -------------------------------------------------
 
 import os
 import pandas as pd

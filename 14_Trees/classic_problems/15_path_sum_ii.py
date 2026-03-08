@@ -1,9 +1,9 @@
-"""
-#15 Path Sum II - LeetCode 113
-================================
-Find all root-to-leaf paths with target sum.
-Pattern: DFS backtracking.
-"""
+# -------------------------------------------------
+# File Name: 15_path_sum_ii.py
+# Author: Florentino Báez
+# Date: 14_Trees
+# Description: LeetCode 113 - Find all root-to-leaf paths with target sum.
+# -------------------------------------------------
 
 from common import TreeNode
 

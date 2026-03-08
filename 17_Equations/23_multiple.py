@@ -1,5 +1,9 @@
-# Archivo: 31_07_multiples.py
-# Descripción: Integrales dobles (y triples)
+# -------------------------------------------------
+# File Name: 23_multiple.py
+# Author: Florentino Báez
+# Date: 17_Equations
+# Description: Double and triple integrals.
+# -------------------------------------------------
 
 import scipy.integrate as spi
 

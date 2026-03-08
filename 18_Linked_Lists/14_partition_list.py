@@ -1,7 +1,8 @@
 # -------------------------------------------------
-# File: 14_partition_list.py
+# File Name: 14_partition_list.py
+# Author: Florentino Báez
+# Date: 18_Linked_Lists
 # Description: Partition linked list around a value.
-#              All nodes < pivot come before nodes >= pivot.
 # -------------------------------------------------
 
 from typing import Optional, Any

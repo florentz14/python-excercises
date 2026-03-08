@@ -1,11 +1,9 @@
-"""
-13_Queues - Monotonic Queue
-============================
-Deque that maintains monotonic order (increasing or decreasing).
-Used for: Sliding Window Maximum, Sliding Window Minimum.
-
-Key idea: before adding new element, remove elements that break monotonicity.
-"""
+# -------------------------------------------------
+# File Name: 11_monotonic_queue.py
+# Author: Florentino Báez
+# Date: 13_Queues
+# Description: Monotonic queue. Deque for sliding window min/max.
+# -------------------------------------------------
 
 from collections import deque
 

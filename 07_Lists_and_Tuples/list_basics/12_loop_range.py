@@ -1,12 +1,9 @@
-# ---------------------------------------------------------------------------
-# Lista Simple - 12: Recorrer con range() e Indices
-# ---------------------------------------------------------------------------
-# Descripcion: Recorrer una lista usando range(len(lista)) permite acceder
-#              a los elementos por su indice numerico. Es util cuando se
-#              necesita el indice para modificar la lista o comparar
-#              elementos adyacentes.
-# Sintaxis:    for i in range(len(lista)):
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 12_loop_range.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Recorrer una lista usando range(len(lista)) permite acceder
+# -------------------------------------------------
 
 fruits = ["apple", "banana", "cherry", "pineapple", "grape"]
 

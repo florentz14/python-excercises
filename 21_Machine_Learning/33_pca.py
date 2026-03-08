@@ -1,11 +1,9 @@
-"""
-Principal Component Analysis (PCA) - Dimensionality Reduction
-=============================================================
-Reduces many columns while preserving as much information as possible.
-Useful before visualization or to speed up models.
-
-Author: Florentino Báez
-"""
+# -------------------------------------------------
+# File Name: 33_pca.py
+# Author: Florentino Báez
+# Date: 21_Machine_Learning
+# Description: PCA for dimensionality reduction.
+# -------------------------------------------------
 
 from sklearn.decomposition import PCA
 

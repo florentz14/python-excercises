@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 130. Count Same Pair in Three Lists (same index, same value in all three)
-# ---------------------------------------------------------------------------
-# Descripción: Count Same Pair in Three Lists (same index, same value in all three)
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 30_count_same_pair_three_lists.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Count Same Pair in Three Lists (same index, same value in all three)
+# -------------------------------------------------
 
 def count_same_pair_three(a: list, b: list, c: list) -> int:
     # Se devuelve la suma de todos los elementos.

@@ -1,8 +1,9 @@
-# ------------------------------------------------------------
-# File: 11_scalar_product.py
-# Purpose: Multiply matrix by scalar.
+# -------------------------------------------------
+# File Name: 11_scalar_product.py
+# Author: Florentino Báez
+# Date: 08_Matrices
 # Description: k*A: each element multiplied by k.
-# ------------------------------------------------------------
+# -------------------------------------------------
 
 A = [[1, 2], [3, 4]]
 k = 3

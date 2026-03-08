@@ -1,8 +1,9 @@
-"""For loop: Average per row in matrix.
-Computes sum and average for each row of a 2D matrix.
-"""
+# -------------------------------------------------
+# File Name: 56_for_avg_per_row.py
 # Author: Florentino Báez
-
+# Date: 03_Loops
+# Description: Average per row in matrix.
+# -------------------------------------------------
 
 print("Promedios por Fila en Matriz 2D")
 print("=" * 40)

@@ -1,7 +1,8 @@
 # -------------------------------------------------
-# File: 13_multiplication_table.py
+# File Name: 13_multiplication_table.py
+# Author: Florentino Báez
+# Date: 04_Functions
 # Description: Display multiplication table for a number.
-#              Function with loop (1 to 5).
 # -------------------------------------------------
 
 def multiplication_table(num: int) -> None:

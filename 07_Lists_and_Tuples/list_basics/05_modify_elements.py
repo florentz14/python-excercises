@@ -1,14 +1,10 @@
-# ---------------------------------------------------------------------------
-# Lista Simple - 05: Modificar Elementos
-# ---------------------------------------------------------------------------
-# Descripcion: Las listas son mutables, lo que permite cambiar elementos
-#              individuales por indice o reemplazar secciones completas
-#              usando slicing.
-# Sintaxis:    lista[indice] = nuevo_valor
-#              lista[inicio:fin] = [nuevos_valores]
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 05_modify_elements.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Las listas son mutables, lo que permite cambiar elementos
+# -------------------------------------------------
 
-# --- Cambiar un solo elemento por indice ---
 fruits = ["apple", "banana", "cherry", "pineapple", "grape", "blueberry", "mango"]
 print("Original:", fruits)
 

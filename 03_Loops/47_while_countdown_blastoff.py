@@ -1,8 +1,9 @@
-"""While loop: Countdown to blastoff.
-Counts from 10 down to 0, then prints Blastoff!
-"""
+# -------------------------------------------------
+# File Name: 47_while_countdown_blastoff.py
 # Author: Florentino Báez
-
+# Date: 03_Loops
+# Description: Countdown to blastoff.
+# -------------------------------------------------
 
 count = 10
 

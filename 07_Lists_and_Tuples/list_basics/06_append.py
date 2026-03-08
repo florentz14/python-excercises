@@ -1,11 +1,9 @@
-# ---------------------------------------------------------------------------
-# Lista Simple - 06: Metodo append()
-# ---------------------------------------------------------------------------
-# Descripcion: El metodo append() agrega UN solo elemento al FINAL de la
-#              lista. Modifica la lista original (in-place) y retorna None.
-# Sintaxis:    lista.append(elemento)
-# Complejidad: O(1) - tiempo constante
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 06_append.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Demonstrates append.
+# -------------------------------------------------
 
 fruits = ["apple", "banana", "cherry"]
 print("Original:", fruits)

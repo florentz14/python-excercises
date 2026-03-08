@@ -1,8 +1,9 @@
-"""For loop: Coordinate pattern.
-Prints [row,col] for each cell in grid.
-"""
+# -------------------------------------------------
+# File Name: 63_for_pattern_coords.py
 # Author: Florentino Báez
-
+# Date: 03_Loops
+# Description: Coordinate pattern.
+# -------------------------------------------------
 
 print("Tabla de Posiciones (Coordenadas)")
 print("=" * 40)

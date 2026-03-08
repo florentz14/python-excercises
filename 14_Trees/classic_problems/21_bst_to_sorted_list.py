@@ -1,9 +1,9 @@
-"""
-#21 Convert BST to Sorted List (Inorder)
-=========================================
-BST inorder traversal yields sorted order.
-Time: O(n), Space: O(n) for result, O(h) recursion.
-"""
+# -------------------------------------------------
+# File Name: 21_bst_to_sorted_list.py
+# Author: Florentino Báez
+# Date: 14_Trees
+# Description: Convert BST to sorted list via inorder traversal.
+# -------------------------------------------------
 
 from common import TreeNode
 

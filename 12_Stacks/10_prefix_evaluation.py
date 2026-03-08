@@ -1,10 +1,9 @@
-"""
-12_Stacks - Prefix Expression Evaluation
-=========================================
-Evaluate prefix (Polish) notation. Scan right-to-left, push operands, pop on operator.
-Example: * + 2 3 5 -> (* (+ 2 3) 5) = 25
-"""
-
+# -------------------------------------------------
+# File Name: 10_prefix_evaluation.py
+# Author: Florentino Báez
+# Date: 12_Stacks
+# Description: Prefix expression evaluation. Stack or recursive evaluation.
+# -------------------------------------------------
 
 def eval_prefix(tokens: list[str]) -> float:
     """

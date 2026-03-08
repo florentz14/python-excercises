@@ -1,7 +1,8 @@
 # -------------------------------------------------
-# File: 27_library.py
+# File Name: 27_library.py
+# Author: Florentino Báez
+# Date: 11_OOP
 # Description: Library management system - comprehensive application.
-#              All OOP concepts combined in a real-world system.
 # -------------------------------------------------
 
 from typing import List, Dict, Optional, Set

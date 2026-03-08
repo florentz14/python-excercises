@@ -1,6 +1,10 @@
-# Swap Variables in Python
+# -------------------------------------------------
+# File Name: 12_swap_variables.py
+# Author: Florentino Báez
+# Date: 01_Variables_and_Types
+# Description: Compares swapping with a temp variable, tuple unpacking,
+# -------------------------------------------------
 
-# Method 1: Using a temporary variable
 def swap_with_temp(a, b):
     print(f"Before swap: a = {a}, b = {b}")
     temp = a

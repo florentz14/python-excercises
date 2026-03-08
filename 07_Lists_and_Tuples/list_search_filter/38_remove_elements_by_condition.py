@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 160. Remove First n Elements Satisfying Condition (e.g. first 4 even numbers)
-# ---------------------------------------------------------------------------
-# Descripción: Remove First n Elements Satisfying Condition (e.g. first 4 even num...
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 38_remove_elements_by_condition.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Remove First n Elements Satisfying Condition (e.g. first 4 even num...
+# -------------------------------------------------
 
 def remove_first_n_matching(lst: list, n: int, condition) -> list:
     result = []

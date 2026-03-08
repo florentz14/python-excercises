@@ -1,2 +1,6 @@
-# 14_Trees - Classic Tree Problems (LeetCode style)
-# 25 problems for Google, Amazon, Meta, Microsoft interviews
+# -------------------------------------------------
+# File Name: __init__.py
+# Author: Florentino Báez
+# Date: 14_Trees
+# Description: Classic tree problems (LeetCode style) for interviews.
+# -------------------------------------------------

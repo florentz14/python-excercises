@@ -1,17 +1,9 @@
 # -------------------------------------------------
-# File: 09_z_algorithm.py (Z-Algorithm for Pattern Search)
-# -------------------------------------------------
+# File Name: 09_z_algorithm.py
 # Author: Florentino Báez
-# Module: Data Structures - String Algorithms
-#
-# Description:
-#   Z-Algorithm: Z[i] = length of longest prefix of string matching
-#   the substring starting at i. For pattern search: concatenate
-#   pattern + "$" + text; positions where Z[i] = len(pattern) are matches.
-#
-# Complexity: O(n + m) time and space.
+# Date: 05_Data_Structures
+# Description: Z-Algorithm for pattern search. Z[i] = longest prefix matching substring at i. Concatenate pattern+$+text; matches where Z[i]=len(pattern). O(n+m).
 # -------------------------------------------------
-
 
 def build_z_array(s):
     """

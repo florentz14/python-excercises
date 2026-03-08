@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 84. Round Numbers, Min, Max, Multiply by 5, Unique Ascending
-# ---------------------------------------------------------------------------
-# Descripción: Round Numbers, Min, Max, Multiply by 5, Unique Ascending
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 055_round_min_max_multiply5.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Round Numbers, Min, Max, Multiply by 5, Unique Ascending
+# -------------------------------------------------
 
 def process_round_min_max(lst: list[float]) -> list[int]:
     rounded = [round(x) for x in lst]

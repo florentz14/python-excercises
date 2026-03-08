@@ -1,53 +1,52 @@
-"""
-Strings (cadenas de texto) en Python
-=====================================
-Topic: Variables and Types (01_Variables_and_Types)
-Descripción: Crear strings, comillas simples/dobles, concatenación,
-indexación, slicing, métodos comunes (upper, lower, strip, split, replace).
-"""
-# Crear strings con comillas simples o dobles
-nombre = "Python"
-mensaje = 'Hola, mundo!'
-print(nombre)
-print(mensaje)
+# -------------------------------------------------
+# File Name: 03_strings.py
+# Author: Florentino Báez
+# Date: 01_Variables_and_Types
+# Description: Strings with single/double quotes, concatenation,
+# -------------------------------------------------
 
-# Strings multilínea con triple comilla
-parrafo = """Este es un texto
-que ocupa varias líneas."""
-print(parrafo)
+name = "Python"
+message = "Hello, world!"
+print(name)
+print(message)
 
-# Concatenación con + y repetición con *
-saludo = "Hola " + nombre
-print(saludo)
+# Multiline strings with triple quotes
+paragraph = """This is a text
+that spans multiple lines."""
+print(paragraph)
+
+# Concatenation with + and repetition with *
+greeting = "Hello " + name
+print(greeting)
 print("=" * 20)
 
-# Acceso por índice (el primero es 0)
-print("Primer carácter:", nombre[0])
-print("Último carácter:", nombre[-1])
+# Access by index (first is 0)
+print("First character:", name[0])
+print("Last character:", name[-1])
 
-# Slicing [inicio:fin:paso]
-print("Primeros 3:", nombre[:3])
-print("Últimos 2:", nombre[-2:])
+# Slicing [start:end:step]
+print("First 3:", name[:3])
+print("Last 2:", name[-2:])
 
-# Métodos comunes
-texto = "  Python es genial  "
-print("upper():", texto.upper())
-print("lower():", texto.lower())
-print("strip():", texto.strip())
-print("lstrip():", texto.lstrip())
-print("rstrip():", texto.rstrip())
-print("find():", texto.find("es"))
-print("count():", texto.count("e"))
-print("startswith():", texto.startswith("Python"))
-print("endswith():", texto.endswith("Python"))
-print("isalpha():", texto.isalpha())
-print("isdigit():", texto.isdigit())
-print("isspace():", texto.isspace())
-print("isalnum():", texto.isalnum())
-print("isupper():", texto.isupper())
-print("islower():", texto.islower())
-print("replace():", texto.replace("genial", "excelente"))
-print("split():", "uno,dos,tres".split(","))
+# Common methods
+text = "  Python is great  "
+print("upper():", text.upper())
+print("lower():", text.lower())
+print("strip():", text.strip())
+print("lstrip():", text.lstrip())
+print("rstrip():", text.rstrip())
+print("find():", text.find("is"))
+print("count():", text.count("e"))
+print("startswith():", text.startswith("Python"))
+print("endswith():", text.endswith("Python"))
+print("isalpha():", text.isalpha())
+print("isdigit():", text.isdigit())
+print("isspace():", text.isspace())
+print("isalnum():", text.isalnum())
+print("isupper():", text.isupper())
+print("islower():", text.islower())
+print("replace():", text.replace("great", "excellent"))
+print("split():", "one,two,three".split(","))
 
-# Longitud con len()
-print("Longitud de nombre:", len(nombre))
+# Length with len()
+print("Length of name:", len(name))

@@ -1,7 +1,7 @@
 # -------------------------------------------------
-# File Name: 05c_labels_title_position.py
+# File Name: 23_labels_title_position.py
 # Author: Florentino Báez
-# Date: Matplotlib
+# Date: 10_Matplotlib
 # Description: Title alignment: left, center, right (3 subplots).
 # -------------------------------------------------
 

@@ -1,11 +1,8 @@
 # -------------------------------------------------
 # File Name: 14_notation_and_elements.py
 # Author: Florentino Báez
-# Date: Variables - Sets
+# Date: 01_Variables_and_Types
 # Description: Set Notation and Elements.
-#              Demonstrates set membership testing (in / not in)
-#              and subset checking with issubset(). Verifies
-#              whether specific values belong to a defined set.
 # -------------------------------------------------
 
 """

@@ -1,11 +1,8 @@
 # -------------------------------------------------
 # File Name: 07_comprehension.py
 # Author: Florentino Báez
-# Date: Variables - Lists
+# Date: 01_Variables_and_Types
 # Description: List Comprehension.
-#              Create lists in one line with the syntax
-#              [expr for item in iterable if condition].
-#              More concise and often faster than a for loop.
 # -------------------------------------------------
 
 print("Example 7: List comprehension")

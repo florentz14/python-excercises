@@ -1,23 +1,9 @@
-"""
-Machine Learning - Scale (Feature Scaling)
-============================================
-Feature scaling transforms data to a common range so that all features
-contribute equally to the model. Without scaling, features with larger
-values can dominate the model.
-
-Common methods:
-1. Standardization (Z-score): (x - mean) / std -> mean=0, std=1
-2. Min-Max Scaling: (x - min) / (max - min) -> range [0, 1]
-3. Robust Scaling: Uses median and IQR (resistant to outliers)
-
-When to scale:
-- Distance-based models (KNN, SVM, K-means)
-- Gradient-based models (Neural Networks, Logistic Regression)
-- When features have very different ranges
-
-When NOT to scale:
-- Tree-based models (Decision Trees, Random Forests) - scale-invariant
-"""
+# -------------------------------------------------
+# File Name: 11_scale.py
+# Author: Florentino Báez
+# Date: 21_Machine_Learning
+# Description: Feature scaling: standardization, MinMax, Robust.
+# -------------------------------------------------
 
 import numpy as np
 import pandas as pd

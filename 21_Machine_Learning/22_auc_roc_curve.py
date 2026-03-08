@@ -1,23 +1,9 @@
-"""
-Machine Learning - AUC-ROC Curve
-==================================
-The ROC (Receiver Operating Characteristic) curve evaluates
-binary classification models at ALL possible thresholds.
-
-Key concepts:
-- TPR (True Positive Rate / Recall / Sensitivity) = TP / (TP + FN)
-- FPR (False Positive Rate / 1-Specificity) = FP / (FP + TN)
-- ROC Curve: plots TPR vs FPR at different thresholds
-- AUC (Area Under the Curve): single number summary
-  - AUC = 1.0: Perfect classifier
-  - AUC = 0.5: Random classifier (no skill)
-  - AUC < 0.5: Worse than random
-
-Why use AUC-ROC?
-- Works well with imbalanced datasets
-- Threshold-independent evaluation
-- Compares models regardless of classification threshold
-"""
+# -------------------------------------------------
+# File Name: 22_auc_roc_curve.py
+# Author: Florentino Báez
+# Date: 21_Machine_Learning
+# Description: AUC-ROC curve for binary classification evaluation.
+# -------------------------------------------------
 
 import numpy as np
 import matplotlib.pyplot as plt

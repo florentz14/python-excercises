@@ -1,7 +1,8 @@
 # -------------------------------------------------
-# File: 24_shape.py
+# File Name: 24_shape.py
+# Author: Florentino Báez
+# Date: 11_OOP
 # Description: Shape hierarchy - practical application.
-#              Inheritance, polymorphism, abstract classes.
 # -------------------------------------------------
 
 from abc import ABC, abstractmethod

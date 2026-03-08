@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 83. Round Every Number, Print Total Sum * Length
-# ---------------------------------------------------------------------------
-# Descripción: Round Every Number, Print Total Sum * Length
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 10_round_and_sum_times_length.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Round Every Number, Print Total Sum * Length
+# -------------------------------------------------
 
 def round_sum_times_length(lst: list[float]) -> int | float:
     rounded = [round(x) for x in lst]

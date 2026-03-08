@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 154. Join Two Lists of Lists Element-Wise (concatenate corresponding sublists)
-# ---------------------------------------------------------------------------
-# Descripción: Join Two Lists of Lists Element-Wise (concatenate corresponding sub...
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 070_join_lists_element_wise.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Join Two Lists of Lists Element-Wise (concatenate corresponding sub...
+# -------------------------------------------------
 
 def join_lists_element_wise(a: list[list], b: list[list]) -> list[list]:
     # Lista por comprensión: se construye la lista a partir del iterable.

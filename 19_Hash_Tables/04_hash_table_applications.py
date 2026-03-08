@@ -1,13 +1,9 @@
 # -------------------------------------------------
-# File: 04_hash_table_applications.py
+# File Name: 04_hash_table_applications.py
+# Author: Florentino Báez
+# Date: 19_Hash_Tables
 # Description: Hash Table practical applications.
-#              Real-world use cases.
 # -------------------------------------------------
-
-
-# ================================================
-# 1. WORD FREQUENCY COUNTER
-# ================================================
 
 def count_word_frequency(text):
     """Count frequency of each word using hash table."""

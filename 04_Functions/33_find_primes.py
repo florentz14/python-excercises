@@ -1,7 +1,8 @@
 # -------------------------------------------------
-# File: 33_find_primes.py
+# File Name: 33_find_primes.py
+# Author: Florentino Báez
+# Date: 04_Functions
 # Description: Find prime numbers in a range.
-#              Prime number validation algorithm.
 # -------------------------------------------------
 
 def find_primes(start, end):

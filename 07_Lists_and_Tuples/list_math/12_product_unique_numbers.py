@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 125. Product of Unique Numbers in List
-# ---------------------------------------------------------------------------
-# Descripción: Product of Unique Numbers in List
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 12_product_unique_numbers.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Product of Unique Numbers in List
+# -------------------------------------------------
 
 def product_unique(lst: list[int | float]) -> int | float:
     result = 1

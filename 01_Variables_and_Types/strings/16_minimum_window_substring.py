@@ -1,8 +1,9 @@
-﻿# ------------------------------------------------------------
-# File: 16_minimum_window_substring.py
-# Purpose: Find minimum window substring containing all chars of pattern.
-# Description: Sliding window. Expand right until valid, shrink left. O(n).
-# ------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 16_minimum_window_substring.py
+# Author: Florentino Báez
+# Date: 01_Variables_and_Types
+# Description: Minimum window substring containing all chars of pattern.
+# -------------------------------------------------
 
 from collections import Counter
 

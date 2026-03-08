@@ -1,11 +1,8 @@
 # -------------------------------------------------
 # File Name: 19_complement.py
 # Author: Florentino Báez
-# Date: Variables - Sets
+# Date: 01_Variables_and_Types
 # Description: Complement of Sets.
-#              Computes A' = U - A (complement relative to a
-#              universal set). Verifies the Law of Double
-#              Complement: (A')' = A, and A ∪ A' = U.
 # -------------------------------------------------
 
 """

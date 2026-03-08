@@ -1,11 +1,8 @@
 # -------------------------------------------------
 # File Name: 10_single_element.py
 # Author: Florentino Báez
-# Date: Variables - Tuples
+# Date: 01_Variables_and_Types
 # Description: Single-Element Tuple.
-#              A trailing comma is required to create a
-#              one-element tuple: (42,). Without the comma,
-#              (42) is just an integer in parentheses.
 # -------------------------------------------------
 
 print("Example 10: Single element tuple")

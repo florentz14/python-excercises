@@ -1,7 +1,7 @@
 # -------------------------------------------------
-# File Name: 11b_pie_percentages.py
+# File Name: 59_pie_percentages.py
 # Author: Florentino Báez
-# Date: Matplotlib
+# Date: 10_Matplotlib
 # Description: Pie with autopct percentages.
 # -------------------------------------------------
 

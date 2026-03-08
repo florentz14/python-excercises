@@ -1,11 +1,8 @@
 # -------------------------------------------------
 # File Name: 12_mixed_types.py
 # Author: Florentino Báez
-# Date: Variables - Tuples
+# Date: 01_Variables_and_Types
 # Description: Tuple with Mixed Data Types.
-#              A single tuple can hold int, str, float,
-#              bool, and None. Use enumerate() to loop
-#              with both index and value.
 # -------------------------------------------------
 
 print("Example 12: Tuple with mixed data types")

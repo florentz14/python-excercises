@@ -1,8 +1,9 @@
-"""For loop: Find max in 2D matrix.
-Finds maximum value and its position.
-"""
+# -------------------------------------------------
+# File Name: 64_for_max_matrix.py
 # Author: Florentino Báez
-
+# Date: 03_Loops
+# Description: Find max in 2D matrix.
+# -------------------------------------------------
 
 print("Encontrar Máximo en Matriz 2D")
 print("=" * 40)

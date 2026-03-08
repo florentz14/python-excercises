@@ -1,12 +1,8 @@
 # -------------------------------------------------
 # File Name: 11_immutability.py
 # Author: Florentino Báez
-# Date: Variables - Tuples
+# Date: 01_Variables_and_Types
 # Description: Tuple Immutability.
-#              Tuples cannot be modified after creation.
-#              Attempting to assign to an index raises
-#              TypeError. This immutability makes tuples
-#              hashable (usable as dict keys or set elements).
 # -------------------------------------------------
 
 print("Example 11: Tuple immutability")

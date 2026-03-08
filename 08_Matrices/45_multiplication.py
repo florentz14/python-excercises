@@ -1,8 +1,9 @@
-# ------------------------------------------------------------
-# File: 33_numpy_multiplication.py
-# Purpose: Matrix multiplication and matrix × vector.
+# -------------------------------------------------
+# File Name: 45_multiplication.py
+# Author: Florentino Báez
+# Date: 08_Matrices
 # Description: A @ B, np.dot; matrix times column vector.
-# ------------------------------------------------------------
+# -------------------------------------------------
 
 import numpy as np
 

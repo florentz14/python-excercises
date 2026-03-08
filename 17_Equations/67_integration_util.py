@@ -1,5 +1,9 @@
-# Archivo: integracion_util.py
-# Descripción: Funciones compartidas para integración numérica
+# -------------------------------------------------
+# File Name: 67_integration_util.py
+# Author: Florentino Báez
+# Date: 17_Equations
+# Description: Shared functions for numerical integration.
+# -------------------------------------------------
 
 import scipy.integrate as spi
 

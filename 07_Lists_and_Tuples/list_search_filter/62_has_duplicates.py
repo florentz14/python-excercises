@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 271. Check If List Has Duplicate Values
-# ---------------------------------------------------------------------------
-# Descripción: Check If List Has Duplicate Values
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 62_has_duplicates.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Check If List Has Duplicate Values
+# -------------------------------------------------
 
 def has_duplicates(lst: list) -> bool:
     # Se devuelve la cantidad de elementos.

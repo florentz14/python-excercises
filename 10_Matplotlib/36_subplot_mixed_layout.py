@@ -1,7 +1,7 @@
 # -------------------------------------------------
-# File Name: 07d_subplot_mixed_layout.py
+# File Name: 36_subplot_mixed_layout.py
 # Author: Florentino Báez
-# Date: Matplotlib
+# Date: 10_Matplotlib
 # Description: Mixed layout: big left + two stacked right.
 # -------------------------------------------------
 

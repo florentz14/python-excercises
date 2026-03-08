@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 147. Randomly Interleave Two Lists
-# ---------------------------------------------------------------------------
-# Descripción: Randomly Interleave Two Lists
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 067_randomly_interleave.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Randomly Interleave Two Lists
+# -------------------------------------------------
 
 import random
 

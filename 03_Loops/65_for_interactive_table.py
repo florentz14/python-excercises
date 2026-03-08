@@ -1,8 +1,9 @@
-"""For loop: Interactive multiplication table.
-User chooses which table (1-12) to display; validates input.
-"""
+# -------------------------------------------------
+# File Name: 65_for_interactive_table.py
 # Author: Florentino Báez
-
+# Date: 03_Loops
+# Description: Interactive multiplication table.
+# -------------------------------------------------
 
 print("=" * 50)
 print("TABLA DE MULTIPLICACIÓN INTERACTIVA")

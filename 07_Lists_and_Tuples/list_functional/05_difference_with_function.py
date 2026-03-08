@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 222. Difference Between Lists After Applying Function to Each Element
-# ---------------------------------------------------------------------------
-# Descripción: Difference Between Lists After Applying Function to Each Element
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 05_difference_with_function.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Difference Between Lists After Applying Function to Each Element
+# -------------------------------------------------
 
 def difference_by_func(a: list, b: list, func) -> list:
     set_b = {func(x) for x in b}

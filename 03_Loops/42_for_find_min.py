@@ -1,8 +1,9 @@
-"""For loop: Find minimum in list.
-Iterates to find the smallest value in a list.
-"""
+# -------------------------------------------------
+# File Name: 42_for_find_min.py
 # Author: Florentino Báez
-
+# Date: 03_Loops
+# Description: Find minimum in list.
+# -------------------------------------------------
 
 numbers = [15, 42, 8, 99, 23]
 min_num = numbers[0]

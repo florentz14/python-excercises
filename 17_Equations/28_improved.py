@@ -1,5 +1,9 @@
-# Archivo: 33_02_mejorado.py
-# Descripción: Resolver el sistema con versión optimizada
+# -------------------------------------------------
+# File Name: 28_improved.py
+# Author: Florentino Báez
+# Date: 17_Equations
+# Description: Solve system with optimized version.
+# -------------------------------------------------
 
 from datos_ejemplo_33 import A, b
 from resolver_mejorado import resolver_sistema_mejorado

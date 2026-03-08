@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 14. Remove Even Numbers from List
-# ---------------------------------------------------------------------------
-# Descripción: Remove Even Numbers from List
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 05_remove_even_numbers.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Remove Even Numbers from List
+# -------------------------------------------------
 
 def remove_even(lst: list[int]) -> list[int]:
     # Lista por comprensión: se incluyen solo los elementos que cumplen la condición.

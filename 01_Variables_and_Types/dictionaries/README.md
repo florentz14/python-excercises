@@ -1,70 +1,124 @@
 # Dictionaries - Complete Guide
 
-A comprehensive collection of 40 programs covering everything about Python dictionaries: from basic operations to advanced types and performance optimization.
+A comprehensive collection of 57 programs organized by category and level: from basic operations to advanced types and performance optimization.
 
-## Files (40 programs)
+## Files (57 programs) - Basic → Complex
 
-### Tutorials (01-16)
+### Level 1: Fundamentals (01-12)
 
-| #   | File                        | Topic                                           |
-| --- | --------------------------- | ----------------------------------------------- |
-| 01  | `01_create_and_display.py`  | Creating dictionaries and displaying them       |
-| 02  | `02_access_by_key.py`       | Accessing values by key                         |
-| 03  | `03_get_method.py`          | Using `.get()` for safe access with defaults    |
-| 04  | `04_add_modify.py`          | Adding and modifying key-value pairs            |
-| 05  | `05_remove_items.py`        | Removing items (`del`, `pop`, `popitem`)        |
-| 06  | `06_loop.py`                | Looping through dictionaries                    |
-| 07  | `07_loop_items.py`          | Looping with `.items()`, `.keys()`, `.values()` |
-| 08  | `08_keys_values.py`         | Working with keys and values views              |
-| 09  | `09_check_key_exists.py`    | Checking if a key exists (`in`, `.get()`)       |
-| 10  | `10_update.py`              | Merging dictionaries with `.update()`           |
-| 11  | `11_copy.py`                | Shallow copy vs deep copy                       |
-| 12  | `12_clear.py`               | Clearing a dictionary                           |
-| 13  | `13_nested.py`              | Nested dictionaries (dicts inside dicts)        |
-| 14  | `14_comprehension.py`       | Dictionary comprehension                        |
-| 15  | `15_list_tuples_to_dict.py` | Converting lists/tuples to dictionaries         |
-| 16  | `16_setdefault.py`          | Using `.setdefault()`                           |
+| #   | File               | Topic                                           |
+| --- | ------------------ | ----------------------------------------------- |
+| 01  | `01_create.py`     | Creating and displaying dictionaries            |
+| 02  | `02_access.py`     | Accessing values by key                         |
+| 03  | `03_get.py`        | `.get()` for safe access with defaults          |
+| 04  | `04_add_modify.py` | Adding and modifying key-value pairs            |
+| 05  | `05_remove.py`     | Removing items (`del`, `pop`, `popitem`)        |
+| 06  | `06_loop.py`       | Looping through dictionaries                    |
+| 07  | `07_loop_items.py` | Looping with `.items()`, `.keys()`, `.values()` |
+| 08  | `08_keys_values.py`| Working with keys and values views              |
+| 09  | `09_check_key.py`  | Checking if a key exists (`in`, `.get()`)       |
+| 10  | `10_update.py`     | Merging dictionaries with `.update()`           |
+| 11  | `11_copy.py`       | Shallow copy vs deep copy                       |
+| 12  | `12_clear.py`      | Clearing a dictionary                           |
 
-### Exercises (17-26)
+### Level 2: Nested Dictionaries (13-20)
 
-| #   | File                        | Topic                                                                |
-| --- | --------------------------- | -------------------------------------------------------------------- |
-| 17  | `17_basic_operations.py`    | Basic dictionary operations (create, access, modify, remove)         |
-| 18  | `18_dictionary_methods.py`  | Dictionary methods (`keys`, `values`, `items`, `update`, `fromkeys`) |
-| 19  | `19_nested_dictionaries.py` | Nested dictionaries and hierarchical data                            |
-| 20  | `20_dict_comprehension.py`  | Dictionary comprehension (filter, transform, nested)                 |
-| 21  | `21_word_frequency.py`      | Word frequency counter with `collections.Counter`                    |
-| 22  | `22_grade_manager.py`       | Student grade management system (CRUD, statistics)                   |
-| 23  | `23_json_dictionaries.py`   | Working with JSON and dictionaries (read, write, API)                |
-| 24  | `24_contact_book.py`        | Contact book application (CRUD, persistent storage)                  |
-| 25  | `25_advanced_dict_types.py` | Advanced types: `defaultdict`, `OrderedDict`, LRU cache              |
-| 26  | `26_performance.py`         | Performance benchmarks and best practices                            |
+| #   | File                  | Topic                                   |
+| --- | --------------------- | --------------------------------------- |
+| 13  | `13_nested_basic.py`  | Basic nested structure                  |
+| 14  | `14_nested_access.py` | Accessing with key chaining             |
+| 15  | `15_nested_iterate.py`| Iterating with keys, values, items      |
+| 16  | `16_nested_enumerate.py`| enumerate for numbered output         |
+| 17  | `17_nested_to_lists.py`| Converting views to lists               |
+| 18  | `18_nested_modify.py` | Modifying nested values                 |
+| 19  | `19_nested_deep.py`   | Deeply nested (3+ levels)               |
+| 20  | `20_nested_mixed.py`  | Mixed structures (dict + lists)         |
 
-### Extra Practical Topics (27-40)
+### Level 3: Conversion & Creation (21-24)
 
-| #   | File                             | Topic                                   |
-| --- | -------------------------------- | --------------------------------------- | ------------- |
-| 27  | `27_fromkeys.py`                 | Creating dictionaries with fromkeys()   |
-| 28  | `28_merge_operators.py`          | Merge dictionaries with                 | (Python 3.9+) |
-| 29  | `29_remove_comparison.py`        | Compare del, pop, popitem, clear        |
-| 30  | `30_reverse_dictionary.py`       | Reverse keys and values                 |
-| 31  | `31_sort_dictionaries.py`        | Sort by keys and values                 |
-| 32  | `32_grouping_values.py`          | Group values in dictionary of lists     |
-| 33  | `33_invert_grouping.py`          | Build grouped dictionaries from records |
-| 34  | `34_manual_frequency_counter.py` | Frequency counting with plain dict      |
-| 35  | `35_unpacking_dictionaries.py`   | Dictionary unpacking with \*\*          |
-| 36  | `36_safe_nested_access.py`       | Safe access to nested dictionaries      |
-| 37  | `37_lookup_table.py`             | Dictionaries as lookup tables           |
-| 38  | `38_function_dispatch.py`        | Function dispatch with dictionaries     |
-| 39  | `39_hashable_keys.py`            | Hashable vs unhashable keys             |
-| 40  | `40_dictionary_equality.py`      | Dictionary equality and comparison      |
+| #   | File                  | Topic                                   |
+| --- | --------------------- | --------------------------------------- |
+| 21  | `21_list_to_dict.py`  | Converting lists/tuples to dicts         |
+| 22  | `22_setdefault.py`    | Using `.setdefault()`                    |
+| 23  | `23_fromkeys.py`      | Creating dicts with fromkeys()           |
+| 24  | `24_comprehension.py` | Basic dictionary comprehension          |
+
+### Level 4: Dictionary Comprehension (25-34)
+
+| #   | File                    | Topic                                   |
+| --- | ----------------------- | --------------------------------------- |
+| 25  | `25_comp_basic.py`      | Basic squares                            |
+| 26  | `26_comp_filter.py`     | Conditional filter                       |
+| 27  | `27_comp_cond_vals.py` | Conditional values (ternary)              |
+| 28  | `28_comp_enumerate.py` | Using enumerate()                        |
+| 29  | `29_comp_from_lists.py`| From two lists with zip()                 |
+| 30  | `30_comp_grades.py`     | Grade statistics                         |
+| 31  | `31_comp_nested.py`     | Nested (multiplication table)            |
+| 32  | `32_comp_strings.py`   | String manipulation                      |
+| 33  | `33_comp_swap.py`      | Swap keys and values                     |
+| 34  | `34_comp_transform.py` | Transform existing dict                  |
+
+### Level 5: Operations (35-42)
+
+| #   | File                  | Topic                                   |
+| --- | --------------------- | --------------------------------------- |
+| 35  | `35_merge.py`         | Merge dicts (Python 3.9+ \|)             |
+| 36  | `36_remove_compare.py`| Compare del, pop, popitem, clear        |
+| 37  | `37_reverse.py`       | Reverse keys and values                 |
+| 38  | `38_sort.py`          | Sort by keys and values                 |
+| 39  | `39_grouping.py`      | Group values in dict of lists           |
+| 40  | `40_invert.py`        | Build grouped dicts from records        |
+| 41  | `41_unpacking.py`     | Dictionary unpacking with \*\*           |
+| 42  | `42_safe_nested.py`   | Safe access to nested dicts             |
+
+### Level 6: Concepts (43-46)
+
+| #   | File                  | Topic                                   |
+| --- | --------------------- | --------------------------------------- |
+| 43  | `43_lookup.py`        | Dictionaries as lookup tables           |
+| 44  | `44_dispatch.py`      | Function dispatch with dicts            |
+| 45  | `45_hashable.py`      | Hashable vs unhashable keys             |
+| 46  | `46_equality.py`      | Dictionary equality and comparison      |
+
+### Level 7: Simple Examples (47-49)
+
+| #   | File                  | Topic                                   |
+| --- | --------------------- | --------------------------------------- |
+| 47  | `47_simple_loop.py`   | Simple loop examples                    |
+| 48  | `48_simple_nested.py` | Simple nested examples                  |
+| 49  | `49_nested_loop.py`   | Nested loop examples                    |
+
+### Level 8: Frequency & Counters (50-51)
+
+| #   | File                  | Topic                                   |
+| --- | --------------------- | --------------------------------------- |
+| 50  | `50_word_freq.py`     | Word frequency with Counter             |
+| 51  | `51_freq_counter.py`  | Frequency counting with plain dict     |
+
+### Level 9: Applications (52)
+
+| #   | File                 | Topic                                   |
+| --- | -------------------- | --------------------------------------- |
+| 52  | `52_json.py`         | Working with JSON (read, write, API)    |
+
+### Level 10: Advanced (53-57)
+
+| #   | File                    | Topic                                   |
+| --- | ----------------------- | --------------------------------------- |
+| 53  | `53_basic_ops.py`       | Integrated basic operations             |
+| 54  | `54_methods.py`        | Dictionary methods overview             |
+| 55  | `55_nested_full.py`    | Full nested example (company, grades)   |
+| 56  | `56_advanced_types.py` | defaultdict, OrderedDict, LRU cache    |
+| 57  | `57_performance.py`    | Performance benchmarks                  |
+
+**Note:** GradeManager and ContactBook (OOP applications) moved to `11_OOP/55_grade_manager.py` and `11_OOP/56_contact_book.py`
 
 ## Quick Start
 
 ```bash
-# Run individual programs
-python 01_create_and_display.py
-python 17_basic_operations.py
+# Run from basic to complex
+python 01_create.py
+python 55_basic_ops.py
 ```
 
 ## Requirements
@@ -74,105 +128,11 @@ python 17_basic_operations.py
 
 Modules used: `collections`, `json`, `time`, `sys`
 
-## Dictionary Basics
-
-### Creating Dictionaries
-
-```python
-# Empty dictionary
-empty = {}
-empty = dict()
-
-# With initial values
-person = {"name": "Alice", "age": 30}
-
-# From lists
-keys = ["a", "b", "c"]
-values = [1, 2, 3]
-d = dict(zip(keys, values))
-
-# Dictionary comprehension
-squares = {x: x**2 for x in range(5)}
-```
-
-### Common Operations
-
-| Operation       | Syntax                   | Description                            |
-| --------------- | ------------------------ | -------------------------------------- |
-| Access          | `dict[key]`              | Get value (raises KeyError if missing) |
-| Safe access     | `dict.get(key, default)` | Get value with default                 |
-| Add/Update      | `dict[key] = value`      | Set key-value pair                     |
-| Delete          | `del dict[key]`          | Remove key-value pair                  |
-| Remove & return | `dict.pop(key)`          | Remove and return value                |
-| Check existence | `key in dict`            | Test if key exists                     |
-| Length          | `len(dict)`              | Number of key-value pairs              |
-
-### Iteration
-
-```python
-# Iterate over keys
-for key in my_dict:
-    print(key)
-
-# Iterate over values
-for value in my_dict.values():
-    print(value)
-
-# Iterate over key-value pairs
-for key, value in my_dict.items():
-    print(f"{key}: {value}")
-```
-
-## Key Concepts
-
-### 1. Keys Must Be Immutable
-
-**Valid keys:** Strings, Numbers, Tuples, Booleans
-
-**Invalid keys:** Lists, Dictionaries, Sets
-
-### 2. Hash Table Implementation
-
-Dictionaries use hash tables for O(1) average lookup time:
-
-- **Lookup**: O(1)
-- **Insert**: O(1)
-- **Delete**: O(1)
-
-### 3. Order Preservation
-
-Since Python 3.7+, dictionaries maintain insertion order.
-
-### 4. Dictionary Methods
-
-```python
-# Getting data
-.keys()                    # View of all keys
-.values()                  # View of all values
-.items()                   # View of (key, value) pairs
-.get(key, default)         # Safe access
-
-# Modifying
-.update(other)             # Merge dictionaries
-.setdefault(key, default)  # Get or set default
-.pop(key)                  # Remove and return
-.popitem()                 # Remove and return last item
-.clear()                   # Remove all items
-
-# Copying
-.copy()                    # Shallow copy
-```
-
 ## Learning Path
 
-### Beginner (01-09)
-
-Basic creation, access, modification, iteration, and key checking.
-
-### Intermediate (10-20)
-
-Update, copy, clear, nested dicts, comprehensions, conversions, setdefault, and practical exercises.
-
-### Advanced (21-40)
-
-Word frequency, grade manager, JSON integration, contact book, advanced types, performance, and extra practical topics including merging, sorting, grouping, function dispatch, and key concepts.
+| Level | Range | Focus |
+| ----- | ----- | ----- |
+| Beginner | 01-12 | Create, access, modify, iterate |
+| Intermediate | 13-24 | Nested, conversion, comprehension |
+| Advanced | 25-42 | Comp variations, operations |
+| Expert | 43-59 | Concepts, apps, performance |

@@ -1,10 +1,9 @@
-# ---------------------------------------------------------------------------
-# 1. Sum Items in List
-# ---------------------------------------------------------------------------
-# Descripción: Suma todos los elementos numéricos de una lista.
-# Entrada: Lista de números (int o float).
-# Salida: Un solo número (suma total).
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 01_sum_items_in_list.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Suma todos los elementos numéricos de una lista.
+# -------------------------------------------------
 
 def sum_list_items(lst: list[int | float]) -> int | float:
     # sum() recorre la lista y suma todos sus elementos

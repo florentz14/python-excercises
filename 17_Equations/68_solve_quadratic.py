@@ -1,5 +1,9 @@
-# Archivo: resolver_cuadratica.py
-# Descripción: Resolver ecuaciones cuadráticas Ax² + Bx + C = 0 (versión completa)
+# -------------------------------------------------
+# File Name: 68_solve_quadratic.py
+# Author: Florentino Báez
+# Date: 17_Equations
+# Description: Solve quadratic equations Ax² + Bx + C = 0 (full version).
+# -------------------------------------------------
 
 import math
 import cmath

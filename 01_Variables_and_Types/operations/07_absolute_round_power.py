@@ -1,4 +1,9 @@
-# Absolute, Round, and Power Functions in Python
+# -------------------------------------------------
+# File Name: 07_absolute_round_power.py
+# Author: Florentino Báez
+# Date: 01_Variables_and_Types
+# Description: Uses abs(), round(), and pow()/**. Covers absolute value,
+# -------------------------------------------------
 
 import math
 

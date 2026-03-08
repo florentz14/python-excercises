@@ -1,7 +1,7 @@
 # -------------------------------------------------
-# File Name: 04b_line_width.py
+# File Name: 17_line_width.py
 # Author: Florentino Báez
-# Date: Matplotlib
+# Date: 10_Matplotlib
 # Description: Different line widths (0.5 to 5).
 # -------------------------------------------------
 

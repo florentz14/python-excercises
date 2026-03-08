@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 156. Add Two Lists from Right (align by last element, pad left)
-# ---------------------------------------------------------------------------
-# Descripción: Add Two Lists from Right (align by last element, pad left)
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 072_add_lists_from_right.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Add Two Lists from Right (align by last element, pad left)
+# -------------------------------------------------
 
 def add_lists_right(a: list[int], b: list[int]) -> list[int]:
     na, nb = len(a), len(b)

@@ -1,15 +1,8 @@
 # -------------------------------------------------
-# File Name: exercise_roman_numeral_converter.py
+# File Name: 22_roman_numeral_converter.py
 # Author: Florentino Báez
-# Course: ITSE-1002: Python Programming
-# Professor: Mauricio Quiroga
-# Date: Module 03 Lab
+# Date: 02_Conditionals
 # Description: Roman Numeral Converter
-#              Write a program that asks the user to enter a number within the
-#              range of 1 through 10. The program should display the Roman
-#              numeral version of that number. If the number is outside the
-#              range of 1 through 10, the program should display an error
-#              message.
 # -------------------------------------------------
 
 print("=" * 60)

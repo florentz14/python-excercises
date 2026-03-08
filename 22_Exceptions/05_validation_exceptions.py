@@ -1,14 +1,9 @@
-# ------------------------------------------------------------
-# File: 05_validation_exceptions.py
-# Chapter: Exceptions - Input Validation
-#
-# Purpose:
-#   Validate user input using exceptions. Raise ValueError with
-#   clear messages when input is invalid.
-#
-# Author: Florentino Baez (adapted)
-# ------------------------------------------------------------
-
+# -------------------------------------------------
+# File Name: 05_validation_exceptions.py
+# Author: Florentino Báez
+# Date: 22_Exceptions
+# Description: Validation Exceptions. parse_positive_int implementation.
+# -------------------------------------------------
 
 def parse_positive_int(value: str) -> int:
     """Convert string to positive integer. Raises ValueError if invalid."""

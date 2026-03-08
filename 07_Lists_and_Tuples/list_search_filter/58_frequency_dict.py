@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 241. Frequency Dict from List (unique values as keys, count as value)
-# ---------------------------------------------------------------------------
-# Descripción: Frequency Dict from List (unique values as keys, count as value)
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 58_frequency_dict.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Frequency Dict from List (unique values as keys, count as value)
+# -------------------------------------------------
 
 from collections import Counter
 

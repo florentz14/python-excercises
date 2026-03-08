@@ -1,11 +1,8 @@
 # -------------------------------------------------
 # File Name: 01_create_and_display.py
 # Author: Florentino Báez
-# Date: Variables - Lists
+# Date: 01_Variables_and_Types
 # Description: Create and Display a List.
-#              A list is an ordered, mutable sequence created
-#              with square brackets []. Use len() to get the
-#              number of elements.
 # -------------------------------------------------
 
 print("Example 1: Create and display a list")

@@ -1,8 +1,9 @@
-"""For loop: Iterate over string.
-Prints each character of a string.
-"""
+# -------------------------------------------------
+# File Name: 34_for_iterate_string.py
 # Author: Florentino Báez
-
+# Date: 03_Loops
+# Description: Iterate over string.
+# -------------------------------------------------
 
 word = "Python"
 

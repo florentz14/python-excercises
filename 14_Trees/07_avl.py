@@ -1,9 +1,9 @@
-"""
-14_Trees - AVL tree (self-balancing)
-=========================================
-NodoAVL, ArbolAVL: inserción con rotaciones para mantener balance.
-"""
-
+# -------------------------------------------------
+# File Name: 07_avl.py
+# Author: Florentino Báez
+# Date: 14_Trees
+# Description: AVL tree (self-balancing) with rotations for balanced inserts.
+# -------------------------------------------------
 
 class NodoAVL:
     """Nodo para árbol AVL."""

@@ -1,11 +1,10 @@
-# ---------------------------------------------------------------------------
-# Part 1: Lists - Exercise 5
-# ---------------------------------------------------------------------------
-# Descripción: Eliminar de la lista el elemento que sea igual a 'Banana'
-#              usando el método .remove() (solo quita la primera aparición).
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 007_remove.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Eliminar de la lista el elemento que sea igual a 'Banana'
+# -------------------------------------------------
 
-# Lista de frutas
 fruits = ['Apple', 'Banana', 'Cherry']
 # remove() busca el valor 'Banana' y elimina esa posición de la lista
 fruits.remove('Banana')

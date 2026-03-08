@@ -1,5 +1,9 @@
-# 15_simple_rectangulo.py - Simple class: Rectangle
-# Florentino Baez - ITSE-1002
+# -------------------------------------------------
+# File Name: 42_rectangle.py
+# Author: Florentino Báez
+# Date: 11_OOP
+# Description: Simple Rectangle class with width, height and area() method.
+# -------------------------------------------------
 
 class Rectangle:
     """Class with attributes and one method."""

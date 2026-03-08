@@ -1,5 +1,9 @@
-# Archivo: 25_06_sistemas_ejemplos.py
-# Descripción: Sistemas del código original y comentado
+# -------------------------------------------------
+# File Name: 06_systems_examples.py
+# Author: Florentino Báez
+# Date: 17_Equations
+# Description: Example systems from original code.
+# -------------------------------------------------
 
 from datos_sistema import A_original, b_original, B_comentado, d_comentado
 from resolver_mejorado import resolver_sistema_mejorado

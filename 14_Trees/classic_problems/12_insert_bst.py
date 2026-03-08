@@ -1,9 +1,9 @@
-"""
-#12 Insert into a Binary Search Tree (LeetCode 701)
-====================================================
-Concept: Find correct position by BST property, insert as leaf
-Time: O(h), Space: O(h)
-"""
+# -------------------------------------------------
+# File Name: 12_insert_bst.py
+# Author: Florentino Báez
+# Date: 14_Trees
+# Description: LeetCode 701 - Insert into BST at correct position.
+# -------------------------------------------------
 
 from common import TreeNode
 

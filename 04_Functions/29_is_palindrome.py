@@ -1,7 +1,8 @@
 # -------------------------------------------------
-# File: 29_is_palindrome.py
+# File Name: 29_is_palindrome.py
+# Author: Florentino Báez
+# Date: 04_Functions
 # Description: Palindrome checker function.
-#              Check if a word reads same forwards/backwards.
 # -------------------------------------------------
 
 def is_palindrome(word):

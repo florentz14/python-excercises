@@ -1,9 +1,9 @@
-"""
-LeetCode 104 - Maximum Depth of Binary Tree
-============================================
-Concept: Recursion. Base: empty = 0. Recursive: 1 + max(left, right).
-Time: O(n), Space: O(h)
-"""
+# -------------------------------------------------
+# File Name: 01_max_depth.py
+# Author: Florentino Báez
+# Date: 14_Trees
+# Description: LeetCode 104 - Maximum depth of binary tree via recursion.
+# -------------------------------------------------
 
 from common import TreeNode
 

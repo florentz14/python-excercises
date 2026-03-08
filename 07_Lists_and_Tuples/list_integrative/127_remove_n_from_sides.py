@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 268. Remove n Elements from Left and Right
-# ---------------------------------------------------------------------------
-# Descripción: Remove n Elements from Left and Right
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 127_remove_n_from_sides.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Remove n Elements from Left and Right
+# -------------------------------------------------
 
 def remove_from_sides(lst: list, n: int) -> tuple[list, list]:
     left_removed = lst[n:]

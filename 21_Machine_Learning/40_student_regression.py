@@ -1,11 +1,9 @@
-"""
-ML Mini Course - Step 2: Regression with real dataset
-======================================================
-Predict math score using reading and writing scores.
-Dataset: StudentsPerformance.csv
-
-Author: Florentino Báez
-"""
+# -------------------------------------------------
+# File Name: 40_student_regression.py
+# Author: Florentino Báez
+# Date: 21_Machine_Learning
+# Description: Student math score regression from reading/writing.
+# -------------------------------------------------
 
 import os
 import pandas as pd

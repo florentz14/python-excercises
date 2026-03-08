@@ -1,7 +1,8 @@
 # -------------------------------------------------
-# File: 19_abstract_classes.py
+# File Name: 19_abstract_classes.py
+# Author: Florentino Báez
+# Date: 11_OOP
 # Description: Abstract base classes (ABC).
-#              Define interfaces and enforce implementation.
 # -------------------------------------------------
 
 from abc import ABC, abstractmethod

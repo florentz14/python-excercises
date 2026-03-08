@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 32. Check if List Contains a Sublist
-# ---------------------------------------------------------------------------
-# Descripción: Check if List Contains a Sublist
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 03_check_sublist.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Check if List Contains a Sublist
+# -------------------------------------------------
 
 def contains_sublist(lst: list, sub: list) -> bool:
     n, m = len(lst), len(sub)

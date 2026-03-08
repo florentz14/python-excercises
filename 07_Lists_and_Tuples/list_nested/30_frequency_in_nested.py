@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 143. Frequency of Elements in Nested List (flatten then count)
-# ---------------------------------------------------------------------------
-# Descripción: Frequency of Elements in Nested List (flatten then count)
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 30_frequency_in_nested.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Frequency of Elements in Nested List (flatten then count)
+# -------------------------------------------------
 
 from collections import Counter
 

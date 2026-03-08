@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 267. Cumulative Sum of List
-# ---------------------------------------------------------------------------
-# Descripción: Cumulative Sum of List
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 126_cumulative_sum.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Cumulative Sum of List
+# -------------------------------------------------
 
 def cumulative_sum(lst: list[int | float]) -> list[int | float]:
     result = []

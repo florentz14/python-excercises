@@ -1,10 +1,8 @@
 # -------------------------------------------------
-# File Name: exercise_17_km_to_miles.py
+# File Name: 17_km_to_miles.py
 # Author: Florentino Báez
-# Date: Module 04 - Exercise 17
+# Date: 04_Functions
 # Description: Distance Converter Program.
-#              Convert between kilometers and miles using functions.
-#              Includes a while loop for multiple conversions.
 # -------------------------------------------------
 
 def km_to_miles(kilometers: float) -> float:

@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 127. Remove Words Containing Specific Characters (and strip/split)
-# ---------------------------------------------------------------------------
-# Descripción: Remove Words Containing Specific Characters (and strip/split)
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 29_remove_words_containing_chars.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Remove Words Containing Specific Characters (and strip/split)
+# -------------------------------------------------
 
 def remove_words_containing(lst: list[str], chars: list[str]) -> list[str]:
     result = []

@@ -1,9 +1,9 @@
-"""
-Conditionals: Swap 3 values + max, min, average
-===============================================
-Topic: Conditionals (02_Conditionals)
-Description: Swap three values (rotate), find max/min with if/elif, compute average.
-"""
+# -------------------------------------------------
+# File Name: 33_tres_valores_intercambio.py
+# Author: Florentino Báez
+# Date: 02_Conditionals
+# Description: Swap 3 values + max, min, average
+# -------------------------------------------------
 
 a = float(input("Valor 1: "))
 b = float(input("Valor 2: "))

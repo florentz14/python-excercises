@@ -1,5 +1,9 @@
-# 26_simple_contact.py - Simple class: Contact
-# Florentino Baez - ITSE-1002
+# -------------------------------------------------
+# File Name: 53_contact.py
+# Author: Florentino Báez
+# Date: 11_OOP
+# Description: Simple Contact class with name, email, phone and info().
+# -------------------------------------------------
 
 class Contact:
     """Class with several attributes."""

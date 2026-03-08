@@ -1,5 +1,9 @@
-# Archivo: 31_08_interactiva.py
-# Descripción: Función interactiva para calcular integrales
+# -------------------------------------------------
+# File Name: 24_interactive.py
+# Author: Florentino Báez
+# Date: 17_Equations
+# Description: Interactive integral calculator.
+# -------------------------------------------------
 
 from integracion_util import f_original, integrar_funcion
 

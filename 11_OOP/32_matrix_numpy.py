@@ -1,10 +1,9 @@
-"""
-Clase MatrixNP (NumPy)
-======================
-Topic: 11_OOP - Simple classes
-Descripción: Matriz con NumPy; add(), multiply() (producto matricial) y transpose().
-Requiere: pip install numpy
-"""
+# -------------------------------------------------
+# File Name: 32_matrix_numpy.py
+# Author: Florentino Báez
+# Date: 11_OOP
+# Description: Matrix class using NumPy.
+# -------------------------------------------------
 
 import numpy as np
 

@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# Tuplas - 05: Loop Tuples (Recorrer Tuplas)
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 05_loop_tuplas.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
 # Description: You can loop through tuple items using for loops,
-#              while loops, or index-based iteration with range().
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
 
 fruits = ("apple", "banana", "cherry", "pineapple", "grape", "mango")
 

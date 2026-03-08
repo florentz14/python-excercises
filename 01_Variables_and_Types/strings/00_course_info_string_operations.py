@@ -1,4 +1,10 @@
-# Initialize and display student count
+# -------------------------------------------------
+# File Name: 00_course_info_string_operations.py
+# Author: Florentino Báez
+# Date: 01_Variables_and_Types
+# Description: Course info with string operations: indexing, slicing, methods
+# -------------------------------------------------
+
 students_count = 1000
 print("Number of students:", students_count)
 

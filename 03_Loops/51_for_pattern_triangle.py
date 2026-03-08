@@ -1,8 +1,9 @@
-"""For loop: Triangle number pattern.
-Each row has numbers 1 through row number.
-"""
+# -------------------------------------------------
+# File Name: 51_for_pattern_triangle.py
 # Author: Florentino Báez
-
+# Date: 03_Loops
+# Description: Triangle number pattern.
+# -------------------------------------------------
 
 print("Patrón Triangular de Números")
 print("=" * 30)

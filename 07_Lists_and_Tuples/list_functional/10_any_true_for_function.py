@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 246. Check If Function Returns True for At Least One Element
-# ---------------------------------------------------------------------------
-# Descripción: Check If Function Returns True for At Least One Element
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 10_any_true_for_function.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Check If Function Returns True for At Least One Element
+# -------------------------------------------------
 
 def any_match(lst: list, predicate) -> bool:
     return any(predicate(x) for x in lst)

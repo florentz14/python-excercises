@@ -1,5 +1,9 @@
-# Archivo: 35_03_con_exacto.py
-# Descripción: Sumas de Riemann comparadas con valor exacto
+# -------------------------------------------------
+# File Name: 36_with_exact.py
+# Author: Florentino Báez
+# Date: 17_Equations
+# Description: Riemann sums compared with exact value.
+# -------------------------------------------------
 
 import scipy.integrate as spi
 

@@ -1,9 +1,9 @@
-# ---------------------------------------------------------------------------
-# 220. Map List to Dict: key=original value, value=function(value)
-# ---------------------------------------------------------------------------
-# Descripción: Map List to Dict: key=original value, value=function(value)
-# Entrada/Salida: Según el ejercicio.
-# ---------------------------------------------------------------------------
+# -------------------------------------------------
+# File Name: 106_map_list_to_dict.py
+# Author: Florentino Báez
+# Date: Lists and Tuples
+# Description: Map List to Dict: key=original value, value=function(value)
+# -------------------------------------------------
 
 def map_to_dict(lst: list, func) -> dict:
     return {x: func(x) for x in lst}

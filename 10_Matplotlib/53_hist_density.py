@@ -1,7 +1,7 @@
 # -------------------------------------------------
-# File Name: 10c_hist_density.py
+# File Name: 53_hist_density.py
 # Author: Florentino Báez
-# Date: Matplotlib
+# Date: 10_Matplotlib
 # Description: Density histogram with normal curve overlay.
 # -------------------------------------------------
 

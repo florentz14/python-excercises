@@ -1,11 +1,8 @@
 # -------------------------------------------------
-# File Name: 13_estadistico_multi.py
+# File Name: 66_statistical_multi.py
 # Author: Florentino Báez
-# Date: Matplotlib
+# Date: 10_Matplotlib
 # Description: Multi-Chart Statistical Analysis.
-#              Side-by-side histogram and boxplot of the same
-#              dataset using subplots for combined statistical
-#              visualization.
 # -------------------------------------------------
 
 """

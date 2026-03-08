@@ -1,9 +1,9 @@
-"""
-Simple conditional: Password strength by length
-===============================================
-Topic: Conditionals (02_Conditionals)
-Description: Classify password as weak, okay, or strong.
-"""
+# -------------------------------------------------
+# File Name: 29_password_length.py
+# Author: Florentino Báez
+# Date: 02_Conditionals
+# Description: Password strength by length
+# -------------------------------------------------
 
 password = input("Enter password: ")
 length = len(password)

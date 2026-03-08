@@ -1,8 +1,9 @@
-"""Match-case: Movement command.
-Maps cardinal direction (n/s/e/w) to movement message.
-"""
+# -------------------------------------------------
+# File Name: 81_match_move.py
 # Author: Florentino Báez
-
+# Date: 03_Loops
+# Description: Movement command.
+# -------------------------------------------------
 
 def move(cmd: str) -> str:
     match cmd:

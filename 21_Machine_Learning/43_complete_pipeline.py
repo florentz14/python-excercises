@@ -1,12 +1,9 @@
-"""
-ML Mini Course - Step 5: Complete pipeline
-==========================================
-Full flow: load → preprocess → train → evaluate.
-Dataset: StudentsPerformance.csv
-Model: Random Forest to predict if math is passed (≥60).
-
-Author: Florentino Báez
-"""
+# -------------------------------------------------
+# File Name: 43_complete_pipeline.py
+# Author: Florentino Báez
+# Date: 21_Machine_Learning
+# Description: Complete ML pipeline: load, preprocess, train, evaluate.
+# -------------------------------------------------
 
 import os
 import pandas as pd
