@@ -14,10 +14,10 @@ print(data)
 print()
 
 # Mean (statistics)
-mean = statistics.mean(data)
+mean = statistics.mean(data) # Mean
 print(f"Mean (average): {mean:.2f}")
 print()
 
 # NumPy
 print("=== NUMPY ===")
-print(f"np.mean: {np.mean(data):.2f}")
+print(f"np.mean: {np.mean(data):.2f}") # NumPy mean

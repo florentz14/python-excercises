@@ -4,11 +4,11 @@
 # Description: Computes a confidence interval for the mean using the t distribution and standard error.
 # -------------------------------------------------
 
-import numpy as np
-from scipy import stats
+import numpy as np  # Numerical arrays and vectorized operations
+from scipy import stats  # Statistical tests and probability distributions
 
-np.random.seed(42)
-group_a = np.random.normal(100, 15, 30)
+np.random.seed(42)  # Reproducible random results
+group_a = np.random.normal(100, 15, 30)  # Simulated sample from group A
 
 # 95% Confidence interval for mean
 ci = stats.t.interval(0.95, len(group_a) - 1, loc=np.mean(group_a), scale=stats.sem(group_a))

@@ -3,9 +3,9 @@
 # Description: Builds a proportional stratified sample by combining samples from each stratum.
 # -------------------------------------------------
 
-import numpy as np
+import numpy as np  # Numerical arrays and vectorized operations
 
-np.random.seed(42)
+np.random.seed(42)  # Reproducible random results
 # Strata: age groups with different sizes
 stratum_a = np.random.normal(50, 10, 100)   # young
 stratum_b = np.random.normal(70, 12, 200)   # middle
@@ -19,8 +19,8 @@ sample_a = np.random.choice(stratum_a, n_a, replace=False)
 sample_b = np.random.choice(stratum_b, n_b, replace=False)
 sample_c = np.random.choice(stratum_c, n_c, replace=False)
 
-stratified_sample = np.concatenate([sample_a, sample_b, sample_c])
+stratified_sample = np.concatenate([sample_a, sample_b, sample_c])  # Combined stratified sample
 print("=== STRATIFIED SAMPLING ===")
-print(f"Strata sizes: 100, 200, 150 (total 450)")
-print(f"Sample from each: {n_a}, {n_b}, {n_c} (proportional)")
+print(f"Strata sizes: 100, 200, 150 (total 450)") # print the strata sizes
+print(f"Sample from each: {n_a}, {n_b}, {n_c} (proportional)") # print the sample from each 
 print(f"Combined sample mean: {np.mean(stratified_sample):.2f}")

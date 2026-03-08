@@ -3,9 +3,9 @@
 # Description: Implements cluster sampling by selecting full clusters and analyzing resulting sample statistics.
 # -------------------------------------------------
 
-import numpy as np
+import numpy as np  # Numerical arrays and vectorized operations
 
-np.random.seed(42)
+np.random.seed(42)  # Reproducible random results
 # 10 clusters (e.g. schools), each with different number of students
 clusters = [
     np.random.normal(70, 10, 30),
@@ -21,12 +21,12 @@ clusters = [
 ]
 
 # Select 3 clusters at random, use all elements
-n_clusters = 3
-selected_idx = np.random.choice(len(clusters), n_clusters, replace=False)
-cluster_sample = np.concatenate([clusters[i] for i in selected_idx])
+n_clusters = 3 # number of clusters
+selected_idx = np.random.choice(len(clusters), n_clusters, replace=False) # Selected indices
+cluster_sample = np.concatenate([clusters[i] for i in selected_idx])  # Combined selected clusters
 
 print("=== CLUSTER SAMPLING ===")
-print(f"Total clusters: {len(clusters)}")
-print(f"Clusters selected: {n_clusters}")
-print(f"Cluster sample mean: {np.mean(cluster_sample):.2f}")
-print(f"Cluster sample size: {len(cluster_sample)}")
+print(f"Total clusters: {len(clusters)}") # print the total clusters
+print(f"Clusters selected: {n_clusters}") # print the clusters selected 
+print(f"Cluster sample mean: {np.mean(cluster_sample):.2f}") # print the cluster sample mean
+print(f"Cluster sample size: {len(cluster_sample)}") # print the cluster sample size

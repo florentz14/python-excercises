@@ -3,10 +3,10 @@
 # Description: Shows how biased sampling distorts estimates compared with simple random sampling.
 # -------------------------------------------------
 
-import numpy as np
+import numpy as np  # Numerical arrays and vectorized operations
 
 # Population (truth)
-np.random.seed(42)
+np.random.seed(42)  # Reproducible random results
 population = np.concatenate([
     np.random.normal(50, 10, 800),   # majority
     np.random.normal(90, 5, 200),    # minority, different mean
@@ -20,13 +20,13 @@ biased_sample = np.random.choice(population[population > 70], 100)
 unbiased_sample = np.random.choice(population, 100, replace=False)
 
 print("=== SAMPLING BIAS ===")
-print("Population mean:", np.mean(population))
+print("Population mean:", np.mean(population)) # print the population mean
 print()
-print("Biased sample (e.g. voluntary, convenience):")
-print("  mean:", np.mean(biased_sample))
-print("  overestimates if high values easier to reach")
+print("Biased sample (e.g. voluntary, convenience):") # Biased sample (e.g. voluntary, convenience)
+print("  mean:", np.mean(biased_sample)) # print the biased sample mean
+print("  overestimates if high values easier to reach") # print the overestimates if high values easier to reach
 print()
 print("Unbiased (simple random):")
-print("  mean:", np.mean(unbiased_sample))
+print("  mean:", np.mean(unbiased_sample)) # print the unbiased sample mean 
 print()
 print("Common biases: selection, non-response, survivorship.")

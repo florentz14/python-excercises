@@ -4,19 +4,19 @@
 # Description: Finds the mode (most frequent value) and includes multimode for datasets with multiple modes.
 # -------------------------------------------------
 
-import statistics
+import statistics # Statistical functions
 
-data = [12, 15, 18, 22, 25, 25, 28, 30, 33, 40]
+data = [12, 15, 18, 22, 25, 25, 28, 30, 33, 40] # Data set
 
 print("=== DATA ===")
-print(data)
+print(data) # Data set
 print()
 
 # Mode
-mode = statistics.mode(data)
-print(f"Mode (most frequent): {mode}")
+mode = statistics.mode(data) # Mode
+print(f"Mode (most frequent): {mode}") # Mode (most frequent)
 print()
 
 # multimode si hay más de una moda (Python 3.8+)
-modes = statistics.multimode(data)
-print(f"multimode: {modes}")
+modes = statistics.multimode(data) # Multimode
+print(f"multimode: {modes}") # Multimode

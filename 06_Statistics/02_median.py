@@ -4,20 +4,21 @@
 # Description: Computes the median (central value) and shows equivalent calculations with statistics and NumPy.
 # -------------------------------------------------
 
-import statistics
-import numpy as np
+# Standard library and NumPy implementations
+import statistics  # Built-in descriptive stats
+import numpy as np  # Fast numerical operations
 
-data = [12, 15, 18, 22, 25, 25, 28, 30, 33, 40]
+data = [12, 15, 18, 22, 25, 25, 28, 30, 33, 40]  # Sorted sample for clarity
 
 print("=== DATA ===")
-print(data)
+print(data)  # Original values
 print()
 
-# Median
+# Middle value (or average of two middle values)
 median = statistics.median(data)
 print(f"Median (middle value): {median}")
 print()
 
-# NumPy
+# Same metric computed with NumPy
 print("=== NUMPY ===")
 print(f"np.median: {np.median(data):.2f}")

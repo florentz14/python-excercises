@@ -7,6 +7,6 @@
 # P(A) = favorable / total
 favorable = 3
 total = 10
-prob = favorable / total
+prob = favorable / total # Probability
 print("=== PROBABILITY BASICS ===")
 print(f"P(A) = favorable/total = {favorable}/{total} = {prob}")

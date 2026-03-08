@@ -4,14 +4,14 @@
 # Description: Runs a paired t-test for before/after dependent measurements.
 # -------------------------------------------------
 
-import numpy as np
-from scipy import stats
+import numpy as np  # Numerical arrays and vectorized operations
+from scipy import stats  # Statistical tests and probability distributions
 
-np.random.seed(42)
-before = np.random.normal(50, 10, 20)
-after = before + np.random.normal(5, 3, 20)
+np.random.seed(42)  # Reproducible random results
+before = np.random.normal(50, 10, 20)  # Baseline paired measurements
+after = before + np.random.normal(5, 3, 20)  # Follow-up paired measurements
 
-t_stat, p_value = stats.ttest_rel(after, before)
+t_stat, p_value = stats.ttest_rel(after, before)  # Test statistic
 print("=== PAIRED T-TEST (before vs after) ===")
 print(f"t-statistic: {t_stat:.4f}")
 print(f"p-value: {p_value:.4f}")
