@@ -1,6 +1,6 @@
 # -------------------------------------------------
 # File Name: 25_coefficient_of_variation.py
-# Description: Coeficiente de variación (CV = std/mean).
+# Description: Computes coefficient of variation to compare relative variability across different scales.
 # -------------------------------------------------
 
 import numpy as np

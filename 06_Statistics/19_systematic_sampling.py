@@ -1,7 +1,7 @@
 # -------------------------------------------------
 # File Name: 19_systematic_sampling.py
 # Author: Florentino Báez
-# Description: Muestreo sistemático (cada k-ésimo elemento).
+# Description: Implements systematic sampling by selecting every k-th element from a population.
 # -------------------------------------------------
 
 import numpy as np

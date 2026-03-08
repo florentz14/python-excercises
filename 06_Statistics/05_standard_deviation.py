@@ -1,7 +1,7 @@
 # -------------------------------------------------
 # File Name: 05_standard_deviation.py
 # Author: Florentino Báez
-# Description: Desviación estándar (población y muestra).
+# Description: Calculates population and sample standard deviation to quantify spread around the mean.
 # -------------------------------------------------
 
 import statistics

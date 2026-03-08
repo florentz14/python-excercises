@@ -1,6 +1,6 @@
 # -------------------------------------------------
 # File Name: 49_anova_one_way.py
-# Description: ANOVA de un factor.
+# Description: Runs one-way ANOVA to compare means across three or more independent groups.
 # -------------------------------------------------
 
 import numpy as np

@@ -1,6 +1,6 @@
 # -------------------------------------------------
 # File Name: 35_bayes_theorem.py
-# Description: Teorema de Bayes.
+# Description: Applies Bayes theorem to compute posterior probability from prevalence and test characteristics.
 # -------------------------------------------------
 
 # P(A|B) = P(B|A) * P(A) / P(B)

@@ -1,6 +1,6 @@
 # -------------------------------------------------
 # File Name: 43_type1_type2_errors.py
-# Description: Errores tipo I y II.
+# Description: Summarizes Type I/Type II errors and their relationship with alpha, beta, and statistical power.
 # -------------------------------------------------
 
 print("=== TYPE I AND TYPE II ERRORS ===")

@@ -1,6 +1,6 @@
 # -------------------------------------------------
 # File Name: 36_expected_value.py
-# Description: Valor esperado E(X).
+# Description: Computes expected value E(X) for a discrete random variable and connects to binomial expectation.
 # -------------------------------------------------
 
 import numpy as np

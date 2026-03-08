@@ -1,6 +1,6 @@
 # -------------------------------------------------
 # File Name: 30_t_distribution.py
-# Description: Distribución t de Student.
+# Description: Explores Student t distribution probabilities and critical values used in inference.
 # -------------------------------------------------
 
 from scipy import stats

@@ -1,6 +1,6 @@
 # -------------------------------------------------
 # File Name: 48_wilcoxon_test.py
-# Description: Wilcoxon signed-rank (no paramétrica, datos pareados).
+# Description: Runs Wilcoxon signed-rank test as a non-parametric alternative for paired samples.
 # -------------------------------------------------
 
 import numpy as np

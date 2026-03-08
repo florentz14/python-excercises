@@ -1,6 +1,6 @@
 # -------------------------------------------------
 # File Name: 51_r_squared.py
-# Description: Coeficiente de determinación R².
+# Description: Computes R-squared as explained variance proportion from residual and total variation.
 # -------------------------------------------------
 
 import numpy as np

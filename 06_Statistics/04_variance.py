@@ -1,7 +1,7 @@
 # -------------------------------------------------
 # File Name: 04_variance.py
 # Author: Florentino Báez
-# Description: Varianza (población y muestra).
+# Description: Calculates population and sample variance and clarifies ddof=0 vs ddof=1 differences in NumPy.
 # -------------------------------------------------
 
 import statistics

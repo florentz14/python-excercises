@@ -1,7 +1,7 @@
 # -------------------------------------------------
 # File Name: 21_two_sample_ttest.py
 # Author: Florentino Báez
-# Description: T-test de dos muestras independientes.
+# Description: Runs an independent two-sample t-test to evaluate mean differences between two groups.
 # -------------------------------------------------
 
 import numpy as np

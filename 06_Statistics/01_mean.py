@@ -1,7 +1,7 @@
 # -------------------------------------------------
 # File Name: 01_mean.py
 # Author: Florentino Báez
-# Description: Media aritmética (promedio).
+# Description: Computes the arithmetic mean of a dataset and compares results using statistics.mean and numpy.mean.
 # -------------------------------------------------
 
 import statistics

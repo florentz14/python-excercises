@@ -1,7 +1,7 @@
 # -------------------------------------------------
 # File Name: 03_mode.py
 # Author: Florentino Báez
-# Description: Moda (valor más frecuente).
+# Description: Finds the mode (most frequent value) and includes multimode for datasets with multiple modes.
 # -------------------------------------------------
 
 import statistics

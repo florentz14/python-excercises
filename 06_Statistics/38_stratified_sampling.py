@@ -1,6 +1,6 @@
 # -------------------------------------------------
 # File Name: 38_stratified_sampling.py
-# Description: Muestreo estratificado.
+# Description: Builds a proportional stratified sample by combining samples from each stratum.
 # -------------------------------------------------
 
 import numpy as np

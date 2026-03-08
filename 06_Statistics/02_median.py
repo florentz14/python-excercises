@@ -1,7 +1,7 @@
 # -------------------------------------------------
 # File Name: 02_median.py
 # Author: Florentino Báez
-# Description: Mediana (valor central).
+# Description: Computes the median (central value) and shows equivalent calculations with statistics and NumPy.
 # -------------------------------------------------
 
 import statistics

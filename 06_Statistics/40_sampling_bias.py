@@ -1,6 +1,6 @@
 # -------------------------------------------------
 # File Name: 40_sampling_bias.py
-# Description: Sesgo muestral y errores comunes.
+# Description: Shows how biased sampling distorts estimates compared with simple random sampling.
 # -------------------------------------------------
 
 import numpy as np

@@ -1,7 +1,7 @@
 # -------------------------------------------------
 # File Name: 12_covariance.py
 # Author: Florentino Báez
-# Description: Covarianza entre variables.
+# Description: Computes covariance matrix and cov(x,y) to assess joint variability between two variables.
 # -------------------------------------------------
 
 import numpy as np

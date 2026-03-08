@@ -1,6 +1,6 @@
 # -------------------------------------------------
 # File Name: 45_margin_of_error.py
-# Description: Margen de error.
+# Description: Computes margin of error and confidence interval width for a sample mean estimate.
 # -------------------------------------------------
 
 from scipy import stats

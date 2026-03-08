@@ -1,6 +1,6 @@
 # -------------------------------------------------
 # File Name: 27_kurtosis.py
-# Description: Curtosis (kurtosis).
+# Description: Computes excess kurtosis to assess tail heaviness and outlier-proneness relative to normal.
 # -------------------------------------------------
 
 import numpy as np

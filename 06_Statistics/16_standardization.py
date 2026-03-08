@@ -1,7 +1,7 @@
 # -------------------------------------------------
 # File Name: 16_standardization.py
 # Author: Florentino Báez
-# Description: Estandarización (mean=0, std=1).
+# Description: Applies standardization (mean=0, std=1) and verifies transformed-data properties.
 # -------------------------------------------------
 
 import numpy as np

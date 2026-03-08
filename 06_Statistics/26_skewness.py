@@ -1,6 +1,6 @@
 # -------------------------------------------------
 # File Name: 26_skewness.py
-# Description: Asimetría (skewness).
+# Description: Computes skewness to assess distribution asymmetry (left- or right-tailed).
 # -------------------------------------------------
 
 import numpy as np

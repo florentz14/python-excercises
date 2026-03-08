@@ -1,7 +1,7 @@
 # -------------------------------------------------
 # File Name: 22_paired_ttest.py
 # Author: Florentino Báez
-# Description: T-test pareado (before/after).
+# Description: Runs a paired t-test for before/after dependent measurements.
 # -------------------------------------------------
 
 import numpy as np

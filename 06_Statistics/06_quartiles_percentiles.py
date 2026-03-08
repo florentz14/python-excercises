@@ -1,7 +1,7 @@
 # -------------------------------------------------
 # File Name: 06_quartiles_percentiles.py
 # Author: Florentino Báez
-# Description: Cuartiles, percentiles y cuantiles.
+# Description: Computes quartiles, percentiles, and quantiles to describe positional statistics in a distribution.
 # -------------------------------------------------
 
 import numpy as np

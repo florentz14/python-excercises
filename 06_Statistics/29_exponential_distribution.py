@@ -1,6 +1,6 @@
 # -------------------------------------------------
 # File Name: 29_exponential_distribution.py
-# Description: Distribución exponencial.
+# Description: Uses the exponential distribution to model waiting times and tail probabilities.
 # -------------------------------------------------
 
 import numpy as np

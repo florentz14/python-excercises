@@ -1,6 +1,6 @@
 # -------------------------------------------------
 # File Name: 42_p_value.py
-# Description: Valor p (p-value).
+# Description: Explains and computes p-value interpretation against a chosen significance level alpha.
 # -------------------------------------------------
 
 from scipy import stats

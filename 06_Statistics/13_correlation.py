@@ -1,7 +1,7 @@
 # -------------------------------------------------
 # File Name: 13_correlation.py
 # Author: Florentino Báez
-# Description: Correlación de Pearson.
+# Description: Computes Pearson correlation, includes a negative-correlation example, and validates with a manual formula.
 # -------------------------------------------------
 
 import numpy as np

@@ -1,6 +1,6 @@
 # -------------------------------------------------
 # File Name: 41_null_alternative_hypothesis.py
-# Description: Hipótesis nula y alternativa.
+# Description: Defines null/alternative hypotheses and demonstrates decision-making with a one-sample t-test.
 # -------------------------------------------------
 
 from scipy import stats

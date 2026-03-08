@@ -1,7 +1,7 @@
 # -------------------------------------------------
 # File Name: 18_sampling_distribution.py
 # Author: Florentino Báez
-# Description: Distribución muestral de la media.
+# Description: Simulates many samples to build the sampling distribution of the mean and estimate standard error.
 # -------------------------------------------------
 
 import numpy as np

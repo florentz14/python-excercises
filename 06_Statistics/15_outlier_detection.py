@@ -1,7 +1,7 @@
 # -------------------------------------------------
 # File Name: 15_outlier_detection.py
 # Author: Florentino Báez
-# Description: Detección de valores atípicos (Z-score e IQR).
+# Description: Detects outliers using z-score thresholds and IQR bounds for method comparison.
 # -------------------------------------------------
 
 import numpy as np

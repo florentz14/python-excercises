@@ -1,6 +1,6 @@
 # -------------------------------------------------
 # File Name: 33_kendall_correlation.py
-# Description: Correlación de Kendall (tau).
+# Description: Computes Kendall tau correlation for ordinal association, robust with ties/small samples.
 # -------------------------------------------------
 
 import numpy as np

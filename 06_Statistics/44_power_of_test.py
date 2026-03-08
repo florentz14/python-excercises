@@ -1,6 +1,6 @@
 # -------------------------------------------------
 # File Name: 44_power_of_test.py
-# Description: Potencia estadística.
+# Description: Simulates statistical power as the probability of rejecting H0 when H0 is false.
 # -------------------------------------------------
 
 from scipy import stats

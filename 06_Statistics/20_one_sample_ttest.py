@@ -1,7 +1,7 @@
 # -------------------------------------------------
 # File Name: 20_one_sample_ttest.py
 # Author: Florentino Báez
-# Description: T-test de una muestra.
+# Description: Runs a one-sample t-test to compare a sample mean against a reference population mean.
 # -------------------------------------------------
 
 import numpy as np

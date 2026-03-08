@@ -1,7 +1,7 @@
 # -------------------------------------------------
 # File Name: 17_random_sample.py
 # Author: Florentino Báez
-# Description: Muestreo aleatorio simple y con reemplazo.
+# Description: Draws simple random samples with and without replacement and compares sample/population metrics.
 # -------------------------------------------------
 
 import numpy as np

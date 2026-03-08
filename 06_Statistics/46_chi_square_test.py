@@ -1,6 +1,6 @@
 # -------------------------------------------------
 # File Name: 46_chi_square_test.py
-# Description: Prueba chi-cuadrado de independencia.
+# Description: Runs chi-square test of independence on a contingency table.
 # -------------------------------------------------
 
 import numpy as np

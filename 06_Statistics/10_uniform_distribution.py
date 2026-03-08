@@ -1,7 +1,7 @@
 # -------------------------------------------------
 # File Name: 10_uniform_distribution.py
 # Author: Florentino Báez
-# Description: Distribución uniforme.
+# Description: Generates uniform random samples and checks expected behavior using sample statistics.
 # -------------------------------------------------
 
 import numpy as np

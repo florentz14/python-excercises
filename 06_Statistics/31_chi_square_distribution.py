@@ -1,6 +1,6 @@
 # -------------------------------------------------
 # File Name: 31_chi_square_distribution.py
-# Description: Distribución chi-cuadrado.
+# Description: Explores chi-square distribution probabilities and critical values.
 # -------------------------------------------------
 
 from scipy import stats

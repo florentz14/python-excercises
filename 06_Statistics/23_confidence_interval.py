@@ -1,7 +1,7 @@
 # -------------------------------------------------
 # File Name: 23_confidence_interval.py
 # Author: Florentino Báez
-# Description: Intervalo de confianza para la media.
+# Description: Computes a confidence interval for the mean using the t distribution and standard error.
 # -------------------------------------------------
 
 import numpy as np

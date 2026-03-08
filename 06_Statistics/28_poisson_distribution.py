@@ -1,6 +1,6 @@
 # -------------------------------------------------
 # File Name: 28_poisson_distribution.py
-# Description: Distribución de Poisson.
+# Description: Uses the Poisson distribution to model event counts in fixed intervals.
 # -------------------------------------------------
 
 import numpy as np

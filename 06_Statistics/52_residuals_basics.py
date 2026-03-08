@@ -1,6 +1,6 @@
 # -------------------------------------------------
 # File Name: 52_residuals_basics.py
-# Description: Residuos e interpretación básica.
+# Description: Computes and interprets linear-model residuals, including mean, sum, and RMSE diagnostics.
 # -------------------------------------------------
 
 import numpy as np

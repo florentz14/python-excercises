@@ -1,6 +1,6 @@
 # -------------------------------------------------
 # File Name: 50_simple_linear_regression.py
-# Description: Regresión lineal simple.
+# Description: Fits simple linear regression and reports slope, intercept, correlation, and significance.
 # -------------------------------------------------
 
 import numpy as np

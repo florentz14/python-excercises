@@ -1,7 +1,7 @@
 # -------------------------------------------------
 # File Name: 08_probability_basics.py
 # Author: Florentino Báez
-# Description: Fundamentos de probabilidad.
+# Description: Demonstrates basic probability as favorable outcomes divided by total outcomes.
 # -------------------------------------------------
 
 # P(A) = favorable / total

@@ -1,7 +1,7 @@
 # -------------------------------------------------
 # File Name: 14_zscore.py
 # Author: Florentino Báez
-# Description: Puntuación Z (z = (x - mean) / std).
+# Description: Standardizes observations with z-scores to express distance from the mean in standard deviations.
 # -------------------------------------------------
 
 import numpy as np

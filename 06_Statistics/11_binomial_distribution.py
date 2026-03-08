@@ -1,7 +1,7 @@
 # -------------------------------------------------
 # File Name: 11_binomial_distribution.py
 # Author: Florentino Báez
-# Description: Distribución binomial.
+# Description: Computes binomial PMF/CDF values and prints probabilities across possible success counts.
 # -------------------------------------------------
 
 from scipy import stats

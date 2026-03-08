@@ -1,6 +1,6 @@
 # -------------------------------------------------
 # File Name: 34_conditional_probability.py
-# Description: Probabilidad condicional P(A|B).
+# Description: Applies conditional-probability formula P(A|B)=P(A∩B)/P(B) in a simple example.
 # -------------------------------------------------
 
 # P(A|B) = P(A and B) / P(B)

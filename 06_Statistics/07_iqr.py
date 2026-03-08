@@ -1,7 +1,7 @@
 # -------------------------------------------------
 # File Name: 07_iqr.py
 # Author: Florentino Báez
-# Description: Rango intercuartílico (IQR).
+# Description: Computes IQR (Q3-Q1) and a five-number summary to describe central spread and robustness to outliers.
 # -------------------------------------------------
 
 import numpy as np

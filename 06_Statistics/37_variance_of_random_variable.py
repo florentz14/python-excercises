@@ -1,6 +1,6 @@
 # -------------------------------------------------
 # File Name: 37_variance_of_random_variable.py
-# Description: Varianza de una variable aleatoria Var(X).
+# Description: Computes random-variable variance via E[X^2]-E[X]^2 and relates to binomial variance.
 # -------------------------------------------------
 
 import numpy as np

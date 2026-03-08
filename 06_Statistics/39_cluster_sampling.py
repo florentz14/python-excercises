@@ -1,6 +1,6 @@
 # -------------------------------------------------
 # File Name: 39_cluster_sampling.py
-# Description: Muestreo por conglomerados.
+# Description: Implements cluster sampling by selecting full clusters and analyzing resulting sample statistics.
 # -------------------------------------------------
 
 import numpy as np

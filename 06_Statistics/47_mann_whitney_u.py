@@ -1,6 +1,6 @@
 # -------------------------------------------------
 # File Name: 47_mann_whitney_u.py
-# Description: Prueba Mann-Whitney U (no paramétrica, dos grupos independientes).
+# Description: Runs Mann-Whitney U test as a non-parametric alternative for two independent groups.
 # -------------------------------------------------
 
 import numpy as np

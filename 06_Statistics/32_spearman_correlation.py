@@ -1,6 +1,6 @@
 # -------------------------------------------------
 # File Name: 32_spearman_correlation.py
-# Description: Correlación de Spearman (ordinal, monotónica).
+# Description: Computes Spearman rank correlation for monotonic, potentially non-linear relationships.
 # -------------------------------------------------
 
 import numpy as np

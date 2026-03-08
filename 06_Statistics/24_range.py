@@ -1,6 +1,6 @@
 # -------------------------------------------------
 # File Name: 24_range.py
-# Description: Rango (max - min).
+# Description: Computes the range (max-min) as a quick measure of total spread.
 # -------------------------------------------------
 
 import numpy as np

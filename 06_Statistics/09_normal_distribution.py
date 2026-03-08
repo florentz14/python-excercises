@@ -1,7 +1,7 @@
 # -------------------------------------------------
 # File Name: 09_normal_distribution.py
 # Author: Florentino Báez
-# Description: Distribución normal.
+# Description: Evaluates normal-distribution probabilities (CDF/tails) and generates samples for empirical checks.
 # -------------------------------------------------
 
 import numpy as np
