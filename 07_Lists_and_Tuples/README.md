@@ -14,6 +14,7 @@ List and tuple exercises in Python, organized by topic in subfolders.
 |-- list_math/             (25 files)  Mathematical operations
 |-- list_functional/       (11 files)  Functional programming
 |-- list_integrative/      (133 files) Integrative list exercises
+|-- list_tuples_exercises/ (13 files)  List and tuple exercises (01-13)
 ```
 
 ## Subfolders
@@ -61,6 +62,24 @@ Permutations, combinations, powerset, grouping by function, diferencia/
 union/interseccion con funciones personalizadas, y verificaciones con
 predicados (`all`, `any`).
 
+### `list_tuples_exercises/` - List and Tuple Exercises (13 files)
+
+| File | Description |
+|------|-------------|
+| `01_subjects_list.py` | Store and display course subjects |
+| `02_subjects_i_study.py` | "I study subject" for each |
+| `03_subjects_grades.py` | Ask grades, show "In subject you got grade" |
+| `04_lottery_numbers.py` | Winning numbers, sorted ascending |
+| `05_one_to_ten_reverse.py` | 1-10 reversed, comma separated |
+| `06_remove_passed_subjects.py` | Remove passed, show to repeat |
+| `07_alphabet_remove_multiple_3.py` | Alphabet, remove pos multiple of 3 |
+| `08_palindrome.py` | Check if word is palindrome |
+| `09_vowel_count.py` | Count each vowel in word |
+| `10_prices_min_max.py` | Min and max of price list |
+| `11_scalar_product.py` | Scalar product of two vectors |
+| `12_matrix_product.py` | Matrix product |
+| `13_mean_std_sample.py` | Comma-separated numbers, mean and stdev |
+
 ### `list_integrative/` - Integrative Exercises (133 files)
 
 General list manipulation: modify, insert, delete, rotate,
@@ -80,7 +99,8 @@ ejercicios variados.
 | `list_math/` | 25 | Mathematical operations |
 | `list_functional/` | 11 | Functional programming |
 | `list_integrative/` | 133 | Integrative list exercises |
-| **Total** | **332** | |
+| `list_tuples_exercises/` | 13 | List and tuple exercises |
+| **Total** | **345** | |
 
 ## How to run
 

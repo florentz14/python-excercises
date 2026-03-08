@@ -234,6 +234,21 @@ Each file creates one chart using CSV datasets from the `09_Pandas/` folder.
 
 ---
 
+## Matplotlib Exercises (110-117)
+
+| File | Description |
+|------|-------------|
+| `110_sales_line.py` | Interactive: sales by year range → line chart |
+| `111_grades_bar.py` | Bar chart of grades from dict with given color |
+| `112_grades_box.py` | Box plot of grades from Pandas Series |
+| `113_sales_pie.py` | Pie chart of quarterly sales, save as PNG |
+| `114_sales_by_type.py` | Sales chart by type (lineas, barras, sectores, areas) |
+| `115_income_expenses_line.py` | Line chart: income and expenses with legend |
+| `116_banks_line.py` | Line chart of bank closing prices from `bancos.csv` |
+| `117_titanic_plots.py` | Titanic: pie (dead/survived), histogram (ages), bar (class), bar grouped, bar stacked |
+
+---
+
 ## Requirements
 
 ```

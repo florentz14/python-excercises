@@ -234,6 +234,19 @@ Data analysis exercises with Pandas, organized by level from basic to advanced.
 | `88_sales_forecast_project.py` | `store_sales.csv` | Sales forecasting with rolling |
 | `89_data_quality_report.py` | `store_sales.csv` | Automatic data quality checks |
 
+## Pandas Exercises (90–97)
+
+| File | CSV(s) | Description |
+|------|--------|-------------|
+| `90_sales_discount.py` | — | Sales by year with 10% discount |
+| `91_grades_stats.py` | — | Grade statistics: min, max, mean, std |
+| `92_grades_passed.py` | — | Passing grades sorted descending |
+| `93_sales_dataframe.py` | — | DataFrame Month, Sales, Expenses |
+| `94_balance_months.py` | — | Balance total for given months |
+| `95_stock_quotes.py` | `cotizacion.csv` | IBEX35 quotes: min, max, mean |
+| `96_titanic_analysis.py` | `titanic.csv` | Full Titanic analysis |
+| `97_emissions_analysis.py` | `emisiones-2016/17/18/19.csv` | Madrid emissions, reshape, summaries |
+
 ---
 
 ## Data Folder

@@ -156,3 +156,21 @@ Loops in Python: while, for, range, break, continue y patrones.
 | `93_while_positive_sum.py` | Sumar positivos hasta 0 |
 | `94_for_powers_of_2.py` | Potencias de 2 |
 | `95_while_menu_loop.py` | Menú simple (1/2/0) |
+
+## Loop Exercises (96-108)
+
+| Archivo | Contenido |
+|---------|-----------|
+| `96_word_repeat_10.py` | Print word 10 times |
+| `97_years_birthday.py` | Years 1 to age |
+| `98_odd_numbers_comma.py` | Odd numbers 1 to n, comma separated |
+| `99_countdown_comma.py` | Countdown n to 0, comma separated |
+| `100_investment_years.py` | Investment: capital each year |
+| `101_triangle_stars.py` | Right triangle of stars |
+| `102_multiplication_table_1_10.py` | Multiplication table 1-10 |
+| `103_triangle_odd_numbers.py` | Triangle: 1, 3 1, 5 3 1, ... |
+| `104_password_until_correct.py` | Password until correct |
+| `105_is_prime.py` | Check if prime |
+| `106_word_letters_reverse.py` | Letters of word, last to first |
+| `107_count_letter_in_phrase.py` | Count letter in phrase |
+| `108_echo_until_exit.py` | Echo until "salir" |

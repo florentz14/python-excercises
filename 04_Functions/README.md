@@ -56,6 +56,22 @@ Functions in Python: desde conceptos básicos hasta decoradores, recursión y ge
 | `48_args_kwargs_arbitrary.py` | *args, **kwargs, combinación (EN) |
 | `49_lambda_chapter_tutorial.py` | Lambda: básico, llamadas internas, factories (EN) |
 
+## Functional Exercises (50-60)
+
+| File | Description |
+|------|-------------|
+| `50_discount_vat_basket.py` | Discount, VAT, basket_total with function passed in |
+| `51_scientific_calculator.py` | sin/cos/tan/exp/log, table of results 1..n |
+| `52_apply_to_list.py` | Apply function to each element (map) |
+| `53_filter_by_predicate.py` | Filter list by boolean function |
+| `54_phrase_word_lengths.py` | Dict {word: length} from phrase |
+| `55_notes_to_grades.py` | List of notes to letter grades |
+| `56_subjects_grades_uppercase.py` | Subjects dict to uppercase keys + grades |
+| `57_subjects_passed_only.py` | Same, only passed subjects |
+| `58_vector_modulus.py` | Vector magnitude |
+| `59_real_estate_search.py` | Property search by budget, zone price formula |
+| `60_outliers_zscore.py` | Outliers (z-score > 3 or < -3) |
+
 ## Temas Cubiertos
 
 - Funciones básicas y parámetros
