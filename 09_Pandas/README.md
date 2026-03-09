@@ -130,11 +130,11 @@ Students (01-08), Chipotle/Occupation/Food (09-11), Apply (12-13), Stats (14), V
 
 ---
 
-## 07_w3resource (01–81)
+## 07_unique_problems (01–81)
 
-W3Resource-style Pandas exercises. Each file maps to one exercise (e.g. `01_create_from_dict.py` → exercise 1). Covers: create from dict/list/numpy, index labels, selection, filtering, NaN handling, sort, rename, merge, groupby, time series, and more.
+Unique Pandas practice exercises. Each file maps to one problem (e.g. `01_create_from_dict.py` -> problem 1). Covers: create from dict/list/numpy, index labels, selection, filtering, NaN handling, sort, rename, merge, groupby, time series, and more.
 
-**Run:** `python 07_w3resource/01_create_from_dict.py` (or any `NN_*.py`).
+**Run:** `python 07_unique_problems/01_create_from_dict.py` (or any `NN_*.py`).
 
 ---
 
