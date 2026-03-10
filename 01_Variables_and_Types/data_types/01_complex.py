@@ -5,11 +5,10 @@
 # Description: Create complex numbers (1+2j), real/imaginary parts,
 # -------------------------------------------------
 
+# Import the cmath module for complex number operations
 import cmath
 
 # Examples of different numeric types in Python
-x = 1      # int
-x = 1.1    # float (overwrites x)
 x = 1+2j   # complex: real=1, imaginary=2
 print(x)
 

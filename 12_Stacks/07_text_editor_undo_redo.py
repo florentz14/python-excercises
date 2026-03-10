@@ -1,7 +1,7 @@
 # -------------------------------------------------
 # File Name: 07_text_editor_undo_redo.py
-# Author: Florentino Báez
-# Date: 12_Stacks
+# Author: Florentino Baez
+# Date: 2026-03-09
 # Description: Text editor undo/redo. Stack for command history.
 # -------------------------------------------------
 

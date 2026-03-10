@@ -1,7 +1,7 @@
 # -------------------------------------------------
 # File Name: 15_min_stack.py
-# Author: Florentino Báez
-# Date: 12_Stacks
+# Author: Florentino Baez
+# Date: 2026-03-09
 # Description: Min stack. Stack with O(1) getMinimum operation.
 # -------------------------------------------------
 

@@ -1,7 +1,7 @@
 # -------------------------------------------------
 # File Name: 04_balanced_parentheses.py
-# Author: Florentino Báez
-# Date: 12_Stacks
+# Author: Florentino Baez
+# Date: 2026-03-09
 # Description: Balanced parentheses checker. Validates nesting of brackets.
 # -------------------------------------------------
 

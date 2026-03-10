@@ -1,7 +1,7 @@
 # -------------------------------------------------
 # File Name: 07_bfs_graph.py
-# Author: Florentino Báez
-# Date: 13_Queues
+# Author: Florentino Baez
+# Date: 2026-03-09
 # Description: BFS on graph. Queue for level-order traversal.
 # -------------------------------------------------
 

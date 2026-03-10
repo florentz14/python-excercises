@@ -1,7 +1,7 @@
 # -------------------------------------------------
 # File Name: 13_bfs_shortest_path.py
-# Author: Florentino Báez
-# Date: 13_Queues
+# Author: Florentino Baez
+# Date: 2026-03-09
 # Description: BFS shortest path. Unweighted graph shortest path.
 # -------------------------------------------------
 

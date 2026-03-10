@@ -1,7 +1,7 @@
 # -------------------------------------------------
 # File Name: 12_intersection_of_lists.py
-# Author: Florentino Báez
-# Date: 18_Linked_Lists
+# Author: Florentino Baez
+# Date: 2026-03-09
 # Description: Find intersection point of two linked lists.
 # -------------------------------------------------
 

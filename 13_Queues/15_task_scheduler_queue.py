@@ -1,7 +1,7 @@
 # -------------------------------------------------
 # File Name: 15_task_scheduler_queue.py
-# Author: Florentino Báez
-# Date: 13_Queues
+# Author: Florentino Baez
+# Date: 2026-03-09
 # Description: Task scheduler with queue. Priority or round-robin scheduling.
 # -------------------------------------------------
 

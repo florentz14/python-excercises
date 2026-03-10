@@ -1,7 +1,7 @@
 # -------------------------------------------------
 # File Name: 06_infix_to_postfix.py
-# Author: Florentino Báez
-# Date: 12_Stacks
+# Author: Florentino Baez
+# Date: 2026-03-09
 # Description: Infix to postfix conversion. Shunting-yard or stack-based conversion.
 # -------------------------------------------------
 

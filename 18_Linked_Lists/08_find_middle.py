@@ -1,7 +1,7 @@
 # -------------------------------------------------
 # File Name: 08_find_middle.py
-# Author: Florentino Báez
-# Date: 18_Linked_Lists
+# Author: Florentino Baez
+# Date: 2026-03-09
 # Description: Find middle node of singly linked list.
 # -------------------------------------------------
 

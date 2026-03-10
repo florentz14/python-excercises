@@ -1,7 +1,7 @@
 # -------------------------------------------------
 # File Name: 09_cycle_detection_floyd.py
-# Author: Florentino Báez
-# Date: 18_Linked_Lists
+# Author: Florentino Baez
+# Date: 2026-03-09
 # Description: Detect cycle in singly linked list.
 # -------------------------------------------------
 

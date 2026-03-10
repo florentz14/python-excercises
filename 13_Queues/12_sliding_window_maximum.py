@@ -1,7 +1,7 @@
 # -------------------------------------------------
 # File Name: 12_sliding_window_maximum.py
-# Author: Florentino Báez
-# Date: 13_Queues
+# Author: Florentino Baez
+# Date: 2026-03-09
 # Description: Sliding window maximum. Monotonic deque. O(n).
 # -------------------------------------------------
 

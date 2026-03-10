@@ -1,7 +1,7 @@
 # -------------------------------------------------
 # File Name: 04_printer_queue.py
-# Author: Florentino Báez
-# Date: 13_Queues
+# Author: Florentino Baez
+# Date: 2026-03-09
 # Description: Printer queue simulation. FIFO job processing.
 # -------------------------------------------------
 

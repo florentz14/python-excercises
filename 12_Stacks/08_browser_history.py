@@ -1,7 +1,7 @@
 # -------------------------------------------------
 # File Name: 08_browser_history.py
-# Author: Florentino Báez
-# Date: 12_Stacks
+# Author: Florentino Baez
+# Date: 2026-03-09
 # Description: Browser history. Back/forward navigation with stack.
 # -------------------------------------------------
 

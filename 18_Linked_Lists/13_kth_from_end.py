@@ -1,7 +1,7 @@
 # -------------------------------------------------
 # File Name: 13_kth_from_end.py
-# Author: Florentino Báez
-# Date: 18_Linked_Lists
+# Author: Florentino Baez
+# Date: 2026-03-09
 # Description: Find kth node from the end of linked list.
 # -------------------------------------------------
 

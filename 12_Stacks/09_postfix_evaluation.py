@@ -1,7 +1,7 @@
 # -------------------------------------------------
 # File Name: 09_postfix_evaluation.py
-# Author: Florentino Báez
-# Date: 12_Stacks
+# Author: Florentino Baez
+# Date: 2026-03-09
 # Description: Postfix (RPN) evaluation. Stack-based expression evaluation.
 # -------------------------------------------------
 

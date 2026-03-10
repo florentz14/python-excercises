@@ -1,7 +1,7 @@
 # -------------------------------------------------
 # File Name: 13_stock_span_problem.py
-# Author: Florentino Báez
-# Date: 12_Stacks
+# Author: Florentino Baez
+# Date: 2026-03-09
 # Description: Stock span problem. Days until price greater than current.
 # -------------------------------------------------
 

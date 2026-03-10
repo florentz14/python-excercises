@@ -1,7 +1,7 @@
 # -------------------------------------------------
 # File Name: 14_largest_rectangle_histogram.py
-# Author: Florentino Báez
-# Date: 12_Stacks
+# Author: Florentino Baez
+# Date: 2026-03-09
 # Description: Largest rectangle in histogram. Monotonic stack. O(n).
 # -------------------------------------------------
 

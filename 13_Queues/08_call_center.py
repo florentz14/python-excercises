@@ -1,7 +1,7 @@
 # -------------------------------------------------
 # File Name: 08_call_center.py
-# Author: Florentino Báez
-# Date: 13_Queues
+# Author: Florentino Baez
+# Date: 2026-03-09
 # Description: Call center simulation. Queue for incoming calls.
 # -------------------------------------------------
 

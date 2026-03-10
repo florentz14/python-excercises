@@ -1,7 +1,7 @@
 # -------------------------------------------------
 # File Name: 10_prefix_evaluation.py
-# Author: Florentino Báez
-# Date: 12_Stacks
+# Author: Florentino Baez
+# Date: 2026-03-09
 # Description: Prefix expression evaluation. Stack or recursive evaluation.
 # -------------------------------------------------
 

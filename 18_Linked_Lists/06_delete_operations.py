@@ -1,7 +1,7 @@
 # -------------------------------------------------
 # File Name: 06_delete_operations.py
-# Author: Florentino Báez
-# Date: 18_Linked_Lists
+# Author: Florentino Baez
+# Date: 2026-03-09
 # Description: Delete operations in singly linked list.
 # -------------------------------------------------
 

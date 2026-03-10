@@ -1,7 +1,7 @@
 # -------------------------------------------------
 # File Name: 09_priority_queue_heapq.py
-# Author: Florentino Báez
-# Date: 13_Queues
+# Author: Florentino Baez
+# Date: 2026-03-09
 # Description: Priority queue with heapq. Min-heap for sorted dequeue.
 # -------------------------------------------------
 

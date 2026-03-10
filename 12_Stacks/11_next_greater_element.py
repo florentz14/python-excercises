@@ -1,7 +1,7 @@
 # -------------------------------------------------
 # File Name: 11_next_greater_element.py
-# Author: Florentino Báez
-# Date: 12_Stacks
+# Author: Florentino Baez
+# Date: 2026-03-09
 # Description: Next greater element. Monotonic stack pattern.
 # -------------------------------------------------
 

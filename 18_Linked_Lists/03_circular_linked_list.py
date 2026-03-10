@@ -1,7 +1,7 @@
 # -------------------------------------------------
 # File Name: 03_circular_linked_list.py
-# Author: Florentino Báez
-# Date: 18_Linked_Lists
+# Author: Florentino Baez
+# Date: 2026-03-09
 # Description: Circular Linked List implementation.
 # -------------------------------------------------
 

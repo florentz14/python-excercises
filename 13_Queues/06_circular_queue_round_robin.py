@@ -1,7 +1,7 @@
 # -------------------------------------------------
 # File Name: 06_circular_queue_round_robin.py
-# Author: Florentino Báez
-# Date: 13_Queues
+# Author: Florentino Baez
+# Date: 2026-03-09
 # Description: Circular queue / round robin. Fixed-size rotating buffer.
 # -------------------------------------------------
 

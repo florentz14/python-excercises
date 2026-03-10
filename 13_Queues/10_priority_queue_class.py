@@ -1,7 +1,7 @@
 # -------------------------------------------------
 # File Name: 10_priority_queue_class.py
-# Author: Florentino Báez
-# Date: 13_Queues
+# Author: Florentino Baez
+# Date: 2026-03-09
 # Description: Priority queue class. Heap-based implementation.
 # -------------------------------------------------
 

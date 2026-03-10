@@ -1,24 +1,24 @@
 # -------------------------------------------------
 # File Name: 03_parentheses.py
-# Author: Florentino Báez
-# Date: 12_Stacks
+# Author: Florentino Baez
+# Date: 2026-03-09
 # Description: Parenthesis balancing. Stack verifies ( ) [ ] { } are balanced.
 # -------------------------------------------------
 
-def balanceado(s):
-    pila = []
-    pares = {")": "(", "]": "[", "}": "{"}
-    for c in s:
-        if c in "([{":
-            pila.append(c)
-        elif c in ")]}":
-            if not pila or pila[-1] != pares[c]:
+def is_balanced(text):
+    stack = []
+    pairs = {")": "(", "]": "[", "}": "{"}
+    for char in text:
+        if char in "([{":
+            stack.append(char)
+        elif char in ")]}":
+            if not stack or stack[-1] != pairs[char]:
                 return False
-            pila.pop()
-    return len(pila) == 0
+            stack.pop()
+    return len(stack) == 0
 
 
-print(balanceado("(2+3)*[4-1]"))   # True
-print(balanceado("((())"))          # False
-print(balanceado("{[()]}"))         # True
-print(balanceado("{[)]}"))          # False
+print(is_balanced("(2+3)*[4-1]"))   # True
+print(is_balanced("((())"))         # False
+print(is_balanced("{[()]}"))        # True
+print(is_balanced("{[)]}"))         # False

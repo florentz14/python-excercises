@@ -1,7 +1,7 @@
 # -------------------------------------------------
 # File Name: 10_merge_two_sorted_lists.py
-# Author: Florentino Báez
-# Date: 18_Linked_Lists
+# Author: Florentino Baez
+# Date: 2026-03-09
 # Description: Merge two sorted singly linked lists.
 # -------------------------------------------------
 

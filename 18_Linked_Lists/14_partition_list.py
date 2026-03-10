@@ -1,7 +1,7 @@
 # -------------------------------------------------
 # File Name: 14_partition_list.py
-# Author: Florentino Báez
-# Date: 18_Linked_Lists
+# Author: Florentino Baez
+# Date: 2026-03-09
 # Description: Partition linked list around a value.
 # -------------------------------------------------
 

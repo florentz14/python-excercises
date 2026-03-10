@@ -1,25 +1,25 @@
 # -------------------------------------------------
 # File Name: 02_deque.py
-# Author: Florentino Báez
-# Date: 13_Queues
+# Author: Florentino Baez
+# Date: 2026-03-09
 # Description: Queue with collections.deque. append and popleft. O(1) at both ends.
 # -------------------------------------------------
 
 from collections import deque
 
-cola = deque()
+queue = deque()
 
-# Encolar
-cola.append("A")
-cola.append("B")
-cola.append("C")
-print("Cola:", list(cola))
+# Enqueue
+queue.append("A")
+queue.append("B")
+queue.append("C")
+print("Queue:", list(queue))
 
-# Desencolar (popleft = O(1))
-primero = cola.popleft()
-print("Desencolar:", primero, "→ Cola:", list(cola))
-print("Desencolar:", cola.popleft(), "→ Cola:", list(cola))
+# Dequeue (popleft = O(1))
+first = queue.popleft()
+print("Dequeue:", first, "-> Queue:", list(queue))
+print("Dequeue:", queue.popleft(), "-> Queue:", list(queue))
 
-# Ver el frente sin quitar
-if cola:
-    print("Frente:", cola[0])
+# Peek front without removing
+if queue:
+    print("Front:", queue[0])

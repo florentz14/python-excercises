@@ -1,7 +1,7 @@
 # -------------------------------------------------
 # File Name: 12_monotonic_stack.py
-# Author: Florentino Báez
-# Date: 12_Stacks
+# Author: Florentino Baez
+# Date: 2026-03-09
 # Description: Monotonic stack. Pattern for next greater/smaller element problems.
 # -------------------------------------------------
 

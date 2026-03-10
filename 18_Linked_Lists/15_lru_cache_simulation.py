@@ -1,7 +1,7 @@
 # -------------------------------------------------
 # File Name: 15_lru_cache_simulation.py
-# Author: Florentino Báez
-# Date: 18_Linked_Lists
+# Author: Florentino Baez
+# Date: 2026-03-09
 # Description: Simulate LRU Cache using doubly linked list + hashmap.
 # -------------------------------------------------
 

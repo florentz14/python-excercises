@@ -1,7 +1,7 @@
 # -------------------------------------------------
 # File Name: 11_remove_duplicates.py
-# Author: Florentino Báez
-# Date: 18_Linked_Lists
+# Author: Florentino Baez
+# Date: 2026-03-09
 # Description: Remove duplicates from singly linked list.
 # -------------------------------------------------
 

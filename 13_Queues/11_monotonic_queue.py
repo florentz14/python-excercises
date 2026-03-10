@@ -1,7 +1,7 @@
 # -------------------------------------------------
 # File Name: 11_monotonic_queue.py
-# Author: Florentino Báez
-# Date: 13_Queues
+# Author: Florentino Baez
+# Date: 2026-03-09
 # Description: Monotonic queue. Deque for sliding window min/max.
 # -------------------------------------------------
 

@@ -1,7 +1,7 @@
 # -------------------------------------------------
 # File Name: 05_customer_service_priority.py
-# Author: Florentino Báez
-# Date: 13_Queues
+# Author: Florentino Baez
+# Date: 2026-03-09
 # Description: Priority customer service. Queue with priority ordering.
 # -------------------------------------------------
 

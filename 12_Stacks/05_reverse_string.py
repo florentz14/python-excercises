@@ -1,7 +1,7 @@
 # -------------------------------------------------
 # File Name: 05_reverse_string.py
-# Author: Florentino Báez
-# Date: 12_Stacks
+# Author: Florentino Baez
+# Date: 2026-03-09
 # Description: Reverse string using stack. Push all, pop all.
 # -------------------------------------------------
 
