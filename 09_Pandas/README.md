@@ -14,18 +14,18 @@ Data analysis exercises with Pandas, organized by topic in subfolders.
 
 ```
 09_Pandas/
-├── 01_basics/           (13) Fundamentals, create, read, explore, dtypes
+├── 01_basics/           (30) Fundamentals, create, read, explore, dtypes
 ├── 02_selection_filtering/ (8)  loc/iloc, filter, sort, nlargest, sampling
 ├── 03_cleaning/         (13) Nulls, duplicates, outliers, string cleaning
 ├── 04_groupby_reshape/  (19) groupby, pivot, merge, crosstab
 ├── 05_time_series/      (11) Datetime, rolling, resample, forecasting
-├── 06_real_world_projects/ (51) Full analyses by dataset
+├── 06_real_world_projects/ (53) Full analyses by dataset
 └── data/                All CSV files
 ```
 
 ---
 
-## 01_basics (01-13)
+## 01_basics (01-31)
 
 | # | File | Description |
 |---|------|-------------|
@@ -42,6 +42,29 @@ Data analysis exercises with Pandas, organized by topic in subfolders.
 | 11 | `11_value_counts.py` | Frequency counts and percentages |
 | 12 | `12_astype_and_conversion.py` | Convert column data types safely |
 | 13 | `13_to_numeric.py` | pd.to_numeric, errors=coerce |
+| 14 | `14_series_from_list.py` | Create a Series from Python lists |
+| 15 | `15_series_from_numpy.py` | Create a Series from NumPy arrays |
+| 16 | `16_series_from_dictionary.py` | Create a Series from dictionaries |
+| 17 | `17_series_custom_index.py` | Series with custom index labels |
+| 18 | `18_series_named_attributes.py` | Series name and axis labels |
+| 19 | `19_series_to_list.py` | Convert Series to Python list |
+| 20 | `20_series_arithmetic.py` | Arithmetic operations between Series |
+| 21 | `21_series_comparison.py` | Element-wise comparison operations |
+| 22 | `22_dict_to_series.py` | Dictionary to Series conversion examples |
+| 23 | `23_array_to_series.py` | NumPy array to Series conversion |
+| 24 | `24_series_statistics.py` | Descriptive statistics for a Series |
+| 25 | `25_series_word_length.py` | String length analysis with Series |
+
+### New basics (26-30)
+
+| # | File | Description |
+|---|------|-------------|
+| 26 | `26_merge_join_basics.py` | Merge by key, merge by index, and join with renamed columns |
+| 27 | `27_concat_pivot_basics.py` | concat, combine_first, stack, and unstack |
+| 28 | `28_mapping_replace_basics.py` | drop_duplicates, map dictionaries, replace values, rename index |
+| 29 | `29_binning_outliers_sampling.py` | cut/qcut binning, outlier filtering, permutation sampling |
+| 30 | `30_strings_and_advanced_groupby.py` | string cleanup, regex matching, groupby transform/apply |
+| 31 | `31_merging_and_joining_in_depth.py` | full in-depth guide for merge/join variants and real-world example |
 
 ---
 
@@ -124,9 +147,9 @@ Data analysis exercises with Pandas, organized by topic in subfolders.
 
 ---
 
-## 06_real_world_projects (01-51)
+## 06_real_world_projects (01-53)
 
-Students (01-08), Chipotle/Occupation/Food (09-11), Apply (12-13), Stats (14), Viz (15-19), Delete (20-21), Sales/Attendance/Budget/Inventory/Tasks/Construction/Logs/Traffic/Movies/Transport (22-31), HR (32), Vectorization (33), Chunking (34), Export/Excel (35-36), API (37-38), Feature Engineering (39-41), Customer/Sales (42-43), Exercises (44-51). Menu launcher: `08_main_menu.py`.
+Students (01-08), Chipotle/Occupation/Food (09-11), Apply (12-13), Stats (14), Viz (15-19), Delete (20-21), Sales/Attendance/Budget/Inventory/Tasks/Construction/Logs/Traffic/Movies/Transport (22-31), HR (32), Vectorization (33), Chunking (34), Export/Excel (35-36), API (37-38), Feature Engineering (39-41), Customer/Sales (42-43), Exercises (44-51), Sales Visualization Mini-Project (52), Sales Analysis Mini-Project (53). Menu launcher: `08_main_menu.py`.
 
 ---
 

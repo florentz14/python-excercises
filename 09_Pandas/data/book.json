@@ -1,0 +1,176 @@
+{
+  "catalog": {
+    "title": "Tech Books Catalog",
+    "version": "2.0",
+    "last_updated": "2026-03-11",
+    "total_authors": 4,
+    "authors": [
+      {
+        "id": "A001",
+        "writer": "Mark Ross",
+        "nationality": "USA",
+        "language": "English",
+        "bio": "Expert in XML and Python technologies with over 15 years of experience.",
+        "books": [
+          {
+            "id": "B001",
+            "title": "XML Cookbook",
+            "category": "Markup Languages",
+            "year": 2018,
+            "pages": 320,
+            "edition": 2,
+            "price": 23.56,
+            "currency": "USD",
+            "available": true,
+            "rating": 4.2,
+            "tags": ["xml", "data", "web"]
+          },
+          {
+            "id": "B002",
+            "title": "Python Fundamentals",
+            "category": "Programming",
+            "year": 2020,
+            "pages": 480,
+            "edition": 3,
+            "price": 50.70,
+            "currency": "USD",
+            "available": true,
+            "rating": 4.8,
+            "tags": ["python", "beginner", "programming"]
+          },
+          {
+            "id": "B003",
+            "title": "The NumPy Library",
+            "category": "Data Science",
+            "year": 2021,
+            "pages": 270,
+            "edition": 1,
+            "price": 12.30,
+            "currency": "USD",
+            "available": true,
+            "rating": 4.5,
+            "tags": ["python", "numpy", "data science", "arrays"]
+          }
+        ]
+      },
+      {
+        "id": "A002",
+        "writer": "Barbara Bracket",
+        "nationality": "UK",
+        "language": "English",
+        "bio": "Full-stack developer and author specializing in Java and web technologies.",
+        "books": [
+          {
+            "id": "B004",
+            "title": "Java Enterprise",
+            "category": "Programming",
+            "year": 2019,
+            "pages": 560,
+            "edition": 4,
+            "price": 28.60,
+            "currency": "USD",
+            "available": true,
+            "rating": 4.6,
+            "tags": ["java", "enterprise", "backend"]
+          },
+          {
+            "id": "B005",
+            "title": "HTML5",
+            "category": "Web Development",
+            "year": 2020,
+            "pages": 390,
+            "edition": 2,
+            "price": 31.35,
+            "currency": "USD",
+            "available": true,
+            "rating": 4.3,
+            "tags": ["html", "web", "frontend"]
+          },
+          {
+            "id": "B006",
+            "title": "Python for Dummies",
+            "category": "Programming",
+            "year": 2022,
+            "pages": 430,
+            "edition": 1,
+            "price": 28.00,
+            "currency": "USD",
+            "available": false,
+            "rating": 4.1,
+            "tags": ["python", "beginner", "guide"]
+          }
+        ]
+      },
+      {
+        "id": "A003",
+        "writer": "Carlos Nguyen",
+        "nationality": "Canada",
+        "language": "English",
+        "bio": "Database architect and cloud specialist with expertise in SQL and NoSQL systems.",
+        "books": [
+          {
+            "id": "B007",
+            "title": "SQL Mastery",
+            "category": "Databases",
+            "year": 2021,
+            "pages": 410,
+            "edition": 2,
+            "price": 35.00,
+            "currency": "USD",
+            "available": true,
+            "rating": 4.7,
+            "tags": ["sql", "databases", "backend"]
+          },
+          {
+            "id": "B008",
+            "title": "Introduction to Cloud Computing",
+            "category": "Cloud",
+            "year": 2023,
+            "pages": 500,
+            "edition": 1,
+            "price": 45.90,
+            "currency": "USD",
+            "available": true,
+            "rating": 4.4,
+            "tags": ["cloud", "aws", "devops"]
+          }
+        ]
+      },
+      {
+        "id": "A004",
+        "writer": "Sophie Müller",
+        "nationality": "Germany",
+        "language": "English",
+        "bio": "AI researcher and educator focused on machine learning and neural networks.",
+        "books": [
+          {
+            "id": "B009",
+            "title": "Machine Learning Essentials",
+            "category": "Artificial Intelligence",
+            "year": 2022,
+            "pages": 620,
+            "edition": 1,
+            "price": 59.99,
+            "currency": "USD",
+            "available": true,
+            "rating": 4.9,
+            "tags": ["machine learning", "ai", "python", "data science"]
+          },
+          {
+            "id": "B010",
+            "title": "Deep Learning with Python",
+            "category": "Artificial Intelligence",
+            "year": 2023,
+            "pages": 540,
+            "edition": 1,
+            "price": 55.00,
+            "currency": "USD",
+            "available": true,
+            "rating": 4.8,
+            "tags": ["deep learning", "neural networks", "python", "tensorflow"]
+          }
+        ]
+      }
+    ]
+  }
+}

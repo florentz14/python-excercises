@@ -7,10 +7,11 @@
 
 import pandas as pd
 
-# Create two Pandas Series
+# Create two Pandas Series (int)
 series1 = pd.Series([2, 4, 6, 8, 10])
 series2 = pd.Series([1, 3, 5, 7, 10])
 
+# Print the Series
 print("=" * 45)
 print("        SERIES COMPARISON")
 print("=" * 45)
@@ -18,37 +19,37 @@ print(f"Series 1 : {series1.tolist()}")
 print(f"Series 2 : {series2.tolist()}")
 print("=" * 45)
 
-# Equal To
+# Equal To (Series1 == Series2)
 eq_result = series1 == series2
 print("\n== Equal To (Series1 == Series2):")
 print(eq_result.to_string())
 
-# Not Equal To
+# Not Equal To (Series1 != Series2)
 neq_result = series1 != series2
 print("\n!= Not Equal To (Series1 != Series2):")
 print(neq_result.to_string())
 
-# Greater Than
+# Greater Than (Series1 > Series2)
 gt_result = series1 > series2
 print("\n>  Greater Than (Series1 > Series2):")
 print(gt_result.to_string())
 
-# Less Than
+# Less Than (Series1 < Series2)
 lt_result = series1 < series2
 print("\n<  Less Than (Series1 < Series2):")
 print(lt_result.to_string())
 
-# Greater Than or Equal To
+# Greater Than or Equal To (Series1 >= Series2)
 gte_result = series1 >= series2
 print("\n>= Greater Than or Equal To (Series1 >= Series2):")
 print(gte_result.to_string())
 
-# Less Than or Equal To
+# Less Than or Equal To (Series1 <= Series2)
 lte_result = series1 <= series2
 print("\n<= Less Than or Equal To (Series1 <= Series2):")
 print(lte_result.to_string())
 
-# Using Pandas Built-in Methods
+# Using Pandas Built-in Methods (Series1.eq(Series2), Series1.ne(Series2), Series1.gt(Series2), Series1.lt(Series2), Series1.ge(Series2), Series1.le(Series2))
 print("\n" + "=" * 45)
 print("   Using Pandas Built-in Methods")
 print("=" * 45)
@@ -59,7 +60,7 @@ print(f"series1.lt(series2)  : {series1.lt(series2).tolist()}")
 print(f"series1.ge(series2)  : {series1.ge(series2).tolist()}")
 print(f"series1.le(series2)  : {series1.le(series2).tolist()}")
 
-# Summary Table
+# Summary Table (print the summary table)
 print("\n" + "=" * 65)
 print("                     SUMMARY TABLE")
 print("=" * 65)
@@ -68,6 +69,7 @@ print(
     f"{'S1>S2':>7} {'S1<S2':>7} {'S1>=S2':>8} {'S1<=S2':>8}"
 )
 print("-" * 65)
+# Print the summary table
 for i in range(len(series1)):
     s1 = series1[i]
     s2 = series2[i]
@@ -82,7 +84,7 @@ for i in range(len(series1)):
     )
 print("=" * 65)
 
-# Filtered Values Based on Comparison
+# Filtered Values Based on Comparison (Series1[eq_result], Series1[gt_result], Series1[lt_result], Series1[gte_result], Series1[lte_result])
 print("\n-- Filtered Values Based on Comparison --")
 print(f"Elements where S1 == S2 : {series1[eq_result].tolist()}")
 print(f"Elements where S1 >  S2 : {series1[gt_result].tolist()}")

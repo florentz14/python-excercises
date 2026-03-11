@@ -8,8 +8,9 @@
 import numpy as np
 import pandas as pd
 
-# 2. Create a Series from a NumPy array
+# Create a Series from a NumPy array
 np_array = np.array([1.1, 2.2, 3.3, 4.4, 5.5])
 np_series = pd.Series(np_array)
+# Print the Series
 print("Series from a NumPy array:")
 print(np_series)

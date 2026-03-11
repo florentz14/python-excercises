@@ -1,81 +1,91 @@
 # =============================================================================
-# python-excercises - Dependencias del proyecto
-# Instalar: pip install -r requirements.txt
+# python-excercises - Project dependencies
+# Install: pip install -r requirements.txt
 # =============================================================================
 
 # -----------------------------------------------------------------------------
-# Arrays y cómputo numérico (08_Matrices, operaciones matemáticas)
+# Arrays and numerical computing (08_Matrices, math operations)
 # -----------------------------------------------------------------------------
 numpy>=1.20
 
 # -----------------------------------------------------------------------------
-# Análisis de datos y tablas (09_Pandas, CSV, DataFrames)
+# Data analysis and tabular workflows (09_Pandas, CSV, DataFrames)
 # -----------------------------------------------------------------------------
 pandas>=1.3
 openpyxl>=3.0    # Excel read/write (80-81)
 pyarrow>=14.0    # Parquet export (80)
 
 # -----------------------------------------------------------------------------
-# Visualización (10_Matplotlib, gráficos y estadísticos)
+# Visualization (10_Matplotlib, plots and statistical charts)
 # -----------------------------------------------------------------------------
 matplotlib>=3.4
-# Gráficos estadísticos sobre Matplotlib; usa DataFrames de Pandas
+
+# Statistical plots on top of Matplotlib; uses Pandas DataFrames
 seaborn>=0.11
 
 # -----------------------------------------------------------------------------
-# Ciencia de datos y estadística
+# Data science and statistics
 # -----------------------------------------------------------------------------
-# Algoritmos científicos, optimización, álgebra lineal
+# Scientific algorithms, optimization, linear algebra
 scipy>=1.10.0
 
-# Machine learning: modelos, clustering, métricas
+# Machine learning: models, clustering, metrics
 scikit-learn>=1.3.0
 
 # Gradient boosting (21_Machine_Learning/35_xgboost.py)
 xgboost>=2.0.0
 
-# Modelos estadísticos, series temporales, regresión
+# Statistical models, time series, regression
 statsmodels>=0.14.0
 
 # -----------------------------------------------------------------------------
-# Matemática simbólica (álgebra, cálculo, ecuaciones)
+# Symbolic mathematics (algebra, calculus, equations)
 # -----------------------------------------------------------------------------
 sympy>=1.12.0
 
 # -----------------------------------------------------------------------------
-# Bases de datos
+# Databases
 # -----------------------------------------------------------------------------
-# Conector MySQL oficial
+# Official MySQL connector
 mysql-connector-python>=8.0.0
 
-# Variables de entorno desde archivos .env
+# PostgreSQL driver
+psycopg2-binary>=2.9.0
+
+# SQL toolkit / ORM (used by Pandas unified DB interface demo)
+sqlalchemy>=2.0.0
+
+# MongoDB driver
+pymongo>=4.0.0
+
+# Environment variables from .env files
 python-dotenv>=1.0.0
 
-# Hash seguro de contraseñas
+# Secure password hashing
 bcrypt>=4.0.0
 
 # -----------------------------------------------------------------------------
-# Utilidades
+# Utilities
 # -----------------------------------------------------------------------------
-# Formato tabular en consola (tablas bonitas para print)
+# Tabular console formatting (pretty print tables)
 tabulate>=0.9.0
 
 # -----------------------------------------------------------------------------
-# HTTP y APIs web
+# HTTP and web APIs
 # -----------------------------------------------------------------------------
-# Cliente HTTP asíncrono para APIs REST
+# Async HTTP client for REST APIs
 aiohttp>=3.9.0
 
-# Framework web moderno para crear APIs REST
+# Modern web framework for building REST APIs
 fastapi>=0.110.0
 
-# Servidor ASGI para ejecutar FastAPI
+# ASGI server for running FastAPI
 uvicorn>=0.27.0
 
 # -----------------------------------------------------------------------------
-# Deep learning / redes neuronales
-# PyTorch: equivalente a TensorFlow, compatible con Python 3.14 (redes, GPU, etc.)
-# TensorFlow: solo Python 3.9–3.12; descomenta si usas esa versión
+# Deep learning / neural networks
+# PyTorch: TensorFlow alternative, compatible with Python 3.14 (nets, GPU, etc.)
+# TensorFlow: only Python 3.9-3.12; uncomment if you use that version
 # -----------------------------------------------------------------------------
 torch>=2.10.0
 # tensorflow>=2.15.0

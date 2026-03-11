@@ -12,28 +12,32 @@ from pathlib import Path
 csv_path = Path(__file__).parent.parent / "data" / "chipotle_orders.csv"
 df = pd.read_csv(csv_path)
 
+# Print the DataFrame
+print("=== ORIGINAL DATAFRAME ===")
+print(df)
+
 # Convert item_price from string "$8.49" to float 8.49
 df["item_price"] = df["item_price"].str.replace("$", "").astype(float)
 
-# Filter items with price > 10
+# Filter items with price > 10 (DataFrame)
 print("=== FILTER: item_price > 10 ===")
 high_price = df[df["item_price"] > 10]
 print(high_price)
 print()
 
-# Filter only "Chicken Bowl" items
+# Filter only "Chicken Bowl" items (DataFrame)
 print("=== FILTER: Chicken Bowl only ===")
 chicken_bowl = df[df["item_name"] == "Chicken Bowl"]
 print(chicken_bowl)
 print()
 
-# Sort by item_price descending
+# Sort by item_price descending (DataFrame)
 print("=== SORT BY item_price (descending) ===")
 sorted_price = df.sort_values(by="item_price", ascending=False)
 print(sorted_price)
 print()
 
-# Sort by quantity ascending, then item_price descending
+# Sort by quantity ascending, then item_price descending (DataFrame)
 print("=== SORT BY quantity (asc), then item_price (desc) ===")
 sorted_multi = df.sort_values(by=["quantity", "item_price"], ascending=[True, False])
 print(sorted_multi)

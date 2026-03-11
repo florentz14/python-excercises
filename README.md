@@ -1,6 +1,6 @@
 # Python Exercises
 
-A complete repository of Python exercises for learning programming from basics to advanced concepts (NumPy, Pandas, Matplotlib, Data Structures, MySQL).
+A complete repository of Python exercises for learning programming from basics to advanced concepts (NumPy, Pandas, Matplotlib, Data Structures, Databases).
 
 ## Installation and Dependencies
 
@@ -170,12 +170,12 @@ Hash tables:
 - Chaining, Open Addressing
 - Hash functions, applications
 
-### 20_MySQL
+### 20_Databases
 
-MySQL/MariaDB database:
-- Connection with Python
-- Complete ATM system with database
-- CRUD, stored procedures
+Relational databases with Python:
+- MySQL/MariaDB connection and ATM system
+- SQLite3 local database workflow (load/read/update/delete)
+- CRUD operations and stored procedures
 
 ### 21_Machine_Learning
 
@@ -221,7 +221,7 @@ This path is pedagogical and does not follow folder numbering.
 18. **09_Pandas** - Data wrangling and exploratory analysis
 19. **10_Matplotlib** - Data visualization and plotting practice
 20. **17_Equations** - Numerical methods and computational math
-21. **20_MySQL** - Relational databases with Python
+21. **20_Databases** - Relational databases with Python
 22. **21_Machine_Learning** - Intro ML workflows after math/data foundations
 
 ---
@@ -264,7 +264,7 @@ This path is pedagogical and does not follow folder numbering.
 
    ```bash
    python 01_Variables_and_Types/data_types/02_variables.py
-   python 20_MySQL/01_connection_test.py
+   python 20_Databases/01_connection_test.py
    ```
 
 ---

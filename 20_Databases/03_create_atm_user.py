@@ -1,7 +1,7 @@
 # -------------------------------------------------
 # File Name: 03_create_atm_user.py
 # Author: Florentino Báez
-# Date: 20_MySQL
+# Module: 20_Databases
 # Description: Helper script to create ATM users easily
 # -------------------------------------------------
 

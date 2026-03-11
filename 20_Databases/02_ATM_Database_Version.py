@@ -1,7 +1,7 @@
 # -------------------------------------------------
 # File Name: 02_ATM_Database_Version.py
 # Author: Florentino Báez
-# Date: 20_MySQL
+# Module: 20_Databases
 # Description: ATM Simulation with MySQL Database Integration
 # -------------------------------------------------
 

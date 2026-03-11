@@ -1,7 +1,7 @@
 # -------------------------------------------------
 # File Name: 01_connection_test.py
 # Author: Florentino Báez
-# Date: 20_MySQL
+# Module: 20_Databases
 # Description: Test MySQL database connection.
 # -------------------------------------------------
 

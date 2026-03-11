@@ -1751,13 +1751,16 @@ Generated sections: 23 folders.
 | `19_Hash_Tables/10_custom_hashable_objects.py` | Hash table concept demonstration | Custom hashable objects with __hash__ and __eq__ | Average O(1) operations, worst O(n) |
 | `19_Hash_Tables/11_hash_table_vs_dict.py` | Hash table concept demonstration | Compare custom HashTable with Python dict (CPython open addressing) | Average O(1) operations, worst O(n) |
 | `19_Hash_Tables/12_bloom_filter.py` | Hash function design | Maps keys to indices aiming for uniform distribution | O(len(key)) to compute hash, lookup average O(1) |
-## 20_MySQL
+## 20_Databases
 
 | Program | Algorithm Used | How it Works | Complexity |
 | --- | --- | --- | --- |
-| 20_MySQL/01_connection_test.py | Database query/CRUD workflow | Test MySQL database connection | Depends on dataset size and operation |
-| 20_MySQL/02_ATM_Database_Version.py | Database query/CRUD workflow | ATM Simulation with MySQL Database Integration | Depends on dataset size and operation |
-| 20_MySQL/03_create_atm_user.py | Educational algorithm/pattern script | Helper script to create ATM users easily | Varies by operation; commonly O(n) for single-pass processing |
+| 20_Databases/01_connection_test.py | Database query/CRUD workflow | Test MySQL database connection | Depends on dataset size and operation |
+| 20_Databases/02_ATM_Database_Version.py | Database query/CRUD workflow | ATM Simulation with MySQL Database Integration | Depends on dataset size and operation |
+| 20_Databases/03_create_atm_user.py | Educational algorithm/pattern script | Helper script to create ATM users easily | Varies by operation; commonly O(n) for single-pass processing |
+| 20_Databases/04_sqlite3_books_catalog.py | Database query/CRUD workflow | SQLite3 end-to-end flow: create, insert, query, update, delete, metadata | Depends on dataset size and operation |
+| 20_Databases/05_postgresql_books_catalog.py | Database query/CRUD workflow | PostgreSQL end-to-end flow: create, insert, join, aggregates, update/delete, rollback, metadata | Depends on dataset size and operation |
+| 20_Databases/07_mongodb_books_catalog.py | Database query/CRUD workflow | MongoDB end-to-end flow: insert, query, aggregation pipeline, update/delete, metadata | Depends on dataset size and operation |
 
 ## 21_Machine_Learning
 

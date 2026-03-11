@@ -7,7 +7,8 @@
 
 import pandas as pd
 
-# 4. Create a Series with a custom index
+# Create a Series with a custom index
 custom_index_series = pd.Series([5, 10, 15, 20, 25], index=["v", "w", "x", "y", "z"])
+# Print the Series
 print("Series with custom index:")
 print(custom_index_series)

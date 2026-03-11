@@ -15,7 +15,11 @@ csv_path = Path(__file__).parent.parent / "data" / "data.csv"
 df = pd.read_csv(csv_path, encoding="utf-8")
 # Export: df.to_csv(Path(__file__).parent / "output.csv", index=False)
 print("Loaded DataFrame:")
+# Print the first 5 rows of the DataFrame
 print(df.head())
+
+# Print the columns of the DataFrame
 print("\nColumns:", df.columns.tolist())
+# Print the shape of the DataFrame
 print("Shape:", df.shape)
 

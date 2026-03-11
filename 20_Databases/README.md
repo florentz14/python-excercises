@@ -1,6 +1,6 @@
-# 20_MySQL
+# 20_Databases
 
-Conexión y operaciones con bases de datos MySQL/MariaDB usando Python.
+Conexión y operaciones con bases de datos usando Python (MySQL/MariaDB, SQLite3, PostgreSQL y MongoDB).
 
 ## Configuración
 
@@ -11,11 +11,20 @@ Conexión y operaciones con bases de datos MySQL/MariaDB usando Python.
    MYSQL_PASSWORD=tu_password
    MYSQL_DATABASE=ATM_Database_Schema  
    MYSQL_PORT=3306
+
+   POSTGRES_HOST=localhost
+   POSTGRES_PORT=5432
+   POSTGRES_DB=books_db
+   POSTGRES_USER=postgres
+   POSTGRES_PASSWORD=tu_password
+
+   MONGO_URI=mongodb://localhost:27017
+   MONGO_DB=books_db
    ```
 
 2. Instalar dependencias:
    ```bash
-   pip install mysql-connector-python python-dotenv bcrypt
+   pip install mysql-connector-python psycopg2-binary pymongo python-dotenv bcrypt
    ```
 
 ## Archivos
@@ -25,6 +34,9 @@ Conexión y operaciones con bases de datos MySQL/MariaDB usando Python.
 | `01_connection_test.py` | Prueba de conexión a MySQL/MariaDB |
 | `02_ATM_Database_Version.py` | Sistema ATM completo con base de datos |
 | `03_create_atm_user.py` | Herramienta para crear/listar/eliminar usuarios ATM |
+| `04_sqlite3_books_catalog.py` | Flujo CRUD completo con SQLite3 en archivo local |
+| `05_postgresql_books_catalog.py` | Flujo CRUD completo con PostgreSQL y transacciones |
+| `07_mongodb_books_catalog.py` | Flujo CRUD completo con MongoDB y agregaciones |
 | `ATM_Database_Schema.sql` | Schema SQL para el sistema ATM |
 | `python_exercises.sql` | Schema SQL alternativo |
 
@@ -71,13 +83,22 @@ mysql -u root -p ATM_Database_Schema < ATM_Database_Schema.sql
 
 ```bash
 # Probar conexión
-python 20_MySQL/01_connection_test.py
+python 20_Databases/01_connection_test.py
 
 # Ejecutar sistema ATM
-python 20_MySQL/02_ATM_Database_Version.py
+python 20_Databases/02_ATM_Database_Version.py
 
 # Gestionar usuarios (crear/listar/eliminar)
-python 20_MySQL/03_create_atm_user.py
+python 20_Databases/03_create_atm_user.py
+
+# Ejecutar ejemplo SQLite3
+python 20_Databases/04_sqlite3_books_catalog.py
+
+# Ejecutar ejemplo PostgreSQL
+python 20_Databases/05_postgresql_books_catalog.py
+
+# Ejecutar ejemplo MongoDB
+python 20_Databases/07_mongodb_books_catalog.py
 ```
 
 ### Menú del ATM

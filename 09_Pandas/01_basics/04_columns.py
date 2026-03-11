@@ -7,29 +7,30 @@
 
 import pandas as pd
 
+# Create a DataFrame
 df = pd.DataFrame({
     "product": ["A", "B", "C"],
     "price": [10, 20, 15],
     "quantity": [2, 3, 1],
 })
 
-# Computed column
+# Create a computed column
 df["total"] = df["price"] * df["quantity"]
 print("With total column:")
 print(df)
 
-# apply: apply function per row
+# Create a new column using the apply function
 df["double_price"] = df["price"].apply(lambda x: x * 2)
 print("\nWith apply:")
 print(df)
 
-# map: replace values
+# Create a new column using the map function
 mapping = {"A": "High", "B": "Medium", "C": "Low"}
 df["level"] = df["product"].map(mapping)
 print("\nWith map:")
 print(df)
 
-# Rename columns
+# Rename the total column to subtotal
 df = df.rename(columns={"total": "subtotal"})
 print("\nRenamed:")
 print(df)

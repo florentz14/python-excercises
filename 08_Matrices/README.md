@@ -145,6 +145,22 @@ Vector, matrix, and NumPy operations. Linear algebra, scientific computing, and 
 
 ---
 
+## Special Matrix Implementations (100-108)
+
+| File | Content |
+|------|---------|
+| `100_tridiagonal_matrix.py` | Tridiagonal matrix operations and Thomas algorithm |
+| `101_lower_triangular_matrix.py` | Lower triangular matrix operations and forward substitution |
+| `102_upper_triangular_matrix.py` | Upper triangular matrix operations and back substitution |
+| `103_hadamard_matrix_multiplication.py` | Element-wise multiplication (Hadamard product) |
+| `104_elementwise_matrix_addition.py` | Element-wise matrix addition |
+| `105_elementwise_matrix_subtraction.py` | Element-wise matrix subtraction |
+| `106_standard_matrix_multiplication.py` | Standard matrix multiplication (dot product) |
+| `107_matrix_transpose.py` | Matrix transpose (swap rows and columns) |
+| `108_scalar_matrix_multiplication.py` | Scalar matrix multiplication |
+
+---
+
 ## Utilities
 
 | File | Content |
