@@ -1,6 +1,6 @@
 # -------------------------------------------------
 # File Name: 17_eratosthenes.py
-# Author: Florentino Báez
+# Author: Florentino Baez
 # Date: 05_Data_Structures
 # Description: Sieve of Eratosthenes. Finds all primes up to n by marking composites. O(n log log n).
 # -------------------------------------------------

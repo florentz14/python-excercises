@@ -1,6 +1,6 @@
 # -------------------------------------------------
 # File Name: 36_binary_search.py
-# Author: Florentino Báez
+# Author: Florentino Baez
 # Date: 05_Data_Structures
 # Description: Binary search on sorted list. Halves search space each step. O(log n).
 # -------------------------------------------------

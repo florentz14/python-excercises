@@ -1,6 +1,6 @@
 # -------------------------------------------------
 # File Name: 63_priority_queue_heapq.py
-# Author: Florentino Báez
+# Author: Florentino Baez
 # Date: 05_Data_Structures
 # Description: Priority queue using heapq. Min-heap operations in Python.
 # -------------------------------------------------

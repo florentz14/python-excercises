@@ -1,7 +1,7 @@
 # -------------------------------------------------
 # File Name: 49_heap.py
-# Author: Florentino Báez
-# Date: 05_Data_Structures
+# Author: Florentino Baez
+# Date: 2026-03-09
 # Description: Heap Sort. Builds max-heap, repeatedly extracts max. O(n log n). In-place.
 # -------------------------------------------------
 

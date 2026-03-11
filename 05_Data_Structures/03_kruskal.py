@@ -1,6 +1,6 @@
 # -------------------------------------------------
 # File Name: 03_kruskal.py
-# Author: Florentino Báez
+# Author: Florentino Baez
 # Date: 05_Data_Structures
 # Description: Kruskal's algorithm for Minimum Spanning Tree. Uses Union-Find to detect cycles. Sorts edges by weight; adds each if it doesn't form a cycle. O(E log E).
 # -------------------------------------------------

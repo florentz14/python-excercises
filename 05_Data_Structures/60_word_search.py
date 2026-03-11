@@ -1,7 +1,7 @@
 # -------------------------------------------------
 # File Name: 60_word_search.py
-# Author: Florentino Báez
-# Date: 05_Data_Structures
+# Author: Florentino Baez
+# Date: 2026-03-09
 # Description: Word Search (LeetCode 79). Find word in 2D grid using backtracking.
 # -------------------------------------------------
 

@@ -1,6 +1,6 @@
 # -------------------------------------------------
 # File Name: 13_anagrams.py
-# Author: Florentino Báez
+# Author: Florentino Baez
 # Date: 05_Data_Structures
 # Description: Anagram utilities. is_anagram checks if two strings have same characters; group_anagrams groups words that are anagrams. O(n*k log k).
 # -------------------------------------------------

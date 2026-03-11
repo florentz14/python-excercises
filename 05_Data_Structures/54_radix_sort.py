@@ -1,6 +1,6 @@
 # -------------------------------------------------
 # File Name: 54_radix_sort.py
-# Author: Florentino Báez
+# Author: Florentino Baez
 # Date: 05_Data_Structures
 # Description: Radix Sort. Digit-by-digit sort for integers. O(n*k) where k=digit count.
 # -------------------------------------------------

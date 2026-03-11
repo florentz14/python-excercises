@@ -1,6 +1,6 @@
 # -------------------------------------------------
 # File Name: 61_k_closest_points_to_origin.py
-# Author: Florentino Báez
+# Author: Florentino Baez
 # Date: 05_Data_Structures
 # Description: K Closest Points to Origin (LeetCode 973). Min-heap or QuickSelect. O(n log k).
 # -------------------------------------------------

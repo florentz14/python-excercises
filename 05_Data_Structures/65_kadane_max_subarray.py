@@ -1,6 +1,6 @@
 # -------------------------------------------------
 # File Name: 65_kadane_max_subarray.py
-# Author: Florentino Báez
+# Author: Florentino Baez
 # Date: 05_Data_Structures
 # Description: Kadane's algorithm. Maximum subarray sum in O(n).
 # -------------------------------------------------

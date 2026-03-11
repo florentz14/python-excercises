@@ -1,6 +1,6 @@
 # -------------------------------------------------
 # File Name: 14_string_permutations.py
-# Author: Florentino Báez
+# Author: Florentino Baez
 # Date: 05_Data_Structures
 # Description: String permutation generation. All permutations of a string using backtracking.
 # -------------------------------------------------

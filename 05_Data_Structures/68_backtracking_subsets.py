@@ -1,6 +1,6 @@
 # -------------------------------------------------
 # File Name: 68_backtracking_subsets.py
-# Author: Florentino Báez
+# Author: Florentino Baez
 # Date: 05_Data_Structures
 # Description: Backtracking subsets. Generate all subsets of a set.
 # -------------------------------------------------

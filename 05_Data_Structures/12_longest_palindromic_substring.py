@@ -1,11 +1,11 @@
 # -------------------------------------------------
 # File Name: 12_longest_palindromic_substring.py
-# Author: Florentino Báez
+# Author: Florentino Baez
 # Date: 05_Data_Structures
 # Description: Longest palindromic substring. Expands around centers or uses DP. Finds the longest substring that reads the same forwards and backwards.
 # -------------------------------------------------
 
-print("=== 5. Subcadena Palindrómica Más Larga ===\n")
+print("=== 5. Longest Palindromic Substring ===\n")
 
 
 def longest_palindromic_substring(s):
@@ -16,12 +16,12 @@ def longest_palindromic_substring(s):
     if not s:
         return ""
 
-    def expandir_desde_centro(izquierda, derecha):
+    def expandir_desde_centro(left, right):
         """Expands while the ends match (it is a palindrome)."""
-        while izquierda >= 0 and derecha < len(s) and s[izquierda] == s[derecha]:
-            izquierda -= 1   # Expand to the left
-            derecha += 1     # Expand to the right
-        return s[izquierda + 1:derecha]  # Palindromic substring found
+        while left >= 0 and right < len(s) and s[left] == s[right]:
+            left -= 1   # Expand to the left
+            right += 1     # Expand to the right
+        return s[left + 1:right]  # Palindromic substring found
 
     subcadena_max = ""
 
@@ -43,4 +43,4 @@ if __name__ == "__main__":
     cadena_pal = "babad"
     print(f"Cadena: '{cadena_pal}'")
     palindromo_max = longest_palindromic_substring(cadena_pal)
-    print(f"Subcadena palindrómica más larga: '{palindromo_max}'")
+    print(f"Longest palindromic substring: '{palindromo_max}'")

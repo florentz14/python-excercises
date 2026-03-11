@@ -1,6 +1,6 @@
 # -------------------------------------------------
 # File Name: 52_complexity.py
-# Author: Florentino Báez
+# Author: Florentino Baez
 # Date: 05_Data_Structures
 # Description: Sorting complexity analysis. Time/space and stability comparison.
 # -------------------------------------------------

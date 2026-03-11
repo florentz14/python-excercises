@@ -1,6 +1,6 @@
 # -------------------------------------------------
 # File Name: 64_two_pointers_pattern.py
-# Author: Florentino Báez
+# Author: Florentino Baez
 # Date: 05_Data_Structures
 # Description: Two pointers pattern. Common technique for array/string problems.
 # -------------------------------------------------

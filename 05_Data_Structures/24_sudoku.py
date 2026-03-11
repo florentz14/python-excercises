@@ -1,6 +1,6 @@
 # -------------------------------------------------
 # File Name: 24_sudoku.py
-# Author: Florentino Báez
+# Author: Florentino Baez
 # Date: 05_Data_Structures
 # Description: Sudoku solver using backtracking. Fills valid digits in empty cells.
 # -------------------------------------------------
@@ -93,4 +93,4 @@ if __name__ == "__main__":
         print("\nSudoku resuelto:")
         imprimir_sudoku(sudoku_ejemplo)
     else:
-        print("\nNo se encontró solución")
+        print("\nNo solution found")

@@ -1,6 +1,6 @@
 # -------------------------------------------------
 # File Name: 55_shell_sort.py
-# Author: Florentino Báez
+# Author: Florentino Baez
 # Date: 05_Data_Structures
 # Description: Shell Sort. Insertion sort with decreasing gaps. O(n^1.5) with Knuth. In-place.
 # -------------------------------------------------
@@ -12,41 +12,41 @@ import random
 # ============================================================
 # 1. Shell Sort - Shell sequence (n/2)
 # ============================================================
-def shell_sort(lista):
+def shell_sort(items):
     """
     Shell Sort with Shell gap sequence: n/2, n/4, ..., 1
     Does not modify the original list.
     """
-    lista = lista.copy()
-    n = len(lista)
+    items = items.copy()
+    n = len(items)
     gap = n // 2  # Initial gap
 
     while gap > 0:
         # Gap insertion sort: compare elements gap positions apart
         for i in range(gap, n):
-            temp = lista[i]
+            temp = items[i]
             j = i
             # Shift elements gap positions right while current is smaller
-            while j >= gap and lista[j - gap] > temp:
-                lista[j] = lista[j - gap]
+            while j >= gap and items[j - gap] > temp:
+                items[j] = items[j - gap]
                 j -= gap
-            lista[j] = temp
+            items[j] = temp
         gap //= 2  # Reduce gap
 
-    return lista
+    return items
 
 
 # ============================================================
 # 2. Shell Sort - Knuth sequence
 # ============================================================
-def shell_sort_knuth(lista):
+def shell_sort_knuth(items):
     """
     Shell Sort with Knuth gap sequence: 1, 4, 13, 40, 121, ...
     Formula: gap = (3^k - 1) / 2
     Better performance than Shell sequence.
     """
-    lista = lista.copy()
-    n = len(lista)
+    items = items.copy()
+    n = len(items)
 
     # Compute initial Knuth gap (largest that is < n/3)
     gap = 1
@@ -55,28 +55,28 @@ def shell_sort_knuth(lista):
 
     while gap > 0:
         for i in range(gap, n):
-            temp = lista[i]
+            temp = items[i]
             j = i
-            while j >= gap and lista[j - gap] > temp:
-                lista[j] = lista[j - gap]
+            while j >= gap and items[j - gap] > temp:
+                items[j] = items[j - gap]
                 j -= gap
-            lista[j] = temp
+            items[j] = temp
         gap //= 3  # Reduce using inverse Knuth sequence
 
-    return lista
+    return items
 
 
 # ============================================================
 # 3. Shell Sort - Hibbard sequence
 # ============================================================
-def shell_sort_hibbard(lista):
+def shell_sort_hibbard(items):
     """
     Shell Sort with Hibbard gap sequence: 1, 3, 7, 15, 31, ...
     Formula: 2^k - 1
     Worst case complexity: O(n^(3/2))
     """
-    lista = lista.copy()
-    n = len(lista)
+    items = items.copy()
+    n = len(items)
 
     # Generate Hibbard sequence
     gaps = []
@@ -88,45 +88,45 @@ def shell_sort_hibbard(lista):
     # Traverse gaps from largest to smallest
     for gap in reversed(gaps):
         for i in range(gap, n):
-            temp = lista[i]
+            temp = items[i]
             j = i
-            while j >= gap and lista[j - gap] > temp:
-                lista[j] = lista[j - gap]
+            while j >= gap and items[j - gap] > temp:
+                items[j] = items[j - gap]
                 j -= gap
-            lista[j] = temp
+            items[j] = temp
 
-    return lista
+    return items
 
 
 # ============================================================
 # 4. Step-by-step visualization
 # ============================================================
-def shell_sort_visual(lista):
+def shell_sort_visual(items):
     """Shell Sort with visualization of each gap step."""
-    lista = lista.copy()
-    n = len(lista)
+    items = items.copy()
+    n = len(items)
     gap = n // 2
     step = 0
 
-    print(f"\nOriginal: {lista}")
+    print(f"\nOriginal: {items}")
     print(f"{'='*60}")
 
     while gap > 0:
         step += 1
         for i in range(gap, n):
-            temp = lista[i]
+            temp = items[i]
             j = i
-            while j >= gap and lista[j - gap] > temp:
-                lista[j] = lista[j - gap]
+            while j >= gap and items[j - gap] > temp:
+                items[j] = items[j - gap]
                 j -= gap
-            lista[j] = temp
+            items[j] = temp
 
-        print(f"Step {step} (gap={gap}): {lista}")
+        print(f"Step {step} (gap={gap}): {items}")
         gap //= 2
 
     print(f"{'='*60}")
-    print(f"Sorted: {lista}")
-    return lista
+    print(f"Sorted: {items}")
+    return items
 
 
 # ============================================================
@@ -134,7 +134,7 @@ def shell_sort_visual(lista):
 # ============================================================
 def compare_gap_sequences(n=5000):
     """Compares performance of different gap sequences (Shell, Knuth, Hibbard)."""
-    lista = [random.randint(1, 10000) for _ in range(n)]
+    items = [random.randint(1, 10000) for _ in range(n)]
 
     secuencias = {
         "Shell (n/2)":  shell_sort,
@@ -146,7 +146,7 @@ def compare_gap_sequences(n=5000):
     print("=" * 50)
 
     for name, method in secuencias.items():
-        copy_arr = lista.copy()
+        copy_arr = items.copy()
         start_t = time.time()
         result = method(copy_arr)
         elapsed = time.time() - start_t
@@ -173,7 +173,7 @@ def insertion_sort(arr):
 
 def compare_with_insertion(n=3000):
     """Compares Shell Sort vs Insertion Sort on random data."""
-    lista = [random.randint(1, 10000) for _ in range(n)]
+    items = [random.randint(1, 10000) for _ in range(n)]
 
     metodos = {
         "Insertion Sort": insertion_sort,
@@ -185,7 +185,7 @@ def compare_with_insertion(n=3000):
     print("=" * 50)
 
     for name, method in metodos.items():
-        copy_arr = lista.copy()
+        copy_arr = items.copy()
         start_t = time.time()
         method(copy_arr)
         elapsed = time.time() - start_t

@@ -1,6 +1,6 @@
 # -------------------------------------------------
 # File Name: 02_activity_selection.py
-# Author: Florentino Báez
+# Author: Florentino Baez
 # Date: 05_Data_Structures
 # Description: Activity Selection (Interval Scheduling). Maximum non-overlapping activities. Greedy: sort by finish time, pick earliest-finishing compatible. O(n log n).
 # -------------------------------------------------

@@ -1,6 +1,6 @@
 # -------------------------------------------------
 # File Name: 25_maze.py
-# Author: Florentino Báez
+# Author: Florentino Baez
 # Date: 05_Data_Structures
 # Description: Maze solving. Path finding in grid using BFS/DFS or backtracking.
 # -------------------------------------------------

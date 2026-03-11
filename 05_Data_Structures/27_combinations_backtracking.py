@@ -1,38 +1,38 @@
 # -------------------------------------------------
 # File Name: 27_combinations_backtracking.py
-# Author: Florentino Báez
+# Author: Florentino Baez
 # Date: 05_Data_Structures
 # Description: Combination generation with backtracking. All ways to choose k from n. O(C(n,k)*k).
 # -------------------------------------------------
 
-print("=== 5. Generación de Combinaciones (Backtracking) ===\n")
+print("=== 5. Combination Generation (Backtracking) ===\n")
 
 
 def combinaciones_backtracking(elements, k):
     """Generate all combinations of k elements using backtracking."""
-    resultado = []
+    result = []
     n = len(elements)
 
-    def backtrack(combinacion_actual, inicio):
-        if len(combinacion_actual) == k:
+    def backtrack(current_combination, start):
+        if len(current_combination) == k:
             # Complete combination → save copy
-            resultado.append(combinacion_actual[:])
+            result.append(current_combination[:])
             return
-        # Only consider elements from 'inicio' to avoid duplicates
-        for i in range(inicio, n):
-            combinacion_actual.append(elements[i])     # Include element
-            backtrack(combinacion_actual, i + 1)        # Next from i+1
-            combinacion_actual.pop()                    # Backtrack: exclude
+        # Only consider elements from 'start' to avoid duplicates
+        for i in range(start, n):
+            current_combination.append(elements[i])  # Include element
+            backtrack(current_combination, i + 1)    # Next from i+1
+            current_combination.pop()                # Backtrack: exclude
 
     backtrack([], 0)
-    return resultado
+    return result
 
 
 if __name__ == "__main__":
-    elementos_comb = ['A', 'B', 'C', 'D']
+    elements_set = ['A', 'B', 'C', 'D']
     k = 2
-    combs = combinaciones_backtracking(elementos_comb, k)
-    print(f"Combinaciones de {elementos_comb} tomando {k} elementos:")
+    combs = combinaciones_backtracking(elements_set, k)
+    print(f"Combinations of {elements_set} taking {k} elements:")
     for i, comb in enumerate(combs, 1):
         print(f"  {i}. {comb}")
-    print(f"Total: {len(combs)} combinaciones (C({len(elementos_comb)}, {k}) = {len(combs)})")
+    print(f"Total: {len(combs)} combinations (C({len(elements_set)}, {k}) = {len(combs)})")

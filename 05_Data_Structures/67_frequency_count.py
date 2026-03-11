@@ -1,6 +1,6 @@
 # -------------------------------------------------
 # File Name: 67_frequency_count.py
-# Author: Florentino Báez
+# Author: Florentino Baez
 # Date: 05_Data_Structures
 # Description: Frequency count. Count occurrences using dictionary or Counter.
 # -------------------------------------------------

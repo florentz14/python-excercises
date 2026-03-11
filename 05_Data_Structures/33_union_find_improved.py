@@ -1,6 +1,6 @@
 # -------------------------------------------------
 # File Name: 33_union_find_improved.py
-# Author: Florentino Báez
+# Author: Florentino Baez
 # Date: 05_Data_Structures
 # Description: Union-Find (Disjoint Set) with path compression and rank. O(α(n)) amortized.
 # -------------------------------------------------

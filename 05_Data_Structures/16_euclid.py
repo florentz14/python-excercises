@@ -1,6 +1,6 @@
 # -------------------------------------------------
 # File Name: 16_euclid.py
-# Author: Florentino Báez
+# Author: Florentino Baez
 # Date: 05_Data_Structures
 # Description: Euclidean algorithm for GCD. Computes greatest common divisor efficiently. O(log min(a,b)).
 # -------------------------------------------------

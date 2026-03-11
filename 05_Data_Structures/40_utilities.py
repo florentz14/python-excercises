@@ -1,6 +1,6 @@
 # -------------------------------------------------
 # File Name: 40_utilities.py
-# Author: Florentino Báez
+# Author: Florentino Baez
 # Date: 05_Data_Structures
 # Description: Sorting utilities. Helper functions for sort implementations.
 # -------------------------------------------------

@@ -1,6 +1,6 @@
 # -------------------------------------------------
 # File Name: 66_prefix_sum.py
-# Author: Florentino Báez
+# Author: Florentino Baez
 # Date: 05_Data_Structures
 # Description: Prefix sum. Precompute cumulative sums for O(1) range queries.
 # -------------------------------------------------

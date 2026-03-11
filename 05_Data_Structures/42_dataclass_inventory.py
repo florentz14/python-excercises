@@ -1,6 +1,6 @@
 # -------------------------------------------------
 # File Name: 42_dataclass_inventory.py
-# Author: Florentino Báez
+# Author: Florentino Baez
 # Date: 05_Data_Structures
 # Description: Dataclass inventory example. Uses dataclasses for structured data.
 # -------------------------------------------------

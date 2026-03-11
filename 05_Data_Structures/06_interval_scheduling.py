@@ -1,6 +1,6 @@
 # -------------------------------------------------
 # File Name: 06_interval_scheduling.py
-# Author: Florentino Báez
+# Author: Florentino Baez
 # Date: 05_Data_Structures
 # Description: Weighted Interval Scheduling. Select non-overlapping intervals to maximize sum of weights. Uses dynamic programming. O(n log n) with sorting.
 # -------------------------------------------------

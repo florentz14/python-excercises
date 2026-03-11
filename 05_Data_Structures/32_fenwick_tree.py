@@ -1,6 +1,6 @@
 # -------------------------------------------------
 # File Name: 32_fenwick_tree.py
-# Author: Florentino Báez
+# Author: Florentino Baez
 # Date: 05_Data_Structures
 # Description: Fenwick Tree (Binary Indexed Tree). Range sum queries and point updates. O(log n).
 # -------------------------------------------------
@@ -23,18 +23,18 @@ class FenwickTree:
     def _lsb(self, x):
         return x & -x
 
-    def actualizar(self, indice, delta):
-        indice += 1
-        while indice <= self.n:
-            self.arbol[indice] += delta
-            indice += self._lsb(indice)
+    def actualizar(self, index, delta):
+        index += 1
+        while index <= self.n:
+            self.arbol[index] += delta
+            index += self._lsb(index)
 
-    def consultar_prefijo(self, indice):
-        indice += 1
+    def consultar_prefijo(self, index):
+        index += 1
         suma = 0
-        while indice > 0:
-            suma += self.arbol[indice]
-            indice -= self._lsb(indice)
+        while index > 0:
+            suma += self.arbol[index]
+            index -= self._lsb(index)
         return suma
 
     def consultar_rango(self, l, r):
@@ -53,6 +53,6 @@ if __name__ == "__main__":
     print(f"Suma rango [3, 7]: {fenwick.consultar_rango(3, 7)}")
 
     fenwick.actualizar(3, 6)
-    print("Después de agregar 6 al índice 3:")
-    print(f"  Valor en índice 3 (suma rango [3,3]): {fenwick.consultar_rango(3, 3)}")
+    print("After adding 6 at index 3:")
+    print(f"  Value at index 3 (range sum [3,3]): {fenwick.consultar_rango(3, 3)}")
     print(f"  Suma prefijo [0, 5]: {fenwick.consultar_prefijo(5)}")

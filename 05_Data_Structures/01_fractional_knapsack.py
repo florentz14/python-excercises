@@ -1,6 +1,6 @@
 # -------------------------------------------------
 # File Name: 01_fractional_knapsack.py
-# Author: Florentino Báez
+# Author: Florentino Baez
 # Date: 05_Data_Structures
 # Description: Solves the Fractional Knapsack Problem using a greedy strategy. Items sorted by value/weight ratio; picks highest ratio first. O(n log n).
 # -------------------------------------------------

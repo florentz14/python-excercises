@@ -1,6 +1,6 @@
 # -------------------------------------------------
 # File Name: 04_huffman.py
-# Author: Florentino Báez
+# Author: Florentino Baez
 # Date: 05_Data_Structures
 # Description: Huffman coding for lossless compression. Builds tree by merging lowest-frequency nodes. Assigns shorter codes to more frequent characters. O(n log n).
 # -------------------------------------------------

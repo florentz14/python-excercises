@@ -1,6 +1,6 @@
 # -------------------------------------------------
 # File Name: 21_base_conversion.py
-# Author: Florentino Báez
+# Author: Florentino Baez
 # Date: 05_Data_Structures
 # Description: Base conversion. Converts numbers between different numeral bases.
 # -------------------------------------------------

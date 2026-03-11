@@ -1,6 +1,6 @@
 # -------------------------------------------------
 # File Name: 36b_binary_search_interview_variants.py
-# Author: Florentino Báez
+# Author: Florentino Baez
 # Date: 05_Data_Structures
 # Description: Binary search interview variants. Common LeetCode-style problems.
 # -------------------------------------------------
@@ -29,9 +29,9 @@ def binary_search(arr: list[int], target: int) -> int:
 def first_occurrence(arr: list[int], target: int) -> int:
     """
     2. First Occurrence
-    Si el número aparece varias veces, devolver la PRIMERA posición.
-    Ej: [1,2,2,2,3,4], target=2 -> 1
-    Idea: Cuando encuentras el target, sigue buscando hacia la izquierda.
+    If the number appears multiple times, return the FIRST position.
+    Ex: [1,2,2,2,3,4], target=2 -> 1
+    Idea: after finding the target, keep searching to the left.
     """
     left, right = 0, len(arr) - 1
     answer = -1
@@ -53,9 +53,9 @@ def first_occurrence(arr: list[int], target: int) -> int:
 def last_occurrence(arr: list[int], target: int) -> int:
     """
     3. Last Occurrence
-    Si el número aparece varias veces, devolver la ÚLTIMA posición.
-    Ej: [1,2,2,2,3,4], target=2 -> 3
-    Idea: Cuando encuentras el target, sigue buscando hacia la derecha.
+    If the number appears multiple times, return the LAST position.
+    Ex: [1,2,2,2,3,4], target=2 -> 3
+    Idea: after finding the target, keep searching to the right.
     """
     left, right = 0, len(arr) - 1
     answer = -1
@@ -77,10 +77,10 @@ def last_occurrence(arr: list[int], target: int) -> int:
 def search_insert_position(arr: list[int], target: int) -> int:
     """
     4. Search Insert Position
-    Si el número existe, devolver su índice.
-    Si no existe, devolver la posición donde debería insertarse.
-    Ej: [1,3,5,6], target=5->2, target=2->1, target=7->4
-    Idea: Si no se encuentra, left es la posición de inserción correcta.
+    If the number exists, return its index.
+    If it does not exist, return the position where it should be inserted.
+    Ex: [1,3,5,6], target=5->2, target=2->1, target=7->4
+    Idea: if not found, left is the correct insertion position.
     """
     left, right = 0, len(arr) - 1
 
@@ -100,10 +100,10 @@ def search_insert_position(arr: list[int], target: int) -> int:
 def find_peak(arr: list[int]) -> int:
     """
     5. Find Peak Element
-    Encontrar un elemento mayor que sus vecinos: arr[i] > arr[i-1] y arr[i] > arr[i+1]
-    Ej: [1,3,20,4,1,0] -> 2 (porque 20 > 3 y 20 > 4)
-    Idea: Si arr[mid] < arr[mid+1], hay subida -> pico a la derecha.
-          Si no, pico a la izquierda (incluyendo mid).
+    Find an element greater than its neighbors: arr[i] > arr[i-1] and arr[i] > arr[i+1].
+    Ex: [1,3,20,4,1,0] -> 2 (because 20 > 3 and 20 > 4)
+    Idea: if arr[mid] < arr[mid+1], slope is rising -> peak on the right.
+          Otherwise, peak is on the left (including mid).
     """
     if not arr:
         return -1
@@ -123,15 +123,15 @@ def find_peak(arr: list[int]) -> int:
     return left
 
 
-# Alias para consistencia con nombres previos
+# Alias for consistency with previous names
 peak_element = find_peak
 
 
 def search_rotated_sorted(arr: list[int], target: int) -> int:
     """
     6. Search in Rotated Sorted Array
-    Arreglo ordenado rotado: [4,5,6,7,0,1,2]
-    En cada paso, una mitad siempre está ordenada. Descubrir cuál y decidir.
+    Rotated sorted array: [4,5,6,7,0,1,2]
+    At each step, one half is always sorted. Identify it and decide.
     """
     if not arr:
         return -1
@@ -179,7 +179,7 @@ def find_boundary(arr: list[bool]) -> int:
 
 
 # ------------------------------------------------------------
-# Ejemplos de uso - Orden de estudio
+# Usage examples - Study order
 # ------------------------------------------------------------
 
 if __name__ == "__main__":

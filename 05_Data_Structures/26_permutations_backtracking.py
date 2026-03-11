@@ -1,39 +1,39 @@
 # -------------------------------------------------
 # File Name: 26_permutations_backtracking.py
-# Author: Florentino Báez
+# Author: Florentino Baez
 # Date: 05_Data_Structures
 # Description: Permutation generation with backtracking. All orderings of a sequence.
 # -------------------------------------------------
 
-print("=== 4. Generación de Permutaciones (Backtracking) ===\n")
+print("=== 4. Permutation Generation (Backtracking) ===\n")
 
 
 def permutaciones_backtracking(elements):
     """Generate all permutations using backtracking."""
-    resultado = []
+    result = []
     n = len(elements)
 
-    def backtrack(permutacion_actual, usados):
-        if len(permutacion_actual) == n:
+    def backtrack(current_permutation, used):
+        if len(current_permutation) == n:
             # Complete permutation → save copy
-            resultado.append(permutacion_actual[:])
+            result.append(current_permutation[:])
             return
         for i in range(n):
-            if not usados[i]:
-                permutacion_actual.append(elements[i])  # Choose element
-                usados[i] = True                         # Mark as used
-                backtrack(permutacion_actual, usados)     # Recursion
-                permutacion_actual.pop()                  # Backtrack: remove
-                usados[i] = False                         # Unmark
+            if not used[i]:
+                current_permutation.append(elements[i])  # Choose element
+                used[i] = True                           # Mark as used
+                backtrack(current_permutation, used)     # Recursion
+                current_permutation.pop()                # Backtrack: remove
+                used[i] = False                          # Unmark
 
     backtrack([], [False] * n)
-    return resultado
+    return result
 
 
 if __name__ == "__main__":
-    elementos = [1, 2, 3]
-    perms = permutaciones_backtracking(elementos)
-    print(f"Permutaciones de {elementos}:")
+    elements = [1, 2, 3]
+    perms = permutaciones_backtracking(elements)
+    print(f"Permutations of {elements}:")
     for i, perm in enumerate(perms, 1):
         print(f"  {i}. {perm}")
-    print(f"Total: {len(perms)} permutaciones")
+    print(f"Total: {len(perms)} permutations")

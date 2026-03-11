@@ -1,6 +1,6 @@
 # -------------------------------------------------
 # File Name: 62_kth_largest_element.py
-# Author: Florentino Báez
+# Author: Florentino Baez
 # Date: 05_Data_Structures
 # Description: Kth Largest Element (LeetCode 215). Min-heap of size k or QuickSelect. O(n log k).
 # -------------------------------------------------

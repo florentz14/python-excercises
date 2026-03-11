@@ -1,6 +1,6 @@
 # -------------------------------------------------
 # File Name: 05_coin_change.py
-# Author: Florentino Báez
+# Author: Florentino Baez
 # Date: 05_Data_Structures
 # Description: Coin Change problem using greedy or dynamic programming. Finds minimum coins to make a given amount.
 # -------------------------------------------------

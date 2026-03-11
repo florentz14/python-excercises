@@ -1,6 +1,6 @@
 # -------------------------------------------------
 # File Name: 28_subset_sum.py
-# Author: Florentino Báez
+# Author: Florentino Baez
 # Date: 05_Data_Structures
 # Description: Subset Sum. Find all subsets whose sum equals target. Backtracking. O(2^n).
 # -------------------------------------------------

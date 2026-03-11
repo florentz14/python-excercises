@@ -1,6 +1,6 @@
 # -------------------------------------------------
 # File Name: 58_cocktail_sort.py
-# Author: Florentino Báez
+# Author: Florentino Baez
 # Date: 05_Data_Structures
 # Description: Cocktail Sort. Bidirectional bubble sort. O(n²). Stable. In-place.
 # -------------------------------------------------

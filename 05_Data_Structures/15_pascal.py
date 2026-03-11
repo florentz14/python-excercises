@@ -1,6 +1,6 @@
 # -------------------------------------------------
 # File Name: 15_pascal.py
-# Author: Florentino Báez
+# Author: Florentino Baez
 # Date: 05_Data_Structures
 # Description: Pascal's triangle. Generates binomial coefficients in triangular form.
 # -------------------------------------------------

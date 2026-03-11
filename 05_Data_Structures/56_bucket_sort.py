@@ -1,6 +1,6 @@
 # -------------------------------------------------
 # File Name: 56_bucket_sort.py
-# Author: Florentino Báez
+# Author: Florentino Baez
 # Date: 05_Data_Structures
 # Description: Bucket Sort. Distributes elements into buckets, sorts each. O(n+k) average.
 # -------------------------------------------------
@@ -13,21 +13,21 @@ import math
 # ============================================================
 # 1. Bucket Sort for floats [0, 1)
 # ============================================================
-def bucket_sort_float(lista):
+def bucket_sort_float(items):
     """
     Bucket Sort for floating point numbers in range [0, 1).
     Uses Insertion Sort within each bucket.
     Does not modify the original list.
     """
-    if len(lista) <= 1:
-        return lista.copy()
+    if len(items) <= 1:
+        return items.copy()
 
-    lista = lista.copy()
-    n = len(lista)
+    items = items.copy()
+    n = len(items)
     buckets = [[] for _ in range(n)]
 
     # Distribute: each float in [0,1) maps to bucket idx = int(n * num)
-    for num in lista:
+    for num in items:
         idx = int(n * num)  # Map [0, 1) to bucket index 0..n-1
         if idx == n:        # Edge case: num == 1.0 -> last bucket
             idx = n - 1
@@ -62,22 +62,22 @@ def insertion_sort_inplace(arr):
 # ============================================================
 # 2. Bucket Sort for integers (general range)
 # ============================================================
-def bucket_sort_int(lista, num_buckets=None):
+def bucket_sort_int(items, num_buckets=None):
     """
     Bucket Sort for integers with arbitrary range.
     Distribution based on relative value within range.
     """
-    if len(lista) <= 1:
-        return lista.copy()
+    if len(items) <= 1:
+        return items.copy()
 
-    lista = lista.copy()
-    min_val = min(lista)
-    max_val = max(lista)
+    items = items.copy()
+    min_val = min(items)
+    max_val = max(items)
 
     if min_val == max_val:
-        return lista  # All elements equal
+        return items  # All elements equal
 
-    n = len(lista)
+    n = len(items)
     if num_buckets is None:
         num_buckets = max(1, int(math.sqrt(n)))  # sqrt(n) buckets is common choice
 
@@ -85,7 +85,7 @@ def bucket_sort_int(lista, num_buckets=None):
     buckets = [[] for _ in range(num_buckets)]
 
     # Distribute: map value to bucket based on position in [min_val, max_val]
-    for num in lista:
+    for num in items:
         idx = int((num - min_val) / range_val * num_buckets)
         if idx == num_buckets:
             idx = num_buckets - 1
@@ -103,24 +103,24 @@ def bucket_sort_int(lista, num_buckets=None):
 # ============================================================
 # 3. Bucket Sort with visualization
 # ============================================================
-def bucket_sort_visual(lista, num_buckets=5):
+def bucket_sort_visual(items, num_buckets=5):
     """Bucket Sort with process visualization."""
-    if len(lista) <= 1:
-        return lista.copy()
+    if len(items) <= 1:
+        return items.copy()
 
-    lista = lista.copy()
-    min_val = min(lista)
-    max_val = max(lista)
+    items = items.copy()
+    min_val = min(items)
+    max_val = max(items)
     range_val = max_val - min_val + 1
 
     buckets = [[] for _ in range(num_buckets)]
 
-    print(f"\nOriginal: {lista}")
+    print(f"\nOriginal: {items}")
     print(f"Range: [{min_val}, {max_val}], Buckets: {num_buckets}")
     print("=" * 60)
 
     # Distribute elements into buckets
-    for num in lista:
+    for num in items:
         idx = int((num - min_val) / range_val * num_buckets)
         if idx == num_buckets:
             idx = num_buckets - 1
@@ -153,17 +153,17 @@ def bucket_sort_visual(lista, num_buckets=5):
 # ============================================================
 # 4. Bucket Sort for negatives
 # ============================================================
-def bucket_sort_negatives(lista):
+def bucket_sort_negatives(items):
     """
     Bucket Sort that handles negative numbers.
     Separates negatives and positives, sorts separately, merges.
     """
-    if len(lista) <= 1:
-        return lista.copy()
+    if len(items) <= 1:
+        return items.copy()
 
     # Split into negatives and non-negatives
-    negatives = [-x for x in lista if x < 0]
-    positives = [x for x in lista if x >= 0]
+    negatives = [-x for x in items if x < 0]
+    positives = [x for x in items if x >= 0]
 
     neg_sorted = bucket_sort_int(negatives) if negatives else []
     pos_sorted = bucket_sort_int(positives) if positives else []
@@ -183,27 +183,27 @@ def compare_performance(n=5000):
     print(f"\n--- Comparison with {n} uniform floats [0, 1) ---")
     print("=" * 50)
 
-    inicio = time.time()
+    start = time.time()
     bucket_sort_float(lista_float)
-    t_bucket = time.time() - inicio
+    t_bucket = time.time() - start
     print(f"  Bucket Sort:     {t_bucket*1000:8.2f} ms")
 
-    inicio = time.time()
+    start = time.time()
     sorted(lista_float)
-    t_sorted = time.time() - inicio
+    t_sorted = time.time() - start
     print(f"  Python sorted(): {t_sorted*1000:8.2f} ms")
 
-    print(f"\n--- Comparación con {n} enteros [1, 10000] ---")
+    print(f"\n--- Comparison con {n} integers [1, 10000] ---")
     print("=" * 50)
 
-    inicio = time.time()
+    start = time.time()
     bucket_sort_int(lista_int)
-    t_bucket_i = time.time() - inicio
+    t_bucket_i = time.time() - start
     print(f"  Bucket Sort:     {t_bucket_i*1000:8.2f} ms")
 
-    inicio = time.time()
+    start = time.time()
     sorted(lista_int)
-    t_sorted_i = time.time() - inicio
+    t_sorted_i = time.time() - start
     print(f"  Python sorted(): {t_sorted_i*1000:8.2f} ms")
 
 
@@ -220,9 +220,9 @@ if __name__ == "__main__":
     # Float tests
     print("\n--- Test floats [0, 1) ---")
     floats = [0.78, 0.17, 0.39, 0.26, 0.72, 0.94, 0.21, 0.12, 0.23, 0.68]
-    resultado = bucket_sort_float(floats)
+    result = bucket_sort_float(floats)
     print(f"  Original:  {floats}")
-    print(f"  Sorted:    {resultado}")
+    print(f"  Sorted:    {result}")
 
     # Tests with negatives
     print("\n--- Test with negatives ---")

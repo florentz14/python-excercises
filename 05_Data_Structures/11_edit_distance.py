@@ -1,11 +1,11 @@
 # -------------------------------------------------
 # File Name: 11_edit_distance.py
-# Author: Florentino Báez
+# Author: Florentino Baez
 # Date: 05_Data_Structures
 # Description: Edit Distance (Levenshtein). Minimum insert/delete/substitute operations to transform strings. Dynamic programming. O(m*n) time and space.
 # -------------------------------------------------
 
-print("=== 4. Distancia de Edición (Levenshtein) ===\n")
+print("=== 4. Edit Distance (Levenshtein) ===\n")
 
 
 def edit_distance(str1, str2):
@@ -46,5 +46,5 @@ if __name__ == "__main__":
     print(f"Palabra 1: '{palabra1}'")
     print(f"Palabra 2: '{palabra2}'")
     distancia = edit_distance(palabra1, palabra2)
-    print(f"Distancia de edición: {distancia}")
+    print(f"Edit distance: {distancia}")
     print(f"Operaciones necesarias para convertir '{palabra1}' en '{palabra2}'")

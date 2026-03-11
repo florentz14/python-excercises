@@ -1,6 +1,6 @@
 # -------------------------------------------------
 # File Name: 59_comb_sort.py
-# Author: Florentino Báez
+# Author: Florentino Baez
 # Date: 05_Data_Structures
 # Description: Comb Sort. Improves bubble sort with larger gaps. O(n²) or better.
 # -------------------------------------------------
@@ -12,96 +12,96 @@ import time
 # ============================================================
 # 1. Basic Comb Sort
 # ============================================================
-def comb_sort(lista):
+def comb_sort(items):
     """
     Comb Sort: Bubble Sort with decreasing gaps.
     Shrink factor: 1.3 (optimal).
     Does not modify the original list.
     """
-    lista = lista.copy()
-    n = len(lista)
+    items = items.copy()
+    n = len(items)
     gap = n
     factor = 1.3  # Shrink factor
-    intercambiado = True
+    swapped = True
 
-    while gap > 1 or intercambiado:
+    while gap > 1 or swapped:
         # Compute new gap
         gap = max(1, int(gap / factor))
-        intercambiado = False
+        swapped = False
 
         # Compare and swap elements at distance 'gap'
         for i in range(n - gap):
-            if lista[i] > lista[i + gap]:
-                lista[i], lista[i + gap] = lista[i + gap], lista[i]
-                intercambiado = True
+            if items[i] > items[i + gap]:
+                items[i], items[i + gap] = items[i + gap], items[i]
+                swapped = True
 
-    return lista
+    return items
 
 
 # ============================================================
 # 2. Comb Sort with "rule of 11"
 # ============================================================
-def comb_sort_11(lista):
+def comb_sort_11(items):
     """
     Comb Sort with the "Comb Sort 11" optimization:
     If gap is 9 or 10, force it to 11. This improves performance
     by avoiding certain patterns that cause poor performance.
     """
-    lista = lista.copy()
-    n = len(lista)
+    items = items.copy()
+    n = len(items)
     gap = n
     factor = 1.3
-    intercambiado = True
+    swapped = True
 
-    while gap > 1 or intercambiado:
+    while gap > 1 or swapped:
         gap = max(1, int(gap / factor))
 
         # Optimization: if gap is 9 or 10, use 11
         if gap == 9 or gap == 10:
             gap = 11
 
-        intercambiado = False
+        swapped = False
 
         for i in range(n - gap):
-            if lista[i] > lista[i + gap]:
-                lista[i], lista[i + gap] = lista[i + gap], lista[i]
-                intercambiado = True
+            if items[i] > items[i + gap]:
+                items[i], items[i + gap] = items[i + gap], items[i]
+                swapped = True
 
-    return lista
+    return items
 
 
 # ============================================================
 # 3. Comb Sort with visualization
 # ============================================================
-def comb_sort_visual(lista):
+def comb_sort_visual(items):
     """Comb Sort with process visualization."""
-    lista = lista.copy()
-    n = len(lista)
+    items = items.copy()
+    n = len(items)
     gap = n
     factor = 1.3
-    intercambiado = True
-    paso = 0
+    swapped = True
+    step = 0
 
-    print(f"\nLista original: {lista}")
+    print(f"\nOriginal list: {items}")
     print(f"{'='*60}")
 
-    while gap > 1 or intercambiado:
+    while gap > 1 or swapped:
         gap = max(1, int(gap / factor))
-        intercambiado = False
+        swapped = False
         swaps = 0
-        paso += 1
+        step += 1
 
         for i in range(n - gap):
-            if lista[i] > lista[i + gap]:
-                lista[i], lista[i + gap] = lista[i + gap], lista[i]
-                intercambiado = True
+            if items[i] > items[i + gap]:
+                items[i], items[i + gap] = items[i + gap], items[i]
+                swapped = True
                 swaps += 1
 
-        print(f"Paso {paso:2d} (gap={gap:2d}): {lista}  ({swaps} swaps)")
+        print(f"Step {step:2d} (gap={gap:2d}): {items}  ({swaps} swaps)")
 
     print(f"{'='*60}")
-    print(f"Lista ordenada: {lista}")
-    return lista
+    print(f"Sorted list: {items}")
+    return items
 
 
 # ============================================================
@@ -109,75 +109,75 @@ def comb_sort_visual(lista):
 # ============================================================
 def comparar_factores(n=5000):
     """Compares different shrink factors."""
-    lista = [random.randint(1, 10000) for _ in range(n)]
+    items = [random.randint(1, 10000) for _ in range(n)]
 
-    print(f"\nComparación de factores de reducción ({n} elementos):")
+    print(f"\nShrink factor comparison ({n} elements):")
     print("=" * 50)
 
-    def comb_con_factor(lista, factor):
-        lista = lista.copy()
-        n = len(lista)
+    def comb_con_factor(items, factor):
+        items = items.copy()
+        n = len(items)
         gap = n
-        intercambiado = True
-        while gap > 1 or intercambiado:
+        swapped = True
+        while gap > 1 or swapped:
             gap = max(1, int(gap / factor))
-            intercambiado = False
+            swapped = False
             for i in range(n - gap):
-                if lista[i] > lista[i + gap]:
-                    lista[i], lista[i + gap] = lista[i + gap], lista[i]
-                    intercambiado = True
-        return lista
+                if items[i] > items[i + gap]:
+                    items[i], items[i + gap] = items[i + gap], items[i]
+                    swapped = True
+        return items
 
     for factor in [1.1, 1.2, 1.3, 1.4, 1.5, 2.0]:
-        copia = lista.copy()
-        inicio = time.time()
-        resultado = comb_con_factor(copia, factor)
-        tiempo = time.time() - inicio
-        ok = all(resultado[i] <= resultado[i + 1]
-                 for i in range(len(resultado) - 1))
+        copia = items.copy()
+        start = time.time()
+        result = comb_con_factor(copia, factor)
+        tiempo = time.time() - start
+        ok = all(result[i] <= result[i + 1]
+                 for i in range(len(result) - 1))
         print(f"  Factor {factor:.1f}: {tiempo*1000:8.2f} ms {'OK' if ok else 'FAIL'}")
 
-    print("\nEl factor 1.3 es generalmente el mejor.")
+    print("\nFactor 1.3 is generally the best choice.")
 
 
 # ============================================================
 # 5. Comparison with Bubble Sort and Shell Sort
 # ============================================================
-def bubble_sort(lista):
+def bubble_sort(items):
     """Optimized Bubble Sort for comparison."""
-    lista = lista.copy()
-    n = len(lista)
+    items = items.copy()
+    n = len(items)
     for i in range(n):
-        intercambiado = False
+        swapped = False
         for j in range(0, n - i - 1):
-            if lista[j] > lista[j + 1]:
-                lista[j], lista[j + 1] = lista[j + 1], lista[j]
-                intercambiado = True
-        if not intercambiado:
+            if items[j] > items[j + 1]:
+                items[j], items[j + 1] = items[j + 1], items[j]
+                swapped = True
+        if not swapped:
             break
-    return lista
+    return items
 
 
-def shell_sort(lista):
+def shell_sort(items):
     """Shell Sort for comparison."""
-    lista = lista.copy()
-    n = len(lista)
+    items = items.copy()
+    n = len(items)
     gap = n // 2
     while gap > 0:
         for i in range(gap, n):
-            temp = lista[i]
+            temp = items[i]
             j = i
-            while j >= gap and lista[j - gap] > temp:
-                lista[j] = lista[j - gap]
+            while j >= gap and items[j - gap] > temp:
+                items[j] = items[j - gap]
                 j -= gap
-            lista[j] = temp
+            items[j] = temp
         gap //= 2
-    return lista
+    return items
 
 
-def comparar(n=3000):
+def compare_algorithms(n=3000):
     """Compares Comb Sort with Bubble Sort and Shell Sort."""
-    lista = [random.randint(1, 10000) for _ in range(n)]
+    items = [random.randint(1, 10000) for _ in range(n)]
 
     metodos = {
         "Bubble Sort":   bubble_sort,
@@ -186,20 +186,20 @@ def comparar(n=3000):
         "Shell Sort":    shell_sort,
     }
 
-    print(f"\nComparación ({n} elementos aleatorios):")
+    print(f"\nComparison ({n} random elements):")
     print("=" * 50)
 
-    for nombre, metodo in metodos.items():
-        copia = lista.copy()
-        inicio = time.time()
-        resultado = metodo(copia)
-        tiempo = time.time() - inicio
-        ok = all(resultado[i] <= resultado[i + 1]
-                 for i in range(len(resultado) - 1))
-        print(f"  {nombre:15s}: {tiempo*1000:8.2f} ms {'OK' if ok else 'FAIL'}")
+    for name, metodo in metodos.items():
+        copia = items.copy()
+        start = time.time()
+        result = metodo(copia)
+        tiempo = time.time() - start
+        ok = all(result[i] <= result[i + 1]
+                 for i in range(len(result) - 1))
+        print(f"  {name:15s}: {tiempo*1000:8.2f} ms {'OK' if ok else 'FAIL'}")
 
-    print("\nComb Sort es mucho más rápido que Bubble Sort,")
-    print("y comparable a Shell Sort en rendimiento.")
+    print("\nComb Sort is usually much faster than Bubble Sort,")
+    print("and often comparable to Shell Sort performance.")
 
 
 # ============================================================
@@ -213,24 +213,24 @@ if __name__ == "__main__":
     comb_sort_visual(lista_demo)
 
     # Functionality tests
-    print("\n--- Pruebas ---")
-    casos = {
-        "Aleatoria":     [random.randint(1, 50) for _ in range(15)],
-        "Ya ordenada":   list(range(1, 11)),
-        "Inversa":       list(range(10, 0, -1)),
-        "Iguales":       [5] * 8,
-        "Un elemento":   [42],
-        "Vacía":         [],
+    print("\n--- Tests ---")
+    cases = {
+        "Random":        [random.randint(1, 50) for _ in range(15)],
+        "Already sorted": list(range(1, 11)),
+        "Reverse":       list(range(10, 0, -1)),
+        "All equal":     [5] * 8,
+        "Single item":   [42],
+        "Empty":         [],
     }
 
-    for nombre, caso in casos.items():
-        resultado = comb_sort(caso)
-        ok = all(resultado[i] <= resultado[i + 1]
-                 for i in range(len(resultado) - 1)) if len(resultado) > 1 else True
-        print(f"  {nombre:15s}: {caso[:8]}{'...' if len(caso) > 8 else ''}"
-              f" -> {resultado[:8]}{'...' if len(resultado) > 8 else ''}"
+    for name, caso in cases.items():
+        result = comb_sort(caso)
+        ok = all(result[i] <= result[i + 1]
+                 for i in range(len(result) - 1)) if len(result) > 1 else True
+        print(f"  {name:15s}: {caso[:8]}{'...' if len(caso) > 8 else ''}"
+              f" -> {result[:8]}{'...' if len(result) > 8 else ''}"
               f" {'OK' if ok else 'FAIL'}")
 
     # Comparisons
     comparar_factores(3000)
-    comparar(2000)
+    compare_algorithms(2000)

@@ -1,12 +1,12 @@
 # -------------------------------------------------
 # File Name: 30_trie.py
-# Author: Florentino Báez
+# Author: Florentino Baez
 # Date: 05_Data_Structures
 # Description: Trie (Prefix Tree). Insert, search, autocomplete words. O(m) per operation, m=word length.
 # -------------------------------------------------
 
 print("=== Estructuras de Datos Avanzadas ===\n")
-print("=== 1. Trie (Árbol de Prefijos) ===\n")
+print("=== 1. Trie (Prefix Tree) ===\n")
 
 
 class NodoTrie:
@@ -70,16 +70,16 @@ class Trie:
         return palabras
 
     def eliminar(self, palabra):
-        def _eliminar(nodo, pal, indice):
-            if indice == len(pal):
+        def _eliminar(nodo, pal, index):
+            if index == len(pal):
                 if not nodo.es_fin_palabra:
                     return False
                 nodo.es_fin_palabra = False
                 return len(nodo.hijos) == 0
-            c = pal[indice]
+            c = pal[index]
             if c not in nodo.hijos:
                 return False
-            debe_eliminar = _eliminar(nodo.hijos[c], pal, indice + 1)
+            debe_eliminar = _eliminar(nodo.hijos[c], pal, index + 1)
             if debe_eliminar:
                 del nodo.hijos[c]
                 nodo.conteo -= 1

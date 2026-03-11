@@ -1,6 +1,6 @@
 # -------------------------------------------------
 # File Name: 36d_find_boundary_interactive.py
-# Author: Florentino Báez
+# Author: Florentino Baez
 # Date: 05_Data_Structures
 # Description: Find boundary (interactive binary search). First True in boolean array.
 # -------------------------------------------------

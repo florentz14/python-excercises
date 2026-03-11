@@ -1,7 +1,7 @@
 # -------------------------------------------------
 # File Name: 51_comparison.py
-# Author: Florentino Báez
-# Date: 05_Data_Structures
+# Author: Florentino Baez
+# Date: 2026-03-09
 # Description: Sorting algorithm comparison. Performance benchmarks.
 # -------------------------------------------------
 
@@ -11,151 +11,151 @@ import math
 
 
 # === Utilities ===
-def esta_ordenada(lista):
+def is_sorted(items):
     """Checks if a list is sorted in ascending order."""
-    return all(lista[i] <= lista[i + 1] for i in range(len(lista) - 1))
+    return all(items[i] <= items[i + 1] for i in range(len(items) - 1))
 
 
-def generar_lista_aleatoria(n, minimo=1, maximo=100):
+def generate_random_list(n, minimum=1, maximum=100):
     """Generates a random list of n elements."""
-    return [random.randint(minimo, maximo) for _ in range(n)]
+    return [random.randint(minimum, maximum) for _ in range(n)]
 
 
 # === Bubble Sort ===
-def bubble_sort(lista):
+def bubble_sort(items):
     """Classic bubble sort. Does not modify the original list."""
-    lista = lista.copy()
-    n = len(lista)
+    items = items.copy()
+    n = len(items)
     for i in range(n):
         for j in range(0, n - i - 1):
-            if lista[j] > lista[j + 1]:
-                lista[j], lista[j + 1] = lista[j + 1], lista[j]
-    return lista
+            if items[j] > items[j + 1]:
+                items[j], items[j + 1] = items[j + 1], items[j]
+    return items
 
 
-def bubble_sort_optimizado(lista):
+def bubble_sort_optimized(items):
     """Stops if no swaps occur (list already sorted)."""
-    lista = lista.copy()
-    n = len(lista)
+    items = items.copy()
+    n = len(items)
     for i in range(n):
-        intercambiado = False
+        swapped = False
         for j in range(0, n - i - 1):
-            if lista[j] > lista[j + 1]:
-                lista[j], lista[j + 1] = lista[j + 1], lista[j]
-                intercambiado = True
-        if not intercambiado:
+            if items[j] > items[j + 1]:
+                items[j], items[j + 1] = items[j + 1], items[j]
+                swapped = True
+        if not swapped:
             break
-    return lista
+    return items
 
 
 # === Selection Sort ===
-def selection_sort(lista):
+def selection_sort(items):
     """At each step places the minimum of the rest at the current position."""
-    lista = lista.copy()
-    n = len(lista)
+    items = items.copy()
+    n = len(items)
     for i in range(n):
         min_idx = i
         for j in range(i + 1, n):
-            if lista[j] < lista[min_idx]:
+            if items[j] < items[min_idx]:
                 min_idx = j
-        lista[i], lista[min_idx] = lista[min_idx], lista[i]
-    return lista
+        items[i], items[min_idx] = items[min_idx], items[i]
+    return items
 
 
 # === Insertion Sort ===
-def insertion_sort(lista):
+def insertion_sort(items):
     """Inserts each element into its place within the already sorted portion."""
-    lista = lista.copy()
-    for i in range(1, len(lista)):
-        clave = lista[i]
+    items = items.copy()
+    for i in range(1, len(items)):
+        key = items[i]
         j = i - 1
-        while j >= 0 and lista[j] > clave:
-            lista[j + 1] = lista[j]
+        while j >= 0 and items[j] > key:
+            items[j + 1] = items[j]
             j -= 1
-        lista[j + 1] = clave
-    return lista
+        items[j + 1] = key
+    return items
 
 
 # === Merge Sort ===
-def merge(izquierda, derecha):
+def merge(left, right):
     """Merges two sorted lists into one sorted list."""
-    resultado = []
+    result = []
     i = j = 0
-    while i < len(izquierda) and j < len(derecha):
-        if izquierda[i] <= derecha[j]:
-            resultado.append(izquierda[i])
+    while i < len(left) and j < len(right):
+        if left[i] <= right[j]:
+            result.append(left[i])
             i += 1
         else:
-            resultado.append(derecha[j])
+            result.append(right[j])
             j += 1
-    resultado.extend(izquierda[i:])
-    resultado.extend(derecha[j:])
-    return resultado
+    result.extend(left[i:])
+    result.extend(right[j:])
+    return result
 
 
-def merge_sort(lista):
+def merge_sort(items):
     """Divide and conquer: divide, sort halves, merge."""
-    if len(lista) <= 1:
-        return lista.copy()
-    medio = len(lista) // 2
-    izquierda = merge_sort(lista[:medio])
-    derecha = merge_sort(lista[medio:])
-    return merge(izquierda, derecha)
+    if len(items) <= 1:
+        return items.copy()
+    mid = len(items) // 2
+    left = merge_sort(items[:mid])
+    right = merge_sort(items[mid:])
+    return merge(left, right)
 
 
 # === Quick Sort ===
-def quick_sort(lista):
+def quick_sort(items):
     """Version that uses auxiliary lists (clear). Pivot: middle element."""
-    if len(lista) <= 1:
-        return lista.copy()
-    pivote = lista[len(lista) // 2]
-    menores = [x for x in lista if x < pivote]
-    iguales = [x for x in lista if x == pivote]
-    mayores = [x for x in lista if x > pivote]
-    return quick_sort(menores) + iguales + quick_sort(mayores)
+    if len(items) <= 1:
+        return items.copy()
+    pivot = items[len(items) // 2]
+    lower = [x for x in items if x < pivot]
+    equal = [x for x in items if x == pivot]
+    greater = [x for x in items if x > pivot]
+    return quick_sort(lower) + equal + quick_sort(greater)
 
 
 # === Heap Sort ===
-def heapify(lista, n, i):
+def heapify(items, n, i):
     """Adjusts the tree so that the root at i is a max-heap."""
-    mayor = i
-    izquierda = 2 * i + 1
-    derecha = 2 * i + 2
-    if izquierda < n and lista[izquierda] > lista[mayor]:
-        mayor = izquierda
-    if derecha < n and lista[derecha] > lista[mayor]:
-        mayor = derecha
-    if mayor != i:
-        lista[i], lista[mayor] = lista[mayor], lista[i]
-        heapify(lista, n, mayor)
+    largest = i
+    left = 2 * i + 1
+    right = 2 * i + 2
+    if left < n and items[left] > items[largest]:
+        largest = left
+    if right < n and items[right] > items[largest]:
+        largest = right
+    if largest != i:
+        items[i], items[largest] = items[largest], items[i]
+        heapify(items, n, largest)
 
 
-def heap_sort(lista):
+def heap_sort(items):
     """Builds max heap and repeatedly extracts the maximum."""
-    lista = lista.copy()
-    n = len(lista)
+    items = items.copy()
+    n = len(items)
     for i in range(n // 2 - 1, -1, -1):
-        heapify(lista, n, i)
+        heapify(items, n, i)
     for i in range(n - 1, 0, -1):
-        lista[0], lista[i] = lista[i], lista[0]
-        heapify(lista, i, 0)
-    return lista
+        items[0], items[i] = items[i], items[0]
+        heapify(items, i, 0)
+    return items
 
 
 # === Counting Sort ===
-def counting_sort(lista, maximo=None):
+def counting_sort(items, maximum=None):
     """Sorts by counting occurrences of each value (non-negative integers)."""
-    if not lista:
+    if not items:
         return []
-    if maximo is None:
-        maximo = max(lista) if lista else 0
-    count = [0] * (maximo + 1)
-    for num in lista:
+    if maximum is None:
+        maximum = max(items) if items else 0
+    count = [0] * (maximum + 1)
+    for num in items:
         count[num] += 1
-    resultado = []
-    for i in range(maximo + 1):
-        resultado.extend([i] * count[i])
-    return resultado
+    result = []
+    for i in range(maximum + 1):
+        result.extend([i] * count[i])
+    return result
 
 
 # === Radix Sort ===
@@ -176,64 +176,64 @@ def counting_sort_by_digit(arr, exp):
     return output
 
 
-def radix_sort(lista):
+def radix_sort(items):
     """Radix Sort (LSD): sorts digit by digit from least significant."""
-    if not lista:
+    if not items:
         return []
-    lista = lista.copy()
-    max_val = max(lista)
+    items = items.copy()
+    max_val = max(items)
     exp = 1
     while max_val // exp > 0:
-        lista = counting_sort_by_digit(lista, exp)
+        items = counting_sort_by_digit(items, exp)
         exp *= 10
-    return lista
+    return items
 
 
 # === Shell Sort ===
-def shell_sort(lista):
+def shell_sort(items):
     """Shell Sort with Knuth gap sequence."""
-    lista = lista.copy()
-    n = len(lista)
+    items = items.copy()
+    n = len(items)
     gap = 1
     while gap < n // 3:
         gap = gap * 3 + 1
     while gap > 0:
         for i in range(gap, n):
-            temp = lista[i]
+            temp = items[i]
             j = i
-            while j >= gap and lista[j - gap] > temp:
-                lista[j] = lista[j - gap]
+            while j >= gap and items[j - gap] > temp:
+                items[j] = items[j - gap]
                 j -= gap
-            lista[j] = temp
+            items[j] = temp
         gap //= 3
-    return lista
+    return items
 
 
 # === Bucket Sort ===
-def bucket_sort(lista):
+def bucket_sort(items):
     """Bucket Sort for integers with arbitrary range."""
-    if len(lista) <= 1:
-        return lista.copy()
-    lista = lista.copy()
-    min_val = min(lista)
-    max_val = max(lista)
-    if min_val == max_val:
-        return lista
-    n = len(lista)
+    if len(items) <= 1:
+        return items.copy()
+    items = items.copy()
+    min_value = min(items)
+    max_value = max(items)
+    if min_value == max_value:
+        return items
+    n = len(items)
     num_buckets = max(1, int(math.sqrt(n)))
-    rango = max_val - min_val + 1
+    value_range = max_value - min_value + 1
     buckets = [[] for _ in range(num_buckets)]
-    for num in lista:
-        idx = int((num - min_val) / rango * num_buckets)
+    for num in items:
+        idx = int((num - min_value) / value_range * num_buckets)
         if idx == num_buckets:
             idx = num_buckets - 1
         buckets[idx].append(num)
     for bucket in buckets:
         bucket.sort()
-    resultado = []
+    result = []
     for bucket in buckets:
-        resultado.extend(bucket)
-    return resultado
+        result.extend(bucket)
+    return result
 
 
 # === Tim Sort (simplified) ===
@@ -250,12 +250,12 @@ def _calc_min_run(n):
 
 def _insertion_sort_range(arr, left, right):
     for i in range(left + 1, right + 1):
-        clave = arr[i]
+        key = arr[i]
         j = i - 1
-        while j >= left and arr[j] > clave:
+        while j >= left and arr[j] > key:
             arr[j + 1] = arr[j]
             j -= 1
-        arr[j + 1] = clave
+        arr[j + 1] = key
 
 
 def _merge_runs(arr, left, mid, right):
@@ -281,9 +281,9 @@ def _merge_runs(arr, left, mid, right):
         k += 1
 
 
-def tim_sort(lista):
+def tim_sort(items):
     """Tim Sort: hybrid of Merge Sort + Insertion Sort."""
-    arr = lista.copy()
+    arr = items.copy()
     n = len(arr)
     if n <= 1:
         return arr
@@ -303,53 +303,53 @@ def tim_sort(lista):
 
 
 # === Cocktail Sort ===
-def cocktail_sort(lista):
+def cocktail_sort(items):
     """Cocktail Sort: bidirectional Bubble Sort."""
-    lista = lista.copy()
-    n = len(lista)
-    inicio = 0
-    fin = n - 1
-    intercambiado = True
-    while intercambiado:
-        intercambiado = False
-        for i in range(inicio, fin):
-            if lista[i] > lista[i + 1]:
-                lista[i], lista[i + 1] = lista[i + 1], lista[i]
-                intercambiado = True
-        fin -= 1
-        if not intercambiado:
+    items = items.copy()
+    n = len(items)
+    start = 0
+    end = n - 1
+    swapped = True
+    while swapped:
+        swapped = False
+        for i in range(start, end):
+            if items[i] > items[i + 1]:
+                items[i], items[i + 1] = items[i + 1], items[i]
+                swapped = True
+        end -= 1
+        if not swapped:
             break
-        intercambiado = False
-        for i in range(fin, inicio, -1):
-            if lista[i] < lista[i - 1]:
-                lista[i], lista[i - 1] = lista[i - 1], lista[i]
-                intercambiado = True
-        inicio += 1
-    return lista
+        swapped = False
+        for i in range(end, start, -1):
+            if items[i] < items[i - 1]:
+                items[i], items[i - 1] = items[i - 1], items[i]
+                swapped = True
+        start += 1
+    return items
 
 
 # === Comb Sort ===
-def comb_sort(lista):
+def comb_sort(items):
     """Comb Sort: Bubble Sort with decreasing gaps (factor 1.3)."""
-    lista = lista.copy()
-    n = len(lista)
+    items = items.copy()
+    n = len(items)
     gap = n
     factor = 1.3
-    intercambiado = True
-    while gap > 1 or intercambiado:
+    swapped = True
+    while gap > 1 or swapped:
         gap = max(1, int(gap / factor))
-        intercambiado = False
+        swapped = False
         for i in range(n - gap):
-            if lista[i] > lista[i + gap]:
-                lista[i], lista[i + gap] = lista[i + gap], lista[i]
-                intercambiado = True
-    return lista
+            if items[i] > items[i + gap]:
+                items[i], items[i + gap] = items[i + gap], items[i]
+                swapped = True
+    return items
 
 
 # === Comparison ===
-def comparar_metodos_ordenamiento(lista, incluir_lentos=True, mostrar_resultados=True):
+def compare_sorting_methods(items, include_slow=True, show_results=True):
     """Compares execution times of all methods. Does not modify the original list."""
-    metodos_rapidos = {
+    fast_methods = {
         "Merge Sort":       merge_sort,
         "Quick Sort":       quick_sort,
         "Heap Sort":        heap_sort,
@@ -361,59 +361,66 @@ def comparar_metodos_ordenamiento(lista, incluir_lentos=True, mostrar_resultados
         "Python sorted()":  sorted,
     }
 
-    metodos_lentos = {
+    slow_methods = {
         "Bubble Sort":         bubble_sort,
-        "Bubble Sort Optim.":  bubble_sort_optimizado,
+        "Bubble Sort Optim.":  bubble_sort_optimized,
         "Selection Sort":      selection_sort,
         "Insertion Sort":      insertion_sort,
         "Cocktail Sort":       cocktail_sort,
         "Comb Sort":           comb_sort,
     }
 
-    metodos = {}
-    metodos.update(metodos_rapidos)
-    if incluir_lentos:
-        metodos.update(metodos_lentos)
+    methods = {}
+    methods.update(fast_methods)
+    if include_slow:
+        methods.update(slow_methods)
 
-    tiempos = {}
-    n = len(lista)
-    print(f"\nComparando métodos para lista de {n} elementos:")
+    times = {}
+    n = len(items)
+    print(f"\nComparing methods for list of {n} elements:")
     print("=" * 70)
 
-    for nombre, metodo in metodos.items():
-        lista_copia = lista.copy()
-        inicio = time.time()
+    for name, method in methods.items():
+        list_copy = items.copy()
+        start = time.time()
         try:
-            resultado = metodo(lista_copia)
-            tiempo = time.time() - inicio
-            ordenada = esta_ordenada(resultado) if len(resultado) > 1 else True
-            tiempos[nombre] = tiempo
-            estado = "OK" if ordenada else "FAIL"
-            print(f"{estado} {nombre:25s} {tiempo*1000:10.4f} ms")
+            result = method(list_copy)
+            elapsed = time.time() - start
+            sorted_ok = is_sorted(result) if len(result) > 1 else True
+            times[name] = elapsed
+            status = "OK" if sorted_ok else "FAIL"
+            print(f"{status} {name:25s} {elapsed*1000:10.4f} ms")
         except Exception as e:
-            print(f"ERR {nombre:25s} Error: {e}")
-            tiempos[nombre] = float("inf")
+            print(f"ERR {name:25s} Error: {e}")
+            times[name] = float("inf")
 
     print("=" * 70)
-    tiempos_validos = {k: v for k, v in tiempos.items() if v != float("inf")}
-    if tiempos_validos:
-        mas_rapido = min(tiempos_validos, key=tiempos_validos.get)
-        print(f"\nMétodo más rápido: {mas_rapido} ({tiempos_validos[mas_rapido]*1000:.4f} ms)")
-    return tiempos
+    valid_times = {k: v for k, v in times.items() if v != float("inf")}
+    if valid_times:
+        fastest = min(valid_times, key=valid_times.get)
+        print(f"\nFastest method: {fastest} ({valid_times[fastest]*1000:.4f} ms)")
+    return times
 
 
 if __name__ == "__main__":
-    print("=== Comparación de TODOS los métodos de ordenamiento ===\n")
+    print("=== Comparison of ALL sorting methods ===\n")
 
-    print("--- Lista pequeña (20 elementos) ---")
-    lista_peq = generar_lista_aleatoria(20, 1, 50)
-    print(f"Lista: {lista_peq}")
-    comparar_metodos_ordenamiento(lista_peq)
+    print("--- Small list (20 elements) ---")
+    small_list = generate_random_list(20, 1, 50)
+    print(f"List: {small_list}")
+    compare_sorting_methods(small_list)
 
-    print("\n--- Lista mediana (500 elementos) ---")
-    lista_med = generar_lista_aleatoria(500, 1, 1000)
-    comparar_metodos_ordenamiento(lista_med)
+    print("\n--- Medium list (500 elements) ---")
+    medium_list = generate_random_list(500, 1, 1000)
+    compare_sorting_methods(medium_list)
 
-    print("\n--- Lista grande (5000 elementos, solo algoritmos rápidos) ---")
-    lista_grande = generar_lista_aleatoria(5000, 1, 10000)
-    comparar_metodos_ordenamiento(lista_grande, incluir_lentos=False)
+    print("\n--- Large list (5000 elements, fast algorithms only) ---")
+    large_list = generate_random_list(5000, 1, 10000)
+    compare_sorting_methods(large_list, include_slow=False)
+
+
+# Backward-compatible aliases.
+esta_ordenada = is_sorted
+generar_lista_aleatoria = generate_random_list
+bubble_sort_optimizado = bubble_sort_optimized
+comparar_metodos_ordenamiento = compare_sorting_methods

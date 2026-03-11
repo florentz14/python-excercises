@@ -1,6 +1,6 @@
 # -------------------------------------------------
 # File Name: 23_n_queens.py
-# Author: Florentino Báez
+# Author: Florentino Baez
 # Date: 05_Data_Structures
 # Description: N-Queens problem. Place N queens on NxN board with no two attacking.
 # -------------------------------------------------

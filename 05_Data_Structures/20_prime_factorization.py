@@ -1,6 +1,6 @@
 # -------------------------------------------------
 # File Name: 20_prime_factorization.py
-# Author: Florentino Báez
+# Author: Florentino Baez
 # Date: 05_Data_Structures
 # Description: Prime factorization. Decomposes integer into product of primes.
 # -------------------------------------------------

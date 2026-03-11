@@ -1,6 +1,6 @@
 # -------------------------------------------------
 # File Name: 53_special_cases.py
-# Author: Florentino Báez
+# Author: Florentino Baez
 # Date: 05_Data_Structures
 # Description: Special cases in sorting. Edge cases and optimizations.
 # -------------------------------------------------

@@ -1,6 +1,6 @@
 # -------------------------------------------------
 # File Name: 57_tim_sort.py
-# Author: Florentino Báez
+# Author: Florentino Baez
 # Date: 05_Data_Structures
 # Description: Tim Sort. Hybrid of merge and insertion. Python's default sort. O(n log n).
 # -------------------------------------------------
@@ -86,12 +86,12 @@ def merge_runs(arr, left, mid, right):
 # ============================================================
 # 4. Tim Sort - Implementation
 # ============================================================
-def tim_sort(lista):
+def tim_sort(items):
     """
     Tim Sort: hybrid of Merge Sort + Insertion Sort.
     Does not modify the original list.
     """
-    arr = lista.copy()
+    arr = items.copy()
     n = len(arr)
 
     if n <= 1:
@@ -169,9 +169,9 @@ def demonstrate_advantage():
 # ============================================================
 # 6. Visual explanation of the process
 # ============================================================
-def tim_sort_visual(lista):
+def tim_sort_visual(items):
     """Shows the Tim Sort process step by step."""
-    arr = lista.copy()
+    arr = items.copy()
     n = len(arr)
     min_run = calc_min_run(n)
 
@@ -194,7 +194,7 @@ def tim_sort_visual(lista):
     size = min_run
     step = 0
     while size < n:
-        paso += 1
+        step += 1
         for left in range(0, n, 2 * size):
             mid = min(left + size - 1, n - 1)
             right = min(left + 2 * size - 1, n - 1)

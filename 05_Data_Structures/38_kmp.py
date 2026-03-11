@@ -1,46 +1,46 @@
 # -------------------------------------------------
 # File Name: 38_kmp.py
-# Author: Florentino Báez
+# Author: Florentino Baez
 # Date: 05_Data_Structures
 # Description: KMP algorithm for pattern matching. Builds failure table for linear-time search. O(n+m).
 # -------------------------------------------------
 
-def construir_tabla_lps(patron):
+def construir_tabla_lps(pattern):
     """LPS table: Longest Proper Prefix which is also Suffix."""
-    m = len(patron)
+    m = len(pattern)
     lps = [0] * m  # lps[i] = length of longest proper prefix that is also suffix
-    longitud = 0   # Length of previous prefix
+    length = 0   # Length of previous prefix
     i = 1
     while i < m:
-        if patron[i] == patron[longitud]:
-            longitud += 1
-            lps[i] = longitud  # Match → extend prefix
+        if pattern[i] == pattern[length]:
+            length += 1
+            lps[i] = length  # Match → extend prefix
             i += 1
         else:
-            if longitud != 0:
-                longitud = lps[longitud - 1]  # Back up in LPS table
+            if length != 0:
+                length = lps[length - 1]  # Back up in LPS table
             else:
                 lps[i] = 0  # No matching prefix
                 i += 1
     return lps
 
 
-def kmp_busqueda(texto, patron):
+def kmp_busqueda(text, pattern):
     """First occurrence of the pattern with KMP. -1 if not found."""
-    n, m = len(texto), len(patron)
+    n, m = len(text), len(pattern)
     if m == 0:
         return 0
     if m > n:
         return -1
-    lps = construir_tabla_lps(patron)
+    lps = construir_tabla_lps(pattern)
     i = j = 0
     while i < n:
-        if texto[i] == patron[j]:
+        if text[i] == pattern[j]:
             i += 1
             j += 1
         if j == m:
             return i - j
-        if i < n and texto[i] != patron[j]:
+        if i < n and text[i] != pattern[j]:
             if j != 0:
                 j = lps[j - 1]
             else:
@@ -48,34 +48,34 @@ def kmp_busqueda(texto, patron):
     return -1
 
 
-def kmp_busqueda_todas(texto, patron):
+def kmp_busqueda_todas(text, pattern):
     """All occurrences of the pattern with KMP."""
-    n, m = len(texto), len(patron)
-    ocurrencias = []
+    n, m = len(text), len(pattern)
+    occurrences = []
     if m == 0:
         return [0]
     if m > n:
         return []
-    lps = construir_tabla_lps(patron)
+    lps = construir_tabla_lps(pattern)
     i = j = 0
     while i < n:
-        if texto[i] == patron[j]:
+        if text[i] == pattern[j]:
             i += 1
             j += 1
         if j == m:
-            ocurrencias.append(i - j)
+            occurrences.append(i - j)
             j = lps[j - 1]
-        elif i < n and texto[i] != patron[j]:
+        elif i < n and text[i] != pattern[j]:
             if j != 0:
                 j = lps[j - 1]
             else:
                 i += 1
-    return ocurrencias
+    return occurrences
 
 
 if __name__ == "__main__":
-    texto = "ABABDABACDABABCABCABAB"
-    patron = "ABABCABAB"
-    print("Texto:", repr(texto), "Patrón:", repr(patron))
-    print("KMP primera ocurrencia:", kmp_busqueda(texto, patron))
-    print("KMP todas:", kmp_busqueda_todas(texto, patron))
+    text = "ABABDABACDABABCABCABAB"
+    pattern = "ABABCABAB"
+    print("Text:", repr(text), "Pattern:", repr(pattern))
+    print("KMP first occurrence:", kmp_busqueda(text, pattern))
+    print("KMP todas:", kmp_busqueda_todas(text, pattern))
