@@ -1,10 +1,94 @@
-Date,Empresa,Apertura,Máximo,Mínimo,Cierre,Volumen
-2024-01-02,Santander,4.10,4.15,4.05,4.12,45000000
-2024-01-03,Santander,4.12,4.18,4.10,4.15,42000000
-2024-01-04,Santander,4.15,4.20,4.12,4.18,38000000
-2024-01-02,BBVA,8.85,8.92,8.80,8.88,32000000
-2024-01-03,BBVA,8.88,8.95,8.85,8.90,30000000
-2024-01-04,BBVA,8.90,8.98,8.88,8.95,28000000
-2024-01-02,Sabadell,0.95,0.98,0.93,0.96,15000000
-2024-01-03,Sabadell,0.96,0.99,0.94,0.97,14000000
-2024-01-04,Sabadell,0.97,1.00,0.95,0.98,13000000
+Date,Empresa,Pais,Region,Apertura,Máximo,Mínimo,Cierre,Volumen
+2024-01-02,Santander,Espana,Europa,4.10,4.15,4.05,4.12,45000000
+2024-01-03,Santander,Espana,Europa,4.12,4.18,4.10,4.15,42000000
+2024-01-04,Santander,Espana,Europa,4.15,4.20,4.12,4.18,38000000
+2024-01-02,BBVA,Espana,Europa,8.85,8.92,8.80,8.88,32000000
+2024-01-03,BBVA,Espana,Europa,8.88,8.95,8.85,8.90,30000000
+2024-01-04,BBVA,Espana,Europa,8.90,8.98,8.88,8.95,28000000
+2024-01-02,Sabadell,Espana,Europa,0.95,0.98,0.93,0.96,15000000
+2024-01-03,Sabadell,Espana,Europa,0.96,0.99,0.94,0.97,14000000
+2024-01-04,Sabadell,Espana,Europa,0.97,1.00,0.95,0.98,13000000
+2024-01-02,JPMorgan Chase,Estados Unidos,Norteamerica,170.20,172.10,169.40,171.35,11500000
+2024-01-03,JPMorgan Chase,Estados Unidos,Norteamerica,171.35,173.00,170.80,172.40,10800000
+2024-01-04,JPMorgan Chase,Estados Unidos,Norteamerica,172.40,174.20,171.90,173.95,11200000
+2024-01-02,Bank of America,Estados Unidos,Norteamerica,33.80,34.20,33.45,34.05,39800000
+2024-01-03,Bank of America,Estados Unidos,Norteamerica,34.05,34.55,33.90,34.30,37600000
+2024-01-04,Bank of America,Estados Unidos,Norteamerica,34.30,34.80,34.10,34.60,36200000
+2024-01-02,Citigroup,Estados Unidos,Norteamerica,51.60,52.10,51.20,51.95,17800000
+2024-01-03,Citigroup,Estados Unidos,Norteamerica,51.95,52.50,51.70,52.20,16900000
+2024-01-04,Citigroup,Estados Unidos,Norteamerica,52.20,52.80,51.95,52.55,17100000
+2024-01-02,Wells Fargo,Estados Unidos,Norteamerica,48.30,48.95,48.00,48.70,20600000
+2024-01-03,Wells Fargo,Estados Unidos,Norteamerica,48.70,49.20,48.45,48.95,19200000
+2024-01-04,Wells Fargo,Estados Unidos,Norteamerica,48.95,49.55,48.70,49.30,18800000
+2024-01-02,HSBC,Reino Unido,Europa,7.85,7.98,7.80,7.92,12400000
+2024-01-03,HSBC,Reino Unido,Europa,7.92,8.04,7.88,7.99,11800000
+2024-01-04,HSBC,Reino Unido,Europa,7.99,8.10,7.94,8.05,12100000
+2024-01-02,Barclays,Reino Unido,Europa,8.10,8.24,8.02,8.18,22300000
+2024-01-03,Barclays,Reino Unido,Europa,8.18,8.30,8.08,8.24,21700000
+2024-01-04,Barclays,Reino Unido,Europa,8.24,8.38,8.15,8.31,21400000
+2024-01-02,Deutsche Bank,Alemania,Europa,12.75,12.95,12.68,12.88,9500000
+2024-01-03,Deutsche Bank,Alemania,Europa,12.88,13.05,12.80,12.97,9100000
+2024-01-04,Deutsche Bank,Alemania,Europa,12.97,13.15,12.90,13.08,9400000
+2024-01-02,UBS,Suiza,Europa,30.20,30.55,30.00,30.42,8700000
+2024-01-03,UBS,Suiza,Europa,30.42,30.78,30.25,30.66,8200000
+2024-01-04,UBS,Suiza,Europa,30.66,31.05,30.50,30.92,8500000
+2024-01-02,BNP Paribas,Francia,Europa,63.40,64.05,63.10,63.85,7600000
+2024-01-03,BNP Paribas,Francia,Europa,63.85,64.40,63.55,64.10,7300000
+2024-01-04,BNP Paribas,Francia,Europa,64.10,64.75,63.90,64.45,7400000
+2024-01-02,Societe Generale,Francia,Europa,24.60,24.95,24.40,24.82,6900000
+2024-01-03,Societe Generale,Francia,Europa,24.82,25.10,24.65,24.97,6700000
+2024-01-04,Societe Generale,Francia,Europa,24.97,25.30,24.80,25.15,6800000
+2024-01-02,Credit Agricole,Francia,Europa,13.05,13.22,12.98,13.16,8200000
+2024-01-03,Credit Agricole,Francia,Europa,13.16,13.30,13.08,13.24,7900000
+2024-01-04,Credit Agricole,Francia,Europa,13.24,13.42,13.15,13.33,8000000
+2024-01-02,Mitsubishi UFJ,Japon,Asia-Pacifico,8.85,9.00,8.78,8.94,14100000
+2024-01-03,Mitsubishi UFJ,Japon,Asia-Pacifico,8.94,9.08,8.88,9.02,13600000
+2024-01-04,Mitsubishi UFJ,Japon,Asia-Pacifico,9.02,9.16,8.96,9.10,13900000
+2024-01-02,Sumitomo Mitsui FG,Japon,Asia-Pacifico,10.90,11.05,10.82,10.98,9800000
+2024-01-03,Sumitomo Mitsui FG,Japon,Asia-Pacifico,10.98,11.12,10.90,11.04,9600000
+2024-01-04,Sumitomo Mitsui FG,Japon,Asia-Pacifico,11.04,11.20,10.96,11.13,9700000
+2024-01-02,Mizuho Financial,Japon,Asia-Pacifico,3.35,3.42,3.32,3.39,15400000
+2024-01-03,Mizuho Financial,Japon,Asia-Pacifico,3.39,3.45,3.36,3.41,14900000
+2024-01-04,Mizuho Financial,Japon,Asia-Pacifico,3.41,3.48,3.38,3.44,15100000
+2024-01-02,ICBC,China,Asia-Pacifico,5.05,5.12,5.00,5.08,26500000
+2024-01-03,ICBC,China,Asia-Pacifico,5.08,5.15,5.03,5.11,25200000
+2024-01-04,ICBC,China,Asia-Pacifico,5.11,5.19,5.07,5.14,25800000
+2024-01-02,China Construction Bank,China,Asia-Pacifico,6.25,6.33,6.20,6.29,21900000
+2024-01-03,China Construction Bank,China,Asia-Pacifico,6.29,6.37,6.24,6.32,21300000
+2024-01-04,China Construction Bank,China,Asia-Pacifico,6.32,6.40,6.27,6.36,21600000
+2024-01-02,Bank of China,China,Asia-Pacifico,3.85,3.91,3.82,3.88,24100000
+2024-01-03,Bank of China,China,Asia-Pacifico,3.88,3.94,3.85,3.90,23600000
+2024-01-04,Bank of China,China,Asia-Pacifico,3.90,3.97,3.87,3.93,23900000
+2024-01-02,Royal Bank of Canada,Canada,Norteamerica,97.10,98.00,96.70,97.65,6200000
+2024-01-03,Royal Bank of Canada,Canada,Norteamerica,97.65,98.45,97.30,98.05,5900000
+2024-01-04,Royal Bank of Canada,Canada,Norteamerica,98.05,98.90,97.80,98.55,6000000
+2024-01-02,TD Bank,Canada,Norteamerica,61.30,61.95,61.00,61.70,7100000
+2024-01-03,TD Bank,Canada,Norteamerica,61.70,62.40,61.45,62.05,6900000
+2024-01-04,TD Bank,Canada,Norteamerica,62.05,62.75,61.80,62.40,7000000
+2024-01-02,Scotiabank,Canada,Norteamerica,47.20,47.85,46.95,47.55,6600000
+2024-01-03,Scotiabank,Canada,Norteamerica,47.55,48.10,47.30,47.82,6400000
+2024-01-04,Scotiabank,Canada,Norteamerica,47.82,48.35,47.55,48.05,6500000
+2024-01-02,Itau Unibanco,Brasil,Latinoamerica,6.75,6.88,6.70,6.82,18300000
+2024-01-03,Itau Unibanco,Brasil,Latinoamerica,6.82,6.95,6.78,6.89,17700000
+2024-01-04,Itau Unibanco,Brasil,Latinoamerica,6.89,7.02,6.84,6.96,18000000
+2024-01-02,Banco do Brasil,Brasil,Latinoamerica,9.10,9.24,9.02,9.18,12100000
+2024-01-03,Banco do Brasil,Brasil,Latinoamerica,9.18,9.30,9.10,9.24,11700000
+2024-01-04,Banco do Brasil,Brasil,Latinoamerica,9.24,9.38,9.16,9.31,11900000
+2024-01-02,Commonwealth Bank,Australia,Asia-Pacifico,74.20,74.95,73.80,74.60,5200000
+2024-01-03,Commonwealth Bank,Australia,Asia-Pacifico,74.60,75.30,74.20,74.95,5000000
+2024-01-04,Commonwealth Bank,Australia,Asia-Pacifico,74.95,75.70,74.60,75.35,5100000
+2024-01-02,ANZ,Australia,Asia-Pacifico,17.10,17.28,17.00,17.20,7800000
+2024-01-03,ANZ,Australia,Asia-Pacifico,17.20,17.38,17.10,17.30,7600000
+2024-01-04,ANZ,Australia,Asia-Pacifico,17.30,17.50,17.18,17.42,7700000
+2024-01-02,DBS,Singapur,Asia-Pacifico,25.80,26.05,25.65,25.96,4300000
+2024-01-03,DBS,Singapur,Asia-Pacifico,25.96,26.20,25.80,26.08,4200000
+2024-01-04,DBS,Singapur,Asia-Pacifico,26.08,26.35,25.92,26.22,4250000
+2024-01-02,Standard Chartered,Reino Unido,Europa,10.20,10.36,10.12,10.29,8400000
+2024-01-03,Standard Chartered,Reino Unido,Europa,10.29,10.44,10.20,10.35,8100000
+2024-01-04,Standard Chartered,Reino Unido,Europa,10.35,10.52,10.28,10.43,8200000
+2024-01-02,ING,Paises Bajos,Europa,14.85,15.03,14.75,14.94,9300000
+2024-01-03,ING,Paises Bajos,Europa,14.94,15.12,14.86,15.01,9000000
+2024-01-04,ING,Paises Bajos,Europa,15.01,15.20,14.92,15.10,9100000
+2024-01-02,UniCredit,Italia,Europa,24.10,24.45,23.95,24.28,8900000
+2024-01-03,UniCredit,Italia,Europa,24.28,24.60,24.10,24.42,8600000
+2024-01-04,UniCredit,Italia,Europa,24.42,24.78,24.25,24.60,8700000

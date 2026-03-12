@@ -692,19 +692,79 @@ INSERT INTO roles (name, description, is_system_role) VALUES
 
 -- Permissions
 INSERT INTO permissions (code, name, module) VALUES
-('budget:read',      'View Budgets',       'budget'),
-('budget:write',     'Edit Budgets',       'budget'),
-('expense:read',     'View Expenses',      'expense'),
-('expense:write',    'Add Expenses',       'expense'),
-('expense:delete',   'Delete Expenses',    'expense'),
-('income:read',      'View Income',        'income'),
-('income:write',     'Add Income',         'income'),
-('investment:read',  'View Investments',   'investment'),
-('investment:write', 'Manage Investments', 'investment'),
-('report:read',      'View Reports',       'report'),
-('user:manage',      'Manage Users',       'security'),
-('asset:read',       'View Assets',        'asset'),
-('asset:write',      'Manage Assets',      'asset');
+-- Security
+('user:read',                  'View Users',                         'security'),
+('user:manage',                'Manage Users',                       'security'),
+('role:read',                  'View Roles',                         'security'),
+('role:manage',                'Manage Roles',                       'security'),
+('permission:read',            'View Permissions',                   'security'),
+('permission:manage',          'Manage Permissions',                 'security'),
+('session:read',               'View Sessions',                      'security'),
+('session:manage',             'Manage Sessions',                    'security'),
+('audit:read',                 'View Audit Logs',                    'security'),
+-- Household
+('household:read',             'View Households',                    'household'),
+('household:write',            'Manage Households',                  'household'),
+('member:read',                'View Members',                       'household'),
+('member:write',               'Manage Members',                     'household'),
+-- Banking and payments
+('bank:read',                  'View Banks',                         'banking'),
+('bank:write',                 'Manage Banks',                       'banking'),
+('account:read',               'View Bank Accounts',                 'banking'),
+('account:write',              'Manage Bank Accounts',               'banking'),
+('card:read',                  'View Cards',                         'banking'),
+('card:write',                 'Manage Cards',                       'banking'),
+('statement:read',             'View Card Statements',               'banking'),
+('statement:write',            'Manage Card Statements',             'banking'),
+('payment_method:read',        'View Payment Methods',               'banking'),
+('payment_method:write',       'Manage Payment Methods',             'banking'),
+('transfer:read',              'View Transfers',                     'banking'),
+('transfer:write',             'Manage Transfers',                   'banking'),
+-- Income and expenses
+('income_category:read',       'View Income Categories',             'income'),
+('income_category:write',      'Manage Income Categories',           'income'),
+('income:read',                'View Income',                        'income'),
+('income:write',               'Add/Update Income',                  'income'),
+('expense_category:read',      'View Expense Categories',            'expense'),
+('expense_category:write',     'Manage Expense Categories',          'expense'),
+('expense_subcategory:read',   'View Expense Subcategories',         'expense'),
+('expense_subcategory:write',  'Manage Expense Subcategories',       'expense'),
+('expense:read',               'View Expenses',                      'expense'),
+('expense:write',              'Add/Update Expenses',                'expense'),
+('expense:delete',             'Delete Expenses',                    'expense'),
+('recurring:read',             'View Recurring Items',               'expense'),
+('recurring:write',            'Manage Recurring Items',             'expense'),
+('budget:read',                'View Budgets',                       'budget'),
+('budget:write',               'Edit Budgets',                       'budget'),
+('budget_alert:read',          'View Budget Alerts',                 'budget'),
+('budget_alert:write',         'Manage Budget Alerts',               'budget'),
+-- Assets and liabilities
+('asset:read',                 'View Other Assets',                  'asset'),
+('asset:write',                'Manage Other Assets',                'asset'),
+('property:read',              'View Properties',                    'asset'),
+('property:write',             'Manage Properties',                  'asset'),
+('mortgage:read',              'View Mortgages',                     'asset'),
+('mortgage:write',             'Manage Mortgages',                   'asset'),
+('vehicle:read',               'View Vehicles',                      'asset'),
+('vehicle:write',              'Manage Vehicles',                    'asset'),
+('vehicle_loan:read',          'View Vehicle Loans',                 'asset'),
+('vehicle_loan:write',         'Manage Vehicle Loans',               'asset'),
+('insurance_company:read',     'View Insurance Companies',           'asset'),
+('insurance_company:write',    'Manage Insurance Companies',         'asset'),
+('insurance_policy:read',      'View Insurance Policies',            'asset'),
+('insurance_policy:write',     'Manage Insurance Policies',          'asset'),
+('insurance_claim:read',       'View Insurance Claims',              'asset'),
+('insurance_claim:write',      'Manage Insurance Claims',            'asset'),
+('investment_account:read',    'View Investment Accounts',           'investment'),
+('investment_account:write',   'Manage Investment Accounts',         'investment'),
+('investment:read',            'View Investments',                   'investment'),
+('investment:write',           'Manage Investments',                 'investment'),
+('savings_goal:read',          'View Savings Goals',                 'savings'),
+('savings_goal:write',         'Manage Savings Goals',               'savings'),
+('debt:read',                  'View Debts',                         'debt'),
+('debt:write',                 'Manage Debts',                       'debt'),
+-- Reporting
+('report:read',                'View Reports',                       'report');
 
 -- Role permissions (admin gets all)
 INSERT INTO role_permission (role_id, permission_id)
@@ -712,7 +772,9 @@ SELECT 1, permission_id FROM permissions;
 
 -- Owner gets most permissions
 INSERT INTO role_permission (role_id, permission_id)
-SELECT 2, permission_id FROM permissions WHERE code NOT IN ('user:manage');
+SELECT 2, permission_id
+FROM permissions
+WHERE code NOT IN ('user:manage','role:manage','permission:manage','session:manage');
 
 -- Member gets basic permissions
 INSERT INTO role_permission (role_id, permission_id)
@@ -722,6 +784,13 @@ WHERE code IN ('budget:read','expense:read','expense:write','income:read','repor
 -- Viewer: read-only
 INSERT INTO role_permission (role_id, permission_id)
 SELECT 4, permission_id FROM permissions WHERE code LIKE '%:read';
+
+-- Accountant: finance and reporting modules
+INSERT INTO role_permission (role_id, permission_id)
+SELECT 5, permission_id
+FROM permissions
+WHERE module IN ('income','expense','budget','banking','investment','asset','savings','debt','report')
+  AND code NOT LIKE '%:delete';
 
 -- User roles
 INSERT INTO user_role (user_id, role_id, assigned_by) VALUES
@@ -812,7 +881,13 @@ INSERT INTO expense_categories (household_id, name, icon, color, is_fixed) VALUE
 (1, 'Utilities',     '💡', '#607D8B', TRUE),
 (1, 'Insurance',     '🛡️', '#009688', TRUE),
 (1, 'Clothing',      '👗', '#E91E63', FALSE),
-(1, 'Savings',       '💰', '#FFC107', FALSE);
+(1, 'Savings',       '💰', '#FFC107', FALSE),
+(1, 'Personal Care', '🧴', '#FF7043', FALSE),
+(1, 'Kids',          '🧸', '#3F51B5', FALSE),
+(1, 'Pets',          '🐾', '#8D6E63', FALSE),
+(1, 'Debt Payment',  '💳', '#455A64', TRUE),
+(1, 'Travel',        '✈️', '#00ACC1', FALSE),
+(1, 'Gifts',         '🎁', '#EC407A', FALSE);
 
 -- Expense subcategories
 INSERT INTO expense_subcategories (category_id, name) VALUES
@@ -827,7 +902,38 @@ INSERT INTO expense_subcategories (category_id, name) VALUES
 (4, 'Gym'),
 (6, 'Streaming'),
 (6, 'Movies'),
-(6, 'Travel');
+(6, 'Travel'),
+(1, 'Rent'),
+(1, 'Mortgage'),
+(1, 'Maintenance'),
+(7, 'Electricity'),
+(7, 'Water'),
+(7, 'Internet'),
+(8, 'Health Insurance'),
+(8, 'Car Insurance'),
+(8, 'Home Insurance'),
+(9, 'Shoes'),
+(9, 'Accessories'),
+(10, 'Emergency Fund'),
+(10, 'Retirement'),
+(11, 'Haircut'),
+(11, 'Skincare'),
+(11, 'Toiletries'),
+(12, 'School Supplies'),
+(12, 'Daycare'),
+(12, 'Extracurricular'),
+(13, 'Pet Food'),
+(13, 'Vet'),
+(13, 'Pet Grooming'),
+(14, 'Credit Card'),
+(14, 'Student Loan'),
+(14, 'Car Loan'),
+(15, 'Flights'),
+(15, 'Hotels'),
+(15, 'Local Transport'),
+(16, 'Birthday'),
+(16, 'Holiday Gifts'),
+(16, 'Donations');
 
 -- Expenses (3 months of data)
 INSERT INTO expenses (household_id, member_id, category_id, subcategory_id, payment_method_id, amount, date, description, is_fixed) VALUES
@@ -845,6 +951,12 @@ INSERT INTO expenses (household_id, member_id, category_id, subcategory_id, paym
 (1, 2, 2,    3, 3,   68.00, '2026-01-22', 'Uber Eats',              FALSE),
 (1, 1, 3,    5, 6,   35.00, '2026-01-25', 'Uber to airport',        FALSE),
 (1, 2, 9, NULL, 3,  210.00, '2026-01-28', 'Winter clothing kids',   FALSE),
+(1, 2, 11,  26, 3,   35.00, '2026-01-18', 'Haircut and grooming',   FALSE),
+(1, 3, 12,  29, 6,   95.00, '2026-01-19', 'School notebooks and art supplies', FALSE),
+(1, 1, 13,  32, 3,   65.00, '2026-01-21', 'Dog food monthly pack',  FALSE),
+(1, 1, 14,  35, 1,  450.00, '2026-01-26', 'Credit card statement payment', TRUE),
+(1, 1, 15,  38, 1,  320.00, '2026-01-27', 'Domestic flight tickets', FALSE),
+(1, 2, 16,  41, 3,   80.00, '2026-01-30', 'Birthday gift for niece', FALSE),
 -- February
 (1, 1, 1, NULL, 1, 2200.00, '2026-02-01', 'Mortgage payment',       TRUE),
 (1, 1, 7, NULL, 1,  195.00, '2026-02-05', 'Electric & Gas bill',    TRUE),
@@ -858,6 +970,12 @@ INSERT INTO expenses (household_id, member_id, category_id, subcategory_id, paym
 (1, 2, 4,    8, 3,   55.00, '2026-02-22', 'Pharmacy',               FALSE),
 (1, 3, 5, NULL, 6,   85.00, '2026-02-25', 'School trip payment',    FALSE),
 (1, 1, 6,   11, 3,   48.00, '2026-02-28', 'Cinema family',          FALSE),
+(1, 2, 11,  27, 3,   42.00, '2026-02-09', 'Skincare products',      FALSE),
+(1, 4, 12,  31, 4,   75.00, '2026-02-16', 'After-school robotics club', FALSE),
+(1, 2, 13,  33, 3,  120.00, '2026-02-18', 'Annual vet checkup',     FALSE),
+(1, 1, 14,  37, 1,  280.00, '2026-02-24', 'Car loan installment',   TRUE),
+(1, 1, 15,  39, 1,  540.00, '2026-02-26', 'Hotel reservation for trip', FALSE),
+(1, 1, 16,  43, 2,  100.00, '2026-02-27', 'Donation to local shelter', FALSE),
 -- March
 (1, 1, 1, NULL, 1, 2200.00, '2026-03-01', 'Mortgage payment',       TRUE),
 (1, 1, 7, NULL, 1,  175.00, '2026-03-05', 'Electric & Gas bill',    TRUE),
@@ -870,7 +988,13 @@ INSERT INTO expenses (household_id, member_id, category_id, subcategory_id, paym
 (1, 2, 2,    3, 3,   72.00, '2026-03-21', 'DoorDash delivery',      FALSE),
 (1, 1, 3,    6, 6,   25.00, '2026-03-22', 'Parking downtown',       FALSE),
 (1, 3, 5, NULL, 6,  200.00, '2026-03-25', 'Sports club enrollment', FALSE),
-(1, 2, 9, NULL, 3,  155.00, '2026-03-28', 'Spring clothing',        FALSE);
+(1, 2, 9, NULL, 3,  155.00, '2026-03-28', 'Spring clothing',        FALSE),
+(1, 1, 11,  28, 3,   18.00, '2026-03-08', 'Toiletries refill',      FALSE),
+(1, 3, 12,  30, 6,  260.00, '2026-03-11', 'Daycare monthly fee',    TRUE),
+(1, 2, 13,  34, 3,   45.00, '2026-03-14', 'Pet grooming service',   FALSE),
+(1, 1, 14,  36, 1,  310.00, '2026-03-18', 'Student loan payment',   TRUE),
+(1, 1, 15,  40, 6,   70.00, '2026-03-23', 'Taxi and metro during trip', FALSE),
+(1, 2, 16,  42, 3,  130.00, '2026-03-29', 'Holiday gifts for family', FALSE);
 
 -- Budgets (March 2026)
 INSERT INTO budgets (household_id, category_id, amount_limit, month, year, notes) VALUES

@@ -1,14 +1,15 @@
 # -------------------------------------------------
 # File Name: 51_convert_index_to_column.py
 # Author: Florentino Báez
-# Date: 09_Pandas
-# Description: Pandas exercise: 33 convert index to column.
+# Date: 12/03/2026
+# Description: Converts the index of a DataFrame to a column.
 # -------------------------------------------------
 
-"""Practice 33: Convert Index to Column."""
+# Import pandas and numpy libraries
 import pandas as pd
 import numpy as np
 
+# Create a dictionary with the exam data
 exam_data = {
     "name": [
         "Valeria",
@@ -26,7 +27,11 @@ exam_data = {
     "attempts": [1, 3, 2, 3, 2, 3, 1, 1, 2, 1],
     "qualify": ["yes", "no", "yes", "no", "no", "yes", "yes", "no", "no", "yes"],
 }
-df_practice_33 = pd.DataFrame(exam_data)
-df_practice_33 = df_practice_33.reset_index()
+
+# Create a DataFrame with the exam data
+df = pd.DataFrame(exam_data)
+
+# Reset the index to convert it to a column
+df = df.reset_index()
 print("After converting index in a column:")
-print(df_practice_33)
+print(df)

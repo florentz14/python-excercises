@@ -3,6 +3,7 @@
 # Complete program with examples covering all merge/join operations
 # =============================================================================
 
+# Import numpy and pandas libraries
 import numpy as np
 import pandas as pd
 
@@ -119,11 +120,14 @@ print(SEP)
 
 # DataFrames with meaningful indexes
 stock = pd.DataFrame({"qty": [50, 30, 80, 20]}, index=["ball", "pen", "pencil", "mug"])
+
+# Create a DataFrame with the information data
 info = pd.DataFrame(
     {"color": ["red", "black", "white", "green"]},
     index=["ball", "pen", "pencil", "mug"],
 )
 
+# Print the DataFrames
 print("stock (indexed by product):\n", stock)
 print("\ninfo  (indexed by product):\n", info)
 
@@ -132,11 +136,16 @@ by_index = pd.merge(stock, info, left_index=True, right_index=True)
 print("\npd.merge(stock, info, left_index=True, right_index=True):\n", by_index)
 
 # Mixed: one column key, one index key
+# Create a DataFrame with the third set of data
 frame3 = pd.DataFrame({"id": ["ball", "pencil", "pen", "mug"], "qty": [50, 30, 80, 20]})
+
+# Create a DataFrame with the fourth set of data
 frame4 = pd.DataFrame(
     {"color": ["red", "white", "black", "green"]},
     index=["ball", "pencil", "pen", "mug"],
 )
+
+# Print the merged DataFrame
 print("\nframe3 (column key 'id'):\n", frame3)
 print("\nframe4 (index as key):\n", frame4)
 
@@ -161,6 +170,7 @@ employees = pd.DataFrame(
 # Create a DataFrame with the salaries data
 salaries = pd.DataFrame({"salary": [70000, 90000, 85000]}, index=[101, 102, 103])
 
+# Print the DataFrames
 print("employees:\n", employees)
 print("\nsalaries:\n", salaries)
 
@@ -174,6 +184,7 @@ print("\nextra (has emp 104 not in employees):\n", extra)
 
 # Join the employees and extra DataFrames on the index with how='left'
 left_join = employees.join(extra, how="left")
+
 # Join the employees and extra DataFrames on the index with how='outer'
 outer_join = employees.join(extra, how="outer")
 print("\nemployees.join(extra, how='left'):\n", left_join)
@@ -184,6 +195,7 @@ dept_info = pd.DataFrame(
     {"location": ["Building A", "Building B", "Building C"]},
     index=[101, 102, 103],
 )
+
 # Joining multiple DataFrames at once
 multi_joined = employees.join([salaries, dept_info])
 # Print the joined DataFrame

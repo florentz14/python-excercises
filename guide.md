@@ -1165,6 +1165,8 @@ Generated sections: 23 folders.
 | `09_Pandas/07_real_world_projects/50_titanic_analysis.py` | Tabular I/O processing | Reads/writes tabular files and infers/assigns schema | O(n) by number of records |
 | `09_Pandas/07_real_world_projects/51_emissions_analysis.py` | Tabular I/O processing | Reads/writes tabular files and infers/assigns schema | O(n) by number of records |
 | `09_Pandas/07_real_world_projects/54_books_catalog_sqlite.py` | SQLite3 + Pandas workflow | Loads JSON into SQLite tables, queries with SQL, and exports analytical CSV reports | O(n) load + query dependent aggregations |
+| `09_Pandas/07_real_world_projects/56_global_banks_regional_analysis.py` | GroupBy/Aggregation pipeline | Ranks banks by region, aggregates volume by country, and identifies leader banks by region | O(n) scan + grouping overhead (key/hash dependent) |
+| `09_Pandas/07_real_world_projects/57_global_banks_regional_visuals.py` | Data visualization workflow | Generates charts for volume by region/country and top banks by average close | O(n) data preparation (rendering backend additional) |
 | `09_Pandas/01_basics/02_create_from_dict.py` | DataFrame/Series construction | Creates tabular structures and performs column/index operations | O(n) |
 | `09_Pandas/01_basics/03_dataframe_index_labels.py` | DataFrame/Series construction | Creates tabular structures and performs column/index operations | O(n) |
 | `09_Pandas/01_basics/05_basic_summary.py` | Pandas data transformation | Pandas exercise: 03 basic summary | Depends on operation and dataset size |

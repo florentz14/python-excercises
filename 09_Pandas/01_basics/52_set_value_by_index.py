@@ -1,14 +1,15 @@
 # -------------------------------------------------
 # File Name: 52_set_value_by_index.py
 # Author: Florentino Báez
-# Date: 09_Pandas
-# Description: Pandas exercise: 34 set value by index.
+# Date: 12/03/2026
+# Description: Sets a value for a particular cell in a DataFrame by index.
 # -------------------------------------------------
 
-"""Practice 34: Set Value in Cell by Index."""
+# Import pandas and numpy libraries
 import pandas as pd
 import numpy as np
 
+# Create a dictionary with the exam data
 exam_data = {
     "name": [
         "Valeria",
@@ -26,9 +27,16 @@ exam_data = {
     "attempts": [1, 3, 2, 3, 2, 3, 1, 1, 2, 1],
     "qualify": ["yes", "no", "yes", "no", "no", "yes", "yes", "no", "no", "yes"],
 }
-labels = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j"]
-df_practice_34 = pd.DataFrame(exam_data, index=labels)
 
-df_practice_34.loc["i", "score"] = 10.2
+# Create a list of labels
+labels = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j"]
+
+# Create a DataFrame with the exam data and the labels
+df = pd.DataFrame(exam_data, index=labels)
+
+# Set the value for the cell at index "i" and column "score"
+df.loc["i", "score"] = 10.2
+
+# Print the DataFrame
 print("Set a given value for particular cell in the DataFrame")
-print(df_practice_34)
+print(df)

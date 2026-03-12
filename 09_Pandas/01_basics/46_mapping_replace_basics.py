@@ -1,36 +1,33 @@
 # -------------------------------------------------
 # File Name: 46_mapping_replace_basics.py
 # Author: Florentino Baez
-# Date: 09_Pandas
+# Date: 12/03/2026
 # Description: Duplicates, mapping, replace, and index rename.
 # -------------------------------------------------
 
+# Import pandas library
 import pandas as pd
 
 # Create a DataFrame
-data = pd.DataFrame(
-    {
-        "item": ["ball", "pencil", "pencil", "ashtray"],
-        "status": [1, 1, 1, 2],
-    }
-)
+df = pd.DataFrame({"item": ["ball", "pencil", "pencil", "ashtray"], "status": [1, 1, 1, 2]})
 
-# Print the DataFrame
+# Print the original DataFrame
 print("=== ORIGINAL DATA ===")
-print(data)
+print(df)
 
-# 1. Remove duplicates (DataFrame)
-clean_data = data.drop_duplicates()
+# Remove duplicates from the DataFrame
+clean_df = df.drop_duplicates()
 print("\n=== DROP DUPLICATES ===")
-print(clean_data)
+print(clean_df)
 
-# 2. Mapping dictionary into a new column (DataFrame)
+# Mapping dictionary into a new column
 prices = {"ball": 10, "pencil": 5, "ashtray": 20}
-data["price"] = data["item"].map(prices)
+df["price"] = df["item"].map(prices)
 
-# 3. Replace values and rename index labels (DataFrame)
-data["status"] = data["status"].replace({1: "active", 2: "old"})
-data = data.rename(index={0: "first", 1: "second"})
+# Replace values and rename index labels
+df["status"] = df["status"].replace({1: "active", 2: "old"})
+df = df.rename(index={0: "first", 1: "second"})
 
+# Print the transformed DataFrame
 print("\n=== TRANSFORMED DATA ===")
-print(data)
+print(df)

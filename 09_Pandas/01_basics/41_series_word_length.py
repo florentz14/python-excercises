@@ -1,10 +1,11 @@
 # -------------------------------------------------
 # File Name: 41_series_word_length.py
 # Author: Florentino Báez
-# Date: 09_Pandas
+# Date: 12/03/2026
 # Description: Counts characters of words in a pandas Series.
 # -------------------------------------------------
 
+# Import pandas library
 import pandas as pd
 
 # Create a Pandas Series of words (string)
@@ -27,8 +28,11 @@ print(char_count.to_string())
 
 # Display Word alongside its Length (string)
 print("\n-- Word -> Character Count --------")
+# Iterate over the series and character count
 for word, count in zip(series, char_count):
+    # Create a bar of # characters equal to the length of the word
     bar = "#" * count
+    # Print the word and its length
     print(f"  {word:<12} ->  {count:>2}  {bar}")
 
 # Statistical Summary of Lengths (int)
