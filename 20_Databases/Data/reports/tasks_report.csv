@@ -1,0 +1,7 @@
+project,task_group,task_number,task_name,status,priority,due_on,estimation_hours,spent_hours
+Customer Portal v2,Backlog,101,Design auth flow,todo,high,2026-04-10,10.0,0.0
+Customer Portal v2,In Progress,102,Build user profile API,in_progress,medium,2026-04-08,14.0,3.5
+Customer Portal v2,In Progress,105,Implement audit export endpoint,in_progress,high,2026-04-15,7.0,1.25
+Customer Portal v2,Review,103,Frontend integration tests,review,medium,2026-04-12,8.0,1.0
+Customer Portal v2,Done,104,Notification preferences page,done,low,2026-03-30,6.0,0.75
+Inventory Automation,Backlog,201,Data mapping workshop,todo,high,2026-04-20,5.0,0.0

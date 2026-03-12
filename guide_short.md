@@ -62,13 +62,13 @@ Columns: Program, Algorithm Used, How it Works, Complexity.
 | Program | Algorithm Used | How it Works | Complexity |
 | --- | --- | --- | --- |
 | `09_Pandas/01_basics/01_create_dataframe.py` | Tabular I/O processing | Reads/writes tabular files and infers/assigns schema | O(n) by number of records |
-| `09_Pandas/01_basics/02_read_csv.py` | Tabular I/O processing | Reads/writes tabular files and infers/assigns schema | O(n) by number of records |
-| `09_Pandas/01_basics/03_explore.py` | Descriptive statistics analysis | Computes summary statistics and distribution-oriented metrics | O(n) for simple stats; O(n*d) for multi-column summaries |
-| `09_Pandas/01_basics/04_columns.py` | DataFrame/Series construction | Creates tabular structures and performs column/index operations | O(n) |
-| `09_Pandas/01_basics/05_nulls.py` | Data cleaning pipeline | Detects and handles nulls/duplicates/outliers and standardizes values | O(n) typical per cleaning pass |
-| `09_Pandas/01_basics/06_merge_concat.py` | DataFrame join/merge workflow | Combines datasets by key alignment and join strategy | Typically O(n+m) to O((n+m) log(n+m)) |
-| `09_Pandas/01_basics/07_drop.py` | Data cleaning pipeline | Detects and handles nulls/duplicates/outliers and standardizes values | O(n) typical per cleaning pass |
-| `09_Pandas/01_basics/08_statistics.py` | Descriptive statistics analysis | Computes summary statistics and distribution-oriented metrics | O(n) for simple stats; O(n*d) for multi-column summaries |
+| `09_Pandas/01_basics/04_read_csv.py` | Tabular I/O processing | Reads/writes tabular files and infers/assigns schema | O(n) by number of records |
+| `09_Pandas/01_basics/06_explore.py` | Descriptive statistics analysis | Computes summary statistics and distribution-oriented metrics | O(n) for simple stats; O(n*d) for multi-column summaries |
+| `09_Pandas/01_basics/07_columns.py` | DataFrame/Series construction | Creates tabular structures and performs column/index operations | O(n) |
+| `09_Pandas/01_basics/09_nulls.py` | Data cleaning pipeline | Detects and handles nulls/duplicates/outliers and standardizes values | O(n) typical per cleaning pass |
+| `09_Pandas/01_basics/10_merge_concat.py` | DataFrame join/merge workflow | Combines datasets by key alignment and join strategy | Typically O(n+m) to O((n+m) log(n+m)) |
+| `09_Pandas/01_basics/11_drop.py` | Data cleaning pipeline | Detects and handles nulls/duplicates/outliers and standardizes values | O(n) typical per cleaning pass |
+| `09_Pandas/01_basics/12_statistics.py` | Descriptive statistics analysis | Computes summary statistics and distribution-oriented metrics | O(n) for simple stats; O(n*d) for multi-column summaries |
 
 ## 10_Matplotlib
 

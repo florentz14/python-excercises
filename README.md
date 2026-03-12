@@ -264,7 +264,7 @@ This path is pedagogical and does not follow folder numbering.
 
    ```bash
    python 01_Variables_and_Types/data_types/02_variables.py
-   python 20_Databases/01_connection_test.py
+   python 20_Databases/Tests/01_mysql_connection.py
    ```
 
 ---

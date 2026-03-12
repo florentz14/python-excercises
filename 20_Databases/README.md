@@ -31,14 +31,23 @@ Conexión y operaciones con bases de datos usando Python (MySQL/MariaDB, SQLite3
 
 | Archivo | Contenido |
 |---------|-----------|
-| `01_connection_test.py` | Prueba de conexión a MySQL/MariaDB |
-| `02_ATM_Database_Version.py` | Sistema ATM completo con base de datos |
-| `03_create_atm_user.py` | Herramienta para crear/listar/eliminar usuarios ATM |
-| `04_sqlite3_books_catalog.py` | Flujo CRUD completo con SQLite3 en archivo local |
-| `05_postgresql_books_catalog.py` | Flujo CRUD completo con PostgreSQL y transacciones |
-| `07_mongodb_books_catalog.py` | Flujo CRUD completo con MongoDB y agregaciones |
-| `ATM_Database_Schema.sql` | Schema SQL para el sistema ATM |
-| `python_exercises.sql` | Schema SQL alternativo |
+| `Tests/01_mysql_connection.py` | Prueba de conexión a MySQL/MariaDB |
+| `02_atm_mysql_app.py` | Sistema ATM completo con base de datos |
+| `03_atm_user_tool.py` | Herramienta para crear/listar/eliminar usuarios ATM |
+| `04_books_sqlite.py` | Flujo CRUD completo con SQLite3 en archivo local |
+| `05_books_postgres.py` | Flujo CRUD completo con PostgreSQL y transacciones |
+| `06_books_sqlalchemy.py` | Flujo CRUD completo vía Pandas + SQLAlchemy |
+| `07_books_mongo.py` | Flujo CRUD completo con MongoDB y agregaciones |
+| `08_family_budget_loader.py` | Carga `Script_Sql/family_budget_complete.sql` y audita tablas vacías |
+| `09_tasks_sqlite.py` | SQLite3 para gestión de tareas por proyecto (extendido) |
+| `Script_Sql/` | Carpeta para scripts SQL |
+| `Script_Sql/family_budget_complete.sql` | Script completo para recrear la base de presupuesto familiar |
+| `Script_Sql/family_budget_seed_inserts.sql` | Inserts complementarios para tablas vacías del presupuesto familiar |
+
+## Data Folder
+
+- All generated SQLite databases are stored in `20_Databases/Data/`.
+- CSV exports from the project/task manager are stored in `20_Databases/Data/reports/`.
 
 ## Sistema ATM con Base de Datos
 
@@ -69,7 +78,7 @@ Conexión y operaciones con bases de datos usando Python (MySQL/MariaDB, SQLite3
 mysql -u root -p -e "CREATE DATABASE IF NOT EXISTS ATM_Database_Schema;"
 
 # Importar el schema
-mysql -u root -p ATM_Database_Schema < ATM_Database_Schema.sql
+mysql -u root -p ATM_Database_Schema < <path_to_schema.sql>
 ```
 
 ### Usuarios de Prueba
@@ -83,22 +92,31 @@ mysql -u root -p ATM_Database_Schema < ATM_Database_Schema.sql
 
 ```bash
 # Probar conexión
-python 20_Databases/01_connection_test.py
+python 20_Databases/Tests/01_mysql_connection.py
 
 # Ejecutar sistema ATM
-python 20_Databases/02_ATM_Database_Version.py
+python 20_Databases/02_atm_mysql_app.py
 
 # Gestionar usuarios (crear/listar/eliminar)
-python 20_Databases/03_create_atm_user.py
+python 20_Databases/03_atm_user_tool.py
 
 # Ejecutar ejemplo SQLite3
-python 20_Databases/04_sqlite3_books_catalog.py
+python 20_Databases/04_books_sqlite.py
 
 # Ejecutar ejemplo PostgreSQL
-python 20_Databases/05_postgresql_books_catalog.py
+python 20_Databases/05_books_postgres.py
 
 # Ejecutar ejemplo MongoDB
-python 20_Databases/07_mongodb_books_catalog.py
+python 20_Databases/07_books_mongo.py
+
+# Auditar tablas vacías (sin ejecutar SQL)
+python 20_Databases/08_family_budget_loader.py
+
+# Ejecutar SQL y luego auditar tablas
+python 20_Databases/08_family_budget_loader.py --apply
+
+# Crear y poblar SQLite3 de gestión de proyectos/tareas
+python 20_Databases/09_tasks_sqlite.py
 ```
 
 ### Menú del ATM

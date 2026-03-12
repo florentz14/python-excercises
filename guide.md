@@ -1038,213 +1038,214 @@ Generated sections: 23 folders.
 | Program | Algorithm Used | How it Works | Complexity |
 | --- | --- | --- | --- |
 | `09_Pandas/01_basics/01_create_dataframe.py` | Tabular I/O processing | Reads/writes tabular files and infers/assigns schema | O(n) by number of records |
-| `09_Pandas/01_basics/02_read_csv.py` | Tabular I/O processing | Reads/writes tabular files and infers/assigns schema | O(n) by number of records |
-| `09_Pandas/01_basics/03_explore.py` | Descriptive statistics analysis | Computes summary statistics and distribution-oriented metrics | O(n) for simple stats; O(n*d) for multi-column summaries |
-| `09_Pandas/01_basics/04_columns.py` | DataFrame/Series construction | Creates tabular structures and performs column/index operations | O(n) |
-| `09_Pandas/01_basics/05_nulls.py` | Data cleaning pipeline | Detects and handles nulls/duplicates/outliers and standardizes values | O(n) typical per cleaning pass |
-| `09_Pandas/01_basics/06_merge_concat.py` | DataFrame join/merge workflow | Combines datasets by key alignment and join strategy | Typically O(n+m) to O((n+m) log(n+m)) |
-| `09_Pandas/01_basics/07_drop.py` | Data cleaning pipeline | Detects and handles nulls/duplicates/outliers and standardizes values | O(n) typical per cleaning pass |
-| `09_Pandas/01_basics/08_statistics.py` | Descriptive statistics analysis | Computes summary statistics and distribution-oriented metrics | O(n) for simple stats; O(n*d) for multi-column summaries |
-| `09_Pandas/01_basics/09_pokemon_series.py` | DataFrame/Series construction | Creates tabular structures and performs column/index operations | O(n) |
-| `09_Pandas/01_basics/10_index_operations.py` | Tabular I/O processing | Reads/writes tabular files and infers/assigns schema | O(n) by number of records |
-| `09_Pandas/01_basics/11_value_counts.py` | Descriptive statistics analysis | Computes summary statistics and distribution-oriented metrics | O(n) for simple stats; O(n*d) for multi-column summaries |
-| `09_Pandas/01_basics/12_astype_and_conversion.py` | Tabular I/O processing | Reads/writes tabular files and infers/assigns schema | O(n) by number of records |
-| `09_Pandas/01_basics/13_to_numeric.py` | DataFrame/Series construction | Creates tabular structures and performs column/index operations | O(n) |
-| `09_Pandas/01_basics/14_series_from_list.py` | DataFrame/Series construction | Creates tabular structures and performs column/index operations | O(n) |
-| `09_Pandas/01_basics/15_series_from_numpy.py` | DataFrame/Series construction | Creates tabular structures and performs column/index operations | O(n) |
-| `09_Pandas/01_basics/16_series_from_dictionary.py` | Tabular I/O processing | Reads/writes tabular files and infers/assigns schema | O(n) by number of records |
-| `09_Pandas/01_basics/17_series_custom_index.py` | DataFrame/Series construction | Creates tabular structures and performs column/index operations | O(n) |
-| `09_Pandas/01_basics/18_series_named_attributes.py` | DataFrame/Series construction | Creates tabular structures and performs column/index operations | O(n) |
-| `09_Pandas/01_basics/19_series_to_list.py` | DataFrame/Series construction | Creates tabular structures and performs column/index operations | O(n) |
-| `09_Pandas/01_basics/20_series_arithmetic.py` | Tabular I/O processing | Reads/writes tabular files and infers/assigns schema | O(n) by number of records |
-| `09_Pandas/01_basics/21_series_comparison.py` | Tabular I/O processing | Reads/writes tabular files and infers/assigns schema | O(n) by number of records |
-| `09_Pandas/01_basics/22_dict_to_series.py` | Tabular I/O processing | Reads/writes tabular files and infers/assigns schema | O(n) by number of records |
-| `09_Pandas/01_basics/23_array_to_series.py` | DataFrame/Series construction | Creates tabular structures and performs column/index operations | O(n) |
-| `09_Pandas/01_basics/24_series_statistics.py` | Descriptive statistics analysis | Computes summary statistics and distribution-oriented metrics | O(n) for simple stats; O(n*d) for multi-column summaries |
-| `09_Pandas/01_basics/25_series_word_length.py` | DataFrame/Series construction | Creates tabular structures and performs column/index operations | O(n) |
+| `09_Pandas/01_basics/04_read_csv.py` | Tabular I/O processing | Reads/writes tabular files and infers/assigns schema | O(n) by number of records |
+| `09_Pandas/01_basics/06_explore.py` | Descriptive statistics analysis | Computes summary statistics and distribution-oriented metrics | O(n) for simple stats; O(n*d) for multi-column summaries |
+| `09_Pandas/01_basics/07_columns.py` | DataFrame/Series construction | Creates tabular structures and performs column/index operations | O(n) |
+| `09_Pandas/01_basics/09_nulls.py` | Data cleaning pipeline | Detects and handles nulls/duplicates/outliers and standardizes values | O(n) typical per cleaning pass |
+| `09_Pandas/01_basics/10_merge_concat.py` | DataFrame join/merge workflow | Combines datasets by key alignment and join strategy | Typically O(n+m) to O((n+m) log(n+m)) |
+| `09_Pandas/01_basics/11_drop.py` | Data cleaning pipeline | Detects and handles nulls/duplicates/outliers and standardizes values | O(n) typical per cleaning pass |
+| `09_Pandas/01_basics/12_statistics.py` | Descriptive statistics analysis | Computes summary statistics and distribution-oriented metrics | O(n) for simple stats; O(n*d) for multi-column summaries |
+| `09_Pandas/01_basics/13_pokemon_series.py` | DataFrame/Series construction | Creates tabular structures and performs column/index operations | O(n) |
+| `09_Pandas/01_basics/14_index_operations.py` | Tabular I/O processing | Reads/writes tabular files and infers/assigns schema | O(n) by number of records |
+| `09_Pandas/01_basics/16_value_counts.py` | Descriptive statistics analysis | Computes summary statistics and distribution-oriented metrics | O(n) for simple stats; O(n*d) for multi-column summaries |
+| `09_Pandas/01_basics/17_astype_and_conversion.py` | Tabular I/O processing | Reads/writes tabular files and infers/assigns schema | O(n) by number of records |
+| `09_Pandas/01_basics/19_to_numeric.py` | DataFrame/Series construction | Creates tabular structures and performs column/index operations | O(n) |
+| `09_Pandas/01_basics/21_series_from_list.py` | DataFrame/Series construction | Creates tabular structures and performs column/index operations | O(n) |
+| `09_Pandas/01_basics/23_series_from_numpy.py` | DataFrame/Series construction | Creates tabular structures and performs column/index operations | O(n) |
+| `09_Pandas/01_basics/24_series_from_dictionary.py` | Tabular I/O processing | Reads/writes tabular files and infers/assigns schema | O(n) by number of records |
+| `09_Pandas/01_basics/26_series_custom_index.py` | DataFrame/Series construction | Creates tabular structures and performs column/index operations | O(n) |
+| `09_Pandas/01_basics/28_series_named_attributes.py` | DataFrame/Series construction | Creates tabular structures and performs column/index operations | O(n) |
+| `09_Pandas/01_basics/30_series_to_list.py` | DataFrame/Series construction | Creates tabular structures and performs column/index operations | O(n) |
+| `09_Pandas/01_basics/32_series_arithmetic.py` | Tabular I/O processing | Reads/writes tabular files and infers/assigns schema | O(n) by number of records |
+| `09_Pandas/01_basics/34_series_comparison.py` | Tabular I/O processing | Reads/writes tabular files and infers/assigns schema | O(n) by number of records |
+| `09_Pandas/01_basics/36_dict_to_series.py` | Tabular I/O processing | Reads/writes tabular files and infers/assigns schema | O(n) by number of records |
+| `09_Pandas/01_basics/37_array_to_series.py` | DataFrame/Series construction | Creates tabular structures and performs column/index operations | O(n) |
+| `09_Pandas/01_basics/39_series_statistics.py` | Descriptive statistics analysis | Computes summary statistics and distribution-oriented metrics | O(n) for simple stats; O(n*d) for multi-column summaries |
+| `09_Pandas/01_basics/41_series_word_length.py` | DataFrame/Series construction | Creates tabular structures and performs column/index operations | O(n) |
 | `09_Pandas/02_selection_filtering/01_selection.py` | Boolean filtering and selection | Builds boolean masks and selects matching rows/columns | O(n) over selected axis |
-| `09_Pandas/02_selection_filtering/02_filter_sort.py` | Boolean filtering and selection | Builds boolean masks and selects matching rows/columns | O(n) over selected axis |
-| `09_Pandas/02_selection_filtering/03_chipotle_filter.py` | Boolean filtering and selection | Builds boolean masks and selects matching rows/columns | O(n) over selected axis |
-| `09_Pandas/02_selection_filtering/04_euro12_filter.py` | Boolean filtering and selection | Builds boolean masks and selects matching rows/columns | O(n) over selected axis |
-| `09_Pandas/02_selection_filtering/05_army_filter.py` | Boolean filtering and selection | Builds boolean masks and selects matching rows/columns | O(n) over selected axis |
-| `09_Pandas/02_selection_filtering/06_idxmax_idxmin.py` | DataFrame/Series construction | Creates tabular structures and performs column/index operations | O(n) |
-| `09_Pandas/02_selection_filtering/07_nlargest_nsmallest.py` | Pandas data transformation | Top and bottom records | Depends on operation and dataset size |
-| `09_Pandas/02_selection_filtering/08_sampling.py` | DataFrame/Series construction | Creates tabular structures and performs column/index operations | O(n) |
-| `09_Pandas/03_cleaning/01_string_methods.py` | Data cleaning pipeline | Detects and handles nulls/duplicates/outliers and standardizes values | O(n) typical per cleaning pass |
-| `09_Pandas/03_cleaning/02_categorical_binning.py` | Pandas data transformation | Categorical dtype, pd.cut, pd.qcut for binning | Depends on operation and dataset size |
-| `09_Pandas/03_cleaning/03_data_cleaning.py` | Data cleaning pipeline | Detects and handles nulls/duplicates/outliers and standardizes values | O(n) typical per cleaning pass |
-| `09_Pandas/03_cleaning/04_duplicate_detection.py` | Data cleaning pipeline | Detects and handles nulls/duplicates/outliers and standardizes values | O(n) typical per cleaning pass |
-| `09_Pandas/03_cleaning/05_outlier_detection.py` | Tabular I/O processing | Reads/writes tabular files and infers/assigns schema | O(n) by number of records |
-| `09_Pandas/03_cleaning/06_memory_optimization.py` | Tabular I/O processing | Reads/writes tabular files and infers/assigns schema | O(n) by number of records |
-| `09_Pandas/03_cleaning/07_data_quality_report.py` | Tabular I/O processing | Reads/writes tabular files and infers/assigns schema | O(n) by number of records |
-| `09_Pandas/03_cleaning/08_duplicates.py` | Data cleaning pipeline | Detects and handles nulls/duplicates/outliers and standardizes values | O(n) typical per cleaning pass |
-| `09_Pandas/03_cleaning/09_elementwise_transform.py` | Tabular I/O processing | Reads/writes tabular files and infers/assigns schema | O(n) by number of records |
-| `09_Pandas/03_cleaning/10_replace_values.py` | Data cleaning pipeline | Detects and handles nulls/duplicates/outliers and standardizes values | O(n) typical per cleaning pass |
-| `09_Pandas/03_cleaning/11_string_cleaning.py` | Data cleaning pipeline | Detects and handles nulls/duplicates/outliers and standardizes values | O(n) typical per cleaning pass |
-| `09_Pandas/03_cleaning/12_interpolate_general.py` | Data cleaning pipeline | Detects and handles nulls/duplicates/outliers and standardizes values | O(n) typical per cleaning pass |
-| `09_Pandas/03_cleaning/13_where_mask.py` | Boolean filtering and selection | Builds boolean masks and selects matching rows/columns | O(n) over selected axis |
-| `09_Pandas/04_groupby_reshape/01_groupby.py` | GroupBy/Aggregation pipeline | Groups records and computes aggregate metrics by category keys | O(n) scan + grouping overhead (key/hash dependent) |
-| `09_Pandas/04_groupby_reshape/02_alcohol_groupby.py` | GroupBy/Aggregation pipeline | Groups records and computes aggregate metrics by category keys | O(n) scan + grouping overhead (key/hash dependent) |
-| `09_Pandas/04_groupby_reshape/03_occupation_groupby.py` | GroupBy/Aggregation pipeline | Groups records and computes aggregate metrics by category keys | O(n) scan + grouping overhead (key/hash dependent) |
-| `09_Pandas/04_groupby_reshape/04_regiment_groupby.py` | GroupBy/Aggregation pipeline | Groups records and computes aggregate metrics by category keys | O(n) scan + grouping overhead (key/hash dependent) |
-| `09_Pandas/04_groupby_reshape/05_auto_mpg_merge.py` | DataFrame join/merge workflow | Combines datasets by key alignment and join strategy | Typically O(n+m) to O((n+m) log(n+m)) |
-| `09_Pandas/04_groupby_reshape/06_names_merge.py` | DataFrame join/merge workflow | Combines datasets by key alignment and join strategy | Typically O(n+m) to O((n+m) log(n+m)) |
-| `09_Pandas/04_groupby_reshape/07_house_merge.py` | DataFrame join/merge workflow | Combines datasets by key alignment and join strategy | Typically O(n+m) to O((n+m) log(n+m)) |
-| `09_Pandas/04_groupby_reshape/08_pivot_melt.py` | GroupBy/Aggregation pipeline | Groups records and computes aggregate metrics by category keys | O(n) scan + grouping overhead (key/hash dependent) |
-| `09_Pandas/04_groupby_reshape/09_multiindex.py` | DataFrame/Series construction | Creates tabular structures and performs column/index operations | O(n) |
-| `09_Pandas/04_groupby_reshape/10_multiindex_groupby.py` | GroupBy/Aggregation pipeline | Groups records and computes aggregate metrics by category keys | O(n) scan + grouping overhead (key/hash dependent) |
-| `09_Pandas/04_groupby_reshape/11_groupby_transform.py` | GroupBy/Aggregation pipeline | Groups records and computes aggregate metrics by category keys | O(n) scan + grouping overhead (key/hash dependent) |
-| `09_Pandas/04_groupby_reshape/12_groupby_filter.py` | GroupBy/Aggregation pipeline | Groups records and computes aggregate metrics by category keys | O(n) scan + grouping overhead (key/hash dependent) |
-| `09_Pandas/04_groupby_reshape/13_custom_aggregations.py` | GroupBy/Aggregation pipeline | Groups records and computes aggregate metrics by category keys | O(n) scan + grouping overhead (key/hash dependent) |
-| `09_Pandas/04_groupby_reshape/14_crosstab.py` | GroupBy/Aggregation pipeline | Groups records and computes aggregate metrics by category keys | O(n) scan + grouping overhead (key/hash dependent) |
-| `09_Pandas/04_groupby_reshape/15_pivot_vs_pivot_table.py` | GroupBy/Aggregation pipeline | Groups records and computes aggregate metrics by category keys | O(n) scan + grouping overhead (key/hash dependent) |
-| `09_Pandas/04_groupby_reshape/16_explode.py` | DataFrame/Series construction | Creates tabular structures and performs column/index operations | O(n) |
-| `09_Pandas/04_groupby_reshape/17_json_normalize.py` | DataFrame/Series construction | Creates tabular structures and performs column/index operations | O(n) |
-| `09_Pandas/04_groupby_reshape/18_rank.py` | Pandas data transformation | Ranking values | Depends on operation and dataset size |
-| `09_Pandas/04_groupby_reshape/19_corr_cov.py` | Descriptive statistics analysis | Computes summary statistics and distribution-oriented metrics | O(n) for simple stats; O(n*d) for multi-column summaries |
-| `09_Pandas/05_time_series/01_time_series.py` | Time-series window operations | Applies resampling and windowed statistics over indexed time data | O(n) per pass (window stats may add constant factors) |
-| `09_Pandas/05_time_series/02_wind_stats.py` | Time-series window operations | Applies resampling and windowed statistics over indexed time data | O(n) per pass (window stats may add constant factors) |
-| `09_Pandas/05_time_series/03_apple_stock_ts.py` | Time-series window operations | Applies resampling and windowed statistics over indexed time data | O(n) per pass (window stats may add constant factors) |
-| `09_Pandas/05_time_series/04_financial_ts.py` | Time-series window operations | Applies resampling and windowed statistics over indexed time data | O(n) per pass (window stats may add constant factors) |
-| `09_Pandas/05_time_series/05_investor_flow_ts.py` | Tabular I/O processing | Reads/writes tabular files and infers/assigns schema | O(n) by number of records |
-| `09_Pandas/05_time_series/06_rolling_window.py` | Time-series window operations | Applies resampling and windowed statistics over indexed time data | O(n) per pass (window stats may add constant factors) |
-| `09_Pandas/05_time_series/07_expanding_window.py` | Time-series window operations | Applies resampling and windowed statistics over indexed time data | O(n) per pass (window stats may add constant factors) |
-| `09_Pandas/05_time_series/08_ewm_window.py` | Time-series window operations | Applies resampling and windowed statistics over indexed time data | O(n) per pass (window stats may add constant factors) |
-| `09_Pandas/05_time_series/09_time_series_features.py` | Time-series window operations | Applies resampling and windowed statistics over indexed time data | O(n) per pass (window stats may add constant factors) |
-| `09_Pandas/05_time_series/10_time_series_resample_advanced.py` | Time-series window operations | Applies resampling and windowed statistics over indexed time data | O(n) per pass (window stats may add constant factors) |
-| `09_Pandas/05_time_series/11_time_series_forecasting_basics.py` | Time-series window operations | Applies resampling and windowed statistics over indexed time data | O(n) per pass (window stats may add constant factors) |
-| `09_Pandas/06_real_world_projects/01_lunch_analysis.py` | Tabular I/O processing | Reads/writes tabular files and infers/assigns schema | O(n) by number of records |
-| `09_Pandas/06_real_world_projects/02_parental_education.py` | Tabular I/O processing | Reads/writes tabular files and infers/assigns schema | O(n) by number of records |
-| `09_Pandas/06_real_world_projects/03_general_analysis.py` | Descriptive statistics analysis | Computes summary statistics and distribution-oriented metrics | O(n) for simple stats; O(n*d) for multi-column summaries |
-| `09_Pandas/06_real_world_projects/04_ethnic_group.py` | Pandas data transformation | Analyzes student performance by ethnic group | Depends on operation and dataset size |
-| `09_Pandas/06_real_world_projects/05_gender_analysis.py` | Pandas data transformation | Compares student performance by gender | Depends on operation and dataset size |
-| `09_Pandas/06_real_world_projects/06_test_preparation.py` | Tabular I/O processing | Reads/writes tabular files and infers/assigns schema | O(n) by number of records |
-| `09_Pandas/06_real_world_projects/07_students_performance.py` | Tabular I/O processing | Reads/writes tabular files and infers/assigns schema | O(n) by number of records |
-| `09_Pandas/06_real_world_projects/08_main_menu.py` | Pandas data transformation | Interactive menu to launch all student performance analyses | Depends on operation and dataset size |
-| `09_Pandas/06_real_world_projects/09_chipotle_explore.py` | Descriptive statistics analysis | Computes summary statistics and distribution-oriented metrics | O(n) for simple stats; O(n*d) for multi-column summaries |
-| `09_Pandas/06_real_world_projects/10_occupation_explore.py` | Tabular I/O processing | Reads/writes tabular files and infers/assigns schema | O(n) by number of records |
-| `09_Pandas/06_real_world_projects/11_food_facts.py` | Data cleaning pipeline | Detects and handles nulls/duplicates/outliers and standardizes values | O(n) typical per cleaning pass |
-| `09_Pandas/06_real_world_projects/12_alcohol_apply.py` | Tabular I/O processing | Reads/writes tabular files and infers/assigns schema | O(n) by number of records |
-| `09_Pandas/06_real_world_projects/13_crime_rates_apply.py` | Tabular I/O processing | Reads/writes tabular files and infers/assigns schema | O(n) by number of records |
-| `09_Pandas/06_real_world_projects/14_baby_names_stats.py` | Pandas data transformation | Rank, nunique, std, variance, and trends in baby names | Depends on operation and dataset size |
-| `09_Pandas/06_real_world_projects/15_chipotle_viz.py` | Data visualization workflow | Transforms data for plotting and generates analytical charts | O(n) data preparation (rendering backend additional) |
-| `09_Pandas/06_real_world_projects/16_titanic_viz.py` | Data visualization workflow | Transforms data for plotting and generates analytical charts | O(n) data preparation (rendering backend additional) |
-| `09_Pandas/06_real_world_projects/17_scores_viz.py` | Data visualization workflow | Transforms data for plotting and generates analytical charts | O(n) data preparation (rendering backend additional) |
-| `09_Pandas/06_real_world_projects/18_retail_viz.py` | Data visualization workflow | Transforms data for plotting and generates analytical charts | O(n) data preparation (rendering backend additional) |
-| `09_Pandas/06_real_world_projects/19_tips_viz.py` | Data visualization workflow | Transforms data for plotting and generates analytical charts | O(n) data preparation (rendering backend additional) |
-| `09_Pandas/06_real_world_projects/20_iris_delete.py` | Data cleaning pipeline | Detects and handles nulls/duplicates/outliers and standardizes values | O(n) typical per cleaning pass |
-| `09_Pandas/06_real_world_projects/21_wine_delete.py` | Data cleaning pipeline | Detects and handles nulls/duplicates/outliers and standardizes values | O(n) typical per cleaning pass |
-| `09_Pandas/06_real_world_projects/22_sales_analysis.py` | Pandas data transformation | Finds best product, best month, top customer from store sales | Depends on operation and dataset size |
-| `09_Pandas/06_real_world_projects/23_student_attendance.py` | Pandas data transformation | Analyzes absences, attendance %, at-risk students | Depends on operation and dataset size |
-| `09_Pandas/06_real_world_projects/24_personal_budget.py` | Pandas data transformation | Spending by category, monthly savings, budget balance analysis | Depends on operation and dataset size |
-| `09_Pandas/06_real_world_projects/25_inventory.py` | Pandas data transformation | Reorder alerts, turnover, unsold products from inventory data | Depends on operation and dataset size |
-| `09_Pandas/06_real_world_projects/26_task_tracking.py` | Pandas data transformation | Pending by assignee, delays, completed tasks analysis | Depends on operation and dataset size |
-| `09_Pandas/06_real_world_projects/27_construction.py` | Tabular I/O processing | Reads/writes tabular files and infers/assigns schema | O(n) by number of records |
-| `09_Pandas/06_real_world_projects/28_system_logs.py` | Pandas data transformation | Most errors, peak hour, server warnings from log data | Depends on operation and dataset size |
-| `09_Pandas/06_real_world_projects/29_web_traffic.py` | Tabular I/O processing | Reads/writes tabular files and infers/assigns schema | O(n) by number of records |
-| `09_Pandas/06_real_world_projects/30_movies_analysis.py` | Pandas data transformation | Best genre, releases by year, top 10 movies | Depends on operation and dataset size |
-| `09_Pandas/06_real_world_projects/31_transport_analysis.py` | Pandas data transformation | Longest route, trips by driver, delay analysis | Depends on operation and dataset size |
-| `09_Pandas/06_real_world_projects/32_hr_analysis.py` | Pandas data transformation | Headcount by dept, salary stats, top earners, hires by year | Depends on operation and dataset size |
-| `09_Pandas/06_real_world_projects/33_vectorization.py` | Tabular I/O processing | Reads/writes tabular files and infers/assigns schema | O(n) by number of records |
-| `09_Pandas/06_real_world_projects/34_chunk_processing.py` | Tabular I/O processing | Reads/writes tabular files and infers/assigns schema | O(n) by number of records |
-| `09_Pandas/06_real_world_projects/35_export_files.py` | Pandas data transformation | Exports to CSV, JSON, Excel, Parquet formats | Depends on operation and dataset size |
-| `09_Pandas/06_real_world_projects/36_excel_operations.py` | Tabular I/O processing | Reads/writes tabular files and infers/assigns schema | O(n) by number of records |
-| `09_Pandas/06_real_world_projects/37_api_data_loading.py` | Tabular I/O processing | Reads/writes tabular files and infers/assigns schema | O(n) by number of records |
-| `09_Pandas/06_real_world_projects/38_api_to_dataframe.py` | DataFrame/Series construction | Creates tabular structures and performs column/index operations | O(n) |
-| `09_Pandas/06_real_world_projects/39_feature_engineering.py` | Pandas data transformation | Derived features, lag, diff for feature engineering | Depends on operation and dataset size |
-| `09_Pandas/06_real_world_projects/40_encoding_features.py` | Pandas data transformation | One-hot, get_dummies, label encoding | Depends on operation and dataset size |
-| `09_Pandas/06_real_world_projects/41_scaling_features.py` | Pandas data transformation | Min-max, z-score, robust scaling | Depends on operation and dataset size |
-| `09_Pandas/06_real_world_projects/42_customer_segmentation.py` | Tabular I/O processing | Reads/writes tabular files and infers/assigns schema | O(n) by number of records |
-| `09_Pandas/06_real_world_projects/43_sales_forecast_project.py` | Time-series window operations | Applies resampling and windowed statistics over indexed time data | O(n) per pass (window stats may add constant factors) |
-| `09_Pandas/06_real_world_projects/44_sales_discount.py` | Pandas data transformation | Sales by year with 10% discount | Depends on operation and dataset size |
-| `09_Pandas/06_real_world_projects/45_grades_stats.py` | Descriptive statistics analysis | Computes summary statistics and distribution-oriented metrics | O(n) for simple stats; O(n*d) for multi-column summaries |
-| `09_Pandas/06_real_world_projects/46_grades_passed.py` | Pandas data transformation | Passing grades sorted descending | Depends on operation and dataset size |
-| `09_Pandas/06_real_world_projects/47_sales_dataframe.py` | DataFrame/Series construction | Creates tabular structures and performs column/index operations | O(n) |
-| `09_Pandas/06_real_world_projects/48_balance_months.py` | Pandas data transformation | Balance (sales - expenses) total for given months | Depends on operation and dataset size |
-| `09_Pandas/06_real_world_projects/49_stock_quotes.py` | Pandas data transformation | Stock quotes summary: min, max, mean per column | Depends on operation and dataset size |
-| `09_Pandas/06_real_world_projects/50_titanic_analysis.py` | Tabular I/O processing | Reads/writes tabular files and infers/assigns schema | O(n) by number of records |
-| `09_Pandas/06_real_world_projects/51_emissions_analysis.py` | Tabular I/O processing | Reads/writes tabular files and infers/assigns schema | O(n) by number of records |
-| `09_Pandas/07_unique_problems/01_create_from_dict.py` | DataFrame/Series construction | Creates tabular structures and performs column/index operations | O(n) |
-| `09_Pandas/07_unique_problems/02_dataframe_index_labels.py` | DataFrame/Series construction | Creates tabular structures and performs column/index operations | O(n) |
-| `09_Pandas/07_unique_problems/03_basic_summary.py` | Pandas data transformation | Pandas exercise: 03 basic summary | Depends on operation and dataset size |
-| `09_Pandas/07_unique_problems/04_first_three_rows.py` | Pandas data transformation | Pandas exercise: 04 first three rows | Depends on operation and dataset size |
-| `09_Pandas/07_unique_problems/05_select_name_score.py` | Pandas data transformation | Pandas exercise: 05 select name score | Depends on operation and dataset size |
-| `09_Pandas/07_unique_problems/06_select_columns_rows.py` | DataFrame/Series construction | Creates tabular structures and performs column/index operations | O(n) |
-| `09_Pandas/07_unique_problems/07_rows_attempts_gt2.py` | Pandas data transformation | Pandas exercise: 07 rows attempts gt2 | Depends on operation and dataset size |
-| `09_Pandas/07_unique_problems/08_count_rows_columns.py` | DataFrame/Series construction | Creates tabular structures and performs column/index operations | O(n) |
-| `09_Pandas/07_unique_problems/09_rows_missing_score.py` | Data cleaning pipeline | Detects and handles nulls/duplicates/outliers and standardizes values | O(n) typical per cleaning pass |
-| `09_Pandas/07_unique_problems/10_score_between_15_20.py` | Pandas data transformation | Pandas exercise: 10 score between 15 20 | Depends on operation and dataset size |
-| `09_Pandas/07_unique_problems/11_attempts_lt2_score_gt15.py` | Pandas data transformation | Pandas exercise: 11 attempts lt2 score gt15 | Depends on operation and dataset size |
-| `09_Pandas/07_unique_problems/12_change_score_row_d.py` | Pandas data transformation | Pandas exercise: 12 change score row d | Depends on operation and dataset size |
-| `09_Pandas/07_unique_problems/13_sum_attempts.py` | Pandas data transformation | Pandas exercise: 13 sum attempts | Depends on operation and dataset size |
-| `09_Pandas/07_unique_problems/14_mean_scores.py` | Pandas data transformation | Pandas exercise: 14 mean scores | Depends on operation and dataset size |
-| `09_Pandas/07_unique_problems/15_append_delete_row.py` | Pandas data transformation | Pandas exercise: 15 append delete row | Depends on operation and dataset size |
-| `09_Pandas/07_unique_problems/16_sort_multiple_columns.py` | DataFrame/Series construction | Creates tabular structures and performs column/index operations | O(n) |
-| `09_Pandas/07_unique_problems/17_replace_qualify.py` | Data cleaning pipeline | Detects and handles nulls/duplicates/outliers and standardizes values | O(n) typical per cleaning pass |
-| `09_Pandas/07_unique_problems/18_change_james_to_suresh.py` | Pandas data transformation | Pandas exercise: 18 change james to suresh | Depends on operation and dataset size |
-| `09_Pandas/07_unique_problems/19_delete_attempts_column.py` | Pandas data transformation | Pandas exercise: 19 delete attempts column | Depends on operation and dataset size |
-| `09_Pandas/07_unique_problems/20_insert_color_column.py` | Pandas data transformation | Pandas exercise: 20 insert color column | Depends on operation and dataset size |
-| `09_Pandas/07_unique_problems/21_iterate_rows.py` | Pandas data transformation | Pandas exercise: 21 iterate rows | Depends on operation and dataset size |
-| `09_Pandas/07_unique_problems/22_column_headers_list.py` | Pandas data transformation | Pandas exercise: 22 column headers list | Depends on operation and dataset size |
-| `09_Pandas/07_unique_problems/23_rename_columns.py` | DataFrame/Series construction | Creates tabular structures and performs column/index operations | O(n) |
-| `09_Pandas/07_unique_problems/24_select_rows_col1_eq4.py` | Pandas data transformation | Pandas exercise: 24 select rows col1 eq4 | Depends on operation and dataset size |
-| `09_Pandas/07_unique_problems/25_change_column_order.py` | Pandas data transformation | Pandas exercise: 25 change column order | Depends on operation and dataset size |
-| `09_Pandas/07_unique_problems/26_add_one_row.py` | Pandas data transformation | Pandas exercise: 26 add one row | Depends on operation and dataset size |
-| `09_Pandas/07_unique_problems/27_write_csv_tab.py` | Pandas data transformation | Pandas exercise: 27 write csv tab | Depends on operation and dataset size |
-| `09_Pandas/07_unique_problems/28_city_wise_count.py` | Pandas data transformation | Pandas exercise: 28 city wise count | Depends on operation and dataset size |
-| `09_Pandas/07_unique_problems/29_delete_rows_by_value.py` | Pandas data transformation | Pandas exercise: 29 delete rows by value | Depends on operation and dataset size |
-| `09_Pandas/07_unique_problems/30_widen_output_display.py` | Pandas data transformation | Pandas exercise: 30 widen output display | Depends on operation and dataset size |
-| `09_Pandas/07_unique_problems/31_select_row_integer_index.py` | DataFrame/Series construction | Creates tabular structures and performs column/index operations | O(n) |
-| `09_Pandas/07_unique_problems/32_replace_nan_zeros.py` | Data cleaning pipeline | Detects and handles nulls/duplicates/outliers and standardizes values | O(n) typical per cleaning pass |
-| `09_Pandas/07_unique_problems/33_convert_index_to_column.py` | DataFrame/Series construction | Creates tabular structures and performs column/index operations | O(n) |
-| `09_Pandas/07_unique_problems/34_set_value_by_index.py` | DataFrame/Series construction | Creates tabular structures and performs column/index operations | O(n) |
-| `09_Pandas/07_unique_problems/35_count_nan.py` | Pandas data transformation | Pandas exercise: 35 count nan | Depends on operation and dataset size |
-| `09_Pandas/07_unique_problems/36_drop_list_rows.py` | Pandas data transformation | Pandas exercise: 36 drop list rows | Depends on operation and dataset size |
-| `09_Pandas/07_unique_problems/37_reset_index.py` | DataFrame/Series construction | Creates tabular structures and performs column/index operations | O(n) |
-| `09_Pandas/07_unique_problems/38_divide_dataframe_ratio.py` | Tabular I/O processing | Reads/writes tabular files and infers/assigns schema | O(n) by number of records |
-| `09_Pandas/07_unique_problems/39_combine_two_series.py` | DataFrame/Series construction | Creates tabular structures and performs column/index operations | O(n) |
-| `09_Pandas/07_unique_problems/40_shuffle_rows.py` | Pandas data transformation | Pandas exercise: 40 shuffle rows | Depends on operation and dataset size |
-| `09_Pandas/07_unique_problems/41_string_to_datetime.py` | Time-series window operations | Applies resampling and windowed statistics over indexed time data | O(n) per pass (window stats may add constant factors) |
-| `09_Pandas/07_unique_problems/42_rename_specific_column.py` | Pandas data transformation | Pandas exercise: 42 rename specific column | Depends on operation and dataset size |
-| `09_Pandas/07_unique_problems/43_column_to_list.py` | Pandas data transformation | Pandas exercise: 43 column to list | Depends on operation and dataset size |
-| `09_Pandas/07_unique_problems/44_dataframe_from_numpy.py` | DataFrame/Series construction | Creates tabular structures and performs column/index operations | O(n) |
-| `09_Pandas/07_unique_problems/45_row_maximum_value.py` | Pandas data transformation | Pandas exercise: 45 row maximum value | Depends on operation and dataset size |
-| `09_Pandas/07_unique_problems/46_check_column_presence.py` | Pandas data transformation | Pandas exercise: 46 check column presence | Depends on operation and dataset size |
-| `09_Pandas/07_unique_problems/47_get_row_value.py` | Pandas data transformation | Pandas exercise: 47 get row value | Depends on operation and dataset size |
-| `09_Pandas/07_unique_problems/48_get_column_dtypes.py` | Pandas data transformation | Pandas exercise: 48 get column dtypes | Depends on operation and dataset size |
-| `09_Pandas/07_unique_problems/49_append_to_empty_dataframe.py` | DataFrame/Series construction | Creates tabular structures and performs column/index operations | O(n) |
-| `09_Pandas/07_unique_problems/50_sort_by_multiple_columns.py` | DataFrame/Series construction | Creates tabular structures and performs column/index operations | O(n) |
-| `09_Pandas/07_unique_problems/51_convert_column_datatype.py` | Pandas data transformation | Pandas exercise: 51 convert column datatype | Depends on operation and dataset size |
-| `09_Pandas/07_unique_problems/52_remove_infinite_values.py` | Pandas data transformation | Pandas exercise: 52 remove infinite values | Depends on operation and dataset size |
-| `09_Pandas/07_unique_problems/53_insert_column_at_index.py` | DataFrame/Series construction | Creates tabular structures and performs column/index operations | O(n) |
-| `09_Pandas/07_unique_problems/54_list_of_lists_to_dataframe.py` | DataFrame/Series construction | Creates tabular structures and performs column/index operations | O(n) |
-| `09_Pandas/07_unique_problems/55_groupby_first_get_lists.py` | GroupBy/Aggregation pipeline | Groups records and computes aggregate metrics by category keys | O(n) scan + grouping overhead (key/hash dependent) |
-| `09_Pandas/07_unique_problems/56_column_index_by_name.py` | DataFrame/Series construction | Creates tabular structures and performs column/index operations | O(n) |
-| `09_Pandas/07_unique_problems/57_count_columns.py` | DataFrame/Series construction | Creates tabular structures and performs column/index operations | O(n) |
-| `09_Pandas/07_unique_problems/58_select_all_except_one.py` | Pandas data transformation | Pandas exercise: 58 select all except one | Depends on operation and dataset size |
-| `09_Pandas/07_unique_problems/59_first_n_records.py` | Pandas data transformation | Pandas exercise: 59 first n records | Depends on operation and dataset size |
-| `09_Pandas/07_unique_problems/60_last_n_records.py` | Pandas data transformation | Pandas exercise: 60 last n records | Depends on operation and dataset size |
-| `09_Pandas/07_unique_problems/61_topmost_n_per_group.py` | Pandas data transformation | Pandas exercise: 61 topmost n per group | Depends on operation and dataset size |
-| `09_Pandas/07_unique_problems/62_remove_first_n_rows.py` | Pandas data transformation | Pandas exercise: 62 remove first n rows | Depends on operation and dataset size |
-| `09_Pandas/07_unique_problems/63_remove_last_n_rows.py` | Pandas data transformation | Pandas exercise: 63 remove last n rows | Depends on operation and dataset size |
-| `09_Pandas/07_unique_problems/64_add_prefix_suffix.py` | Pandas data transformation | Pandas exercise: 64 add prefix suffix | Depends on operation and dataset size |
-| `09_Pandas/07_unique_problems/65_reverse_order.py` | Pandas data transformation | Pandas exercise: 65 reverse order | Depends on operation and dataset size |
-| `09_Pandas/07_unique_problems/66_select_columns_by_dtype.py` | DataFrame/Series construction | Creates tabular structures and performs column/index operations | O(n) |
-| `09_Pandas/07_unique_problems/67_split_random_subsets.py` | Pandas data transformation | Pandas exercise: 67 split random subsets | Depends on operation and dataset size |
-| `09_Pandas/07_unique_problems/68_rename_columns_pattern.py` | DataFrame/Series construction | Creates tabular structures and performs column/index operations | O(n) |
-| `09_Pandas/07_unique_problems/69_merge_check_uniqueness.py` | DataFrame join/merge workflow | Combines datasets by key alignment and join strategy | Typically O(n+m) to O((n+m) log(n+m)) |
-| `09_Pandas/07_unique_problems/70_continuous_to_categorical.py` | Pandas data transformation | Pandas exercise: 70 continuous to categorical | Depends on operation and dataset size |
-| `09_Pandas/07_unique_problems/71_memory_usage.py` | Pandas data transformation | Pandas exercise: 71 memory usage | Depends on operation and dataset size |
-| `09_Pandas/07_unique_problems/72_combine_many_series.py` | DataFrame/Series construction | Creates tabular structures and performs column/index operations | O(n) |
-| `09_Pandas/07_unique_problems/73_dataframes_mixed_values.py` | DataFrame/Series construction | Creates tabular structures and performs column/index operations | O(n) |
-| `09_Pandas/07_unique_problems/74_fill_missing_timeseries.py` | Data cleaning pipeline | Detects and handles nulls/duplicates/outliers and standardizes values | O(n) typical per cleaning pass |
-| `09_Pandas/07_unique_problems/75_local_variable_in_query.py` | Boolean filtering and selection | Builds boolean masks and selects matching rows/columns | O(n) over selected axis |
-| `09_Pandas/07_unique_problems/76_clean_object_column_regex.py` | Data cleaning pipeline | Detects and handles nulls/duplicates/outliers and standardizes values | O(n) typical per cleaning pass |
-| `09_Pandas/07_unique_problems/77_numeric_representation_distinct.py` | Tabular I/O processing | Reads/writes tabular files and infers/assigns schema | O(n) by number of records |
-| `09_Pandas/07_unique_problems/78_replace_based_on_last_largest.py` | Data cleaning pipeline | Detects and handles nulls/duplicates/outliers and standardizes values | O(n) typical per cleaning pass |
-| `09_Pandas/07_unique_problems/79_dataframe_from_clipboard.py` | DataFrame/Series construction | Creates tabular structures and performs column/index operations | O(n) |
-| `09_Pandas/07_unique_problems/80_check_dataframe_inequality.py` | DataFrame/Series construction | Creates tabular structures and performs column/index operations | O(n) |
-| `09_Pandas/07_unique_problems/81_lowest_n_per_group.py` | Pandas data transformation | Pandas exercise: 81 lowest n per group | Depends on operation and dataset size |
+| `09_Pandas/03_sorting_sampling/01_filter_sort.py` | Boolean filtering and selection | Builds boolean masks and selects matching rows/columns | O(n) over selected axis |
+| `09_Pandas/02_selection_filtering/02_chipotle_filter.py` | Boolean filtering and selection | Builds boolean masks and selects matching rows/columns | O(n) over selected axis |
+| `09_Pandas/02_selection_filtering/03_euro12_filter.py` | Boolean filtering and selection | Builds boolean masks and selects matching rows/columns | O(n) over selected axis |
+| `09_Pandas/02_selection_filtering/04_army_filter.py` | Boolean filtering and selection | Builds boolean masks and selects matching rows/columns | O(n) over selected axis |
+| `09_Pandas/03_sorting_sampling/02_idxmax_idxmin.py` | DataFrame/Series construction | Creates tabular structures and performs column/index operations | O(n) |
+| `09_Pandas/03_sorting_sampling/03_nlargest_nsmallest.py` | Pandas data transformation | Top and bottom records | Depends on operation and dataset size |
+| `09_Pandas/03_sorting_sampling/04_sampling.py` | DataFrame/Series construction | Creates tabular structures and performs column/index operations | O(n) |
+| `09_Pandas/04_cleaning/01_string_methods.py` | Data cleaning pipeline | Detects and handles nulls/duplicates/outliers and standardizes values | O(n) typical per cleaning pass |
+| `09_Pandas/04_cleaning/02_categorical_binning.py` | Pandas data transformation | Categorical dtype, pd.cut, pd.qcut for binning | Depends on operation and dataset size |
+| `09_Pandas/04_cleaning/03_data_cleaning.py` | Data cleaning pipeline | Detects and handles nulls/duplicates/outliers and standardizes values | O(n) typical per cleaning pass |
+| `09_Pandas/04_cleaning/04_duplicate_detection.py` | Data cleaning pipeline | Detects and handles nulls/duplicates/outliers and standardizes values | O(n) typical per cleaning pass |
+| `09_Pandas/04_cleaning/05_outlier_detection.py` | Tabular I/O processing | Reads/writes tabular files and infers/assigns schema | O(n) by number of records |
+| `09_Pandas/04_cleaning/06_memory_optimization.py` | Tabular I/O processing | Reads/writes tabular files and infers/assigns schema | O(n) by number of records |
+| `09_Pandas/04_cleaning/07_data_quality_report.py` | Tabular I/O processing | Reads/writes tabular files and infers/assigns schema | O(n) by number of records |
+| `09_Pandas/04_cleaning/08_duplicates.py` | Data cleaning pipeline | Detects and handles nulls/duplicates/outliers and standardizes values | O(n) typical per cleaning pass |
+| `09_Pandas/04_cleaning/09_elementwise_transform.py` | Tabular I/O processing | Reads/writes tabular files and infers/assigns schema | O(n) by number of records |
+| `09_Pandas/04_cleaning/11_replace_values.py` | Data cleaning pipeline | Detects and handles nulls/duplicates/outliers and standardizes values | O(n) typical per cleaning pass |
+| `09_Pandas/04_cleaning/12_string_cleaning.py` | Data cleaning pipeline | Detects and handles nulls/duplicates/outliers and standardizes values | O(n) typical per cleaning pass |
+| `09_Pandas/04_cleaning/13_interpolate_general.py` | Data cleaning pipeline | Detects and handles nulls/duplicates/outliers and standardizes values | O(n) typical per cleaning pass |
+| `09_Pandas/04_cleaning/14_where_mask.py` | Boolean filtering and selection | Builds boolean masks and selects matching rows/columns | O(n) over selected axis |
+| `09_Pandas/05_groupby_reshape/01_groupby.py` | GroupBy/Aggregation pipeline | Groups records and computes aggregate metrics by category keys | O(n) scan + grouping overhead (key/hash dependent) |
+| `09_Pandas/05_groupby_reshape/02_alcohol_groupby.py` | GroupBy/Aggregation pipeline | Groups records and computes aggregate metrics by category keys | O(n) scan + grouping overhead (key/hash dependent) |
+| `09_Pandas/05_groupby_reshape/03_occupation_groupby.py` | GroupBy/Aggregation pipeline | Groups records and computes aggregate metrics by category keys | O(n) scan + grouping overhead (key/hash dependent) |
+| `09_Pandas/05_groupby_reshape/04_regiment_groupby.py` | GroupBy/Aggregation pipeline | Groups records and computes aggregate metrics by category keys | O(n) scan + grouping overhead (key/hash dependent) |
+| `09_Pandas/05_groupby_reshape/05_auto_mpg_merge.py` | DataFrame join/merge workflow | Combines datasets by key alignment and join strategy | Typically O(n+m) to O((n+m) log(n+m)) |
+| `09_Pandas/05_groupby_reshape/06_names_merge.py` | DataFrame join/merge workflow | Combines datasets by key alignment and join strategy | Typically O(n+m) to O((n+m) log(n+m)) |
+| `09_Pandas/05_groupby_reshape/07_house_merge.py` | DataFrame join/merge workflow | Combines datasets by key alignment and join strategy | Typically O(n+m) to O((n+m) log(n+m)) |
+| `09_Pandas/05_groupby_reshape/08_pivot_melt.py` | GroupBy/Aggregation pipeline | Groups records and computes aggregate metrics by category keys | O(n) scan + grouping overhead (key/hash dependent) |
+| `09_Pandas/05_groupby_reshape/09_multiindex.py` | DataFrame/Series construction | Creates tabular structures and performs column/index operations | O(n) |
+| `09_Pandas/05_groupby_reshape/10_multiindex_groupby.py` | GroupBy/Aggregation pipeline | Groups records and computes aggregate metrics by category keys | O(n) scan + grouping overhead (key/hash dependent) |
+| `09_Pandas/05_groupby_reshape/11_groupby_transform.py` | GroupBy/Aggregation pipeline | Groups records and computes aggregate metrics by category keys | O(n) scan + grouping overhead (key/hash dependent) |
+| `09_Pandas/05_groupby_reshape/12_groupby_filter.py` | GroupBy/Aggregation pipeline | Groups records and computes aggregate metrics by category keys | O(n) scan + grouping overhead (key/hash dependent) |
+| `09_Pandas/05_groupby_reshape/13_custom_aggregations.py` | GroupBy/Aggregation pipeline | Groups records and computes aggregate metrics by category keys | O(n) scan + grouping overhead (key/hash dependent) |
+| `09_Pandas/05_groupby_reshape/14_crosstab.py` | GroupBy/Aggregation pipeline | Groups records and computes aggregate metrics by category keys | O(n) scan + grouping overhead (key/hash dependent) |
+| `09_Pandas/05_groupby_reshape/15_pivot_vs_pivot_table.py` | GroupBy/Aggregation pipeline | Groups records and computes aggregate metrics by category keys | O(n) scan + grouping overhead (key/hash dependent) |
+| `09_Pandas/05_groupby_reshape/16_explode.py` | DataFrame/Series construction | Creates tabular structures and performs column/index operations | O(n) |
+| `09_Pandas/05_groupby_reshape/17_json_normalize.py` | DataFrame/Series construction | Creates tabular structures and performs column/index operations | O(n) |
+| `09_Pandas/05_groupby_reshape/18_rank.py` | Pandas data transformation | Ranking values | Depends on operation and dataset size |
+| `09_Pandas/05_groupby_reshape/19_corr_cov.py` | Descriptive statistics analysis | Computes summary statistics and distribution-oriented metrics | O(n) for simple stats; O(n*d) for multi-column summaries |
+| `09_Pandas/06_time_series/01_time_series.py` | Time-series window operations | Applies resampling and windowed statistics over indexed time data | O(n) per pass (window stats may add constant factors) |
+| `09_Pandas/06_time_series/02_wind_stats.py` | Time-series window operations | Applies resampling and windowed statistics over indexed time data | O(n) per pass (window stats may add constant factors) |
+| `09_Pandas/06_time_series/03_apple_stock_ts.py` | Time-series window operations | Applies resampling and windowed statistics over indexed time data | O(n) per pass (window stats may add constant factors) |
+| `09_Pandas/06_time_series/04_financial_ts.py` | Time-series window operations | Applies resampling and windowed statistics over indexed time data | O(n) per pass (window stats may add constant factors) |
+| `09_Pandas/06_time_series/05_investor_flow_ts.py` | Tabular I/O processing | Reads/writes tabular files and infers/assigns schema | O(n) by number of records |
+| `09_Pandas/06_time_series/06_rolling_window.py` | Time-series window operations | Applies resampling and windowed statistics over indexed time data | O(n) per pass (window stats may add constant factors) |
+| `09_Pandas/06_time_series/07_expanding_window.py` | Time-series window operations | Applies resampling and windowed statistics over indexed time data | O(n) per pass (window stats may add constant factors) |
+| `09_Pandas/06_time_series/08_ewm_window.py` | Time-series window operations | Applies resampling and windowed statistics over indexed time data | O(n) per pass (window stats may add constant factors) |
+| `09_Pandas/06_time_series/09_time_series_features.py` | Time-series window operations | Applies resampling and windowed statistics over indexed time data | O(n) per pass (window stats may add constant factors) |
+| `09_Pandas/06_time_series/10_time_series_resample_advanced.py` | Time-series window operations | Applies resampling and windowed statistics over indexed time data | O(n) per pass (window stats may add constant factors) |
+| `09_Pandas/06_time_series/11_time_series_forecasting_basics.py` | Time-series window operations | Applies resampling and windowed statistics over indexed time data | O(n) per pass (window stats may add constant factors) |
+| `09_Pandas/07_real_world_projects/01_lunch_analysis.py` | Tabular I/O processing | Reads/writes tabular files and infers/assigns schema | O(n) by number of records |
+| `09_Pandas/07_real_world_projects/02_parental_education.py` | Tabular I/O processing | Reads/writes tabular files and infers/assigns schema | O(n) by number of records |
+| `09_Pandas/07_real_world_projects/03_general_analysis.py` | Descriptive statistics analysis | Computes summary statistics and distribution-oriented metrics | O(n) for simple stats; O(n*d) for multi-column summaries |
+| `09_Pandas/07_real_world_projects/04_ethnic_group.py` | Pandas data transformation | Analyzes student performance by ethnic group | Depends on operation and dataset size |
+| `09_Pandas/07_real_world_projects/05_gender_analysis.py` | Pandas data transformation | Compares student performance by gender | Depends on operation and dataset size |
+| `09_Pandas/07_real_world_projects/06_test_preparation.py` | Tabular I/O processing | Reads/writes tabular files and infers/assigns schema | O(n) by number of records |
+| `09_Pandas/07_real_world_projects/07_students_performance.py` | Tabular I/O processing | Reads/writes tabular files and infers/assigns schema | O(n) by number of records |
+| `09_Pandas/07_real_world_projects/08_main_menu.py` | Pandas data transformation | Interactive menu to launch all student performance analyses | Depends on operation and dataset size |
+| `09_Pandas/07_real_world_projects/09_chipotle_explore.py` | Descriptive statistics analysis | Computes summary statistics and distribution-oriented metrics | O(n) for simple stats; O(n*d) for multi-column summaries |
+| `09_Pandas/07_real_world_projects/10_occupation_explore.py` | Tabular I/O processing | Reads/writes tabular files and infers/assigns schema | O(n) by number of records |
+| `09_Pandas/07_real_world_projects/11_food_facts.py` | Data cleaning pipeline | Detects and handles nulls/duplicates/outliers and standardizes values | O(n) typical per cleaning pass |
+| `09_Pandas/07_real_world_projects/12_alcohol_apply.py` | Tabular I/O processing | Reads/writes tabular files and infers/assigns schema | O(n) by number of records |
+| `09_Pandas/07_real_world_projects/13_crime_rates_apply.py` | Tabular I/O processing | Reads/writes tabular files and infers/assigns schema | O(n) by number of records |
+| `09_Pandas/07_real_world_projects/14_baby_names_stats.py` | Pandas data transformation | Rank, nunique, std, variance, and trends in baby names | Depends on operation and dataset size |
+| `09_Pandas/07_real_world_projects/15_chipotle_viz.py` | Data visualization workflow | Transforms data for plotting and generates analytical charts | O(n) data preparation (rendering backend additional) |
+| `09_Pandas/07_real_world_projects/16_titanic_viz.py` | Data visualization workflow | Transforms data for plotting and generates analytical charts | O(n) data preparation (rendering backend additional) |
+| `09_Pandas/07_real_world_projects/17_scores_viz.py` | Data visualization workflow | Transforms data for plotting and generates analytical charts | O(n) data preparation (rendering backend additional) |
+| `09_Pandas/07_real_world_projects/18_retail_viz.py` | Data visualization workflow | Transforms data for plotting and generates analytical charts | O(n) data preparation (rendering backend additional) |
+| `09_Pandas/07_real_world_projects/19_tips_viz.py` | Data visualization workflow | Transforms data for plotting and generates analytical charts | O(n) data preparation (rendering backend additional) |
+| `09_Pandas/07_real_world_projects/20_iris_delete.py` | Data cleaning pipeline | Detects and handles nulls/duplicates/outliers and standardizes values | O(n) typical per cleaning pass |
+| `09_Pandas/07_real_world_projects/21_wine_delete.py` | Data cleaning pipeline | Detects and handles nulls/duplicates/outliers and standardizes values | O(n) typical per cleaning pass |
+| `09_Pandas/07_real_world_projects/22_sales_analysis.py` | Pandas data transformation | Finds best product, best month, top customer from store sales | Depends on operation and dataset size |
+| `09_Pandas/07_real_world_projects/23_student_attendance.py` | Pandas data transformation | Analyzes absences, attendance %, at-risk students | Depends on operation and dataset size |
+| `09_Pandas/07_real_world_projects/24_personal_budget.py` | Pandas data transformation | Spending by category, monthly savings, budget balance analysis | Depends on operation and dataset size |
+| `09_Pandas/07_real_world_projects/25_inventory.py` | Pandas data transformation | Reorder alerts, turnover, unsold products from inventory data | Depends on operation and dataset size |
+| `09_Pandas/07_real_world_projects/26_task_tracking.py` | Pandas data transformation | Pending by assignee, delays, completed tasks analysis | Depends on operation and dataset size |
+| `09_Pandas/07_real_world_projects/27_construction.py` | Tabular I/O processing | Reads/writes tabular files and infers/assigns schema | O(n) by number of records |
+| `09_Pandas/07_real_world_projects/28_system_logs.py` | Pandas data transformation | Most errors, peak hour, server warnings from log data | Depends on operation and dataset size |
+| `09_Pandas/07_real_world_projects/29_web_traffic.py` | Tabular I/O processing | Reads/writes tabular files and infers/assigns schema | O(n) by number of records |
+| `09_Pandas/07_real_world_projects/30_movies_analysis.py` | Pandas data transformation | Best genre, releases by year, top 10 movies | Depends on operation and dataset size |
+| `09_Pandas/07_real_world_projects/31_transport_analysis.py` | Pandas data transformation | Longest route, trips by driver, delay analysis | Depends on operation and dataset size |
+| `09_Pandas/07_real_world_projects/32_hr_analysis.py` | Pandas data transformation | Headcount by dept, salary stats, top earners, hires by year | Depends on operation and dataset size |
+| `09_Pandas/07_real_world_projects/33_vectorization.py` | Tabular I/O processing | Reads/writes tabular files and infers/assigns schema | O(n) by number of records |
+| `09_Pandas/07_real_world_projects/34_chunk_processing.py` | Tabular I/O processing | Reads/writes tabular files and infers/assigns schema | O(n) by number of records |
+| `09_Pandas/07_real_world_projects/35_export_files.py` | Pandas data transformation | Exports to CSV, JSON, Excel, Parquet formats | Depends on operation and dataset size |
+| `09_Pandas/07_real_world_projects/36_excel_operations.py` | Tabular I/O processing | Reads/writes tabular files and infers/assigns schema | O(n) by number of records |
+| `09_Pandas/07_real_world_projects/37_api_data_loading.py` | Tabular I/O processing | Reads/writes tabular files and infers/assigns schema | O(n) by number of records |
+| `09_Pandas/07_real_world_projects/38_api_to_dataframe.py` | DataFrame/Series construction | Creates tabular structures and performs column/index operations | O(n) |
+| `09_Pandas/07_real_world_projects/39_feature_engineering.py` | Pandas data transformation | Derived features, lag, diff for feature engineering | Depends on operation and dataset size |
+| `09_Pandas/07_real_world_projects/40_encoding_features.py` | Pandas data transformation | One-hot, get_dummies, label encoding | Depends on operation and dataset size |
+| `09_Pandas/07_real_world_projects/41_scaling_features.py` | Pandas data transformation | Min-max, z-score, robust scaling | Depends on operation and dataset size |
+| `09_Pandas/07_real_world_projects/42_customer_segmentation.py` | Tabular I/O processing | Reads/writes tabular files and infers/assigns schema | O(n) by number of records |
+| `09_Pandas/07_real_world_projects/43_sales_forecast_project.py` | Time-series window operations | Applies resampling and windowed statistics over indexed time data | O(n) per pass (window stats may add constant factors) |
+| `09_Pandas/07_real_world_projects/44_sales_discount.py` | Pandas data transformation | Sales by year with 10% discount | Depends on operation and dataset size |
+| `09_Pandas/07_real_world_projects/45_grades_stats.py` | Descriptive statistics analysis | Computes summary statistics and distribution-oriented metrics | O(n) for simple stats; O(n*d) for multi-column summaries |
+| `09_Pandas/07_real_world_projects/46_grades_passed.py` | Pandas data transformation | Passing grades sorted descending | Depends on operation and dataset size |
+| `09_Pandas/07_real_world_projects/47_sales_dataframe.py` | DataFrame/Series construction | Creates tabular structures and performs column/index operations | O(n) |
+| `09_Pandas/07_real_world_projects/48_balance_months.py` | Pandas data transformation | Balance (sales - expenses) total for given months | Depends on operation and dataset size |
+| `09_Pandas/07_real_world_projects/49_stock_quotes.py` | Pandas data transformation | Stock quotes summary: min, max, mean per column | Depends on operation and dataset size |
+| `09_Pandas/07_real_world_projects/50_titanic_analysis.py` | Tabular I/O processing | Reads/writes tabular files and infers/assigns schema | O(n) by number of records |
+| `09_Pandas/07_real_world_projects/51_emissions_analysis.py` | Tabular I/O processing | Reads/writes tabular files and infers/assigns schema | O(n) by number of records |
+| `09_Pandas/07_real_world_projects/54_books_catalog_sqlite.py` | SQLite3 + Pandas workflow | Loads JSON into SQLite tables, queries with SQL, and exports analytical CSV reports | O(n) load + query dependent aggregations |
+| `09_Pandas/01_basics/02_create_from_dict.py` | DataFrame/Series construction | Creates tabular structures and performs column/index operations | O(n) |
+| `09_Pandas/01_basics/03_dataframe_index_labels.py` | DataFrame/Series construction | Creates tabular structures and performs column/index operations | O(n) |
+| `09_Pandas/01_basics/05_basic_summary.py` | Pandas data transformation | Pandas exercise: 03 basic summary | Depends on operation and dataset size |
+| `09_Pandas/01_basics/08_first_three_rows.py` | Pandas data transformation | Pandas exercise: 04 first three rows | Depends on operation and dataset size |
+| `09_Pandas/02_selection_filtering/05_select_name_score.py` | Pandas data transformation | Pandas exercise: 05 select name score | Depends on operation and dataset size |
+| `09_Pandas/02_selection_filtering/06_select_columns_rows.py` | DataFrame/Series construction | Creates tabular structures and performs column/index operations | O(n) |
+| `09_Pandas/02_selection_filtering/07_rows_attempts_gt2.py` | Pandas data transformation | Pandas exercise: 07 rows attempts gt2 | Depends on operation and dataset size |
+| `09_Pandas/02_selection_filtering/08_count_rows_columns.py` | DataFrame/Series construction | Creates tabular structures and performs column/index operations | O(n) |
+| `09_Pandas/04_cleaning/10_rows_missing_score.py` | Data cleaning pipeline | Detects and handles nulls/duplicates/outliers and standardizes values | O(n) typical per cleaning pass |
+| `09_Pandas/02_selection_filtering/09_score_between_15_20.py` | Pandas data transformation | Pandas exercise: 10 score between 15 20 | Depends on operation and dataset size |
+| `09_Pandas/01_basics/15_attempts_lt2_score_gt15.py` | Pandas data transformation | Pandas exercise: 11 attempts lt2 score gt15 | Depends on operation and dataset size |
+| `09_Pandas/02_selection_filtering/10_change_score_row_d.py` | Pandas data transformation | Pandas exercise: 12 change score row d | Depends on operation and dataset size |
+| `09_Pandas/01_basics/18_sum_attempts.py` | Pandas data transformation | Pandas exercise: 13 sum attempts | Depends on operation and dataset size |
+| `09_Pandas/01_basics/20_mean_scores.py` | Pandas data transformation | Pandas exercise: 14 mean scores | Depends on operation and dataset size |
+| `09_Pandas/01_basics/22_append_delete_row.py` | Pandas data transformation | Pandas exercise: 15 append delete row | Depends on operation and dataset size |
+| `09_Pandas/01_basics/25_sort_multiple_columns.py` | DataFrame/Series construction | Creates tabular structures and performs column/index operations | O(n) |
+| `09_Pandas/04_cleaning/15_replace_qualify.py` | Data cleaning pipeline | Detects and handles nulls/duplicates/outliers and standardizes values | O(n) typical per cleaning pass |
+| `09_Pandas/01_basics/27_change_james_to_suresh.py` | Pandas data transformation | Pandas exercise: 18 change james to suresh | Depends on operation and dataset size |
+| `09_Pandas/01_basics/29_delete_attempts_column.py` | Pandas data transformation | Pandas exercise: 19 delete attempts column | Depends on operation and dataset size |
+| `09_Pandas/01_basics/31_insert_color_column.py` | Pandas data transformation | Pandas exercise: 20 insert color column | Depends on operation and dataset size |
+| `09_Pandas/01_basics/33_iterate_rows.py` | Pandas data transformation | Pandas exercise: 21 iterate rows | Depends on operation and dataset size |
+| `09_Pandas/01_basics/35_column_headers_list.py` | Pandas data transformation | Pandas exercise: 22 column headers list | Depends on operation and dataset size |
+| `09_Pandas/01_basics/38_rename_columns.py` | DataFrame/Series construction | Creates tabular structures and performs column/index operations | O(n) |
+| `09_Pandas/02_selection_filtering/11_select_rows_col1_eq4.py` | Pandas data transformation | Pandas exercise: 24 select rows col1 eq4 | Depends on operation and dataset size |
+| `09_Pandas/01_basics/40_change_column_order.py` | Pandas data transformation | Pandas exercise: 25 change column order | Depends on operation and dataset size |
+| `09_Pandas/01_basics/42_add_one_row.py` | Pandas data transformation | Pandas exercise: 26 add one row | Depends on operation and dataset size |
+| `09_Pandas/01_basics/45_write_csv_tab.py` | Pandas data transformation | Pandas exercise: 27 write csv tab | Depends on operation and dataset size |
+| `09_Pandas/05_groupby_reshape/20_city_wise_count.py` | Pandas data transformation | Pandas exercise: 28 city wise count | Depends on operation and dataset size |
+| `09_Pandas/02_selection_filtering/12_delete_rows_by_value.py` | Pandas data transformation | Pandas exercise: 29 delete rows by value | Depends on operation and dataset size |
+| `09_Pandas/01_basics/49_widen_output_display.py` | Pandas data transformation | Pandas exercise: 30 widen output display | Depends on operation and dataset size |
+| `09_Pandas/02_selection_filtering/13_select_row_integer_index.py` | DataFrame/Series construction | Creates tabular structures and performs column/index operations | O(n) |
+| `09_Pandas/04_cleaning/16_replace_nan_zeros.py` | Data cleaning pipeline | Detects and handles nulls/duplicates/outliers and standardizes values | O(n) typical per cleaning pass |
+| `09_Pandas/01_basics/51_convert_index_to_column.py` | DataFrame/Series construction | Creates tabular structures and performs column/index operations | O(n) |
+| `09_Pandas/01_basics/52_set_value_by_index.py` | DataFrame/Series construction | Creates tabular structures and performs column/index operations | O(n) |
+| `09_Pandas/04_cleaning/17_count_nan.py` | Pandas data transformation | Pandas exercise: 35 count nan | Depends on operation and dataset size |
+| `09_Pandas/01_basics/53_drop_list_rows.py` | Pandas data transformation | Pandas exercise: 36 drop list rows | Depends on operation and dataset size |
+| `09_Pandas/01_basics/54_reset_index.py` | DataFrame/Series construction | Creates tabular structures and performs column/index operations | O(n) |
+| `09_Pandas/01_basics/55_divide_dataframe_ratio.py` | Tabular I/O processing | Reads/writes tabular files and infers/assigns schema | O(n) by number of records |
+| `09_Pandas/01_basics/56_combine_two_series.py` | DataFrame/Series construction | Creates tabular structures and performs column/index operations | O(n) |
+| `09_Pandas/03_sorting_sampling/05_shuffle_rows.py` | Pandas data transformation | Pandas exercise: 40 shuffle rows | Depends on operation and dataset size |
+| `09_Pandas/06_time_series/12_string_to_datetime.py` | Time-series window operations | Applies resampling and windowed statistics over indexed time data | O(n) per pass (window stats may add constant factors) |
+| `09_Pandas/01_basics/57_rename_specific_column.py` | Pandas data transformation | Pandas exercise: 42 rename specific column | Depends on operation and dataset size |
+| `09_Pandas/01_basics/58_column_to_list.py` | Pandas data transformation | Pandas exercise: 43 column to list | Depends on operation and dataset size |
+| `09_Pandas/01_basics/59_dataframe_from_numpy.py` | DataFrame/Series construction | Creates tabular structures and performs column/index operations | O(n) |
+| `09_Pandas/02_selection_filtering/14_row_maximum_value.py` | Pandas data transformation | Pandas exercise: 45 row maximum value | Depends on operation and dataset size |
+| `09_Pandas/02_selection_filtering/15_check_column_presence.py` | Pandas data transformation | Pandas exercise: 46 check column presence | Depends on operation and dataset size |
+| `09_Pandas/02_selection_filtering/16_get_row_value.py` | Pandas data transformation | Pandas exercise: 47 get row value | Depends on operation and dataset size |
+| `09_Pandas/01_basics/60_get_column_dtypes.py` | Pandas data transformation | Pandas exercise: 48 get column dtypes | Depends on operation and dataset size |
+| `09_Pandas/01_basics/61_append_to_empty_dataframe.py` | DataFrame/Series construction | Creates tabular structures and performs column/index operations | O(n) |
+| `09_Pandas/01_basics/62_sort_by_multiple_columns.py` | DataFrame/Series construction | Creates tabular structures and performs column/index operations | O(n) |
+| `09_Pandas/04_cleaning/18_convert_column_datatype.py` | Pandas data transformation | Pandas exercise: 51 convert column datatype | Depends on operation and dataset size |
+| `09_Pandas/04_cleaning/19_remove_infinite_values.py` | Pandas data transformation | Pandas exercise: 52 remove infinite values | Depends on operation and dataset size |
+| `09_Pandas/01_basics/63_insert_column_at_index.py` | DataFrame/Series construction | Creates tabular structures and performs column/index operations | O(n) |
+| `09_Pandas/01_basics/64_list_of_lists_to_dataframe.py` | DataFrame/Series construction | Creates tabular structures and performs column/index operations | O(n) |
+| `09_Pandas/05_groupby_reshape/21_groupby_first_get_lists.py` | GroupBy/Aggregation pipeline | Groups records and computes aggregate metrics by category keys | O(n) scan + grouping overhead (key/hash dependent) |
+| `09_Pandas/01_basics/65_column_index_by_name.py` | DataFrame/Series construction | Creates tabular structures and performs column/index operations | O(n) |
+| `09_Pandas/01_basics/66_count_columns.py` | DataFrame/Series construction | Creates tabular structures and performs column/index operations | O(n) |
+| `09_Pandas/02_selection_filtering/17_select_all_except_one.py` | Pandas data transformation | Pandas exercise: 58 select all except one | Depends on operation and dataset size |
+| `09_Pandas/03_sorting_sampling/06_first_n_records.py` | Pandas data transformation | Pandas exercise: 59 first n records | Depends on operation and dataset size |
+| `09_Pandas/03_sorting_sampling/07_last_n_records.py` | Pandas data transformation | Pandas exercise: 60 last n records | Depends on operation and dataset size |
+| `09_Pandas/05_groupby_reshape/22_topmost_n_per_group.py` | Pandas data transformation | Pandas exercise: 61 topmost n per group | Depends on operation and dataset size |
+| `09_Pandas/03_sorting_sampling/08_remove_first_n_rows.py` | Pandas data transformation | Pandas exercise: 62 remove first n rows | Depends on operation and dataset size |
+| `09_Pandas/03_sorting_sampling/09_remove_last_n_rows.py` | Pandas data transformation | Pandas exercise: 63 remove last n rows | Depends on operation and dataset size |
+| `09_Pandas/01_basics/67_add_prefix_suffix.py` | Pandas data transformation | Pandas exercise: 64 add prefix suffix | Depends on operation and dataset size |
+| `09_Pandas/01_basics/68_reverse_order.py` | Pandas data transformation | Pandas exercise: 65 reverse order | Depends on operation and dataset size |
+| `09_Pandas/02_selection_filtering/18_select_columns_by_dtype.py` | DataFrame/Series construction | Creates tabular structures and performs column/index operations | O(n) |
+| `09_Pandas/03_sorting_sampling/10_split_random_subsets.py` | Pandas data transformation | Pandas exercise: 67 split random subsets | Depends on operation and dataset size |
+| `09_Pandas/01_basics/69_rename_columns_pattern.py` | DataFrame/Series construction | Creates tabular structures and performs column/index operations | O(n) |
+| `09_Pandas/05_groupby_reshape/23_merge_check_uniqueness.py` | DataFrame join/merge workflow | Combines datasets by key alignment and join strategy | Typically O(n+m) to O((n+m) log(n+m)) |
+| `09_Pandas/01_basics/70_continuous_to_categorical.py` | Pandas data transformation | Pandas exercise: 70 continuous to categorical | Depends on operation and dataset size |
+| `09_Pandas/04_cleaning/20_memory_usage.py` | Pandas data transformation | Pandas exercise: 71 memory usage | Depends on operation and dataset size |
+| `09_Pandas/01_basics/71_combine_many_series.py` | DataFrame/Series construction | Creates tabular structures and performs column/index operations | O(n) |
+| `09_Pandas/01_basics/72_dataframes_mixed_values.py` | DataFrame/Series construction | Creates tabular structures and performs column/index operations | O(n) |
+| `09_Pandas/06_time_series/13_fill_missing_timeseries.py` | Data cleaning pipeline | Detects and handles nulls/duplicates/outliers and standardizes values | O(n) typical per cleaning pass |
+| `09_Pandas/02_selection_filtering/19_local_variable_in_query.py` | Boolean filtering and selection | Builds boolean masks and selects matching rows/columns | O(n) over selected axis |
+| `09_Pandas/04_cleaning/21_clean_object_column_regex.py` | Data cleaning pipeline | Detects and handles nulls/duplicates/outliers and standardizes values | O(n) typical per cleaning pass |
+| `09_Pandas/04_cleaning/22_numeric_representation_distinct.py` | Tabular I/O processing | Reads/writes tabular files and infers/assigns schema | O(n) by number of records |
+| `09_Pandas/04_cleaning/23_replace_based_on_last_largest.py` | Data cleaning pipeline | Detects and handles nulls/duplicates/outliers and standardizes values | O(n) typical per cleaning pass |
+| `09_Pandas/01_basics/73_dataframe_from_clipboard.py` | DataFrame/Series construction | Creates tabular structures and performs column/index operations | O(n) |
+| `09_Pandas/01_basics/74_check_dataframe_inequality.py` | DataFrame/Series construction | Creates tabular structures and performs column/index operations | O(n) |
+| `09_Pandas/05_groupby_reshape/24_lowest_n_per_group.py` | Pandas data transformation | Pandas exercise: 81 lowest n per group | Depends on operation and dataset size |
 ## 10_Matplotlib
 
 | Program | Algorithm Used | How it Works | Complexity |
@@ -1755,12 +1756,12 @@ Generated sections: 23 folders.
 
 | Program | Algorithm Used | How it Works | Complexity |
 | --- | --- | --- | --- |
-| 20_Databases/01_connection_test.py | Database query/CRUD workflow | Test MySQL database connection | Depends on dataset size and operation |
-| 20_Databases/02_ATM_Database_Version.py | Database query/CRUD workflow | ATM Simulation with MySQL Database Integration | Depends on dataset size and operation |
-| 20_Databases/03_create_atm_user.py | Educational algorithm/pattern script | Helper script to create ATM users easily | Varies by operation; commonly O(n) for single-pass processing |
-| 20_Databases/04_sqlite3_books_catalog.py | Database query/CRUD workflow | SQLite3 end-to-end flow: create, insert, query, update, delete, metadata | Depends on dataset size and operation |
-| 20_Databases/05_postgresql_books_catalog.py | Database query/CRUD workflow | PostgreSQL end-to-end flow: create, insert, join, aggregates, update/delete, rollback, metadata | Depends on dataset size and operation |
-| 20_Databases/07_mongodb_books_catalog.py | Database query/CRUD workflow | MongoDB end-to-end flow: insert, query, aggregation pipeline, update/delete, metadata | Depends on dataset size and operation |
+| 20_Databases/Tests/01_mysql_connection.py | Database query/CRUD workflow | Test MySQL database connection | Depends on dataset size and operation |
+| 20_Databases/02_atm_mysql_app.py | Database query/CRUD workflow | ATM Simulation with MySQL Database Integration | Depends on dataset size and operation |
+| 20_Databases/03_atm_user_tool.py | Educational algorithm/pattern script | Helper script to create ATM users easily | Varies by operation; commonly O(n) for single-pass processing |
+| 20_Databases/04_books_sqlite.py | Database query/CRUD workflow | SQLite3 end-to-end flow: create, insert, query, update, delete, metadata | Depends on dataset size and operation |
+| 20_Databases/05_books_postgres.py | Database query/CRUD workflow | PostgreSQL end-to-end flow: create, insert, join, aggregates, update/delete, rollback, metadata | Depends on dataset size and operation |
+| 20_Databases/07_books_mongo.py | Database query/CRUD workflow | MongoDB end-to-end flow: insert, query, aggregation pipeline, update/delete, metadata | Depends on dataset size and operation |
 
 ## 21_Machine_Learning
 
