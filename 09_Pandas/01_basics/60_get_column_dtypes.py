@@ -1,14 +1,15 @@
 # -------------------------------------------------
 # File Name: 60_get_column_dtypes.py
 # Author: Florentino Báez
-# Date: 09_Pandas
-# Description: Pandas exercise: 48 get column dtypes.
+# Date: 12/03/2026
+# Description: Gets the data types of the columns in a DataFrame.
 # -------------------------------------------------
 
-"""Practice 48: Get Column DataTypes."""
+# import libraries
 import pandas as pd
 import numpy as np
 
+# create a dictionary of exam data
 exam_data = {
     "name": [
         "Valeria",
@@ -26,8 +27,13 @@ exam_data = {
     "attempts": [1, 3, 2, 3, 2, 3, 1, 1, 2, 1],
     "qualify": ["yes", "no", "yes", "no", "no", "yes", "yes", "no", "no", "yes"],
 }
-labels = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j"]
-df_practice_48 = pd.DataFrame(exam_data, index=labels)
 
+# create a list of index labels
+labels = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j"]
+
+# create a DataFrame from the exam data with the index labels
+df = pd.DataFrame(exam_data, index=labels)
+
+# print the data types of the columns
 print("Data types of the columns of the said DataFrame:")
-print(df_practice_48.dtypes)
+print(df.dtypes)

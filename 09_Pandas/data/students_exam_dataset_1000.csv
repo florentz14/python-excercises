@@ -1,0 +1,1001 @@
+student_id,name,country,gender,age,subject,study_hours,attempts,score,qualify,exam_date
+1,Sara Svensson,Argentina,Female,26,Statistics,4.0,3,8.4,no,2025-12-19
+2,Sofia Petrova,Philippines,Male,22,Mathematics,9.9,2,8.3,no,2025-03-26
+3,Ivan Ivanov,India,Male,29,Computer Science,16.7,1,17.0,yes,2025-03-29
+4,Ananya Sharma,Chile,Female,18,Physics,13.0,1,15.6,yes,2025-08-25
+5,Ananya Sharma,Mexico,Male,25,Algorithms,3.6,1,17.9,yes,2025-02-05
+6,Omar Haddad,Japan,Female,30,Cybersecurity,9.3,2,17.5,yes,2025-06-13
+7,Ali Demir,Russia,Male,18,Physics,6.9,1,7.9,no,2025-06-02
+8,Priya Patel,USA,Female,29,Networking,14.4,1,9.6,no,2025-12-07
+9,Hiroshi Tanaka,France,Female,18,Mathematics,16.7,3,19.7,yes,2025-02-22
+10,Daniel Kim,Russia,Female,29,Algorithms,5.9,1,14.1,yes,2025-11-24
+11,Victor Dubois,Argentina,Male,19,Data Science,10.9,2,5.6,no,2025-09-13
+12,Fatima Alzahra,Peru,Male,19,Mathematics,1.5,2,15.4,yes,2025-10-12
+13,Victor Dubois,USA,Female,26,Statistics,13.6,2,5.4,no,2025-08-31
+14,Aisha Hassan,Sweden,Male,19,Networking,19.0,1,12.7,yes,2025-01-22
+15,Yuki Nakamura,Egypt,Female,23,Physics,9.7,2,17.3,yes,2025-03-15
+16,Chloe Martin,Germany,Female,30,Physics,6.6,1,13.3,yes,2025-08-07
+17,Sofia Petrova,Argentina,Male,21,Statistics,11.7,3,14.4,yes,2025-06-11
+18,Aisha Hassan,Pakistan,Male,27,Algorithms,19.8,1,8.5,no,2025-09-25
+19,Lucas Silva,Japan,Male,29,Data Science,17.1,3,9.8,no,2025-12-04
+20,Liam OConnor,Pakistan,Male,20,Computer Science,16.9,2,10.8,no,2025-02-09
+21,Mei Lin,Mexico,Female,23,Cybersecurity,16.1,3,6.4,no,2025-11-04
+22,Samuel Okafor,Pakistan,Female,18,Computer Science,10.3,1,14.3,yes,2025-10-04
+23,Daniel Kim,Nigeria,Female,18,Computer Science,10.5,2,12.2,yes,2025-04-17
+24,Alejandro Cruz,Egypt,Male,22,Algorithms,19.3,2,12.9,yes,2025-07-03
+25,Fatima Alzahra,China,Female,30,Computer Science,15.8,3,6.3,no,2025-11-06
+26,Hiroshi Tanaka,Brazil,Female,21,Networking,8.3,2,5.9,no,2025-01-10
+27,Samuel Okafor,Japan,Female,20,Data Science,2.0,1,5.8,no,2025-01-11
+28,Sofia Petrova,Spain,Female,24,Algorithms,4.8,2,14.3,yes,2025-10-02
+29,Daniel Kim,Pakistan,Male,26,Data Science,14.2,2,19.7,yes,2025-10-11
+30,Emma Williams,Pakistan,Male,29,Data Science,5.6,2,10.4,no,2025-06-30
+31,Pedro Alvarez,Germany,Male,28,Physics,11.2,3,17.0,yes,2025-04-28
+32,Fatima Alzahra,Spain,Male,26,Statistics,12.8,3,14.7,yes,2025-01-06
+33,Sofia Petrova,Argentina,Female,25,Statistics,13.5,1,8.1,no,2025-05-24
+34,Kwame Mensah,India,Female,20,Physics,14.1,3,17.4,yes,2025-06-27
+35,Pedro Alvarez,Brazil,Female,27,Statistics,6.8,3,10.5,no,2025-06-29
+36,Mateo Rodriguez,China,Male,25,Physics,6.9,1,16.0,yes,2025-02-27
+37,Zara Khan,Argentina,Male,29,Cybersecurity,2.8,1,6.6,no,2025-12-28
+38,Mateo Rodriguez,Sweden,Female,26,Computer Science,11.7,2,11.0,no,2025-09-12
+39,Sofia Petrova,Pakistan,Female,30,Mathematics,11.9,1,15.0,yes,2025-08-05
+40,Fatima Alzahra,Turkey,Female,18,Physics,5.2,2,15.6,yes,2025-01-31
+41,Noah Johnson,Russia,Female,23,Physics,8.7,1,19.5,yes,2025-12-09
+42,Yuki Nakamura,Philippines,Female,24,Algorithms,4.1,1,6.5,no,2025-09-14
+43,Pedro Alvarez,Turkey,Female,24,Algorithms,13.9,1,8.6,no,2025-08-14
+44,Mei Lin,Nigeria,Female,27,Data Science,13.6,1,16.8,yes,2025-07-04
+45,Mateo Rodriguez,China,Male,25,Physics,15.5,3,,no,2026-01-01
+46,Carlos Gutierrez,Chile,Male,19,Cybersecurity,5.1,2,11.8,no,2025-11-10
+47,Amir Rahimi,Egypt,Male,28,Cybersecurity,7.3,3,5.0,no,2025-12-16
+48,Carlos Gutierrez,USA,Male,30,Statistics,8.9,2,17.0,yes,2025-09-30
+49,Ananya Sharma,Turkey,Female,24,Statistics,18.8,1,18.6,yes,2025-09-05
+50,Daniel Kim,Chile,Female,27,Data Science,12.4,1,19.0,yes,2025-04-04
+51,Chen Wei,India,Male,25,Algorithms,10.9,2,19.3,yes,2025-06-10
+52,Victor Dubois,Turkey,Male,22,Statistics,1.6,1,17.9,yes,2025-08-10
+53,Ivan Ivanov,Argentina,Female,20,Algorithms,14.5,3,15.3,yes,2025-03-25
+54,Ali Demir,Nigeria,Male,20,Data Science,2.1,1,9.4,no,2025-06-15
+55,Aisha Hassan,Chile,Male,18,Cybersecurity,16.0,1,13.0,yes,2025-09-06
+56,Aisha Hassan,Germany,Male,27,Statistics,6.8,1,7.5,no,2025-01-02
+57,Ivan Ivanov,Brazil,Male,18,Computer Science,7.0,2,18.4,yes,2025-03-13
+58,Emma Williams,Germany,Female,19,Mathematics,12.3,3,15.5,yes,2025-04-25
+59,Laura Garcia,Russia,Female,28,Physics,13.5,1,14.5,yes,2025-07-08
+60,Fatima Alzahra,Russia,Female,20,Computer Science,16.1,3,17.2,yes,2025-10-28
+61,Kwame Mensah,Russia,Male,19,Algorithms,5.1,1,9.8,no,2025-04-01
+62,Emma Williams,Peru,Female,29,Cybersecurity,12.8,1,17.3,yes,2025-05-03
+63,Ananya Sharma,Sweden,Male,18,Computer Science,15.1,2,12.6,yes,2025-05-09
+64,Amir Rahimi,Philippines,Female,20,Algorithms,15.8,1,7.0,no,2025-02-13
+65,Hiroshi Tanaka,India,Male,22,Data Science,18.4,1,5.7,no,2025-09-20
+66,Chloe Martin,Argentina,Female,19,Cybersecurity,3.8,3,19.9,yes,2025-04-07
+67,Aisha Hassan,Sweden,Male,22,Cybersecurity,1.3,3,14.7,yes,2025-08-12
+68,Carlos Gutierrez,Russia,Male,22,Computer Science,12.1,1,19.6,yes,2025-06-26
+69,Chloe Martin,India,Female,18,Networking,10.0,3,17.4,yes,2025-05-25
+70,Mei Lin,Pakistan,Female,23,Computer Science,3.6,3,13.9,yes,2025-06-29
+71,Amir Rahimi,China,Female,29,Statistics,8.6,3,18.0,yes,2025-08-24
+72,Alejandro Cruz,Philippines,Male,19,Computer Science,7.5,1,14.0,yes,2025-03-26
+73,Mateo Rodriguez,Pakistan,Male,23,Cybersecurity,10.3,1,18.9,yes,2025-05-26
+74,Mateo Rodriguez,Germany,Female,29,Data Science,14.4,3,17.6,yes,2025-10-22
+75,Aisha Hassan,Mexico,Female,25,Networking,3.1,3,12.7,yes,2025-08-28
+76,Ali Demir,Japan,Female,29,Algorithms,1.4,3,16.6,yes,2025-10-06
+77,Priya Patel,Philippines,Male,24,Mathematics,9.9,3,6.1,no,2025-09-05
+78,Lucas Silva,Germany,Female,21,Computer Science,3.3,2,19.7,yes,2025-07-19
+79,Laura Garcia,Pakistan,Female,30,Data Science,15.8,3,19.7,yes,2025-10-07
+80,Liam OConnor,India,Female,22,Data Science,19.1,2,,no,2025-03-24
+81,Hiroshi Tanaka,Peru,Male,20,Computer Science,2.3,1,16.7,yes,2025-07-31
+82,Ivan Ivanov,Mexico,Female,23,Mathematics,10.6,1,13.8,yes,2025-12-02
+83,Mateo Rodriguez,Pakistan,Male,25,Networking,6.3,2,12.3,yes,2025-10-03
+84,Lucas Silva,China,Female,29,Mathematics,7.4,2,6.7,no,2025-04-17
+85,Mei Lin,Brazil,Female,20,Cybersecurity,19.0,1,18.9,yes,2025-10-09
+86,Sara Svensson,Chile,Female,22,Algorithms,14.0,1,17.7,yes,2025-06-04
+87,Emma Williams,India,Male,29,Mathematics,10.0,2,7.6,no,2025-01-22
+88,Kwame Mensah,Sweden,Female,29,Statistics,14.3,3,15.9,yes,2025-03-07
+89,Aisha Hassan,USA,Male,24,Statistics,10.4,2,18.1,yes,2025-01-22
+90,Liam OConnor,Brazil,Female,19,Networking,7.2,2,19.0,yes,2025-02-03
+91,Carlos Gutierrez,France,Male,30,Networking,13.5,3,18.9,yes,2025-04-17
+92,Hiroshi Tanaka,Brazil,Female,23,Cybersecurity,16.1,2,18.6,yes,2025-05-06
+93,Victor Dubois,India,Male,23,Data Science,1.4,3,12.6,yes,2025-03-08
+94,Priya Patel,Turkey,Female,18,Mathematics,19.5,1,13.4,yes,2025-06-29
+95,Ananya Sharma,Turkey,Male,18,Networking,16.4,3,7.7,no,2025-05-18
+96,Yuki Nakamura,Argentina,Male,24,Statistics,7.5,1,,no,2025-02-14
+97,Pedro Alvarez,Germany,Female,18,Networking,16.8,1,17.5,yes,2025-12-30
+98,Victor Dubois,Nigeria,Male,18,Algorithms,6.4,3,12.5,yes,2025-08-23
+99,Alejandro Cruz,India,Male,30,Computer Science,15.4,1,13.7,yes,2025-04-18
+100,Chloe Martin,Russia,Female,29,Data Science,17.2,3,13.8,yes,2025-10-20
+101,Noah Johnson,Mexico,Male,28,Mathematics,7.1,2,11.5,no,2025-07-01
+102,Aisha Hassan,Chile,Male,21,Statistics,15.1,1,11.4,no,2025-03-05
+103,Pedro Alvarez,India,Female,25,Data Science,4.9,1,5.8,no,2025-07-12
+104,Diego Fernandez,Spain,Female,22,Data Science,5.2,2,17.4,yes,2025-03-11
+105,Alejandro Cruz,Mexico,Male,19,Computer Science,17.7,1,11.7,no,2025-03-15
+106,Emma Williams,Chile,Male,19,Algorithms,11.4,1,5.1,no,2025-02-07
+107,Samuel Okafor,Sweden,Male,23,Networking,12.0,3,16.7,yes,2025-09-17
+108,Emma Williams,Canada,Male,22,Statistics,9.5,1,12.7,yes,2025-09-02
+109,Samuel Okafor,Russia,Male,19,Mathematics,5.4,3,,no,2025-07-04
+110,Mei Lin,Brazil,Female,25,Statistics,12.8,3,17.6,yes,2025-04-09
+111,Mei Lin,Nigeria,Male,20,Physics,10.9,2,16.6,yes,2025-12-19
+112,Samuel Okafor,France,Male,19,Algorithms,18.1,3,17.6,yes,2025-07-21
+113,Emma Williams,Sweden,Female,19,Statistics,5.9,1,15.0,yes,2025-11-21
+114,Sara Svensson,Germany,Female,23,Computer Science,2.8,1,17.4,yes,2025-12-24
+115,Fatima Alzahra,Mexico,Female,29,Cybersecurity,5.3,1,8.4,no,2025-08-07
+116,Ali Demir,Spain,Female,19,Algorithms,4.3,1,17.2,yes,2025-11-03
+117,Daniel Kim,Japan,Male,23,Algorithms,19.3,1,18.0,yes,2025-06-25
+118,Kwame Mensah,Argentina,Male,20,Data Science,12.1,2,,no,2025-07-22
+119,Priya Patel,Canada,Male,23,Physics,18.6,1,15.4,yes,2025-08-07
+120,Chen Wei,Chile,Female,26,Data Science,13.5,2,6.1,no,2025-01-22
+121,Daniel Kim,Peru,Male,28,Cybersecurity,5.1,3,17.4,yes,2025-11-19
+122,Liam OConnor,Pakistan,Female,22,Algorithms,17.2,1,16.6,yes,2026-01-01
+123,Chloe Martin,Turkey,Male,25,Algorithms,5.9,2,19.4,yes,2025-01-27
+124,Chen Wei,India,Female,21,Algorithms,14.8,1,15.0,yes,2025-01-04
+125,Mateo Rodriguez,Sweden,Female,26,Mathematics,15.2,1,12.0,yes,2025-01-09
+126,Sara Svensson,China,Female,23,Cybersecurity,17.9,1,14.8,yes,2025-12-21
+127,Ananya Sharma,Sweden,Male,26,Networking,17.1,1,5.9,no,2025-11-29
+128,Noah Johnson,Turkey,Male,19,Data Science,18.0,1,19.2,yes,2025-08-29
+129,Ali Demir,Argentina,Female,27,Statistics,6.3,3,17.7,yes,2025-03-21
+130,Priya Patel,Russia,Male,30,Physics,15.6,3,5.4,no,2025-01-29
+131,Sara Svensson,Argentina,Female,27,Statistics,12.6,2,8.4,no,2025-07-03
+132,Fatima Alzahra,Nigeria,Male,24,Algorithms,1.5,3,10.3,no,2025-10-21
+133,Ananya Sharma,Japan,Male,25,Cybersecurity,3.8,3,13.6,yes,2025-07-28
+134,Yuki Nakamura,Peru,Male,26,Networking,11.2,1,9.9,no,2025-05-15
+135,Kwame Mensah,Nigeria,Female,20,Physics,10.4,3,10.5,no,2025-02-09
+136,Samuel Okafor,France,Female,26,Mathematics,4.8,3,9.0,no,2025-03-28
+137,Daniel Kim,India,Female,29,Physics,13.4,1,17.5,yes,2025-07-08
+138,Victor Dubois,USA,Female,29,Mathematics,13.8,1,8.4,no,2025-05-04
+139,Alejandro Cruz,Canada,Female,27,Data Science,3.5,3,6.1,no,2025-01-21
+140,Ivan Ivanov,Brazil,Female,22,Data Science,4.2,3,,no,2025-10-17
+141,Samuel Okafor,Sweden,Female,19,Data Science,5.8,1,10.6,no,2025-03-22
+142,Ali Demir,Chile,Male,18,Networking,12.3,3,10.3,no,2025-07-18
+143,Noah Johnson,Brazil,Female,23,Physics,3.0,3,9.1,no,2025-11-29
+144,Sofia Petrova,Germany,Male,18,Mathematics,2.8,2,14.1,yes,2025-02-09
+145,Carlos Gutierrez,China,Female,24,Statistics,3.7,3,,no,2025-11-23
+146,Lucas Silva,Turkey,Male,29,Networking,7.8,2,17.3,yes,2025-12-21
+147,Lucas Silva,Chile,Female,30,Algorithms,11.5,1,18.9,yes,2026-01-01
+148,Laura Garcia,Philippines,Female,26,Networking,14.3,2,14.5,yes,2025-02-02
+149,Diego Fernandez,Peru,Female,25,Mathematics,14.1,3,5.4,no,2025-03-09
+150,Lucas Silva,Mexico,Male,29,Algorithms,15.1,3,18.6,yes,2025-05-17
+151,Priya Patel,Russia,Male,21,Computer Science,15.5,2,11.2,no,2025-10-15
+152,Aisha Hassan,Egypt,Male,23,Statistics,13.7,3,18.7,yes,2025-08-30
+153,Yuki Nakamura,Sweden,Female,24,Physics,17.1,3,10.9,no,2025-10-20
+154,Fatima Alzahra,Spain,Female,23,Data Science,17.5,2,16.9,yes,2025-02-25
+155,Victor Dubois,Nigeria,Male,18,Networking,4.7,2,10.6,no,2025-12-20
+156,Hiroshi Tanaka,China,Female,21,Data Science,17.5,3,5.1,no,2025-04-19
+157,Priya Patel,Turkey,Male,26,Mathematics,18.3,1,7.1,no,2025-09-05
+158,Zara Khan,Pakistan,Female,28,Networking,19.0,1,10.2,no,2025-07-03
+159,Chloe Martin,Japan,Male,22,Computer Science,9.7,3,12.8,yes,2025-05-07
+160,Pedro Alvarez,Russia,Female,23,Cybersecurity,9.9,2,,no,2025-11-28
+161,Priya Patel,France,Female,22,Networking,12.8,2,6.6,no,2025-12-01
+162,Chen Wei,USA,Female,29,Statistics,11.4,1,15.5,yes,2025-12-17
+163,Carlos Gutierrez,France,Male,22,Networking,18.2,2,5.6,no,2025-12-27
+164,Amir Rahimi,Pakistan,Male,23,Algorithms,7.6,3,7.1,no,2025-06-18
+165,Sara Svensson,Nigeria,Female,29,Statistics,19.0,1,11.3,no,2025-10-15
+166,Pedro Alvarez,Brazil,Female,24,Mathematics,3.0,1,12.2,yes,2025-07-04
+167,Ivan Ivanov,France,Female,25,Physics,16.0,1,6.6,no,2025-07-27
+168,Liam OConnor,Egypt,Male,21,Algorithms,6.2,2,7.4,no,2025-07-06
+169,Lucas Silva,Peru,Female,29,Mathematics,2.6,3,12.4,yes,2025-02-16
+170,Sofia Petrova,Sweden,Male,22,Algorithms,11.6,2,12.5,yes,2025-02-09
+171,Samuel Okafor,Philippines,Female,19,Algorithms,11.9,3,17.3,yes,2025-11-15
+172,Mei Lin,USA,Female,21,Physics,18.2,3,14.3,yes,2025-06-11
+173,Liam OConnor,Nigeria,Male,19,Data Science,13.3,2,17.9,yes,2025-12-06
+174,Samuel Okafor,Turkey,Female,20,Physics,3.7,3,15.5,yes,2025-10-19
+175,Alejandro Cruz,USA,Female,26,Data Science,16.7,3,12.0,yes,2025-07-22
+176,Mei Lin,Pakistan,Male,25,Statistics,7.1,3,18.0,yes,2025-01-21
+177,Carlos Gutierrez,Peru,Female,29,Mathematics,2.8,1,10.4,no,2025-10-23
+178,Fatima Alzahra,Germany,Male,19,Computer Science,14.6,1,14.5,yes,2025-06-25
+179,Omar Haddad,USA,Male,18,Data Science,4.9,2,19.6,yes,2025-10-23
+180,Daniel Kim,Canada,Female,26,Data Science,13.6,1,7.7,no,2025-04-20
+181,Laura Garcia,USA,Male,24,Cybersecurity,2.0,3,5.5,no,2025-11-28
+182,Omar Haddad,Spain,Female,25,Statistics,1.8,2,17.5,yes,2025-12-17
+183,Priya Patel,Peru,Male,24,Physics,3.7,3,12.9,yes,2025-02-15
+184,Omar Haddad,Turkey,Female,23,Algorithms,4.0,1,5.1,no,2025-03-28
+185,Mei Lin,Philippines,Female,30,Physics,10.0,1,10.2,no,2025-05-21
+186,Alejandro Cruz,Russia,Male,23,Networking,8.6,2,15.7,yes,2025-08-01
+187,Pedro Alvarez,Spain,Male,19,Statistics,2.6,3,19.7,yes,2025-10-22
+188,Amir Rahimi,Peru,Male,19,Cybersecurity,13.6,3,18.0,yes,2025-03-16
+189,Liam OConnor,USA,Male,24,Physics,12.0,1,12.7,yes,2025-04-10
+190,Mei Lin,Peru,Male,24,Data Science,4.6,1,17.7,yes,2025-09-16
+191,Laura Garcia,USA,Male,18,Physics,13.0,2,13.4,yes,2025-04-28
+192,Victor Dubois,Brazil,Female,29,Statistics,16.5,1,12.1,yes,2025-12-24
+193,Daniel Kim,China,Female,26,Computer Science,11.1,2,6.2,no,2025-07-23
+194,Ivan Ivanov,USA,Male,20,Data Science,1.1,3,13.7,yes,2025-04-08
+195,Lucas Silva,Philippines,Male,29,Computer Science,4.0,3,9.4,no,2025-03-28
+196,Aisha Hassan,Mexico,Female,20,Physics,1.4,1,15.8,yes,2025-11-13
+197,Ananya Sharma,Argentina,Male,19,Mathematics,5.4,3,15.7,yes,2025-04-13
+198,Aisha Hassan,Nigeria,Male,30,Cybersecurity,16.5,3,14.6,yes,2025-01-04
+199,Yuki Nakamura,Germany,Female,20,Mathematics,4.9,1,17.1,yes,2025-05-07
+200,Chloe Martin,Chile,Female,24,Networking,10.7,2,13.1,yes,2025-04-01
+201,Amir Rahimi,Egypt,Female,30,Mathematics,19.7,1,16.6,yes,2026-01-01
+202,Ali Demir,Philippines,Female,26,Computer Science,8.6,2,13.0,yes,2025-08-27
+203,Zara Khan,Sweden,Male,28,Cybersecurity,8.0,1,18.5,yes,2025-10-02
+204,Ivan Ivanov,Argentina,Male,20,Data Science,4.0,3,16.6,yes,2025-08-05
+205,Sara Svensson,France,Female,30,Algorithms,4.5,1,7.4,no,2025-11-12
+206,Ali Demir,Philippines,Female,26,Networking,5.1,1,17.5,yes,2025-04-30
+207,Sofia Petrova,Argentina,Female,22,Physics,6.3,1,6.6,no,2025-01-06
+208,Hiroshi Tanaka,France,Male,23,Statistics,1.4,1,17.3,yes,2025-08-05
+209,Ananya Sharma,Germany,Female,24,Physics,9.3,3,13.4,yes,2025-09-24
+210,Chloe Martin,France,Male,26,Networking,1.9,2,19.7,yes,2025-08-11
+211,Emma Williams,Pakistan,Female,22,Physics,18.4,3,12.1,yes,2025-02-07
+212,Emma Williams,China,Male,22,Statistics,10.5,1,6.3,no,2025-09-03
+213,Liam OConnor,Sweden,Female,18,Networking,13.8,3,8.9,no,2025-12-24
+214,Ivan Ivanov,India,Female,19,Computer Science,18.3,1,12.3,yes,2025-01-03
+215,Liam OConnor,Sweden,Male,19,Statistics,3.2,1,12.8,yes,2025-06-23
+216,Daniel Kim,Sweden,Female,24,Networking,14.0,1,15.2,yes,2025-02-19
+217,Samuel Okafor,Pakistan,Female,30,Computer Science,2.8,3,16.1,yes,2025-11-26
+218,Aisha Hassan,France,Male,20,Networking,14.1,1,15.4,yes,2025-12-02
+219,Pedro Alvarez,Chile,Female,23,Mathematics,9.9,3,12.8,yes,2025-08-11
+220,Hiroshi Tanaka,USA,Female,25,Mathematics,4.4,1,10.8,no,2025-03-03
+221,Chloe Martin,Sweden,Female,19,Networking,8.9,1,12.2,yes,2025-06-09
+222,Liam OConnor,Philippines,Male,26,Algorithms,12.1,3,9.4,no,2025-02-12
+223,Aisha Hassan,Germany,Male,18,Data Science,2.3,3,9.5,no,2025-12-01
+224,Victor Dubois,Russia,Male,19,Algorithms,7.6,1,16.5,yes,2025-02-21
+225,Yuki Nakamura,Philippines,Male,18,Statistics,17.6,1,18.7,yes,2025-10-15
+226,Samuel Okafor,Pakistan,Male,25,Computer Science,15.5,2,19.8,yes,2025-05-27
+227,Yuki Nakamura,Mexico,Female,24,Cybersecurity,14.8,3,17.6,yes,2025-08-03
+228,Ananya Sharma,Sweden,Female,26,Physics,7.0,1,16.3,yes,2025-03-25
+229,Lucas Silva,Russia,Female,24,Networking,16.9,1,6.5,no,2025-01-11
+230,Liam OConnor,Sweden,Male,19,Data Science,8.0,2,10.5,no,2025-02-22
+231,Victor Dubois,Nigeria,Female,28,Physics,9.2,1,14.2,yes,2025-02-03
+232,Noah Johnson,Brazil,Female,18,Physics,14.8,1,13.2,yes,2025-09-28
+233,Pedro Alvarez,Russia,Female,24,Data Science,14.3,2,14.1,yes,2025-07-18
+234,Zara Khan,Egypt,Male,27,Cybersecurity,8.2,2,8.6,no,2025-02-05
+235,Laura Garcia,Egypt,Male,26,Data Science,9.0,1,14.5,yes,2025-04-20
+236,Noah Johnson,Russia,Male,28,Mathematics,10.5,2,16.6,yes,2025-09-10
+237,Hiroshi Tanaka,Argentina,Male,21,Cybersecurity,11.7,2,18.2,yes,2025-08-25
+238,Samuel Okafor,Argentina,Male,28,Statistics,3.3,3,19.0,yes,2025-03-11
+239,Liam OConnor,Argentina,Male,20,Networking,19.4,3,11.9,no,2025-12-15
+240,Emma Williams,India,Female,28,Computer Science,5.5,1,17.3,yes,2025-11-20
+241,Ivan Ivanov,Brazil,Female,27,Cybersecurity,16.3,2,18.2,yes,2025-02-08
+242,Aisha Hassan,India,Female,27,Computer Science,19.6,2,,no,2025-06-04
+243,Kwame Mensah,Egypt,Female,29,Physics,10.8,2,19.3,yes,2025-03-01
+244,Lucas Silva,Argentina,Female,23,Mathematics,6.0,3,10.2,no,2025-06-25
+245,Diego Fernandez,France,Male,28,Cybersecurity,1.5,1,6.0,no,2025-05-29
+246,Liam OConnor,Nigeria,Male,27,Physics,14.0,1,11.2,no,2025-04-27
+247,Yuki Nakamura,Spain,Male,29,Mathematics,7.5,2,5.1,no,2025-06-28
+248,Mateo Rodriguez,France,Female,28,Physics,19.0,3,18.1,yes,2025-07-18
+249,Chloe Martin,Nigeria,Female,25,Algorithms,1.9,3,7.5,no,2025-06-25
+250,Mateo Rodriguez,Canada,Female,18,Mathematics,8.1,2,18.9,yes,2025-10-08
+251,Victor Dubois,Pakistan,Female,18,Mathematics,11.3,3,17.6,yes,2025-06-08
+252,Mateo Rodriguez,Canada,Male,22,Mathematics,18.6,2,8.0,no,2025-03-21
+253,Sofia Petrova,Spain,Male,26,Data Science,7.1,2,5.8,no,2025-04-06
+254,Ananya Sharma,Nigeria,Female,25,Mathematics,9.5,1,9.7,no,2025-08-30
+255,Fatima Alzahra,Nigeria,Male,18,Cybersecurity,11.0,1,,no,2025-12-05
+256,Diego Fernandez,Mexico,Female,22,Mathematics,18.8,2,13.3,yes,2025-11-16
+257,Chen Wei,Chile,Female,21,Mathematics,5.6,2,14.3,yes,2025-01-13
+258,Samuel Okafor,Mexico,Male,22,Mathematics,11.8,3,19.4,yes,2025-02-12
+259,Priya Patel,Canada,Male,30,Physics,6.8,2,5.7,no,2025-03-12
+260,Aisha Hassan,Russia,Female,19,Statistics,6.3,1,7.6,no,2025-01-08
+261,Chen Wei,USA,Female,26,Physics,5.4,1,8.5,no,2025-10-06
+262,Zara Khan,Canada,Male,30,Data Science,3.7,1,17.5,yes,2025-05-05
+263,Fatima Alzahra,Philippines,Female,23,Data Science,7.6,1,9.6,no,2025-08-25
+264,Alejandro Cruz,USA,Male,24,Physics,6.1,2,19.7,yes,2025-11-06
+265,Yuki Nakamura,Sweden,Male,19,Cybersecurity,9.2,1,11.3,no,2025-08-04
+266,Mei Lin,Peru,Female,23,Physics,7.8,1,13.6,yes,2025-03-17
+267,Sara Svensson,Brazil,Female,20,Data Science,2.1,1,7.5,no,2025-02-13
+268,Alejandro Cruz,Germany,Male,27,Statistics,4.8,3,9.7,no,2025-04-17
+269,Kwame Mensah,Sweden,Male,27,Data Science,8.1,3,14.4,yes,2025-04-11
+270,Carlos Gutierrez,Turkey,Male,21,Mathematics,13.3,2,7.7,no,2025-04-20
+271,Sofia Petrova,Argentina,Female,28,Cybersecurity,2.8,2,9.3,no,2025-03-27
+272,Zara Khan,Sweden,Male,22,Data Science,5.5,1,8.3,no,2025-10-04
+273,Sara Svensson,USA,Male,24,Data Science,18.1,1,10.6,no,2025-10-03
+274,Priya Patel,Nigeria,Female,28,Cybersecurity,2.7,1,7.1,no,2025-04-14
+275,Aisha Hassan,China,Female,27,Computer Science,6.0,1,7.4,no,2025-10-18
+276,Mateo Rodriguez,France,Female,27,Networking,1.6,3,9.3,no,2025-05-16
+277,Sara Svensson,China,Female,21,Physics,15.4,3,16.3,yes,2025-03-13
+278,Sara Svensson,USA,Male,28,Physics,8.8,1,7.0,no,2025-07-23
+279,Pedro Alvarez,Chile,Female,27,Cybersecurity,14.7,3,13.0,yes,2025-12-18
+280,Priya Patel,Pakistan,Male,30,Mathematics,16.9,3,16.2,yes,2025-04-03
+281,Sofia Petrova,Japan,Female,27,Cybersecurity,15.4,1,9.7,no,2025-07-22
+282,Zara Khan,Canada,Female,19,Physics,11.0,3,10.9,no,2025-02-10
+283,Fatima Alzahra,Sweden,Male,29,Computer Science,1.2,2,13.0,yes,2025-10-22
+284,Alejandro Cruz,Germany,Male,18,Mathematics,14.6,2,7.7,no,2025-03-26
+285,Liam OConnor,China,Male,18,Mathematics,5.3,3,5.3,no,2025-06-24
+286,Sara Svensson,Brazil,Female,30,Data Science,12.8,3,13.1,yes,2025-11-02
+287,Emma Williams,Peru,Male,30,Physics,12.4,1,7.6,no,2025-11-15
+288,Liam OConnor,China,Female,26,Mathematics,5.5,3,18.9,yes,2025-12-11
+289,Emma Williams,Russia,Male,21,Networking,14.7,3,12.6,yes,2025-05-24
+290,Carlos Gutierrez,Russia,Male,28,Physics,9.1,2,13.5,yes,2025-11-27
+291,Chloe Martin,Argentina,Female,26,Computer Science,17.2,3,13.2,yes,2025-06-06
+292,Chen Wei,Argentina,Female,28,Algorithms,4.2,2,16.6,yes,2025-04-01
+293,Pedro Alvarez,Canada,Female,29,Statistics,18.1,2,13.1,yes,2025-12-04
+294,Aisha Hassan,Russia,Female,23,Mathematics,5.4,2,10.9,no,2025-10-23
+295,Ananya Sharma,Argentina,Female,18,Computer Science,15.7,3,9.9,no,2025-01-08
+296,Pedro Alvarez,France,Male,25,Cybersecurity,19.7,2,12.2,yes,2025-09-04
+297,Samuel Okafor,Peru,Male,23,Computer Science,10.6,2,10.5,no,2025-12-17
+298,Ivan Ivanov,Nigeria,Male,24,Data Science,15.5,2,14.4,yes,2025-08-08
+299,Ivan Ivanov,Japan,Male,30,Algorithms,14.9,2,8.4,no,2025-05-02
+300,Hiroshi Tanaka,Turkey,Male,30,Statistics,3.0,1,8.9,no,2025-12-22
+301,Chen Wei,Chile,Female,22,Statistics,5.6,3,,no,2025-12-09
+302,Omar Haddad,Philippines,Male,29,Computer Science,6.6,1,17.8,yes,2025-10-19
+303,Yuki Nakamura,Chile,Male,28,Networking,14.7,2,11.1,no,2025-06-07
+304,Lucas Silva,Philippines,Female,30,Mathematics,8.6,2,8.1,no,2025-03-27
+305,Chen Wei,Peru,Female,18,Algorithms,3.8,2,18.2,yes,2025-12-04
+306,Alejandro Cruz,India,Female,25,Computer Science,13.8,1,17.1,yes,2025-06-20
+307,Laura Garcia,Pakistan,Female,28,Statistics,11.9,1,8.7,no,2025-03-29
+308,Amir Rahimi,Mexico,Male,19,Mathematics,15.1,2,,no,2025-01-24
+309,Mateo Rodriguez,Philippines,Female,24,Algorithms,13.2,3,12.1,yes,2025-07-15
+310,Emma Williams,Japan,Male,29,Computer Science,7.5,3,5.5,no,2025-12-29
+311,Carlos Gutierrez,Chile,Male,20,Algorithms,5.8,3,19.8,yes,2025-07-10
+312,Samuel Okafor,Mexico,Female,23,Algorithms,7.3,2,17.0,yes,2025-05-24
+313,Diego Fernandez,Russia,Male,19,Mathematics,19.1,3,17.5,yes,2025-11-07
+314,Lucas Silva,Chile,Male,23,Algorithms,15.3,1,7.0,no,2025-04-22
+315,Carlos Gutierrez,Germany,Male,22,Computer Science,12.7,1,16.8,yes,2025-12-09
+316,Zara Khan,Pakistan,Male,28,Computer Science,18.5,1,10.9,no,2025-09-01
+317,Aisha Hassan,USA,Male,30,Physics,19.8,1,17.1,yes,2025-07-23
+318,Pedro Alvarez,Brazil,Female,25,Algorithms,5.9,2,15.9,yes,2025-09-15
+319,Ivan Ivanov,Philippines,Female,26,Cybersecurity,1.9,2,5.1,no,2025-01-26
+320,Laura Garcia,Spain,Male,30,Statistics,5.0,1,10.6,no,2025-10-11
+321,Chloe Martin,France,Male,30,Physics,13.9,1,14.1,yes,2025-02-13
+322,Mei Lin,Peru,Female,28,Algorithms,2.1,1,19.9,yes,2025-06-14
+323,Emma Williams,Turkey,Female,26,Algorithms,15.1,2,11.2,no,2025-06-09
+324,Noah Johnson,France,Male,28,Physics,6.8,3,16.1,yes,2025-03-28
+325,Zara Khan,Brazil,Male,27,Computer Science,9.4,2,11.8,no,2025-07-15
+326,Laura Garcia,Spain,Female,26,Physics,9.4,3,18.1,yes,2025-10-05
+327,Daniel Kim,Sweden,Male,21,Data Science,6.3,2,9.0,no,2025-08-28
+328,Pedro Alvarez,Chile,Male,30,Statistics,1.3,1,12.5,yes,2025-10-08
+329,Ananya Sharma,Sweden,Female,27,Data Science,14.4,1,11.8,no,2025-11-18
+330,Ali Demir,Canada,Female,27,Cybersecurity,11.2,3,15.4,yes,2025-12-02
+331,Hiroshi Tanaka,Russia,Male,20,Data Science,13.1,3,,no,2025-02-11
+332,Sara Svensson,Sweden,Male,30,Physics,3.0,3,7.5,no,2025-06-01
+333,Sara Svensson,Philippines,Female,25,Computer Science,18.7,2,18.2,yes,2025-05-12
+334,Carlos Gutierrez,Turkey,Female,21,Statistics,12.2,2,5.6,no,2025-07-09
+335,Diego Fernandez,Egypt,Male,18,Statistics,18.3,3,,no,2025-10-11
+336,Victor Dubois,Germany,Male,20,Mathematics,19.7,2,10.3,no,2025-05-17
+337,Liam OConnor,Pakistan,Male,21,Cybersecurity,5.7,3,17.5,yes,2025-05-08
+338,Daniel Kim,Egypt,Female,21,Data Science,19.8,2,11.8,no,2025-10-05
+339,Pedro Alvarez,India,Female,29,Cybersecurity,13.0,2,19.5,yes,2025-12-01
+340,Priya Patel,France,Male,22,Computer Science,5.1,3,16.5,yes,2025-10-17
+341,Pedro Alvarez,Spain,Female,24,Data Science,14.2,2,13.3,yes,2025-04-16
+342,Chloe Martin,Turkey,Female,19,Algorithms,4.9,1,7.1,no,2025-10-27
+343,Ali Demir,USA,Female,28,Physics,15.1,1,17.6,yes,2025-11-15
+344,Alejandro Cruz,Spain,Female,20,Networking,4.7,1,,no,2025-02-22
+345,Chloe Martin,Chile,Female,27,Computer Science,10.3,1,15.2,yes,2025-03-29
+346,Hiroshi Tanaka,France,Male,22,Mathematics,1.4,1,7.9,no,2025-01-03
+347,Diego Fernandez,Germany,Male,18,Physics,14.7,3,16.4,yes,2025-07-12
+348,Zara Khan,Germany,Female,25,Computer Science,17.0,1,11.7,no,2025-06-24
+349,Ali Demir,Spain,Female,27,Computer Science,15.1,3,15.7,yes,2025-10-19
+350,Hiroshi Tanaka,Spain,Male,18,Algorithms,2.6,3,18.1,yes,2025-03-24
+351,Pedro Alvarez,Argentina,Female,24,Statistics,12.6,2,15.5,yes,2025-11-17
+352,Sara Svensson,Germany,Female,30,Computer Science,17.5,1,12.4,yes,2025-09-12
+353,Emma Williams,Argentina,Male,26,Networking,18.9,1,17.5,yes,2025-04-22
+354,Hiroshi Tanaka,Philippines,Female,19,Algorithms,4.4,1,13.1,yes,2025-02-06
+355,Daniel Kim,Chile,Male,22,Data Science,15.3,1,10.1,no,2025-10-19
+356,Mei Lin,China,Male,21,Algorithms,14.2,2,18.7,yes,2025-05-06
+357,Mateo Rodriguez,Turkey,Female,21,Mathematics,2.5,3,16.5,yes,2025-11-11
+358,Daniel Kim,USA,Female,26,Networking,6.2,1,11.9,no,2025-12-10
+359,Omar Haddad,Germany,Male,28,Networking,13.1,3,18.4,yes,2025-04-26
+360,Chen Wei,Japan,Male,29,Networking,10.0,2,15.7,yes,2025-07-16
+361,Mei Lin,USA,Female,30,Mathematics,17.5,1,10.8,no,2025-07-07
+362,Chloe Martin,Spain,Male,26,Computer Science,18.8,1,5.5,no,2025-02-15
+363,Omar Haddad,China,Male,25,Statistics,10.5,2,8.0,no,2025-09-16
+364,Daniel Kim,Japan,Male,28,Data Science,9.8,2,13.1,yes,2025-04-04
+365,Mei Lin,Pakistan,Male,29,Networking,10.6,3,7.2,no,2025-09-03
+366,Aisha Hassan,Argentina,Female,18,Statistics,13.6,2,16.5,yes,2025-05-01
+367,Samuel Okafor,Argentina,Female,20,Physics,7.6,1,17.7,yes,2025-02-02
+368,Noah Johnson,Sweden,Female,30,Computer Science,2.4,3,11.6,no,2025-10-30
+369,Priya Patel,Sweden,Female,27,Statistics,16.9,3,10.5,no,2025-06-27
+370,Yuki Nakamura,Philippines,Female,30,Physics,3.5,2,20.0,yes,2025-12-06
+371,Mei Lin,USA,Female,30,Physics,10.4,1,19.9,yes,2025-03-28
+372,Laura Garcia,Philippines,Male,29,Computer Science,19.6,1,19.2,yes,2025-07-05
+373,Aisha Hassan,Peru,Male,27,Networking,7.4,3,16.7,yes,2025-08-24
+374,Victor Dubois,Argentina,Male,19,Networking,17.7,1,6.9,no,2025-06-02
+375,Zara Khan,Russia,Male,23,Cybersecurity,3.6,3,5.0,no,2025-11-21
+376,Laura Garcia,Pakistan,Female,24,Physics,6.6,2,8.0,no,2025-11-08
+377,Hiroshi Tanaka,Peru,Female,28,Computer Science,18.8,1,13.7,yes,2025-01-03
+378,Mateo Rodriguez,Nigeria,Female,24,Physics,10.2,3,18.1,yes,2025-08-20
+379,Fatima Alzahra,Spain,Male,26,Computer Science,9.4,1,16.5,yes,2025-05-15
+380,Alejandro Cruz,Nigeria,Female,28,Data Science,5.4,2,19.7,yes,2025-02-20
+381,Mateo Rodriguez,Germany,Female,28,Data Science,13.2,3,7.1,no,2025-05-12
+382,Daniel Kim,Mexico,Female,29,Networking,17.3,3,15.5,yes,2025-03-03
+383,Victor Dubois,France,Female,25,Cybersecurity,17.5,3,8.5,no,2025-05-17
+384,Kwame Mensah,Chile,Female,19,Physics,15.5,3,5.3,no,2025-10-09
+385,Chloe Martin,India,Male,28,Statistics,11.9,2,16.6,yes,2025-10-17
+386,Fatima Alzahra,Argentina,Female,29,Cybersecurity,3.5,2,18.0,yes,2025-05-21
+387,Emma Williams,France,Male,27,Mathematics,17.0,3,10.5,no,2025-02-26
+388,Amir Rahimi,USA,Male,27,Data Science,4.8,3,,no,2025-11-18
+389,Kwame Mensah,Russia,Female,24,Networking,11.3,2,9.2,no,2025-01-02
+390,Amir Rahimi,India,Female,30,Computer Science,17.0,2,14.1,yes,2025-12-20
+391,Mei Lin,Nigeria,Female,29,Data Science,14.1,1,16.1,yes,2025-04-02
+392,Alejandro Cruz,Canada,Male,24,Computer Science,11.4,2,7.7,no,2025-04-18
+393,Diego Fernandez,Egypt,Male,28,Algorithms,1.2,2,,no,2025-08-21
+394,Mateo Rodriguez,Mexico,Male,19,Mathematics,16.8,2,9.4,no,2025-01-04
+395,Priya Patel,Pakistan,Male,29,Cybersecurity,14.0,3,,no,2025-12-28
+396,Chloe Martin,Canada,Male,29,Data Science,15.2,3,9.3,no,2025-05-24
+397,Diego Fernandez,Pakistan,Female,30,Algorithms,1.4,3,8.6,no,2025-02-07
+398,Pedro Alvarez,Pakistan,Female,25,Computer Science,5.4,1,9.8,no,2025-03-04
+399,Ali Demir,Peru,Female,24,Computer Science,2.2,2,16.2,yes,2025-07-13
+400,Sara Svensson,India,Male,22,Mathematics,4.9,2,12.0,yes,2025-09-15
+401,Diego Fernandez,Turkey,Male,20,Physics,7.7,3,13.8,yes,2025-11-20
+402,Carlos Gutierrez,Turkey,Male,23,Physics,7.4,1,7.6,no,2025-05-23
+403,Ali Demir,Sweden,Female,21,Computer Science,2.0,2,13.9,yes,2025-04-26
+404,Emma Williams,Russia,Female,29,Cybersecurity,17.9,3,13.5,yes,2025-08-22
+405,Carlos Gutierrez,Spain,Male,24,Mathematics,16.3,1,12.6,yes,2025-10-10
+406,Sofia Petrova,Sweden,Female,20,Data Science,12.5,2,5.1,no,2025-07-06
+407,Victor Dubois,Turkey,Female,25,Cybersecurity,2.9,1,11.8,no,2025-12-31
+408,Mateo Rodriguez,USA,Male,28,Physics,1.1,3,16.5,yes,2025-12-05
+409,Mei Lin,Chile,Female,21,Statistics,7.6,1,15.4,yes,2025-11-04
+410,Carlos Gutierrez,France,Female,27,Networking,1.1,3,9.6,no,2025-04-29
+411,Mei Lin,China,Male,26,Computer Science,14.6,1,14.1,yes,2025-08-17
+412,Mei Lin,Sweden,Female,23,Cybersecurity,10.3,2,12.8,yes,2025-07-31
+413,Daniel Kim,Spain,Male,28,Cybersecurity,1.7,2,17.0,yes,2025-07-02
+414,Aisha Hassan,Mexico,Female,28,Cybersecurity,16.4,2,,no,2025-03-12
+415,Zara Khan,Sweden,Male,30,Cybersecurity,17.5,1,14.1,yes,2025-09-29
+416,Priya Patel,Brazil,Female,24,Computer Science,2.3,3,15.3,yes,2025-12-01
+417,Ivan Ivanov,Brazil,Female,21,Computer Science,4.8,2,18.3,yes,2025-09-12
+418,Fatima Alzahra,Nigeria,Male,24,Algorithms,8.6,2,17.9,yes,2025-01-10
+419,Priya Patel,USA,Female,21,Physics,13.6,3,14.2,yes,2025-06-25
+420,Mei Lin,Sweden,Female,29,Mathematics,5.5,2,17.5,yes,2025-10-23
+421,Pedro Alvarez,USA,Male,29,Physics,14.7,3,6.8,no,2025-09-05
+422,Ali Demir,Spain,Female,24,Networking,19.6,1,11.4,no,2025-09-22
+423,Sofia Petrova,Argentina,Male,27,Statistics,10.0,1,10.5,no,2025-02-04
+424,Pedro Alvarez,Mexico,Female,18,Data Science,8.5,1,14.8,yes,2025-11-26
+425,Emma Williams,Germany,Female,23,Networking,18.6,3,16.6,yes,2025-11-21
+426,Noah Johnson,Mexico,Female,23,Algorithms,8.0,1,18.3,yes,2025-10-26
+427,Pedro Alvarez,India,Female,25,Physics,16.4,3,12.6,yes,2025-01-21
+428,Alejandro Cruz,China,Male,19,Computer Science,3.4,3,18.6,yes,2025-05-13
+429,Sofia Petrova,Pakistan,Female,24,Computer Science,2.2,1,6.9,no,2025-04-06
+430,Zara Khan,Nigeria,Male,25,Data Science,3.7,2,18.7,yes,2025-03-15
+431,Samuel Okafor,Russia,Male,28,Cybersecurity,6.5,3,14.4,yes,2025-01-08
+432,Samuel Okafor,Germany,Male,25,Data Science,18.4,3,7.2,no,2025-10-09
+433,Alejandro Cruz,Sweden,Female,21,Networking,17.8,3,5.9,no,2025-04-17
+434,Samuel Okafor,Turkey,Male,30,Computer Science,14.5,3,19.8,yes,2025-07-13
+435,Amir Rahimi,Japan,Female,25,Computer Science,9.1,2,15.6,yes,2025-09-21
+436,Aisha Hassan,Sweden,Male,24,Statistics,16.4,3,6.6,no,2025-12-09
+437,Mateo Rodriguez,Chile,Female,18,Physics,13.1,3,14.6,yes,2025-10-30
+438,Kwame Mensah,China,Female,25,Statistics,12.3,3,19.0,yes,2025-01-11
+439,Sofia Petrova,Canada,Male,19,Statistics,12.1,2,12.6,yes,2025-07-12
+440,Ivan Ivanov,Brazil,Female,28,Computer Science,9.1,1,16.3,yes,2025-05-11
+441,Samuel Okafor,Brazil,Male,28,Cybersecurity,7.4,2,17.0,yes,2025-10-28
+442,Alejandro Cruz,Japan,Male,20,Algorithms,12.5,3,6.0,no,2025-04-06
+443,Hiroshi Tanaka,Brazil,Male,27,Physics,6.0,1,5.7,no,2025-03-04
+444,Mei Lin,USA,Male,19,Networking,18.5,3,16.0,yes,2025-01-21
+445,Yuki Nakamura,Germany,Female,25,Networking,1.2,1,12.0,yes,2025-09-16
+446,Mei Lin,India,Female,23,Networking,14.2,3,9.7,no,2025-12-03
+447,Ivan Ivanov,Canada,Female,27,Mathematics,3.5,2,12.0,yes,2025-05-05
+448,Noah Johnson,Argentina,Male,27,Data Science,1.6,2,13.6,yes,2025-04-12
+449,Ananya Sharma,Brazil,Female,20,Cybersecurity,14.3,2,12.1,yes,2025-04-13
+450,Alejandro Cruz,China,Male,20,Data Science,8.6,2,9.0,no,2025-04-21
+451,Samuel Okafor,USA,Female,20,Mathematics,4.9,1,5.3,no,2025-12-23
+452,Daniel Kim,Spain,Male,20,Data Science,1.8,3,8.3,no,2025-08-08
+453,Emma Williams,Sweden,Female,19,Networking,9.0,2,11.1,no,2025-06-04
+454,Victor Dubois,France,Male,24,Mathematics,13.4,1,5.2,no,2025-05-21
+455,Chloe Martin,Brazil,Male,29,Networking,3.7,3,16.3,yes,2025-04-21
+456,Hiroshi Tanaka,Japan,Female,24,Mathematics,16.6,1,14.1,yes,2025-02-11
+457,Victor Dubois,France,Male,22,Statistics,18.3,3,13.1,yes,2025-03-14
+458,Victor Dubois,Spain,Male,19,Algorithms,16.0,3,7.9,no,2025-01-09
+459,Mateo Rodriguez,Egypt,Male,19,Data Science,6.7,3,19.2,yes,2025-02-21
+460,Ivan Ivanov,Brazil,Female,28,Networking,11.6,3,17.4,yes,2025-08-04
+461,Emma Williams,Brazil,Female,28,Networking,12.4,3,7.8,no,2025-04-18
+462,Omar Haddad,Spain,Male,23,Algorithms,6.6,2,5.0,no,2025-06-13
+463,Laura Garcia,Canada,Female,28,Computer Science,14.2,2,12.0,yes,2025-12-29
+464,Chen Wei,Sweden,Male,29,Computer Science,16.4,2,11.8,no,2025-04-26
+465,Laura Garcia,Egypt,Female,29,Networking,18.7,3,7.4,no,2025-09-05
+466,Mei Lin,Mexico,Male,25,Algorithms,16.8,1,17.2,yes,2025-05-19
+467,Kwame Mensah,Canada,Male,22,Algorithms,6.8,3,18.6,yes,2025-03-04
+468,Lucas Silva,Pakistan,Male,24,Physics,10.9,3,15.8,yes,2025-10-10
+469,Sofia Petrova,Canada,Male,20,Cybersecurity,8.6,1,12.9,yes,2025-08-16
+470,Emma Williams,Russia,Male,20,Physics,14.2,2,13.7,yes,2025-01-26
+471,Daniel Kim,Turkey,Female,27,Mathematics,2.1,2,11.8,no,2025-01-23
+472,Laura Garcia,Egypt,Male,26,Computer Science,12.0,2,7.2,no,2025-02-24
+473,Emma Williams,China,Male,21,Networking,12.9,2,11.6,no,2025-08-17
+474,Sofia Petrova,Brazil,Male,20,Statistics,3.7,3,17.1,yes,2025-07-06
+475,Daniel Kim,France,Male,26,Data Science,17.0,2,14.0,yes,2025-03-19
+476,Omar Haddad,Chile,Female,23,Networking,9.6,1,14.7,yes,2025-10-19
+477,Chen Wei,Japan,Male,24,Data Science,12.1,3,17.5,yes,2025-02-24
+478,Chen Wei,France,Female,18,Mathematics,5.7,2,6.8,no,2025-08-17
+479,Carlos Gutierrez,Spain,Male,29,Statistics,14.4,1,5.5,no,2025-02-28
+480,Samuel Okafor,Russia,Female,26,Computer Science,10.9,1,11.4,no,2025-09-15
+481,Daniel Kim,Spain,Female,25,Physics,4.4,3,14.1,yes,2025-01-22
+482,Hiroshi Tanaka,Egypt,Male,25,Algorithms,4.3,3,15.5,yes,2025-09-07
+483,Diego Fernandez,Egypt,Female,21,Physics,17.6,2,10.5,no,2025-07-30
+484,Laura Garcia,Peru,Female,29,Data Science,17.6,3,14.4,yes,2025-01-14
+485,Kwame Mensah,Brazil,Male,30,Cybersecurity,11.5,2,19.4,yes,2025-04-15
+486,Hiroshi Tanaka,India,Male,21,Computer Science,19.6,1,7.3,no,2025-01-05
+487,Sofia Petrova,Sweden,Male,24,Algorithms,10.5,2,7.9,no,2025-03-26
+488,Kwame Mensah,India,Female,26,Computer Science,8.1,2,14.8,yes,2025-12-23
+489,Amir Rahimi,Turkey,Male,29,Computer Science,14.1,3,,no,2025-03-08
+490,Ivan Ivanov,Chile,Male,27,Physics,8.6,1,10.5,no,2025-08-30
+491,Sofia Petrova,Philippines,Male,24,Physics,7.3,2,12.1,yes,2025-08-02
+492,Lucas Silva,Philippines,Male,27,Computer Science,12.8,2,19.5,yes,2025-04-20
+493,Emma Williams,Chile,Male,26,Physics,13.9,3,9.4,no,2025-04-30
+494,Sofia Petrova,Chile,Female,18,Networking,6.7,2,12.0,yes,2025-02-01
+495,Amir Rahimi,Nigeria,Female,19,Statistics,3.5,2,9.5,no,2025-06-11
+496,Ananya Sharma,USA,Female,29,Data Science,3.1,1,5.8,no,2025-03-02
+497,Yuki Nakamura,Russia,Female,25,Mathematics,7.5,3,6.6,no,2025-10-02
+498,Noah Johnson,India,Male,20,Algorithms,14.0,2,19.5,yes,2025-01-26
+499,Amir Rahimi,Egypt,Female,21,Physics,15.8,3,11.9,no,2025-05-18
+500,Zara Khan,Chile,Male,21,Algorithms,10.8,2,16.5,yes,2025-04-23
+501,Ananya Sharma,Argentina,Male,28,Computer Science,2.3,1,13.0,yes,2025-01-05
+502,Alejandro Cruz,Philippines,Female,19,Data Science,2.4,3,17.3,yes,2025-08-18
+503,Fatima Alzahra,Pakistan,Female,26,Computer Science,13.0,3,9.0,no,2025-01-25
+504,Noah Johnson,Nigeria,Female,26,Statistics,11.9,2,13.4,yes,2025-05-23
+505,Zara Khan,USA,Male,22,Cybersecurity,5.4,2,19.7,yes,2025-07-25
+506,Noah Johnson,Sweden,Female,21,Algorithms,1.5,3,7.3,no,2025-08-09
+507,Pedro Alvarez,Brazil,Male,28,Networking,8.3,1,16.5,yes,2025-10-12
+508,Mateo Rodriguez,Russia,Male,19,Networking,5.0,2,18.2,yes,2025-08-12
+509,Victor Dubois,Canada,Female,24,Cybersecurity,12.1,3,,no,2025-07-24
+510,Priya Patel,Japan,Male,20,Algorithms,14.6,3,11.5,no,2025-12-06
+511,Sara Svensson,Germany,Female,21,Networking,5.0,3,12.2,yes,2025-04-15
+512,Ivan Ivanov,Germany,Male,25,Physics,7.2,1,11.5,no,2025-02-04
+513,Liam OConnor,Japan,Female,27,Cybersecurity,19.2,2,12.8,yes,2025-06-10
+514,Alejandro Cruz,Nigeria,Female,25,Algorithms,14.5,3,5.0,no,2025-07-05
+515,Lucas Silva,Argentina,Male,29,Networking,8.8,2,6.7,no,2025-03-14
+516,Diego Fernandez,Sweden,Female,27,Data Science,10.5,2,,no,2025-09-19
+517,Chloe Martin,Philippines,Female,19,Algorithms,19.3,2,15.3,yes,2025-09-07
+518,Pedro Alvarez,Chile,Male,29,Mathematics,16.1,1,9.6,no,2025-06-07
+519,Fatima Alzahra,Russia,Male,25,Data Science,9.2,2,16.8,yes,2025-12-07
+520,Ananya Sharma,India,Male,22,Networking,13.7,2,14.6,yes,2025-07-01
+521,Noah Johnson,Mexico,Male,30,Computer Science,1.6,2,12.1,yes,2025-06-20
+522,Pedro Alvarez,Brazil,Male,27,Statistics,19.0,3,6.6,no,2025-04-23
+523,Liam OConnor,India,Female,18,Physics,16.3,3,10.9,no,2025-02-09
+524,Ali Demir,Argentina,Female,24,Data Science,18.2,1,15.1,yes,2025-07-05
+525,Sofia Petrova,Japan,Female,30,Cybersecurity,10.7,2,19.2,yes,2025-12-11
+526,Kwame Mensah,Japan,Female,29,Physics,16.0,1,9.7,no,2025-04-07
+527,Kwame Mensah,Japan,Female,28,Cybersecurity,19.9,2,9.5,no,2025-06-02
+528,Hiroshi Tanaka,China,Female,28,Cybersecurity,1.2,2,8.8,no,2025-04-16
+529,Amir Rahimi,Egypt,Female,28,Algorithms,18.6,1,10.1,no,2025-02-11
+530,Emma Williams,Philippines,Male,24,Cybersecurity,13.6,1,19.4,yes,2025-03-20
+531,Diego Fernandez,Nigeria,Female,24,Networking,1.1,2,19.1,yes,2025-09-11
+532,Emma Williams,Mexico,Male,22,Physics,1.7,2,11.6,no,2025-01-29
+533,Hiroshi Tanaka,Spain,Female,24,Networking,3.3,3,9.2,no,2025-06-08
+534,Hiroshi Tanaka,Mexico,Female,22,Physics,9.4,1,6.1,no,2025-07-10
+535,Samuel Okafor,Germany,Male,26,Networking,3.4,2,17.2,yes,2025-10-19
+536,Alejandro Cruz,Mexico,Male,27,Computer Science,5.6,3,11.5,no,2025-12-20
+537,Daniel Kim,Spain,Female,24,Networking,15.1,2,8.0,no,2025-06-15
+538,Fatima Alzahra,Japan,Male,27,Algorithms,5.9,1,,no,2025-09-20
+539,Yuki Nakamura,China,Male,20,Cybersecurity,18.1,2,14.9,yes,2025-05-04
+540,Pedro Alvarez,Sweden,Male,21,Mathematics,3.3,3,18.5,yes,2025-07-19
+541,Liam OConnor,Brazil,Male,21,Networking,4.9,1,18.5,yes,2025-05-11
+542,Laura Garcia,Japan,Female,24,Data Science,18.5,3,10.6,no,2025-04-02
+543,Ananya Sharma,Pakistan,Female,26,Physics,2.3,3,5.2,no,2025-10-31
+544,Chen Wei,Argentina,Female,20,Algorithms,8.5,2,12.4,yes,2025-05-22
+545,Amir Rahimi,India,Male,25,Data Science,1.4,2,17.1,yes,2025-11-27
+546,Sofia Petrova,Egypt,Male,27,Networking,2.2,2,8.8,no,2025-04-30
+547,Sara Svensson,Mexico,Male,25,Mathematics,14.5,2,8.8,no,2025-10-22
+548,Sofia Petrova,Pakistan,Female,26,Statistics,10.0,2,14.8,yes,2025-03-30
+549,Sara Svensson,Spain,Female,20,Networking,17.5,2,12.6,yes,2025-04-23
+550,Fatima Alzahra,USA,Male,26,Computer Science,14.8,3,18.1,yes,2025-11-15
+551,Noah Johnson,Pakistan,Female,25,Mathematics,13.2,2,13.0,yes,2025-05-18
+552,Laura Garcia,Chile,Female,20,Mathematics,14.5,1,10.7,no,2025-11-12
+553,Aisha Hassan,Chile,Male,27,Data Science,9.8,1,8.7,no,2025-11-27
+554,Noah Johnson,Argentina,Female,25,Mathematics,17.0,3,13.4,yes,2025-03-20
+555,Ivan Ivanov,Philippines,Male,22,Data Science,16.0,2,18.8,yes,2025-09-16
+556,Diego Fernandez,Germany,Female,18,Networking,15.3,3,10.8,no,2025-03-15
+557,Yuki Nakamura,USA,Female,24,Networking,8.5,2,12.1,yes,2025-11-28
+558,Ananya Sharma,Pakistan,Female,26,Physics,19.7,1,18.1,yes,2025-03-24
+559,Victor Dubois,Sweden,Male,24,Networking,8.5,1,5.9,no,2025-03-30
+560,Kwame Mensah,Spain,Male,24,Mathematics,6.3,3,17.4,yes,2025-03-24
+561,Alejandro Cruz,China,Female,19,Networking,13.2,3,12.7,yes,2025-07-19
+562,Ivan Ivanov,India,Male,29,Cybersecurity,3.0,3,12.0,yes,2025-10-31
+563,Victor Dubois,USA,Male,19,Networking,17.7,1,16.7,yes,2025-06-18
+564,Victor Dubois,Japan,Male,30,Statistics,14.5,1,10.9,no,2025-06-22
+565,Priya Patel,France,Male,23,Networking,17.5,3,5.9,no,2025-11-26
+566,Ali Demir,Canada,Female,29,Computer Science,15.1,3,18.9,yes,2025-11-17
+567,Ivan Ivanov,Brazil,Female,25,Networking,2.8,1,,no,2025-01-06
+568,Liam OConnor,China,Male,20,Algorithms,3.7,1,5.7,no,2025-01-29
+569,Carlos Gutierrez,USA,Male,24,Mathematics,17.3,1,6.9,no,2025-09-25
+570,Lucas Silva,Russia,Male,20,Statistics,16.7,1,7.0,no,2025-10-25
+571,Alejandro Cruz,Chile,Male,18,Physics,13.3,1,13.8,yes,2025-01-21
+572,Ivan Ivanov,Germany,Male,20,Cybersecurity,16.7,2,16.1,yes,2025-06-10
+573,Zara Khan,Nigeria,Male,25,Computer Science,4.1,3,19.8,yes,2025-04-19
+574,Carlos Gutierrez,Egypt,Male,26,Networking,13.6,3,15.9,yes,2025-08-19
+575,Fatima Alzahra,Japan,Female,28,Cybersecurity,2.5,1,7.2,no,2025-01-30
+576,Ananya Sharma,Argentina,Female,30,Networking,18.0,3,19.2,yes,2025-06-26
+577,Kwame Mensah,Brazil,Male,24,Mathematics,2.0,3,16.5,yes,2025-11-14
+578,Omar Haddad,Pakistan,Male,25,Physics,4.6,3,6.2,no,2025-01-19
+579,Sofia Petrova,Japan,Male,18,Cybersecurity,4.2,1,12.5,yes,2025-07-29
+580,Lucas Silva,Egypt,Female,22,Computer Science,7.7,1,16.5,yes,2025-07-10
+581,Lucas Silva,Brazil,Female,22,Mathematics,12.7,1,17.8,yes,2025-04-07
+582,Yuki Nakamura,Canada,Female,26,Physics,8.3,1,12.8,yes,2025-02-01
+583,Laura Garcia,Germany,Female,24,Data Science,7.8,1,7.5,no,2025-06-18
+584,Lucas Silva,Mexico,Female,29,Data Science,8.7,1,10.3,no,2025-07-03
+585,Sara Svensson,Nigeria,Female,22,Mathematics,14.6,1,10.6,no,2025-09-03
+586,Liam OConnor,Egypt,Female,26,Networking,16.5,1,,no,2025-08-29
+587,Daniel Kim,Sweden,Male,26,Mathematics,3.7,3,19.8,yes,2025-06-26
+588,Hiroshi Tanaka,Sweden,Female,28,Algorithms,19.4,2,18.8,yes,2025-07-20
+589,Kwame Mensah,Egypt,Male,23,Physics,8.8,2,9.9,no,2025-07-19
+590,Sofia Petrova,France,Male,24,Data Science,6.8,2,12.8,yes,2025-08-29
+591,Noah Johnson,Canada,Female,27,Computer Science,3.5,1,15.6,yes,2025-06-29
+592,Hiroshi Tanaka,Egypt,Male,24,Networking,7.3,1,8.0,no,2025-01-22
+593,Liam OConnor,Chile,Male,21,Algorithms,11.5,3,16.4,yes,2025-07-16
+594,Diego Fernandez,Germany,Female,21,Algorithms,12.3,1,10.5,no,2025-02-22
+595,Laura Garcia,Germany,Male,22,Physics,10.8,1,17.2,yes,2025-11-13
+596,Kwame Mensah,Japan,Female,18,Networking,16.9,1,16.1,yes,2025-05-03
+597,Alejandro Cruz,Japan,Female,23,Physics,4.5,2,,no,2025-12-30
+598,Ananya Sharma,Germany,Female,25,Networking,18.0,2,16.4,yes,2025-05-31
+599,Sofia Petrova,USA,Female,25,Cybersecurity,6.4,3,17.4,yes,2025-07-01
+600,Fatima Alzahra,Germany,Female,27,Computer Science,15.5,2,7.5,no,2025-09-18
+601,Lucas Silva,Spain,Male,24,Networking,19.5,1,5.4,no,2025-02-26
+602,Kwame Mensah,Spain,Female,29,Statistics,12.5,3,19.8,yes,2025-07-08
+603,Lucas Silva,India,Female,22,Cybersecurity,7.5,1,18.4,yes,2025-07-07
+604,Omar Haddad,Turkey,Female,24,Algorithms,8.2,2,5.7,no,2025-12-30
+605,Daniel Kim,Peru,Male,20,Mathematics,17.8,3,10.3,no,2025-05-06
+606,Emma Williams,Russia,Female,18,Networking,9.9,3,5.8,no,2025-03-01
+607,Ali Demir,Sweden,Male,25,Cybersecurity,17.5,2,7.3,no,2025-01-21
+608,Victor Dubois,USA,Male,28,Data Science,7.9,3,7.3,no,2025-03-05
+609,Sara Svensson,Pakistan,Male,20,Mathematics,18.3,1,14.6,yes,2025-06-15
+610,Carlos Gutierrez,Peru,Female,18,Networking,9.7,1,,no,2025-09-02
+611,Omar Haddad,Russia,Female,23,Computer Science,19.9,3,9.8,no,2025-08-12
+612,Carlos Gutierrez,USA,Male,19,Physics,17.9,1,17.3,yes,2025-03-09
+613,Kwame Mensah,Germany,Male,27,Cybersecurity,8.5,1,13.8,yes,2025-06-04
+614,Emma Williams,Chile,Female,22,Cybersecurity,5.1,3,12.9,yes,2025-10-22
+615,Noah Johnson,Peru,Male,29,Data Science,2.6,3,6.6,no,2025-10-07
+616,Zara Khan,Egypt,Female,24,Mathematics,5.8,3,18.8,yes,2025-03-23
+617,Samuel Okafor,Turkey,Female,18,Data Science,14.2,1,19.0,yes,2025-01-03
+618,Diego Fernandez,Germany,Female,25,Computer Science,6.1,1,10.5,no,2025-07-20
+619,Diego Fernandez,Brazil,Male,28,Mathematics,4.3,2,16.7,yes,2025-04-28
+620,Omar Haddad,Canada,Male,29,Mathematics,8.2,1,9.3,no,2025-01-04
+621,Yuki Nakamura,Canada,Male,22,Algorithms,13.9,3,12.9,yes,2025-11-11
+622,Sara Svensson,Philippines,Female,22,Mathematics,19.8,2,16.5,yes,2025-07-21
+623,Pedro Alvarez,Argentina,Female,20,Data Science,4.1,1,12.4,yes,2025-01-18
+624,Pedro Alvarez,Germany,Female,23,Mathematics,7.6,2,17.8,yes,2025-05-14
+625,Emma Williams,Chile,Male,18,Networking,6.9,1,18.0,yes,2025-01-16
+626,Ivan Ivanov,China,Male,24,Data Science,7.1,1,18.4,yes,2025-10-21
+627,Kwame Mensah,France,Female,30,Mathematics,16.7,1,14.9,yes,2025-01-11
+628,Victor Dubois,Japan,Male,25,Networking,12.6,3,8.8,no,2025-06-02
+629,Zara Khan,USA,Female,28,Networking,10.8,2,8.2,no,2025-08-10
+630,Liam OConnor,Spain,Male,23,Mathematics,16.5,1,10.2,no,2025-05-30
+631,Mei Lin,Chile,Female,23,Cybersecurity,1.1,2,17.5,yes,2025-10-03
+632,Lucas Silva,Egypt,Male,18,Mathematics,2.7,2,8.0,no,2025-03-19
+633,Yuki Nakamura,Chile,Male,27,Computer Science,11.2,1,17.1,yes,2025-10-15
+634,Samuel Okafor,USA,Male,21,Mathematics,19.3,2,5.0,no,2025-09-16
+635,Noah Johnson,Peru,Female,29,Statistics,16.7,2,18.9,yes,2025-09-02
+636,Noah Johnson,Germany,Male,18,Networking,3.7,2,5.5,no,2025-11-27
+637,Lucas Silva,Sweden,Male,19,Algorithms,3.5,3,13.4,yes,2025-01-18
+638,Diego Fernandez,Turkey,Female,24,Statistics,10.2,2,9.2,no,2025-11-21
+639,Ananya Sharma,Argentina,Male,18,Statistics,4.4,2,5.8,no,2025-02-21
+640,Kwame Mensah,Turkey,Male,27,Computer Science,4.1,1,13.4,yes,2025-08-06
+641,Ivan Ivanov,Argentina,Female,24,Computer Science,16.3,2,8.1,no,2025-11-16
+642,Kwame Mensah,Canada,Female,27,Algorithms,1.9,2,10.6,no,2025-06-06
+643,Zara Khan,USA,Male,22,Mathematics,4.4,3,19.0,yes,2025-04-24
+644,Pedro Alvarez,Japan,Female,30,Mathematics,10.8,1,14.0,yes,2025-12-05
+645,Mei Lin,France,Male,23,Physics,1.5,1,9.9,no,2025-12-25
+646,Yuki Nakamura,Peru,Male,30,Computer Science,19.1,3,7.2,no,2025-11-06
+647,Hiroshi Tanaka,Pakistan,Female,19,Statistics,18.7,1,17.1,yes,2025-03-09
+648,Fatima Alzahra,Pakistan,Female,22,Computer Science,18.2,1,15.8,yes,2025-03-20
+649,Mateo Rodriguez,Sweden,Male,30,Computer Science,9.4,2,,no,2026-01-01
+650,Priya Patel,Pakistan,Male,28,Computer Science,17.8,1,16.9,yes,2025-08-05
+651,Ali Demir,Mexico,Female,26,Cybersecurity,2.1,1,7.4,no,2025-06-12
+652,Aisha Hassan,Canada,Male,23,Cybersecurity,9.6,1,10.1,no,2025-11-08
+653,Ali Demir,France,Male,28,Computer Science,7.9,1,17.4,yes,2025-09-16
+654,Hiroshi Tanaka,Japan,Female,23,Physics,14.7,2,14.6,yes,2025-08-30
+655,Zara Khan,India,Male,25,Computer Science,11.4,1,16.1,yes,2025-03-06
+656,Ananya Sharma,Turkey,Male,19,Networking,11.6,2,18.1,yes,2025-02-25
+657,Mateo Rodriguez,Canada,Female,26,Algorithms,9.9,3,6.0,no,2025-06-12
+658,Lucas Silva,Spain,Male,19,Physics,17.7,3,,no,2025-01-18
+659,Laura Garcia,Canada,Male,25,Mathematics,15.5,3,13.2,yes,2025-01-22
+660,Daniel Kim,Spain,Male,19,Mathematics,6.5,2,6.7,no,2025-06-15
+661,Amir Rahimi,Nigeria,Male,26,Computer Science,12.9,3,9.8,no,2025-10-12
+662,Noah Johnson,Russia,Male,22,Physics,12.4,1,7.8,no,2025-06-23
+663,Hiroshi Tanaka,Nigeria,Female,21,Networking,16.8,3,17.7,yes,2025-08-03
+664,Emma Williams,Japan,Female,23,Statistics,8.1,2,12.4,yes,2025-02-02
+665,Sara Svensson,Brazil,Male,21,Computer Science,7.8,2,14.7,yes,2025-09-29
+666,Fatima Alzahra,Pakistan,Male,26,Algorithms,15.1,1,11.1,no,2025-09-28
+667,Emma Williams,Philippines,Female,27,Physics,13.0,3,8.1,no,2025-03-16
+668,Ivan Ivanov,Turkey,Female,22,Statistics,17.9,2,14.5,yes,2025-09-29
+669,Kwame Mensah,China,Male,24,Mathematics,14.4,2,13.6,yes,2025-08-20
+670,Ananya Sharma,Mexico,Male,18,Mathematics,18.6,3,15.3,yes,2025-03-25
+671,Laura Garcia,Sweden,Male,21,Networking,1.6,2,12.7,yes,2025-12-03
+672,Priya Patel,Pakistan,Female,25,Mathematics,5.0,2,18.7,yes,2025-02-22
+673,Noah Johnson,Germany,Male,22,Computer Science,1.0,3,9.1,no,2025-12-13
+674,Omar Haddad,India,Male,26,Mathematics,12.7,3,12.1,yes,2025-03-16
+675,Ananya Sharma,Japan,Female,23,Physics,2.1,2,6.4,no,2025-10-18
+676,Chloe Martin,USA,Male,30,Mathematics,19.9,3,15.4,yes,2025-02-25
+677,Samuel Okafor,Mexico,Male,26,Computer Science,3.6,1,18.1,yes,2025-03-09
+678,Zara Khan,Canada,Female,25,Physics,1.1,3,8.5,no,2025-01-31
+679,Fatima Alzahra,Russia,Female,21,Algorithms,4.9,1,11.8,no,2025-02-22
+680,Chen Wei,Turkey,Male,23,Algorithms,6.7,2,10.0,no,2025-06-26
+681,Liam OConnor,China,Female,25,Networking,11.9,3,5.4,no,2025-02-03
+682,Emma Williams,Nigeria,Male,25,Data Science,3.8,3,6.5,no,2025-03-14
+683,Ivan Ivanov,India,Male,25,Cybersecurity,5.6,3,18.7,yes,2025-08-18
+684,Daniel Kim,Turkey,Female,29,Cybersecurity,5.7,2,15.2,yes,2025-11-12
+685,Laura Garcia,France,Female,24,Data Science,14.1,3,19.9,yes,2025-05-01
+686,Noah Johnson,Egypt,Male,23,Statistics,9.1,1,10.0,no,2025-12-17
+687,Daniel Kim,Argentina,Female,28,Data Science,11.8,3,19.2,yes,2025-09-08
+688,Kwame Mensah,India,Male,19,Mathematics,17.1,2,13.6,yes,2025-12-22
+689,Alejandro Cruz,Japan,Male,24,Cybersecurity,3.2,2,16.8,yes,2025-03-08
+690,Chloe Martin,Pakistan,Male,27,Mathematics,3.3,3,11.2,no,2025-09-16
+691,Omar Haddad,Egypt,Female,28,Statistics,19.8,3,17.9,yes,2025-06-20
+692,Chen Wei,Nigeria,Male,25,Algorithms,18.0,2,13.4,yes,2025-08-31
+693,Laura Garcia,India,Male,21,Physics,4.8,3,7.9,no,2025-02-16
+694,Fatima Alzahra,Pakistan,Male,22,Statistics,8.1,3,15.2,yes,2025-08-19
+695,Omar Haddad,Japan,Male,19,Computer Science,1.1,2,13.4,yes,2025-09-07
+696,Diego Fernandez,Japan,Female,29,Physics,14.3,1,15.5,yes,2025-11-06
+697,Omar Haddad,Brazil,Male,19,Mathematics,2.9,1,8.5,no,2025-05-02
+698,Samuel Okafor,Spain,Female,21,Computer Science,14.5,1,16.6,yes,2025-01-01
+699,Aisha Hassan,Argentina,Female,21,Cybersecurity,11.7,2,8.3,no,2025-07-22
+700,Alejandro Cruz,China,Female,28,Data Science,16.8,3,11.6,no,2025-01-18
+701,Lucas Silva,Germany,Female,22,Physics,6.2,2,15.9,yes,2025-11-16
+702,Laura Garcia,Mexico,Female,22,Algorithms,3.4,1,13.1,yes,2025-06-21
+703,Diego Fernandez,France,Male,29,Physics,6.7,1,6.2,no,2025-11-25
+704,Fatima Alzahra,Japan,Female,26,Computer Science,9.3,3,19.4,yes,2025-05-21
+705,Ananya Sharma,Canada,Female,29,Algorithms,6.1,1,17.0,yes,2025-03-03
+706,Daniel Kim,China,Male,28,Computer Science,12.5,1,15.1,yes,2025-11-10
+707,Hiroshi Tanaka,Brazil,Female,24,Mathematics,10.5,3,13.2,yes,2025-06-30
+708,Chen Wei,Sweden,Male,30,Computer Science,13.3,1,5.2,no,2025-12-08
+709,Diego Fernandez,France,Female,18,Mathematics,5.1,2,14.1,yes,2025-03-26
+710,Chen Wei,USA,Female,27,Mathematics,17.2,2,6.7,no,2025-07-27
+711,Aisha Hassan,Japan,Female,28,Networking,11.0,1,12.5,yes,2025-04-05
+712,Emma Williams,Canada,Male,29,Data Science,7.1,3,13.3,yes,2025-03-13
+713,Pedro Alvarez,Japan,Female,20,Computer Science,18.8,3,9.4,no,2025-06-29
+714,Priya Patel,Turkey,Female,29,Statistics,7.1,3,19.8,yes,2025-11-16
+715,Emma Williams,Pakistan,Male,18,Algorithms,6.4,1,17.9,yes,2025-09-24
+716,Sara Svensson,China,Female,20,Mathematics,10.9,3,16.4,yes,2025-01-02
+717,Priya Patel,Canada,Female,22,Mathematics,10.0,2,19.7,yes,2025-02-16
+718,Liam OConnor,Mexico,Female,21,Algorithms,9.0,3,14.7,yes,2025-02-08
+719,Emma Williams,Argentina,Male,25,Networking,3.2,1,14.9,yes,2025-07-25
+720,Samuel Okafor,France,Male,20,Cybersecurity,5.2,3,6.6,no,2025-07-28
+721,Aisha Hassan,Egypt,Female,28,Mathematics,16.0,1,9.3,no,2025-09-16
+722,Noah Johnson,France,Male,26,Cybersecurity,14.6,1,9.4,no,2025-04-15
+723,Liam OConnor,Peru,Male,26,Physics,4.0,3,17.5,yes,2025-10-04
+724,Yuki Nakamura,Pakistan,Female,23,Cybersecurity,14.3,2,18.2,yes,2025-08-01
+725,Pedro Alvarez,Egypt,Female,30,Algorithms,6.6,2,6.2,no,2025-11-05
+726,Liam OConnor,China,Male,23,Networking,4.8,2,17.6,yes,2025-05-03
+727,Kwame Mensah,Pakistan,Female,20,Physics,13.6,2,14.1,yes,2025-11-04
+728,Diego Fernandez,Sweden,Male,23,Data Science,7.3,3,15.7,yes,2025-12-09
+729,Sofia Petrova,Chile,Male,30,Networking,16.0,3,9.8,no,2025-02-04
+730,Aisha Hassan,Philippines,Female,19,Computer Science,11.0,3,18.8,yes,2025-03-16
+731,Ali Demir,Argentina,Male,23,Algorithms,6.7,3,13.5,yes,2025-06-27
+732,Daniel Kim,USA,Female,20,Algorithms,16.6,3,10.0,no,2025-12-15
+733,Carlos Gutierrez,France,Female,27,Cybersecurity,8.8,3,12.0,yes,2025-01-17
+734,Omar Haddad,Nigeria,Male,29,Networking,4.9,3,6.5,no,2025-12-11
+735,Ali Demir,Philippines,Female,27,Networking,16.6,3,15.3,yes,2025-07-09
+736,Victor Dubois,Nigeria,Male,28,Computer Science,12.6,2,7.3,no,2025-01-27
+737,Yuki Nakamura,Philippines,Female,26,Cybersecurity,3.0,2,13.7,yes,2025-07-27
+738,Chloe Martin,Egypt,Male,23,Networking,9.5,2,10.8,no,2025-02-10
+739,Victor Dubois,USA,Female,26,Networking,14.5,3,11.8,no,2025-02-10
+740,Sofia Petrova,Turkey,Female,19,Physics,14.8,3,6.1,no,2025-02-12
+741,Diego Fernandez,Spain,Female,22,Mathematics,3.5,3,15.5,yes,2025-10-29
+742,Alejandro Cruz,Mexico,Male,21,Cybersecurity,2.5,1,6.1,no,2025-09-02
+743,Carlos Gutierrez,Argentina,Male,27,Physics,7.8,2,9.4,no,2025-02-17
+744,Mei Lin,Turkey,Female,25,Mathematics,12.6,1,6.8,no,2025-08-21
+745,Amir Rahimi,Brazil,Female,25,Networking,10.9,2,17.0,yes,2025-04-19
+746,Noah Johnson,Peru,Female,26,Networking,15.4,3,12.1,yes,2025-08-31
+747,Ananya Sharma,India,Male,18,Computer Science,5.3,1,10.5,no,2025-09-22
+748,Lucas Silva,Japan,Female,22,Physics,2.9,2,13.1,yes,2025-09-09
+749,Omar Haddad,Egypt,Male,28,Cybersecurity,17.1,3,9.1,no,2025-12-12
+750,Omar Haddad,Philippines,Male,19,Statistics,10.6,2,16.5,yes,2025-06-27
+751,Pedro Alvarez,Philippines,Female,22,Mathematics,12.3,3,12.9,yes,2025-08-24
+752,Chen Wei,Germany,Female,29,Data Science,19.2,1,9.9,no,2025-08-27
+753,Priya Patel,Sweden,Female,29,Statistics,4.7,2,18.8,yes,2025-10-01
+754,Aisha Hassan,Argentina,Male,25,Cybersecurity,3.4,2,6.5,no,2025-06-11
+755,Aisha Hassan,Mexico,Male,30,Data Science,13.1,2,10.9,no,2025-10-27
+756,Priya Patel,Philippines,Male,21,Networking,14.1,3,15.0,yes,2025-06-02
+757,Kwame Mensah,France,Female,25,Algorithms,1.7,2,7.1,no,2025-11-01
+758,Fatima Alzahra,Canada,Female,27,Computer Science,18.8,2,6.8,no,2025-02-06
+759,Victor Dubois,Pakistan,Female,25,Computer Science,2.0,2,18.5,yes,2025-03-22
+760,Yuki Nakamura,China,Female,22,Networking,2.0,2,10.4,no,2025-01-30
+761,Kwame Mensah,Philippines,Male,28,Networking,12.4,3,10.1,no,2025-03-20
+762,Pedro Alvarez,Pakistan,Male,25,Algorithms,11.7,2,19.3,yes,2025-02-21
+763,Laura Garcia,Turkey,Male,20,Networking,16.7,3,17.8,yes,2025-07-28
+764,Carlos Gutierrez,Germany,Male,30,Physics,5.0,2,19.7,yes,2025-05-01
+765,Ivan Ivanov,Russia,Male,23,Mathematics,17.5,3,9.3,no,2025-12-01
+766,Sara Svensson,Russia,Male,30,Cybersecurity,19.7,2,6.0,no,2025-05-13
+767,Ali Demir,Mexico,Female,21,Networking,15.0,1,17.4,yes,2025-06-13
+768,Mei Lin,Turkey,Female,23,Computer Science,17.5,1,16.6,yes,2025-04-12
+769,Ananya Sharma,USA,Female,25,Physics,14.4,3,10.4,no,2025-01-17
+770,Noah Johnson,Russia,Female,29,Statistics,14.2,3,17.9,yes,2025-08-26
+771,Carlos Gutierrez,Brazil,Male,29,Statistics,7.7,2,19.0,yes,2025-06-22
+772,Kwame Mensah,Turkey,Female,24,Data Science,13.5,3,7.8,no,2025-07-11
+773,Noah Johnson,France,Male,26,Data Science,19.2,2,19.6,yes,2025-01-04
+774,Mateo Rodriguez,Germany,Female,26,Algorithms,2.3,2,,no,2025-06-21
+775,Victor Dubois,Sweden,Female,21,Networking,8.2,3,19.2,yes,2025-03-10
+776,Laura Garcia,Nigeria,Female,23,Computer Science,14.0,2,6.7,no,2025-04-18
+777,Sara Svensson,Mexico,Male,24,Algorithms,14.8,3,16.6,yes,2025-06-20
+778,Amir Rahimi,Chile,Male,29,Statistics,8.9,2,6.9,no,2025-12-23
+779,Diego Fernandez,Spain,Male,28,Computer Science,6.4,1,18.0,yes,2025-06-27
+780,Zara Khan,Mexico,Female,25,Computer Science,15.2,1,13.8,yes,2025-01-21
+781,Mei Lin,Canada,Female,26,Cybersecurity,17.3,1,12.0,yes,2025-06-27
+782,Yuki Nakamura,Argentina,Male,25,Data Science,4.0,1,13.7,yes,2025-05-11
+783,Emma Williams,Spain,Female,26,Statistics,9.3,2,8.2,no,2025-04-13
+784,Laura Garcia,Turkey,Female,27,Statistics,17.4,2,18.1,yes,2025-10-26
+785,Chen Wei,Peru,Female,26,Data Science,3.0,2,13.1,yes,2025-01-19
+786,Lucas Silva,USA,Female,26,Cybersecurity,4.8,2,15.3,yes,2025-09-27
+787,Emma Williams,Philippines,Female,27,Mathematics,1.7,3,7.6,no,2025-05-19
+788,Ivan Ivanov,Spain,Female,23,Statistics,12.6,1,8.7,no,2025-05-03
+789,Ivan Ivanov,Japan,Female,25,Algorithms,2.9,3,14.7,yes,2025-03-01
+790,Sofia Petrova,Japan,Male,18,Physics,16.7,3,17.4,yes,2025-11-12
+791,Liam OConnor,India,Female,21,Statistics,16.9,2,5.8,no,2025-07-03
+792,Diego Fernandez,Germany,Female,24,Data Science,11.3,1,5.6,no,2025-05-23
+793,Carlos Gutierrez,France,Female,18,Mathematics,14.8,3,16.0,yes,2025-11-28
+794,Chen Wei,Turkey,Female,20,Physics,4.6,3,6.9,no,2025-01-27
+795,Samuel Okafor,Canada,Male,27,Mathematics,2.3,2,8.5,no,2025-03-11
+796,Emma Williams,Sweden,Male,18,Algorithms,6.6,1,5.2,no,2025-01-14
+797,Laura Garcia,Pakistan,Female,28,Algorithms,12.5,2,5.4,no,2025-02-14
+798,Omar Haddad,China,Female,28,Networking,14.9,1,13.2,yes,2025-01-07
+799,Victor Dubois,Turkey,Male,24,Physics,18.7,1,10.4,no,2025-08-07
+800,Chen Wei,Germany,Male,21,Cybersecurity,11.0,2,12.1,yes,2025-04-02
+801,Yuki Nakamura,Egypt,Male,20,Networking,7.3,3,11.0,no,2025-06-05
+802,Fatima Alzahra,France,Male,20,Mathematics,9.4,1,5.9,no,2025-10-25
+803,Ananya Sharma,Germany,Male,18,Mathematics,6.5,1,13.1,yes,2025-08-13
+804,Aisha Hassan,Nigeria,Female,27,Mathematics,11.9,1,11.8,no,2025-06-22
+805,Aisha Hassan,Nigeria,Male,19,Mathematics,18.0,1,14.8,yes,2025-02-27
+806,Carlos Gutierrez,Chile,Male,30,Physics,3.9,2,10.9,no,2025-07-16
+807,Chen Wei,Turkey,Female,25,Algorithms,17.9,1,14.1,yes,2025-12-01
+808,Aisha Hassan,France,Female,24,Networking,8.6,2,16.1,yes,2025-03-15
+809,Chen Wei,Canada,Male,19,Computer Science,6.4,1,12.5,yes,2025-08-04
+810,Priya Patel,Chile,Female,22,Physics,17.2,2,14.4,yes,2025-05-30
+811,Sara Svensson,Japan,Female,23,Networking,4.7,1,16.5,yes,2025-09-28
+812,Yuki Nakamura,Philippines,Female,21,Physics,9.3,3,17.7,yes,2025-03-17
+813,Liam OConnor,Germany,Male,25,Algorithms,13.5,1,11.8,no,2025-11-21
+814,Noah Johnson,Spain,Male,28,Physics,16.6,3,19.8,yes,2025-06-21
+815,Ivan Ivanov,Pakistan,Female,23,Data Science,3.2,3,14.2,yes,2025-03-31
+816,Zara Khan,Argentina,Male,28,Statistics,15.9,2,9.6,no,2025-06-25
+817,Diego Fernandez,Mexico,Male,20,Cybersecurity,20.0,3,,no,2025-09-01
+818,Mei Lin,Sweden,Female,28,Data Science,8.4,3,16.8,yes,2025-08-24
+819,Yuki Nakamura,Russia,Female,18,Computer Science,12.5,1,6.2,no,2025-07-31
+820,Sofia Petrova,Pakistan,Female,27,Statistics,10.7,2,9.5,no,2025-07-09
+821,Diego Fernandez,Canada,Female,27,Algorithms,8.6,3,9.3,no,2025-11-18
+822,Mateo Rodriguez,Canada,Female,30,Cybersecurity,14.3,3,8.7,no,2025-03-23
+823,Sara Svensson,Argentina,Female,28,Physics,4.3,3,17.0,yes,2025-11-11
+824,Ivan Ivanov,Turkey,Female,28,Computer Science,1.6,3,6.9,no,2025-07-06
+825,Noah Johnson,USA,Male,25,Mathematics,4.2,2,9.1,no,2025-08-16
+826,Ananya Sharma,USA,Female,24,Data Science,8.2,3,11.5,no,2025-07-07
+827,Fatima Alzahra,Pakistan,Female,23,Mathematics,13.6,1,,no,2025-03-14
+828,Sofia Petrova,Chile,Male,22,Data Science,13.2,1,10.6,no,2025-11-02
+829,Priya Patel,France,Male,20,Physics,3.4,3,10.7,no,2025-02-04
+830,Alejandro Cruz,Brazil,Male,26,Algorithms,10.4,3,13.0,yes,2025-10-06
+831,Priya Patel,Chile,Male,19,Cybersecurity,3.6,3,16.6,yes,2025-05-12
+832,Aisha Hassan,India,Male,27,Algorithms,1.2,2,19.8,yes,2025-02-28
+833,Yuki Nakamura,Sweden,Male,28,Algorithms,5.1,1,14.8,yes,2025-06-16
+834,Alejandro Cruz,Japan,Male,28,Networking,13.5,1,20.0,yes,2025-06-01
+835,Hiroshi Tanaka,Brazil,Female,24,Physics,13.7,2,14.2,yes,2025-01-01
+836,Carlos Gutierrez,China,Male,29,Networking,19.0,2,11.5,no,2025-02-13
+837,Laura Garcia,Spain,Female,24,Mathematics,4.7,3,14.4,yes,2025-09-01
+838,Sofia Petrova,Spain,Female,28,Physics,13.0,1,9.7,no,2025-09-02
+839,Kwame Mensah,Chile,Male,18,Cybersecurity,11.1,2,17.3,yes,2025-11-19
+840,Emma Williams,France,Female,27,Algorithms,15.7,1,15.5,yes,2025-10-01
+841,Mei Lin,Canada,Male,20,Cybersecurity,13.4,1,14.8,yes,2025-04-19
+842,Priya Patel,Egypt,Female,26,Networking,4.1,3,15.8,yes,2025-09-02
+843,Alejandro Cruz,France,Male,21,Data Science,1.3,2,18.2,yes,2025-02-21
+844,Priya Patel,Japan,Male,24,Mathematics,18.1,2,11.2,no,2025-02-22
+845,Ivan Ivanov,France,Female,22,Algorithms,1.0,3,11.1,no,2025-09-27
+846,Sara Svensson,Brazil,Female,21,Statistics,11.3,1,17.4,yes,2025-06-13
+847,Mateo Rodriguez,India,Female,18,Statistics,14.1,1,15.5,yes,2025-03-28
+848,Ali Demir,France,Male,27,Networking,13.9,3,10.2,no,2025-04-27
+849,Emma Williams,Sweden,Female,20,Algorithms,10.4,2,9.3,no,2025-09-12
+850,Pedro Alvarez,Pakistan,Female,28,Physics,6.7,2,8.9,no,2025-02-17
+851,Diego Fernandez,Germany,Female,26,Algorithms,19.4,1,8.6,no,2025-04-24
+852,Ali Demir,India,Male,22,Physics,19.4,2,16.5,yes,2025-12-16
+853,Mei Lin,Mexico,Male,25,Data Science,15.7,2,7.7,no,2025-05-04
+854,Amir Rahimi,Chile,Male,26,Cybersecurity,10.4,1,5.3,no,2025-01-16
+855,Ali Demir,Mexico,Male,29,Mathematics,15.6,2,15.9,yes,2025-09-24
+856,Ivan Ivanov,Turkey,Female,30,Cybersecurity,13.6,2,17.1,yes,2025-04-22
+857,Yuki Nakamura,Argentina,Female,20,Data Science,13.8,2,15.9,yes,2025-03-10
+858,Omar Haddad,Turkey,Male,28,Statistics,19.6,1,11.0,no,2025-08-26
+859,Lucas Silva,France,Male,26,Cybersecurity,2.6,2,19.1,yes,2025-08-29
+860,Emma Williams,Sweden,Male,30,Networking,18.2,2,11.9,no,2025-07-11
+861,Kwame Mensah,Egypt,Female,30,Mathematics,14.4,3,15.9,yes,2025-11-18
+862,Victor Dubois,Philippines,Male,18,Mathematics,11.6,3,9.6,no,2025-04-30
+863,Mateo Rodriguez,USA,Female,25,Data Science,16.5,2,16.2,yes,2025-07-19
+864,Amir Rahimi,Canada,Female,26,Physics,10.3,1,15.7,yes,2025-04-13
+865,Victor Dubois,Philippines,Female,27,Cybersecurity,10.5,2,13.8,yes,2025-09-11
+866,Laura Garcia,Russia,Male,25,Statistics,15.4,1,19.2,yes,2025-07-28
+867,Alejandro Cruz,Spain,Male,19,Physics,9.1,3,11.7,no,2025-08-03
+868,Ivan Ivanov,USA,Female,22,Physics,10.5,3,17.6,yes,2025-10-19
+869,Daniel Kim,Japan,Female,25,Cybersecurity,1.2,1,15.4,yes,2025-05-08
+870,Diego Fernandez,Japan,Male,30,Data Science,6.1,2,6.9,no,2025-02-15
+871,Ivan Ivanov,Germany,Female,19,Physics,15.6,3,12.3,yes,2025-10-15
+872,Alejandro Cruz,Germany,Female,28,Physics,1.9,1,12.9,yes,2025-03-02
+873,Zara Khan,Japan,Female,25,Statistics,12.0,2,17.9,yes,2025-12-06
+874,Samuel Okafor,Chile,Male,27,Physics,11.5,3,18.8,yes,2025-12-24
+875,Chloe Martin,Egypt,Female,30,Statistics,5.3,2,6.8,no,2025-11-03
+876,Yuki Nakamura,Russia,Female,25,Mathematics,13.2,1,14.9,yes,2025-05-03
+877,Ivan Ivanov,Germany,Female,30,Algorithms,4.5,1,15.8,yes,2025-01-22
+878,Pedro Alvarez,Canada,Female,24,Data Science,4.2,2,5.6,no,2025-07-29
+879,Amir Rahimi,Turkey,Female,29,Physics,12.4,3,15.3,yes,2025-10-25
+880,Hiroshi Tanaka,USA,Male,27,Mathematics,19.9,2,9.3,no,2025-11-15
+881,Chloe Martin,Peru,Female,27,Computer Science,9.4,2,9.6,no,2025-02-01
+882,Chen Wei,Egypt,Male,26,Cybersecurity,3.8,1,19.2,yes,2025-11-21
+883,Lucas Silva,Peru,Female,27,Networking,4.5,1,14.2,yes,2025-08-30
+884,Lucas Silva,Chile,Male,28,Statistics,10.0,2,7.0,no,2025-02-09
+885,Emma Williams,USA,Female,20,Networking,19.0,1,18.0,yes,2025-08-29
+886,Mateo Rodriguez,France,Male,19,Computer Science,13.5,1,18.2,yes,2025-03-20
+887,Chloe Martin,Brazil,Female,24,Mathematics,6.6,1,10.5,no,2025-04-07
+888,Mei Lin,Spain,Male,26,Networking,12.5,1,14.1,yes,2025-03-23
+889,Emma Williams,Philippines,Female,29,Algorithms,17.2,1,13.7,yes,2025-11-07
+890,Ivan Ivanov,Brazil,Male,30,Data Science,3.3,1,10.6,no,2025-08-25
+891,Noah Johnson,Turkey,Male,27,Data Science,7.8,3,6.3,no,2025-07-14
+892,Priya Patel,Japan,Female,19,Data Science,15.2,1,16.7,yes,2025-02-22
+893,Mei Lin,Turkey,Female,26,Statistics,1.3,1,6.6,no,2025-11-14
+894,Chloe Martin,Spain,Male,18,Mathematics,2.6,2,10.7,no,2025-11-05
+895,Fatima Alzahra,USA,Male,18,Mathematics,14.9,1,18.1,yes,2025-08-03
+896,Chen Wei,India,Male,21,Statistics,6.3,2,15.2,yes,2025-10-28
+897,Amir Rahimi,Argentina,Male,25,Networking,4.4,2,10.8,no,2025-12-06
+898,Daniel Kim,Argentina,Female,25,Physics,15.9,1,7.1,no,2025-12-12
+899,Emma Williams,Japan,Female,28,Cybersecurity,12.1,1,7.7,no,2025-09-14
+900,Chloe Martin,Canada,Male,21,Data Science,3.1,1,12.0,yes,2025-10-09
+901,Victor Dubois,Peru,Male,27,Algorithms,8.1,1,11.8,no,2025-07-17
+902,Yuki Nakamura,Philippines,Male,29,Cybersecurity,6.3,1,19.8,yes,2025-04-04
+903,Diego Fernandez,Brazil,Female,27,Networking,18.4,3,19.6,yes,2025-11-02
+904,Kwame Mensah,Brazil,Female,23,Statistics,11.5,1,14.6,yes,2025-03-17
+905,Pedro Alvarez,USA,Female,25,Networking,2.8,1,14.5,yes,2025-08-21
+906,Lucas Silva,Canada,Male,21,Data Science,13.6,3,7.2,no,2025-10-30
+907,Lucas Silva,Germany,Male,30,Data Science,9.0,3,14.0,yes,2025-05-24
+908,Noah Johnson,Turkey,Female,20,Mathematics,5.2,2,17.5,yes,2025-04-10
+909,Priya Patel,Turkey,Male,19,Networking,17.0,3,5.7,no,2025-04-01
+910,Daniel Kim,Turkey,Male,19,Data Science,7.0,2,19.2,yes,2025-10-31
+911,Fatima Alzahra,India,Female,21,Computer Science,14.8,1,12.3,yes,2025-02-08
+912,Mateo Rodriguez,Russia,Male,19,Cybersecurity,17.7,3,14.7,yes,2025-08-30
+913,Liam OConnor,France,Female,20,Algorithms,11.4,3,7.2,no,2025-02-21
+914,Ivan Ivanov,Chile,Female,27,Physics,9.7,1,9.5,no,2025-12-22
+915,Liam OConnor,Pakistan,Male,25,Computer Science,8.8,2,10.2,no,2025-10-08
+916,Alejandro Cruz,China,Male,26,Computer Science,2.1,2,5.8,no,2025-04-07
+917,Ali Demir,Pakistan,Male,24,Mathematics,15.3,1,5.6,no,2025-03-04
+918,Ali Demir,Argentina,Male,26,Physics,6.5,1,12.7,yes,2025-05-03
+919,Hiroshi Tanaka,USA,Male,23,Statistics,17.2,3,18.4,yes,2025-11-08
+920,Kwame Mensah,Argentina,Female,23,Physics,1.4,2,5.9,no,2025-12-20
+921,Laura Garcia,Germany,Male,24,Networking,18.7,2,14.6,yes,2025-10-30
+922,Amir Rahimi,Turkey,Male,21,Physics,18.5,2,12.5,yes,2025-10-19
+923,Mei Lin,Turkey,Male,27,Physics,6.0,2,,no,2025-07-05
+924,Samuel Okafor,Sweden,Female,19,Algorithms,9.6,3,17.5,yes,2025-09-28
+925,Sofia Petrova,Pakistan,Male,27,Computer Science,1.5,3,11.0,no,2025-12-23
+926,Carlos Gutierrez,Pakistan,Male,26,Mathematics,3.0,3,15.3,yes,2025-11-01
+927,Fatima Alzahra,Germany,Male,20,Data Science,12.8,3,6.4,no,2025-06-16
+928,Hiroshi Tanaka,Canada,Female,20,Statistics,2.0,2,18.7,yes,2025-06-25
+929,Lucas Silva,Philippines,Male,26,Data Science,2.1,3,12.2,yes,2025-01-30
+930,Mateo Rodriguez,Egypt,Male,28,Physics,10.4,3,10.5,no,2025-09-01
+931,Kwame Mensah,Sweden,Female,26,Statistics,1.9,1,19.1,yes,2025-07-19
+932,Chen Wei,Nigeria,Male,28,Cybersecurity,16.9,2,17.5,yes,2025-10-17
+933,Pedro Alvarez,Turkey,Female,30,Statistics,3.7,1,11.0,no,2025-11-10
+934,Liam OConnor,Mexico,Male,26,Networking,2.3,1,12.2,yes,2025-04-19
+935,Sofia Petrova,USA,Female,18,Data Science,13.0,1,11.2,no,2025-06-30
+936,Mateo Rodriguez,Germany,Male,18,Mathematics,13.0,3,10.8,no,2025-02-07
+937,Emma Williams,Peru,Male,25,Data Science,11.9,3,5.9,no,2025-10-09
+938,Mei Lin,India,Male,30,Networking,19.6,1,8.6,no,2025-09-20
+939,Liam OConnor,USA,Male,20,Statistics,18.0,3,11.3,no,2025-02-10
+940,Sofia Petrova,Canada,Female,21,Physics,8.8,1,16.7,yes,2025-06-24
+941,Priya Patel,Peru,Female,22,Statistics,1.8,3,6.0,no,2025-02-06
+942,Yuki Nakamura,Japan,Female,22,Networking,1.0,2,15.1,yes,2025-10-14
+943,Sara Svensson,Argentina,Female,24,Networking,9.0,1,5.4,no,2025-08-19
+944,Fatima Alzahra,Russia,Female,29,Mathematics,14.4,1,19.7,yes,2025-05-23
+945,Amir Rahimi,Argentina,Male,20,Data Science,1.6,3,10.8,no,2025-06-20
+946,Sara Svensson,India,Male,23,Statistics,19.7,1,6.9,no,2025-02-05
+947,Yuki Nakamura,Peru,Male,30,Mathematics,1.7,2,8.6,no,2025-10-18
+948,Liam OConnor,China,Male,23,Networking,5.0,1,9.1,no,2025-07-09
+949,Zara Khan,Pakistan,Female,23,Statistics,1.7,2,7.7,no,2025-10-20
+950,Fatima Alzahra,Peru,Female,26,Data Science,18.2,1,13.6,yes,2025-07-14
+951,Sara Svensson,Peru,Female,24,Data Science,10.4,3,17.7,yes,2025-04-14
+952,Pedro Alvarez,India,Female,25,Data Science,12.6,2,13.2,yes,2025-06-03
+953,Zara Khan,Mexico,Female,21,Cybersecurity,6.5,2,14.5,yes,2025-08-06
+954,Fatima Alzahra,Peru,Male,19,Computer Science,6.4,2,19.0,yes,2025-07-26
+955,Priya Patel,Russia,Male,24,Networking,12.0,3,18.4,yes,2025-01-14
+956,Aisha Hassan,Russia,Male,20,Mathematics,16.6,3,11.5,no,2025-08-08
+957,Pedro Alvarez,Turkey,Female,20,Networking,16.5,3,8.2,no,2025-06-02
+958,Mateo Rodriguez,Nigeria,Male,20,Cybersecurity,14.2,1,15.4,yes,2025-04-29
+959,Liam OConnor,Chile,Female,26,Cybersecurity,5.2,3,12.0,yes,2025-11-22
+960,Amir Rahimi,Sweden,Female,26,Statistics,8.6,2,5.1,no,2025-05-11
+961,Samuel Okafor,Pakistan,Male,28,Mathematics,14.7,3,5.8,no,2025-09-04
+962,Chloe Martin,Russia,Male,23,Data Science,4.8,1,16.4,yes,2025-07-14
+963,Aisha Hassan,Brazil,Female,21,Networking,18.4,2,9.7,no,2025-02-26
+964,Lucas Silva,Spain,Male,20,Data Science,11.7,1,18.5,yes,2025-03-25
+965,Diego Fernandez,Egypt,Female,21,Cybersecurity,1.1,1,5.6,no,2025-10-13
+966,Carlos Gutierrez,Chile,Female,25,Statistics,6.9,3,,no,2025-01-22
+967,Liam OConnor,Argentina,Male,21,Computer Science,1.0,2,8.9,no,2025-02-03
+968,Diego Fernandez,USA,Female,28,Physics,7.6,3,11.4,no,2025-04-06
+969,Laura Garcia,Pakistan,Male,22,Statistics,18.5,1,12.5,yes,2025-05-13
+970,Amir Rahimi,Argentina,Male,28,Physics,13.9,2,6.6,no,2025-05-09
+971,Victor Dubois,France,Male,30,Cybersecurity,16.2,3,9.5,no,2025-11-25
+972,Mateo Rodriguez,Egypt,Male,26,Statistics,13.9,2,9.6,no,2025-08-29
+973,Zara Khan,France,Female,19,Statistics,15.5,1,17.0,yes,2025-06-15
+974,Emma Williams,Spain,Male,19,Cybersecurity,11.5,1,15.5,yes,2025-04-21
+975,Sofia Petrova,Turkey,Female,27,Statistics,4.8,2,16.1,yes,2025-10-30
+976,Omar Haddad,France,Female,18,Cybersecurity,13.8,3,11.6,no,2025-12-19
+977,Diego Fernandez,Brazil,Male,28,Physics,14.7,2,6.5,no,2025-05-29
+978,Chen Wei,Canada,Female,20,Computer Science,19.1,2,10.8,no,2025-11-09
+979,Chloe Martin,Brazil,Female,26,Algorithms,3.8,1,6.1,no,2025-03-17
+980,Noah Johnson,Pakistan,Female,26,Networking,11.8,3,8.5,no,2025-08-25
+981,Ali Demir,Sweden,Female,21,Mathematics,9.6,3,10.0,no,2025-12-16
+982,Diego Fernandez,Nigeria,Male,20,Networking,1.6,2,15.1,yes,2025-06-06
+983,Aisha Hassan,China,Male,27,Mathematics,1.0,3,14.1,yes,2025-08-08
+984,Liam OConnor,Nigeria,Female,27,Data Science,12.3,1,,no,2025-10-27
+985,Lucas Silva,Germany,Male,18,Algorithms,9.7,2,13.4,yes,2025-12-27
+986,Emma Williams,Nigeria,Female,25,Statistics,18.9,3,7.8,no,2025-03-03
+987,Lucas Silva,Peru,Male,20,Mathematics,19.8,2,11.6,no,2025-07-08
+988,Fatima Alzahra,India,Female,30,Data Science,4.9,2,9.3,no,2025-11-27
+989,Kwame Mensah,France,Female,21,Data Science,12.3,3,15.3,yes,2025-02-12
+990,Samuel Okafor,Peru,Male,27,Computer Science,11.2,1,17.7,yes,2025-09-29
+991,Fatima Alzahra,Nigeria,Male,24,Mathematics,16.2,1,6.3,no,2025-03-14
+992,Ali Demir,Philippines,Male,23,Cybersecurity,14.7,3,,no,2025-04-12
+993,Omar Haddad,France,Female,24,Networking,6.0,3,12.6,yes,2025-02-19
+994,Lucas Silva,Chile,Male,28,Mathematics,6.0,1,9.2,no,2025-01-12
+995,Sara Svensson,Russia,Male,24,Computer Science,4.0,1,9.8,no,2025-09-17
+996,Daniel Kim,Turkey,Male,23,Computer Science,6.1,3,11.2,no,2025-06-30
+997,Diego Fernandez,Philippines,Female,28,Algorithms,17.1,3,18.8,yes,2025-07-02
+998,Emma Williams,Pakistan,Male,19,Computer Science,18.7,3,19.7,yes,2025-12-03
+999,Victor Dubois,Sweden,Female,18,Cybersecurity,19.3,1,17.8,yes,2025-03-29
+1000,Emma Williams,Philippines,Male,21,Networking,7.9,3,15.4,yes,2025-09-21

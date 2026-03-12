@@ -1,17 +1,26 @@
 # -------------------------------------------------
 # File Name: 63_insert_column_at_index.py
 # Author: Florentino Báez
-# Date: 09_Pandas
-# Description: Pandas exercise: 53 insert column at index.
+# Date: 12/03/2026
+# Description: Inserts a column at a specific index in a DataFrame.
 # -------------------------------------------------
 
-"""Practice 53: Insert Column at Specific Index."""
+# import libraries
 import pandas as pd
 
-df_practice_53 = pd.DataFrame({"col2": [4, 5, 6, 9, 5], "col3": [7, 8, 12, 1, 11]})
+# create a DataFrame with two columns
+df = pd.DataFrame({"col2": [4, 5, 6, 9, 5], "col3": [7, 8, 12, 1, 11]})
+
+# print the original DataFrame
 print("Original DataFrame")
-print(df_practice_53)
+print(df)
+
+# create a Series with the values for the new column
 col1 = pd.Series([1, 2, 3, 4, 7])
-df_practice_53.insert(0, "col1", col1)
+
+# insert the new column at index 0
+df.insert(0, "col1", col1)
+
+# print the new DataFrame
 print("\nNew DataFrame")
-print(df_practice_53)
+print(df)

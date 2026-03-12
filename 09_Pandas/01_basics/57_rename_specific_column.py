@@ -1,17 +1,26 @@
 # -------------------------------------------------
 # File Name: 57_rename_specific_column.py
 # Author: Florentino Báez
-# Date: 09_Pandas
-# Description: Pandas exercise: 42 rename specific column.
+# Date: 12/03/2026
+# Description: Renames a specific column in a DataFrame.
 # -------------------------------------------------
 
-"""Practice 42: Rename Specific Column."""
+# import libraries
 import pandas as pd
 
+# create a dictionary of data
 data = {"col1": [1, 2, 3], "col2": [4, 5, 6], "col3": [7, 8, 9]}
-df_practice_42 = pd.DataFrame(data)
+
+# create a DataFrame from the dictionary
+df = pd.DataFrame(data)
+
+# print the original DataFrame
 print("Original DataFrame")
-print(df_practice_42)
-df_practice_42 = df_practice_42.rename(columns={"col2": "Column2"})
+print(df)
+
+# rename the second column
+df = df.rename(columns={"col2": "Column2"})
+
+# print the new DataFrame
 print("\nNew DataFrame after renaming second column:")
-print(df_practice_42)
+print(df)

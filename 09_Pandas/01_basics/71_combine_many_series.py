@@ -1,24 +1,33 @@
 # -------------------------------------------------
 # File Name: 71_combine_many_series.py
 # Author: Florentino Báez
-# Date: 09_Pandas
-# Description: Pandas exercise: 72 combine many series.
+# Date: 12/03/2026
+# Description: Combines multiple Series into DataFrames.
 # -------------------------------------------------
 
-"""Practice 72: Combine Many Series to Create a DataFrame."""
+# import libraries
 import pandas as pd
 
+# create sample Series
 s1 = pd.Series(["php", "python", "java", "c#", "c++"])
 s2 = pd.Series([1, 2, 3, 4, 5])
+
+# print original Series
 print("Original Series:")
 print(s1)
 print(s2)
+
+# combine Series with concat and print DataFrame
 print("\nCombine above series to a dataframe:")
-df_practice_72 = pd.concat([s1, s2], axis=1)
-print(df_practice_72)
+df = pd.concat([s1, s2], axis=1)
+print(df)
+
+# combine Series with concat again and print result
 print("\nUsing pandas concat:")
 df2 = pd.concat([s1, s2], axis=1)
 print(df2)
+
+# create DataFrame with explicit column names and print result
 print("\nUsing pandas DataFrame with a dictionary, gives a specific name to the columns:")
 df3 = pd.DataFrame({"col1": s1, "col2": s2})
 print(df3)

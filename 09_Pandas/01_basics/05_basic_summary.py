@@ -1,7 +1,7 @@
 # -------------------------------------------------
 # File Name: 05_basic_summary.py
 # Author: Florentino Báez
-# Date: 09_Pandas
+# Date: 12/03/2026
 # Description: Create a DataFrame with basic summary information.
 # -------------------------------------------------
 
@@ -9,31 +9,36 @@
 import pandas as pd
 import numpy as np
 
-# create a dictionary of exam data
+# Define the data
+# Create a dictionary with the data
 exam_data = {
     "name": [
-        "Valeria",
-        "Thiago",
-        "Camila",
-        "Sergio",
-        "Daniela",
-        "Bruno",
-        "Renata",
-        "Nicolas",
-        "Aitana",
-        "Gael",
+        "Aisha Hassan",
+        "Mateo Rodriguez",
+        "Hiroshi Tanaka",
+        "Kwame Mensah",
+        "Sofia Petrova",
+        "Liam OConnor",
+        "Fatima Alzahra",
+        "Chen Wei",
+        "Ananya Sharma",
+        "Lucas Silva",
+        "Noah Johnson",
+        "Yuki Nakamura",
+        "Zara Khan",
+        "Victor Dubois",
     ],
-    "score": [12.5, 9, 16.5, np.nan, 9, 20, 14.5, np.nan, 8, 19],
-    "attempts": [1, 3, 2, 3, 2, 3, 1, 1, 2, 1],
-    "qualify": ["yes", "no", "yes", "no", "no", "yes", "yes", "no", "no", "yes"],
+    "score": [12.5, 9.0, 16.5, np.nan, 9.0, 20.0, 14.5, np.nan, 8.0, 19.0, 11.5, 17.3, 13.8, 15.2],
+    "attempts": [1, 3, 2, 3, 2, 3, 1, 1, 2, 1, 2, 2, 1, 3, 2, 2, 1, 3],
+    "qualify": ["yes", "no", "yes", "no", "no", "yes", "yes", "no", "no", "yes", "no", "yes", "yes", "yes"],
 }
 
-# create a list of index labels
-labels = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j"]
+# Create a list of index labels
+labels = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n"]
 
-# create a DataFrame from the dictionary with specified index labels
+# Create a DataFrame from the dictionary with the index labels
 df = pd.DataFrame(exam_data, index=labels)
 
-# print the DataFrame
+# Print the DataFrame
 print("Summary of the basic information about this DataFrame and its data:")
 print(df.info())

@@ -1,18 +1,26 @@
 # -------------------------------------------------
 # File Name: 53_drop_list_rows.py
 # Author: Florentino Báez
-# Date: 09_Pandas
-# Description: Pandas exercise: 36 drop list rows.
+# Date: 12/03/2026
+# Description: Drops a list of rows from a DataFrame.
 # -------------------------------------------------
 
-"""Practice 36: Drop Rows from DataFrame."""
+# Import pandas library
 import pandas as pd
 
+# Create a dictionary with the data
 data = {"col1": [1, 4, 3, 4, 5], "col2": [4, 5, 6, 7, 8], "col3": [7, 8, 9, 0, 1]}
 
-df_practice_36 = pd.DataFrame(data)
+# Create a DataFrame with the data
+df = pd.DataFrame(data)
+
+# Print the original DataFrame
 print("Original DataFrame")
-print(df_practice_36)
-df_practice_36 = df_practice_36.drop([2, 4])
+print(df)
+
+# Drop the 2nd and 4th rows
+df = df.drop([2, 4])
+
+# Print the new DataFrame
 print("\nNew DataFrame after removing 2nd & 4th rows:")
-print(df_practice_36)
+print(df)

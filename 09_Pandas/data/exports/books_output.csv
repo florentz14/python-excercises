@@ -1,0 +1,11 @@
+author_id,writer,nationality,book_id,title,category,year,pages,edition,price,available,rating,tags,price_per_page
+A001,Mark Ross,USA,B001,XML Cookbook,Markup Languages,2018,320,2,23.56,True,4.2,"xml, data, web",0.0736
+A001,Mark Ross,USA,B002,Python Fundamentals,Programming,2020,480,3,50.7,True,4.8,"python, beginner, programming",0.1056
+A001,Mark Ross,USA,B003,The NumPy Library,Data Science,2021,270,1,12.3,True,4.5,"python, numpy, data science, arrays",0.0456
+A002,Barbara Bracket,UK,B004,Java Enterprise,Programming,2019,560,4,28.6,True,4.6,"java, enterprise, backend",0.0511
+A002,Barbara Bracket,UK,B005,HTML5,Web Development,2020,390,2,31.35,True,4.3,"html, web, frontend",0.0804
+A002,Barbara Bracket,UK,B006,Python for Dummies,Programming,2022,430,1,28.0,False,4.1,"python, beginner, guide",0.0651
+A003,Carlos Nguyen,Canada,B007,SQL Mastery,Databases,2021,410,2,35.0,True,4.7,"sql, databases, backend",0.0854
+A003,Carlos Nguyen,Canada,B008,Introduction to Cloud Computing,Cloud,2023,500,1,45.9,True,4.4,"cloud, aws, devops",0.0918
+A004,Sophie Müller,Germany,B009,Machine Learning Essentials,Artificial Intelligence,2022,620,1,59.99,True,4.9,"machine learning, ai, python, data science",0.0968
+A004,Sophie Müller,Germany,B010,Deep Learning with Python,Artificial Intelligence,2023,540,1,55.0,True,4.8,"deep learning, neural networks, python, tensorflow",0.1019

@@ -1,18 +1,32 @@
 # -------------------------------------------------
 # File Name: 67_add_prefix_suffix.py
 # Author: Florentino Báez
-# Date: 09_Pandas
-# Description: Pandas exercise: 64 add prefix suffix.
+# Date: 12/03/2026
+# Description: Adds prefix and suffix to DataFrame column names.
 # -------------------------------------------------
 
-"""Practice 64: Add Prefix or Suffix to All Columns."""
+# import libraries
 import pandas as pd
 
-data = {"W": [68, 75, 86, 80, 66], "X": [78, 85, 96, 80, 86], "Y": [84, 94, 89, 83, 86], "Z": [86, 97, 96, 72, 83]}
-df_practice_64 = pd.DataFrame(data)
+# create a dictionary with sample data
+data = {
+    "W": [68, 75, 86, 80, 66],
+    "X": [78, 85, 96, 80, 86],
+    "Y": [84, 94, 89, 83, 86],
+    "Z": [86, 97, 96, 72, 83],
+}
+
+# create a DataFrame from the dictionary
+df = pd.DataFrame(data)
+
+# print the original DataFrame
 print("Original DataFrame")
-print(df_practice_64)
+print(df)
+
+# print DataFrame with prefixed columns
 print("\nAdd prefix:")
-print(df_practice_64.add_prefix("A_"))
+print(df.add_prefix("A_"))
+
+# print DataFrame with suffixed columns
 print("\nAdd suffix:")
-print(df_practice_64.add_suffix("_1"))
+print(df.add_suffix("_1"))

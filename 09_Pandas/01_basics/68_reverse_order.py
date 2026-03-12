@@ -1,20 +1,36 @@
 # -------------------------------------------------
 # File Name: 68_reverse_order.py
 # Author: Florentino Báez
-# Date: 09_Pandas
-# Description: Pandas exercise: 65 reverse order.
+# Date: 12/03/2026
+# Description: Reverses DataFrame row and column order.
 # -------------------------------------------------
 
-"""Practice 65: Reverse Order of DataFrame (Rows, Columns)."""
+# import libraries
 import pandas as pd
 
-data = {"W": [68, 75, 86, 80, 66], "X": [78, 85, 96, 80, 86], "Y": [84, 94, 89, 83, 86], "Z": [86, 97, 96, 72, 83]}
-df_practice_65 = pd.DataFrame(data)
+# create a dictionary with sample data
+data = {
+    "W": [68, 75, 86, 80, 66],
+    "X": [78, 85, 96, 80, 86],
+    "Y": [84, 94, 89, 83, 86],
+    "Z": [86, 97, 96, 72, 83],
+}
+
+# create a DataFrame from the dictionary
+df = pd.DataFrame(data)
+
+# print the original DataFrame
 print("Original DataFrame")
-print(df_practice_65)
+print(df)
+
+# reverse and print column order
 print("\nReverse column order:")
-print(df_practice_65[df_practice_65.columns[::-1]])
+print(df[df.columns[::-1]])
+
+# reverse and print row order
 print("\nReverse row order:")
-print(df_practice_65.iloc[::-1])
+print(df.iloc[::-1])
+
+# reverse rows, reset index, and print result
 print("\nReverse row order and reset index:")
-print(df_practice_65.iloc[::-1].reset_index(drop=True))
+print(df.iloc[::-1].reset_index(drop=True))

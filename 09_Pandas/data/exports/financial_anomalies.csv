@@ -1,0 +1,46 @@
+transaction_id,date,description,category,amount,payment_method,account,is_recurring,z_score,anomaly_flag
+TX-000051,2025-01-14,Housing transaction 51,Housing,2180.4,Transfer,Credit,False,0.27061683731045916,True
+TX-000058,2025-09-21,Housing transaction 58,Housing,2193.02,Transfer,Savings,False,0.2765704307360916,True
+TX-000065,2025-02-23,Food transaction 65,Food,979.7721422084428,Card,Checking,True,9.685485025649397,True
+TX-000066,2025-04-16,Housing transaction 66,Housing,4389.012749452913,Digital Wallet,Credit,False,1.3125488773192493,True
+TX-000145,2025-08-10,Leisure transaction 145,Leisure,2108.231378947652,Transfer,Checking,True,10.910109356531033,True
+TX-000157,2025-03-27,Housing transaction 157,Housing,2181.66,Transfer,Checking,False,0.27121125313583916,True
+TX-000261,2025-12-12,Health transaction 261,Health,3843.907114000288,Transfer,Checking,True,7.939831504910842,True
+TX-000278,2025-02-23,Leisure transaction 278,Leisure,1921.311420100625,Cash,Checking,False,9.876648462274012,True
+TX-000301,2025-10-04,Education transaction 301,Education,2712.0400602779814,Cash,Savings,True,2.807094756696171,True
+TX-000331,2025-06-21,Housing transaction 331,Housing,11735.44835968013,Card,Credit,False,4.778292993870839,True
+TX-000417,2025-04-13,Food transaction 417,Food,486.1626991589402,Card,Checking,False,4.231067975840246,True
+TX-000422,2025-02-16,Health transaction 422,Health,4739.587479275799,Card,Credit,False,9.931113717765372,True
+TX-000506,2025-06-27,Leisure transaction 506,Leisure,1572.4595406985482,Card,Checking,False,7.947882922874543,True
+TX-000591,2025-08-11,Housing transaction 591,Uncategorized,1828.75,Digital Wallet,Credit,False,3.2283907580110345,True
+TX-000603,2025-03-15,Utilities transaction 603,Utilities,3712.374168619914,Card,Savings,True,12.808648498960572,True
+TX-000707,2025-08-28,Utilities transaction 707,Utilities,2364.370711875317,Card,Checking,False,7.891593321254678,True
+TX-000745,2025-05-13,Leisure transaction 745,Leisure,928.0237339761908,Transfer,Checking,True,4.3848647774897715,True
+TX-000758,2025-06-22,Transport transaction 758,Transport,1490.964639923436,Transfer,Credit,False,7.506002818868553,True
+TX-000814,2025-03-10,Housing transaction 814,Housing,7129.244673624452,Digital Wallet,Savings,True,2.6052768304457077,True
+TX-000834,2025-12-18,Food transaction 834,Food,572.0331353680175,Card,Checking,False,5.17994198529952,True
+TX-000925,2025-04-21,Housing transaction 925,Housing,5666.690794968877,Cash,Checking,False,1.9153044725537018,True
+TX-000986,2025-07-31,Transport transaction 986,Transport,1907.154058943775,Digital Wallet,Credit,True,9.742973360022368,True
+TX-001002,2025-06-10,Food transaction 1002,Food,806.902170799894,Digital Wallet,Checking,True,7.7752603880784985,True
+TX-001145,2025-05-13,Food transaction 1145,Food,1045.3293064667814,Transfer,Checking,False,10.409896034196413,True
+TX-001172,2025-11-09,Housing transaction 1172,Housing,2178.38,Card,Savings,True,0.2696638849554847,True
+TX-001190,2025-06-01,Housing transaction 1190,Uncategorized,1816.53,Unknown,Credit,False,3.2024405786059145,True
+TX-001220,2025-11-14,Transport transaction 1220,Transport,1995.258813484224,Card,Checking,False,10.21652634199508,True
+TX-001258,2025-02-23,Housing transaction 1258,Housing,16451.709134886856,Card,Savings,False,7.003229534666331,True
+TX-001295,2025-07-14,Housing transaction 1295,Housing,24562.5087945952,Cash,Checking,True,10.829568958649036,True
+TX-001380,2025-01-11,Health transaction 1380,Health,2645.1242496999657,Card,Checking,False,5.274689912774049,True
+TX-001566,2025-08-03,Housing transaction 1566,Housing,21348.64738878946,Transfer,Checking,False,9.313402228340081,True
+TX-001652,2025-05-13,Food transaction 1652,Food,1055.1225267788957,Digital Wallet,Savings,True,10.518111767495455,True
+TX-001707,2025-09-27,Housing transaction 1707,Uncategorized,1901.94,Card,Checking,False,3.383815768703402,True
+TX-001716,2025-01-29,Education transaction 1716,Education,8149.832066497765,Card,Credit,True,9.46904695113694,True
+TX-001841,2025-12-26,Utilities transaction 1841,Utilities,1165.6817426236169,Transfer,Credit,True,3.519186282364766,True
+TX-002026,2025-09-08,Housing transaction 2026,Housing,11032.153704791504,Card,Savings,False,4.44650769802081,True
+TX-002046,2025-12-07,Housing transaction 2046,Housing,18034.183552541475,Card,Checking,False,7.749775437137023,True
+TX-002047,2025-05-09,Housing transaction 2047,Housing,14494.212666332834,Cash,Credit,True,6.079763757655077,True
+TX-002068,2025-12-11,Housing transaction 2068,Housing,2166.27,Card,Checking,False,0.2639508884115537,True
+TX-002183,2025-03-15,Housing transaction 2183,Housing,2199.15,Card,Credit,True,0.279462310902425,True
+TX-002224,2025-07-21,Housing transaction 2224,Housing,10731.74310742957,Transfer,Checking,False,4.304786417716186,True
+TX-002262,2025-08-06,Transport transaction 2262,Transport,1745.8981086502156,Transfer,Checking,False,8.87624106480554,True
+TX-002313,2025-11-07,Housing transaction 2313,Uncategorized,1920.97,Transfer,Checking,False,3.424227545632979,True
+TX-002407,2025-05-21,Housing transaction 2407,Housing,8698.931791564532,Card,Checking,True,3.345790214413065,True
+TX-002496,2025-11-04,Utilities transaction 2496,Utilities,1446.7089170087602,Card,Credit,False,4.5442772166444225,True

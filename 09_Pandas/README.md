@@ -20,7 +20,7 @@ Data analysis exercises with Pandas, organized by topic in subfolders.
 ├── 04_cleaning/         (23) Nulls, replacements, dtype fixes, text cleaning
 ├── 05_groupby_reshape/  (24) groupby, pivot, merge, crosstab
 ├── 06_time_series/      (13) Datetime, rolling, resample, forecasting
-├── 07_real_world_projects/ (57) Full analyses by dataset
+├── 07_real_world_projects/ (63) Full analyses by dataset
 └── data/                All CSV files
 ```
 
@@ -176,9 +176,12 @@ Data analysis exercises with Pandas, organized by topic in subfolders.
 
 ---
 
-## 07_real_world_projects (01-57)
+## 07_real_world_projects (01-63)
 
-Students (01-08), Chipotle/Occupation/Food (09-11), Apply (12-13), Stats (14), Viz (15-19), Delete (20-21), Sales/Attendance/Budget/Inventory/Tasks/Construction/Logs/Traffic/Movies/Transport (22-31), HR (32), Vectorization (33), Chunking (34), Export/Excel (35-36), API (37-38), Feature Engineering (39-41), Customer/Sales (42-43), Exercises (44-51), Sales Visualization Mini-Project (52), Sales Analysis Mini-Project (53), Books Catalog SQLite + Pandas (54), Books Catalog Analysis (55), Global Banks Regional Analysis (56), Global Banks Regional Visuals (57). Menu launcher: `08_main_menu.py`.
+Students (01-08), Chipotle/Occupation/Food (09-11), Apply (12-13), Stats (14), Viz (15-19), Delete (20-21), Sales/Attendance/Budget/Inventory/Tasks/Construction/Logs/Traffic/Movies/Transport (22-31), HR (32), Vectorization (33), Chunking (34), Export/Excel (35-36), API (37-38), Feature Engineering (39-41), Customer/Sales (42-43), Exercises (44-51), Sales Visualization Mini-Project (52), Sales Analysis Mini-Project (53), Books Catalog SQLite + Pandas (54), Books Catalog Analysis (55), Global Banks Regional Analysis (56), Global Banks Regional Visuals (57), Financial EDA Pipeline: Generator/Cleaning/Descriptive/Time-Series/Anomaly/Executive Report (58-63). Menu launcher: `08_main_menu.py`.
+
+Detailed catalog for all scripts in this folder:
+- `09_Pandas/07_real_world_projects/README.md`
 
 ---
 

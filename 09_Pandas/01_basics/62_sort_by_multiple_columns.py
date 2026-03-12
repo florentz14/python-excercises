@@ -1,14 +1,15 @@
 # -------------------------------------------------
 # File Name: 62_sort_by_multiple_columns.py
 # Author: Florentino Báez
-# Date: 09_Pandas
-# Description: Pandas exercise: 50 sort by multiple columns.
+# Date: 12/03/2026
+# Description: Sorts a DataFrame by multiple columns.
 # -------------------------------------------------
 
-"""Practice 50: Sort DataFrame by Multiple Columns."""
+# import libraries
 import pandas as pd
 import numpy as np
 
+# create a dictionary of exam data
 exam_data = {
     "name": [
         "Valeria",
@@ -26,8 +27,20 @@ exam_data = {
     "attempts": [1, 3, 2, 3, 2, 3, 1, 1, 2, 1],
     "qualify": ["yes", "no", "yes", "no", "no", "yes", "yes", "no", "no", "yes"],
 }
-labels = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j"]
-df_practice_50 = pd.DataFrame(exam_data, index=labels)
 
+# create a list of index labels
+labels = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j"]
+
+# create a DataFrame from the exam data with the index labels
+df = pd.DataFrame(exam_data, index=labels)
+
+# print the original DataFrame
+print("Original DataFrame:")
+print(df)
+
+# sort the DataFrame by the attempts and name columns
+sorted_df = df.sort_values(by=["attempts", "name"])
+
+# print the sorted DataFrame
 print("Sort the above DataFrame on attempts, name:")
-print(df_practice_50.sort_values(by=["attempts", "name"]))
+print(sorted_df)

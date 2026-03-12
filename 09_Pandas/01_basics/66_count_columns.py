@@ -1,16 +1,27 @@
 # -------------------------------------------------
 # File Name: 66_count_columns.py
 # Author: Florentino Báez
-# Date: 09_Pandas
-# Description: Pandas exercise: 57 count columns.
+# Date: 12/03/2026
+# Description: Counts the number of columns in a DataFrame.
 # -------------------------------------------------
 
-"""Practice 57: Count Number of Columns."""
+# import libraries
 import pandas as pd
 
-data = {"col1": [1, 2, 3, 4, 7], "col2": [4, 5, 6, 9, 5], "col3": [7, 8, 12, 1, 11]}
-df_practice_57 = pd.DataFrame(data)
+# create a dictionary with sample data
+data = {
+    "col1": [1, 2, 3, 4, 7],
+    "col2": [4, 5, 6, 9, 5],
+    "col3": [7, 8, 12, 1, 11],
+}
+
+# create a DataFrame from the dictionary
+df = pd.DataFrame(data)
+
+# print the original DataFrame
 print("Original DataFrame")
-print(df_practice_57)
-print(f"\nNumber of columns:")
-print(len(df_practice_57.columns))
+print(df)
+
+# print the number of columns
+print("\nNumber of columns:")
+print(len(df.columns))

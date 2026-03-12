@@ -1,0 +1,3 @@
+type,is_recurring,total_amount,avg_amount,transactions,pct_of_total
+Discretionary,False,755765.6263692008,430.39044781845143,1756,0.6915
+Recurring,True,337132.364709544,453.1348988031505,744,0.3085
