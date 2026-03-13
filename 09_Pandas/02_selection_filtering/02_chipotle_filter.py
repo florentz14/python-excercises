@@ -1,10 +1,11 @@
 # -------------------------------------------------
-# File Name: 24_chipotle_filter.py
+# File Name: 02_chipotle_filter.py
 # Author: Florentino Báez
-# Date: 09_Pandas
+# Date: 12/03/2026
 # Description: Boolean indexing, query(), sort_values, loc/iloc on Chipotle data.
 # -------------------------------------------------
 
+# import libraries
 import pandas as pd
 from pathlib import Path
 

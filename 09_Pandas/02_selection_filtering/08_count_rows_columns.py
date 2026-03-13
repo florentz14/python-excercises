@@ -1,11 +1,11 @@
 # -------------------------------------------------
 # File Name: 08_count_rows_columns.py
 # Author: Florentino Báez
-# Date: 09_Pandas
-# Description: Pandas exercise: 08 count rows columns.
+# Date: 12/03/2026
+# Description: Counts the number of rows and columns in a DataFrame.
 # -------------------------------------------------
 
-"""Practice 8: Counting Rows and Columns."""
+# import libraries
 import pandas as pd
 import numpy as np
 
@@ -27,7 +27,9 @@ exam_data = {
     "qualify": ["yes", "no", "yes", "no", "no", "yes", "yes", "no", "no", "yes"],
 }
 labels = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j"]
-df_practice_08 = pd.DataFrame(exam_data, index=labels)
+# create a DataFrame from the dictionary
+df = pd.DataFrame(exam_data, index=labels)
 
-print(f"Number of Rows: {df_practice_08.shape[0]}")
-print(f"Number of Columns: {df_practice_08.shape[1]}")
+# print DataFrame dimensions
+print(f"Number of Rows: {df.shape[0]}")
+print(f"Number of Columns: {df.shape[1]}")

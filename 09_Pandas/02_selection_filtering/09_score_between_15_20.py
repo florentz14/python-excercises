@@ -1,11 +1,11 @@
 # -------------------------------------------------
 # File Name: 09_score_between_15_20.py
 # Author: Florentino Báez
-# Date: 09_Pandas
-# Description: Pandas exercise: 10 score between 15 20.
+# Date: 12/03/2026
+# Description: Filters rows where score is between 15 and 20.
 # -------------------------------------------------
 
-"""Practice 10: Selecting Rows Where Score is Between 15 and 20."""
+# import libraries
 import pandas as pd
 import numpy as np
 
@@ -27,7 +27,9 @@ exam_data = {
     "qualify": ["yes", "no", "yes", "no", "no", "yes", "yes", "no", "no", "yes"],
 }
 labels = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j"]
-df_practice_10 = pd.DataFrame(exam_data, index=labels)
+# create a DataFrame from the dictionary
+df = pd.DataFrame(exam_data, index=labels)
 
+# print filtered rows
 print("Rows where score between 15 and 20 (inclusive):")
-print(df_practice_10[(df_practice_10["score"] >= 15) & (df_practice_10["score"] <= 20)])
+print(df[(df["score"] >= 15) & (df["score"] <= 20)])

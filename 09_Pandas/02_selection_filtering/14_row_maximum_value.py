@@ -1,20 +1,27 @@
 # -------------------------------------------------
 # File Name: 14_row_maximum_value.py
 # Author: Florentino Báez
-# Date: 09_Pandas
-# Description: Pandas exercise: 45 row maximum value.
+# Date: 12/03/2026
+# Description: Finds row indices of maximum values by column.
 # -------------------------------------------------
 
-"""Practice 45: Row with Maximum Value."""
+# import libraries
 import pandas as pd
 
+# create a dictionary with sample data
 data = {"col1": [1, 2, 3, 4, 7], "col2": [4, 5, 6, 9, 5], "col3": [7, 8, 12, 1, 11]}
-df_practice_45 = pd.DataFrame(data)
+
+# create a DataFrame from the dictionary
+df = pd.DataFrame(data)
+
+# print the original DataFrame
 print("Original DataFrame")
-print(df_practice_45)
+print(df)
+
+# print row index with maximum value in each column
 print("\nRow where col1 has maximum value:")
-print(df_practice_45["col1"].idxmax())
+print(df["col1"].idxmax())
 print("Row where col2 has maximum value:")
-print(df_practice_45["col2"].idxmax())
+print(df["col2"].idxmax())
 print("Row where col3 has maximum value:")
-print(df_practice_45["col3"].idxmax())
+print(df["col3"].idxmax())

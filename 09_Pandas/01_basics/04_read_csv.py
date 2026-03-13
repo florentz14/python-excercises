@@ -9,9 +9,9 @@
 import pandas as pd
 from pathlib import Path
 
-# Define the path to the CSV file
+# Define the path to the sales CSV file
 # The CSV file is in the data folder of the parent directory
-csv_path = Path(__file__).parent.parent / "data" / "data.csv"
+csv_path = Path(__file__).parent.parent / "data" / "data_sales.csv"
 
 # Read the CSV file into a DataFrame
 df = pd.read_csv(csv_path, encoding="utf-8")

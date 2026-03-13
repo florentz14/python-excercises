@@ -22,6 +22,8 @@ matplotlib>=3.10.8
 
 # Statistical plots on top of Matplotlib; uses Pandas DataFrames
 seaborn>=0.11
+plotly>=5.0.0
+cufflinks>=0.17.3
 
 # -----------------------------------------------------------------------------
 # Data science and statistics
@@ -75,6 +77,9 @@ jupyter>=1.0.0
 
 # Testing framework
 pytest>=7.4.0
+
+# for Manejo de Fechas y Tiempo (Finanzas)
+workalendar>=17.0.0
 
 # -----------------------------------------------------------------------------
 # HTTP and web APIs

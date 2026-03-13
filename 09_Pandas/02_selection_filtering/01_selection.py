@@ -1,10 +1,11 @@
 # -------------------------------------------------
-# File Name: 04_selection.py
+# File Name: 01_selection.py
 # Author: Florentino Báez
-# Date: 09_Pandas
+# Date: 12/03/2026
 # Description: Selects rows and columns using loc, iloc, and bracket notation.
 # -------------------------------------------------
 
+# import libraries
 import pandas as pd
 
 # Create a DataFrame

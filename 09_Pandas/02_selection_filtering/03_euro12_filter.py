@@ -1,10 +1,11 @@
 # -------------------------------------------------
-# File Name: 25_euro12_filter.py
+# File Name: 03_euro12_filter.py
 # Author: Florentino Báez
-# Date: 09_Pandas
+# Date: 12/03/2026
 # Description: Filters Euro12 teams by goals, sorts, string filtering.
 # -------------------------------------------------
 
+# import libraries
 import pandas as pd
 from pathlib import Path
 

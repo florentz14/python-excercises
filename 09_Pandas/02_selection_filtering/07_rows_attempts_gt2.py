@@ -1,11 +1,11 @@
 # -------------------------------------------------
 # File Name: 07_rows_attempts_gt2.py
 # Author: Florentino Báez
-# Date: 09_Pandas
-# Description: Pandas exercise: 07 rows attempts gt2.
+# Date: 12/03/2026
+# Description: Filters rows where attempts are greater than 2.
 # -------------------------------------------------
 
-"""Practice 7: Selecting Rows Where Attempts > 2."""
+# import libraries
 import pandas as pd
 import numpy as np
 
@@ -27,7 +27,9 @@ exam_data = {
     "qualify": ["yes", "no", "yes", "no", "no", "yes", "yes", "no", "no", "yes"],
 }
 labels = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j"]
-df_practice_07 = pd.DataFrame(exam_data, index=labels)
+# create a DataFrame from the dictionary
+df = pd.DataFrame(exam_data, index=labels)
 
+# print filtered rows
 print("Number of attempts in the examination is greater than 2:")
-print(df_practice_07[df_practice_07["attempts"] > 2])
+print(df[df["attempts"] > 2])
