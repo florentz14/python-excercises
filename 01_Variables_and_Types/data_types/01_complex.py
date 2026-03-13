@@ -15,6 +15,7 @@ print(x)
 # Display the real and imaginary parts of the complex number
 print("Real part:", x.real)
 print("Imaginary part:", x.imag)
+
 # Perform and display various arithmetic operations
 print("Addition:", x + (2 + 3j))
 print("Subtraction:", x - (1 + 1j))

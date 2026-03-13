@@ -6,6 +6,8 @@
 # -------------------------------------------------
 
 import os
+from datetime import date, datetime
+from typing import Any, cast
 from dotenv import load_dotenv
 import bcrypt
 import mysql.connector
@@ -24,6 +26,17 @@ DB_CONFIG = {
     'password': os.getenv('MYSQL_PASSWORD', ''),
     'port': int(os.getenv('MYSQL_PORT', 3306))
 }
+
+
+def format_last_login(value: Any) -> str:
+    """Format last login value safely for display."""
+    if value is None:
+        return "Never"
+    if isinstance(value, datetime):
+        return value.strftime("%Y-%m-%d %H:%M")
+    if isinstance(value, date):
+        return value.strftime("%Y-%m-%d")
+    return str(value)
 
 
 def hash_password(password: str) -> str:
@@ -176,7 +189,8 @@ def list_users():
         """
         
         cursor.execute(query)
-        users = cursor.fetchall()
+        users_raw = cursor.fetchall()
+        users = cast(list[dict[str, Any]], users_raw)
         
         print("\n" + "="*100)
         print("EXISTING ATM USERS")
@@ -189,12 +203,13 @@ def list_users():
             print("-"*100)
             
             for user in users:
-                user_id = user['id']
-                username = user['username'][:14]
-                full_name = user['full_name'][:24]
-                balance = f"${user['current_balance']:,.2f}"
-                is_active = "Yes" if user['is_active'] else "No"
-                last_login = user['last_login_at'].strftime('%Y-%m-%d %H:%M') if user['last_login_at'] else "Never"
+                user_id = int(user.get("id", 0))
+                username = str(user.get("username", ""))[:14]
+                full_name = str(user.get("full_name", ""))[:24]
+                current_balance = user.get("current_balance", 0)
+                balance = f"${float(current_balance):,.2f}"
+                is_active = "Yes" if bool(user.get("is_active", False)) else "No"
+                last_login = format_last_login(user.get("last_login_at"))
                 
                 print(f"{user_id:<5} {username:<15} {full_name:<25} {balance:<15} {is_active:<8} {last_login:<20}")
         
@@ -218,7 +233,8 @@ def delete_user():
         # Check if user exists
         query = "SELECT id, username, full_name, current_balance FROM atm_users WHERE username = %s"
         cursor.execute(query, (username,))
-        user = cursor.fetchone()
+        user_raw = cursor.fetchone()
+        user = cast(dict[str, Any] | None, user_raw)
         
         if not user:
             print(f"User '{username}' not found.")
@@ -230,10 +246,15 @@ def delete_user():
         print("\n" + "="*60)
         print("USER TO DELETE")
         print("="*60)
-        print(f"ID:            {user['id']}")
-        print(f"Username:      {user['username']}")
-        print(f"Full Name:     {user['full_name']}")
-        print(f"Balance:       ${user['current_balance']:,.2f}")
+        user_id = int(user.get("id", 0))
+        user_username = str(user.get("username", ""))
+        user_full_name = str(user.get("full_name", ""))
+        user_balance = float(user.get("current_balance", 0))
+
+        print(f"ID:            {user_id}")
+        print(f"Username:      {user_username}")
+        print(f"Full Name:     {user_full_name}")
+        print(f"Balance:       ${user_balance:,.2f}")
         print("="*60)
         
         # Confirm deletion
@@ -247,7 +268,7 @@ def delete_user():
         
         # Delete user
         delete_query = "DELETE FROM atm_users WHERE id = %s"
-        cursor.execute(delete_query, (user['id'],))
+        cursor.execute(delete_query, (user_id,))
         connection.commit()
         
         print(f"\n[OK] User '{username}' deleted successfully!")

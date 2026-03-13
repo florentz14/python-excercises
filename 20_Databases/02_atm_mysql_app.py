@@ -200,6 +200,8 @@ class ATMUser:
             db.execute(query, (self.user_id,))
             db.commit()
             self.session_id = db.cursor.lastrowid
+            if self.session_id is None:
+                raise RuntimeError("Session creation failed: no session_id returned.")
             return self.session_id
     
     def close_session(self):
@@ -296,6 +298,7 @@ class ATMOperations:
         try:
             with DatabaseConnection() as db:
                 db.cursor.callproc('sp_get_deposit_history', (self.user.user_id,))
+                deposits = []
                 
                 # Get results from stored procedure
                 for result in db.cursor.stored_results():
@@ -310,6 +313,7 @@ class ATMOperations:
         try:
             with DatabaseConnection() as db:
                 db.cursor.callproc('sp_get_withdrawal_history', (self.user.user_id,))
+                withdrawals = []
                 
                 # Get results from stored procedure
                 for result in db.cursor.stored_results():
@@ -324,6 +328,7 @@ class ATMOperations:
         try:
             with DatabaseConnection() as db:
                 db.cursor.callproc('sp_get_balance_history', (self.user.user_id,))
+                snapshots = []
                 
                 # Get results from stored procedure
                 for result in db.cursor.stored_results():

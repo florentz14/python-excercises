@@ -1,0 +1,31 @@
+{
+  "venvPath": ".",
+  "venv": ".venv",
+  "typeCheckingMode": "standard",
+  "reportMissingTypeStubs": "none",
+  "include": [
+    "."
+  ],
+  "exclude": [
+    "**/__pycache__",
+    ".venv",
+    ".git"
+  ],
+  "executionEnvironments": [
+    {
+      "root": "20_Databases",
+      "reportUnknownParameterType": "none",
+      "reportUnknownVariableType": "none",
+      "reportUnknownMemberType": "none",
+      "reportUnknownArgumentType": "none",
+      "reportUnknownLambdaType": "none",
+      "reportUnusedCallResult": "none",
+      "reportCallIssue": "none",
+      "reportArgumentType": "none",
+      "reportIndexIssue": "none",
+      "reportOptionalSubscript": "none",
+      "reportOptionalMemberAccess": "none",
+      "reportAttributeAccessIssue": "none"
+    }
+  ]
+}
