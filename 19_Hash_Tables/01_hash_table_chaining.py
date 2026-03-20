@@ -1,7 +1,7 @@
 # -------------------------------------------------
-# File Name: 01_hash_table_chaining.py
+# File Name: 19_Hash_Tables/01_hash_table_chaining.py
 # Author: Florentino Báez
-# Date: 19_Hash_Tables
+# Date: 3/20/2026
 # Description: Hash Table with Chaining.
 # -------------------------------------------------
 

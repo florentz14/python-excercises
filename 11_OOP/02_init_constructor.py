@@ -1,7 +1,7 @@
 # -------------------------------------------------
 # File Name: 02_init_constructor.py
 # Author: Florentino Báez
-# Date: 11_OOP
+# Date: 3/18/26
 # Description: Understanding the __init__ constructor method.
 # -------------------------------------------------
 
@@ -41,7 +41,7 @@ class Rectangle:
 
 
 class BankAccount:
-    """Bank account with constructor that sets initial state."""
+    """Bank account with a constructor that sets the initial state."""
 
     def __init__(self, account_number: str, owner: str, initial_balance: float = 0) -> None:
         """Constructor setting up account state."""

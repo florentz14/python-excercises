@@ -1,7 +1,7 @@
 # -------------------------------------------------
 # File Name: 01_basic_class.py
 # Author: Florentino Báez
-# Date: 11_OOP
+# Date: 3/18/26
 # Description: Creating a basic class in Python.
 # -------------------------------------------------
 
