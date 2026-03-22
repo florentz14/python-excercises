@@ -184,3 +184,140 @@ def clear_screen():
 def pause(msg: str = "Press Enter to continue..."):
     """Pausar ejecución hasta que el usuario presione Enter."""
     input(msg)
+
+
+# 6. Utilidades de fecha
+def date_diff(date1: datetime, date2: datetime) -> dict:
+    """
+    Calcular la diferencia entre dos fechas.
+    
+    Args:
+        date1 (datetime): Primera fecha
+        date2 (datetime): Segunda fecha
+        
+    Returns:
+        dict: Diccionario con años, meses, días, horas, minutos, segundos
+    """
+    diff = abs(date2 - date1)
+    
+    days = diff.days
+    seconds = diff.seconds
+    
+    years = days // 365
+    remaining_days = days % 365
+    months = remaining_days // 30
+    remaining_days = remaining_days % 30
+    
+    hours = seconds // 3600
+    remaining_seconds = seconds % 3600
+    minutes = remaining_seconds // 60
+    seconds = remaining_seconds % 60
+    
+    return {
+        'years': years,
+        'months': months,
+        'days': remaining_days,
+        'hours': hours,
+        'minutes': minutes,
+        'seconds': seconds,
+        'total_days': days,
+        'total_seconds': diff.total_seconds()
+    }
+
+
+def human_date_diff(date1: datetime, date2: Optional[datetime] = None) -> str:
+    """
+    Obtener diferencia entre fechas en formato humano legible.
+    
+    Args:
+        date1 (datetime): Primera fecha
+        date2 (datetime): Segunda fecha (default: ahora)
+        
+    Returns:
+        str: Descripción humana de la diferencia
+    """
+    if date2 is None:
+        date2 = datetime.now()
+    
+    diff = date_diff(date1, date2)
+    
+    if date2 > date1:
+        # Fecha pasada
+        if diff['years'] > 0:
+            return f"hace {diff['years']} {'año' if diff['years'] == 1 else 'años'}"
+        elif diff['months'] > 0:
+            return f"hace {diff['months']} {'mes' if diff['months'] == 1 else 'meses'}"
+        elif diff['days'] > 0:
+            return f"hace {diff['days']} {'día' if diff['days'] == 1 else 'días'}"
+        elif diff['hours'] > 0:
+            return f"hace {diff['hours']} {'hora' if diff['hours'] == 1 else 'horas'}"
+        elif diff['minutes'] > 0:
+            return f"hace {diff['minutes']} {'minuto' if diff['minutes'] == 1 else 'minutos'}"
+        else:
+            return f"hace {diff['seconds']} {'segundo' if diff['seconds'] == 1 else 'segundos'}"
+    else:
+        # Fecha futura
+        if diff['years'] > 0:
+            return f"en {diff['years']} {'año' if diff['years'] == 1 else 'años'}"
+        elif diff['months'] > 0:
+            return f"en {diff['months']} {'mes' if diff['months'] == 1 else 'meses'}"
+        elif diff['days'] > 0:
+            return f"en {diff['days']} {'día' if diff['days'] == 1 else 'días'}"
+        elif diff['hours'] > 0:
+            return f"en {diff['hours']} {'hora' if diff['hours'] == 1 else 'horas'}"
+        elif diff['minutes'] > 0:
+            return f"en {diff['minutes']} {'minuto' if diff['minutes'] == 1 else 'minutos'}"
+        else:
+            return f"en {diff['seconds']} {'segundo' if diff['seconds'] == 1 else 'segundos'}"
+
+
+def format_human_date(date: datetime, include_time: bool = True) -> str:
+    """
+    Formatear fecha en formato humano legible.
+    
+    Args:
+        date (datetime): Fecha a formatear
+        include_time (bool): Incluir hora (default: True)
+        
+    Returns:
+        str: Fecha formateada en español
+    """
+    months = [
+        "enero", "febrero", "marzo", "abril", "mayo", "junio",
+        "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre"
+    ]
+    
+    day = date.day
+    month = months[date.month - 1]
+    year = date.year
+    
+    if include_time:
+        hour = date.hour
+        minute = date.minute
+        return f"{day} de {month} de {year}, {hour:02d}:{minute:02d}"
+    else:
+        return f"{day} de {month} de {year}"
+
+
+def format_relative_date(date: datetime) -> str:
+    """
+    Formatear fecha relativa al tiempo actual.
+    
+    Args:
+        date (datetime): Fecha a formatear
+        
+    Returns:
+        str: Fecha relativa (hoy, ayer, etc.)
+    """
+    now = datetime.now()
+    today = now.date()
+    date_only = date.date()
+    
+    if date_only == today:
+        return f"hoy a las {date.hour:02d}:{date.minute:02d}"
+    elif date_only == today.replace(day=today.day - 1):
+        return f"ayer a las {date.hour:02d}:{date.minute:02d}"
+    elif date_only == today.replace(day=today.day + 1):
+        return f"mañana a las {date.hour:02d}:{date.minute:02d}"
+    else:
+        return human_date_diff(date)

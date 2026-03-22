@@ -4,6 +4,8 @@ __pycache__/
 *$py.class
 
 # Generated / local data
+ITSE-1003/Examples/data/generated/*
+!ITSE-1003/Examples/data/generated/.gitkeep
 atm_history.txt
 !Baez_Final_Project/atm_history.txt
 
