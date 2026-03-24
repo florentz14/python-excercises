@@ -1,5 +1,5 @@
 # -------------------------------------------------
-# File Name: ITSE-1003/Examples/employee_manager.py
+# File Name: ITSE-1003/Examples/employees/employee_manager.py
 # Author: Florentino Báez
 # Date: 3/20/2026
 # Description: Employee manager logic.
@@ -8,9 +8,9 @@
 import sys
 from pathlib import Path
 
-_examples_dir = Path(__file__).resolve().parent
+_examples_dir = Path(__file__).resolve().parent.parent
 if str(_examples_dir) not in sys.path:
-    sys.path.insert(0, str(_examples_dir))
+    sys.path.append(str(_examples_dir))
 
 from utils import *
 from employee_model import *

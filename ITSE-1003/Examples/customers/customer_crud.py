@@ -1,5 +1,5 @@
 # -------------------------------------------------
-# File Name: ITSE-1003/Examples/customer_crud.py
+# File Name: ITSE-1003/Examples/customers/customer_crud.py
 # Author: Florentino Báez
 # Date: 3/20/2026
 # Description: Simple CRUD system with utils.py validations.
@@ -9,9 +9,9 @@ import sys
 from datetime import datetime
 from pathlib import Path
 
-_examples_dir = Path(__file__).resolve().parent
+_examples_dir = Path(__file__).resolve().parent.parent
 if str(_examples_dir) not in sys.path:
-    sys.path.insert(0, str(_examples_dir))
+    sys.path.append(str(_examples_dir))
 
 from utils import (
     format_currency,

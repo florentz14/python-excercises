@@ -1,5 +1,5 @@
 # -------------------------------------------------
-# File Name: ITSE-1003/Examples/employee_model.py
+# File Name: ITSE-1003/Examples/employees/employee_model.py
 # Author: Florentino Báez
 # Date: 3/20/2026
 # Description: Employee class model.

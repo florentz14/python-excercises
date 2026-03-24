@@ -15,8 +15,13 @@ from examples_paths import (
     DATA_DIR,
     EXAM_DATA_CSV,
     HOSPITAL_DATA_CSV,
+    HOSPITAL_DATA_DIR,
+    INVOICE_LINES_CSV,
+    INVOICES_CSV,
     PEOPLE_CSV,
+    SALES_DB,
     SCHOOL_DB,
+    SALES_DATA_DIR,
     VEHICLES_CSV,
 )
 
@@ -41,10 +46,11 @@ def _preview_csv(path: Path, label: str, max_rows: int = 4) -> None:
         print(f"  {row}")
 
 
-def _preview_sqlite(db_path: Path) -> None:
+def _preview_sqlite(db_path: Path, *, missing_hint: str | None = None) -> None:
     print(f"\n--- SQLite: {db_path.name} ---")
     if not db_path.is_file():
-        print(f"  (missing — run: python data/build_school_db.py)")
+        hint = missing_hint or "python data/build_school_db.py (school.db) o python sales/gestion_ventas.py (sales.db)"
+        print(f"  (missing — {hint})")
         return
     conn = sqlite3.connect(db_path)
     try:
@@ -61,11 +67,19 @@ def _preview_sqlite(db_path: Path) -> None:
 
 def main() -> None:
     print("Bundled data under:", DATA_DIR.resolve())
+    print("Hospital (hospital_data.csv):", HOSPITAL_DATA_DIR.resolve())
+    print("Ventas (facturas + sales.db):", SALES_DATA_DIR.resolve())
     _preview_csv(PEOPLE_CSV, "People")
     _preview_csv(EXAM_DATA_CSV, "Exam scores")
     _preview_csv(HOSPITAL_DATA_CSV, "Hospital demo")
     _preview_csv(VEHICLES_CSV, "Vehicles demo")
-    _preview_sqlite(SCHOOL_DB)
+    _preview_csv(INVOICES_CSV, "Invoices (master)")
+    _preview_csv(INVOICE_LINES_CSV, "Invoice lines (detail)")
+    _preview_sqlite(SCHOOL_DB, missing_hint="python data/build_school_db.py")
+    _preview_sqlite(
+        SALES_DB,
+        missing_hint="python sales/gestion_ventas.py (crea sales/data/sales.db)",
+    )
 
 
 if __name__ == "__main__":

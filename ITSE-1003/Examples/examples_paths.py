@@ -2,7 +2,7 @@
 # File Name: ITSE-1003/Examples/examples_paths.py
 # Author: Florentino
 # Date: 3/21/26
-# Description: Path constants for ITSE-1003 Examples (data/, generated/).
+# Description: Path constants for ITSE-1003 Examples (data/, hospital/data/, sales/data/, generated/).
 #              Named distinctly from repo-root settings.py so type checkers resolve correctly.
 # -------------------------------------------------
 
@@ -12,6 +12,10 @@ from pathlib import Path
 EXAMPLES_DIR = Path(__file__).resolve().parent
 DATA_DIR = EXAMPLES_DIR / "data"
 GEN_DIR = DATA_DIR / "generated"
+SALES_DIR = EXAMPLES_DIR / "sales"
+SALES_DATA_DIR = SALES_DIR / "data"
+HOSPITAL_DIR = EXAMPLES_DIR / "hospital"
+HOSPITAL_DATA_DIR = HOSPITAL_DIR / "data"
 
 # Data file paths
 PEOPLE_CSV = DATA_DIR / "people.csv"
@@ -19,10 +23,13 @@ PEOPLE_SAMPLE_CSV = GEN_DIR / "people_sample.csv"
 PEOPLE_DICT_CSV = GEN_DIR / "people_dict.csv"
 
 # Additional data files
-HOSPITAL_DATA_CSV = DATA_DIR / "hospital_data.csv"
+HOSPITAL_DATA_CSV = HOSPITAL_DATA_DIR / "hospital_data.csv"
 VEHICLES_CSV = DATA_DIR / "vehicles.csv"
 SCHOOL_DB = DATA_DIR / "school.db"
+SALES_DB = SALES_DATA_DIR / "sales.db"
 EXAM_DATA_CSV = DATA_DIR / "exam_data.csv"
+INVOICES_CSV = SALES_DATA_DIR / "invoices.csv"
+INVOICE_LINES_CSV = SALES_DATA_DIR / "invoice_lines.csv"
 
 # Generated file paths
 PRODUCTS_DEFAULT_CSV = GEN_DIR / "products_default.csv"
@@ -63,7 +70,10 @@ def get_all_data_files():
         HOSPITAL_DATA_CSV,
         VEHICLES_CSV,
         SCHOOL_DB,
-        EXAM_DATA_CSV
+        SALES_DB,
+        EXAM_DATA_CSV,
+        INVOICES_CSV,
+        INVOICE_LINES_CSV,
     ]
 
 def get_all_generated_files():
@@ -80,6 +90,8 @@ def get_all_generated_files():
 def ensure_directories():
     """Ensure all required directories exist."""
     DATA_DIR.mkdir(parents=True, exist_ok=True)
+    HOSPITAL_DATA_DIR.mkdir(parents=True, exist_ok=True)
+    SALES_DATA_DIR.mkdir(parents=True, exist_ok=True)
     GEN_DIR.mkdir(parents=True, exist_ok=True)
 
 def print_paths():

@@ -39,7 +39,7 @@ Requisito para este módulo: `pip install python-dotenv` (también en [`requirem
 
 | Recurso | Uso |
 | ------- | --- |
-| **`data/`** | CSVs (`people.csv`, `exam_data.csv`, `hospital_data.csv`, `vehicles.csv`), `school.db`, **`build_school_db.py`**. |
+| **`data/`** | CSVs (`people.csv`, `exam_data.csv`, `vehicles.csv`), `school.db`, **`build_school_db.py`**. `hospital_data.csv` está en **`hospital/data/`**; facturas y `sales.db` en **`sales/data/`**. |
 | **`run_csv_workshop.py`** | Recorre todo el taller CSV (lectura → escritura → análisis → formatos). |
 | **`csv_reading.py`** / **`csv_writing.py`** / **`csv_people_analysis.py`** | Partes del taller por separado. |
 | **`csv_examples.py`** | Alias que ejecuta `run_csv_workshop`. |
@@ -58,10 +58,74 @@ python data/build_school_db.py
 | ------- | --------- |
 | `people.csv` | `run_csv_workshop.py`, `csv_people_analysis.py`, `csv_reading.py`, `data_preview.py` |
 | `exam_data.csv` | `data/build_school_db.py`, `data_preview.py`, ejemplos en **`GUIDE.md`** |
-| `hospital_data.csv` | `hospital_system.py`, `data_preview.py` |
+| `hospital/data/hospital_data.csv` | `hospital/hospital_system.py`, `data_preview.py` |
 | `vehicles.csv` | `vehicle_class.py`, `data_preview.py` |
+| `sales/data/invoices.csv` | `sales/invoice_model.py`, `data_preview.py` |
+| `sales/data/invoice_lines.csv` | `sales/invoice_model.py`, `data_preview.py` |
 | `school.db` | `database_config.py`, `data_preview.py`, **`GUIDE.md`** |
+| `sales/data/sales.db` | `sales/gestion_ventas.py`, `sales/sales_database.py`, `data_preview.py` (se crea al ejecutar el menú) |
 | `generated/` | Salida del taller CSV (ignorada por git salvo `.gitkeep`) |
+
+### Gestión de ventas (SQLAlchemy + SQLite)
+
+Carpeta **`sales/`**. Mini sistema en consola: clientes, suplidores, artículos, inventario, facturas en **borrador** / **finalizada** / **pagada** (al finalizar se descuenta existencia).
+
+| Archivo | Rol |
+| ------- | --- |
+| `sales/sales_models.py` | Modelos ORM (`Supplier`, `Customer`, `Product`, `Inventory`, `Invoice`, `InvoiceLine`). |
+| `sales/sales_database.py` | Motor SQLite (`sales/data/sales.db`), sesión, `init_db`, datos demo, `finalize_invoice`, `mark_invoice_paid`. |
+| `sales/gestion_ventas.py` | Menú interactivo. Opción **99**: reiniciar BD y volver a cargar demo. |
+
+```bash
+cd ITSE-1003/Examples
+python sales/gestion_ventas.py
+```
+
+Requiere **SQLAlchemy** (ver [`requirements.txt`](../../requirements.txt)).
+
+### Gestión de empleados (POO + `utils`)
+
+Carpeta **`employees/`**: modelo, gestor en memoria y menú interactivo (usa **`utils`** en `Examples/`).
+
+| Archivo | Rol |
+| ------- | --- |
+| `employees/employee_model.py` | Clase `Employee`. |
+| `employees/employee_manager.py` | `EmployeesManager` (importa `employee_model`). |
+| `employees/employee_menu.py` | Menú interactivo (importa `employee_manager`). |
+
+```bash
+cd ITSE-1003/Examples
+python employees/employee_menu.py
+```
+
+### Clientes (formulario + CRUD + `utils`)
+
+Carpeta **`customers/`**: ejemplos con validaciones desde **`utils`** en `Examples/`.
+
+| Archivo | Rol |
+| ------- | --- |
+| `customers/customer_form.py` | Clase `Customer` y formulario con entradas validadas. |
+| `customers/customer_crud.py` | CRUD interactivo en memoria con las mismas utilidades. |
+
+```bash
+cd ITSE-1003/Examples
+python customers/customer_form.py
+python customers/customer_crud.py
+```
+
+### Sistema hospitalario (OOP + CSV)
+
+Carpeta **`hospital/`**: demo con pacientes, doctores, citas y expedientes; carga **`hospital/data/hospital_data.csv`** vía `examples_paths`.
+
+| Recurso | Rol |
+| ------- | --- |
+| `hospital/models/` | Modelos: `enums`, `person`, `patient`, `staff`, `doctor`, `nurse`, `appointment` (exportados en `models/__init__.py`). |
+| `hospital/hospital_system.py` | Carga CSV, helpers y demo en `main` (importa `models`). |
+
+```bash
+cd ITSE-1003/Examples
+python hospital/hospital_system.py
+```
 
 ---
 
@@ -83,9 +147,9 @@ Los nombres son **solo descriptivos** (sin prefijo `oop_01`, etc.). No dependen 
 | 10 | `nested_classes.py` | Clases internas |
 | 11 | `class_instance_attrs.py` | Atributos de clase vs instancia |
 | 12 | `car_composition.py` | Composición (HAS-A) |
-| 13 | `employee_model.py` | Modelo de empleado |
-| 14 | `employee_manager.py` | Gestor (importa `employee_model`) |
-| 15 | `employee_menu.py` | Menú interactivo (importa `employee_manager`) |
+| 13 | `employees/employee_model.py` | Modelo de empleado |
+| 14 | `employees/employee_manager.py` | Gestor (importa `employee_model`) |
+| 15 | `employees/employee_menu.py` | Menú interactivo (importa `employee_manager`) |
 | 16 | `microwave_oop.py` | Estado con microondas |
 | 17 | `book_dataclass.py` | `@dataclass` |
 | 18 | `student_courses.py` | Agregación (estudiantes y cursos) |
@@ -93,8 +157,8 @@ Los nombres son **solo descriptivos** (sin prefijo `oop_01`, etc.). No dependen 
 | 20 | `traffic_enum.py` | `Enum` y estado del objeto |
 | 21 | `file_context_manager.py` | Context manager (`__enter__` / `__exit__`) |
 | 22 | `payment_strategy.py` | Estrategia con `Protocol` |
-| 23 | `customer_form.py` | Formulario + validaciones de `utils` |
-| 24 | `customer_crud.py` | CRUD interactivo + `utils` |
+| 23 | `customers/customer_form.py` | Formulario + validaciones de `utils` |
+| 24 | `customers/customer_crud.py` | CRUD interactivo + `utils` |
 
 ### Otros ejemplos POO / clases (fuera de la secuencia 1–24)
 
@@ -104,8 +168,9 @@ Los nombres son **solo descriptivos** (sin prefijo `oop_01`, etc.). No dependen 
 | `tv_class.py` | Clase `TV` ilustrativa |
 | `user_class.py` | Usuario con getter/setter de email |
 | `person_age.py` | Edad y fechas con `utils` |
-| `hospital_system.py` | Sistema hospitalario; carga `data/hospital_data.csv` |
+| `hospital/hospital_system.py` | Sistema hospitalario; carga `hospital/data/hospital_data.csv` |
 | `vehicle_class.py` | Herencia vehículos; carga `data/vehicles.csv` |
+| `sales/invoice_model.py` | Factura maestra + líneas de detalle; carga `sales/data/invoices.csv` y `invoice_lines.csv` |
 
 ---
 
@@ -128,7 +193,7 @@ python run_csv_workshop.py
 
 Estos archivos añaden la carpeta `Examples/` a `sys.path` para que funcionen `utils` e imports entre módulos aunque ejecutes desde la raíz del repo:
 
-- `employee_manager.py`, `employee_menu.py`, `customer_form.py`, `customer_crud.py`
+- `customers/customer_form.py`, `customers/customer_crud.py`, `employees/employee_manager.py`, `employees/employee_menu.py`, `hospital/hospital_system.py`, `sales/invoice_model.py`
 
 ---
 
@@ -148,4 +213,4 @@ pip install tabulate
 
 ## `utils.py`
 
-Funciones compartidas (entradas validadas, fechas, email, etc.) usadas por **`customer_form.py`**, **`customer_crud.py`**, **`employee_manager.py`**, **`person_age.py`**, y otros.
+Funciones compartidas (entradas validadas, fechas, email, etc.) usadas por **`customers/customer_form.py`**, **`customers/customer_crud.py`**, **`employees/employee_manager.py`**, **`person_age.py`**, y otros.

@@ -1,0 +1,10 @@
+line_id,invoice_id,sku,description,quantity,unit_price
+1,1,WIDGET-A,Widget model A,2,29.99
+2,1,SVC-INST,On-site installation,1,150.00
+3,1,CABLE-2M,Power cable 2m,3,12.50
+4,2,WIDGET-B,Widget model B,5,19.50
+5,2,SVC-SHIP,Express shipping,1,45.00
+6,3,BOOK-PY,Python essentials handbook,10,24.00
+7,3,BOOK-DS,Data structures workbook,4,18.75
+8,4,LABOR-HR,Labor hour — diagnostics,4,85.00
+9,4,PART-FAN,Cooling fan replacement kit,1,32.99

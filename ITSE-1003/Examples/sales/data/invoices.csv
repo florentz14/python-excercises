@@ -1,0 +1,5 @@
+invoice_id,invoice_number,customer_name,invoice_date,currency,tax_rate,status
+1,INV-2024-001,Acme Corporation,2024-01-15,USD,0.08,paid
+2,INV-2024-002,Beta Logistics LLC,2024-02-03,USD,0.08,sent
+3,INV-2024-003,Gamma Retail SA,2024-02-20,EUR,0.21,draft
+4,INV-2024-004,Delta Workshop,2024-03-01,USD,0.00,paid
