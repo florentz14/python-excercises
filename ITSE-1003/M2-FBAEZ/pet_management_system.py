@@ -18,11 +18,11 @@ class Dog:
         self.name = name
         self.age = age
 
-    # describe return the name and age of the dog
+    # describe returns the name and age of the dog
     def describe(self) -> str:
         return f"{self.name} is {self.age} years old"
 
-    # bark print "Woof!"
+    # bark returns "Woof!"
     def bark(self) -> str:
         return "Woof!"
 
@@ -30,7 +30,7 @@ class Dog:
 class Puppy(Dog):
     """Derived class that inherits from Dog."""
 
-    # play return "The puppy is playing!"
+    # play returns "The puppy is playing!"
     def play(self) -> str:
         return "The puppy is playing!"
 
@@ -47,7 +47,9 @@ def main() -> None:
     # loop through pets and display their information
     for pet in pets:
         print(pet.describe())
-        if isinstance(pet, Puppy):
+
+        # check if pet is a puppy
+        if type(pet) == Puppy:
             print(pet.play())
         else:
             print(pet.bark())

@@ -63,6 +63,9 @@ pymongo>=4.0.0
 # Environment variables from .env files
 python-dotenv>=1.0.0
 
+# Pydantic EmailStr (ITSE-1003 Examples/person.py, FastAPI)
+email-validator>=2.0.0
+
 # Secure password hashing
 bcrypt>=4.0.0
 
