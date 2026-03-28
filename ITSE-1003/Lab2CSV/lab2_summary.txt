@@ -1,0 +1,9 @@
+Lab 2 Summary
+-----------------
+Average Age: 21.0
+Average GPA: 3.50
+Students older than 21:
+- Bob
+- Ethan
+- George
+- Ivan

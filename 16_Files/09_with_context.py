@@ -1,7 +1,8 @@
 # -------------------------------------------------
 # File Name: 09_with_context.py
+# Created: 2026-03-06
 # Author: Florentino Báez
-# Date: 16_Files
+# Date: 2026-03-06
 # Description: Using with for file operations. Context manager ensures proper closing.
 # -------------------------------------------------
 

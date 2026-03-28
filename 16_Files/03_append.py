@@ -1,7 +1,8 @@
 # -------------------------------------------------
 # File Name: 03_append.py
+# Created: 2026-03-06
 # Author: Florentino Báez
-# Date: 16_Files
+# Date: 2026-03-06
 # Description: Append content to a file. open() with mode 'a' preserves existing content.
 # -------------------------------------------------
 

@@ -1,7 +1,8 @@
 # -------------------------------------------------
 # File Name: 02_read.py
+# Created: 2026-03-06
 # Author: Florentino Báez
-# Date: 16_Files
+# Date: 2026-03-06
 # Description: Read a file. open() with mode 'r'. read(), readline(), and iteration over lines.
 # -------------------------------------------------
 

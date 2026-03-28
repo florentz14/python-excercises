@@ -1,7 +1,8 @@
 # -------------------------------------------------
 # File Name: 07_delete.py
+# Created: 2026-03-06
 # Author: Florentino Báez
-# Date: 16_Files
+# Date: 2026-03-06
 # Description: Delete files. os.remove() and pathlib.unlink().
 # -------------------------------------------------
 

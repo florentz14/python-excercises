@@ -1,9 +1,13 @@
 # -------------------------------------------------
 # File Name: 11_context_manager_logger.py
+# Created: 2026-03-06
 # Author: Florentino Báez
-# Date: 16_Files
+# Date: 2026-03-06
 # Description: Custom context manager for logging to file.
 # -------------------------------------------------
+
+from typing import TextIO
+
 
 class FileLogger:
     """
@@ -17,7 +21,7 @@ class FileLogger:
     def __init__(self, filename):
         """Initialize with the log filename."""
         self.filename = filename
-        self.file = None
+        self.file: TextIO | None = None
 
     def __enter__(self):
         """Opens the file when entering the context."""
@@ -26,6 +30,8 @@ class FileLogger:
 
     def log(self, message):
         """Writes a message to the log file."""
+        if self.file is None:
+            raise RuntimeError("FileLogger.log() must be called inside a 'with' block.")
         from datetime import datetime
         timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
         self.file.write(f"[{timestamp}] {message}\n")
@@ -61,6 +67,7 @@ class Timer:
     def __exit__(self, exc_type, exc_val, exc_tb):
         import time
         self.end = time.time()
+        assert self.start is not None
         self.elapsed = self.end - self.start
         return False
 

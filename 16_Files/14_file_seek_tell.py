@@ -1,7 +1,8 @@
 # -------------------------------------------------
 # File Name: 14_file_seek_tell.py
+# Created: 2026-03-07
 # Author: Florentino Báez
-# Date: 16_Files
+# Date: 2026-03-07
 # Description: File seek and tell. Random access with seek() and tell().
 # -------------------------------------------------
 

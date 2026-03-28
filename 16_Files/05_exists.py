@@ -1,7 +1,8 @@
 # -------------------------------------------------
 # File Name: 05_exists.py
+# Created: 2026-03-06
 # Author: Florentino Báez
-# Date: 16_Files
+# Date: 2026-03-06
 # Description: Check if file exists. os.path.exists() and pathlib.Path.exists().
 # -------------------------------------------------
 

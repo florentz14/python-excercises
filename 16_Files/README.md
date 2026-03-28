@@ -1,5 +1,7 @@
 # 16_Files - File handling in Python
 
+**Created:** 2026-02-03 (filesystem date for this file)
+
 Comprehensive file operations in Python: create, read, append, modify, copy, move,
 delete, permissions, binary files, CSV, temporary files, pathlib, and directory traversal.
 
@@ -30,7 +32,7 @@ All programs and comments are in English.
 | 19  | `19_pathlib_basics.py`           | Modern file handling with pathlib      |
 | 20  | `20_recursive_directory_walk.py` | Directory traversal with os.walk       |
 
-## File Exercises (21-28)
+## File Exercises (21-30)
 
 | #   | File                              | Description                                                  |
 | --- | --------------------------------- | ------------------------------------------------------------ |
@@ -42,10 +44,13 @@ All programs and comments are in English.
 | 26  | `26_phone_directory.py`          | Phone directory: create, consult, add, delete (phone_directory.txt) |
 | 27  | `27_quotes_stats.py`              | Load quotes.csv to dict, create min/max/mean CSV             |
 | 28  | `28_course_grades.py`             | Load grades, final grade, approved/suspended lists           |
+| 29  | `29_course_grades_json.py`        | Same rules as 28 using `data/student_grades.json`            |
+| 30  | `30_csv_full_operations.py`       | CSV practice: create, append, DictReader/DictWriter, update, delete (`students.csv`) |
 
 ## Data files
 
 - `students.txt` - Used by 04 and 10 (created by 01_write or provided as seed)
+- `students.csv` - Created by 30 (CSV full operations demo)
 - `employees.json` - Created by 12_crud_employees
 - `data/quotes.csv` - Stock quotes (27)
 - `data/grades.csv` - Course grades (28)

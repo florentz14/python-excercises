@@ -1,7 +1,8 @@
 # -------------------------------------------------
 # File Name: 01_write.py
+# Created: 2026-03-06
 # Author: Florentino Báez
-# Date: 16_Files
+# Date: 2026-03-06
 # Description: Create and write to a file. open() with mode 'w' creates/overwrites. write() and writelines().
 # -------------------------------------------------
 

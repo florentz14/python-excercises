@@ -1,7 +1,8 @@
 # -------------------------------------------------
 # File Name: 04_read_lines.py
+# Created: 2026-03-06
 # Author: Florentino Báez
-# Date: 16_Files
+# Date: 2026-03-06
 # Description: Read file line by line. readlines() and iteration.
 # -------------------------------------------------
 

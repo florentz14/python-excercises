@@ -1,7 +1,8 @@
 # -------------------------------------------------
 # File Name: 06_list_directory.py
+# Created: 2026-03-06
 # Author: Florentino Báez
-# Date: 16_Files
+# Date: 2026-03-06
 # Description: List directory contents. os.listdir() and os.scandir().
 # -------------------------------------------------
 

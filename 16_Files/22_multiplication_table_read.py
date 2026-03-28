@@ -1,5 +1,6 @@
 # -------------------------------------------------
 # File Name: 22_multiplication_table_read.py
+# Created: 2026-03-08
 # Description: Ask for integer 1-10, read table-n.txt and display it
 # -------------------------------------------------
 

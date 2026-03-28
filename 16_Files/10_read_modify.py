@@ -1,7 +1,8 @@
 # -------------------------------------------------
 # File Name: 10_read_modify.py
+# Created: 2026-03-06
 # Author: Florentino Báez
-# Date: 16_Files
+# Date: 2026-03-06
 # Description: Read and modify file content. Read, process, write back.
 # -------------------------------------------------
 

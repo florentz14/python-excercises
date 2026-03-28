@@ -1,0 +1,220 @@
+{
+  "meta": {
+    "description": "Student grades aligned with grades.csv (16_Files/data)",
+    "course": "Python for Data Science",
+    "scale": {
+      "theory_practice": "0-10",
+      "attendance_percent": "0-100"
+    }
+  },
+  "students": [
+    {
+      "Surname": "Garcia Lopez",
+      "Name": "Ana",
+      "Theory1": 7,
+      "Theory2": 6,
+      "Practice": 8,
+      "Attendance": 85
+    },
+    {
+      "Surname": "Martinez Ruiz",
+      "Name": "Bob",
+      "Theory1": 3,
+      "Theory2": 5,
+      "Practice": 4,
+      "Attendance": 72
+    },
+    {
+      "Surname": "Fernandez Diaz",
+      "Name": "Carol",
+      "Theory1": 8,
+      "Theory2": 7,
+      "Practice": 9,
+      "Attendance": 90
+    },
+    {
+      "Surname": "Lopez Sanchez",
+      "Name": "David",
+      "Theory1": 4,
+      "Theory2": 4,
+      "Practice": 5,
+      "Attendance": 88
+    },
+    {
+      "Surname": "Rodriguez Martin",
+      "Name": "Elena",
+      "Theory1": 6,
+      "Theory2": 7,
+      "Practice": 7,
+      "Attendance": 95
+    },
+    {
+      "Surname": "Gonzalez Perez",
+      "Name": "Fran",
+      "Theory1": 2,
+      "Theory2": 3,
+      "Practice": 3,
+      "Attendance": 60
+    },
+    {
+      "Surname": "Munoz Gomez",
+      "Name": "Gloria",
+      "Theory1": 9,
+      "Theory2": 8,
+      "Practice": 9,
+      "Attendance": 98
+    },
+    {
+      "Surname": "Alvarez Ruiz",
+      "Name": "Hugo",
+      "Theory1": 5,
+      "Theory2": 6,
+      "Practice": 6,
+      "Attendance": 78
+    },
+    {
+      "Surname": "Jimenez Torres",
+      "Name": "Isabel",
+      "Theory1": 7,
+      "Theory2": 8,
+      "Practice": 7,
+      "Attendance": 82
+    },
+    {
+      "Surname": "Castillo Vega",
+      "Name": "Javier",
+      "Theory1": 4,
+      "Theory2": 5,
+      "Practice": 4,
+      "Attendance": 76
+    },
+    {
+      "Surname": "Romero Blanco",
+      "Name": "Karen",
+      "Theory1": 8,
+      "Theory2": 8,
+      "Practice": 8,
+      "Attendance": 91
+    },
+    {
+      "Surname": "Vargas Molina",
+      "Name": "Leo",
+      "Theory1": 5,
+      "Theory2": 4,
+      "Practice": 5,
+      "Attendance": 70
+    },
+    {
+      "Surname": "Ortega Campos",
+      "Name": "Marta",
+      "Theory1": 9,
+      "Theory2": 9,
+      "Practice": 10,
+      "Attendance": 96
+    },
+    {
+      "Surname": "Ramos Delgado",
+      "Name": "Nico",
+      "Theory1": 3,
+      "Theory2": 4,
+      "Practice": 3,
+      "Attendance": 65
+    },
+    {
+      "Surname": "Herrera Ramos",
+      "Name": "Olga",
+      "Theory1": 6,
+      "Theory2": 6,
+      "Practice": 6,
+      "Attendance": 80
+    },
+    {
+      "Surname": "Medina Cruz",
+      "Name": "Pablo",
+      "Theory1": 10,
+      "Theory2": 9,
+      "Practice": 9,
+      "Attendance": 99
+    },
+    {
+      "Surname": "Silva Moreno",
+      "Name": "Quinn",
+      "Theory1": 2,
+      "Theory2": 2,
+      "Practice": 2,
+      "Attendance": 55
+    },
+    {
+      "Surname": "Navarro Prieto",
+      "Name": "Rosa",
+      "Theory1": 7,
+      "Theory2": 7,
+      "Practice": 8,
+      "Attendance": 86
+    },
+    {
+      "Surname": "Iglesias Rey",
+      "Name": "Sergio",
+      "Theory1": 4,
+      "Theory2": 6,
+      "Practice": 5,
+      "Attendance": 74
+    },
+    {
+      "Surname": "Camacho Nunez",
+      "Name": "Teresa",
+      "Theory1": 8,
+      "Theory2": 7,
+      "Practice": 7,
+      "Attendance": 93
+    },
+    {
+      "Surname": "Flores Iglesias",
+      "Name": "Ulises",
+      "Theory1": 5,
+      "Theory2": 5,
+      "Practice": 6,
+      "Attendance": 79
+    },
+    {
+      "Surname": "Peña Soto",
+      "Name": "Vera",
+      "Theory1": 6,
+      "Theory2": 8,
+      "Practice": 7,
+      "Attendance": 84
+    },
+    {
+      "Surname": "Cortes Marin",
+      "Name": "William",
+      "Theory1": 9,
+      "Theory2": 8,
+      "Practice": 8,
+      "Attendance": 97
+    },
+    {
+      "Surname": "Santos Gil",
+      "Name": "Ximena",
+      "Theory1": 4,
+      "Theory2": 3,
+      "Practice": 4,
+      "Attendance": 68
+    },
+    {
+      "Surname": "Reyes Duarte",
+      "Name": "Yago",
+      "Theory1": 7,
+      "Theory2": 6,
+      "Practice": 6,
+      "Attendance": 81
+    },
+    {
+      "Surname": "Nieto Paredes",
+      "Name": "Zoe",
+      "Theory1": 8,
+      "Theory2": 9,
+      "Practice": 9,
+      "Attendance": 94
+    }
+  ]
+}

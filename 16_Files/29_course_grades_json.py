@@ -1,32 +1,31 @@
 # -------------------------------------------------
-# File Name: 28_course_grades.py
-# Created: 2026-03-08
-# Description: Load grades, compute final grade, list approved/suspended
+# File Name: 29_course_grades_json.py
+# Created: 2026-03-27
+# Description: Same grading rules as 28_course_grades.py, loading data/student_grades.json
 # -------------------------------------------------
 
-import csv
+import json
 from pathlib import Path
 
-DATA = Path(__file__).parent / "data" / "grades.csv"
+DATA = Path(__file__).parent / "data" / "student_grades.json"
 
 
-def load_grades(filepath: str | Path) -> list[dict]:
-    """Load grades CSV. Returns list of dicts sorted by surname."""
-    rows = []
-    with open(filepath, "r", encoding="utf-8") as f:
-        reader = csv.DictReader(f)
-        for row in reader:
-            row["Theory1"] = float(row["Theory1"])
-            row["Theory2"] = float(row["Theory2"])
-            row["Practice"] = float(row["Practice"])
-            row["Attendance"] = float(row["Attendance"].replace("%", "").strip())
-            rows.append(row)
+def load_grades_json(filepath: str | Path) -> list[dict]:
+    """Load students from JSON (expects top-level 'students' array). Sorted by surname."""
+    with open(filepath, encoding="utf-8") as f:
+        payload = json.load(f)
+    rows = payload["students"]
+    for row in rows:
+        row["Theory1"] = float(row["Theory1"])
+        row["Theory2"] = float(row["Theory2"])
+        row["Practice"] = float(row["Practice"])
+        row["Attendance"] = float(row["Attendance"])
     rows.sort(key=lambda x: x["Surname"])
     return rows
 
 
 def add_final_grade(students: list[dict]) -> list[dict]:
-    """Add 'final_grade' to each dict. 30% T1 + 30% T2 + 40% Practice."""
+    """Add 'final_grade' to each dict. 30% T1 + 30% T2 + 40% Practice (same as 28)."""
     for s in students:
         nf = 0.30 * s["Theory1"] + 0.30 * s["Theory2"] + 0.40 * s["Practice"]
         s["final_grade"] = round(nf, 2)
@@ -49,7 +48,7 @@ def approved_suspended(students: list[dict]) -> tuple[list[dict], list[dict]]:
 
 
 if __name__ == "__main__":
-    students = load_grades(DATA)
+    students = load_grades_json(DATA)
     students = add_final_grade(students)
     approved, suspended = approved_suspended(students)
 

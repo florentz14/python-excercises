@@ -1,7 +1,8 @@
 # -------------------------------------------------
 # File Name: 08_copy_move.py
+# Created: 2026-03-06
 # Author: Florentino Báez
-# Date: 16_Files
+# Date: 2026-03-06
 # Description: Copy and move files. shutil.copy(), shutil.move().
 # -------------------------------------------------
 

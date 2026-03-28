@@ -1,7 +1,8 @@
 # -------------------------------------------------
 # File Name: 18_file_permissions.py
+# Created: 2026-03-07
 # Author: Florentino Báez
-# Date: 16_Files
+# Date: 2026-03-07
 # Description: File permissions. Check and modify file access modes.
 # -------------------------------------------------
 

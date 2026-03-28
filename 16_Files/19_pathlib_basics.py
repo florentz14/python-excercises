@@ -1,7 +1,8 @@
 # -------------------------------------------------
 # File Name: 19_pathlib_basics.py
+# Created: 2026-03-07
 # Author: Florentino Báez
-# Date: 16_Files
+# Date: 2026-03-07
 # Description: pathlib basics. Modern object-oriented path handling.
 # -------------------------------------------------
 

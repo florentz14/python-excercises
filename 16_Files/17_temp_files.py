@@ -1,7 +1,8 @@
 # -------------------------------------------------
 # File Name: 17_temp_files.py
+# Created: 2026-03-07
 # Author: Florentino Báez
-# Date: 16_Files
+# Date: 2026-03-07
 # Description: Temporary files. tempfile module for transient files.
 # -------------------------------------------------
 

@@ -1,7 +1,8 @@
 # -------------------------------------------------
 # File Name: 15_binary_files.py
+# Created: 2026-03-07
 # Author: Florentino Báez
-# Date: 16_Files
+# Date: 2026-03-07
 # Description: Binary file operations. Read/write bytes with 'rb' and 'wb'.
 # -------------------------------------------------
 

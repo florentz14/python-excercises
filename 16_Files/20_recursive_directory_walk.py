@@ -1,7 +1,8 @@
 # -------------------------------------------------
 # File Name: 20_recursive_directory_walk.py
+# Created: 2026-03-07
 # Author: Florentino Báez
-# Date: 16_Files
+# Date: 2026-03-07
 # Description: Recursive directory walk. os.walk() for traversing directory trees.
 # -------------------------------------------------
 
