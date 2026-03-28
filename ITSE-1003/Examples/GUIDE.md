@@ -108,16 +108,16 @@ print("Everything works!")
 
 At this point you already know how to **create a folder**, **activate the virtual environment**, and **run a script**. The next sections use **pandas** and **SQLite** with real files.
 
-If you are working inside **`ITSE-1003/Examples`** from this repo, most sample CSVs and the practice database live in **`data/`** (same level as many `.py` files). Hospital demo CSV lives under **`hospital/data/`**; sales invoices and `sales.db` under **`sales/data/`**. If you are only using your own empty project (for example `python_lab_ex`), you can skip the table below until you add your own files—or copy these samples into a `data` folder you create yourself.
+If you are working inside **`ITSE-1003/Examples`** from this repo, most sample CSVs and the practice database live in **`data/`** (next to **`classes/`**, **`file_handling/`**, and shared root scripts). Hospital demo CSV lives under **`hospital/data/`**; sales invoices and `sales.db` under **`sales/data/`**. If you are only using your own empty project (for example `python_lab_ex`), you can skip the table below until you add your own files—or copy these samples into a `data` folder you create yourself.
 
 | File | Purpose |
 | ---- | ------- |
 | `exam_data.csv` | Student exams (scores, subjects, teachers) — used to build `school.db` |
-| `people.csv` | People records (name, age, city, …) — used by `run_csv_workshop.py`, `csv_reading.py`, `csv_people_analysis.py` |
+| `people.csv` | People records (name, age, city, …) — used by `file_handling/run_csv_workshop.py`, `file_handling/csv_reading.py`, `file_handling/csv_people_analysis.py` |
 | `hospital/data/hospital_data.csv` | Hospital / patient-style demo rows (`hospital/hospital_system.py`) |
 | `vehicles.csv` | Vehicle demo rows |
 | `school.db` | SQLite database (`users` + `exam_scores`) — **rebuild** with the script below |
-| `generated/` | Optional outputs when you run `run_csv_workshop.py` |
+| `generated/` | Optional outputs when you run `file_handling/run_csv_workshop.py` |
 
 ### Rebuild `school.db`
 

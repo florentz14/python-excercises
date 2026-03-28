@@ -38,7 +38,7 @@ Use **Python 3** from the repo root or from **`ITSE-1003/Examples`** (many scrip
 ```bash
 # Examples — CSV workshop
 cd ITSE-1003/Examples
-python run_csv_workshop.py
+python file_handling/run_csv_workshop.py
 
 # Examples — domain folders (from Examples/)
 python sales/gestion_ventas.py

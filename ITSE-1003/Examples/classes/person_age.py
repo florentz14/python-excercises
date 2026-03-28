@@ -6,6 +6,13 @@
 #              Calculates age and birthday information from birth date.
 # -------------------------------------------------
 
+import sys
+from pathlib import Path
+
+_EXAMPLES_ROOT = Path(__file__).resolve().parent.parent
+if str(_EXAMPLES_ROOT) not in sys.path:
+    sys.path.insert(0, str(_EXAMPLES_ROOT))
+
 from datetime import datetime, date, timedelta
 from typing import Optional
 from utils import format_human_date, human_date_diff, date_diff

@@ -5,6 +5,13 @@
 # Description: User class with email getter and setter methods.
 # -------------------------------------------------
 
+import sys
+from pathlib import Path
+
+_EXAMPLES_ROOT = Path(__file__).resolve().parent.parent
+if str(_EXAMPLES_ROOT) not in sys.path:
+    sys.path.insert(0, str(_EXAMPLES_ROOT))
+
 from datetime import datetime
 from utils import is_valid_email
 

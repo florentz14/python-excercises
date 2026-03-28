@@ -1,5 +1,5 @@
 # -------------------------------------------------
-# File Name: ITSE-1003/Examples/data_preview.py
+# File Name: ITSE-1003/Examples/file_handling/data_preview.py
 # Author: Florentino Báez
 # Date: 3/21/2026
 # Description: Preview bundled CSVs and SQLite tables under data/ (stdlib only).
@@ -7,9 +7,15 @@
 
 from __future__ import annotations
 
+import sys
+from pathlib import Path
+
+_EXAMPLES_ROOT = Path(__file__).resolve().parent.parent
+if str(_EXAMPLES_ROOT) not in sys.path:
+    sys.path.insert(0, str(_EXAMPLES_ROOT))
+
 import csv
 import sqlite3
-from pathlib import Path
 
 from examples_paths import (
     DATA_DIR,

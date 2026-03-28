@@ -1,9 +1,11 @@
 # -------------------------------------------------
-# File Name: ITSE-1003/Examples/file_context_manager.py
+# File Name: ITSE-1003/Examples/file_handling/file_context_manager.py
 # Author: Florentino Báez
 # Date: 3/20/2026
 # Description: Context manager in a class.
 # -------------------------------------------------
+
+from pathlib import Path
 
 
 class FileWriter:
@@ -26,7 +28,8 @@ class FileWriter:
 
 
 def main() -> None:
-    with FileWriter("ITSE-1003/Examples/temp_note.txt") as writer:
+    note_path = Path(__file__).resolve().parent.parent / "temp_note.txt"
+    with FileWriter(str(note_path)) as writer:
         writer.write_line("This file was created with a context manager class.")
         writer.write_line("It closes automatically.")
     print("File written successfully.")

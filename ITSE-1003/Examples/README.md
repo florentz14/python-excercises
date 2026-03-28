@@ -11,6 +11,8 @@ Description: Index for ITSE-1003 Examples (OOP, CSV, data, DB, extras).
 
 Material de apoyo y laboratorios: **POO en Python**, **CSV**, **datos de ejemplo**, **SQLite** y scripts sueltos. Todo está pensado para ejecutarse con el intérprete de Python 3 desde la carpeta **`Examples/`** o desde la **raíz del repo** (salvo donde se indique).
 
+**Layout (English folder names):** standalone **OOP** scripts live under **`classes/`**; **CSV and file I/O** demos under **`file_handling/`**. Shared modules (**`utils.py`**, **`examples_paths.py`**, **`database_config.py`**, **`users_crud.py`**) stay at the **`Examples/`** root. Mini-projects remain in **`hospital/`**, **`sales/`**, **`employees/`**, **`customers/`**.
+
 **Curso (carpeta padre):** ver [`../README.MD`](../README.MD). Proyecto aparte: [`../M2-FBAEZ/`](../M2-FBAEZ/) (sistema de mascotas).
 
 ---
@@ -37,13 +39,16 @@ Requisito para este módulo: `pip install python-dotenv` (también en [`requirem
 
 ## Datos y taller CSV
 
+Carpeta **`file_handling/`** (lectura/escritura CSV, vista previa de datos, context manager de archivo).
+
 | Recurso | Uso |
 | ------- | --- |
 | **`data/`** | CSVs (`people.csv`, `exam_data.csv`, `vehicles.csv`), `school.db`, **`build_school_db.py`**. `hospital_data.csv` está en **`hospital/data/`**; facturas y `sales.db` en **`sales/data/`**. |
-| **`run_csv_workshop.py`** | Recorre todo el taller CSV (lectura → escritura → análisis → formatos). |
-| **`csv_reading.py`** / **`csv_writing.py`** / **`csv_people_analysis.py`** | Partes del taller por separado. |
-| **`csv_examples.py`** | Alias que ejecuta `run_csv_workshop`. |
-| **`data_preview.py`** | Vista rápida de CSVs + tablas SQLite (solo biblioteca estándar + `examples_paths`). |
+| **`file_handling/run_csv_workshop.py`** | Recorre todo el taller CSV (lectura → escritura → análisis → formatos). |
+| **`file_handling/csv_reading.py`** / **`file_handling/csv_writing.py`** / **`file_handling/csv_people_analysis.py`** | Partes del taller por separado. |
+| **`file_handling/csv_examples.py`** | Alias que ejecuta `run_csv_workshop`. |
+| **`file_handling/data_preview.py`** | Vista rápida de CSVs + tablas SQLite (solo biblioteca estándar + `examples_paths`). |
+| **`file_handling/file_context_manager.py`** | Context manager que escribe un archivo de nota bajo **`Examples/`**. |
 
 Regenerar la base escolar:
 
@@ -56,14 +61,14 @@ python data/build_school_db.py
 
 | Archivo | Usado por |
 | ------- | --------- |
-| `people.csv` | `run_csv_workshop.py`, `csv_people_analysis.py`, `csv_reading.py`, `data_preview.py` |
-| `exam_data.csv` | `data/build_school_db.py`, `data_preview.py`, ejemplos en **`GUIDE.md`** |
-| `hospital/data/hospital_data.csv` | `hospital/hospital_system.py`, `data_preview.py` |
-| `vehicles.csv` | `vehicle_class.py`, `data_preview.py` |
-| `sales/data/invoices.csv` | `sales/invoice_model.py`, `data_preview.py` |
-| `sales/data/invoice_lines.csv` | `sales/invoice_model.py`, `data_preview.py` |
-| `school.db` | `database_config.py`, `data_preview.py`, **`GUIDE.md`** |
-| `sales/data/sales.db` | `sales/gestion_ventas.py`, `sales/sales_database.py`, `data_preview.py` (se crea al ejecutar el menú) |
+| `people.csv` | `file_handling/run_csv_workshop.py`, `file_handling/csv_people_analysis.py`, `file_handling/csv_reading.py`, `file_handling/data_preview.py` |
+| `exam_data.csv` | `data/build_school_db.py`, `file_handling/data_preview.py`, ejemplos en **`GUIDE.md`** |
+| `hospital/data/hospital_data.csv` | `hospital/hospital_system.py`, `file_handling/data_preview.py` |
+| `vehicles.csv` | `classes/vehicle_class.py`, `file_handling/data_preview.py` |
+| `sales/data/invoices.csv` | `sales/invoice_model.py`, `file_handling/data_preview.py` |
+| `sales/data/invoice_lines.csv` | `sales/invoice_model.py`, `file_handling/data_preview.py` |
+| `school.db` | `database_config.py`, `file_handling/data_preview.py`, **`GUIDE.md`** |
+| `sales/data/sales.db` | `sales/gestion_ventas.py`, `sales/sales_database.py`, `file_handling/data_preview.py` (se crea al ejecutar el menú) |
 | `generated/` | Salida del taller CSV (ignorada por git salvo `.gitkeep`) |
 
 ### Gestión de ventas (SQLAlchemy + SQLite)
@@ -131,45 +136,48 @@ python hospital/hospital_system.py
 
 ## POO — ejemplos por tema (orden sugerido)
 
-Los nombres son **solo descriptivos** (sin prefijo `oop_01`, etc.). No dependen de `data/` salvo los que importan `utils` (indicados en la tabla de *sys.path* más abajo).
+Carpeta **`classes/`** (objetos, herencia, polimorfismo, etc.). Los nombres son **solo descriptivos** (sin prefijo `oop_01`, etc.). No dependen de `data/` salvo los que importan `examples_paths` o `utils` (ver *sys.path* más abajo).
 
 | # | Archivo | Tema |
 | -: | ------- | ---- |
-| 1 | `classes_objects.py` | Clases y objetos |
-| 2 | `temperature_methods.py` | Métodos de instancia, de clase y estáticos |
-| 3 | `bank_property.py` | Encapsulación con `@property` |
-| 4 | `inheritance_animals.py` | Herencia y `super()` |
-| 5 | `diamond_mro.py` | Herencia múltiple y MRO |
-| 6 | `polymorphism_speak.py` | Polimorfismo y duck typing |
-| 7 | `vehicles_override.py` | Sobrescritura de métodos |
-| 8 | `abstract_shapes.py` | Clases abstractas (`ABC`) |
-| 9 | `product_dunder.py` | Métodos mágicos / dunder |
-| 10 | `nested_classes.py` | Clases internas |
-| 11 | `class_instance_attrs.py` | Atributos de clase vs instancia |
-| 12 | `car_composition.py` | Composición (HAS-A) |
+| 1 | `classes/classes_objects.py` | Clases y objetos |
+| 2 | `classes/temperature_methods.py` | Métodos de instancia, de clase y estáticos |
+| 3 | `classes/bank_property.py` | Encapsulación con `@property` |
+| 4 | `classes/inheritance_animals.py` | Herencia y `super()` |
+| 5 | `classes/diamond_mro.py` | Herencia múltiple y MRO |
+| 6 | `classes/polymorphism_speak.py` | Polimorfismo y duck typing |
+| 7 | `classes/vehicles_override.py` | Sobrescritura de métodos |
+| 8 | `classes/abstract_shapes.py` | Clases abstractas (`ABC`) |
+| 9 | `classes/product_dunder.py` | Métodos mágicos / dunder |
+| 10 | `classes/nested_classes.py` | Clases internas |
+| 11 | `classes/class_instance_attrs.py` | Atributos de clase vs instancia |
+| 12 | `classes/car_composition.py` | Composición (HAS-A) |
 | 13 | `employees/employee_model.py` | Modelo de empleado |
 | 14 | `employees/employee_manager.py` | Gestor (importa `employee_model`) |
 | 15 | `employees/employee_menu.py` | Menú interactivo (importa `employee_manager`) |
-| 16 | `microwave_oop.py` | Estado con microondas |
-| 17 | `book_dataclass.py` | `@dataclass` |
-| 18 | `student_courses.py` | Agregación (estudiantes y cursos) |
-| 19 | `logger_mixin.py` | Mixins |
-| 20 | `traffic_enum.py` | `Enum` y estado del objeto |
-| 21 | `file_context_manager.py` | Context manager (`__enter__` / `__exit__`) |
-| 22 | `payment_strategy.py` | Estrategia con `Protocol` |
-| 23 | `customers/customer_form.py` | Formulario + validaciones de `utils` |
-| 24 | `customers/customer_crud.py` | CRUD interactivo + `utils` |
+| 16 | `classes/microwave_oop.py` | Estado con microondas |
+| 17 | `classes/book_dataclass.py` | `@dataclass` |
+| 18 | `classes/student_courses.py` | Agregación (estudiantes y cursos) |
+| 19 | `classes/logger_mixin.py` | Mixins |
+| 20 | `classes/traffic_enum.py` | `Enum` y estado del objeto |
+| 21 | `classes/payment_strategy.py` | Estrategia con `Protocol` |
+| 22 | `customers/customer_form.py` | Formulario + validaciones de `utils` |
+| 23 | `customers/customer_crud.py` | CRUD interactivo + `utils` |
 
-### Otros ejemplos POO / clases (fuera de la secuencia 1–24)
+*Context manager de archivo:* ver **`file_handling/file_context_manager.py`** (taller de archivos).
+
+### Otros ejemplos POO / clases (fuera de la secuencia)
 
 | Archivo | Notas |
 | ------- | ----- |
-| `car_class.py` | Clase `Car` ilustrativa |
-| `tv_class.py` | Clase `TV` ilustrativa |
-| `user_class.py` | Usuario con getter/setter de email |
-| `person_age.py` | Edad y fechas con `utils` |
+| `classes/car_class.py` | Clase `Car` ilustrativa |
+| `classes/tv_class.py` | Clase `TV` ilustrativa |
+| `classes/user_class.py` | Usuario con getter/setter de email |
+| `classes/person_age.py` | Edad y fechas con `utils` |
+| `classes/person.py` | Modelo Pydantic (persona) |
+| `classes/cls_*.py`, `cls_buggy.py` | Vehículos, herencia, cuenta bancaria con errores didácticos |
 | `hospital/hospital_system.py` | Sistema hospitalario; carga `hospital/data/hospital_data.csv` |
-| `vehicle_class.py` | Herencia vehículos; carga `data/vehicles.csv` |
+| `classes/vehicle_class.py` | Herencia vehículos; carga `data/vehicles.csv` |
 | `sales/invoice_model.py` | Factura maestra + líneas de detalle; carga `sales/data/invoices.csv` y `invoice_lines.csv` |
 
 ---
@@ -179,20 +187,23 @@ Los nombres son **solo descriptivos** (sin prefijo `oop_01`, etc.). No dependen 
 Desde la **raíz del repositorio**:
 
 ```bash
-python ITSE-1003/Examples/classes_objects.py
+python ITSE-1003/Examples/classes/classes_objects.py
+python ITSE-1003/Examples/file_handling/run_csv_workshop.py
 ```
 
 Desde **`ITSE-1003/Examples`**:
 
 ```bash
-python classes_objects.py
-python run_csv_workshop.py
+python classes/classes_objects.py
+python file_handling/run_csv_workshop.py
 ```
 
 ### `sys.path` (imports locales)
 
-Estos archivos añaden la carpeta `Examples/` a `sys.path` para que funcionen `utils` e imports entre módulos aunque ejecutes desde la raíz del repo:
+Estos archivos añaden la carpeta `Examples/` (y cuando hace falta `file_handling/`) a `sys.path` para que funcionen `utils`, `examples_paths` e imports entre módulos aunque ejecutes desde la raíz del repo:
 
+- `file_handling/csv_reading.py`, `file_handling/csv_writing.py`, `file_handling/csv_people_analysis.py`, `file_handling/data_preview.py`, `file_handling/run_csv_workshop.py`, `file_handling/csv_examples.py`
+- `classes/vehicle_class.py`, `classes/user_class.py`, `classes/person_age.py`
 - `customers/customer_form.py`, `customers/customer_crud.py`, `employees/employee_manager.py`, `employees/employee_menu.py`, `hospital/hospital_system.py`, `sales/invoice_model.py`
 
 ---
@@ -213,4 +224,4 @@ pip install tabulate
 
 ## `utils.py`
 
-Funciones compartidas (entradas validadas, fechas, email, etc.) usadas por **`customers/customer_form.py`**, **`customers/customer_crud.py`**, **`employees/employee_manager.py`**, **`person_age.py`**, y otros.
+Funciones compartidas (entradas validadas, fechas, email, etc.) usadas por **`customers/customer_form.py`**, **`customers/customer_crud.py`**, **`employees/employee_manager.py`**, **`classes/person_age.py`**, **`file_handling/csv_reading.py`**, y otros.

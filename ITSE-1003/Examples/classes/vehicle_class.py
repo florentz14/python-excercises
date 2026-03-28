@@ -6,10 +6,16 @@
 #              Loads fleet from data/vehicles.csv (Bike, Car, Truck rows).
 # -------------------------------------------------
 
+import sys
+from pathlib import Path
+
+_EXAMPLES_ROOT = Path(__file__).resolve().parent.parent
+if str(_EXAMPLES_ROOT) not in sys.path:
+    sys.path.insert(0, str(_EXAMPLES_ROOT))
+
 import csv
 import re
 from datetime import datetime
-from pathlib import Path
 from typing import List, Optional
 
 from examples_paths import VEHICLES_CSV

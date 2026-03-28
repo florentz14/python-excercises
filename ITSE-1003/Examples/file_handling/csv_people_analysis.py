@@ -1,9 +1,16 @@
 # -------------------------------------------------
-# File Name: ITSE-1003/Examples/csv_people_analysis.py
+# File Name: ITSE-1003/Examples/file_handling/csv_people_analysis.py
 # Author: Florentino
 # Date: 3/22/2026
 # Description: Estadísticas y filtros sobre data/people.csv con DictReader.
 # -------------------------------------------------
+
+import sys
+from pathlib import Path
+
+_EXAMPLES_ROOT = Path(__file__).resolve().parent.parent
+if str(_EXAMPLES_ROOT) not in sys.path:
+    sys.path.insert(0, str(_EXAMPLES_ROOT))
 
 import csv
 
