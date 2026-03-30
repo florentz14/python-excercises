@@ -141,23 +141,63 @@ def delete_row() -> None:
 # -------------------------------------------------
 # MAIN EXECUTION
 # -------------------------------------------------
+def _csv_ready() -> bool:
+    if not FILE_NAME.exists():
+        print("students.csv not found. Choose option 1 first.\n")
+        return False
+    return True
+
+
 def main() -> None:
-    create_csv()
-    add_row()
-    add_multiple_rows()
-    read_rows()
+    while True:
+        print("=" * 50)
+        print("CSV full operations — choose an option")
+        print("=" * 50)
+        print(" 1) Create CSV (header only)")
+        print(" 2) Add one row (Alice)")
+        print(" 3) Add multiple rows (Bob, Charlie, Diana)")
+        print(" 4) Read all rows (csv.reader)")
+        print(" 5) Read with DictReader")
+        print(" 6) Append with DictWriter (Ethan)")
+        print(" 7) Append one row (Frank)")
+        print(" 8) Update row (Bob's GPA → 3.7)")
+        print(" 9) Delete row (Charlie)")
+        print(" 0) Exit")
+        print("=" * 50)
 
-    read_with_dict()
-    write_with_dict()
+        choice = input("Enter choice: ").strip()
 
-    append_rows()
-    read_rows()
-
-    update_row()
-    read_rows()
-
-    delete_row()
-    read_rows()
+        if choice == "0":
+            print("Goodbye.\n")
+            break
+        if choice == "1":
+            create_csv()
+        elif choice == "2":
+            if _csv_ready():
+                add_row()
+        elif choice == "3":
+            if _csv_ready():
+                add_multiple_rows()
+        elif choice == "4":
+            if _csv_ready():
+                read_rows()
+        elif choice == "5":
+            if _csv_ready():
+                read_with_dict()
+        elif choice == "6":
+            if _csv_ready():
+                write_with_dict()
+        elif choice == "7":
+            if _csv_ready():
+                append_rows()
+        elif choice == "8":
+            if _csv_ready():
+                update_row()
+        elif choice == "9":
+            if _csv_ready():
+                delete_row()
+        else:
+            print("Invalid choice. Try again.\n")
 
 
 if __name__ == "__main__":

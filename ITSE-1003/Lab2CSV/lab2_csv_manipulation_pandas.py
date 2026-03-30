@@ -28,6 +28,7 @@ students = pd.read_csv(
     encoding="utf-8",
     dtype={"Name": str, "Major": str},
 )
+# Convert Age and GPA to integers and floats respectively.
 students["Age"] = students["Age"].astype(int)
 students["GPA"] = students["GPA"].astype(float)
 
@@ -91,7 +92,7 @@ for name in high_gpa["Name"]:
 
 
 # -------------------------------------------------
-# Stretch challenge (optional)
+# Stretch challenge
 # -------------------------------------------------
 average_gpa = cast(float, students["GPA"].mean())
 print(f"\nAverage GPA: {average_gpa:.2f}")
