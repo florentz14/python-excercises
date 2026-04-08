@@ -10,9 +10,9 @@ import numpy as np
 
 def matrix_rank_original():
     """Compute and print matrix rank (original version)."""
-    A = np.array([[1, 2, 3, 4], [0, 2, -1, 5], [0, 0, 3, 7]])
-    print(A)
-    result = np.linalg.matrix_rank(A)
+    a = np.array([[1, 2, 3, 4], [0, 2, -1, 5], [0, 0, 3, 7]])
+    print(a)
+    result = np.linalg.matrix_rank(a)
     print(result)
 
 
