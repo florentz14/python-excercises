@@ -52,8 +52,8 @@ print()
 # -------------------------------------------------
 # Calculate correlation between indices using corr()
 # -------------------------------------------------
-returns_df = df[["SP500_Return", "NASDAQ_Return", "DOW_Return"]].dropna()
-corr_matrix = returns_df.corr()
+returns_df = pd.DataFrame(df.loc[:, ["SP500_Return", "NASDAQ_Return", "DOW_Return"]]).dropna()
+corr_matrix = pd.DataFrame(returns_df).corr()
 print("Correlation between index returns:")
 print(corr_matrix)
 print()

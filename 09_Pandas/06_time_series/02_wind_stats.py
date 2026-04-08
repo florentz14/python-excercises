@@ -38,7 +38,11 @@ print(df["daily_mean"].head(10))
 
 # Find the windiest day (highest mean across stations)
 windiest_day = df["daily_mean"].idxmax()
-print(f"\n--- Windiest day: {windiest_day.date()} (mean: {df['daily_mean'].max():.2f}) ---")
+windiest_day_ts = pd.Timestamp(windiest_day)
+print(
+    f"\n--- Windiest day: {windiest_day_ts.date()} "
+    f"(mean: {df['daily_mean'].max():.2f}) ---"
+)
 
 # Calculate monthly statistics using resample() (30 days = ~1 month)
 print("\n--- Monthly statistics (resample) ---")
@@ -47,7 +51,8 @@ print(monthly)
 
 # Compute correlation between stations using corr()
 print("\n--- Correlation between stations ---")
-print(df[["station_1", "station_2", "station_3", "station_4"]].corr())
+stations_df = pd.DataFrame(df.loc[:, ["station_1", "station_2", "station_3", "station_4"]])
+print(stations_df.corr())
 
 # Calculate rolling 7-day average
 df["rolling_7d"] = df["daily_mean"].rolling(window=7, min_periods=1).mean()
