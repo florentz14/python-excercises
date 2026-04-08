@@ -10,7 +10,7 @@ import numpy as np
 
 np.random.seed(42)
 dates = pd.date_range("2024-01-01", periods=20, freq="D")
-trend = np.linspace(100, 150, 20)
+trend = 100 + (50 * np.arange(20) / 19)
 noise = np.random.randn(20) * 5
 sales = trend + noise
 df = pd.DataFrame({"date": dates, "sales": sales}).set_index("date")
@@ -26,7 +26,8 @@ print(df[["sales", "naive_fcast"]].head(6))
 print()
 
 # Rolling mean as baseline
-df["rolling_fcast"] = df["sales"].rolling(3, min_periods=1).mean().shift(1)
+rolling_mean = pd.Series(df["sales"].rolling(3, min_periods=1).mean(), index=df.index)
+df["rolling_fcast"] = rolling_mean.shift(1)
 print("=== Rolling mean forecast (lag 1) ===")
 print(df[["sales", "rolling_fcast"]].head(8))
 print()

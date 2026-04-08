@@ -56,10 +56,17 @@ print()
 # -------------------------------------------------
 # Resample or group by year, calculate annual totals
 # -------------------------------------------------
-df["Year"] = df.index.year
-annual = df.groupby("Year")[["Domestic_Equity", "Foreign_Equity", "Bonds", "Money_Market", "Total_Flow"]].sum()
+quarter_series = pd.Series(pd.DatetimeIndex(df.index), index=df.index)
+df["Year"] = quarter_series.dt.year.astype(int)
+annual = df.groupby("Year", as_index=False).agg(
+    Domestic_Equity=("Domestic_Equity", "sum"),
+    Foreign_Equity=("Foreign_Equity", "sum"),
+    Bonds=("Bonds", "sum"),
+    Money_Market=("Money_Market", "sum"),
+    Total_Flow=("Total_Flow", "sum"),
+)
 print("Annual totals by category:")
-print(annual)
+print(annual.set_index("Year"))
 print()
 
 # -------------------------------------------------
@@ -90,15 +97,20 @@ print()
 # Identify trend: is money moving from equity to bonds?
 # -------------------------------------------------
 df["Equity_Total"] = df["Domestic_Equity"] + df["Foreign_Equity"]
-annual_equity = df.groupby("Year")["Equity_Total"].sum()
-annual_bonds = df.groupby("Year")["Bonds"].sum()
-equity_share = annual_equity / (annual_equity + annual_bonds)
-bonds_share = annual_bonds / (annual_equity + annual_bonds)
+annual_mix = df.groupby("Year", as_index=False).agg(
+    Equity_Total=("Equity_Total", "sum"),
+    Bonds=("Bonds", "sum"),
+)
+equity_total_arr = np.asarray(annual_mix["Equity_Total"], dtype=float)
+bonds_arr = np.asarray(annual_mix["Bonds"], dtype=float)
+share_denominator = equity_total_arr + bonds_arr
+equity_share = equity_total_arr / share_denominator
+bonds_share = bonds_arr / share_denominator
 print("Annual equity vs bonds (totals):")
-print(pd.DataFrame({"Equity": annual_equity, "Bonds": annual_bonds}))
-print("Equity share by year:", equity_share.values)
-print("Bonds share by year:", bonds_share.values)
-if equity_share.iloc[-1] < equity_share.iloc[0] and bonds_share.iloc[-1] > bonds_share.iloc[0]:
+print(annual_mix.set_index("Year")[["Equity_Total", "Bonds"]])
+print("Equity share by year:", equity_share)
+print("Bonds share by year:", bonds_share)
+if equity_share[-1] < equity_share[0] and bonds_share[-1] > bonds_share[0]:
     print("Trend: Money appears to be moving from equity to bonds over the period.")
 else:
     print("Trend: No clear shift from equity to bonds in this sample.")
@@ -110,11 +122,20 @@ print()
 print("Describe:")
 print(df[flow_cols + ["Total_Flow"]].describe())
 print("Correlation between flow categories:")
-print(df[flow_cols].corr())
+flow_df = pd.DataFrame(df.loc[:, flow_cols])
+print(flow_df.corr())
 print()
 
 # -------------------------------------------------
 # Show the year with the most investment inflow
 # -------------------------------------------------
-year_inflow = annual["Total_Flow"].idxmax()
-print("Year with the most investment inflow:", year_inflow, "Total:", annual.loc[year_inflow, "Total_Flow"])
+best_year_row = max(
+    annual.itertuples(index=False),
+    key=lambda row: float(row[5]),
+)
+print(
+    "Year with the most investment inflow:",
+    int(best_year_row[0]),
+    "Total:",
+    float(best_year_row[5]),
+)
