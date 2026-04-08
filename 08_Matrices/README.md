@@ -113,11 +113,11 @@ Vector, matrix, and NumPy operations. Linear algebra, scientific computing, and 
 | `75_stack_concatenate.py` | vstack, hstack, concatenate |
 | `76_statistics.py` | sum, mean, min, max, std |
 | `77_sorting.py` | sort, argsort |
-| `78_boolean_indexing.py` | Boolean masks, where |
+| `78_bool_ix.py` | Boolean masks, fancy indexing, AND/OR |
 | `79_arange_linspace.py` | arange, linspace, meshgrid |
 | `80_random.py` | rand, randn, randint, choice |
 | `81_unique_counts.py` | unique, return_counts, bincount |
-| `82_filter_replace.py` | Filter and replace *(planned)* |
+| `82_where.py` | np.where: indices and conditional replacement |
 | `83_padding.py` | pad arrays *(planned)* |
 | `84_repeat_tile.py` | repeat and tile *(planned)* |
 | `85_split_arrays.py` | split, hsplit, vsplit *(planned)* |
@@ -125,6 +125,7 @@ Vector, matrix, and NumPy operations. Linear algebra, scientific computing, and 
 | `87_searching.py` | argmax, argmin, nonzero *(planned)* |
 | `88_cumulative_ops.py` | cumsum, cumprod *(planned)* |
 | `89_percentiles_quantiles.py` | percentile, quantile *(planned)* |
+| `110_df_bool.py` | Pandas: boolean row filter (data_colors) |
 
 ---
 
