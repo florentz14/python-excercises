@@ -25,11 +25,11 @@ df["double_price"] = df["price"].apply(lambda x: x * 2)
 print("\nWith apply:")
 print(df)
 
-# create a new column using the map function
-mapping = {"A": "High", "B": "Medium", "C": "Low"}
+# create a new column using a dictionary replacement
+mapping: dict[str, str] = {"A": "High", "B": "Medium", "C": "Low"}
 
-# create a new column using the map function
-df["level"] = df["product"].map(mapping)
+# create a new column from product labels
+df["level"] = df["product"].replace(mapping)
 
 # print the DataFrame
 print("\nWith map:")
