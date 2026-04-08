@@ -18,7 +18,7 @@ print(df)
 print()
 
 # Group by occupation, find mean age per occupation
-mean_age_by_occupation = df.groupby("occupation")["age"].mean()
+mean_age_by_occupation = df.groupby("occupation", as_index=False).agg(mean_age=("age", "mean"))
 print("Mean age per occupation:")
 print(mean_age_by_occupation)
 print()
@@ -36,8 +36,11 @@ print(occupation_gender_counts)
 print()
 
 # Find occupation with the oldest average age
-oldest_avg_occupation = mean_age_by_occupation.idxmax()
-print(f"Occupation with oldest average age: {oldest_avg_occupation} ({mean_age_by_occupation.max():.2f} years)")
+oldest_row = max(
+    mean_age_by_occupation.itertuples(index=False),
+    key=lambda row: float(row[1]),
+)
+print(f"Occupation with oldest average age: {oldest_row[0]} ({float(oldest_row[1]):.2f} years)")
 print()
 
 # Use agg() to get min, max, mean age per occupation
@@ -54,6 +57,11 @@ print(gender_ratio)
 print()
 
 # Sort occupations by average age
-sorted_occupations = mean_age_by_occupation.sort_values(ascending=False)
+sorted_rows = sorted(
+    mean_age_by_occupation.itertuples(index=False),
+    key=lambda row: float(row[1]),
+    reverse=True,
+)
+sorted_occupations = pd.DataFrame(sorted_rows, columns=["occupation", "mean_age"])
 print("Occupations sorted by average age (descending):")
 print(sorted_occupations)

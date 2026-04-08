@@ -25,5 +25,7 @@ data = {
     "name": ["Alice", "Bob", "Charlie", "David", "Eve", "Frank", "Grace", "Henry", "Ivy", "Jack"],
 }
 df_practice_28 = pd.DataFrame(data)
-result = df_practice_28.groupby("city").size().reset_index(name="Number of people")
+result = df_practice_28.groupby("city", as_index=False).agg(
+    **{"Number of people": ("name", "size")}
+)
 print(result)

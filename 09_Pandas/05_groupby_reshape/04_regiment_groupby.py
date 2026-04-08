@@ -30,9 +30,17 @@ print(soldiers_per_regiment_company)
 print()
 
 # Find regiment with highest average postTestScore
-post_means = df.groupby("regiment")["postTestScore"].mean()
-best_regiment = post_means.idxmax()
-print(f"Regiment with highest average postTestScore: {best_regiment} ({post_means.max():.2f})")
+post_means = df.groupby("regiment", as_index=False).agg(
+    mean_post_test_score=("postTestScore", "mean")
+)
+best_regiment_row = max(
+    post_means.itertuples(index=False),
+    key=lambda row: float(row[1]),
+)
+print(
+    "Regiment with highest average postTestScore: "
+    f"{best_regiment_row[0]} ({float(best_regiment_row[1]):.2f})"
+)
 print()
 
 # Calculate average improvement (post - pre) per regiment
