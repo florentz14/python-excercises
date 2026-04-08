@@ -4,7 +4,7 @@ Data analysis exercises with Pandas, organized by topic in subfolders.
 
 **Requirements:** `pandas`, `numpy`; optional `matplotlib` (viz), `openpyxl` (Excel), `pyarrow` (Parquet).
 
-**Run:** `python 01_basics/01_create_dataframe.py` (or any file) from `09_Pandas/`.
+**Run:** `python 01_basics/04_read_csv.py` (or any existing file) from `09_Pandas/`.
 
 **Data path:** All CSV files in `09_Pandas/data/`. Scripts in subfolders use `Path(__file__).parent.parent / "data"`.
 
@@ -26,72 +26,43 @@ Data analysis exercises with Pandas, organized by topic in subfolders.
 
 ---
 
-## 01_basics (01-31)
+## 01_basics (01-74)
 
-| # | File | Description |
-|---|------|-------------|
-| 01 | `01_create_dataframe.py` | Create DataFrame from dict, lists, NumPy |
-| 02 | `04_read_csv.py` | Read CSV, basic export |
-| 03 | `06_explore.py` | head, tail, info, describe |
-| 04 | `07_columns.py` | Select and create columns |
-| 05 | `09_nulls.py` | isna, fillna, dropna |
-| 06 | `10_merge_concat.py` | Merge and concat |
-| 07 | `11_drop.py` | Drop rows, columns, duplicates |
-| 08 | `12_statistics.py` | Basic statistics |
-| 09 | `13_pokemon_series.py` | Series, DataFrame from dicts/lists |
-| 10 | `14_index_operations.py` | set_index, reset_index |
-| 11 | `16_value_counts.py` | Frequency counts and percentages |
-| 12 | `17_astype_and_conversion.py` | Convert column data types safely |
-| 13 | `19_to_numeric.py` | pd.to_numeric, errors=coerce |
-| 14 | `21_series_from_list.py` | Create a Series from Python lists |
-| 15 | `23_series_from_numpy.py` | Create a Series from NumPy arrays |
-| 16 | `24_series_from_dictionary.py` | Create a Series from dictionaries |
-| 17 | `26_series_custom_index.py` | Series with custom index labels |
-| 18 | `28_series_named_attributes.py` | Series name and axis labels |
-| 19 | `30_series_to_list.py` | Convert Series to Python list |
-| 20 | `32_series_arithmetic.py` | Arithmetic operations between Series |
-| 21 | `34_series_comparison.py` | Element-wise comparison operations |
-| 22 | `36_dict_to_series.py` | Dictionary to Series conversion examples |
-| 23 | `37_array_to_series.py` | NumPy array to Series conversion |
-| 24 | `39_series_statistics.py` | Descriptive statistics for a Series |
-| 25 | `41_series_word_length.py` | String length analysis with Series |
+This folder now contains a mix of:
+- **single-file lessons** (for short topics), and
+- **modularized lessons** named with suffixes like `10_01_...`, `10_02_...`.
 
-### New basics (26-30)
-
-| # | File | Description |
-|---|------|-------------|
-| 26 | `43_merge_join_basics.py` | Merge by key, merge by index, and join with renamed columns |
-| 27 | `44_concat_pivot_basics.py` | concat, combine_first, stack, and unstack |
-| 28 | `46_mapping_replace_basics.py` | drop_duplicates, map dictionaries, replace values, rename index |
-| 29 | `47_binning_outliers_sampling.py` | cut/qcut binning, outlier filtering, permutation sampling |
-| 30 | `48_strings_and_advanced_groupby.py` | string cleanup, regex matching, groupby transform/apply |
-| 31 | `50_merging_and_joining_in_depth.py` | full in-depth guide for merge/join variants and real-world example |
+Examples of modularized groups:
+- `07_01...07_04` (columns)
+- `10_01...10_03` (merge/concat)
+- `11_01...11_03` (drop operations)
+- `12_01...12_04` (basic stats)
+- `13_01...13_06` (pokemon series/dataframe/indexing)
+- `14_01...14_04` (index operations)
+- `30_01...30_05` (series to list)
+- `32_01...32_04` (series arithmetic)
+- `34_01...34_04` (series comparison)
+- `39_01...39_04` (series stats)
+- `41_01...41_04` (word length)
+- `42_01...42_02`, `43_01...43_03`, `44_01...44_03`, `45_01...45_03`,
+  `46_01...46_03`, `47_01...47_03`, `48_01...48_03`, `49_01...49_02`,
+  `50_01...50_06`, `54_01...54_02`, `55_01...55_02`, `56_01...56_02`,
+  `72_01...72_04`.
 
 ---
 
 ## 02_selection_filtering (01-19)
 
-| # | File | Description |
-|---|------|-------------|
-| 01 | `01_selection.py` | loc, iloc |
-| 02 | `02_chipotle_filter.py` | Boolean indexing and filtering by condition |
-| 03 | `03_euro12_filter.py` | Filter teams by goals |
-| 04 | `04_army_filter.py` | Complex conditions for row filtering |
-| 05 | `05_select_name_score.py` | Select specific columns from a DataFrame |
-| 06 | `06_select_columns_rows.py` | Select columns and rows with labels |
-| 07 | `07_rows_attempts_gt2.py` | Filter rows by numeric threshold |
-| 08 | `08_count_rows_columns.py` | Quick shape and size checks |
-| 09 | `09_score_between_15_20.py` | Range-based filtering |
-| 10 | `10_change_score_row_d.py` | Update value using label selection |
-| 11 | `11_select_rows_col1_eq4.py` | Filter with exact-value condition |
-| 12 | `12_delete_rows_by_value.py` | Remove rows based on condition |
-| 13 | `13_select_row_integer_index.py` | Integer-position row selection |
-| 14 | `14_row_maximum_value.py` | Select rows by row-level maximum |
-| 15 | `15_check_column_presence.py` | Validate column existence |
-| 16 | `16_get_row_value.py` | Extract a single row/value |
-| 17 | `17_select_all_except_one.py` | Select all columns except one |
-| 18 | `18_select_columns_by_dtype.py` | Select columns by dtype |
-| 19 | `19_local_variable_in_query.py` | Query with local Python variables |
+This folder is partially modularized:
+- `01_selection.py` remains single-file.
+- `02` to `13` are modularized as `NN_01...NN_0X` groups.
+- `14` to `19` remain single-file lessons:
+  - `14_row_maximum_value.py`
+  - `15_check_column_presence.py`
+  - `16_get_row_value.py`
+  - `17_select_all_except_one.py`
+  - `18_select_columns_by_dtype.py`
+  - `19_local_variable_in_query.py`
 
 ---
 
@@ -116,13 +87,13 @@ Data analysis exercises with Pandas, organized by topic in subfolders.
 
 | # | File | Description |
 |---|------|-------------|
-| 01 | `01_string_methods.py` | str.lower, str.contains, str.replace |
+| 01 | `01_01...01_04` | String cleanup, contains/extract, split/replace, length (modularized) |
 | 02 | `02_categorical_binning.py` | pd.cut, pd.qcut |
 | 03 | `03_data_cleaning.py` | Strip, replace, clip |
 | 04 | `04_duplicate_detection.py` | duplicated(), drop_duplicates() |
 | 05 | `05_outlier_detection.py` | IQR, z-score |
 | 06 | `06_memory_optimization.py` | category dtype, memory_usage |
-| 07 | `07_data_quality_report.py` | Automatic data quality checks |
+| 07 | `07_01...07_04` | Data quality overview, nulls/dupes, summaries, issue scan (modularized) |
 | 08 | `08_duplicates.py` | Detect and remove duplicates |
 | 09 | `09_elementwise_transform.py` | apply, map |
 | 10 | `11_replace_values.py` | replace with scalars, dicts |
@@ -199,4 +170,15 @@ The old `07_practice_problems` category was redistributed into the core topic fo
 
 ## Data Folder
 
-All CSV files in `09_Pandas/data/`. Relational HR schema: `employees.csv`, `departments.csv`, `jobs.csv`, etc., plus dataset-specific files (titanic, chipotle, euro12, etc.).
+All CSV files in `09_Pandas/data/`.
+
+Key files used by current exercises:
+
+- `exam_attempts.csv`: Extended student dataset for filtering/selection practice with columns:
+  - `id`, `name`, `age`, `gender`, `score`, `attempts`, `qualify`, `grade`,
+  - `study_hours_week`, `passed_mock_exam`, `region`, `enrollment_date`,
+  - `attendance_pct`, `final_exam_score`, `absences`, `socioeconomic_tier`, `internet_access`.
+- `data_dictionary.csv`: Column-level documentation (type, description, example, allowed range/values) for `exam_attempts.csv`.
+- `exam_data.json`: JSON example dataset for import/parsing exercises.
+
+Also includes dataset-specific files used across topics (for example `chipotle_orders.csv`, `euro12.csv`, and other project datasets).

@@ -19,10 +19,23 @@ print()
 
 # Find continent with highest beer consumption (mean)
 print("=== CONTINENT WITH HIGHEST BEER CONSUMPTION (mean) ===")
-beer_by_continent = df.groupby("continent")["beer_servings"].mean()
-highest_beer_continent = beer_by_continent.idxmax()
-print(f"Continent: {highest_beer_continent}, Mean beer servings: {beer_by_continent.max():.1f}")
-print(beer_by_continent.sort_values(ascending=False))
+beer_by_continent = df.groupby("continent", as_index=False).agg(
+    mean_beer_servings=("beer_servings", "mean")
+)
+sorted_rows = sorted(
+    beer_by_continent.itertuples(index=False),
+    key=lambda row: float(row[1]),
+    reverse=True,
+)
+beer_by_continent_sorted = pd.DataFrame(
+    sorted_rows, columns=["continent", "mean_beer_servings"]
+)
+highest_beer_row = beer_by_continent_sorted.iloc[0]
+print(
+    f"Continent: {highest_beer_row['continent']}, "
+    f"Mean beer servings: {highest_beer_row['mean_beer_servings']:.1f}"
+)
+print(beer_by_continent_sorted)
 print()
 
 # Calculate total litres per continent (sum)
@@ -39,8 +52,11 @@ print()
 
 # Find the country with the max wine_servings per continent
 print("=== COUNTRY WITH MAX wine_servings PER CONTINENT ===")
-idx_max_wine = df.groupby("continent")["wine_servings"].idxmax()
-max_wine_countries = df.loc[idx_max_wine, ["continent", "country", "wine_servings"]]
+max_wine_countries = (
+    df.sort_values(["continent", "wine_servings"], ascending=[True, False])
+    .drop_duplicates("continent")
+    [["continent", "country", "wine_servings"]]
+)
 print(max_wine_countries)
 print()
 

@@ -1,0 +1,18 @@
+column_name,data_type,description,example,allowed_values_or_range
+id,int,Unique student identifier,1,Positive integer
+name,string,Student full name,Amina Hassan,Free text
+age,int,Student age in years,22,15-100
+gender,string,Self-reported gender,F,"F,M,Other"
+score,float,Current score before final exam,12.5,0-20 or blank
+attempts,int,Number of exam attempts,1,0-10
+qualify,string,Whether student currently qualifies,yes,"yes,no"
+grade,string,Letter grade based on score,B,"A,B,C,D,F"
+study_hours_week,int,Average study hours per week,8,0-80
+passed_mock_exam,string,Whether student passed mock exam,yes,"yes,no"
+region,string,Geographic region,Norte,"Norte,Sur,Este,Oeste"
+enrollment_date,date,Enrollment date in YYYY-MM-DD,2024-01-15,Valid ISO date
+attendance_pct,float,Attendance percentage,91,0-100
+final_exam_score,float,Final exam score,14.0,0-20
+absences,int,Number of absences,2,0-365
+socioeconomic_tier,string,Socioeconomic tier of student,medium,"low,medium,high"
+internet_access,string,Home internet access status,yes,"yes,no"

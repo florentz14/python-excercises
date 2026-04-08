@@ -1,11 +1,11 @@
-name,score,attempts,qualify
-Valeria,12.5,1,yes
-Thiago,9,3,no
-Camila,16.5,2,yes
-Sergio,,3,no
-Daniela,9,2,no
-Bruno,20,3,yes
-Renata,14.5,1,yes
-Nicolas,,1,no
-Aitana,8,2,no
-Gael,19,1,yes
+id,name,age,gender,score,attempts,qualify,grade,study_hours_week,passed_mock_exam,region,enrollment_date,attendance_pct,final_exam_score,absences,socioeconomic_tier,internet_access
+1,Amina Hassan,22,F,12.5,1,yes,B,8,yes,Norte,2024-01-15,91,14.0,2,medium,yes
+2,Liam OConnor,25,M,9.0,3,no,D,3,no,Sur,2024-01-18,74,8.5,7,low,no
+3,Priya Sharma,21,F,16.5,2,yes,A,12,yes,Este,2024-02-01,96,17.8,1,medium,yes
+4,Kwame Mensah,28,M,,3,no,F,2,no,Oeste,2024-01-20,68,7.0,9,low,no
+5,Sofia Petrova,23,F,9.0,2,no,D,5,no,Norte,2024-02-10,79,9.1,6,medium,yes
+6,Chen Wei,30,M,20.0,3,yes,A,15,yes,Sur,2024-01-25,98,19.2,0,high,yes
+7,Yasmin Al Zahra,20,F,14.5,1,yes,B,10,yes,Este,2024-02-05,93,15.1,2,medium,yes
+8,Diego Quispe,24,M,,1,no,F,1,no,Oeste,2024-03-01,64,6.2,10,low,no
+9,Noor Khan,22,F,8.0,2,no,D,4,no,Norte,2024-02-20,72,8.0,8,low,yes
+10,Mateo Silva,27,M,19.0,1,yes,A,14,yes,Sur,2024-01-30,97,18.5,1,high,yes

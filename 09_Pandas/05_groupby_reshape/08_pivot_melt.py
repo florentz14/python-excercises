@@ -40,7 +40,9 @@ print("=== LONG (after melt) ===")
 print(long)
 print()
 
-# Unstack: Series/DataFrame with MultiIndex
-by_region_product = df.groupby(["region", "product"])["sales"].sum()
+# Unstack equivalent via pivot_table (more type-checker friendly)
+by_region_product = df.pivot_table(
+    index="region", columns="product", values="sales", aggfunc="sum"
+)
 print("=== UNSTACK (MultiIndex -> columns) ===")
-print(by_region_product.unstack())
+print(by_region_product)

@@ -29,6 +29,7 @@ exam_data = {
 labels = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j"]
 df_practice_17 = pd.DataFrame(exam_data, index=labels)
 
-df_practice_17["qualify"] = df_practice_17["qualify"].map({"yes": True, "no": False})
+qualify_map = {"yes": True, "no": False}
+df_practice_17["qualify"] = df_practice_17["qualify"].apply(lambda value: qualify_map.get(value))
 print("Replace the 'qualify' column contains the values 'yes' and 'no' with True and False:")
 print(df_practice_17)
