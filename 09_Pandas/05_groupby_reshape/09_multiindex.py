@@ -45,6 +45,6 @@ print(stacked)
 print()
 
 # swaplevel
-df_swapped = df.swaplevel("country", "city")
+df_swapped = df.swaplevel(0, 1)
 print("=== swaplevel ===")
 print(df_swapped)
