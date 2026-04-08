@@ -45,7 +45,7 @@ sales_full = pd.merge(sales_df, price_df, on="product_id", how="left")
 # Create a Series with the emergency prices
 fallback_prices = pd.Series(np.nan, index=sales_full.index)
 fallback_prices.loc[sales_full["product_id"] == "laptop"] = 500.00
-sales_full["price"] = sales_full["price"].combine_first(fallback_prices)
+sales_full["price"] = sales_full["price"].fillna(fallback_prices)
 
 # --- PHASE 2: TRANSFORMATION (Cleaning, Mapping & Strings) ---
 # Drop the duplicate rows
@@ -67,7 +67,9 @@ category_map = {
     "ashtray": "Home",
     "laptop": "Technology",
 }
-sales_full["category"] = sales_full["product_id"].map(category_map)
+sales_full["category"] = sales_full["product_id"].apply(
+    lambda value: category_map.get(str(value), "Other")
+)
 
 # Create a new column with the sales volume
 sales_full["sales_volume"] = pd.cut(
@@ -126,7 +128,10 @@ print("\n--- OUTLIER SALES (qty > 8) ---")
 if outlier_sales.empty:
     print("No outlier sales were detected.")
 else:
-    print(outlier_sales[["order_id", "product_id", "qty", "subtotal"]].to_string(index=False))
+    outlier_display = pd.DataFrame(
+        outlier_sales.loc[:, ["order_id", "product_id", "qty", "subtotal"]]
+    )
+    print(outlier_display.to_string(index=False))
 
 print("\n--- PERFORMANCE MATRIX (PIVOT) ---")
 print(pivot_summary.to_string())

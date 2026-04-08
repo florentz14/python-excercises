@@ -28,26 +28,34 @@ def main():
 
     # Most frequent error type (by message pattern)
     errors = df[df["level"] == "ERROR"]
-    by_message = errors["message"].value_counts()
+    by_message = pd.Series(errors["message"]).value_counts()
     print("\n[2] Most frequent errors:")
     print(by_message.head(5).to_string())
 
     # Hour with most failures
     failures = df[df["level"].isin(["ERROR", "WARNING"])]
-    by_hour = failures.groupby("hour").size().sort_values(ascending=False)
+    by_hour = pd.DataFrame(
+        failures.groupby("hour", as_index=False).agg(event_count=("hour", "size"))
+    )
+    by_hour_rows = sorted(
+        by_hour.itertuples(index=False),
+        key=lambda row: int(row[1]),
+        reverse=True,
+    )
+    by_hour = pd.DataFrame(by_hour_rows, columns=["hour", "event_count"])
     print("\n[3] Hour with most failures:")
-    peak_hour = by_hour.idxmax()
-    print(f"  Hour {peak_hour}:00 - {by_hour[peak_hour]} events")
+    peak_hour_row = by_hour.iloc[0]
+    print(f"  Hour {int(peak_hour_row['hour'])}:00 - {int(peak_hour_row['event_count'])} events")
 
     # Server with most warnings
     warnings = df[df["level"] == "WARNING"]
-    by_server = warnings["server"].value_counts()
+    by_server = pd.Series(warnings["server"]).value_counts()
     print("\n[4] Server with most warnings:")
     print(by_server.to_string())
 
     # Events by level
     print("\n[5] Events by level:")
-    print(df["level"].value_counts().to_string())
+    print(pd.Series(df["level"]).value_counts().to_string())
 
 
 if __name__ == "__main__":

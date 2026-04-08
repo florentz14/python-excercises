@@ -29,30 +29,64 @@ def main():
 
     # Project consuming most sheetrock
     sheetrock = df[df["material"] == "sheetrock"]
-    by_project = sheetrock.groupby("project")["quantity_used"].sum().sort_values(ascending=False)
+    by_project = pd.DataFrame(
+        sheetrock.groupby("project", as_index=False).agg(quantity_used_sum=("quantity_used", "sum"))
+    )
+    by_project_rows = sorted(
+        by_project.itertuples(index=False),
+        key=lambda row: float(row[1]),
+        reverse=True,
+    )
+    by_project = pd.DataFrame(by_project_rows, columns=["project", "quantity_used_sum"])
     print("\n[2] Sheetrock consumption by project:")
-    print(by_project.to_string())
+    print(by_project.set_index("project")["quantity_used_sum"].to_string())
 
     # Material with most waste (positive = overused)
-    waste_by_mat = df.groupby("material")["waste"].sum()
-    most_waste = waste_by_mat[waste_by_mat > 0].sort_values(ascending=False)
+    waste_by_mat = pd.DataFrame(
+        df.groupby("material", as_index=False).agg(waste_sum=("waste", "sum"))
+    )
+    waste_by_mat = waste_by_mat[waste_by_mat["waste_sum"] > 0]
+    waste_rows = sorted(
+        waste_by_mat.itertuples(index=False),
+        key=lambda row: float(row[1]),
+        reverse=True,
+    )
+    most_waste = pd.DataFrame(waste_rows, columns=["material", "waste_sum"])
     print("\n[3] Materials with most waste (over planned):")
     if len(most_waste) > 0:
-        print(most_waste.head(5).to_string())
+        print(most_waste.head(5).set_index("material")["waste_sum"].to_string())
     else:
         print("  None")
 
     # Stage exceeding budget most
     over_budget = df[df["budget_variance"] > 0]
     if len(over_budget) > 0:
-        by_stage = over_budget.groupby("stage")["budget_variance"].sum().sort_values(ascending=False)
+        by_stage = pd.DataFrame(
+            over_budget.groupby("stage", as_index=False).agg(
+                budget_variance_sum=("budget_variance", "sum")
+            )
+        )
+        by_stage_rows = sorted(
+            by_stage.itertuples(index=False),
+            key=lambda row: float(row[1]),
+            reverse=True,
+        )
+        by_stage = pd.DataFrame(by_stage_rows, columns=["stage", "budget_variance_sum"])
         print("\n[4] Stages over budget (total variance):")
-        print(by_stage.to_string())
+        print(by_stage.set_index("stage")["budget_variance_sum"].to_string())
 
     # Cost by project
     print("\n[5] Total cost by project:")
-    cost = df.groupby("project")["actual_cost"].sum().sort_values(ascending=False)
-    print(cost.to_string())
+    cost = pd.DataFrame(
+        df.groupby("project", as_index=False).agg(actual_cost_sum=("actual_cost", "sum"))
+    )
+    cost_rows = sorted(
+        cost.itertuples(index=False),
+        key=lambda row: float(row[1]),
+        reverse=True,
+    )
+    cost = pd.DataFrame(cost_rows, columns=["project", "actual_cost_sum"])
+    print(cost.set_index("project")["actual_cost_sum"].to_string())
 
 
 if __name__ == "__main__":

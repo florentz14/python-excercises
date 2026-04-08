@@ -15,8 +15,12 @@ df = pd.read_csv(DATA / "store_sales.csv", parse_dates=["date"])
 df["revenue"] = df["quantity"] * df["unit_price"]
 
 # Daily revenue
-daily = df.groupby("date")["revenue"].sum().reset_index()
-daily = daily.sort_values("date")
+daily = pd.DataFrame(df.groupby("date", as_index=False).agg(revenue=("revenue", "sum")))
+daily_rows = sorted(
+    daily.itertuples(index=False),
+    key=lambda row: pd.Timestamp(row[0]),
+)
+daily = pd.DataFrame(daily_rows, columns=["date", "revenue"])
 
 print("=== DAILY REVENUE ===")
 print(daily.head(10))
@@ -34,7 +38,8 @@ print()
 daily["naive_fcast"] = daily["revenue"].shift(1)
 
 # Moving average forecast (next = mean of last 3)
-daily["ma3_fcast"] = daily["revenue"].rolling(3).mean().shift(1)
+ma3_series = pd.Series(daily["revenue"].rolling(3).mean(), index=daily.index)
+daily["ma3_fcast"] = ma3_series.shift(1)
 print("=== FORECAST COLUMNS ===")
 print(daily[["date", "revenue", "naive_fcast", "ma3_fcast"]].tail(5))
 print()

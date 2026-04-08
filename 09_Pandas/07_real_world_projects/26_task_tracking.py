@@ -32,27 +32,37 @@ def main():
 
     # Most pending by assignee
     pending = df[df["status"] == "pending"]
-    by_assignee = pending.groupby("assignee").size().sort_values(ascending=False)
+    by_assignee = pd.DataFrame(
+        pending.groupby("assignee", as_index=False).agg(task_count=("task_name", "size"))
+    )
+    by_assignee_rows = sorted(
+        by_assignee.itertuples(index=False),
+        key=lambda row: int(row[1]),
+        reverse=True,
+    )
+    by_assignee = pd.DataFrame(by_assignee_rows, columns=["assignee", "task_count"])
     print("\n[3] Most pending tasks by assignee:")
-    print(by_assignee.to_string())
+    print(by_assignee.set_index("assignee")["task_count"].to_string())
 
     # Delayed (in_progress or pending, past due)
     today = pd.Timestamp("2024-01-15")  # simulate current date
-    open_tasks = df[df["status"].isin(["in_progress", "pending"])]
-    delayed = open_tasks[open_tasks["due_date"] < today]
+    open_tasks = pd.DataFrame(df[df["status"].isin(["in_progress", "pending"])])
+    delayed = pd.DataFrame(open_tasks[open_tasks["due_date"] < today])
     print("\n[4] Delayed tasks (past due):")
     if len(delayed) > 0:
-        print(delayed[["task_name", "assignee", "due_date", "status"]].to_string(index=False))
+        delayed_df = pd.DataFrame(delayed.loc[:, ["task_name", "assignee", "due_date", "status"]])
+        print(delayed_df.to_string(index=False))
     else:
         print("  None")
 
     # Delays by project
     if len(delayed) > 0:
         print("\n[5] Delays by project:")
-        print(delayed["project"].value_counts().to_string())
+        delayed_projects = pd.Series(delayed["project"])
+        print(delayed_projects.value_counts().to_string())
 
     # Completed this month
-    completed = df[df["status"] == "completed"].dropna(subset=["completed"])
+    completed = pd.DataFrame(df[df["status"] == "completed"]).dropna(subset=["completed"])
     jan_completed = completed[completed["completed"].dt.month == 1]
     print(f"\n[6] Tasks completed in January: {len(jan_completed)}")
 

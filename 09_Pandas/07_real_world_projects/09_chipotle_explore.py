@@ -63,10 +63,28 @@ print()
 
 # Most expensive items (by unit price)
 print("=== MOST EXPENSIVE ITEMS (by unit price) ===")
-price_by_item = df.groupby("item_name")["item_price_float"].max().sort_values(ascending=False)
+price_by_item = df.groupby("item_name", as_index=False).agg(
+    item_price_float=("item_price_float", "max")
+)
+price_by_item_rows = sorted(
+    price_by_item.itertuples(index=False),
+    key=lambda row: float(row[1]),
+    reverse=True,
+)
+price_by_item = pd.DataFrame(price_by_item_rows, columns=["item_name", "item_price_float"])
 print(price_by_item)
 print()
 
 # Alternative: show top 5 most expensive unique item prices
 print("Top 5 highest unit prices:")
-print(df[["item_name", "item_price_float"]].drop_duplicates().nlargest(5, "item_price_float"))
+top_prices = (
+    df[["item_name", "item_price_float"]]
+    .drop_duplicates()
+)
+top_price_rows = sorted(
+    top_prices.itertuples(index=False),
+    key=lambda row: float(row[1]),
+    reverse=True,
+)[:5]
+top_prices = pd.DataFrame(top_price_rows, columns=["item_name", "item_price_float"])
+print(top_prices)

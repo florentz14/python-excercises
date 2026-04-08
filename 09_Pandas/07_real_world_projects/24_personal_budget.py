@@ -27,22 +27,47 @@ def main():
 
     # Where do you spend most (by category)
     expenses = df[df["type"] == "expense"]
-    by_cat = expenses.groupby("category")["amount"].sum().abs().sort_values(ascending=False)
+    by_cat_df = pd.DataFrame(
+        expenses.groupby("category", as_index=False).agg(amount_sum=("amount", "sum"))
+    )
+    by_cat_df["amount_abs"] = by_cat_df["amount_sum"].apply(lambda value: abs(float(value)))
+    by_cat_rows = sorted(
+        by_cat_df.itertuples(index=False),
+        key=lambda row: float(row[2]),
+        reverse=True,
+    )
+    by_cat = pd.DataFrame(by_cat_rows, columns=["category", "amount_sum", "amount_abs"])
     print("\n[2] Spending by category (total):")
-    print(by_cat.to_string())
+    print(by_cat[["category", "amount_abs"]].set_index("category").to_string())
 
     # Which month spent most
-    monthly_exp = expenses.groupby("month")["amount"].sum().abs()
-    worst_month = monthly_exp.idxmax()
-    print(f"\n[3] Month with highest spending: {worst_month} (${monthly_exp[worst_month]:,.2f})")
+    monthly_exp = pd.DataFrame(
+        expenses.groupby("month", as_index=False).agg(amount_sum=("amount", "sum"))
+    )
+    monthly_exp["amount_abs"] = monthly_exp["amount_sum"].apply(lambda value: abs(float(value)))
+    worst_month_row = max(
+        monthly_exp.itertuples(index=False),
+        key=lambda row: float(row[2]),
+    )
+    print(f"\n[3] Month with highest spending: {worst_month_row[0]} (${float(worst_month_row[2]):,.2f})")
 
     # Monthly savings
-    income = df[df["type"] == "income"].groupby("month")["amount"].sum()
-    monthly_exp = expenses.groupby("month")["amount"].sum().abs()
-    savings = income - monthly_exp
+    income_df = pd.DataFrame(
+        df[df["type"] == "income"].groupby("month", as_index=False).agg(
+            income_amount=("amount", "sum")
+        )
+    )
+    expense_df = pd.DataFrame(
+        expenses.groupby("month", as_index=False).agg(
+            expense_amount=("amount", "sum")
+        )
+    )
+    monthly_mix = pd.merge(income_df, expense_df, on="month", how="outer").fillna(0.0)
+    monthly_mix["expense_abs"] = monthly_mix["expense_amount"].apply(lambda value: abs(float(value)))
+    monthly_mix["savings"] = monthly_mix["income_amount"] - monthly_mix["expense_abs"]
     print("\n[4] Monthly savings:")
-    for m in savings.index:
-        print(f"  {m}: ${savings[m]:,.2f}")
+    for row in monthly_mix.itertuples(index=False):
+        print(f"  {row[0]}: ${float(row[4]):,.2f}")
 
     # Total balance
     total_inc = df[df["type"] == "income"]["amount"].sum()

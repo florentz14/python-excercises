@@ -32,17 +32,30 @@ def main():
     print(by_page.to_string())
 
     # Day with most traffic
-    by_date = df.groupby("date").size().sort_values(ascending=False)
-    best_day = by_date.idxmax()
-    print(f"\n[3] Day with most traffic: {best_day} ({by_date[best_day]} views)")
+    by_date = pd.DataFrame(df.groupby("date", as_index=False).agg(view_count=("session_id", "size")))
+    by_date_rows = sorted(
+        by_date.itertuples(index=False),
+        key=lambda row: int(row[1]),
+        reverse=True,
+    )
+    by_date = pd.DataFrame(by_date_rows, columns=["date", "view_count"])
+    best_day_row = by_date.iloc[0]
+    print(f"\n[3] Day with most traffic: {best_day_row['date']} ({int(best_day_row['view_count'])} views)")
 
     # Best converting source
-    sessions_with_conv = df[df["converted"] == 1]["session_id"].unique()
-    df_session = df.groupby("session_id").agg({"source": "first", "converted": "max"}).reset_index()
-    by_source = df_session.groupby("source").agg(total_sessions=("session_id", "count"), conversions=("converted", "sum"))
+    sessions_with_conv = list(pd.Series(df[df["converted"] == 1]["session_id"]).drop_duplicates())
+    df_session = pd.DataFrame(
+        df.groupby("session_id", as_index=False).agg(source=("source", "first"), converted=("converted", "max"))
+    )
+    by_source = pd.DataFrame(
+        df_session.groupby("source", as_index=False).agg(
+            total_sessions=("session_id", "count"),
+            conversions=("converted", "sum"),
+        )
+    )
     by_source["conv_rate"] = (by_source["conversions"] / by_source["total_sessions"] * 100).round(1)
     print("\n[4] Conversion rate by source:")
-    print(by_source.to_string())
+    print(by_source.set_index("source").to_string())
 
     # Page views per session
     views_per_session = df.groupby("session_id").size()

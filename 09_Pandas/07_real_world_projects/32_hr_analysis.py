@@ -19,7 +19,16 @@ df = emp.merge(dept[["department_id", "department_name"]], on="department_id", h
 df = df.merge(jobs[["job_id", "job_title"]], on="job_id", how="left")
 
 print("=== HEADCOUNT BY DEPARTMENT ===")
-print(df.groupby("department_name").size().sort_values(ascending=False))
+headcount = pd.DataFrame(
+    df.groupby("department_name", as_index=False).agg(employee_count=("employee_id", "size"))
+)
+headcount_rows = sorted(
+    headcount.itertuples(index=False),
+    key=lambda row: int(row[1]),
+    reverse=True,
+)
+headcount = pd.DataFrame(headcount_rows, columns=["department_name", "employee_count"])
+print(headcount.set_index("department_name")["employee_count"].to_string())
 print()
 
 print("=== AVG SALARY BY DEPARTMENT ===")

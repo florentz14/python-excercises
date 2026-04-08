@@ -67,4 +67,15 @@ print()
 # Find the year with the highest murder rate per capita
 year_max_murder = df.loc[df["Murder_rate"].idxmax(), "Year"]
 print(f"Year with highest murder rate per capita: {int(year_max_murder)}")
-print(df[["Year", "Murder", "Population", "Murder_rate"]].sort_values("Murder_rate", ascending=False).head(3))
+top3_murder_rate = (
+    df[["Year", "Murder", "Population", "Murder_rate"]]
+)
+top3_rows = sorted(
+    top3_murder_rate.itertuples(index=False),
+    key=lambda row: float(row[3]),
+    reverse=True,
+)[:3]
+top3_murder_rate = pd.DataFrame(
+    top3_rows, columns=["Year", "Murder", "Population", "Murder_rate"]
+)
+print(top3_murder_rate)

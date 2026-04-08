@@ -22,10 +22,24 @@ print(df.head())
 
 # --- Plot 1: Bar chart - top 5 most ordered items ---
 # Aggregate by item name and sum quantity, then take top 5
-top5_items = df.groupby("item_name")["quantity"].sum().nlargest(5)
+top5_items = (
+    df.groupby("item_name", as_index=False)
+    .agg(quantity=("quantity", "sum"))
+)
+top5_rows = sorted(
+    top5_items.itertuples(index=False),
+    key=lambda row: int(row[1]),
+    reverse=True,
+)[:5]
+top5_items = pd.DataFrame(top5_rows, columns=["item_name", "quantity"])
 
 plt.figure(figsize=(8, 5))
-plt.bar(top5_items.index, top5_items.values, color="steelblue", edgecolor="black")
+plt.bar(
+    [str(value) for value in top5_items["item_name"]],
+    [float(value) for value in top5_items["quantity"]],
+    color="steelblue",
+    edgecolor="black",
+)
 plt.title("Top 5 Most Ordered Items at Chipotle")
 plt.xlabel("Item Name")
 plt.ylabel("Total Quantity Ordered")
@@ -45,10 +59,15 @@ plt.savefig("chipotle_price_histogram.png", dpi=100, bbox_inches="tight")
 plt.show()
 
 # --- Plot 3: Pie chart - orders by category (Bowls, Burritos, Tacos, etc.) ---
-orders_by_category = df.groupby("item_category")["quantity"].sum()
+orders_by_category = (
+    df.groupby("item_category", as_index=False)
+    .agg(quantity=("quantity", "sum"))
+)
 
 plt.figure(figsize=(7, 7))
-plt.pie(orders_by_category.values, labels=orders_by_category.index, autopct="%1.1f%%", startangle=90)
+pie_values = [float(value) for value in orders_by_category["quantity"]]
+pie_labels = [str(value) for value in orders_by_category["item_category"]]
+plt.pie(pie_values, labels=pie_labels, autopct="%1.1f%%", startangle=90)
 plt.title("Orders by Category")
 plt.tight_layout()
 plt.savefig("chipotle_pie_category.png", dpi=100, bbox_inches="tight")
@@ -57,10 +76,23 @@ plt.show()
 # --- Plot 4: Horizontal bar chart - total revenue per item ---
 # Revenue = quantity * item_price per row; then sum by item
 df["revenue"] = df["quantity"] * df["item_price"]
-revenue_per_item = df.groupby("item_name")["revenue"].sum().sort_values(ascending=True)
+revenue_per_item = (
+    df.groupby("item_name", as_index=False)
+    .agg(revenue=("revenue", "sum"))
+)
+revenue_rows = sorted(
+    revenue_per_item.itertuples(index=False),
+    key=lambda row: float(row[1]),
+)
+revenue_per_item = pd.DataFrame(revenue_rows, columns=["item_name", "revenue"])
 
 plt.figure(figsize=(8, 6))
-plt.barh(revenue_per_item.index, revenue_per_item.values, color="seagreen", edgecolor="black")
+plt.barh(
+    [str(value) for value in revenue_per_item["item_name"]],
+    [float(value) for value in revenue_per_item["revenue"]],
+    color="seagreen",
+    edgecolor="black",
+)
 plt.title("Total Revenue per Item")
 plt.xlabel("Total Revenue ($)")
 plt.ylabel("Item Name")

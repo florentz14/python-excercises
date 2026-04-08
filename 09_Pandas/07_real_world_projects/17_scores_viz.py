@@ -59,15 +59,22 @@ plt.savefig("scores_boxplot.png", dpi=100, bbox_inches="tight")
 plt.show()
 
 # --- Bar chart: average scores by gender ---
-avg_by_gender = df.groupby("gender")[["math_score", "reading_score", "writing_score"]].mean()
+avg_by_gender = df.groupby("gender", as_index=False).agg(
+    math_score=("math_score", "mean"),
+    reading_score=("reading_score", "mean"),
+    writing_score=("writing_score", "mean"),
+)
 
-x = np.arange(len(avg_by_gender.columns))
+x_labels = ["math_score", "reading_score", "writing_score"]
+x = np.arange(len(x_labels))
 width = 0.35
 fig, ax = plt.subplots(figsize=(7, 5))
-for i, (g, row) in enumerate(avg_by_gender.iterrows()):
-    ax.bar(x + i * width - width/2, row.values, width, label=g)
+for i, row in enumerate(avg_by_gender.itertuples(index=False)):
+    label = str(row[0])
+    values = [float(row[1]), float(row[2]), float(row[3])]
+    ax.bar(x + i * width - width / 2, values, width, label=label)
 ax.set_xticks(x)
-ax.set_xticklabels(avg_by_gender.columns)
+ax.set_xticklabels(x_labels)
 ax.set_ylabel("Average Score")
 ax.set_title("Average Scores by Gender")
 ax.legend()

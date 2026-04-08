@@ -30,7 +30,8 @@ print(df[["Dalc", "Walc", "total_alcohol"]])
 print()
 
 # Use map() to convert sex column: 'F' -> 'Female', 'M' -> 'Male'
-df["sex_label"] = df["sex"].map({"F": "Female", "M": "Male"})
+sex_map = {"F": "Female", "M": "Male"}
+df["sex_label"] = df["sex"].apply(lambda value: sex_map.get(value))
 print("Sex mapped to Female/Male:")
 print(df[["sex", "sex_label"]])
 print()
@@ -52,7 +53,7 @@ print()
 
 # Categorize studytime: 1='Low', 2='Medium', 3='High', 4='Very High'
 studytime_map = {1: "Low", 2: "Medium", 3: "High", 4: "Very High"}
-df["studytime_category"] = df["studytime"].map(studytime_map)
+df["studytime_category"] = df["studytime"].apply(lambda value: studytime_map.get(value))
 print("Studytime category:")
 print(df[["studytime", "studytime_category"]])
 print()

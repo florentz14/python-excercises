@@ -53,7 +53,11 @@ def main() -> None:
 
     anomalies = df[df["anomaly_flag"]].copy()
     anomalies["trigger_count"] = anomalies[["flag_p95", "flag_p99", "flag_iqr", "flag_zscore"]].sum(axis=1)
-    anomalies = anomalies.sort_values(["trigger_count", "amount"], ascending=[False, False])
+    anomaly_rows = sorted(
+        anomalies.itertuples(index=False),
+        key=lambda row: (-int(row[-1]), -float(row[5])),
+    )
+    anomalies = pd.DataFrame(anomaly_rows, columns=list(anomalies.columns))
 
     cols = [
         "transaction_id",
@@ -75,7 +79,7 @@ def main() -> None:
     anomalies.to_csv(ANOMALY_OUTPUT_COMPAT, index=False)
 
     # Category boxplot (top 6 by transaction count)
-    top_categories = df["category"].value_counts().head(6).index.tolist()
+    top_categories = [str(value) for value in df["category"].value_counts().head(6).index.tolist()]
     plot_df = df[df["category"].isin(top_categories)].copy()
     grouped_data = [plot_df.loc[plot_df["category"] == cat, "amount"].values for cat in top_categories]
 

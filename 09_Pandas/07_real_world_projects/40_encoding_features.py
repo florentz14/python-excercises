@@ -30,7 +30,7 @@ print()
 
 # Label encoding (manual map)
 color_map = {"red": 0, "blue": 1, "green": 2}
-df["color_code"] = df["color"].map(color_map)
+df["color_code"] = df["color"].apply(lambda value: color_map.get(str(value)))
 print("=== map (label encoding) ===")
 print(df[["color", "color_code"]])
 print()

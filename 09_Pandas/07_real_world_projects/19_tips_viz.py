@@ -42,13 +42,17 @@ plt.savefig("tips_bill_vs_tip.png", dpi=100, bbox_inches="tight")
 plt.show()
 
 # --- Box plot: tip distribution by day ---
-df_tip_day = df[["day", "tip"]]
+df_tip_day = pd.DataFrame(df.loc[:, ["day", "tip"]]).copy()
 days_order = ["Thur", "Fri", "Sat", "Sun"]
 df_tip_day["day"] = pd.Categorical(df_tip_day["day"], categories=days_order, ordered=True)
-df_tip_day = df_tip_day.sort_values("day")
+df_tip_day_rows = sorted(
+    df_tip_day.itertuples(index=False),
+    key=lambda row: days_order.index(str(row[0])),
+)
+df_tip_day = pd.DataFrame(df_tip_day_rows, columns=["day", "tip"])
 
 plt.figure(figsize=(7, 5))
-df.boxplot(column="tip", by="day")
+df_tip_day.boxplot(column="tip", by="day")
 plt.suptitle("")
 plt.title("Tip Distribution by Day")
 plt.xlabel("Day")
@@ -58,10 +62,12 @@ plt.savefig("tips_boxplot_by_day.png", dpi=100, bbox_inches="tight")
 plt.show()
 
 # --- Bar chart: average tip by meal time (Lunch vs Dinner) ---
-avg_tip_by_time = df.groupby("time")["tip"].mean()
+avg_tip_by_time = df.groupby("time", as_index=False).agg(avg_tip=("tip", "mean"))
+avg_tip_labels = [str(value) for value in avg_tip_by_time["time"]]
+avg_tip_values = [float(value) for value in avg_tip_by_time["avg_tip"]]
 
 plt.figure(figsize=(6, 5))
-plt.bar(avg_tip_by_time.index, avg_tip_by_time.values, color=["steelblue", "coral"], edgecolor="black")
+plt.bar(avg_tip_labels, avg_tip_values, color=["steelblue", "coral"], edgecolor="black")
 plt.title("Average Tip by Meal Time")
 plt.xlabel("Meal Time")
 plt.ylabel("Average Tip ($)")

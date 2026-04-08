@@ -14,7 +14,8 @@ def quote_summary(path) -> pd.DataFrame:
     """Builds DataFrame from file and returns min, max, mean of each numeric column."""
     df = pd.read_csv(path)
     numeric = df.select_dtypes(include="number").columns
-    return df[numeric].agg(["min", "max", "mean"])
+    numeric_df = pd.DataFrame(df.loc[:, list(numeric)])
+    return pd.DataFrame(numeric_df.agg(["min", "max", "mean"]))
 
 
 if __name__ == "__main__":

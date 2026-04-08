@@ -42,7 +42,7 @@ print()
 # Drop columns by selecting only numeric columns (select_dtypes)
 # -------------------------------------------------
 df3 = df.copy()
-numeric_only = df3.select_dtypes(include=[np.number])
+numeric_only = pd.DataFrame(df3.select_dtypes(include=[np.number]))
 print("Step 3 - Only numeric columns (select_dtypes):")
 print("Shape:", numeric_only.shape)
 print("Columns:", list(numeric_only.columns))
@@ -53,6 +53,7 @@ print()
 # -------------------------------------------------
 df4 = df.copy()
 df4 = df4[df4["quality"] >= 5]
+df4 = pd.DataFrame(df4)
 print("Step 4 - After removing rows where quality < 5:")
 print("Shape:", df4.shape)
 print(df4[["quality", "alcohol"]].head(5))

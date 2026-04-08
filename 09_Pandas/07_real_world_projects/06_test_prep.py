@@ -29,16 +29,18 @@ def test_preparation_analysis(csv_file):
     distribution = df["test preparation course"].value_counts()
     for status, count in distribution.items():
         pct = (count / len(df)) * 100
-        print(f"{status.capitalize():15}: {count:3d} students ({pct:.2f}%)")
+        status_label = str(status).capitalize()
+        print(f"{status_label:15}: {count:3d} students ({pct:.2f}%)")
 
     # Averages
-    print("\n\n📊 GRADE COMPARISON")
+    print("\n\n[GRADE COMPARISON]")
     print("-" * 80)
     print(f"{'Preparation':15} {'Math':>12} {'Reading':>12} {'Writing':>12} {'Average':>12}")
     print("-" * 80)
 
     results = {}
     for status in df["test preparation course"].unique():
+        status_label = str(status).capitalize()
         df_status = df[df["test preparation course"] == status]
         results[status] = {
             "math": df_status["math score"].mean(),
@@ -47,7 +49,7 @@ def test_preparation_analysis(csv_file):
             "total": df_status["average_score"].mean(),
         }
         r = results[status]
-        print(f"{status.capitalize():15} {r['math']:12.2f} {r['reading']:12.2f} {r['writing']:12.2f} {r['total']:12.2f}")
+        print(f"{status_label:15} {r['math']:12.2f} {r['reading']:12.2f} {r['writing']:12.2f} {r['total']:12.2f}")
 
     # Impact
     print("\n\n[IMPACT OF PREPARATION]")
@@ -64,14 +66,15 @@ def test_preparation_analysis(csv_file):
         print(f"  Writing: {imp_writing:+.2f} points")
         print(f"  Average: {imp_total:+.2f} points")
         pct_imp = (imp_total / results["none"]["total"]) * 100
-        print(f"\n  → Percentage improvement: {pct_imp:+.2f}%")
+        print(f"\n  -> Percentage improvement: {pct_imp:+.2f}%")
 
     # Top performers
     print("\n\n[STUDENTS WITH EXCELLENT SCORES (>= 85)]")
     print("-" * 80)
     for status in df["test preparation course"].unique():
         df_status = df[df["test preparation course"] == status]
-        print(f"\n{status.capitalize()}:")
+        status_label = str(status).capitalize()
+        print(f"\n{status_label}:")
         for subject in ["math score", "reading score", "writing score"]:
             count_high = (df_status[subject] >= 85).sum()
             pct = (count_high / len(df_status)) * 100
@@ -81,13 +84,15 @@ def test_preparation_analysis(csv_file):
     print("\n\n[PREPARATION IMPACT BY GENDER]")
     print("-" * 80)
     for gender in df["gender"].unique():
-        print(f"\n{gender.capitalize()}:")
+        gender_label = str(gender).capitalize()
+        print(f"\n{gender_label}:")
         df_g = df[df["gender"] == gender]
         for status in df["test preparation course"].unique():
             df_combined = df_g[df_g["test preparation course"] == status]
             if len(df_combined) > 0:
                 avg = df_combined["average_score"].mean()
-                print(f"  {status.capitalize():15}: {avg:6.2f} points ({len(df_combined):3d} students)")
+                status_label = str(status).capitalize()
+                print(f"  {status_label:15}: {avg:6.2f} points ({len(df_combined):3d} students)")
 
     # Struggling students
     print("\n\n[STRUGGLING STUDENTS (Average < 60)]")
@@ -96,7 +101,8 @@ def test_preparation_analysis(csv_file):
         df_status = df[df["test preparation course"] == status]
         count_low = (df_status["average_score"] < 60).sum()
         pct = (count_low / len(df_status)) * 100
-        print(f"{status.capitalize():15}: {count_low:3d} students ({pct:5.2f}%)")
+        status_label = str(status).capitalize()
+        print(f"{status_label:15}: {count_low:3d} students ({pct:5.2f}%)")
 
     # Conclusion
     print("\n\n[CONCLUSION]")

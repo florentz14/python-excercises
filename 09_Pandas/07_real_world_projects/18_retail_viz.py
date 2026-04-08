@@ -22,10 +22,16 @@ print("Online retail data (sample):")
 print(df.head())
 
 # --- Line chart: daily total sales (group by date) ---
-daily_sales = df.groupby(df["InvoiceDate"].dt.date)["TotalPrice"].sum()
+daily_sales = (
+    df.assign(InvoiceDay=df["InvoiceDate"].dt.date)
+    .groupby("InvoiceDay", as_index=False)
+    .agg(total_sales=("TotalPrice", "sum"))
+)
+daily_labels = [str(value) for value in daily_sales["InvoiceDay"]]
+daily_values = [float(value) for value in daily_sales["total_sales"]]
 
 plt.figure(figsize=(8, 5))
-plt.plot(daily_sales.index.astype(str), daily_sales.values, marker="o", linestyle="-")
+plt.plot(daily_labels, daily_values, marker="o", linestyle="-")
 plt.title("Daily Total Sales")
 plt.xlabel("Date")
 plt.ylabel("Total Sales ($)")
@@ -35,10 +41,20 @@ plt.savefig("retail_daily_sales.png", dpi=100, bbox_inches="tight")
 plt.show()
 
 # --- Bar chart: top 5 products by quantity sold ---
-top5_products = df.groupby("Description")["Quantity"].sum().nlargest(5)
+quantity_by_product = df.groupby("Description", as_index=False).agg(
+    quantity=("Quantity", "sum")
+)
+top5_rows = sorted(
+    quantity_by_product.itertuples(index=False),
+    key=lambda row: float(row[1]),
+    reverse=True,
+)[:5]
+top5_products = pd.DataFrame(top5_rows, columns=["Description", "quantity"])
+top5_labels = [str(value) for value in top5_products["Description"]]
+top5_values = [float(value) for value in top5_products["quantity"]]
 
 plt.figure(figsize=(8, 5))
-plt.bar(top5_products.index, top5_products.values, color="steelblue", edgecolor="black")
+plt.bar(top5_labels, top5_values, color="steelblue", edgecolor="black")
 plt.title("Top 5 Products by Quantity Sold")
 plt.xlabel("Product")
 plt.ylabel("Quantity")
@@ -48,10 +64,14 @@ plt.savefig("retail_top5_products.png", dpi=100, bbox_inches="tight")
 plt.show()
 
 # --- Pie chart: sales by country ---
-sales_by_country = df.groupby("Country")["TotalPrice"].sum()
+sales_by_country = df.groupby("Country", as_index=False).agg(
+    total_sales=("TotalPrice", "sum")
+)
+country_values = [float(value) for value in sales_by_country["total_sales"]]
+country_labels = [str(value) for value in sales_by_country["Country"]]
 
 plt.figure(figsize=(6, 6))
-plt.pie(sales_by_country.values, labels=sales_by_country.index, autopct="%1.1f%%", startangle=90)
+plt.pie(country_values, labels=country_labels, autopct="%1.1f%%", startangle=90)
 plt.title("Sales by Country")
 plt.tight_layout()
 plt.savefig("retail_pie_country.png", dpi=100, bbox_inches="tight")

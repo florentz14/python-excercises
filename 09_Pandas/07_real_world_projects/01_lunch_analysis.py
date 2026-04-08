@@ -29,7 +29,8 @@ def lunch_analysis(csv_file):
     distribution = df["lunch"].value_counts()
     for lunch_type, count in distribution.items():
         pct = (count / len(df)) * 100
-        print(f"{lunch_type.capitalize():15}: {count:3d} students ({pct:.2f}%)")
+        lunch_label = str(lunch_type).capitalize()
+        print(f"{lunch_label:15}: {count:3d} students ({pct:.2f}%)")
 
     # Comparative averages
     print("\n\n[GRADE COMPARISON BY LUNCH TYPE]")
@@ -39,6 +40,7 @@ def lunch_analysis(csv_file):
 
     results = {}
     for lunch_type in df["lunch"].unique():
+        lunch_label = str(lunch_type).capitalize()
         df_type = df[df["lunch"] == lunch_type]
         math_avg = df_type["math score"].mean()
         reading_avg = df_type["reading score"].mean()
@@ -52,7 +54,7 @@ def lunch_analysis(csv_file):
             "total": total_avg,
             "count": len(df_type),
         }
-        print(f"{lunch_type.capitalize():15} {math_avg:12.2f} {reading_avg:12.2f} {writing_avg:12.2f} {total_avg:12.2f}")
+        print(f"{lunch_label:15} {math_avg:12.2f} {reading_avg:12.2f} {writing_avg:12.2f} {total_avg:12.2f}")
 
     # Performance gap
     print("\n\n[PERFORMANCE GAP]")
@@ -69,7 +71,7 @@ def lunch_analysis(csv_file):
         print(f"  Writing: {gap_writing:+.2f} points")
         print(f"  Average: {gap_total:+.2f} points")
         pct_gap = (gap_total / results["free/reduced"]["total"]) * 100
-        print(f"\n  → Percentage gap: {pct_gap:.2f}%")
+        print(f"\n  -> Percentage gap: {pct_gap:.2f}%")
 
     # Grade distribution
     print("\n\n[GRADE DISTRIBUTION]")
@@ -77,8 +79,9 @@ def lunch_analysis(csv_file):
     ranges = [(0, 60, "Low"), (60, 75, "Medium"), (75, 90, "High"), (90, 100, "Excellent")]
 
     for lunch_type in df["lunch"].unique():
+        lunch_label = str(lunch_type).capitalize()
         df_type = df[df["lunch"] == lunch_type]
-        print(f"\n{lunch_type.capitalize()}:")
+        print(f"\n{lunch_label}:")
         for min_val, max_val, category in ranges:
             count = ((df_type["average_score"] >= min_val) & (df_type["average_score"] < max_val)).sum()
             pct = (count / len(df_type)) * 100
@@ -88,13 +91,15 @@ def lunch_analysis(csv_file):
     print("\n\n[GENDER AND LUNCH TYPE ANALYSIS]")
     print("-" * 80)
     for gender in df["gender"].unique():
-        print(f"\n{gender.capitalize()}:")
+        gender_label = str(gender).capitalize()
+        print(f"\n{gender_label}:")
         df_gender = df[df["gender"] == gender]
         for lunch_type in df["lunch"].unique():
             df_combined = df_gender[df_gender["lunch"] == lunch_type]
             if len(df_combined) > 0:
                 avg = df_combined["average_score"].mean()
-                print(f"  {lunch_type.capitalize():15}: {avg:6.2f} points ({len(df_combined):3d} students)")
+                lunch_label = str(lunch_type).capitalize()
+                print(f"  {lunch_label:15}: {avg:6.2f} points ({len(df_combined):3d} students)")
 
     # Top students
     print("\n\n[STUDENTS WITH AVERAGE >= 85]")
@@ -103,13 +108,15 @@ def lunch_analysis(csv_file):
         df_type = df[df["lunch"] == lunch_type]
         count_high = (df_type["average_score"] >= 85).sum()
         pct = (count_high / len(df_type)) * 100
-        print(f"{lunch_type.capitalize():15}: {count_high:3d} students ({pct:5.2f}%)")
+        lunch_label = str(lunch_type).capitalize()
+        print(f"{lunch_label:15}: {count_high:3d} students ({pct:5.2f}%)")
 
     # Test preparation and lunch
     print("\n\n[INTERACTION: TEST PREPARATION AND LUNCH TYPE]")
     print("-" * 80)
     for lunch_type in df["lunch"].unique():
-        print(f"\n{lunch_type.capitalize()}:")
+        lunch_label = str(lunch_type).capitalize()
+        print(f"\n{lunch_label}:")
         df_lunch = df[df["lunch"] == lunch_type]
         for prep in df["test preparation course"].unique():
             df_combined = df_lunch[df_lunch["test preparation course"] == prep]
@@ -123,7 +130,8 @@ def lunch_analysis(csv_file):
     for lunch_type in df["lunch"].unique():
         df_type = df[df["lunch"] == lunch_type]
         std = df_type["average_score"].std()
-        print(f"{lunch_type.capitalize():15}: {std:.2f}")
+        lunch_label = str(lunch_type).capitalize()
+        print(f"{lunch_label:15}: {std:.2f}")
 
     print("\n" + "=" * 80)
 

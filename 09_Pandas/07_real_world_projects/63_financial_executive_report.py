@@ -48,15 +48,25 @@ def main() -> None:
     period_start = df["date"].min().date()
     period_end = df["date"].max().date()
     total_tx = len(df)
-    total_spending = float(df["amount"].sum())
-    avg_tx = float(df["amount"].mean())
+    amount_series = pd.Series(df["amount"])
+    total_spending = float(amount_series.sum())
+    avg_tx = float(amount_series.mean())
 
     if not category_summary.empty and "total_amount" in category_summary.columns:
         top_row = category_summary.sort_values("total_amount", ascending=False).iloc[0]
         top_category = str(top_row["category"])
         top_pct = (float(top_row["total_amount"]) / total_spending) * 100 if total_spending else 0.0
     else:
-        fallback = df.groupby("category", as_index=False)["amount"].sum().sort_values("amount", ascending=False).iloc[0]
+        fallback_df = pd.DataFrame(
+            df.groupby("category", as_index=False).agg(amount=("amount", "sum"))
+        )
+        fallback_rows = sorted(
+            fallback_df.itertuples(index=False),
+            key=lambda row: float(row[1]),
+            reverse=True,
+        )
+        fallback_df = pd.DataFrame(fallback_rows, columns=["category", "amount"])
+        fallback = fallback_df.iloc[0]
         top_category = str(fallback["category"])
         top_pct = (float(fallback["amount"]) / total_spending) * 100 if total_spending else 0.0
 

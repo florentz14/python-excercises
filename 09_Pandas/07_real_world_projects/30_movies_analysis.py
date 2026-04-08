@@ -24,18 +24,34 @@ def main():
     print(f"Titles: {len(df)}")
 
     # Genre with best average rating
-    by_genre = df.groupby("genre")["rating"].agg(["mean", "count"])
-    by_genre = by_genre.sort_values("mean", ascending=False)
+    by_genre = pd.DataFrame(
+        df.groupby("genre", as_index=False).agg(
+            mean_rating=("rating", "mean"),
+            rating_count=("rating", "count"),
+        )
+    )
+    by_genre_rows = sorted(
+        by_genre.itertuples(index=False),
+        key=lambda row: float(row[1]),
+        reverse=True,
+    )
+    by_genre = pd.DataFrame(by_genre_rows, columns=["genre", "mean_rating", "rating_count"])
     print("\n[2] Average rating by genre:")
-    print(by_genre.to_string())
+    print(by_genre.set_index("genre").to_string())
 
-    best_genre = by_genre["mean"].idxmax()
-    print(f"\n[3] Best-rated genre: {best_genre} (avg {by_genre.loc[best_genre, 'mean']:.1f})")
+    best_genre_row = by_genre.iloc[0]
+    print(f"\n[3] Best-rated genre: {best_genre_row['genre']} (avg {float(best_genre_row['mean_rating']):.1f})")
 
     # Year with most releases
-    by_year = df.groupby("year").size().sort_values(ascending=False)
+    by_year = pd.DataFrame(df.groupby("year", as_index=False).agg(release_count=("title", "size")))
+    by_year_rows = sorted(
+        by_year.itertuples(index=False),
+        key=lambda row: int(row[1]),
+        reverse=True,
+    )
+    by_year = pd.DataFrame(by_year_rows, columns=["year", "release_count"])
     print("\n[4] Releases by year:")
-    print(by_year.to_string())
+    print(by_year.set_index("year")["release_count"].to_string())
 
     # Top 10 by rating
     top10 = df.nlargest(10, "rating")[["title", "genre", "year", "rating"]]

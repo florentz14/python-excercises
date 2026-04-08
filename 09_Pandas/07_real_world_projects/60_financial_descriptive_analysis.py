@@ -32,12 +32,23 @@ def main() -> None:
     df["amount"] = pd.to_numeric(df["amount"], errors="coerce")
     df = df.dropna(subset=["amount"])
 
-    total_spend = float(df["amount"].sum())
+    amount_series = pd.Series(df["amount"])
+    total_spend = float(amount_series.sum())
 
-    category_summary = (
-        df.groupby("category", as_index=False)
-        .agg(total_amount=("amount", "sum"), avg_amount=("amount", "mean"), transactions=("amount", "count"))
-        .sort_values("total_amount", ascending=False)
+    category_summary = pd.DataFrame(
+        df.groupby("category", as_index=False).agg(
+            total_amount=("amount", "sum"),
+            avg_amount=("amount", "mean"),
+            transactions=("amount", "count"),
+        )
+    )
+    category_rows = sorted(
+        category_summary.itertuples(index=False),
+        key=lambda row: float(row[1]),
+        reverse=True,
+    )
+    category_summary = pd.DataFrame(
+        category_rows, columns=["category", "total_amount", "avg_amount", "transactions"]
     )
     category_summary["pct_of_total"] = (category_summary["total_amount"] / total_spend).round(4)
     category_summary["rank"] = range(1, len(category_summary) + 1)
@@ -48,21 +59,42 @@ def main() -> None:
     pareto["cum_pct"] = (pareto["cum_total"] / total_spend).round(4)
     pareto.to_csv(PARETO_OUTPUT, index=False)
 
-    account_summary = (
-        df.groupby("account", as_index=False)
-        .agg(total_amount=("amount", "sum"), avg_amount=("amount", "mean"), transactions=("amount", "count"))
-        .sort_values("total_amount", ascending=False)
+    account_summary = pd.DataFrame(
+        df.groupby("account", as_index=False).agg(
+            total_amount=("amount", "sum"),
+            avg_amount=("amount", "mean"),
+            transactions=("amount", "count"),
+        )
+    )
+    account_rows = sorted(
+        account_summary.itertuples(index=False),
+        key=lambda row: float(row[1]),
+        reverse=True,
+    )
+    account_summary = pd.DataFrame(
+        account_rows, columns=["account", "total_amount", "avg_amount", "transactions"]
     )
     account_summary["pct_of_total"] = (account_summary["total_amount"] / total_spend).round(4)
     account_summary.to_csv(ACCOUNT_OUTPUT, index=False)
 
-    recurring_summary = (
-        df.groupby("is_recurring", as_index=False)
-        .agg(total_amount=("amount", "sum"), avg_amount=("amount", "mean"), transactions=("amount", "count"))
-        .sort_values("total_amount", ascending=False)
+    recurring_summary = pd.DataFrame(
+        df.groupby("is_recurring", as_index=False).agg(
+            total_amount=("amount", "sum"),
+            avg_amount=("amount", "mean"),
+            transactions=("amount", "count"),
+        )
     )
-    recurring_summary["type"] = recurring_summary["is_recurring"].map(
-        {True: "Recurring", False: "Discretionary"}
+    recurring_rows = sorted(
+        recurring_summary.itertuples(index=False),
+        key=lambda row: float(row[1]),
+        reverse=True,
+    )
+    recurring_summary = pd.DataFrame(
+        recurring_rows,
+        columns=["is_recurring", "total_amount", "avg_amount", "transactions"],
+    )
+    recurring_summary["type"] = recurring_summary["is_recurring"].apply(
+        lambda value: "Recurring" if bool(value) else "Discretionary"
     )
     recurring_summary["pct_of_total"] = (recurring_summary["total_amount"] / total_spend).round(4)
     recurring_summary = recurring_summary[

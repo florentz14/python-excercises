@@ -86,7 +86,7 @@ def parental_education_analysis(csv_file):
         print(f"\nNon-college ({len(df_non)} students):")
         print(f"  Average: {df_non['average_score'].mean():.2f}")
         diff = df_college["average_score"].mean() - df_non["average_score"].mean()
-        print(f"\n  → Difference in favor of college: {diff:.2f} points")
+        print(f"\n  -> Difference in favor of college: {diff:.2f} points")
 
     # Top performers
     print("\n\n[STUDENTS WITH AVERAGE >= 80 BY EDUCATION LEVEL]")

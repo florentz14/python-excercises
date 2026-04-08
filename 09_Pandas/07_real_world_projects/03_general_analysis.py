@@ -72,7 +72,8 @@ def general_analysis(csv_file):
     # Correlation
     print("\n\n[CORRELATION BETWEEN SUBJECTS]")
     print("-" * 80)
-    print(scores.corr())
+    score_df = pd.DataFrame(scores)
+    print(score_df.corr())
 
     print("\n" + "=" * 80)
 

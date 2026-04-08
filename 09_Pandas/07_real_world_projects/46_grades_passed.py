@@ -11,7 +11,8 @@ import pandas as pd
 def grades_passed(grades_dict: dict, passing: float = 5.0) -> pd.Series:
     """Receives dict {student: grade} and returns Series of passing grades sorted."""
     s = pd.Series(grades_dict)
-    return s[s >= passing].sort_values(ascending=False)
+    passed = pd.Series(s[s >= passing])
+    return passed.sort_values(ascending=False)
 
 
 if __name__ == "__main__":

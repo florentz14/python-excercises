@@ -54,21 +54,33 @@ def averages_by_category(df: pd.DataFrame) -> None:
 
     if "gender" in df.columns:
         print("\n--- By gender ---")
-        print(df.groupby("gender")[score_cols].mean().round(2).to_string())
+        gender_means = df.groupby("gender", as_index=False).agg(
+            **{col: (col, "mean") for col in score_cols}
+        )
+        print(gender_means.set_index("gender").round(2).to_string())
 
     if "lunch" in df.columns:
         print("\n--- By lunch type ---")
-        print(df.groupby("lunch")[score_cols].mean().round(2).to_string())
+        lunch_means = df.groupby("lunch", as_index=False).agg(
+            **{col: (col, "mean") for col in score_cols}
+        )
+        print(lunch_means.set_index("lunch").round(2).to_string())
 
     col_prep = "test preparation course"
     if col_prep in df.columns:
         print("\n--- By test preparation ---")
-        print(df.groupby(col_prep)[score_cols].mean().round(2).to_string())
+        prep_means = df.groupby(col_prep, as_index=False).agg(
+            **{col: (col, "mean") for col in score_cols}
+        )
+        print(prep_means.set_index(col_prep).round(2).to_string())
 
     col_edu = "parental level of education"
     if col_edu in df.columns:
         print("\n--- By parental education level ---")
-        print(df.groupby(col_edu)[score_cols].mean().round(2).to_string())
+        edu_means = df.groupby(col_edu, as_index=False).agg(
+            **{col: (col, "mean") for col in score_cols}
+        )
+        print(edu_means.set_index(col_edu).round(2).to_string())
 
 
 def global_average_score(df: pd.DataFrame) -> None:

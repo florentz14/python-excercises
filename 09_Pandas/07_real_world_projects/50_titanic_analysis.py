@@ -36,9 +36,10 @@ print("\n3. Even rows (sample):")
 print(df.iloc[::2].head(10))
 
 # 4. First class names sorted
-names_1 = df[df["Pclass"] == 1]["Name"].sort_values()
+names_1_series = pd.Series(df[df["Pclass"] == 1]["Name"])
+names_1 = sorted([str(value) for value in names_1_series])
 print("\n4. First class names (alphabetical):")
-print(names_1.head(10).to_string())
+print(pd.Series(names_1[:10]).to_string(index=False))
 print("   ...")
 
 # 5. % survived / died
@@ -48,9 +49,12 @@ print(f"   Died: {pct_surv.get(0, 0):.1f}%")
 print(f"   Survived: {pct_surv.get(1, 0):.1f}%")
 
 # 6. Survival % by class
-pct_class = df.groupby("Pclass")["Survived"].mean() * 100
+pct_class_df = pd.DataFrame(
+    df.groupby("Pclass", as_index=False).agg(survived_mean=("Survived", "mean"))
+)
+pct_class_df["survived_pct"] = pct_class_df["survived_mean"] * 100
 print("\n6. Survival % by class:")
-print(pct_class)
+print(pct_class_df.set_index("Pclass")["survived_pct"])
 
 # 7. Drop unknown age
 df_clean = df.dropna(subset=["Age"])
@@ -67,6 +71,9 @@ df_clean["Minor"] = df_clean["Age"] < 18
 print("\n9. Minor column added")
 
 # 10. Survival % by class and minor/adult
-table = df_clean.groupby(["Pclass", "Minor"])["Survived"].mean() * 100
+table = pd.DataFrame(
+    df_clean.groupby(["Pclass", "Minor"], as_index=False).agg(survived_mean=("Survived", "mean"))
+)
+table["survived_pct"] = table["survived_mean"] * 100
 print("\n10. Survival % by class and minor/adult:")
-print(table)
+print(table.set_index(["Pclass", "Minor"])["survived_pct"])

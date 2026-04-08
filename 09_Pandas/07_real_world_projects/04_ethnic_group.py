@@ -52,7 +52,7 @@ def ethnic_group_analysis(csv_file):
         print(f"{group:15} {r['math']:12.2f} {r['reading']:12.2f} {r['writing']:12.2f} {r['total']:12.2f} {r['count']:8d}")
 
     # Ranking
-    print("\n\n🏆 RANKING BY AVERAGE PERFORMANCE")
+    print("\n\n[RANKING BY AVERAGE PERFORMANCE]")
     print("-" * 90)
     sorted_results = sorted(results, key=lambda x: x["total"], reverse=True)
     for i, r in enumerate(sorted_results, 1):
@@ -98,9 +98,11 @@ def ethnic_group_analysis(csv_file):
     college_levels = ["some college", "associate's degree", "bachelor's degree", "master's degree"]
     for group in sorted(df["race/ethnicity"].unique()):
         df_group = df[df["race/ethnicity"] == group]
-        count_college = df_group[df_group["parental level of education"].isin(college_levels)].shape[0]
+        parental_edu = pd.Series(df_group["parental level of education"])
+        in_college = parental_edu.apply(lambda value: value in college_levels)
+        count_college = df_group[in_college].shape[0]
         pct = (count_college / len(df_group)) * 100
-        avg_college = df_group[df_group["parental level of education"].isin(college_levels)]["average_score"].mean()
+        avg_college = df_group[in_college]["average_score"].mean()
         print(f"{group:15}: {pct:5.2f}% with college education (average: {avg_college:.2f})")
 
     # Gender by group
@@ -113,7 +115,8 @@ def ethnic_group_analysis(csv_file):
             df_combined = df_group[df_group["gender"] == gender]
             if len(df_combined) > 0:
                 avg = df_combined["average_score"].mean()
-                print(f"  {gender.capitalize():8}: {avg:6.2f} points ({len(df_combined):3d} students)")
+                gender_label = str(gender).capitalize()
+                print(f"  {gender_label:8}: {avg:6.2f} points ({len(df_combined):3d} students)")
 
     print("\n" + "=" * 90)
 

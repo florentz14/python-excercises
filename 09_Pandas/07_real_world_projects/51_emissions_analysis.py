@@ -17,7 +17,7 @@ dfs = []
 for year in [2016, 2017, 2018, 2019]:
     df = pd.read_csv(DATA / f"emisiones-{year}.csv")
     dfs.append(df)
-df = pd.concat(dfs, ignore_index=True)
+df = pd.DataFrame(pd.concat(dfs, ignore_index=True))
 
 # 2. Filter columns: ESTACION, MAGNITUD, AÑO, MES, D01, D02, ...
 fixed_cols = ["ESTACION", "MAGNITUD", "AÑO", "MES"]
@@ -39,12 +39,18 @@ df_melt["date"] = df_melt.apply(
     axis=1,
 )
 # Validate date (days 1-28 to avoid short months)
-df_melt = df_melt[df_melt["DAY"] <= 28]
+df_melt = pd.DataFrame(df_melt[df_melt["DAY"] <= 28])
 df_melt["date"] = pd.to_datetime(df_melt["date"], errors="coerce")
 
 # 5. Drop invalid dates and sort
-df_melt = df_melt[df_melt["date"].notna()]
-df_melt = df_melt.sort_values(["ESTACION", "MAGNITUD", "date"])
+df_melt = pd.DataFrame(df_melt[df_melt["date"].notna()])
+df_melt_rows = sorted(
+    df_melt.itertuples(index=False),
+    key=lambda row: (int(row[0]), int(row[1]), pd.Timestamp(row[6])),
+)
+df_melt = pd.DataFrame(
+    df_melt_rows, columns=["ESTACION", "MAGNITUD", "AÑO", "MES", "DAY", "EMISSION", "date"]
+)
 
 print("=" * 60)
 print("EXERCISE 8: MADRID EMISSIONS")

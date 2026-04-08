@@ -29,7 +29,8 @@ def gender_analysis(csv_file):
     distribution = df["gender"].value_counts()
     for gender, count in distribution.items():
         pct = (count / len(df)) * 100
-        print(f"{gender.capitalize():8}: {count:3d} students ({pct:.2f}%)")
+        gender_label = str(gender).capitalize()
+        print(f"{gender_label:8}: {count:3d} students ({pct:.2f}%)")
 
     # Averages
     print("\n\n[AVERAGE SCORES BY GENDER]")
@@ -37,12 +38,13 @@ def gender_analysis(csv_file):
     print(f"{'':15} {'Math':>12} {'Reading':>12} {'Writing':>12} {'Average':>12}")
     print("-" * 80)
     for gender in df["gender"].unique():
+        gender_label = str(gender).capitalize()
         df_g = df[df["gender"] == gender]
         math_avg = df_g["math score"].mean()
         reading_avg = df_g["reading score"].mean()
         writing_avg = df_g["writing score"].mean()
         total_avg = df_g["average_score"].mean()
-        print(f"{gender.capitalize():15} {math_avg:12.2f} {reading_avg:12.2f} {writing_avg:12.2f} {total_avg:12.2f}")
+        print(f"{gender_label:15} {math_avg:12.2f} {reading_avg:12.2f} {writing_avg:12.2f} {total_avg:12.2f}")
 
     # Gender differences
     print("\n\n[GENDER DIFFERENCES]")
@@ -63,7 +65,7 @@ def gender_analysis(csv_file):
     print(f"Writing: {'Males' if diff_writing > 0 else 'Females'} lead by {abs(diff_writing):.2f} points")
 
     # Top performers
-    print("\n\n🏆 STUDENTS WITH EXCELLENT SCORES (≥85)")
+    print("\n\n[STUDENTS WITH EXCELLENT SCORES (>=85)]")
     print("-" * 80)
     for subject in ["math score", "reading score", "writing score"]:
         print(f"\n{subject.replace(' score', '').capitalize()}:")
@@ -71,7 +73,8 @@ def gender_analysis(csv_file):
             df_g = df[df["gender"] == gender]
             count_high = (df_g[subject] >= 85).sum()
             pct = (count_high / len(df_g)) * 100
-            print(f"  {gender.capitalize():8}: {count_high:3d} students ({pct:5.2f}%)")
+            gender_label = str(gender).capitalize()
+            print(f"  {gender_label:8}: {count_high:3d} students ({pct:5.2f}%)")
 
     # Variability
     print("\n\n[VARIABILITY (Standard Deviation)]")
@@ -79,11 +82,12 @@ def gender_analysis(csv_file):
     print(f"{'':15} {'Math':>12} {'Reading':>12} {'Writing':>12}")
     print("-" * 80)
     for gender in df["gender"].unique():
+        gender_label = str(gender).capitalize()
         df_g = df[df["gender"] == gender]
         math_std = df_g["math score"].std()
         reading_std = df_g["reading score"].std()
         writing_std = df_g["writing score"].std()
-        print(f"{gender.capitalize():15} {math_std:12.2f} {reading_std:12.2f} {writing_std:12.2f}")
+        print(f"{gender_label:15} {math_std:12.2f} {reading_std:12.2f} {writing_std:12.2f}")
 
     print("\n" + "=" * 80)
 

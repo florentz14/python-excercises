@@ -110,7 +110,9 @@ print(df[["price", "pages", "rating"]].describe().round(2))
 print("\n" + "-" * 60)
 print("  SECTION 3 - Available Books Only")
 print("-" * 60)
-available_df = df[df["available"] == True][["book_id", "title", "writer", "price", "rating"]]
+available_df = pd.DataFrame(
+    df[df["available"] == True].loc[:, ["book_id", "title", "writer", "price", "rating"]]
+)
 print(available_df.to_string(index=False))
 
 # ---------------------------------------------
@@ -121,7 +123,15 @@ print("\n" + "-" * 60)
 print("  SECTION 4 - Top Rated Books (rating >= 4.5)")
 print("-" * 60)
 # Filter the books rated >= 4.5 and sort by rating in descending order
-top_rated = df[df["rating"] >= 4.5][["title", "writer", "rating", "price"]].sort_values("rating", ascending=False)
+top_rated = pd.DataFrame(
+    df[df["rating"] >= 4.5].loc[:, ["title", "writer", "rating", "price"]]
+)
+top_rated_rows = sorted(
+    top_rated.itertuples(index=False),
+    key=lambda row: float(row[2]),
+    reverse=True,
+)
+top_rated = pd.DataFrame(top_rated_rows, columns=["title", "writer", "rating", "price"])
 # Print the top rated books
 print(top_rated.to_string(index=False))
 
@@ -155,18 +165,23 @@ print("\n" + "-" * 60)
 print("  SECTION 6 - Summary by Category")
 print("-" * 60)
 # Group by category and calculate the summary statistics
-category_summary = (
-    df.groupby("category")
-    .agg(
+category_summary = pd.DataFrame(
+    df.groupby("category", as_index=False).agg(
         total_books=("title", "count"),
         avg_price=("price", "mean"),
         avg_rating=("rating", "mean"),
     )
-    .sort_values("avg_rating", ascending=False)
-    .round(2)
+).round(2)
+category_rows = sorted(
+    category_summary.itertuples(index=False),
+    key=lambda row: float(row[3]),
+    reverse=True,
+)
+category_summary = pd.DataFrame(
+    category_rows, columns=["category", "total_books", "avg_price", "avg_rating"]
 )
 # Print the category summary
-print(category_summary.to_string())
+print(category_summary.set_index("category").to_string())
 
 # ---------------------------------------------
 #  9. MOST EXPENSIVE & CHEAPEST BOOK
@@ -190,7 +205,12 @@ print("  SECTION 8 - Price per Page (value for money)")
 print("-" * 60)
 df["price_per_page"] = (df["price"] / df["pages"]).round(4)
 # Sort the books by price per page
-value_df = df[["title", "pages", "price", "price_per_page"]].sort_values("price_per_page")
+value_df = pd.DataFrame(df.loc[:, ["title", "pages", "price", "price_per_page"]])
+value_rows = sorted(
+    value_df.itertuples(index=False),
+    key=lambda row: float(row[3]),
+)
+value_df = pd.DataFrame(value_rows, columns=["title", "pages", "price", "price_per_page"])
 # Print the books sorted by price per page
 print(value_df.to_string(index=False))
 
@@ -202,10 +222,12 @@ print("\n" + "-" * 60)
 print("  SECTION 9 - Books Published per Year")
 print("-" * 60)
 # Group by year and count the number of books published
-per_year = df.groupby("year")["title"].count().rename("books_published")
+per_year = pd.DataFrame(
+    df.groupby("year", as_index=False).agg(books_published=("title", "count"))
+)
 
 # Print the books published per year
-print(per_year.to_string())
+print(per_year.set_index("year")["books_published"].to_string())
 
 # ---------------------------------------------
 #  12. EXPORT TO CSV
@@ -232,7 +254,7 @@ df.to_csv(books_output_csv, index=False)
 author_summary.to_csv(author_summary_csv)
 
 # Export the category summary to a CSV file
-category_summary.to_csv(category_summary_csv)
+category_summary.to_csv(category_summary_csv, index=False)
 
 # Print the CSV files exported
 print("\n" + "-" * 60)

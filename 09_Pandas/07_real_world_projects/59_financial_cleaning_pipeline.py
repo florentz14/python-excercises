@@ -59,7 +59,7 @@ def main() -> None:
     df["amount"] = df["amount"].abs()
 
     # Drop invalid dates and duplicates by transaction key
-    invalid_date_count = int(df["date"].isna().sum())
+    invalid_date_count = int(pd.Series(df["date"].isna()).sum())
     df = df.dropna(subset=["date"])
     df = df.drop_duplicates(subset=["transaction_id"], keep="first")
 

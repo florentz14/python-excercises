@@ -49,7 +49,7 @@ ventas_full = pd.merge(df_ventas, df_precios, on="product_id", how="left")
 # Create a Series with the emergency prices
 precios_emergencia = pd.Series(np.nan, index=ventas_full.index)
 precios_emergencia.loc[ventas_full["product_id"] == "laptop"] = 500.00
-ventas_full["price"] = ventas_full["price"].combine_first(precios_emergencia)
+ventas_full["price"] = ventas_full["price"].fillna(precios_emergencia)
 
 # --- PHASE 2: CLEANING ---
 # Drop the duplicate rows
@@ -71,7 +71,9 @@ categoria_map = {
     "ashtray": "Hogar",
     "laptop": "Tecnologia",
 }
-ventas_full["categoria"] = ventas_full["product_id"].map(categoria_map)
+ventas_full["categoria"] = ventas_full["product_id"].apply(
+    lambda value: categoria_map.get(str(value), "Otros")
+)
 
 # Create a new column with the sales volume
 ventas_full["volumen_venta"] = pd.cut(
@@ -82,7 +84,9 @@ ventas_full["volumen_venta"] = pd.cut(
 ventas_full["subtotal"] = ventas_full["qty"] * ventas_full["price"]
 
 # Create a pivot table with the summary
-resumen_categoria = ventas_full.groupby("categoria", as_index=False)["subtotal"].sum()
+resumen_categoria = pd.DataFrame(
+    ventas_full.groupby("categoria", as_index=False).agg(subtotal=("subtotal", "sum"))
+)
 resumen_pivot = (
     ventas_full.pivot_table(
         index="categoria",
@@ -103,7 +107,9 @@ heatmap_path = EXPORT_DIR / "sales_pivot_heatmap.png"
 
 # Create the bar chart
 plt.figure(figsize=(8, 4.5))
-plt.bar(resumen_categoria["categoria"], resumen_categoria["subtotal"], color="#4C78A8")
+x_labels = [str(value) for value in resumen_categoria["categoria"]]
+y_values = [float(value) for value in resumen_categoria["subtotal"]]
+plt.bar(x_labels, y_values, color="#4C78A8")
 plt.title("Subtotal de Ventas por Categoria")
 plt.xlabel("Categoria")
 plt.ylabel("Subtotal ($)")
@@ -113,13 +119,15 @@ plt.close()
 
 # Create the heatmap
 plt.figure(figsize=(7, 4.5))
-matrix = resumen_pivot.values
+matrix = np.asarray(resumen_pivot.to_numpy(), dtype=float)
 plt.imshow(matrix, cmap="Blues", aspect="auto")
 plt.title("Matriz de Ventas: Categoria vs Volumen")
 plt.xlabel("Volumen de Venta")
 plt.ylabel("Categoria")
-plt.xticks(ticks=range(len(resumen_pivot.columns)), labels=resumen_pivot.columns)
-plt.yticks(ticks=range(len(resumen_pivot.index)), labels=resumen_pivot.index)
+xtick_labels = [str(value) for value in resumen_pivot.columns]
+ytick_labels = [str(value) for value in resumen_pivot.index]
+plt.xticks(ticks=range(len(xtick_labels)), labels=xtick_labels)
+plt.yticks(ticks=range(len(ytick_labels)), labels=ytick_labels)
 plt.colorbar(label="Subtotal ($)")
 
 # Add the text to the heatmap

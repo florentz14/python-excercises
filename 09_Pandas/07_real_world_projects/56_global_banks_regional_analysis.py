@@ -34,20 +34,35 @@ def main() -> None:
     df = load_data()
     EXPORTS_DIR.mkdir(parents=True, exist_ok=True)
 
-    ranking_by_region = (
-        df.groupby(["Region", "Empresa"], as_index=False)
-        .agg(
+    ranking_by_region = pd.DataFrame(
+        df.groupby(["Region", "Empresa"], as_index=False).agg(
             avg_close=("Cierre", "mean"),
             total_volume=("Volumen", "sum"),
             records=("Date", "count"),
         )
-        .sort_values(["Region", "avg_close", "total_volume"], ascending=[True, False, False])
+    )
+    ranking_rows = sorted(
+        ranking_by_region.itertuples(index=False),
+        key=lambda row: (str(row[0]), -float(row[2]), -float(row[3])),
+    )
+    ranking_by_region = pd.DataFrame(
+        ranking_rows, columns=["Region", "Empresa", "avg_close", "total_volume", "records"]
     )
 
-    volume_by_country = (
-        df.groupby("Pais", as_index=False)
-        .agg(total_volume=("Volumen", "sum"), avg_close=("Cierre", "mean"), banks=("Empresa", "nunique"))
-        .sort_values("total_volume", ascending=False)
+    volume_by_country = pd.DataFrame(
+        df.groupby("Pais", as_index=False).agg(
+            total_volume=("Volumen", "sum"),
+            avg_close=("Cierre", "mean"),
+            banks=("Empresa", "nunique"),
+        )
+    )
+    country_rows = sorted(
+        volume_by_country.itertuples(index=False),
+        key=lambda row: float(row[1]),
+        reverse=True,
+    )
+    volume_by_country = pd.DataFrame(
+        country_rows, columns=["Pais", "total_volume", "avg_close", "banks"]
     )
 
     leader_by_region = (
