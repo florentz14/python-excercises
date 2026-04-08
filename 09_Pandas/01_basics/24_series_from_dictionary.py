@@ -14,3 +14,8 @@ dict_series = pd.Series(dict_data)
 # print the Series
 print("Series from a dictionary:")
 print(dict_series)
+
+# create a Series with repeated index labels
+serd = pd.Series([1, 0, 2, 1, 2, 3], index=["white", "white", "blue", "green", "green", "yellow"])
+print("\nSeries with repeated index labels:")
+print(serd)
