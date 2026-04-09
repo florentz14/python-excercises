@@ -4,14 +4,21 @@ Vector, matrix, and NumPy operations. Linear algebra, scientific computing, and 
 
 ---
 
-## Matrix Rank (01-08)
+## Matrix Rank (01-08, 03a-03e, 04a-04d)
 
 | File | Content |
 |------|---------|
 | `01_rank_original.py` | Original rank computation |
 | `02_rank_optimized.py` | Optimized with extra info |
-| `03_rank_full_analysis.py` | Full analysis |
-| `04_rank_compare_methods.py` | Compare methods |
+| `03a_rank_compute.py` | Rank with `matrix_rank` |
+| `03b_max_possible_rank.py` | Max rank `min(m, n)` |
+| `03c_full_rank_vs_deficient.py` | Full rank vs rank deficient |
+| `03d_determinant_singular.py` | Determinant, singular (square) |
+| `03e_fundamental_subspaces.py` | Column, row, null space dimensions |
+| `04a_rank_matrix_rank.py` | `np.linalg.matrix_rank` |
+| `04b_rank_svd.py` | Rank via SVD and tolerance |
+| `04c_rank_qr.py` | Rank via QR diagonal of R |
+| `04d_rank_methods_agreement.py` | Compare three methods |
 | `05_rank_example_types.py` | Example types |
 | `06_rank_properties.py` | Properties |
 | `07_rank_interactive.py` | Interactive version |
@@ -31,17 +38,24 @@ Vector, matrix, and NumPy operations. Linear algebra, scientific computing, and 
 | `14_vector_product.py` | Matrix × vector |
 | `15_create_access_modify.py` | Create, access, modify |
 | `16_zeros_identity.py` | Zeros and identity |
-| `17_transpose_add_scalar.py` | Transpose, add, scalar |
+| `17a_matrix_transpose.py` | Transpose (list comprehensions) |
+| `17b_matrix_add.py` | Matrix addition |
+| `17c_scalar_matrix_multiply.py` | Scalar times matrix |
 | `18_row_column_sum_maxmin.py` | Row, column, sum, max/min |
 | `19_grid_types_square.py` | Grid, types, square |
 | `20_rotate_diagonal_traverse.py` | Rotate, diagonal, traverse |
 | `21_comprehension_practical.py` | Comprehension, practical |
 | `22_add_subtract_scalar.py` | Add, subtract, scalar |
 | `23_hadamard_product.py` | Hadamard product |
-| `24_transpose_division_negation.py` | Transpose, division, negation |
-| `25_identity_trace_determinant.py` | Identity, trace, determinant |
+| `24a_matrix_transpose.py` | Transpose (rectangular) |
+| `24b_matrix_scalar_divide.py` | Divide matrix by scalar |
+| `24c_matrix_negation.py` | Negate matrix (-A) |
+| `25a_identity_times_matrix.py` | Identity * matrix |
+| `25b_trace.py` | Trace (diagonal sum) |
+| `25c_determinant_2x2.py` | Determinant 2x2 |
 | `26_row_column_sums.py` | Row/column sums |
-| `27_elementwise_division_power.py` | Element-wise division, power |
+| `27a_elementwise_division.py` | Element-wise division |
+| `27b_matrix_squared.py` | Matrix square (I * I) |
 | `28_practical_examples.py` | Practical examples |
 | `29_inverse.py` | Matrix inverse |
 | `30_determinant_methods.py` | Determinant by different methods *(planned)* |
@@ -125,6 +139,10 @@ Vector, matrix, and NumPy operations. Linear algebra, scientific computing, and 
 | `87_searching.py` | argmax, argmin, nonzero *(planned)* |
 | `88_cumulative_ops.py` | cumsum, cumprod *(planned)* |
 | `89_percentiles_quantiles.py` | percentile, quantile *(planned)* |
+| `98a_array_linear_search.py` | Linear search |
+| `98b_array_membership_index.py` | `in`, index(), count() |
+| `98c_array_binary_search.py` | Binary search (sorted list) |
+| `98d_array_filter_extrema.py` | filter, comprehension, min/max |
 | `110_df_bool.py` | Pandas: boolean row filter (data_colors) |
 
 ---
@@ -150,9 +168,23 @@ Vector, matrix, and NumPy operations. Linear algebra, scientific computing, and 
 
 | File | Content |
 |------|---------|
-| `100_tridiagonal_matrix.py` | Tridiagonal matrix operations and Thomas algorithm |
-| `101_lower_triangular_matrix.py` | Lower triangular matrix operations and forward substitution |
-| `102_upper_triangular_matrix.py` | Upper triangular matrix operations and back substitution |
+| `100a_tridiagonal_create.py` | Tridiagonal: full matrix and 3 vectors |
+| `100b_tridiagonal_verify.py` | Test if matrix is tridiagonal |
+| `100c_tridiagonal_read.py` | Read diagonals, memory stats |
+| `100d_tridiagonal_operations.py` | Sum, scalar, fast matvec |
+| `100e_tridiagonal_thomas.py` | Thomas algorithm (Ax = b) |
+| `100f_tridiagonal_storage.py` | Full grid vs compact storage |
+| `101a_lower_triangular_create.py` | Lower triangular construction |
+| `101b_lower_triangular_verify.py` | Verify lower triangular |
+| `101c_lower_triangular_read.py` | Read regions and stats |
+| `101d_lower_triangular_operations.py` | Sum, product, transpose |
+| `101e_lower_forward_substitution.py` | Forward substitution Lx = b |
+| `101f_lower_determinant_diagonal.py` | det(L) = product diagonal |
+| `102a_upper_triangular_create.py` | Upper triangular construction |
+| `102b_upper_triangular_verify.py` | Verify upper triangular |
+| `102c_upper_triangular_read.py` | Read upper region, trace |
+| `102d_upper_triangular_operations.py` | Sum, scalar, transpose |
+| `102e_upper_back_substitution.py` | Back substitution Ux = b |
 | `103_hadamard_matrix_multiplication.py` | Element-wise multiplication (Hadamard product) |
 | `104_elementwise_matrix_addition.py` | Element-wise matrix addition |
 | `105_elementwise_matrix_subtraction.py` | Element-wise matrix subtraction |
@@ -167,6 +199,7 @@ Vector, matrix, and NumPy operations. Linear algebra, scientific computing, and 
 | File | Content |
 |------|---------|
 | `rank_util.py` | Matrix rank utility |
+| `matrix_helpers.py` | Print helpers + samples for 100a-102e |
 
 ---
 

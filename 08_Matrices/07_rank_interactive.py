@@ -36,15 +36,18 @@ def interactive_rank_calculator():
                 print("(Space-separated per row, one row per line)")
 
                 entries = []
+                ok = True
                 for i in range(rows):
                     row_str = input(f"Row {i+1}: ")
                     row = [float(x) for x in row_str.split()]
                     if len(row) != cols:
                         print(f"Error: row must have {cols} elements")
+                        ok = False
                         break
                     entries.append(row)
-                else:
-                    mat = np.array(entries)
+                if not ok:
+                    continue
+                mat = np.array(entries)
 
             elif opt == "3":
                 print("Goodbye.")
