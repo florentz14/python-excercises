@@ -4,6 +4,7 @@
 # -------------------------------------------------
 
 from datetime import datetime
+from typing import Optional
 
 from .enums import Gender
 
@@ -12,14 +13,25 @@ class Person:
     """Base class for all people in the hospital."""
 
     def __init__(
-        self, name: str, age: int, gender: Gender, phone: str, email: str
+        self,
+        name: str,
+        age: int,
+        gender: Gender,
+        phone: str,
+        email: str,
+        *,
+        external_id: Optional[str] = None,
     ) -> None:
         self.name = name
         self.age = age
         self.gender = gender
         self.phone = phone
         self.email = email
-        self._id = self._generate_id()
+        self._id = (
+            external_id.strip()
+            if external_id and external_id.strip()
+            else self._generate_id()
+        )
 
     def _generate_id(self) -> str:
         timestamp = datetime.now().strftime("%Y%m%d%H%M%S")

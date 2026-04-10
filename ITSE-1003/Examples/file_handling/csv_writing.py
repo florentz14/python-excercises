@@ -2,7 +2,7 @@
 # File Name: ITSE-1003/Examples/file_handling/csv_writing.py
 # Author: Florentino
 # Date: 3/22/2026
-# Description: Crear CSV (writer/DictWriter), añadir filas, delimitadores y TSV de prueba.
+# Description: Create CSV with writer/DictWriter, append rows, delimiters, and sample TSV.
 # -------------------------------------------------
 
 import sys

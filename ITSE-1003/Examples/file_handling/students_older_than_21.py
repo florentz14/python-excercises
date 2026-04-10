@@ -1,8 +1,8 @@
 # -------------------------------------------------
-# Descripción: Lee un CSV de estudiantes y imprime los nombres de los estudiantes con edad mayor a 21.
-# Ejemplo mínimo: imprimir nombres de estudiantes con edad > 21.
-# Cada fila que entrega csv.DictReader es un diccionario con las claves del encabezado,
-# por ejemplo: {"Name": "Alice", "Age": "20", "Major": "Computer Sci", "GPA": "3.8"}.
+# File Name: ITSE-1003/Examples/file_handling/students_older_than_21.py
+# Author: Florentino
+# Date: 4/10/2026
+# Description: Print names of students with age greater than 21 (DictReader minimal example).
 # -------------------------------------------------
 
 import csv

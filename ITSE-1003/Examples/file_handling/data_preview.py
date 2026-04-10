@@ -1,7 +1,7 @@
 # -------------------------------------------------
 # File Name: ITSE-1003/Examples/file_handling/data_preview.py
-# Author: Florentino Báez
-# Date: 3/21/2026
+# Author: Florentino
+# Date: 3/22/2026
 # Description: Preview bundled CSVs and SQLite tables under data/ (stdlib only).
 # -------------------------------------------------
 

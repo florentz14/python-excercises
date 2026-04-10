@@ -1,4 +1,9 @@
-"""Listar y ver detalle por SID."""
+# -------------------------------------------------
+# File Name: ITSE-1003/Examples/file_handling/students_sequential_crud/read_students.py
+# Author: Florentino
+# Date: 4/10/2026
+# Description: List all students and print one record by SID (read operations).
+# -------------------------------------------------
 
 from config import FIELDNAMES
 from storage import load_students, find_index_by_sid

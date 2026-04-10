@@ -1,6 +1,9 @@
-# Version basica, secuencial (sin funciones). Leer -> modificar lista -> reescribir CSV.
-# Dataset: Examples/data/students_sequential_demo.csv (SID, Name, Age, Major).
-# CRUD modular con menu: carpeta students_sequential_crud/ (main.py).
+# -------------------------------------------------
+# File Name: ITSE-1003/Examples/file_handling/students_update_sequential_v1.py
+# Author: Florentino
+# Date: 4/10/2026
+# Description: Sequential CSV update/delete on students_sequential_demo.csv; see students_sequential_crud for menu.
+# -------------------------------------------------
 
 import csv
 from pathlib import Path

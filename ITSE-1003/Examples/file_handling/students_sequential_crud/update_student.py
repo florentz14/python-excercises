@@ -1,4 +1,9 @@
-"""UPDATE: leer todo, cambiar una fila por SID, reescribir."""
+# -------------------------------------------------
+# File Name: ITSE-1003/Examples/file_handling/students_sequential_crud/update_student.py
+# Author: Florentino
+# Date: 4/10/2026
+# Description: Update fields for one student selected by SID; rewrite CSV.
+# -------------------------------------------------
 
 from config import FIELDNAMES
 from storage import load_students, save_students, find_index_by_sid
@@ -12,7 +17,6 @@ def _name_exists_other(rows, name, skip_index):
         if row["Name"].strip().casefold() == key:
             return True
     return False
-
 
 
 def run_update():

@@ -1,7 +1,8 @@
 # -------------------------------------------------
-# CRUD sencillo de estudiantes sobre Examples/data/students.csv
-# Create / Read (list & detail) / Update / Delete. Guarda tras cada cambio.
-# Buscar por SID (Student ID). Name sigue siendo único al crear.
+# File Name: ITSE-1003/Examples/file_handling/students_crud.py
+# Author: Florentino
+# Date: 4/10/2026
+# Description: Console menu CRUD on students.csv; lookup by SID; save after each change.
 # -------------------------------------------------
 
 import csv

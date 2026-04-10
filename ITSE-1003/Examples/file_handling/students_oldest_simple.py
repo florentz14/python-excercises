@@ -1,5 +1,9 @@
-# Versión mínima: mayor y menor edad (un solo recorrido del CSV).
-# Si varios tienen la misma edad máxima o mínima, se listan todos.
+# -------------------------------------------------
+# File Name: ITSE-1003/Examples/file_handling/students_oldest_simple.py
+# Author: Florentino
+# Date: 4/10/2026
+# Description: One-pass CSV scan for oldest/youngest ages and names (handles ties).
+# -------------------------------------------------
 
 import csv
 from pathlib import Path

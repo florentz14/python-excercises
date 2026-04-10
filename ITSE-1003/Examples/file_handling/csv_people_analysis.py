@@ -2,7 +2,7 @@
 # File Name: ITSE-1003/Examples/file_handling/csv_people_analysis.py
 # Author: Florentino
 # Date: 3/22/2026
-# Description: Estadísticas y filtros sobre data/people.csv con DictReader.
+# Description: Statistics and filters on data/people.csv using DictReader.
 # -------------------------------------------------
 
 import sys
@@ -71,9 +71,10 @@ def filter_csv_data() -> None:
 
             if older_than_30:
                 display_rows = [
-                    [r["Name"], r["Age"], r["City"], r["Email"]] for r in older_than_30
+                    [r["ID"], r["Name"], r["Age"], r["City"], r["Email"]]
+                    for r in older_than_30
                 ]
-                headers = ["Name", "Age", "City", "Email"]
+                headers = ["ID", "Name", "Age", "City", "Email"]
                 print(tabulate(display_rows, headers=headers, tablefmt="grid"))
 
     except FileNotFoundError:

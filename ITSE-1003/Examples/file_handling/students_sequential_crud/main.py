@@ -1,4 +1,9 @@
-# Menu CRUD: importa modulos por operacion (mismo patron READ/MODIFY/WRITE en storage).
+# -------------------------------------------------
+# File Name: ITSE-1003/Examples/file_handling/students_sequential_crud/main.py
+# Author: Florentino
+# Date: 4/10/2026
+# Description: Text menu to run student CSV create, read, update, and delete.
+# -------------------------------------------------
 
 from create_student import run_create
 from delete_student import run_delete

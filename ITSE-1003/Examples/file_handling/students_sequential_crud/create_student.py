@@ -1,4 +1,9 @@
-"""CREATE: nuevo registro con SID autogenerado."""
+# -------------------------------------------------
+# File Name: ITSE-1003/Examples/file_handling/students_sequential_crud/create_student.py
+# Author: Florentino
+# Date: 4/10/2026
+# Description: Create a student row with an auto-generated SID and save to CSV.
+# -------------------------------------------------
 
 from storage import load_students, save_students, next_sid
 

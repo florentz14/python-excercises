@@ -9,3 +9,4 @@ SID,Name,Age,Major,GPA,City,State,EnrollmentYear,CreditHoursCompleted,Honors,Att
 10008,Hannah,18,Biology,3.5,Corpus Christi,TX,2025,28,Yes,97.4,2000,Active,2026-04-06
 10009,Ivan,22,Computer Sci,3.1,Laredo,TX,2022,72,No,88.0,500,Active,2026-03-25
 10010,Julia,21,Math,3.85,Irving,TX,2023,70,Yes,99.2,2200,DeanList,2026-04-07
+10011,Juan,23,Math,4.5,Houston,TX,2026,0,No,100.0,0,Active,2026-04-10

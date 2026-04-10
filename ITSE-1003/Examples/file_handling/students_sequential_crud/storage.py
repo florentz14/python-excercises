@@ -1,4 +1,9 @@
-"""Leer y escribir el CSV (lista de dicts). Patron: READ -> modificar lista -> WRITE."""
+# -------------------------------------------------
+# File Name: ITSE-1003/Examples/file_handling/students_sequential_crud/storage.py
+# Author: Florentino
+# Date: 4/10/2026
+# Description: Load/save student rows with csv.DictReader/DictWriter; SID helpers.
+# -------------------------------------------------
 
 import csv
 

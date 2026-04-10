@@ -1,6 +1,6 @@
 # -------------------------------------------------
 # File Name: ITSE-1003/Examples/file_handling/file_context_manager.py
-# Author: Florentino Báez
+# Author: Florentino
 # Date: 3/20/2026
 # Description: Context manager in a class.
 # -------------------------------------------------

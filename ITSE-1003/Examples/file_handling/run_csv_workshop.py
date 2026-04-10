@@ -2,7 +2,7 @@
 # File Name: ITSE-1003/Examples/file_handling/run_csv_workshop.py
 # Author: Florentino
 # Date: 3/22/2026
-# Description: Ejecuta todo el taller CSV (lectura, escritura, análisis de people.csv).
+# Description: Run full CSV workshop (reading, writing, people.csv analysis).
 # -------------------------------------------------
 
 import sys

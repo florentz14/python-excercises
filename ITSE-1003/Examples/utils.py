@@ -9,6 +9,8 @@ from typing import Optional
 import re
 import os
 import shutil
+import subprocess
+import sys
 from datetime import datetime
 
 def input_int(msg: str, start: Optional[int] = None, end: Optional[int] = None) -> int:
@@ -178,7 +180,10 @@ def has_valid_avatar(self):
 
 def clear_screen():
     """Limpiar pantalla (funciona en Windows y Unix)."""
-    os.system('cls' if os.name == 'nt' else 'clear')
+    if sys.platform == "win32":
+        subprocess.run(["cmd", "/c", "cls"], check=False)
+    else:
+        subprocess.run(["clear"], check=False)
 
 
 def pause(msg: str = "Press Enter to continue..."):

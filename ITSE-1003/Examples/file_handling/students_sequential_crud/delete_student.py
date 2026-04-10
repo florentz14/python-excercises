@@ -1,4 +1,9 @@
-"""DELETE: leer todo, omitir la fila con ese SID, reescribir."""
+# -------------------------------------------------
+# File Name: ITSE-1003/Examples/file_handling/students_sequential_crud/delete_student.py
+# Author: Florentino
+# Date: 4/10/2026
+# Description: Delete one student by SID after confirmation; rewrite CSV.
+# -------------------------------------------------
 
 from storage import load_students, save_students, find_index_by_sid
 

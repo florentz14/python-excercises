@@ -2,7 +2,7 @@
 # File Name: ITSE-1003/Examples/file_handling/csv_reading.py
 # Author: Florentino
 # Date: 3/22/2026
-# Description: Leer CSV con csv.reader (people.csv) y DictReader (archivo generado).
+# Description: Read CSV with csv.reader (people.csv) and DictReader (generated file).
 # -------------------------------------------------
 
 import sys
@@ -32,9 +32,10 @@ def read_basic_csv() -> None:
             headers = next(reader)
             rows = []
 
+            # Columns: ID, Name, Age, Email, City, Phone, Birth_Date
             for row in reader:
                 rows.append(row)
-                print(f"👤 {row[0]} ({row[1]} years) - {row[3]}")
+                print(f"👤 [{row[0]}] {row[1]} ({row[2]} years) - {row[4]}")
 
             print(f"\n📊 Data Table:")
             print(tabulate(rows, headers=headers, tablefmt="grid"))

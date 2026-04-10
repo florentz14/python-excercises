@@ -1,8 +1,8 @@
 # -------------------------------------------------
 # File Name: ITSE-1003/Examples/file_handling/csv_examples.py
 # Author: Florentino
-# Date: 3/21/26
-# Description: Alias — ejecuta run_csv_workshop (nombre antiguo conservado por compatibilidad).
+# Date: 3/28/2026
+# Description: Alias entry point; runs run_csv_workshop (legacy name kept for compatibility).
 # -------------------------------------------------
 
 import sys

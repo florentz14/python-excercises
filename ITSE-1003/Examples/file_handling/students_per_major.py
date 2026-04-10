@@ -1,9 +1,8 @@
 # -------------------------------------------------
-# Descripción: Lee un CSV de estudiantes y cuenta cuántos hay por carrera (Major).
-# Cada fila que entrega csv.DictReader es un diccionario con las claves del encabezado,
-# por ejemplo: {"Name": "Alice", "Age": "20", "Major": "Computer Sci", "GPA": "3.8"}.
-# Se usa un diccionario major_count para acumular: clave = nombre de la carrera,
-# valor = número de estudiantes en esa carrera.
+# File Name: ITSE-1003/Examples/file_handling/students_per_major.py
+# Author: Florentino
+# Date: 4/10/2026
+# Description: Count students per major from students.csv using csv.DictReader and a dict.
 # -------------------------------------------------
 
 from pathlib import Path

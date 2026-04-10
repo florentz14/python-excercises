@@ -25,8 +25,12 @@ class Patient(Person):
         blood_type: BloodType,
         emergency_contact: str,
         emergency_phone: str,
+        *,
+        patient_id: str | None = None,
     ) -> None:
-        super().__init__(name, age, gender, phone, email)
+        super().__init__(
+            name, age, gender, phone, email, external_id=patient_id
+        )
         self.blood_type = blood_type
         self.emergency_contact = emergency_contact
         self.emergency_phone = emergency_phone
@@ -107,6 +111,6 @@ class Patient(Person):
             f"Admitted (Room {self._room_number})" if self._admitted else "Outpatient"
         )
         return (
-            f"{base_info} - {self.blood_type.value} - {status} - "
+            f"[Patient ID: {self.id}] {base_info} - {self.blood_type.value} - {status} - "
             f"Emergency: {self.emergency_contact} ({self.emergency_phone})"
         )

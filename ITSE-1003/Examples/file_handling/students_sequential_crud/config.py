@@ -1,4 +1,9 @@
-"""Rutas y columnas del CSV de demo (secuencial -> modular CRUD)."""
+# -------------------------------------------------
+# File Name: ITSE-1003/Examples/file_handling/students_sequential_crud/config.py
+# Author: Florentino
+# Date: 4/10/2026
+# Description: CSV path and column names for the sequential demo dataset.
+# -------------------------------------------------
 
 from pathlib import Path
 

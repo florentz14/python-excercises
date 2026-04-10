@@ -1,7 +1,8 @@
 # -------------------------------------------------
-# Descripción: Extiende v2: cuenta por carrera (Major) y resume edades —
-# edad mínima/máxima, promedio, y nombres del/de los más jóvenes y más viejos
-# (si hay empate en edad, se listan todos).
+# File Name: ITSE-1003/Examples/file_handling/students_per_major_v3.py
+# Author: Florentino
+# Date: 4/10/2026
+# Description: Per-major counts plus age min/max/average and names (handles ties).
 # -------------------------------------------------
 
 from pathlib import Path

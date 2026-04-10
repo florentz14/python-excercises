@@ -1,11 +1,11 @@
-Vehicle_Type,Make,Model,Year,Color,Doors,Wheels,Fuel_Type,Transmission,Special_Features
-Car,Toyota,Camry,2022,Silver,4,4,Hybrid,Automatic,Backup Camera
-Truck,Ford,F-150,2024,White,2,18,Gasoline,10-Speed,Tow Package
-Bike,Trek,Marlin 7,2023,Blue,0,2,Human Power,24-Speed,Mountain Tires
-Car,Honda,Civic,2021,Red,4,4,Gasoline,Manual,Sport Mode
-Truck,Chevy,Silverado,2023,Black,4,6,Diesel,Automatic,4WD
-Bike,Giant,Escape 3,2022,Green,0,2,Human Power,21-Speed,Electric Assist
-Car,Tesla,Model S,2023,Blue,4,4,Electric,Automatic,Autopilot
-Truck,Dodge,Ram 1500,2022,Red,2,4,Gasoline,Automatic,Hemi Engine
-Bike,Specialized,Roubaix,2021,Yellow,0,2,Human Power,11-Speed,Carbon Frame
-Car,BMW,330i,2020,Black,4,4,Gasoline,Automatic,Sport Package
+ID,Vehicle_Type,Make,Model,Year,Color,Doors,Wheels,Fuel_Type,Transmission,Special_Features
+1,Car,Toyota,Camry,2022,Silver,4,4,Hybrid,Automatic,Backup Camera
+2,Truck,Ford,F-150,2024,White,2,18,Gasoline,10-Speed,Tow Package
+3,Bike,Trek,Marlin 7,2023,Blue,0,2,Human Power,24-Speed,Mountain Tires
+4,Car,Honda,Civic,2021,Red,4,4,Gasoline,Manual,Sport Mode
+5,Truck,Chevy,Silverado,2023,Black,4,6,Diesel,Automatic,4WD
+6,Bike,Giant,Escape 3,2022,Green,0,2,Human Power,21-Speed,Electric Assist
+7,Car,Tesla,Model S,2023,Blue,4,4,Electric,Automatic,Autopilot
+8,Truck,Dodge,Ram 1500,2022,Red,2,4,Gasoline,Automatic,Hemi Engine
+9,Bike,Specialized,Roubaix,2021,Yellow,0,2,Human Power,11-Speed,Carbon Frame
+10,Car,BMW,330i,2020,Black,4,4,Gasoline,Automatic,Sport Package

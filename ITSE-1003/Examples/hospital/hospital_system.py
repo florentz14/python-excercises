@@ -112,6 +112,7 @@ def load_hospital_from_csv(
         gender = _gender_from_csv(row["Gender"])
         blood = _blood_type_from_csv(row["Blood_Type"])
         phone = f"555-2{i:03d}"
+        pid = row.get("Patient_ID", "").strip() or None
         patient = Patient(
             name,
             age,
@@ -121,6 +122,7 @@ def load_hospital_from_csv(
             blood,
             "Family",
             "555-1999",
+            patient_id=pid,
         )
         adm = date.fromisoformat(row["Admission_Date"].strip())
         patient.admit(row["Room_Number"].strip(), admission_date=adm)

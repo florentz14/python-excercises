@@ -1,5 +1,9 @@
-# CRUD mínimo sobre un CSV con csv.DictReader / DictWriter.
-# Patrón: no hay UPDATE ni DELETE en el disco; siempre lees todo, cambias la lista, reescribes el archivo.
+# -------------------------------------------------
+# File Name: ITSE-1003/Examples/file_handling/students_write_csv_simple.py
+# Author: Florentino
+# Date: 4/10/2026
+# Description: Minimal CSV create/read/update/delete demo with DictReader and DictWriter.
+# -------------------------------------------------
 
 import csv
 from pathlib import Path
