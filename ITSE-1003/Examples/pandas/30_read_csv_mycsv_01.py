@@ -3,7 +3,7 @@ from pathlib import Path
 import pandas as pd
 
 
-csv_path = Path(__file__).parent.parent / "data" / "myCSV_01.csv"
+csv_path = Path(__file__).parent.parent / "data" / "colors_animals.csv"
 csvframe = pd.read_csv(csv_path)
 
 print("csvframe:")

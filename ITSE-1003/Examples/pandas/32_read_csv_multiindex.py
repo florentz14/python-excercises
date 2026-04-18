@@ -3,7 +3,7 @@ from pathlib import Path
 import pandas as pd
 
 
-csv_path = Path(__file__).parent.parent / "data" / "ch05_03.csv"
+csv_path = Path(__file__).parent.parent / "data" / "color_status_items.csv"
 multi_index_frame = pd.read_csv(csv_path, index_col=["color", "status"])
 
 print("read_csv(..., index_col=['color', 'status']):")
