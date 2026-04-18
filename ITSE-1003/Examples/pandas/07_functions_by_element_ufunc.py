@@ -1,3 +1,10 @@
+# -------------------------------------------------
+# File Name: 07_functions_by_element_ufunc.py
+# Created: 2026-04-18
+# Author: Florentino Báez
+# Description: Apply NumPy ufuncs element-wise on a DataFrame.
+# -------------------------------------------------
+
 import numpy as np
 import pandas as pd
 

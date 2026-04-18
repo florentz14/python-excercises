@@ -1,3 +1,10 @@
+# -------------------------------------------------
+# File Name: 03_frame_reindex_ffill.py
+# Created: 2026-04-18
+# Author: Florentino Báez
+# Description: DataFrame reindex with forward fill for new columns.
+# -------------------------------------------------
+
 import pandas as pd
 
 

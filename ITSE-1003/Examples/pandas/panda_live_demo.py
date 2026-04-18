@@ -1,3 +1,10 @@
+# -------------------------------------------------
+# File Name: panda_live_demo.py
+# Created: 2026-04-18
+# Author: Florentino Báez
+# Description: Live-style DataFrame demonstration script.
+# -------------------------------------------------
+
 from pathlib import Path
 
 import pandas as pd

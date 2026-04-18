@@ -1,3 +1,10 @@
+# -------------------------------------------------
+# File Name: mini_lab_creating_and_analyzing_data.py
+# Created: 2026-04-18
+# Author: Florentino Báez
+# Description: Mini lab: create and analyze sample tabular data.
+# -------------------------------------------------
+
 """
 Mini Lab - Creating and Analyzing Data with Pandas
 

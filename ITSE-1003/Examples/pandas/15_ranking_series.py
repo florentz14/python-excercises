@@ -1,3 +1,10 @@
+# -------------------------------------------------
+# File Name: 15_ranking_series.py
+# Created: 2026-04-18
+# Author: Florentino Báez
+# Description: Ranking values in a Series with rank().
+# -------------------------------------------------
+
 import pandas as pd
 
 

@@ -1,3 +1,10 @@
+# -------------------------------------------------
+# File Name: 29_io_api_basic_roundtrip.py
+# Created: 2026-04-18
+# Author: Florentino Báez
+# Description: Roundtrip read/write for CSV, JSON, and pickle.
+# -------------------------------------------------
+
 from pathlib import Path
 
 import pandas as pd

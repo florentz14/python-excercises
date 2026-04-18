@@ -1,3 +1,10 @@
+# -------------------------------------------------
+# File Name: panda_demo.py
+# Created: 2026-04-18
+# Author: Florentino Báez
+# Description: Introductory DataFrame demo with print steps.
+# -------------------------------------------------
+
 import pandas as pd
 
 # step 1: create a dataset (dictionary)

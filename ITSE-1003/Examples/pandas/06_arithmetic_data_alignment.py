@@ -1,3 +1,10 @@
+# -------------------------------------------------
+# File Name: 06_arithmetic_data_alignment.py
+# Created: 2026-04-18
+# Author: Florentino Báez
+# Description: Arithmetic operations and index alignment on Series.
+# -------------------------------------------------
+
 import pandas as pd
 
 

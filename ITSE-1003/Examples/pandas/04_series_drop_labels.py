@@ -1,3 +1,10 @@
+# -------------------------------------------------
+# File Name: 04_series_drop_labels.py
+# Created: 2026-04-18
+# Author: Florentino Báez
+# Description: Drop index labels from a pandas Series.
+# -------------------------------------------------
+
 import numpy as np
 import pandas as pd
 

@@ -1,3 +1,10 @@
+# -------------------------------------------------
+# File Name: 09_statistics_sum_mean.py
+# Created: 2026-04-18
+# Author: Florentino Báez
+# Description: Sum, mean, and basic aggregates on Series or DataFrame.
+# -------------------------------------------------
+
 import numpy as np
 import pandas as pd
 

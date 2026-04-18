@@ -1,3 +1,10 @@
+# -------------------------------------------------
+# File Name: 05_dataframe_drop_rows_columns.py
+# Created: 2026-04-18
+# Author: Florentino Báez
+# Description: Drop rows and columns from a DataFrame.
+# -------------------------------------------------
+
 import numpy as np
 import pandas as pd
 

@@ -1,3 +1,10 @@
+# -------------------------------------------------
+# File Name: 32_read_csv_multiindex.py
+# Created: 2026-04-18
+# Author: Florentino Báez
+# Description: read_csv building a MultiIndex from CSV.
+# -------------------------------------------------
+
 from pathlib import Path
 
 import pandas as pd

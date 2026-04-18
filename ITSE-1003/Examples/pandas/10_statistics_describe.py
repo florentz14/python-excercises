@@ -1,3 +1,10 @@
+# -------------------------------------------------
+# File Name: 10_statistics_describe.py
+# Created: 2026-04-18
+# Author: Florentino Báez
+# Description: Summary statistics with describe().
+# -------------------------------------------------
+
 import numpy as np
 import pandas as pd
 

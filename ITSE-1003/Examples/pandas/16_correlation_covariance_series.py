@@ -1,3 +1,10 @@
+# -------------------------------------------------
+# File Name: 16_correlation_covariance_series.py
+# Created: 2026-04-18
+# Author: Florentino Báez
+# Description: Correlation and covariance on Series.
+# -------------------------------------------------
+
 import pandas as pd
 
 

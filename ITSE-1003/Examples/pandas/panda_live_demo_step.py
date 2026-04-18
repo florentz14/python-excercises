@@ -1,3 +1,10 @@
+# -------------------------------------------------
+# File Name: panda_live_demo_step.py
+# Created: 2026-04-18
+# Author: Florentino Báez
+# Description: Step-by-step DataFrame demonstration.
+# -------------------------------------------------
+
 from pathlib import Path
 
 import pandas as pd

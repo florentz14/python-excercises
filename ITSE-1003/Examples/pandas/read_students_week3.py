@@ -1,3 +1,10 @@
+# -------------------------------------------------
+# File Name: read_students_week3.py
+# Created: 2026-04-18
+# Author: Florentino Báez
+# Description: Load students_week3.csv and display filtered subsets with tabulate.
+# -------------------------------------------------
+
 """
 Load students_week3.csv (Id column + student rows) with pandas.
 

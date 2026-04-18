@@ -1,3 +1,10 @@
+# -------------------------------------------------
+# File Name: 22_fillna_dataframe.py
+# Created: 2026-04-18
+# Author: Florentino Báez
+# Description: Fill missing values with fillna on DataFrame.
+# -------------------------------------------------
+
 import numpy as np
 import pandas as pd
 

@@ -1,3 +1,10 @@
+# -------------------------------------------------
+# File Name: 11_sorting_series_index.py
+# Created: 2026-04-18
+# Author: Florentino Báez
+# Description: Sort a Series by index.
+# -------------------------------------------------
+
 import pandas as pd
 
 

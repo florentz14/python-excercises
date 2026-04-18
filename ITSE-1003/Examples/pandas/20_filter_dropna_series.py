@@ -1,3 +1,10 @@
+# -------------------------------------------------
+# File Name: 20_filter_dropna_series.py
+# Created: 2026-04-18
+# Author: Florentino Báez
+# Description: Filter and dropna on a Series.
+# -------------------------------------------------
+
 import numpy as np
 import pandas as pd
 

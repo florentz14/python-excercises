@@ -1,3 +1,10 @@
+# -------------------------------------------------
+# File Name: 26_stack_unstack_leveling.py
+# Created: 2026-04-18
+# Author: Florentino Báez
+# Description: stack and unstack with index levels.
+# -------------------------------------------------
+
 import numpy as np
 import pandas as pd
 

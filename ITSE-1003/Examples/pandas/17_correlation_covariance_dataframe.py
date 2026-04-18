@@ -1,3 +1,10 @@
+# -------------------------------------------------
+# File Name: 17_correlation_covariance_dataframe.py
+# Created: 2026-04-18
+# Author: Florentino Báez
+# Description: Correlation and covariance on DataFrame.
+# -------------------------------------------------
+
 import pandas as pd
 
 

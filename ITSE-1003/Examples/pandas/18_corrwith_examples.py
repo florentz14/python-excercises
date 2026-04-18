@@ -1,3 +1,10 @@
+# -------------------------------------------------
+# File Name: 18_corrwith_examples.py
+# Created: 2026-04-18
+# Author: Florentino Báez
+# Description: corrwith between DataFrame and Series.
+# -------------------------------------------------
+
 import pandas as pd
 
 

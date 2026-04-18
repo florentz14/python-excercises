@@ -1,3 +1,10 @@
+# -------------------------------------------------
+# File Name: 19_assign_nan_series.py
+# Created: 2026-04-18
+# Author: Florentino Báez
+# Description: Assign NaN values in a Series.
+# -------------------------------------------------
+
 import numpy as np
 import pandas as pd
 

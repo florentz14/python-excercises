@@ -1,3 +1,10 @@
+# -------------------------------------------------
+# File Name: 23_hierarchical_index_series.py
+# Created: 2026-04-18
+# Author: Florentino Báez
+# Description: Hierarchical (MultiIndex) Series.
+# -------------------------------------------------
+
 import pandas as pd
 
 
