@@ -1,0 +1,1 @@
+"""ATM MySQL modular project."""
