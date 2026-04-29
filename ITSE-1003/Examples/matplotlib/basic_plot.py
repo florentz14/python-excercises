@@ -8,8 +8,14 @@ y = [10, 20, 25, 30, 40]
 
 # plot the x and y values
 plt.plot(x, y)
+
+# add title and labels
 plt.title("Simple line plot")
 plt.xlabel("X axis")
 plt.ylabel("Y axis")
+
+# add grid
 plt.grid(True)
+
+# show the plot
 plt.show()

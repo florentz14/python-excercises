@@ -1,8 +1,10 @@
 import matplotlib.pyplot as plt
 
+# Create data for the line plot
 x = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 y = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
+# Create the line plot
 plt.plot(x, y)
 
 # custom xticks: need one label per tick (10 positions in x / y)
