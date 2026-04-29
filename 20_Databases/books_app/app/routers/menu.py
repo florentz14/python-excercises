@@ -16,17 +16,19 @@ def run_cli(backend: BackendName | None = None):
     print("2 - PostgreSQL")
     print("3 - SQLAlchemy (SQLite)")
     print("4 - MongoDB")
-    print("5 - Exit")
+    print("5 - Classic books.db example")
+    print("6 - Exit")
     print("=" * 64)
 
-    choice = input("Choose backend (1-5): ").strip()
+    choice = input("Choose backend (1-6): ").strip()
     mapping: dict[str, BackendName] = {
         "1": "sqlite",
         "2": "postgres",
         "3": "sqlalchemy",
         "4": "mongo",
+        "5": "example",
     }
-    if choice == "5":
+    if choice == "6":
         print("Goodbye!")
         return
     selected = mapping.get(choice)

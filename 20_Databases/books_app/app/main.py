@@ -10,7 +10,7 @@ def run():
     backend: BackendName | None = None
     if len(sys.argv) > 1:
         arg = sys.argv[1].strip().lower()
-        if arg in {"sqlite", "postgres", "sqlalchemy", "mongo"}:
+        if arg in {"sqlite", "postgres", "sqlalchemy", "mongo", "example"}:
             backend = arg  # type: ignore[assignment]
     run_cli(backend)
 

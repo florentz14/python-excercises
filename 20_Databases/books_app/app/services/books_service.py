@@ -10,6 +10,7 @@ SCRIPT_MAP: dict[BackendName, str] = {
     "postgres": "legacy/05_books_postgres.py",
     "sqlalchemy": "legacy/06_books_sqlalchemy.py",
     "mongo": "legacy/07_books_mongo.py",
+    "example": "legacy/books_example.py",
 }
 
 

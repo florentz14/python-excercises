@@ -26,4 +26,5 @@ python -m books_app.app.main sqlite
 python -m books_app.app.main postgres
 python -m books_app.app.main sqlalchemy
 python -m books_app.app.main mongo
+python -m books_app.app.main example
 ```
