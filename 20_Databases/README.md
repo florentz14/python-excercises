@@ -40,6 +40,7 @@ Conexión y operaciones con bases de datos usando Python (MySQL/MariaDB, SQLite3
 | `07_books_mongo.py` | Flujo CRUD completo con MongoDB y agregaciones |
 | `08_family_budget_loader.py` | Carga `Script_Sql/family_budget_complete.sql` y audita tablas vacías |
 | `09_tasks_sqlite.py` | SQLite3 para gestión de tareas por proyecto (extendido) |
+| `run_*.py` | Launchers estandarizados (recomendados) para cada demo |
 | `Script_Sql/` | Carpeta para scripts SQL |
 | `Script_Sql/family_budget_complete.sql` | Script completo para recrear la base de presupuesto familiar |
 | `Script_Sql/family_budget_seed_inserts.sql` | Inserts complementarios para tablas vacías del presupuesto familiar |
@@ -94,29 +95,29 @@ mysql -u root -p ATM_Database_Schema < <path_to_schema.sql>
 # Probar conexión
 python 20_Databases/Tests/01_mysql_connection.py
 
-# Ejecutar sistema ATM
-python 20_Databases/02_atm_mysql_app.py
+# Ejecutar sistema ATM (launcher estandar)
+python 20_Databases/run_atm_app.py
 
-# Gestionar usuarios (crear/listar/eliminar)
-python 20_Databases/03_atm_user_tool.py
+# Gestionar usuarios (launcher estandar)
+python 20_Databases/run_atm_user_tool.py
 
 # Ejecutar ejemplo SQLite3
-python 20_Databases/04_books_sqlite.py
+python 20_Databases/run_books_sqlite.py
 
 # Ejecutar ejemplo PostgreSQL
-python 20_Databases/05_books_postgres.py
+python 20_Databases/run_books_postgres.py
 
 # Ejecutar ejemplo MongoDB
-python 20_Databases/07_books_mongo.py
+python 20_Databases/run_books_mongo.py
 
 # Auditar tablas vacías (sin ejecutar SQL)
-python 20_Databases/08_family_budget_loader.py
+python 20_Databases/run_family_budget_loader.py
 
 # Ejecutar SQL y luego auditar tablas
 python 20_Databases/08_family_budget_loader.py --apply
 
 # Crear y poblar SQLite3 de gestión de proyectos/tareas
-python 20_Databases/09_tasks_sqlite.py
+python 20_Databases/run_tasks.py
 ```
 
 ### Menú del ATM
