@@ -1,0 +1,40 @@
+# -------------------------------------------------
+# File Name: student.py
+# Author: Florentino
+# Date: 5/2/26
+# Description: Student model for school app (matches school_db.sql)
+# -------------------------------------------------
+
+from sqlalchemy import Column, BigInteger, String, DateTime
+from sqlalchemy.sql import func
+from database import Base
+
+class Student(Base):
+    """
+    Student model representing students in the school
+    Matches the students table in school_db.sql
+    """
+    __tablename__ = "students"
+
+    id = Column(BigInteger, primary_key=True, index=True)
+    name = Column(String(150), nullable=False, index=True)
+    email = Column(String(255), unique=True, nullable=False, index=True)
+    created_at = Column(DateTime(timezone=True), server_default=func.now())
+    updated_at = Column(DateTime(timezone=True), server_default=func.now(), onupdate=func.now())
+    deleted_at = Column(DateTime(timezone=True), nullable=True)
+
+    def __repr__(self):
+        return f"<Student(id={self.id}, name='{self.name}', email='{self.email}')>"
+
+    def to_dict(self):
+        """
+        Convert student object to dictionary
+        """
+        return {
+            "id": self.id,
+            "name": self.name,
+            "email": self.email,
+            "created_at": self.created_at.isoformat() if self.created_at is not None else None,
+            "updated_at": self.updated_at.isoformat() if self.updated_at is not None else None,
+            "deleted_at": self.deleted_at.isoformat() if self.deleted_at is not None else None,
+        }

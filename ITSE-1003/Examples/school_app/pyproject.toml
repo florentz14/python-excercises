@@ -1,0 +1,41 @@
+# -------------------------------------------------
+# File Name: pyproject.toml
+# Author: Florentino
+# Date: 5/2/26
+# Description: Pyright configuration for school app
+#              Ignore SQLAlchemy type checking issues
+# -------------------------------------------------
+
+[tool.pyright]
+# Ignore common SQLAlchemy type checking issues
+reportGeneralTypeIssues = false
+reportOptionalMemberAccess = false
+reportOptionalSubscript = false
+
+# Specific ignores for SQLAlchemy Column types
+# These are false positives - SQLAlchemy Column types don't implement __bool__
+# but the code works perfectly at runtime
+ignore = [
+    "**/models/*.py"
+]
+
+# Include paths
+include = [
+    "school_app/**"
+]
+
+# Exclude paths
+exclude = [
+    "**/__pycache__",
+    "**/node_modules",
+    "**/.git",
+    "**/venv",
+    "**/.venv"
+]
+
+# Python version
+pythonVersion = "3.9"
+pythonPlatform = "All"
+
+# Type checking mode
+typeCheckingMode = "basic"

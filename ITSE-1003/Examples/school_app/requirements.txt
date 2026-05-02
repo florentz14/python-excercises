@@ -1,0 +1,28 @@
+# -------------------------------------------------
+# File Name: requirements.txt
+# Author: Florentino
+# Date: 5/2/26
+# Description: Dependencies for FastAPI school app
+# -------------------------------------------------
+
+# FastAPI and ASGI server (newer pins ship wheels for Python 3.12+)
+fastapi>=0.115.0
+uvicorn[standard]>=0.32.0
+
+# Database
+sqlalchemy>=2.0.36
+pymysql>=1.1.0
+
+# Pydantic (email extra pulls email-validator)
+pydantic[email]>=2.10.0
+
+# Environment variables
+python-dotenv==1.0.0
+
+# Development and testing
+pytest==7.4.3
+pytest-asyncio==0.21.1
+httpx==0.25.2
+
+# Optional: For production deployment
+# gunicorn==21.2.0
